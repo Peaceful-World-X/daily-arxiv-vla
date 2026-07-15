@@ -1,8 +1,12 @@
-name: 部署到 GitHub Pages
+name: 部署每日 arXiv 论文网站
 
 on:
+  # 允许在 Actions 页面手动运行
+  workflow_dispatch:
+  # 修改代码后自动部署
   push:
-    branches: [ master, main ]
+    branches:
+      - master
   schedule:
     # 每日北京时间中午12点（UTC 4:00）运行爬取和生成任务
     - cron: '0 4 * * *'
