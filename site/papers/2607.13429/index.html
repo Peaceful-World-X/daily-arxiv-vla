@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Generalizable VLA Finetuning via Representation Anchoring and Language-Action Alignment - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对标准行为克隆（BC）微调视觉语言动作（VLA）模型时会覆盖预训练视觉语言模型（VLM）的视觉-语言表征、导致灾难性遗忘与分布外泛化性能差的问题，以及现有共训练方法无法解决语言头与动作头监督割裂、出现语言-动作不一致的问题，提出名为Anchor-Align的VLA微调方法 核心设计包含两个补充目标：视觉-语言锚定（Vision-Language Anchoring）用于保留预训练VLM的表征，语言-动作对齐（La…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.13429">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.13429.webp" alt="Generalizable VLA Finetuning via Representation Anchoring and Language-Action Alignment" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对标准行为克隆（BC）微调视觉语言动作（VLA）模型时会覆盖预训练视觉语言模型（VLM）的视觉-语言表征、导致灾难性遗忘与分布外泛化性能差的…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Generalizable VLA Finetuning via Representation Anchoring and Language-Action Alignment</h1>
+            <div class="detail-meta">2026-07-15 · <a href="http://arxiv.org/abs/2607.13429" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.13429" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.13429</span></div>
+            <p class="detail-summary">针对标准行为克隆（BC）微调视觉语言动作（VLA）模型时会覆盖预训练视觉语言模型（VLM）的视觉-语言表征、导致灾难性遗忘与分布外泛化性能差的问题，以及现有共训练方法无法解决语言头与动作头监督割裂、出现语言-动作不一致的问题，提出名为Anchor-Align的VLA微调方法 核心设计包含两个补充目标：视觉-语言锚定（Vision-Language Anchoring）用于保留预训练VLM的表征，语言-动作对齐（La…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构包括：University of Illinois Urbana-Champaign、…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.13429/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对标准行为克隆（BC）微调视觉语言动作（VLA）模型时会覆盖预训练视觉语言模型（VLM）的视觉-语言表征、导致灾难性遗忘与分布外泛化性能差的…</p>
+  <ul class="reading-intro-points"><li>针对标准行为克隆（BC）微调视觉语言动作（VLA）模型时会覆盖预训练视觉语言模型（VLM）的视觉-语言表征、导致灾难性遗忘与分布外泛化性能差的…</li><li>核心设计包含两个补充目标：视觉-语言锚定（Vision-Language Anchoring）用于保留预训练VLM的表征，语言-动作对齐（La…</li><li>研究目标是在不依赖大规模机器人动作预训练的前提下，提升VLA模型在分布外扰动、长程操控等场景下的泛化能力，同时证明保留预训练表征与动作学习并非…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构包括：<strong>University of Illinois Urbana-Champaign</strong>、<strong>Texas A&M University</strong>、<strong>University of California, Irvine</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对标准行为克隆（BC）微调视觉语言动作（VLA）模型时会覆盖预训练视觉语言模型（VLM）的视觉-语言表征、导致灾难性遗忘与分布外泛化性能差的问题，以及现有共训练方法无法解决语言头与动作头监督割裂、出现语言-动作不一致的问题，提出名为<strong>Anchor-Align</strong>的VLA微调方法</li><li>核心设计包含两个补充目标：视觉-语言锚定（Vision-Language Anchoring）用于保留预训练VLM的表征，语言-动作对齐（Language-Action Alignment）用于让语言预测与动作生成在同一机器人观测上对齐</li><li>研究目标是在不依赖大规模机器人动作预训练的前提下，提升VLA模型在分布外扰动、长程操控等场景下的泛化能力，同时证明保留预训练表征与动作学习并非根本矛盾</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出视觉-语言锚定机制：通过维护冻结的预训练VLM副本，在微调过程中逐层对VLA骨干的视觉和文本token隐藏状态施加Frobenius范数蒸馏损失，直接缓解BC微调导致的灾难性遗忘，无需额外数据或架构修改</li><li>提出语言-动作对齐机制：无需人工标注，自动将专家演示中的连续动作目标转换为6类离散运动方向标签，在同一机器人观测上联合监督语言预测和动作预测，解决共训练方法中语言头与动作头监督不匹配的核心问题</li><li>提出的Anchor-Align方法在多种VLA架构（回归动作头、流匹配动作头）和多个仿真基准上均取得一致提升，证明方法的通用性</li><li>首个对共训练VLA的语言-动作不一致问题提供直接诊断框架，量化证明语言-动作对齐程度与任务成功率呈强正相关</li><li>在真实xArm7机器人上验证方法有效性，证明其可处理杂乱场景、语义扰动、空间重排等真实世界的复杂泛化场景</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础架构：采用带预训练VLM骨干的VLA架构，视觉观测和语言指令输入VLM骨干得到多模态表征，机器人本体感知通过轻量状态投影器作为条件信号输入动作头，动作头通过可学习查询提取任务相关特征后预测固定时长的连续7-DoF动作，支持L1回归和条件流匹配两种动作头类型</li><li>视觉-语言锚定：维护一个与训练VLA初始权重一致的冻结锚定VLM，对同一批输入并行处理，在VLA骨干的每一个解码器层，对视觉和文本token的隐藏状态计算Frobenius范数的平方作为锚定损失，约束训练VLA的表征不偏离预训练表征</li><li>语言-动作对齐：通过平均分块、静止样本过滤、主运动轴离散化三个步骤，将连续动作块自动转换为上、下、左、右、前、后6类离散方向标签；取动作预测前的最后一个指令token的隐藏状态，经可学习投影层和冻结的VLM语言头得到语言logits，通过交叉熵损失与方向标签计算对齐损失，实现语言和动作在同一观测上的联合监督</li><li>总损失为动作损失、锚定损失、对齐损失的加权和，三个损失端到端联合优化</li><li>创新点：锚定目标覆盖VLM的全层视觉-语言表征而非仅视觉编码器；对齐机制完全自动无需人工标注，直接解决共训练的监督割裂问题；方法适配不同架构和动作头类型</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO</strong>（含Spatial、Object、Goal、Long四个10任务套件）、<strong>LIBERO-PRO</strong>（测试语言复述、物体交换、位置交换三类语义泛化扰动）、<strong>LIBERO-Plus</strong>（测试相机视角、光照、背景纹理、物体布局、机器人初始状态、语言指令、传感器噪声七类感知鲁棒性扰动）、<strong>CALVIN ABC→D</strong>（测试跨环境长程语言条件操控）</li><li>真实机器人数据集：在UFactory <strong>xArm7</strong>机械臂上收集的桌面操控演示数据集，覆盖空间重排、杂乱场景、组合布局、语义扰动等泛化场景</li><li>模型规模：默认VLA骨干为<strong>Prismatic-Qwen2.5-0.5B</strong>（参数量0.5B），额外验证<strong>StarVLA</strong>架构（Qwen2.5-VL 3B骨干 + GR00T FM-DiT流匹配动作头）</li><li>训练资源：未明确披露具体GPU/TPU硬件配置，采用LoRA（秩r=64）进行高效参数微调，LoRA应用于所有Transformer层</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：包含<strong>LIBERO-PRO</strong>、<strong>LIBERO-Plus</strong>、<strong>CALVIN</strong>三个仿真基准，以及xArm7真实机器人操控平台</li><li>主要评估指标：任务成功率、CALVIN长程任务平均回滚长度、语言-动作对齐率、GQA视觉推理准确率、语言-动作对齐与任务成功的Pearson相关系数</li><li>关键实验结果：</li></ul>
+<p> - 仿真基准：<strong>LIBERO-PRO</strong>平均成功率达到<strong>71.9%</strong>，优于最强基线VLA-Adapter的61.0%，最难的位置交换任务成功率达22.6%（其他基线最高为2.3%）；<strong>LIBERO-Plus</strong>平均成功率达<strong>90.3%</strong>，在所有7类感知扰动维度上均优于基线，背景纹理扰动下成功率99.6%；<strong>CALVIN ABC→D</strong>长程任务5步完成率达<strong>77.9%</strong>，平均回滚长度4.5，优于VLA-Adapter的4.3和OpenVLA-OFT的4.1</p>
+<p> - 真实机器人：VLA-Adapter架构下平均成功率从28.3%提升至<strong>54.2%</strong>；StarVLA架构下从36.7%提升至<strong>60.0%</strong>，语义扰动场景（训练用绿色杯子，测试要求拿粉色杯子）下，Anchor-Align 100%拿起粉色杯子，而标准BC baseline 90%仍拿起绿色杯子</p>
+<p> - 分析结果：标准BC微调10K步后GQA视觉推理准确率下降94%，Anchor-Align可保留70%的预训练准确率；语言-动作对齐率从基线的16.8%提升至<strong>78.4%</strong>，对齐与任务成功的Pearson相关系数从-0.03提升至<strong>+0.51</strong>，证明对齐与任务成功强正相关</p>
+<p> - 消融实验：视觉-语言锚定和语言-动作对齐单独使用均能提升性能，二者组合后效果最优；打乱方向标签的正则化对照组性能 collapse 到基线水平，证明对齐的增益来自genuine的语言-动作对齐而非单纯正则化</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.13597/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Semantic Anchoring for Robotic Action Representations</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.13056/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">HRIBench: Benchmarking Interaction-Centric Human-Robot Collaboration</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>An Empirical Study on Stage-Information Interfaces for VLA Fine-Tuning - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文针对长程操作任务中视觉-语言-动作（VLA）模型微调的子任务信息利用问题开展实证研究，核心目标是明确子任务信息应如何表示、在训练中何时引入，才能有效提升VLA策略性能 研究将分割后的动作阶段标注作为全任务指令与底层动作块之间的中间表示，通过阶段追踪模块跟踪当前活跃阶段，对比两种阶段信息向动作策略的输入接口效果 实验在LIBERO-10基准上基于GR00T N1.6开展，评估直接微调和基于全任务基线的继续微调两种…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.13605">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.13605.webp" alt="An Empirical Study on Stage-Information Interfaces for VLA Fine-Tuning" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文针对长程操作任务中视觉-语言-动作（VLA）模型微调的子任务信息利用问题开展实证研究，核心目标是明确子任务信息应如何表示、在训练中何时引入…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">An Empirical Study on Stage-Information Interfaces for VLA Fine-Tuning</h1>
+            <div class="detail-meta">2026-07-15 · <a href="http://arxiv.org/abs/2607.13605" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.13605" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.13605</span></div>
+            <p class="detail-summary">本文针对长程操作任务中视觉-语言-动作（VLA）模型微调的子任务信息利用问题开展实证研究，核心目标是明确子任务信息应如何表示、在训练中何时引入，才能有效提升VLA策略性能 研究将分割后的动作阶段标注作为全任务指令与底层动作块之间的中间表示，通过阶段追踪模块跟踪当前活跃阶段，对比两种阶段信息向动作策略的输入接口效果 实验在LIBERO-10基准上基于GR00T N1.6开展，评估直接微调和基于全任务基线的继续微调两种…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Yingwei Ji（论文唯一作者，所属机构未在提供的HTML内容中明确标注）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.13605/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文针对长程操作任务中视觉-语言-动作（VLA）模型微调的子任务信息利用问题开展实证研究，核心目标是明确子任务信息应如何表示、在训练中何时引入…</p>
+  <ul class="reading-intro-points"><li>本文针对长程操作任务中视觉-语言-动作（VLA）模型微调的子任务信息利用问题开展实证研究，核心目标是明确子任务信息应如何表示、在训练中何时引入…</li><li>研究将分割后的动作阶段标注作为全任务指令与底层动作块之间的中间表示，通过阶段追踪模块跟踪当前活跃阶段，对比两种阶段信息向动作策略的输入接口效果</li><li>实验在LIBERO-10基准上基于GR00T N1.6开展，评估直接微调和基于全任务基线的继续微调两种训练安排下的策略成功率</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Yingwei Ji</strong>（论文唯一作者，所属机构未在提供的HTML内容中明确标注）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文针对长程操作任务中视觉-语言-动作（VLA）模型微调的子任务信息利用问题开展实证研究，核心目标是明确子任务信息应如何表示、在训练中何时引入，才能有效提升VLA策略性能</li><li>研究将分割后的动作阶段标注作为全任务指令与底层动作块之间的中间表示，通过阶段追踪模块跟踪当前活跃阶段，对比两种阶段信息向动作策略的输入接口效果</li><li>实验在LIBERO-10基准上基于GR00T N1.6开展，评估直接微调和基于全任务基线的继续微调两种训练安排下的策略成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>将子任务条件VLA微调形式化为阶段追踪模块与动作策略的接口问题，在共享阶段标注、控制逻辑和模型初始化的前提下，对比了基于文本的语义阶段接口与基于状态的序数阶段接口的差异</li><li>系统评估了两种接口在直接微调、基线优先继续微调两种训练安排下的效果，发现显式阶段信息的性能表现高度依赖接口形式和引入时机</li><li>实证结果表明，直接微调下两种阶段接口均无法超过原始全任务指令基线的性能，而继续微调下序数阶段状态接口可实现最优效果，为长程操作VLA的微调设计提供了实证参考</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础模型采用预训练的<strong>GR00T N1.6-3B</strong> VLA模型，冻结视觉编码器和除顶部4层外的语言模型层，仅微调顶层语言层、动作侧投影器、视觉-语言层归一化和32层扩散Transformer（DiT）动作头</li><li>使用<strong>Qwen2.5-VL</strong>对LIBERO-10任务的演示数据做动作阶段分割，生成共享的有序阶段文本标注和演示帧边界，作为所有方法的统一中间监督信号</li><li>设计进度模块（Progress Module）：基于预训练GR00T初始化，输入观测、机器人状态、任务指令和当前阶段文本，通过Smooth L1损失预测当前阶段的完成进度，仅用进度值控制阶段指针推进，不向动作策略传递进度信息</li><li>对比两种动作模块接口：1）<strong>语义阶段接口（TaskCtx）</strong>：将当前阶段文本拼接到任务指令后作为语言输入；2）<strong>序数阶段状态接口</strong>：将归一化的阶段序数索引拼接到机器人状态向量中作为状态输入，无需调整模型张量尺寸</li><li>设置两种训练安排：直接微调（从预训练模型直接引入接口适配下游任务）、基线优先继续微调（先在全任务指令下微调5k步，再引入阶段接口继续训练1k步）</li><li>闭环部署时进度模块与动作模块并行运行，环境执行当前动作块的同时进度模块更新阶段指针，为下一次动作请求提供条件</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：<strong>LIBERO-10</strong>长程操作基准，共10个操作任务，每个任务使用前30条演示数据训练，每个任务评估50个rollout片段</li><li>模型规模：<strong>GR00T N1.6-3B</strong>，包含32层扩散Transformer（DiT）动作头，用于预测相对动作块</li><li>训练资源：4张<strong>NVIDIA A800 GPU</strong>，进度模型训练10k步，直接微调的动作模型训练5k步，继续微调的基线先训练5k步再继续1k步，rollout时使用10个并行环境</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：LIBERO-10基准，固定rollout种子7001，动作和进度步长均为8，阶段推进阈值为0.8，最少15帧阶段时长，3组配对随机种子（101、202、303）的结果取均值和样本标准差</li><li>评估指标：任务成功率（success rate）</li><li>关键实验结果：</li></ul>
+<p> - 直接微调下：原始全任务指令基线（Original）平均成功率为57.45%±8.20%，语义阶段接口（TaskCtx）为50.24%±6.32%，序数阶段状态接口（Ordinal Stage-State）为54.36%±8.17%，两种阶段接口均未超过原始基线性能</p>
+<p> - 继续微调下：原始基线平均成功率为49.07%±2.54%，TaskCtx为50.00%±3.56%，Ordinal Stage-State为53.75%±4.36%，其中Ordinal Stage-State在所有3组配对运行中均超过另外两种方法</p>
+<p> - 整体来看，Ordinal Stage-State在两种训练安排下的平均成功率均高于TaskCtx，但仅在继续微调安排下超过原始全任务指令基线</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.13621/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">UESF-Bench: Benchmarking and Probing for Unified Embodied Seeking and Following</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.13597/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Semantic Anchoring for Robotic Action Representations</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

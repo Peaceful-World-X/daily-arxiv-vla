@@ -1,5 +1,201 @@
 [
   {
+    "date": "2026-07-15",
+    "title": "S-squared-VLA: Decoupling Semantic and Spatial Streams in Vision-Language-Action Models for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2607.13926",
+    "arxiv_id": "2607.13926",
+    "detail_path": "papers/2607.13926/",
+    "cover_path": "covers/2607.13926/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.13926.webp",
+    "preview_text": "针对现有视觉-语言-动作（VLA）模型在自动驾驶中因语义与物理信息耦合导致的空间表示崩溃问题，提出 S²-VLA 框架 通过显式解耦语义流（Semantic Stream） 和空间流（Spatial Stream），弥合高层语义推理与低层精确控制之间的鸿沟 在纯监督微调设定下，实现安全、边界感知且物理可行的轨迹规划",
+    "research_unit": "所有作者均来自 武汉理工大学 (Wuhan University of Technology)",
+    "hook_text": "针对现有视觉-语言-动作（VLA）模型在自动驾驶中因语义与物理信息耦合导致的空间表示崩溃问题，提出 S²-VLA 框架",
+    "key_points": [
+      "针对现有视觉-语言-动作（VLA）模型在自动驾驶中因语义与物理信息耦合导致的空间表示崩溃问题，提出 S²-VLA 框架",
+      "通过显式解耦语义流（Semantic Stream） 和空间流（Spatial Stream），弥合高层语义推理与低层精确控制之间的鸿沟",
+      "在纯监督微调设定下，实现安全、边界感知且物理可行的轨迹规划"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Learning Robust Execution in Robotic Manipulation with Agentic Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2607.13818",
+    "arxiv_id": "2607.13818",
+    "detail_path": "papers/2607.13818/",
+    "cover_path": "covers/2607.13818/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.13818.webp",
+    "preview_text": "提出一种代理强化学习（Agentic Reinforcement Learning）框架，通过解耦执行管理与底层动作生成，提升机器人操作在不确定性、长周期执行和累积误差下的鲁棒性 针对现有视觉-语言-动作（VLA）模型缺乏执行监控与恢复机制的问题，设计运行时执行质量评估指标和高层决策策略，实现从执行退化中自动恢复 核心思想是让一个高层代理策略根据执行历史选择执行模式（执行、重试、修复、重置），在不修改底层策略的前提…",
+    "research_unit": "哈尔滨工业大学深圳（School of Intelligence Science and Engine…",
+    "hook_text": "提出一种代理强化学习（Agentic Reinforcement Learning）框架，通过解耦执行管理与底层动作生成，提升机器人操作在不确…",
+    "key_points": [
+      "提出一种代理强化学习（Agentic Reinforcement Learning）框架，通过解耦执行管理与底层动作生成，提升机器人操作在不确…",
+      "针对现有视觉-语言-动作（VLA）模型缺乏执行监控与恢复机制的问题，设计运行时执行质量评估指标和高层决策策略，实现从执行退化中自动恢复",
+      "核心思想是让一个高层代理策略根据执行历史选择执行模式（执行、重试、修复、重置），在不修改底层策略的前提下调节执行过程"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-15",
+    "title": "UESF-Bench: Benchmarking and Probing for Unified Embodied Seeking and Following",
+    "link": "http://arxiv.org/abs/2607.13621",
+    "arxiv_id": "2607.13621",
+    "detail_path": "papers/2607.13621/",
+    "cover_path": "covers/2607.13621/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.13621.webp",
+    "preview_text": "本文聚焦具身智能体的统一语言引导寻人-跟随任务，要求智能体在单条融合自然语言指令下，先定位初始不在相机视野内的语言描述的目标人物，再在动态环境中无缝切换到持续跟随模式，解决了现有基准默认目标初始可见、搜索与跟随任务分离、缺乏统一评估框架的问题 构建了大规模统一的UESF-Bench具身寻人-跟随基准，涵盖单人与多人干扰场景，包含143万条具身交互样本，为领域提供系统性评估平台 提出SeekFollow-VLA视觉-…",
+    "research_unit": "山东大学",
+    "hook_text": "本文聚焦具身智能体的统一语言引导寻人-跟随任务，要求智能体在单条融合自然语言指令下，先定位初始不在相机视野内的语言描述的目标人物，再在动态环境…",
+    "key_points": [
+      "本文聚焦具身智能体的统一语言引导寻人-跟随任务，要求智能体在单条融合自然语言指令下，先定位初始不在相机视野内的语言描述的目标人物，再在动态环境…",
+      "构建了大规模统一的UESF-Bench具身寻人-跟随基准，涵盖单人与多人干扰场景，包含143万条具身交互样本，为领域提供系统性评估平台",
+      "提出SeekFollow-VLA视觉-语言-动作框架，针对性解决隐式阶段切换下的行为模式混淆、延迟身份对齐、目标丢失后行为恢复等核心挑战"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-15",
+    "title": "An Empirical Study on Stage-Information Interfaces for VLA Fine-Tuning",
+    "link": "http://arxiv.org/abs/2607.13605",
+    "arxiv_id": "2607.13605",
+    "detail_path": "papers/2607.13605/",
+    "cover_path": "covers/2607.13605/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.13605.webp",
+    "preview_text": "本文针对长程操作任务中视觉-语言-动作（VLA）模型微调的子任务信息利用问题开展实证研究，核心目标是明确子任务信息应如何表示、在训练中何时引入，才能有效提升VLA策略性能 研究将分割后的动作阶段标注作为全任务指令与底层动作块之间的中间表示，通过阶段追踪模块跟踪当前活跃阶段，对比两种阶段信息向动作策略的输入接口效果 实验在LIBERO-10基准上基于GR00T N1.6开展，评估直接微调和基于全任务基线的继续微调两种…",
+    "research_unit": "Yingwei Ji（论文唯一作者，所属机构未在提供的HTML内容中明确标注）",
+    "hook_text": "本文针对长程操作任务中视觉-语言-动作（VLA）模型微调的子任务信息利用问题开展实证研究，核心目标是明确子任务信息应如何表示、在训练中何时引入…",
+    "key_points": [
+      "本文针对长程操作任务中视觉-语言-动作（VLA）模型微调的子任务信息利用问题开展实证研究，核心目标是明确子任务信息应如何表示、在训练中何时引入…",
+      "研究将分割后的动作阶段标注作为全任务指令与底层动作块之间的中间表示，通过阶段追踪模块跟踪当前活跃阶段，对比两种阶段信息向动作策略的输入接口效果",
+      "实验在LIBERO-10基准上基于GR00T N1.6开展，评估直接微调和基于全任务基线的继续微调两种训练安排下的策略成功率"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Semantic Anchoring for Robotic Action Representations",
+    "link": "http://arxiv.org/abs/2607.13597",
+    "arxiv_id": "2607.13597",
+    "detail_path": "papers/2607.13597/",
+    "cover_path": "covers/2607.13597/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.13597.webp",
+    "preview_text": "针对Vision-Language-Action（VLA）模型在少量机器人演示上微调时，继承自预训练模型的动作表征语义结构退化、分布外泛化能力差的问题，探究“优质动作表征的定义与退化判定方法”这一核心问题 通过系统性探测框架证实：动作仅微调会逐步侵蚀动作表征与指令语义的对齐结构，且该结构的质量与任务成功率、分布外泛化能力高度同步 提出即插即用的语义锚定方法，在训练阶段对齐动作表征到语义流形，推理时无额外开销，同时提…",
+    "research_unit": "Peking University",
+    "hook_text": "针对Vision-Language-Action（VLA）模型在少量机器人演示上微调时，继承自预训练模型的动作表征语义结构退化、分布外泛化能力…",
+    "key_points": [
+      "针对Vision-Language-Action（VLA）模型在少量机器人演示上微调时，继承自预训练模型的动作表征语义结构退化、分布外泛化能力…",
+      "通过系统性探测框架证实：动作仅微调会逐步侵蚀动作表征与指令语义的对齐结构，且该结构的质量与任务成功率、分布外泛化能力高度同步",
+      "提出即插即用的语义锚定方法，在训练阶段对齐动作表征到语义流形，推理时无额外开销，同时提升分布内和分布外任务性能"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Generalizable VLA Finetuning via Representation Anchoring and Language-Action Alignment",
+    "link": "http://arxiv.org/abs/2607.13429",
+    "arxiv_id": "2607.13429",
+    "detail_path": "papers/2607.13429/",
+    "cover_path": "covers/2607.13429/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.13429.webp",
+    "preview_text": "针对标准行为克隆（BC）微调视觉语言动作（VLA）模型时会覆盖预训练视觉语言模型（VLM）的视觉-语言表征、导致灾难性遗忘与分布外泛化性能差的问题，以及现有共训练方法无法解决语言头与动作头监督割裂、出现语言-动作不一致的问题，提出名为Anchor-Align的VLA微调方法 核心设计包含两个补充目标：视觉-语言锚定（Vision-Language Anchoring）用于保留预训练VLM的表征，语言-动作对齐（La…",
+    "research_unit": "论文作者所属机构包括：University of Illinois Urbana-Champaign、…",
+    "hook_text": "针对标准行为克隆（BC）微调视觉语言动作（VLA）模型时会覆盖预训练视觉语言模型（VLM）的视觉-语言表征、导致灾难性遗忘与分布外泛化性能差的…",
+    "key_points": [
+      "针对标准行为克隆（BC）微调视觉语言动作（VLA）模型时会覆盖预训练视觉语言模型（VLM）的视觉-语言表征、导致灾难性遗忘与分布外泛化性能差的…",
+      "核心设计包含两个补充目标：视觉-语言锚定（Vision-Language Anchoring）用于保留预训练VLM的表征，语言-动作对齐（La…",
+      "研究目标是在不依赖大规模机器人动作预训练的前提下，提升VLA模型在分布外扰动、长程操控等场景下的泛化能力，同时证明保留预训练表征与动作学习并非…"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-05",
+    "title": "HRIBench: Benchmarking Interaction-Centric Human-Robot Collaboration",
+    "link": "http://arxiv.org/abs/2607.13056",
+    "arxiv_id": "2607.13056",
+    "detail_path": "papers/2607.13056/",
+    "cover_path": "covers/2607.13056/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.13056.webp",
+    "preview_text": "当前视觉-语言-动作（VLA）基准主要评估独立的操作技能，未对人机交互的结构进行显式建模，无法反映真实人机协作中所需的共享代理协调、意图理解、时序同步、协议遵守和动态环境安全等核心能力 论文提出HRIBench，首个以可执行交互协作为核心的诊断基准，将协作任务建模为结构化的场景脚本，显式定义智能体角色、时序依赖、协调约束和人类行为分布，连接高层交互需求与可执行仿真环境 基准包含3类交互角色（指令者Instructo…",
+    "research_unit": "中国人民大学（Renmin University of China）：Chang Liu, Jiawe…",
+    "hook_text": "当前视觉-语言-动作（VLA）基准主要评估独立的操作技能，未对人机交互的结构进行显式建模，无法反映真实人机协作中所需的共享代理协调、意图理解、…",
+    "key_points": [
+      "当前视觉-语言-动作（VLA）基准主要评估独立的操作技能，未对人机交互的结构进行显式建模，无法反映真实人机协作中所需的共享代理协调、意图理解、…",
+      "论文提出HRIBench，首个以可执行交互协作为核心的诊断基准，将协作任务建模为结构化的场景脚本，显式定义智能体角色、时序依赖、协调约束和人类…",
+      "基准包含3类交互角色（指令者Instructor、协作者Collaborator、侵入者Intruder）、13个角色条件任务，共650+可执…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-07-14",
     "title": "FlowWAM: Optical Flow as a Unified Action Representation for World Action Models",
     "link": "http://arxiv.org/abs/2607.13017",
