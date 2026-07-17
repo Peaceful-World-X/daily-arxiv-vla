@@ -1,5 +1,369 @@
 [
   {
+    "date": "2026-07-16",
+    "title": "RoboTTT: Context Scaling for Robot Policies",
+    "link": "http://arxiv.org/abs/2607.15275",
+    "arxiv_id": "2607.15275",
+    "detail_path": "papers/2607.15275/",
+    "cover_path": "covers/2607.15275/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.15275.webp",
+    "preview_text": "提出 RoboTTT（Test-Time-Training Robot Policies），一种将测试时训练（TTT）集成到机器人基础模型中的新模型与训练配方。 将机器人的视觉运动上下文长度扩展到 8K 时间步，远超当前最先进策略（通常仅单步或短历史上下文），且不增加推理延迟。 通过长上下文学习，解锁了单次人类视频上下文模仿、在线策略改进、抗扰动鲁棒性以及多阶段长时程任务的更强性能等新能力。",
+    "research_unit": "NVIDIA",
+    "hook_text": "提出 RoboTTT（Test-Time-Training Robot Policies），一种将测试时训练（TTT）集成到机器人基础模型中的…",
+    "key_points": [
+      "提出 RoboTTT（Test-Time-Training Robot Policies），一种将测试时训练（TTT）集成到机器人基础模型中的…",
+      "将机器人的视觉运动上下文长度扩展到 8K 时间步，远超当前最先进策略（通常仅单步或短历史上下文），且不增加推理延迟。",
+      "通过长上下文学习，解锁了单次人类视频上下文模仿、在线策略改进、抗扰动鲁棒性以及多阶段长时程任务的更强性能等新能力。"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Video = World + Event Stream",
+    "link": "http://arxiv.org/abs/2607.15038",
+    "arxiv_id": "2607.15038",
+    "detail_path": "papers/2607.15038/",
+    "cover_path": "covers/2607.15038/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.15038.webp",
+    "preview_text": "提出 Wan-Streamer v0.3，将原生流式交互模型重新框架化为一个统一的观点：视频是世界加上事件流 世界是持久的环境、场景、角色、声音等稳定条件，事件流是世界内随时间变化的一切（行为、语音、环境变化等） 基于此分解定义了一个通用预训练任务，并在实时全双工音视频交互任务上进行实例化，使模型能生成自由形式的语音和行为",
+    "research_unit": "阿里巴巴集团",
+    "hook_text": "提出 Wan-Streamer v0.3，将原生流式交互模型重新框架化为一个统一的观点：视频是世界加上事件流",
+    "key_points": [
+      "提出 Wan-Streamer v0.3，将原生流式交互模型重新框架化为一个统一的观点：视频是世界加上事件流",
+      "世界是持久的环境、场景、角色、声音等稳定条件，事件流是世界内随时间变化的一切（行为、语音、环境变化等）",
+      "基于此分解定义了一个通用预训练任务，并在实时全双工音视频交互任务上进行实例化，使模型能生成自由形式的语音和行为"
+    ],
+    "reading_minutes": 4,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "title": "CosFly-VLA: A Spatially Aware Vision-Language-Action Model for UAV Tracking",
+    "link": "http://arxiv.org/abs/2607.15004",
+    "arxiv_id": "2607.15004",
+    "detail_path": "papers/2607.15004/",
+    "cover_path": "covers/2607.15004/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.15004.webp",
+    "preview_text": "针对无人机（UAV）动态目标跟踪中，现有视觉-语言-动作（VLA）模型在目标被建筑物、植被等长时间遮挡时性能骤降、无法重获取目标的核心问题，将遮挡鲁棒跟踪重构为闭环恢复问题，要求策略在目标不可见时维持空间假设、预测重出现区域、纠正自身动作导致的误差 提出CosFly-VLA空间感知VLA模型，可同时完成目标定位、可见性估计、连续飞行动作生成，适配遮挡下的UAV跟踪任务 设计大规模渐进式训练流程，结合空间预训练、课程…",
+    "research_unit": "Autel Robotics（道通智能）",
+    "hook_text": "针对无人机（UAV）动态目标跟踪中，现有视觉-语言-动作（VLA）模型在目标被建筑物、植被等长时间遮挡时性能骤降、无法重获取目标的核心问题，将…",
+    "key_points": [
+      "针对无人机（UAV）动态目标跟踪中，现有视觉-语言-动作（VLA）模型在目标被建筑物、植被等长时间遮挡时性能骤降、无法重获取目标的核心问题，将…",
+      "提出CosFly-VLA空间感知VLA模型，可同时完成目标定位、可见性估计、连续飞行动作生成，适配遮挡下的UAV跟踪任务",
+      "设计大规模渐进式训练流程，结合空间预训练、课程学习、思维链训练和闭环强化学习，提升模型在遮挡场景下的恢复能力"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "title": "AeroAct: Action-Centered World-Action Models for Language-Conditioned Quadrotor Flight",
+    "link": "http://arxiv.org/abs/2607.14997",
+    "arxiv_id": "2607.14997",
+    "detail_path": "papers/2607.14997/",
+    "cover_path": "covers/2607.14997/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.14997.webp",
+    "preview_text": "针对语言条件四旋翼飞行任务，提出 AeroAct，一种以动作为中心的世界-动作模型（World-Action Model, WAM），用于将语义指令与可执行的飞行控制相连接。 解决现有方法（离散动作、全局航点或瞬时速度指令）缺乏对飞行动作如何改变未来视觉观测的密集监督问题，导致难以生成平滑且动态可行的轨迹。 通过未来第一人称视觉预测提供训练时的密集后果监督，部署时直接解码平滑轨迹动作块，无需推理时生成未来视频。",
+    "research_unit": "北京理工大学自动化学院（张新弘、朱启元、黄宇博、王润清、莫宇昊、陈中新、孙健、王刚）",
+    "hook_text": "针对语言条件四旋翼飞行任务，提出 AeroAct，一种以动作为中心的世界-动作模型（World-Action Model, WAM），用于将语…",
+    "key_points": [
+      "针对语言条件四旋翼飞行任务，提出 AeroAct，一种以动作为中心的世界-动作模型（World-Action Model, WAM），用于将语…",
+      "解决现有方法（离散动作、全局航点或瞬时速度指令）缺乏对飞行动作如何改变未来视觉观测的密集监督问题，导致难以生成平滑且动态可行的轨迹。",
+      "通过未来第一人称视觉预测提供训练时的密集后果监督，部署时直接解码平滑轨迹动作块，无需推理时生成未来视频。"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Towards Human-like Physical Intelligence: LifelongVision-Language-Action Learning for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2607.14852",
+    "arxiv_id": "2607.14852",
+    "detail_path": "papers/2607.14852/",
+    "cover_path": "covers/2607.14852/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.14852.webp",
+    "preview_text": "针对机器人操作中Vision-Language-Action (VLA) 模型的终身学习需求，解决新技能获取与旧技能保持之间的塑性-稳定性权衡（plasticity-stability trade-off）难题 指出现有VLA模型多采用静态离线训练范式，无法持续适应开放世界中的新物体、新指令和新场景，而现有终身学习方法存在权衡不足或全轨迹重放开销过高的问题 提出 LifelongVLA 缓存高效终身学习框架，通过双…",
+    "research_unit": "South China University of Technology（华南理工大学）：Yao He…",
+    "hook_text": "针对机器人操作中Vision-Language-Action (VLA) 模型的终身学习需求，解决新技能获取与旧技能保持之间的塑性-稳定性权衡…",
+    "key_points": [
+      "针对机器人操作中Vision-Language-Action (VLA) 模型的终身学习需求，解决新技能获取与旧技能保持之间的塑性-稳定性权衡…",
+      "指出现有VLA模型多采用静态离线训练范式，无法持续适应开放世界中的新物体、新指令和新场景，而现有终身学习方法存在权衡不足或全轨迹重放开销过高的…",
+      "提出 LifelongVLA 缓存高效终身学习框架，通过双时间尺度适配机制和随机重放策略，在有限内存下实现新技能的高效扩展与旧技能的稳健保留"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "title": "FoMoVLA: Bridging Visual Foresight and Motion Guidance for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2607.14739",
+    "arxiv_id": "2607.14739",
+    "detail_path": "papers/2607.14739/",
+    "cover_path": "covers/2607.14739/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.14739.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）模型采用反应式范式，仅能基于当前视觉观测和语言指令直接生成动作，缺乏对世界动态演化的显式时空预见能力，难以处理长程操作任务 现有视觉预见增强的VLA方法存在两方面局限：要么预测冗余的未来像素信息，计算开销大且包含大量与控制无关的静态内容；要么仅建模目标状态，未提供到达目标所需的连续运动引导 本文提出FoMoVLA框架，通过联合学习紧凑的未来特征预测与稀疏2D点跟踪任务，为VLA模型注入…",
+    "research_unit": "论文作者主要来自上海AI实验室（LI Auto Research），合作方包括相关机器人学研究团队",
+    "hook_text": "现有视觉-语言-动作（VLA）模型采用反应式范式，仅能基于当前视觉观测和语言指令直接生成动作，缺乏对世界动态演化的显式时空预见能力，难以处理长…",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）模型采用反应式范式，仅能基于当前视觉观测和语言指令直接生成动作，缺乏对世界动态演化的显式时空预见能力，难以处理长…",
+      "现有视觉预见增强的VLA方法存在两方面局限：要么预测冗余的未来像素信息，计算开销大且包含大量与控制无关的静态内容；要么仅建模目标状态，未提供到…",
+      "本文提出FoMoVLA框架，通过联合学习紧凑的未来特征预测与稀疏2D点跟踪任务，为VLA模型注入显式时空监督，同时建模目标状态与连续运动路径…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color",
+    "link": "http://arxiv.org/abs/2607.14698",
+    "arxiv_id": "2607.14698",
+    "detail_path": "papers/2607.14698/",
+    "cover_path": "covers/2607.14698/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.14698.webp",
+    "preview_text": "聚焦Vision-Language-Action（VLA）模型在物理光照扰动下的安全漏洞，指出现有先进VLA模型泛化性不足，轻微的光照变化（如定向聚光灯照射）即可导致任务完全失效，暴露其在实际部署中的可靠性风险。 揭示标准对抗训练方法的隐藏缺陷：朴素的数据增强（如全范围HSV变换）会诱导模型丢弃颜色语义信息，退化为仅依赖形状的灰度级感知器，在需要颜色区分的真实任务上性能大幅下降。 提出对应的攻击与防御框架，旨在平衡…",
+    "research_unit": "Keio University（论文所有作者所属研究机构）",
+    "hook_text": "聚焦Vision-Language-Action（VLA）模型在物理光照扰动下的安全漏洞，指出现有先进VLA模型泛化性不足，轻微的光照变化（如…",
+    "key_points": [
+      "聚焦Vision-Language-Action（VLA）模型在物理光照扰动下的安全漏洞，指出现有先进VLA模型泛化性不足，轻微的光照变化（如…",
+      "揭示标准对抗训练方法的隐藏缺陷：朴素的数据增强（如全范围HSV变换）会诱导模型丢弃颜色语义信息，退化为仅依赖形状的灰度级感知器，在需要颜色区分…",
+      "提出对应的攻击与防御框架，旨在平衡VLA模型的光照鲁棒性与颜色感知能力，支撑其安全可靠地部署到真实机器人场景中。"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Reflex: Real-Time VLA Control through Streaming Inference",
+    "link": "http://arxiv.org/abs/2607.14695",
+    "arxiv_id": "2607.14695",
+    "detail_path": "papers/2607.14695/",
+    "cover_path": "covers/2607.14695/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.14695.webp",
+    "preview_text": "针对Flow Matching视觉-语言-动作（VLA）模型的核心矛盾：迭代去噪的同步阻塞特性导致机器人反应延迟，全局时间步注入使KV缓存失效，无法同时保证推理正确性和效率，阻碍VLA模型在动态场景下的实时应用。 论文提出Reflex流式推理框架，核心是利用VLA模型的时间步不变性（感知编码器与去噪循环功能解耦），通过架构与系统协同设计，实现高频率、低延迟、稳定的实时VLA控制。 研究目标为弥合VLA模型的“控制-…",
+    "research_unit": "原文未明确标注作者所属研究机构",
+    "hook_text": "针对Flow Matching视觉-语言-动作（VLA）模型的核心矛盾：迭代去噪的同步阻塞特性导致机器人反应延迟，全局时间步注入使KV缓存失效…",
+    "key_points": [
+      "针对Flow Matching视觉-语言-动作（VLA）模型的核心矛盾：迭代去噪的同步阻塞特性导致机器人反应延迟，全局时间步注入使KV缓存失效…",
+      "论文提出Reflex流式推理框架，核心是利用VLA模型的时间步不变性（感知编码器与去噪循环功能解耦），通过架构与系统协同设计，实现高频率、低延…",
+      "研究目标为弥合VLA模型的“控制-推理差距”，在不损失任务性能的前提下，将控制频率提升至机器人所需的50Hz级别，同时解决高频率流式推理的数值…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2607.14635",
+    "arxiv_id": "2607.14635",
+    "detail_path": "papers/2607.14635/",
+    "cover_path": "covers/2607.14635/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.14635.webp",
+    "preview_text": "论文聚焦视觉-语言-动作（VLA）模型中动作监督对预训练继承多模态表示的塑造作用，揭示其双重效应：动作监督是形成动作兼容表示的必要条件，但直接施加到继承的多模态通路时，会破坏支持语言侧处理和视觉 grounding 的原有表示 提出Action QFormer 作为查询驱动的动作面向接口，通过指令条件查询重组继承的多模态信息，在不破坏原有表示的前提下适配动作生成需求 以零样本 sim-to-real 导航为高要求测…",
+    "research_unit": "上海量子工程研究所（Shanghai Qizhi Institute）",
+    "hook_text": "论文聚焦视觉-语言-动作（VLA）模型中动作监督对预训练继承多模态表示的塑造作用，揭示其双重效应：动作监督是形成动作兼容表示的必要条件，但直接…",
+    "key_points": [
+      "论文聚焦视觉-语言-动作（VLA）模型中动作监督对预训练继承多模态表示的塑造作用，揭示其双重效应：动作监督是形成动作兼容表示的必要条件，但直接…",
+      "提出Action QFormer 作为查询驱动的动作面向接口，通过指令条件查询重组继承的多模态信息，在不破坏原有表示的前提下适配动作生成需求",
+      "以零样本 sim-to-real 导航为高要求测试场景，验证所提方法对闭环任务稳定性和动作生成正确率的提升效果"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Representation-Aligned Tactile Grounding for Contact-Rich Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2607.14609",
+    "arxiv_id": "2607.14609",
+    "detail_path": "papers/2607.14609/",
+    "cover_path": "covers/2607.14609/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.14609.webp",
+    "preview_text": "聚焦接触丰富机器人操作场景中，触觉增强视觉-语言-动作（VLA）策略的未来触觉预测应作用于哪个内部表示的核心问题，研究触觉预测的表示对齐性对操作性能的影响 通过线性探针诊断发现VLA策略的中间动作专家层表示对未来触觉状态的可预测性最高，提出轻量级潜触觉预测器（LTP）在该层提供训练时的触觉接地信号 在不改变策略推理路径的前提下，提升VLA对视觉无法感知的接触动态（如滑移、压力、装配对齐度）的建模能力，解决接触丰富操…",
+    "research_unit": "复旦大学上海智能信息处理重点实验室",
+    "hook_text": "聚焦接触丰富机器人操作场景中，触觉增强视觉-语言-动作（VLA）策略的未来触觉预测应作用于哪个内部表示的核心问题，研究触觉预测的表示对齐性对操…",
+    "key_points": [
+      "聚焦接触丰富机器人操作场景中，触觉增强视觉-语言-动作（VLA）策略的未来触觉预测应作用于哪个内部表示的核心问题，研究触觉预测的表示对齐性对操…",
+      "通过线性探针诊断发现VLA策略的中间动作专家层表示对未来触觉状态的可预测性最高，提出轻量级潜触觉预测器（LTP）在该层提供训练时的触觉接地信号",
+      "在不改变策略推理路径的前提下，提升VLA对视觉无法感知的接触动态（如滑移、压力、装配对齐度）的建模能力，解决接触丰富操作的成功率瓶颈"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-15",
+    "title": "DiMaS: Distribution Matching for Steering Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2607.14280",
+    "arxiv_id": "2607.14280",
+    "detail_path": "papers/2607.14280/",
+    "cover_path": "covers/2607.14280/",
+    "paper_image_path": "",
+    "preview_text": "针对基于flow matching的视觉-语言-动作（VLA）模型在细粒度行为控制（通过干预模型内部表征调控机器人执行任务的方式）能力不足的问题，指出经典的表征操纵方法在该场景下存在明显失效问题 提出专门适配flow matching VLA的DiMaS（Distribution-Matching Steering）策略，核心是通过表征分布传输替代传统固定线性方向偏移的方式实现行为调控 研究进一步探究该策略的跨任务…",
+    "research_unit": "ISIR, Sorbonne Université (Paris, France)：Pegah Kha…",
+    "hook_text": "针对基于flow matching的视觉-语言-动作（VLA）模型在细粒度行为控制（通过干预模型内部表征调控机器人执行任务的方式）能力不足的问…",
+    "key_points": [
+      "针对基于flow matching的视觉-语言-动作（VLA）模型在细粒度行为控制（通过干预模型内部表征调控机器人执行任务的方式）能力不足的问…",
+      "提出专门适配flow matching VLA的DiMaS（Distribution-Matching Steering）策略，核心是通过表征…",
+      "研究进一步探究该策略的跨任务泛化性，分析行为控制能力在学习任务与评估任务差异逐步增大时的迁移规律与失效边界，同时解释经典线性操纵在visuom…"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Never Too Late for Force: Accelerating VLA Post-Training with Reactive Force Injection",
+    "link": "http://arxiv.org/abs/2607.14236",
+    "arxiv_id": "2607.14236",
+    "detail_path": "papers/2607.14236/",
+    "cover_path": "covers/2607.14236/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.14236.webp",
+    "preview_text": "针对预训练视觉-语言-动作（VLA）策略在接触-rich操作中依赖视觉、易受遮挡/深度模糊/接触误差影响的问题，提出LIFT（Late Reactive Injection of Force for VLA Post-Training）框架 核心目标是在不破坏预训练VLA通用操作能力的前提下，通过后期后训练为其添加接触反应力感知能力，提升接触状态下的操作性能 解决三个关键问题：如何高效注入高频低维的力信号以实现实时…",
+    "research_unit": "上海交通大学",
+    "hook_text": "针对预训练视觉-语言-动作（VLA）策略在接触-rich操作中依赖视觉、易受遮挡/深度模糊/接触误差影响的问题，提出LIFT（Late Rea…",
+    "key_points": [
+      "针对预训练视觉-语言-动作（VLA）策略在接触-rich操作中依赖视觉、易受遮挡/深度模糊/接触误差影响的问题，提出LIFT（Late Rea…",
+      "核心目标是在不破坏预训练VLA通用操作能力的前提下，通过后期后训练为其添加接触反应力感知能力，提升接触状态下的操作性能",
+      "解决三个关键问题：如何高效注入高频低维的力信号以实现实时接触响应、如何保留预训练VLA的先验能力、如何处理力数据的策略依赖分布偏移问题"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-15",
+    "title": "Open-AoE: An Open Egocentric Manipulation Dataset and Toolchain for Embodied Learning",
+    "link": "http://arxiv.org/abs/2607.14183",
+    "arxiv_id": "2607.14183",
+    "detail_path": "papers/2607.14183/",
+    "cover_path": "covers/2607.14183/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.14183.webp",
+    "preview_text": "提出 Open-AoE，一个面向具身学习的开放第一人称（egocentric）操作数据集与工具链，旨在解决现有资源缺乏低成本持续采集、操作级结构化标注和可复用机器人学习工具的核心缺口 首次发布约 2,000小时的真实场景第一人称操作视频，由 500+贡献者使用 400+消费级智能手机在自然环境中采集，涵盖 400+场景和 8,000+任务 构建从原始视频采集到模型训练的全流程开源基础设施，包含云端处理管道和下游工具…",
+    "research_unit": "Ant Digital Technology, Ant Group（蚂蚁数字科技，蚂蚁集团）",
+    "hook_text": "提出 Open-AoE，一个面向具身学习的开放第一人称（egocentric）操作数据集与工具链，旨在解决现有资源缺乏低成本持续采集、操作级结…",
+    "key_points": [
+      "提出 Open-AoE，一个面向具身学习的开放第一人称（egocentric）操作数据集与工具链，旨在解决现有资源缺乏低成本持续采集、操作级结…",
+      "首次发布约 2,000小时的真实场景第一人称操作视频，由 500+贡献者使用 400+消费级智能手机在自然环境中采集，涵盖 400+场景和 8…",
+      "构建从原始视频采集到模型训练的全流程开源基础设施，包含云端处理管道和下游工具链（数据可视化、4D重建、跨 embodiment 重定向、多模型…"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
     "date": "2026-07-15",
     "title": "S-squared-VLA: Decoupling Semantic and Spatial Streams in Vision-Language-Action Models for Autonomous Driving",
     "link": "http://arxiv.org/abs/2607.13926",

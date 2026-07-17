@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reflex: Real-Time VLA Control through Streaming Inference - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对Flow Matching视觉-语言-动作（VLA）模型的核心矛盾：迭代去噪的同步阻塞特性导致机器人反应延迟，全局时间步注入使KV缓存失效，无法同时保证推理正确性和效率，阻碍VLA模型在动态场景下的实时应用。 论文提出Reflex流式推理框架，核心是利用VLA模型的时间步不变性（感知编码器与去噪循环功能解耦），通过架构与系统协同设计，实现高频率、低延迟、稳定的实时VLA控制。 研究目标为弥合VLA模型的“控制-…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.14695">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.14695.webp" alt="Reflex: Real-Time VLA Control through Streaming Inference" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对Flow Matching视觉-语言-动作（VLA）模型的核心矛盾：迭代去噪的同步阻塞特性导致机器人反应延迟，全局时间步注入使KV缓存失效…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Reflex: Real-Time VLA Control through Streaming Inference</h1>
+            <div class="detail-meta">2026-07-16 · <a href="http://arxiv.org/abs/2607.14695" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.14695" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.14695</span></div>
+            <p class="detail-summary">针对Flow Matching视觉-语言-动作（VLA）模型的核心矛盾：迭代去噪的同步阻塞特性导致机器人反应延迟，全局时间步注入使KV缓存失效，无法同时保证推理正确性和效率，阻碍VLA模型在动态场景下的实时应用。 论文提出Reflex流式推理框架，核心是利用VLA模型的时间步不变性（感知编码器与去噪循环功能解耦），通过架构与系统协同设计，实现高频率、低延迟、稳定的实时VLA控制。 研究目标为弥合VLA模型的“控制-…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">原文未明确标注作者所属研究机构</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.14695/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对Flow Matching视觉-语言-动作（VLA）模型的核心矛盾：迭代去噪的同步阻塞特性导致机器人反应延迟，全局时间步注入使KV缓存失效…</p>
+  <ul class="reading-intro-points"><li>针对Flow Matching视觉-语言-动作（VLA）模型的核心矛盾：迭代去噪的同步阻塞特性导致机器人反应延迟，全局时间步注入使KV缓存失效…</li><li>论文提出Reflex流式推理框架，核心是利用VLA模型的时间步不变性（感知编码器与去噪循环功能解耦），通过架构与系统协同设计，实现高频率、低延…</li><li>研究目标为弥合VLA模型的“控制-推理差距”，在不损失任务性能的前提下，将控制频率提升至机器人所需的50Hz级别，同时解决高频率流式推理的数值…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>原文未明确标注作者所属研究机构</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对Flow Matching视觉-语言-动作（VLA）模型的核心矛盾：迭代去噪的同步阻塞特性导致机器人反应延迟，全局时间步注入使KV缓存失效，无法同时保证推理正确性和效率，阻碍VLA模型在动态场景下的实时应用。</li><li>论文提出<strong>Reflex</strong>流式推理框架，核心是利用VLA模型的<strong>时间步不变性</strong>（感知编码器与去噪循环功能解耦），通过架构与系统协同设计，实现高频率、低延迟、稳定的实时VLA控制。</li><li>研究目标为弥合VLA模型的“控制-推理差距”，在不损失任务性能的前提下，将控制频率提升至机器人所需的50Hz级别，同时解决高频率流式推理的数值稳定性问题。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出研究范式转变：从传统加速单步推理转向基于流式的异步执行，从系统层面解决VLA实时控制的核心瓶颈。</li><li>设计Reflex异步推理架构，核心创新包括：基于时间步不变性的<strong>分区注意力机制</strong>，实现固定输入下O(1)增量缓存更新且输出与全批量注意力完全等价；<strong>AdaRMSNorm</strong>自适应归一化层，保障无限时域混合精度流式推理的数值稳定性。</li><li>配套系统级优化：包括算子融合降低内核启动开销、环形缓冲区架构消除内存碎片与垃圾回收延迟，进一步推高系统吞吐量。</li><li>在LIBERO和Kinetix基准及AgileX PiPer实机上的验证表明，Reflex可最高降低54%的系统反应延迟，实现50Hz稳定连续控制，同时保持任务性能不退化。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>核心设计思路：利用VLA模型的架构特性——计算密集的视觉感知编码器处理缓慢变化的观测（10-30Hz），而流匹配去噪循环需要高频更新（50Hz），通过解耦两个模块的执行流程，将每步推理延迟降至常数级。</li><li>关键技术1：<strong>分区注意力机制</strong>。将模型上下文划分为三个语义区域：固定不变的静态指令前缀、滑动更新的视觉观测历史窗口、每轮去噪循环重置的动态流状态后缀。利用感知编码器的时间步不变性，仅对动态区域重计算，实现O(1)增量缓存更新，理论证明固定输入和观察窗口下输出与全批量注意力完全等价。</li><li>关键技术2：<strong>AdaRMSNorm自适应归一化层</strong>。针对高频率流式推理下BFloat16精度易出现的激活坍缩问题，将RMS统计量计算置于FP32精度，通过轻量级MLP门控动态调整激活分布，仅增加0.4ms延迟即可将稳定推理步数从基线的120-220步提升至2000步以上，避免无限时域部署的数值崩溃。</li><li>关键技术3：<strong>异步流水线与未来状态预测</strong>。将视觉编码与动作生成解耦到独立线程并行执行，通过轻量级未来状态预测器补偿异步延迟，结合自适应重叠调度动态调整预计算步长，确保动作指令与控制周期精准对齐，消除同步推理的100%失速问题。</li><li>系统级优化：采用QKV投影融合、SwiGLU门控/上投影融合等算子融合技术降低内核启动开销；采用预分配环形缓冲区替代动态内存分配，消除堆碎片和垃圾回收延迟抖动，保障确定性延迟。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>LIBERO</strong>基准（包含空间推理、物体操作、目标条件、多步长序列四类准静态操作任务）、<strong>Kinetix</strong>基准（强调复杂物理交互下高频控制的动态扰动任务）</li><li>模型规模：基于<strong>Pi0.5</strong>（2.3B参数，含2B参数PaliGemma视觉-语言骨干与300M动作专家解码器）和更大规模的<strong>Pi0</strong>（3.1B参数）两款Flow Matching VLA模型进行验证</li><li>训练资源：原文未明确标注训练所用硬件资源；推理评估使用NVIDIA RTX 4090、NVIDIA RTX 3090 GPU</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基线：仿真环境覆盖LIBERO四类子任务与Kinetix动态任务，实机验证使用AgileX PiPer机器人平台；基线包括标准同步推理（Standard）、无分区注意力的朴素KV缓存（Naive Cache）、无未来状态调度的朴素异步推理（Async-Naive）</li><li>主要评估指标：<strong>推理延迟</strong>（单动作块生成耗时）、<strong>端到端反应延迟</strong>（观测捕获到动作执行的延迟）、<strong>失速率</strong>（控制周期中动作输出延迟的比例）、<strong>峰值显存占用</strong>、<strong>任务成功率</strong></li><li>关键实验结果：</li></ul>
+<p> - 推理效率：在Pi0.5上实现<strong>2.58倍</strong>推理加速，延迟从135.2ms降至52.4ms；Pi0上加速比达<strong>2.73倍</strong>，验证了方案在不同规模模型上的通用性。相比基线可节省27%（LIBERO）/24%（Kinetix）的峰值显存。</p>
+<p> - 控制响应性：相比同步基线最高降低<strong>54%</strong>的反应延迟，实现<strong>0%失速率</strong>，支持稳定的50Hz连续控制，解决同步推理的动作滞后与停顿问题。</p>
+<p> - 任务性能：在LIBERO上保持与同步基线相当的性能，长序列任务（LIBERO-Long）分别提升3.6%（Pi0.5）和4.0%（Pi0）；在动态的Kinetix基准上分别提升7.4%（Pi0.5）和6.7%（Pi0），动态场景下延迟降低的优势更显著。</p>
+<p> - 实机验证：在AgileX PiPer的3项物理任务中，相比Sync和Async-Naive基线，成功率分别提升11pp、14pp、17pp，反应延迟保持在101-110ms，失速率为0%，验证了实际部署的可行性。</p>
+<p> - 消融实验：分区注意力在固定输入下与全批量注意力的MSE完全为0，无正确性损失；AdaRMSNorm可避免高频率推理的数值崩溃；算子融合可降低动作专家前向延迟18%，是满足50Hz控制预算的关键优化。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.14698/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.14635/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

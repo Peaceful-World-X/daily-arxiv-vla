@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RoboTTT: Context Scaling for Robot Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 RoboTTT（Test-Time-Training Robot Policies），一种将测试时训练（TTT）集成到机器人基础模型中的新模型与训练配方。 将机器人的视觉运动上下文长度扩展到 8K 时间步，远超当前最先进策略（通常仅单步或短历史上下文），且不增加推理延迟。 通过长上下文学习，解锁了单次人类视频上下文模仿、在线策略改进、抗扰动鲁棒性以及多阶段长时程任务的更强性能等新能力。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.15275">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.15275.webp" alt="RoboTTT: Context Scaling for Robot Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 RoboTTT（Test-Time-Training Robot Policies），一种将测试时训练（TTT）集成到机器人基础模型中的…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RoboTTT: Context Scaling for Robot Policies</h1>
+            <div class="detail-meta">2026-07-16 · <a href="http://arxiv.org/abs/2607.15275" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.15275" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.15275</span></div>
+            <p class="detail-summary">提出 RoboTTT（Test-Time-Training Robot Policies），一种将测试时训练（TTT）集成到机器人基础模型中的新模型与训练配方。 将机器人的视觉运动上下文长度扩展到 8K 时间步，远超当前最先进策略（通常仅单步或短历史上下文），且不增加推理延迟。 通过长上下文学习，解锁了单次人类视频上下文模仿、在线策略改进、抗扰动鲁棒性以及多阶段长时程任务的更强性能等新能力。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">NVIDIA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.15275/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 RoboTTT（Test-Time-Training Robot Policies），一种将测试时训练（TTT）集成到机器人基础模型中的…</p>
+  <ul class="reading-intro-points"><li>提出 RoboTTT（Test-Time-Training Robot Policies），一种将测试时训练（TTT）集成到机器人基础模型中的…</li><li>将机器人的视觉运动上下文长度扩展到 8K 时间步，远超当前最先进策略（通常仅单步或短历史上下文），且不增加推理延迟。</li><li>通过长上下文学习，解锁了单次人类视频上下文模仿、在线策略改进、抗扰动鲁棒性以及多阶段长时程任务的更强性能等新能力。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>NVIDIA</strong></li><li><strong>Stanford University</strong></li><li><strong>The University of Texas at Austin</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>RoboTTT</strong>（Test-Time-Training Robot Policies），一种将测试时训练（TTT）集成到机器人基础模型中的新模型与训练配方。</li><li>将机器人的视觉运动上下文长度扩展到 <strong>8K 时间步</strong>，远超当前最先进策略（通常仅单步或短历史上下文），且不增加推理延迟。</li><li>通过长上下文学习，解锁了<strong>单次人类视频上下文模仿</strong>、<strong>在线策略改进</strong>、<strong>抗扰动鲁棒性</strong>以及<strong>多阶段长时程任务的更强性能</strong>等新能力。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次将 <strong>Test-Time Training (TTT)</strong> 机制集成到机器人基础模型（如 VLA 策略）中，设计出以快速权重为循环状态的序列模型 <strong>RoboTTT</strong>。</li><li>将机器人策略的上下文长度扩展到 <strong>8K 时间步</strong>，较现有方法提升三个数量级，并首次观察到<strong>预训练上下文长度扩展</strong>能带来闭环性能的稳定提升。</li><li>提出 <strong>序列动作强制</strong> 与 <strong>截断时序反向传播</strong> 相结合的训练配方，在固定 GPU 内存下实现长序列训练。</li><li>实现了 <strong>单次上下文内模仿</strong>（从人类视频中学习新任务）和 <strong>DAgger 蒸馏</strong>（从失败-修正映射中学习在线自我改进）等新能力。</li><li>在真实机器人多阶段装配任务上，RoboTTT 相比单步上下文基线性能提升 <strong>87%</strong>，并首次完成耗时 <strong>5 分钟</strong>、包含 <strong>10 个阶段</strong>的复杂装配任务。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>模型架构</strong>：在预训练 VLA 模型（<strong>GR00T N1.7</strong>）的 DiT 动作头中，在注意力层后插入 TTT 层，形成两层 MLP 的快速模型。注意力层处理单步信息，TTT 层处理跨时间步信息。</li><li><strong>核心机制</strong>：TTT 层的快速权重在训练和推理时均通过梯度下降更新，将历史信息压缩进权重空间，实现恒定的推理成本。</li><li><strong>训练技术</strong>：采用 <strong>序列动作强制</strong>（对序列中每个动作块独立采样噪声级别）和 <strong>截断时序反向传播</strong>（将长序列分段，梯度在段内流动，快速权重跨段传递）来稳定训练并控制内存。</li><li><strong>新能力训练</strong>：</li></ul>
+<p> - <strong>单次上下文模仿</strong>：将人类视频演示与机器人轨迹配对，视频部分仅更新快速权重，动作损失基于机器人轨迹计算。</p>
+<p> - <strong>DAgger 蒸馏</strong>：将 DAgger 收集的交互历史（包含次优动作和人类修正）作为上下文，仅对人类修正计算模仿损失，蒸馏出失败到修正的映射。</p>
+<ul><li><strong>推理</strong>：每次部署从学习到的快速权重初始化开始，在每个时间步更新快速权重并传播至下一时间步。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>基础模型</strong>：基于 <strong>GR00T N1.7</strong> 预训练 VLA 模型，添加了 16 个 TTT 层，每个快速模型为两层 MLP。</li><li><strong>训练数据</strong>：混合了桌面双臂机器人数据和以自我为中心的人类数据（<strong>Ego4D</strong>）。</li><li><strong>任务数据</strong>：在三个真实机器人装配任务上收集数据：<strong>Pup Go Car</strong>（8 小时）、<strong>Circuit</strong>（6 小时）和 <strong>Gear Bot</strong>（5 小时）。</li><li><strong>计算资源</strong>：在 <strong>16 块 NVIDIA GB200 GPU</strong> 上进行预训练，共 30K 步；下游任务后训练 20K 步。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：在 <strong>YAM 双臂机器人</strong>上进行三个长时程、多阶段装配任务（Pup Go Car, Circuit, Gear Bot），使用 4 个 RGB 相机。</li><li><strong>对比基线</strong>：<strong>GR00T N1.7</strong>（单步上下文）、<strong>GR00T N1.7 Hist.</strong>（单帧历史）、<strong>GDN</strong>（基于 Gated DeltaNet 的循环记忆）。</li><li><strong>主要结果</strong>：</li></ul>
+<p> - 在三个任务上，RoboTTT 平均任务完成得分 <strong>79%</strong>，比单步基线（42%）高 <strong>87%</strong>，比最佳基线 GDN（56%）高 <strong>41%</strong>。</p>
+<p> - 在最长时程任务 Gear Bot 上，RoboTTT 是唯一能完全成功的模型（2/10 次）。</p>
+<p> - <strong>上下文长度扩展</strong>：RoboTTT-8K 比 1K 上下文版本性能高 <strong>63%</strong>，且性能随上下文长度增加持续提升，未见饱和。</p>
+<p> - <strong>单次模仿</strong>：在 Circuit 任务上，RoboTTT 成功完成 6/10 次，而 GDN 完全失败。</p>
+<p> - <strong>扰动鲁棒性</strong>：在 Pup Go Car 上，RoboTTT 在屋顶扰动下恢复成功率 <strong>83%</strong>（对比基线最高 53%）。</p>
+<p> - <strong>DAgger 蒸馏</strong>：相比标准 DAgger 训练，DAgger 蒸馏使 RoboTTT 性能提升 <strong>36%</strong>，展现出在线自我纠错能力。</p>
+<ul><li><strong>消融实验</strong>：验证了序列动作强制、MLP 快速模型、动作令牌和寄存器令牌对性能的关键作用。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2607.15038/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Video = World + Event Stream</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

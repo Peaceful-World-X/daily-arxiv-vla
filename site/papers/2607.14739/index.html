@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FoMoVLA: Bridging Visual Foresight and Motion Guidance for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有视觉-语言-动作（VLA）模型采用反应式范式，仅能基于当前视觉观测和语言指令直接生成动作，缺乏对世界动态演化的显式时空预见能力，难以处理长程操作任务 现有视觉预见增强的VLA方法存在两方面局限：要么预测冗余的未来像素信息，计算开销大且包含大量与控制无关的静态内容；要么仅建模目标状态，未提供到达目标所需的连续运动引导 本文提出FoMoVLA框架，通过联合学习紧凑的未来特征预测与稀疏2D点跟踪任务，为VLA模型注入…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.14739">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.14739.webp" alt="FoMoVLA: Bridging Visual Foresight and Motion Guidance for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有视觉-语言-动作（VLA）模型采用反应式范式，仅能基于当前视觉观测和语言指令直接生成动作，缺乏对世界动态演化的显式时空预见能力，难以处理长…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">FoMoVLA: Bridging Visual Foresight and Motion Guidance for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-07-16 · <a href="http://arxiv.org/abs/2607.14739" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.14739" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.14739</span></div>
+            <p class="detail-summary">现有视觉-语言-动作（VLA）模型采用反应式范式，仅能基于当前视觉观测和语言指令直接生成动作，缺乏对世界动态演化的显式时空预见能力，难以处理长程操作任务 现有视觉预见增强的VLA方法存在两方面局限：要么预测冗余的未来像素信息，计算开销大且包含大量与控制无关的静态内容；要么仅建模目标状态，未提供到达目标所需的连续运动引导 本文提出FoMoVLA框架，通过联合学习紧凑的未来特征预测与稀疏2D点跟踪任务，为VLA模型注入…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者主要来自上海AI实验室（LI Auto Research），合作方包括相关机器人学研究团队</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.14739/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有视觉-语言-动作（VLA）模型采用反应式范式，仅能基于当前视觉观测和语言指令直接生成动作，缺乏对世界动态演化的显式时空预见能力，难以处理长…</p>
+  <ul class="reading-intro-points"><li>现有视觉-语言-动作（VLA）模型采用反应式范式，仅能基于当前视觉观测和语言指令直接生成动作，缺乏对世界动态演化的显式时空预见能力，难以处理长…</li><li>现有视觉预见增强的VLA方法存在两方面局限：要么预测冗余的未来像素信息，计算开销大且包含大量与控制无关的静态内容；要么仅建模目标状态，未提供到…</li><li>本文提出FoMoVLA框架，通过联合学习紧凑的未来特征预测与稀疏2D点跟踪任务，为VLA模型注入显式时空监督，同时建模目标状态与连续运动路径…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者主要来自<strong>上海AI实验室（LI Auto Research）</strong>，合作方包括相关机器人学研究团队</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有视觉-语言-动作（VLA）模型采用反应式范式，仅能基于当前视觉观测和语言指令直接生成动作，缺乏对世界动态演化的显式时空预见能力，难以处理长程操作任务</li><li>现有视觉预见增强的VLA方法存在两方面局限：要么预测冗余的未来像素信息，计算开销大且包含大量与控制无关的静态内容；要么仅建模目标状态，未提供到达目标所需的连续运动引导</li><li>本文提出<strong>FoMoVLA</strong>框架，通过联合学习紧凑的未来特征预测与稀疏2D点跟踪任务，为VLA模型注入显式时空监督，同时建模目标状态与连续运动路径，提升动作生成的预见性和物理合理性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出新型VLA框架，通过联合学习紧凑的未来特征预测与稀疏2D点跟踪，为VLA的隐式视觉表示注入显式的时空监督信号，弥补现有反应式VLA的预见性不足问题</li><li>设计<strong>未来条件交叉注意力（FCCA）</strong>模块，以零初始化方式耦合预见令牌与时间点跟踪任务，确保预测的未来视觉状态与几何运动动态保持一致性，实现两个辅助任务的协同增益</li><li>在<strong>LIBERO</strong>、<strong>RoboCasa GR-1 Tabletop</strong>和<strong>LIBERO-Plus</strong>三个主流机器人操作基准上达到state-of-the-art性能，具备强零样本分布外泛化能力，显著超越现有主流VLA基线</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基座采用预训练VLA模型<strong>StarVLA-GR00T</strong>，在训练阶段新增三个互补的辅助分支注入时空监督，推理时所有辅助分支完全丢弃，无额外参数开销：</li></ul>
+<p> - 点跟踪分支：冻结<strong>CoTracker-v3</strong>点跟踪器作为教师，为8×8稀疏网格点生成跨动作块时域的位移与可见性监督信号，强制图像令牌隐状态编码显式运动线索；同时重排输入序列将文本令牌置于图像令牌之前，确保图像令牌隐状态充分 conditioning 语言指令，实现目标感知的运动解码</p>
+<p> - 未来特征预测分支：在输入序列中添加16个可学习<Foresight>令牌，通过指数移动平均（EMA）教师编码动作块最后一帧的视觉特征作为监督目标，采用轻量级2层ViT MAE解码器从紧凑令牌重建完整 patch 特征，学习全局场景级目标状态表示</p>
+<p> - FCCA模块：采用8头交叉注意力，以零初始化输出投影，将预见令牌的信息逐步注入视觉令牌， conditioning 点跟踪预测过程，使运动预测基于预见的目标状态，提升双任务的协同性</p>
+<ul><li>训练总损失为动作预测损失（flow matching目标）、预见损失、跟踪损失（位移回归损失+可见性分类损失+轨迹平滑损失）的加权和，所有教师网络（点跟踪器、EMA教师）仅生成监督信号，不参与梯度更新</li><li>推理阶段仅保留16个<Foresight>令牌，相比基座模型仅增加9.4ms推理延迟和0.1GB GPU内存占用，无额外计算开销</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：</li></ul>
+<p> - <strong>LIBERO</strong>：包含4个任务套件（Spatial、Object、Goal、Long），每个套件10个操作任务，每任务提供50条机器人演示数据</p>
+<p> - <strong>RoboCasa GR-1 Tabletop</strong>：面向GR-1拟人机器人的24个桌面操作任务数据集，每任务提供1000条演示，共24000条演示数据</p>
+<p> - <strong>LIBERO-Plus</strong>：LIBERO的分布外鲁棒性扩展数据集，包含视角、机器人状态、语言、光照、背景、噪声、布局7类扰动维度，共10030个扰动实例</p>
+<ul><li>模型规模：基座为<strong>StarVLA-GR00T</strong>，输入图像分辨率224×224，ViT patch尺寸为16，经空间合并后得到64个8×8图像令牌，采用16个<Foresight>令牌，MAE解码器为2层轻量ViT，FCCA模块为8头交叉注意力</li><li>训练资源：使用8×H20 GPU，搭配DeepSpeed ZeRO-2并行优化，AdamW优化器（β₁=0.9，β₂=0.95）；LIBERO基准训练30K步，batch size为12；RoboCasa基准训练100K步，batch size为8</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：在LIBERO的4个任务套件、RoboCasa GR-1 Tabletop的24个任务、LIBERO-Plus的零样本分布外场景上开展评估，对比基线涵盖通用VLA/世界动作模型、未来预测方法、点跟踪方法三大类</li><li>主要评估指标：任务成功率（success rate），每个任务重复执行20-50次rollout取平均</li><li>关键实验结果：</li></ul>
+<p> - LIBERO基准上<strong>FoMoVLA平均成功率达98.8%</strong>，超越所有对比基线，尤其在需要长程推理的Long套件上优势显著，证明双任务联合训练的有效性</p>
+<p> - RoboCasa GR-1 Tabletop基准上平均成功率为<strong>56.9%</strong>，相比基座StarVLA-GR00T提升9.1%，验证方法在拟人机器人、自我中心观测场景下的有效性</p>
+<p> - LIBERO-Plus零样本分布外评估中总成功率达<strong>80.5%</strong>，匹配带预训练的强基线Abot-M0，较StarVLA提升6.4%，在语言和背景扰动场景下增益最为明显</p>
+<p> - 消融实验验证了FCCA模块的协同增益、8×8稀疏点网格的最优性、MAE瓶颈架构相比直接预测的优势</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.14852/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Towards Human-like Physical Intelligence: LifelongVision-Language-Action Learning for Robotic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.14698/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="聚焦Vision-Language-Action（VLA）模型在物理光照扰动下的安全漏洞，指出现有先进VLA模型泛化性不足，轻微的光照变化（如定向聚光灯照射）即可导致任务完全失效，暴露其在实际部署中的可靠性风险。 揭示标准对抗训练方法的隐藏缺陷：朴素的数据增强（如全范围HSV变换）会诱导模型丢弃颜色语义信息，退化为仅依赖形状的灰度级感知器，在需要颜色区分的真实任务上性能大幅下降。 提出对应的攻击与防御框架，旨在平衡…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.14698">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.14698.webp" alt="Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color" loading="lazy" />
+  <figcaption class="paper-figure-caption">聚焦Vision-Language-Action（VLA）模型在物理光照扰动下的安全漏洞，指出现有先进VLA模型泛化性不足，轻微的光照变化（如…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color</h1>
+            <div class="detail-meta">2026-07-16 · <a href="http://arxiv.org/abs/2607.14698" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.14698" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.14698</span></div>
+            <p class="detail-summary">聚焦Vision-Language-Action（VLA）模型在物理光照扰动下的安全漏洞，指出现有先进VLA模型泛化性不足，轻微的光照变化（如定向聚光灯照射）即可导致任务完全失效，暴露其在实际部署中的可靠性风险。 揭示标准对抗训练方法的隐藏缺陷：朴素的数据增强（如全范围HSV变换）会诱导模型丢弃颜色语义信息，退化为仅依赖形状的灰度级感知器，在需要颜色区分的真实任务上性能大幅下降。 提出对应的攻击与防御框架，旨在平衡…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Keio University（论文所有作者所属研究机构）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.14698/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">聚焦Vision-Language-Action（VLA）模型在物理光照扰动下的安全漏洞，指出现有先进VLA模型泛化性不足，轻微的光照变化（如…</p>
+  <ul class="reading-intro-points"><li>聚焦Vision-Language-Action（VLA）模型在物理光照扰动下的安全漏洞，指出现有先进VLA模型泛化性不足，轻微的光照变化（如…</li><li>揭示标准对抗训练方法的隐藏缺陷：朴素的数据增强（如全范围HSV变换）会诱导模型丢弃颜色语义信息，退化为仅依赖形状的灰度级感知器，在需要颜色区分…</li><li>提出对应的攻击与防御框架，旨在平衡VLA模型的光照鲁棒性与颜色感知能力，支撑其安全可靠地部署到真实机器人场景中。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Keio University</strong>（论文所有作者所属研究机构）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>聚焦Vision-Language-Action（VLA）模型在物理光照扰动下的安全漏洞，指出现有先进VLA模型泛化性不足，轻微的光照变化（如定向聚光灯照射）即可导致任务完全失效，暴露其在实际部署中的可靠性风险。</li><li>揭示标准对抗训练方法的隐藏缺陷：朴素的数据增强（如全范围HSV变换）会诱导模型丢弃颜色语义信息，退化为仅依赖形状的灰度级感知器，在需要颜色区分的真实任务上性能大幅下降。</li><li>提出对应的攻击与防御框架，旨在平衡VLA模型的光照鲁棒性与颜色感知能力，支撑其安全可靠地部署到真实机器人场景中。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>FLARE</strong>（照明鲁棒性评估框架），一种无需访问模型内部信息的黑盒物理聚光灯攻击方法，通过贝叶斯优化搜索最优光照参数，可将基线VLA模型的任务成功率降至0%，并产生最高115.5cm的轨迹偏差，暴露当前VLA对微小环境扰动的高度脆弱性。</li><li>识别出标准对抗训练的关键防御陷阱：通过诊断性灰度评估证明，朴素HSV颜色增强会诱导模型丢弃颜色语义信息，模型在灰度输入上可保持高达90.5%的任务成功率，但在真实颜色依赖任务上的成功率降至47.5%以下，远低于无防御的基线模型。</li><li>提出<strong>ChromaGuard</strong>，一种保留色相与纹理的对抗训练方法，通过约束增强参数空间避免颜色信息丢失，在真实6-DoF机器人平台上验证，其在良性场景下颜色依赖任务成功率达97.5%，攻击场景下达92.5%，同时颜色无关任务的攻击下成功率≥70%，实现了光照鲁棒性与颜色感知能力的平衡。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>攻击方法<strong>FLARE</strong>：采用黑盒威胁模型，对手可部署固定参数的物理聚光灯，光照参数包括色相、饱和度、亮度、强度、空间高度和截止角；采用Optuna的Tree-structured Parzen Estimator（TPE）贝叶斯优化在连续参数空间搜索最大化攻击效果的光照组合，损失函数结合轨迹偏差与任务失败指标，模拟器中通过MuJoCo物理引擎渲染光照效果。选用TPE采样器而非传统高斯过程贝叶斯优化，是因为其计算开销更低，更适合高维连续参数搜索与有限的机器人 rollout 时间预算。</li><li>防御方法<strong>ChromaGuard</strong>：约束数据增强的参数空间，固定色相偏移为0，仅允许饱和度、亮度、对比度、锐度在有限范围内扰动，通过对抗训练优化模型在约束后的最差光照下的任务性能，避免模型丢弃颜色语义信息。</li><li>创新点：首次系统性证明VLA模型对物理聚光灯扰动的高度脆弱性，无需复杂攻击即可导致完全失效；揭示朴素对抗训练的颜色丢弃缺陷，提出对应的诊断验证方法；提出色相保留的对抗训练框架，解决光照鲁棒性与颜色感知能力的权衡问题。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：模拟器实验采用<strong>LIBERO</strong>多任务操作基准的三个任务套件：<strong>LIBERO-Spatial</strong>、<strong>LIBERO-Object</strong>、<strong>LIBERO-10</strong>；真实世界实验自主采集演示数据，包含50集颜色无关任务演示和240集颜色依赖任务演示。</li><li>模型规模：采用<strong>SmolVLA</strong>和<strong>π₀.₅</strong>两种VLA架构，模拟器训练SmolVLA共200,000步，真实世界微调两种模型各100,000步。</li><li>训练资源：模拟实验基于<strong>LeRobot</strong>框架与<strong>MuJoCo</strong>物理引擎，攻击优化采用<strong>Optuna</strong>贝叶斯优化工具；真实实验部署于配备双相机系统（腕部相机+第三人称相机）的<strong>6-DoF SO-101 Arm Pro</strong>机械臂平台，搭配可编程RGB聚光灯实现物理光照攻击。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：模拟器在LIBERO三个任务套件上开展实验，每套件开展500次评估episodes；真实世界实验在6-DoF机械臂上测试，颜色无关任务开展20次试验，颜色依赖任务开展40次试验（每种语言指令20次）。</li><li>评估指标：任务成功率（SR）、平均轨迹误差（TE-Avg）、最大轨迹误差（TE-Max）。</li><li>关键实验结果：</li></ul>
+<p> - 模拟器实验中，优化后的聚光灯攻击可将基线SmolVLA模型的任务成功率降至0%，最大轨迹偏差达115.5cm；朴素增强模型虽在攻击下保持约78%的成功率，但灰度评估证明其完全丢弃了颜色信息。</p>
+<p> - 真实世界颜色依赖任务中，朴素增强模型的良性场景成功率仅47.5%，远低于基线模型的77.5%，且其85.7%的失败源于抓取错误颜色的物体，进一步证明其丢弃了颜色语义信息。</p>
+<p> - <strong>ChromaGuard</strong>在良性场景下颜色依赖任务成功率达97.5%，攻击场景下达92.5%（SmolVLA），<strong>π₀.₅</strong>对应成功率为55.0%和70.0%；同时颜色无关任务在攻击下的成功率达70%，平衡了鲁棒性与颜色感知能力。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.14739/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">FoMoVLA: Bridging Visual Foresight and Motion Guidance for Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.14695/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Reflex: Real-Time VLA Control through Streaming Inference</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
