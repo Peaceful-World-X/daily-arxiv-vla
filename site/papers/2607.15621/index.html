@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Think at 5 Hz, Act at 20 Hz: Asynchronous Fast-Slow Vision-Language-Action Inference for Closed-Loop Driving - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出一种异步快慢推理架构，解决语言引导的端到端驾驶中视觉语言模型（VLM）推理延迟与控制频率不匹配的问题 将大型语言模型的理解能力与轻量级动作专家的快速反应能力解耦，通过增量式键值缓存实现异步部署 在 CARLA 闭环驾驶中实现 20 Hz 全频率控制，同时保持 VLM 的指令跟随和场景推理能力" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.15621">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.15621.webp" alt="Think at 5 Hz, Act at 20 Hz: Asynchronous Fast-Slow Vision-Language-Action Inference for Closed-Loop Driving" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出一种异步快慢推理架构，解决语言引导的端到端驾驶中视觉语言模型（VLM）推理延迟与控制频率不匹配的问题</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Think at 5 Hz, Act at 20 Hz: Asynchronous Fast-Slow Vision-Language-Action Inference for Closed-Loop Driving</h1>
+            <div class="detail-meta">2026-07-17 · <a href="http://arxiv.org/abs/2607.15621" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.15621" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.15621</span></div>
+            <p class="detail-summary">提出一种异步快慢推理架构，解决语言引导的端到端驾驶中视觉语言模型（VLM）推理延迟与控制频率不匹配的问题 将大型语言模型的理解能力与轻量级动作专家的快速反应能力解耦，通过增量式键值缓存实现异步部署 在 CARLA 闭环驾驶中实现 20 Hz 全频率控制，同时保持 VLM 的指令跟随和场景推理能力</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">The University of Tokyo, Tokyo, Japan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.15621/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出一种异步快慢推理架构，解决语言引导的端到端驾驶中视觉语言模型（VLM）推理延迟与控制频率不匹配的问题</p>
+  <ul class="reading-intro-points"><li>提出一种异步快慢推理架构，解决语言引导的端到端驾驶中视觉语言模型（VLM）推理延迟与控制频率不匹配的问题</li><li>将大型语言模型的理解能力与轻量级动作专家的快速反应能力解耦，通过增量式键值缓存实现异步部署</li><li>在 CARLA 闭环驾驶中实现 20 Hz 全频率控制，同时保持 VLM 的指令跟随和场景推理能力</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>The University of Tokyo</strong>, Tokyo, Japan</li><li><strong>TIER IV, Inc.</strong>, Tokyo, Japan</li><li><strong>Huawei</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出一种异步快慢推理架构，解决语言引导的端到端驾驶中视觉语言模型（VLM）推理延迟与控制频率不匹配的问题</li><li>将大型语言模型的理解能力与轻量级动作专家的快速反应能力解耦，通过增量式键值缓存实现异步部署</li><li>在 CARLA 闭环驾驶中实现 20 Hz 全频率控制，同时保持 VLM 的指令跟随和场景推理能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>引入异步快慢推理方案：冻结的 7B VLM 骨干作为慢系统，维护增量缓存；337M 动作专家作为快系统，每步通过逐层交叉注意力读取缓存，生成控制动作</li><li>提出 <strong>陈旧性增强训练</strong>（staleness-augmented training），通过随机截断缓存前缀模拟部署时的缓存滞后，使训练与异步执行分布对齐</li><li>首次在消费级 GPU（RTX 3090 Ti）上对快慢 VLA 范式进行闭环评估，并报告真实延迟，证明方案的可行性和有效性</li><li>展示良好的零样本迁移能力，仅在单一城镇训练的动作专家可在未见城镇上保持 84–94% 的路线完成率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于 <strong>LMDrive</strong> 框架，冻结 7B LLaMA 骨干及感知编码器、Q-Former，仅训练新增的 337M 动作专家</li><li>动作专家为 32 层 Transformer，每层将自身 token 投影到骨干的注意力空间，并与骨干的逐层键值缓存进行交叉注意力，骨干不反向关注专家，保证缓存一致性</li><li>慢系统每 K=4 步（0.2 秒）通过增量前向传入新帧的视觉 token 到缓存；快系统每步使用当前帧和缓存进行单次前向，回归 5 个航点</li><li>训练时，对每个样本随机采样滞后步数 δ，将专家可见的骨干前缀截断至 j−δ 帧，迫使专家融合过时上下文与当前帧</li><li>部署时，缓存仅在指令变更、通知到达、片段边界或历史超限时重建，其余时刻仅追加，保证专家计算成本与历史长度无关</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>训练数据：<strong>LMDrive 语料库 town05 部分</strong>，共 27,485 条指令片段，每片段最多 40 帧，预留三种天气用于验证</li><li>模型规模：骨干 <strong>LLaMA-7B</strong>（冻结），动作专家 <strong>337M 参数</strong>（可训练）</li><li>训练资源：单张 <strong>48 GB GPU</strong>，AdamW 优化器，余弦学习率衰减（初始 10⁻⁴），有效批次大小 32，训练 5 个 epoch，峰值内存 <28 GB</li><li>推理硬件：单张 <strong>NVIDIA RTX 3090 Ti</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>基准测试：<strong>CARLA 0.9.10 LangAuto-Short</strong>（town05，32 条路线），与 LMDrive 基线对比（仅隔帧调用模型，重复控制命令）</li><li>主要指标：驾驶分数（DS）、路线完成率（RC）、违规分数（IS），以及开环航点 L1 误差</li><li>闭环结果：RC 从 37.0 提升至 <strong>94.0</strong>，DS 从 28.8 提升至 <strong>32.9</strong>；跳帧消融表明专家自身提升 DS，而全频率控制贡献 RC 提升与违规减少</li><li>开环结果：验证集 L1 误差从冻结骨干头的 0.123 降至 <strong>0.031</strong>（随机 δ 训练），降幅近 4 倍</li><li>零样本迁移：在 town01 和 town02 上 RC 分别为 84.3 和 94.4，优于基线（40.5 和 30.7）</li><li>延迟：每步模型计算 <strong>32 ms</strong>（感知+Q-Former 25 ms，专家 7.5 ms），增量追加平均 5 ms/步，总 agent 步耗时约 58 ms，接近 17 Hz 实际运行率；骨干重计算成本随历史增长（89–169 ms），而缓存方案保持恒定</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.15641/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">IMBench: A Benchmark for Intuitive Robotic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.15330/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,5 +1,143 @@
 [
   {
+    "date": "2026-07-17",
+    "title": "Exo2EgoPose: Leveraging Exocentric Demonstrations for Vision-Language guided Egocentric 3D Hand Pose Forecasting",
+    "link": "http://arxiv.org/abs/2607.15890",
+    "arxiv_id": "2607.15890",
+    "detail_path": "papers/2607.15890/",
+    "cover_path": "covers/2607.15890/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.15890.webp",
+    "preview_text": "论文研究了一个尚待探索的 视觉-语言引导的自我中心（Egocentric）3D手部姿态预测（VL-EHPF） 任务，旨在根据视觉观察、语言指令和姿态状态预测未来的自我中心视角3D手部姿态。 针对自我中心视角存在的视野受限和运动高度动态两大挑战，提出了一种名为 Exo2EgoPose 的新型框架。 该框架创新性地利用全局且稳定的外中心（Exocentric）演示视频作为引导，来补偿自我中心视角中部分和动态的线索。",
+    "research_unit": "University of Electronic Science and Technology of…",
+    "hook_text": "论文研究了一个尚待探索的 视觉-语言引导的自我中心（Egocentric）3D手部姿态预测（VL-EHPF） 任务，旨在根据视觉观察、语言指令…",
+    "key_points": [
+      "论文研究了一个尚待探索的 视觉-语言引导的自我中心（Egocentric）3D手部姿态预测（VL-EHPF） 任务，旨在根据视觉观察、语言指令…",
+      "针对自我中心视角存在的视野受限和运动高度动态两大挑战，提出了一种名为 Exo2EgoPose 的新型框架。",
+      "该框架创新性地利用全局且稳定的外中心（Exocentric）演示视频作为引导，来补偿自我中心视角中部分和动态的线索。"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-07-17",
+    "title": "AC-VLA: Robust Out-of-Distribution Action Execution via Compositional Learning",
+    "link": "http://arxiv.org/abs/2607.15714",
+    "arxiv_id": "2607.15714",
+    "detail_path": "papers/2607.15714/",
+    "cover_path": "covers/2607.15714/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.15714.webp",
+    "preview_text": "提出 AC-VLA，一个即插即用的动作组合学习框架，旨在解决视觉-语言-动作（VLA）模型在分布外（OOD）任务中泛化能力差的问题。 识别出VLA模型在OOD场景下的两个核心失败模式：轨迹过拟合（过度记忆整体轨迹而非组合子技能）和感知捷径（过度依赖腕部摄像头纹理而非全局空间布局）。 通过组合学习模块和状态条件不对称掩码策略，在不修改模型架构的前提下，显著提升模型对新颖组合任务的鲁棒性。",
+    "research_unit": "Shenzhen Technology University",
+    "hook_text": "提出 AC-VLA，一个即插即用的动作组合学习框架，旨在解决视觉-语言-动作（VLA）模型在分布外（OOD）任务中泛化能力差的问题。",
+    "key_points": [
+      "提出 AC-VLA，一个即插即用的动作组合学习框架，旨在解决视觉-语言-动作（VLA）模型在分布外（OOD）任务中泛化能力差的问题。",
+      "识别出VLA模型在OOD场景下的两个核心失败模式：轨迹过拟合（过度记忆整体轨迹而非组合子技能）和感知捷径（过度依赖腕部摄像头纹理而非全局空间布…",
+      "通过组合学习模块和状态条件不对称掩码策略，在不修改模型架构的前提下，显著提升模型对新颖组合任务的鲁棒性。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-17",
+    "title": "IMBench: A Benchmark for Intuitive Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2607.15641",
+    "arxiv_id": "2607.15641",
+    "detail_path": "papers/2607.15641/",
+    "cover_path": "covers/2607.15641/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-07-17",
+    "title": "Think at 5 Hz, Act at 20 Hz: Asynchronous Fast-Slow Vision-Language-Action Inference for Closed-Loop Driving",
+    "link": "http://arxiv.org/abs/2607.15621",
+    "arxiv_id": "2607.15621",
+    "detail_path": "papers/2607.15621/",
+    "cover_path": "covers/2607.15621/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.15621.webp",
+    "preview_text": "提出一种异步快慢推理架构，解决语言引导的端到端驾驶中视觉语言模型（VLM）推理延迟与控制频率不匹配的问题 将大型语言模型的理解能力与轻量级动作专家的快速反应能力解耦，通过增量式键值缓存实现异步部署 在 CARLA 闭环驾驶中实现 20 Hz 全频率控制，同时保持 VLM 的指令跟随和场景推理能力",
+    "research_unit": "The University of Tokyo, Tokyo, Japan",
+    "hook_text": "提出一种异步快慢推理架构，解决语言引导的端到端驾驶中视觉语言模型（VLM）推理延迟与控制频率不匹配的问题",
+    "key_points": [
+      "提出一种异步快慢推理架构，解决语言引导的端到端驾驶中视觉语言模型（VLM）推理延迟与控制频率不匹配的问题",
+      "将大型语言模型的理解能力与轻量级动作专家的快速反应能力解耦，通过增量式键值缓存实现异步部署",
+      "在 CARLA 闭环驾驶中实现 20 Hz 全频率控制，同时保持 VLM 的指令跟随和场景推理能力"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-16",
+    "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
+    "link": "http://arxiv.org/abs/2607.15330",
+    "arxiv_id": "2607.15330",
+    "detail_path": "papers/2607.15330/",
+    "cover_path": "covers/2607.15330/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.15330.webp",
+    "preview_text": "提出 Xiaomi-Robotics-1，一个基础视觉-语言-动作（VLA）模型，旨在解决机器人操作中的语言指令跟随和任务泛化问题 通过两阶段训练（大规模预训练 + 跨实施例后训练），使模型能够在未见环境中开箱即用执行多种移动操作任务，并以极少数据高效适应新任务 核心突破在于利用超过 10 万小时的手持夹爪（UMI）真实世界轨迹，结合可扩展的自动标注流水线，缓解机器人领域数据稀缺和标注昂贵的瓶颈",
+    "research_unit": "小米机器人团队（Xiaomi Robotics）",
+    "hook_text": "提出 Xiaomi-Robotics-1，一个基础视觉-语言-动作（VLA）模型，旨在解决机器人操作中的语言指令跟随和任务泛化问题",
+    "key_points": [
+      "提出 Xiaomi-Robotics-1，一个基础视觉-语言-动作（VLA）模型，旨在解决机器人操作中的语言指令跟随和任务泛化问题",
+      "通过两阶段训练（大规模预训练 + 跨实施例后训练），使模型能够在未见环境中开箱即用执行多种移动操作任务，并以极少数据高效适应新任务",
+      "核心突破在于利用超过 10 万小时的手持夹爪（UMI）真实世界轨迹，结合可扩展的自动标注流水线，缓解机器人领域数据稀缺和标注昂贵的瓶颈"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-07-16",
     "title": "RoboTTT: Context Scaling for Robot Policies",
     "link": "http://arxiv.org/abs/2607.15275",

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AC-VLA: Robust Out-of-Distribution Action Execution via Compositional Learning - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 AC-VLA，一个即插即用的动作组合学习框架，旨在解决视觉-语言-动作（VLA）模型在分布外（OOD）任务中泛化能力差的问题。 识别出VLA模型在OOD场景下的两个核心失败模式：轨迹过拟合（过度记忆整体轨迹而非组合子技能）和感知捷径（过度依赖腕部摄像头纹理而非全局空间布局）。 通过组合学习模块和状态条件不对称掩码策略，在不修改模型架构的前提下，显著提升模型对新颖组合任务的鲁棒性。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.15714">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.15714.webp" alt="AC-VLA: Robust Out-of-Distribution Action Execution via Compositional Learning" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 AC-VLA，一个即插即用的动作组合学习框架，旨在解决视觉-语言-动作（VLA）模型在分布外（OOD）任务中泛化能力差的问题。</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">AC-VLA: Robust Out-of-Distribution Action Execution via Compositional Learning</h1>
+            <div class="detail-meta">2026-07-17 · <a href="http://arxiv.org/abs/2607.15714" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.15714" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.15714</span></div>
+            <p class="detail-summary">提出 AC-VLA，一个即插即用的动作组合学习框架，旨在解决视觉-语言-动作（VLA）模型在分布外（OOD）任务中泛化能力差的问题。 识别出VLA模型在OOD场景下的两个核心失败模式：轨迹过拟合（过度记忆整体轨迹而非组合子技能）和感知捷径（过度依赖腕部摄像头纹理而非全局空间布局）。 通过组合学习模块和状态条件不对称掩码策略，在不修改模型架构的前提下，显著提升模型对新颖组合任务的鲁棒性。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Shenzhen Technology University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.15714/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 AC-VLA，一个即插即用的动作组合学习框架，旨在解决视觉-语言-动作（VLA）模型在分布外（OOD）任务中泛化能力差的问题。</p>
+  <ul class="reading-intro-points"><li>提出 AC-VLA，一个即插即用的动作组合学习框架，旨在解决视觉-语言-动作（VLA）模型在分布外（OOD）任务中泛化能力差的问题。</li><li>识别出VLA模型在OOD场景下的两个核心失败模式：轨迹过拟合（过度记忆整体轨迹而非组合子技能）和感知捷径（过度依赖腕部摄像头纹理而非全局空间布…</li><li>通过组合学习模块和状态条件不对称掩码策略，在不修改模型架构的前提下，显著提升模型对新颖组合任务的鲁棒性。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Shenzhen Technology University</strong></li><li><strong>Shenzhen University of Advanced Technology</strong></li><li><strong>Tongji University</strong></li><li><strong>Great Bay University</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>AC-VLA</strong>，一个即插即用的动作组合学习框架，旨在解决视觉-语言-动作（VLA）模型在分布外（OOD）任务中泛化能力差的问题。</li><li>识别出VLA模型在OOD场景下的两个核心失败模式：<strong>轨迹过拟合</strong>（过度记忆整体轨迹而非组合子技能）和<strong>感知捷径</strong>（过度依赖腕部摄像头纹理而非全局空间布局）。</li><li>通过组合学习模块和状态条件不对称掩码策略，在不修改模型架构的前提下，显著提升模型对新颖组合任务的鲁棒性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>识别并形式化了VLA模型在OOD任务中的两个相互增强的失败模式：<strong>轨迹过拟合</strong>和<strong>感知捷径</strong>。</li><li>提出了一个<strong>组合学习模块</strong>，通过LLM驱动的指令分解器和本体感受轨迹对齐器，自动将完整演示分解为可复用的子任务，并通过混合训练策略赋予模型组合泛化能力。</li><li>设计了一种<strong>状态条件不对称掩码策略</strong>，在夹爪闭合阶段抑制腕部视图输入，强制模型进行全局空间推理，从而打破感知捷径。</li><li>整个 <strong>AC-VLA 框架与架构无关</strong>，无需修改任何VLA骨干网络，可直接集成到现有模型中。</li><li>在 <strong>LIBERO</strong> 和 <strong>LIBERO-OOD</strong> 基准上，AC-VLA在组合OOD任务上实现了约28%的绝对性能提升，同时保持了接近完美的分布内性能，并在真实世界实验中验证了有效性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>组合学习模块</strong>：该模块由一个<strong>LLM驱动的指令分解器</strong>和一个<strong>本体感受轨迹对齐器</strong>组成。前者将复杂指令分解为细粒度的子任务描述，后者利用夹爪状态转换和末端执行器位移自动划分对应的轨迹片段，生成密集的子任务监督数据。随后，采用<strong>混合训练</strong>策略，在完整演示和分解后的子任务数据上联合训练，既有全局连贯性，又具备组合泛化能力。</li><li><strong>状态条件不对称掩码</strong>：在训练阶段，根据夹爪状态（闭合时）<strong>动态掩蔽腕部摄像头的视觉输入</strong>，迫使模型在“放置”等阶段依赖全局第三视角信息，从而纠正对局部纹理的过度依赖。该策略仅在训练时应用，推理时无需任何修改。</li><li>该方法以流匹配策略 <strong>π₀.₅</strong> 为实例进行了验证，但设计上适用于任何VLA模型。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>LIBERO</strong> 基准（包含Spatial, Goal, Object, Long四个子集）和 <strong>LIBERO-OOD</strong> 基准（Spatial-OOD和Goal-OOD）。</li><li>模型骨干：<strong>π₀.₅</strong> 和 <strong>GR00T-N1</strong>。</li><li>训练资源：<strong>4 块 NVIDIA A100 80GB GPUs</strong>。推理在 <strong>NVIDIA RTX 5880 Ada 40GB</strong> 上进行。</li><li>指令分解LLM：<strong>Qwen-3.5-Flash</strong>。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估基准</strong>：LIBERO（分布内）和 LIBERO-OOD（分布外），以及真实世界场景下的4个分布内任务和2个OOD任务。</li><li><strong>主要评估指标</strong>：任务成功率（Success Rate %）。</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - 在LIBERO-OOD上，AC-VLA（π₀.₅）将Spatial-OOD和Goal-OOD的成功率分别从35.5%/46.6%提升至<strong>64.2%/73.3%</strong>，绝对值提升达28.7/26.7个百分点，同时分布内性能保持高位（96.7%）。</p>
+<p> - 在<strong>GR00T-N1</strong>骨干网络上，AC-VLA同样带来了约20个百分点的OOD性能提升。</p>
+<p> - 消融实验证实，<strong>混合训练</strong>和<strong>不对称掩码</strong>两个组件协同作用，分别解决了轨迹过拟合和感知捷径问题，且两者结合效果最佳。</p>
+<p> - 在真实世界实验中，AC-VLA在OOD任务上的成功率从35.0%大幅提升至<strong>82.5%</strong>，验证了其在实际场景中的有效性和鲁棒性。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.15890/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Exo2EgoPose: Leveraging Exocentric Demonstrations for Vision-Language guided Egocentric 3D Hand Pose Forecasting</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.15641/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">IMBench: A Benchmark for Intuitive Robotic Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
