@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What Do They See? Interpreting Complex Road Scenarios Through the Eyes of Vision-Language-Action Models for Safe and Trustworthy Autonomous Vehicle Learning - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对端到端自动驾驶视觉-语言-动作（VLA）模型决策逻辑不透明的安全痛点，提出Counterfactual Vision Action Analysis (CVAA) 反事实归因框架与Counter-nuScenes基准数据集，旨在精准识别影响模型轨迹预测的关键场景物体，为可解释、可信的自动驾驶系统提供分析工具 现有视觉归因方法（如Grad-CAM、SHAP等）存在像素级解释难以审计、掩码操作引入分布偏移的问题，该…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.16938">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.16938.webp" alt="What Do They See? Interpreting Complex Road Scenarios Through the Eyes of Vision-Language-Action Models for Safe and Trustworthy Autonomous Vehicle Learning" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对端到端自动驾驶视觉-语言-动作（VLA）模型决策逻辑不透明的安全痛点，提出Counterfactual Vision Action Ana…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">What Do They See? Interpreting Complex Road Scenarios Through the Eyes of Vision-Language-Action Models for Safe and Trustworthy Autonomous Vehicle Learning</h1>
+            <div class="detail-meta">2026-07-18 · <a href="http://arxiv.org/abs/2607.16938" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.16938" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.16938</span></div>
+            <p class="detail-summary">针对端到端自动驾驶视觉-语言-动作（VLA）模型决策逻辑不透明的安全痛点，提出Counterfactual Vision Action Analysis (CVAA) 反事实归因框架与Counter-nuScenes基准数据集，旨在精准识别影响模型轨迹预测的关键场景物体，为可解释、可信的自动驾驶系统提供分析工具 现有视觉归因方法（如Grad-CAM、SHAP等）存在像素级解释难以审计、掩码操作引入分布偏移的问题，该…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">10 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Birla Institute of Technology and Science, Pilani（印…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.16938/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对端到端自动驾驶视觉-语言-动作（VLA）模型决策逻辑不透明的安全痛点，提出Counterfactual Vision Action Ana…</p>
+  <ul class="reading-intro-points"><li>针对端到端自动驾驶视觉-语言-动作（VLA）模型决策逻辑不透明的安全痛点，提出Counterfactual Vision Action Ana…</li><li>现有视觉归因方法（如Grad-CAM、SHAP等）存在像素级解释难以审计、掩码操作引入分布偏移的问题，该方法通过 photorealistic…</li><li>进一步结合机制可解释性技术，从黑盒行为审计深入到模型内部表征分析，探究VLA模型对道路场景的感知逻辑是否与人类驾驶认知一致</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Birla Institute of Technology and Science, Pilani（印度比拉理工学院桑巴伊分校）</strong> 计算机科学与信息系统系</li><li><strong>University of California, Merced（美国加州大学默塞德分校）</strong> Machine Intelligence, Interaction, and Imagination (Mi³) 实验室</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对端到端自动驾驶视觉-语言-动作（VLA）模型决策逻辑不透明的安全痛点，提出<strong>Counterfactual Vision Action Analysis (CVAA)</strong> 反事实归因框架与<strong>Counter-nuScenes</strong>基准数据集，旨在精准识别影响模型轨迹预测的关键场景物体，为可解释、可信的自动驾驶系统提供分析工具</li><li>现有视觉归因方法（如Grad-CAM、SHAP等）存在像素级解释难以审计、掩码操作引入分布偏移的问题，该方法通过 photorealistic 生成式修复单独移除场景中的单个物体，隔离每个物体的因果影响，避免人工扰动带来的噪声</li><li>进一步结合机制可解释性技术，从黑盒行为审计深入到模型内部表征分析，探究VLA模型对道路场景的感知逻辑是否与人类驾驶认知一致</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>构建<strong>Counter-nuScenes</strong>反事实基准数据集：基于210个nuScenes场景，通过 photorealistic 生成式修复移除单个检测物体，生成3062个同分布反事实图像对，为VLA模型归因提供可控实验素材</li><li>提出<strong>CVAA AD（平均偏差）</strong>与<strong>CVAA FD（最终偏差）</strong>两个分布偏移指标：无需真实未来位姿即可量化单个物体对模型轨迹预测的因果影响，解决传统minADE/minFDE仅衡量预测与真实值准确性的局限</li><li>完成<strong>Alpamayo 1 VLA模型的黑盒行为评估</strong>：系统分析不同物体类别、掩码大小、场景结构对模型轨迹预测的影响，揭示模型存在对非核心物体的异常依赖、单物体归因稳定性极低等安全隐患</li><li>开展<strong>白盒机制分析</strong>：追踪物体移除在模型各层的传播路径，识别出4种传播机制，揭示轨迹专家是强非线性放大器，能够将接近零的输入差异放大为显著的轨迹偏移</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基准构建流程：从nuScenes v1.0-trainval的前摄像头关键帧中筛选出210个高信息量帧（每个场景选择检测到最多物体的关键帧），使用YOLOv8检测物体、SAM2生成精细实例掩码，通过Gemini imgen或开源LaMa+FLUX Fill 1.0实现 photorealistic 物体移除，生成原始图像与N个反事实图像的配对集合（N为场景内检测到的物体数量）</li><li>归因指标设计：AD计算原始轨迹与反事实轨迹在整个预测时域的平均L2偏差，衡量物体的整体因果影响；FD计算两条轨迹在预测终点的L2偏差，衡量物体对规划安全边际的直接影响，通过两个指标的联合排序得到物体归因顺序</li><li>白盒分析技术：对比原始与修复图像在模型各层的隐藏状态余弦差值，追踪信号在视觉编码器、VLM、轨迹专家三个模块的传播；结合Logit Lens分析物体类别表征的层间演化、空间KL散度图分析视觉token的响应分布、注意力权重分析轨迹handoff token与物体token的关联</li><li>创新点：采用 photorealistic 修复替代传统黑块/模糊掩码，大幅减少分布偏移干扰；将行为归因与机制分析结合，从“模型依赖哪些物体”深入到“模型内部如何处理这些物体的存在”</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>基础数据集：<strong>nuScenes v1.0-trainval</strong>，包含波士顿和新加坡采集的700个约20秒的驾驶场景，提供多摄像头同步数据、激光雷达点云与高频位姿信息</li><li>构建数据集：<strong>Counter-nuScenes</strong>，包含210个场景、3062个反事实图像对，每个场景对应6-32个有效检测物体</li><li>评估模型：<strong>Alpamayo 1</strong>，由27层视觉编码器、36层3006 token的VLM、36层去噪轨迹专家组成，输入为前摄像头单张图像，输出K条随机轨迹样本</li><li>工具与资源：使用YOLOv8做物体检测、SAM2做实例分割、Gemini imgen/LaMa+FLUX Fill 1.0做图像修复；评估时零化除前摄像头外的所有摄像头输入，单张图像推理，三次独立种子运行（42、7、123）保证结果稳定性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：在nuScenes前摄像头场景上评估Alpamayo 1，设置黑盒（仅通过轨迹偏移衡量物体影响）与白盒（分析内部表征传播）两个实验场景</li><li>主要评估指标：CVAA AD、CVAA FD、排名稳定性、隐藏状态余弦差值、Logit Lens概率差值、空间KL散度、注意力权重</li><li>关键实验结果：</li></ul>
+<p> - 类别层面：<strong>公交车</strong>的移除产生的平均AD最高（0.663m），<strong>雨伞</strong>等小物体影响可忽略；交通灯的影响远超其图像占比，红灯移除后的轨迹偏移是绿灯的3倍以上</p>
+<p> - 排名稳定性：仅5.6%的物体在AD排名中跨种子保持稳定，14.6%的前3物体保持在前3，说明模型不依赖单个物体，而是基于整体场景做决策</p>
+<p> - 异常依赖：49.3%的物体移除后模型的minADE（最佳轨迹与真实值的偏差）反而下降，说明模型存在对非核心物体的过拟合，部分场景中网球拍、停止标志等非核心物体被判定为最高影响力</p>
+<p> - 结构相关性：掩码面积与AD/FD显著正相关（Spearman ρ=0.22/0.25），物体物理尺寸是场景内影响力的核心结构预测因子；物体数量与峰值偏差无相关性（Spearman ρ≈0.11），说明关键区域物体的存在比场景密度更重要</p>
+<p> - 白盒传播机制：识别出4种传播类型——耦合型（33.0%，信号从VLM干净传到输出，在公交车、摩托车中占比最高）、透明型（33.1%，移除物体无任何信号，在汽车中占比36.2%）、解耦型（16.9%，handoff token有信号但输出无变化）、静默型（16.9%，handoff token无信号但输出有显著偏移）</p>
+<p> - 轨迹专家特性：轨迹专家是强非线性放大器，可将接近零的handoff token差异放大115-180倍，中位数放大倍数为47-106倍，静默型变体的放大倍数甚至超过1000倍，说明该模块不是被动解码器，而是主动处理输入的组件</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.17157/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">VLA-ReID: Video-Level Association for Re-Identification in Multi-Object Tracking with Highly Similar Objects</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.16636/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

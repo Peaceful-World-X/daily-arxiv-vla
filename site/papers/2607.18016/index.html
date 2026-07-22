@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出持久化对象分词化（POT）方法，解决人形机器人长时序全身操作（loco-manipulation）中的对象状态分歧问题：即用于条件化动作生成的对象状态与用于验证动作是否达到预期物理关系的对象状态不一致 在 Unitree G1 人形机器人上实现闭环系统 POT-VLA，通过维护角色索引的 3D 对象记忆，使同一对象状态既能指导动作生成，又能支持执行后的几何验证 在 8 个真实世界任务族中，POT-VLA 将成功…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.18016">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.18016.webp" alt="Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出持久化对象分词化（POT）方法，解决人形机器人长时序全身操作（loco-manipulation）中的对象状态分歧问题：即用于条件化动作生…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation</h1>
+            <div class="detail-meta">2026-07-20 · <a href="http://arxiv.org/abs/2607.18016" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.18016" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.18016</span></div>
+            <p class="detail-summary">提出持久化对象分词化（POT）方法，解决人形机器人长时序全身操作（loco-manipulation）中的对象状态分歧问题：即用于条件化动作生成的对象状态与用于验证动作是否达到预期物理关系的对象状态不一致 在 Unitree G1 人形机器人上实现闭环系统 POT-VLA，通过维护角色索引的 3D 对象记忆，使同一对象状态既能指导动作生成，又能支持执行后的几何验证 在 8 个真实世界任务族中，POT-VLA 将成功…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">5 张阅读卡</span>
+              <span class="meta-pill">BUAA（北京航空航天大学）：Peng Ren、Jiang Zhao、Pei Chi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.18016/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出持久化对象分词化（POT）方法，解决人形机器人长时序全身操作（loco-manipulation）中的对象状态分歧问题：即用于条件化动作生…</p>
+  <ul class="reading-intro-points"><li>提出持久化对象分词化（POT）方法，解决人形机器人长时序全身操作（loco-manipulation）中的对象状态分歧问题：即用于条件化动作生…</li><li>在 Unitree G1 人形机器人上实现闭环系统 POT-VLA，通过维护角色索引的 3D 对象记忆，使同一对象状态既能指导动作生成，又能支…</li><li>在 8 个真实世界任务族中，POT-VLA 将成功率从匹配基线 39/80 提升至 71/80；在 Being-0 对齐服务任务上达到 44/…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>BUAA</strong>（北京航空航天大学）：Peng Ren、Jiang Zhao、Pei Chi</li><li><strong>BZA</strong>（北京智者/AI 研究机构）：Peng Ren、Haoyang Ge、Cong Huang、Yukun Shi、Kai Chen</li><li><strong>DeepCybo</strong>：Haoyang Ge、Kai Chen</li><li><strong>ZGCI</strong>（中关村智源人工智能研究院）：Cong Huang、Yukun Shi、Kai Chen</li><li><strong>TJU</strong>（天津大学）：（作者单位标注中存在但未在截断文本中明确对应具体作者）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>持久化对象分词化（POT）</strong>方法，解决人形机器人长时序全身操作（loco-manipulation）中的<strong>对象状态分歧</strong>问题：即用于条件化动作生成的对象状态与用于验证动作是否达到预期物理关系的对象状态不一致</li><li>在 <strong>Unitree G1</strong> 人形机器人上实现闭环系统 <strong>POT-VLA</strong>，通过维护角色索引的 3D 对象记忆，使同一对象状态既能指导动作生成，又能支持执行后的几何验证</li><li>在 8 个真实世界任务族中，POT-VLA 将成功率从匹配基线 <strong>39/80</strong> 提升至 <strong>71/80</strong>；在 Being-0 对齐服务任务上达到 <strong>44/50</strong>，优于 Being-0 原论文报告的 37/50</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>POT</strong>：一种角色感知的对象级物理记忆，将任务实体绑定到持久化角色槽位，通过 RGB-D 观测刷新度量 3D 证据，并将身份、几何、可见性、不确定性和空间关系序列化为持久化 3D 对象令牌</li><li>将持久化 3D 对象令牌插入全身动作头序列，实现对象状态条件化的动作预测，使机器人基于任务相关的物理对象状态（而非仅依赖隐式视觉-语言特征）进行操作</li><li>构建闭环 <strong>POT-VLA</strong> 系统，动作专家与谓词验证器共享同一刷新后的对象记忆，通过几何谓词验证执行后的物理关系，形成“维护-行动-观察-验证-恢复”循环</li><li>在真实人形机器人上验证了对象状态中心表示对可验证全身操作的有效性，尤其在需要维持 3D 关系的任务上增益最大</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>任务角色对象记录</strong>：从 RGB-D 观测中提取任务相关实体，构建角色索引对象记忆 $\mathcal{M}^{\tau_i}_t$，存储实体角色、短语、2D 框、3D 质心与范围、置信度、可见性及关系特征（如目标-目的地位移、支撑高度、末端执行器偏移等）</li><li><strong>持久化对象令牌模式</strong>：固定 <strong>K=8</strong> 槽位、<strong>F=33</strong> 维特征 per slot，包含 TARGET、DESTINATION、SUPPORT、HANDOVER_PARTNER 等角色 ID；通过 LayerNorm→Linear→GELU→Dropout→Linear 投影网络嵌入到 DiT 隐藏维度</li><li><strong>动作头插入</strong>：将对象令牌 $Z_t^{obj}$ 插入 DiT 动作头自注意力序列 $S_t=[Z_t^{state}, Z_t^{obj}, Z_t^{action}]$，视觉-语言 backbone 特征保留为编码器隐藏状态用于交叉注意力</li><li><strong>谓词级验证与恢复</strong>：基于刷新后的对象记忆 $\mathcal{M}^{\tau_i}_{t+H}$ 执行几何谓词检查（包含、支撑、接近度、位移、双手分配、交接距离），返回 in_progress/done/blocked/failed/uncertain 状态，并触发重观察、重 grounding、重试或重规划等恢复策略</li><li><strong>闭环执行</strong>：每执行一个短时序动作块后，RGB-D 观测立即刷新同一对象记忆，生成新的对象令牌供下一轮动作预测，实现感知-行动-验证的紧耦合</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>硬件平台</strong>：<strong>Unitree G1</strong> 人形机器人，配备 <strong>Dex3-1</strong> 灵巧手和头载 RGB-D 摄像头</li><li><strong>基础模型</strong>：<strong>GR00T-N1.7</strong> 全身动作专家，保持与直接基线相同的具身、动作表示和运行时</li><li><strong>真实任务套件</strong>：8 个真实世界任务族，包括推车运输放置、芯片盒入灰篮、两球入篮、叠杯、衣物入篮、抽屉/托盘放置关闭、桌面分类、近距离饮品交接</li><li><strong>外部参考任务</strong>：<strong>Being-0</strong> 对齐服务任务套件（5 项：Fetch-bottle、Deliver-basket、Grasp-bottle、Place-basket、Place-coffee）</li><li><strong>计算资源</strong>：桌面工作站运行感知、任务执行、对象令牌投影和谓词监督；机载 Unitree 计算机运行低级臂部与 locomotion 控制器</li><li><strong>令牌规模</strong>：每样本 8 个槽位，每槽位 33 维特征（包含可见性、置信度、2D 框、3D 质心、3D 范围、方向场及关系特征）</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.18060/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">RoboHarness: Memory-Driven Orchestration of Heterogeneous Robot Policies for Long-Horizon Planning</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.17977/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

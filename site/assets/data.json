@@ -1,5 +1,341 @@
 [
   {
+    "date": "2026-07-21",
+    "title": "RoboInter1.5: A Holistic Intermediate Representation Suite for Embodied World Modeling and Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2607.18709",
+    "arxiv_id": "2607.18709",
+    "detail_path": "papers/2607.18709/",
+    "cover_path": "covers/2607.18709/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.18709.webp",
+    "preview_text": "论文提出RoboInter1.5，是面向具身世界建模与机器人操作的全链路中间表示套件，旨在解决现有机器人数据集标注成本高、具身场景适配性差、缺少细粒度中间表示标注的瓶颈，为VLA策略与具身世界模型提供统一的数据与建模基础 核心成果包含三大板块：大规模带密集中间表示标注的RoboInter-Data数据集、面向中间表示推理的VQA基准RoboInter-VQA、以及覆盖规划-执行-模拟全流程的下游应用框架 研究目标是…",
+    "research_unit": "Team of RoboInter1.5（完整作者列表详见论文附录A.1节），相关成果由InternR…",
+    "hook_text": "论文提出RoboInter1.5，是面向具身世界建模与机器人操作的全链路中间表示套件，旨在解决现有机器人数据集标注成本高、具身场景适配性差、缺…",
+    "key_points": [
+      "论文提出RoboInter1.5，是面向具身世界建模与机器人操作的全链路中间表示套件，旨在解决现有机器人数据集标注成本高、具身场景适配性差、缺…",
+      "核心成果包含三大板块：大规模带密集中间表示标注的RoboInter-Data数据集、面向中间表示推理的VQA基准RoboInter-VQA、以…",
+      "研究目标是将中间表示作为双向接口，既正则化低层动作空间、提升VLA策略的可控性，又约束开放世界物理模拟器的潜在rollout、提升世界模型的物…"
+    ],
+    "reading_minutes": 11,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-20",
+    "title": "STeP: Signal Temporal Logic for Precise Specifications for Action Generation with Vision Language Models",
+    "link": "http://arxiv.org/abs/2607.18580",
+    "arxiv_id": "2607.18580",
+    "detail_path": "papers/2607.18580/",
+    "cover_path": "covers/2607.18580/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.18580.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）模型可解释性不足，难以精确执行自然语言中包含的空间、时序、逻辑约束，论文提出以信号时序逻辑（STL）作为高层语言理解与低层机器人执行的共享形式化接口的分层框架 框架将语言指令中的隐式约束显式转化为STL规范，实现约束的预执行验证、执行时优化监控、失败后结构化重规划，提升语言条件机器人规划的精度、可靠性与可解释性 研究围绕三个核心问题展开：精确语言遵循、学习策略与运动规划的自适应切换、少…",
+    "research_unit": "马里兰大学（University of Maryland）计算机科学系（Department of C…",
+    "hook_text": "现有视觉-语言-动作（VLA）模型可解释性不足，难以精确执行自然语言中包含的空间、时序、逻辑约束，论文提出以信号时序逻辑（STL）作为高层语言…",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）模型可解释性不足，难以精确执行自然语言中包含的空间、时序、逻辑约束，论文提出以信号时序逻辑（STL）作为高层语言…",
+      "框架将语言指令中的隐式约束显式转化为STL规范，实现约束的预执行验证、执行时优化监控、失败后结构化重规划，提升语言条件机器人规划的精度、可靠性…",
+      "研究围绕三个核心问题展开：精确语言遵循、学习策略与运动规划的自适应切换、少样本失败重规划"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Patch Policy: Efficient Embodied Control via Dense Visual Representations",
+    "link": "http://arxiv.org/abs/2607.18236",
+    "arxiv_id": "2607.18236",
+    "detail_path": "papers/2607.18236/",
+    "cover_path": "covers/2607.18236/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.18236.webp",
+    "preview_text": "现有机器人模仿学习策略存在两类核心瓶颈：一是传统策略将视觉观测压缩为全局特征（如CLS token、全局平均池化），会丢失精细空间细节，无法支撑精确操控；二是基于大视觉语言模型（VLA）的密集特征策略参数量大、训练推理成本高，难以满足真实世界高频反应式控制的需求。 论文提出Patch Policy，一种轻量Transformer架构，可直接输入互联网预训练视觉Transformer（ViT）的密集补丁特征，无需微调…",
+    "research_unit": "Courant Institute, New York University",
+    "hook_text": "现有机器人模仿学习策略存在两类核心瓶颈：一是传统策略将视觉观测压缩为全局特征（如CLS token、全局平均池化），会丢失精细空间细节，无法支…",
+    "key_points": [
+      "现有机器人模仿学习策略存在两类核心瓶颈：一是传统策略将视觉观测压缩为全局特征（如CLS token、全局平均池化），会丢失精细空间细节，无法支…",
+      "论文提出Patch Policy，一种轻量Transformer架构，可直接输入互联网预训练视觉Transformer（ViT）的密集补丁特征…",
+      "研究目标是验证密集补丁特征对机器人操控的有效性，为机器人社区提供低成本、易落地的视觉表征复用管道，兼顾性能与实时控制效率。"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-20",
+    "title": "FM-VLA: Force-based Memory for Vision-Language-Action Models in Contact-Rich Manipulation",
+    "link": "http://arxiv.org/abs/2607.18231",
+    "arxiv_id": "2607.18231",
+    "detail_path": "papers/2607.18231/",
+    "cover_path": "covers/2607.18231/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.18231.webp",
+    "preview_text": "提出 FM-VLA，首个基于力（wrench）记忆的视觉-语言-动作（VLA）模型，用于接触丰富（contact-rich）操作任务的时间上下文推理 解决现有视觉记忆方法在接触事件视觉变化微妙时的不足（如多次按按钮、擦拭等任务），这些任务中视觉输入几乎无变化但力信号包含关键信息 通过预训练变分自编码器（VAE）将长期高频 noisy 的力/扭矩历史压缩为紧凑的力记忆令牌，使 VLA 能够基于历史接触事件进行非马尔可…",
+    "research_unit": "清华大学 (Tsinghua University)",
+    "hook_text": "提出 FM-VLA，首个基于力（wrench）记忆的视觉-语言-动作（VLA）模型，用于接触丰富（contact-rich）操作任务的时间上下…",
+    "key_points": [
+      "提出 FM-VLA，首个基于力（wrench）记忆的视觉-语言-动作（VLA）模型，用于接触丰富（contact-rich）操作任务的时间上下…",
+      "解决现有视觉记忆方法在接触事件视觉变化微妙时的不足（如多次按按钮、擦拭等任务），这些任务中视觉输入几乎无变化但力信号包含关键信息",
+      "通过预训练变分自编码器（VAE）将长期高频 noisy 的力/扭矩历史压缩为紧凑的力记忆令牌，使 VLA 能够基于历史接触事件进行非马尔可夫决策"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-20",
+    "title": "RoboHarness: Memory-Driven Orchestration of Heterogeneous Robot Policies for Long-Horizon Planning",
+    "link": "http://arxiv.org/abs/2607.18060",
+    "arxiv_id": "2607.18060",
+    "detail_path": "papers/2607.18060/",
+    "cover_path": "covers/2607.18060/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.18060.webp",
+    "preview_text": "提出RoboHarness统一编排框架，解决现有长期机器人规划方法仅支持同构、预定义策略、能力边界固定的问题，适配异构机器人策略的能力边界不确定、跨策略分布不匹配的核心挑战 框架将独立开发的异构机器人策略（如VLA、RL策略、TAMP系统）封装为可复用智能体技能，无需联合训练或共享动作表示即可实现零样本长期任务求解 研究目标是通过能力感知的任务分解、策略路由和稳定的跨策略交接，让异构策略组合发挥互补优势，完成单一策…",
+    "research_unit": "Huawei Noah’s Ark Lab",
+    "hook_text": "提出RoboHarness统一编排框架，解决现有长期机器人规划方法仅支持同构、预定义策略、能力边界固定的问题，适配异构机器人策略的能力边界不确…",
+    "key_points": [
+      "提出RoboHarness统一编排框架，解决现有长期机器人规划方法仅支持同构、预定义策略、能力边界固定的问题，适配异构机器人策略的能力边界不确…",
+      "框架将独立开发的异构机器人策略（如VLA、RL策略、TAMP系统）封装为可复用智能体技能，无需联合训练或共享动作表示即可实现零样本长期任务求解",
+      "研究目标是通过能力感知的任务分解、策略路由和稳定的跨策略交接，让异构策略组合发挥互补优势，完成单一策略无法实现的复杂长期机器人任务"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation",
+    "link": "http://arxiv.org/abs/2607.18016",
+    "arxiv_id": "2607.18016",
+    "detail_path": "papers/2607.18016/",
+    "cover_path": "covers/2607.18016/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.18016.webp",
+    "preview_text": "提出持久化对象分词化（POT）方法，解决人形机器人长时序全身操作（loco-manipulation）中的对象状态分歧问题：即用于条件化动作生成的对象状态与用于验证动作是否达到预期物理关系的对象状态不一致 在 Unitree G1 人形机器人上实现闭环系统 POT-VLA，通过维护角色索引的 3D 对象记忆，使同一对象状态既能指导动作生成，又能支持执行后的几何验证 在 8 个真实世界任务族中，POT-VLA 将成功…",
+    "research_unit": "BUAA（北京航空航天大学）：Peng Ren、Jiang Zhao、Pei Chi",
+    "hook_text": "提出持久化对象分词化（POT）方法，解决人形机器人长时序全身操作（loco-manipulation）中的对象状态分歧问题：即用于条件化动作生…",
+    "key_points": [
+      "提出持久化对象分词化（POT）方法，解决人形机器人长时序全身操作（loco-manipulation）中的对象状态分歧问题：即用于条件化动作生…",
+      "在 Unitree G1 人形机器人上实现闭环系统 POT-VLA，通过维护角色索引的 3D 对象记忆，使同一对象状态既能指导动作生成，又能支…",
+      "在 8 个真实世界任务族中，POT-VLA 将成功率从匹配基线 39/80 提升至 71/80；在 Being-0 对齐服务任务上达到 44/…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 5,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-20",
+    "title": "RynnBrain 1.1: Towards More Capable and Generalizable Embodied Foundation Model",
+    "link": "http://arxiv.org/abs/2607.17977",
+    "arxiv_id": "2607.17977",
+    "detail_path": "papers/2607.17977/",
+    "cover_path": "covers/2607.17977/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.17977.webp",
+    "preview_text": "论文介绍了 RynnBrain 1.1，一个涵盖 2B、9B 和 122B-A10B 三种规模的具身基础模型家族，采用统一的时空表征和物理 grounding 框架，支持具身感知、空间推理、定位和规划 相比前代 RynnBrain 1.0，新增了接触点预测和原生 3D 定位任务，使模型表征和输出更直接对齐机器人操作需求 开发了 RynnBrain-VLA，设计统一的跨具身动作空间与具身特定掩码机制，并在 Unitr…",
+    "research_unit": "DAMO Academy, Alibaba Group",
+    "hook_text": "论文介绍了 RynnBrain 1.1，一个涵盖 2B、9B 和 122B-A10B 三种规模的具身基础模型家族，采用统一的时空表征和物理 g…",
+    "key_points": [
+      "论文介绍了 RynnBrain 1.1，一个涵盖 2B、9B 和 122B-A10B 三种规模的具身基础模型家族，采用统一的时空表征和物理 g…",
+      "相比前代 RynnBrain 1.0，新增了接触点预测和原生 3D 定位任务，使模型表征和输出更直接对齐机器人操作需求",
+      "开发了 RynnBrain-VLA，设计统一的跨具身动作空间与具身特定掩码机制，并在 Unitree G1、Astribot-S1 和 Tia…"
+    ],
+    "reading_minutes": 11,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-20",
+    "title": "Reasoning as a Double-Edged Sword: Architecture and Cross-Stage Robustness in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2607.17786",
+    "arxiv_id": "2607.17786",
+    "detail_path": "papers/2607.17786/",
+    "cover_path": "covers/2607.17786/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.17786.webp",
+    "preview_text": "研究核心问题：在 Vision-Language-Action (VLA) 模型中，添加推理步骤（reasoning）是否会增强模型对抗扰动的鲁棒性，以及推理输出能否作为运行时安全信号 测试了三种跨越推理谱系的模型——OpenVLA-OFT（无推理）、DeepThinkVLA（文本思维链 CoT）、RD-VLA（潜在迭代循环）——在 LIBERO 和 SimplerEnv 基准上，对视觉、推理和动作三个阶段分别注入…",
+    "research_unit": "University of Melbourne（墨尔本大学），澳大利亚维多利亚州墨尔本",
+    "hook_text": "研究核心问题：在 Vision-Language-Action (VLA) 模型中，添加推理步骤（reasoning）是否会增强模型对抗扰动的…",
+    "key_points": [
+      "研究核心问题：在 Vision-Language-Action (VLA) 模型中，添加推理步骤（reasoning）是否会增强模型对抗扰动的…",
+      "测试了三种跨越推理谱系的模型——OpenVLA-OFT（无推理）、DeepThinkVLA（文本思维链 CoT）、RD-VLA（潜在迭代循环）…",
+      "发现潜在迭代推理模型 RD-VLA 在噪声和白盒攻击下任务成功率崩溃，而基于文本 CoT 的监控探针在公平测试下无法有效检测攻击，揭示了推理架…"
+    ],
+    "reading_minutes": 11,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-07-19",
+    "title": "VLA-ReID: Video-Level Association for Re-Identification in Multi-Object Tracking with Highly Similar Objects",
+    "link": "http://arxiv.org/abs/2607.17157",
+    "arxiv_id": "2607.17157",
+    "detail_path": "papers/2607.17157/",
+    "cover_path": "covers/2607.17157/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.17157.webp",
+    "preview_text": "针对多目标跟踪（MOT）中物体高度相似场景（如蜂群）的长期身份保持难题，提出 VLA-ReID（Video-Level Association re-ID）框架 解决传统重识别（re-ID）模型的训练-推理不匹配问题：实例级查询训练与视频级全局关联推断之间的差异导致相似物体间的身份切换 通过 FCAE（Frame-Common Appearance Estimation）和 CAS（Common-Appearanc…",
+    "research_unit": "电子科技大学（University of Electronic Science and Technol…",
+    "hook_text": "针对多目标跟踪（MOT）中物体高度相似场景（如蜂群）的长期身份保持难题，提出 VLA-ReID（Video-Level Association…",
+    "key_points": [
+      "针对多目标跟踪（MOT）中物体高度相似场景（如蜂群）的长期身份保持难题，提出 VLA-ReID（Video-Level Association…",
+      "解决传统重识别（re-ID）模型的训练-推理不匹配问题：实例级查询训练与视频级全局关联推断之间的差异导致相似物体间的身份切换",
+      "通过 FCAE（Frame-Common Appearance Estimation）和 CAS（Common-Appearance Supp…"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-18",
+    "title": "What Do They See? Interpreting Complex Road Scenarios Through the Eyes of Vision-Language-Action Models for Safe and Trustworthy Autonomous Vehicle Learning",
+    "link": "http://arxiv.org/abs/2607.16938",
+    "arxiv_id": "2607.16938",
+    "detail_path": "papers/2607.16938/",
+    "cover_path": "covers/2607.16938/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.16938.webp",
+    "preview_text": "针对端到端自动驾驶视觉-语言-动作（VLA）模型决策逻辑不透明的安全痛点，提出Counterfactual Vision Action Analysis (CVAA) 反事实归因框架与Counter-nuScenes基准数据集，旨在精准识别影响模型轨迹预测的关键场景物体，为可解释、可信的自动驾驶系统提供分析工具 现有视觉归因方法（如Grad-CAM、SHAP等）存在像素级解释难以审计、掩码操作引入分布偏移的问题，该…",
+    "research_unit": "Birla Institute of Technology and Science, Pilani（印…",
+    "hook_text": "针对端到端自动驾驶视觉-语言-动作（VLA）模型决策逻辑不透明的安全痛点，提出Counterfactual Vision Action Ana…",
+    "key_points": [
+      "针对端到端自动驾驶视觉-语言-动作（VLA）模型决策逻辑不透明的安全痛点，提出Counterfactual Vision Action Ana…",
+      "现有视觉归因方法（如Grad-CAM、SHAP等）存在像素级解释难以审计、掩码操作引入分布偏移的问题，该方法通过 photorealistic…",
+      "进一步结合机制可解释性技术，从黑盒行为审计深入到模型内部表征分析，探究VLA模型对道路场景的感知逻辑是否与人类驾驶认知一致"
+    ],
+    "reading_minutes": 10,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-18",
+    "title": "PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution",
+    "link": "http://arxiv.org/abs/2607.16636",
+    "arxiv_id": "2607.16636",
+    "detail_path": "papers/2607.16636/",
+    "cover_path": "covers/2607.16636/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.16636.webp",
+    "preview_text": "针对当前视觉-语言-动作模型、世界模型、智能体系统各自为政，缺乏统一执行抽象、共享状态表示、语义任务验证与跨异构 embodiment 持久经验的架构缺陷，提出PhyAgentOS这一面向具身智能体的自进化操作系统 核心目标是通过解耦认知规划与物理执行，将调度、验证、记忆、基准测试、安全作为系统级服务，实现从游戏引擎到仿真器再到真实机器人的统一执行框架 解决的核心问题包括：执行终止与任务完成的混淆（静默错误）、异构…",
+    "research_unit": "X-Era Lab",
+    "hook_text": "针对当前视觉-语言-动作模型、世界模型、智能体系统各自为政，缺乏统一执行抽象、共享状态表示、语义任务验证与跨异构 embodiment 持久经…",
+    "key_points": [
+      "针对当前视觉-语言-动作模型、世界模型、智能体系统各自为政，缺乏统一执行抽象、共享状态表示、语义任务验证与跨异构 embodiment 持久经…",
+      "核心目标是通过解耦认知规划与物理执行，将调度、验证、记忆、基准测试、安全作为系统级服务，实现从游戏引擎到仿真器再到真实机器人的统一执行框架",
+      "解决的核心问题包括：执行终止与任务完成的混淆（静默错误）、异构组件的状态不互通、经验无法跨会话复用、评估与部署路径不一致等"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-17",
+    "title": "Foresight Residual RL for Long-Horizon Robot Manipulation with Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2607.16506",
+    "arxiv_id": "2607.16506",
+    "detail_path": "papers/2607.16506/",
+    "cover_path": "covers/2607.16506/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.16506.webp",
+    "preview_text": "针对长期机器人操作中子任务耦合问题：VLA策略在几何上成功的终端状态可能对下游任务脆弱，导致级联失败 提出 Foresight Residual RL 框架，通过离线估计的前视价值(foresight value)作为奖励乘数，优化子任务交接质量而非仅优化单任务成功率 在 Isaac Gym 的扳手-螺母装配任务（抓取、移动插入、旋转三阶段）上验证，全任务成功率从 54.5% 提升至 85.6%",
+    "research_unit": "Rutgers University Department of Computer Science",
+    "hook_text": "针对长期机器人操作中子任务耦合问题：VLA策略在几何上成功的终端状态可能对下游任务脆弱，导致级联失败",
+    "key_points": [
+      "针对长期机器人操作中子任务耦合问题：VLA策略在几何上成功的终端状态可能对下游任务脆弱，导致级联失败",
+      "提出 Foresight Residual RL 框架，通过离线估计的前视价值(foresight value)作为奖励乘数，优化子任务交接质…",
+      "在 Isaac Gym 的扳手-螺母装配任务（抓取、移动插入、旋转三阶段）上验证，全任务成功率从 54.5% 提升至 85.6%"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-07-17",
     "title": "Exo2EgoPose: Leveraging Exocentric Demonstrations for Vision-Language guided Egocentric 3D Hand Pose Forecasting",
     "link": "http://arxiv.org/abs/2607.15890",
