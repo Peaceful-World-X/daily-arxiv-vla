@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LENS: LLM-guided Environment Simplification for Planning and Control in Clutter - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对多物体杂乱场景下机器人操作中规划与控制方法的计算复杂度高、分布偏移严重、场景抽象依赖人工设计等痛点，提出LENS（LLM-guided Environment Simplification）框架 该框架通过多模态大语言模型自动生成任务相关的场景抽象表示，仅保留对任务执行必要的物体信息，无需任务特定的手动工程 支持闭环迭代反馈，当下游控制器执行失败时可自动修正抽象，作为即插即用组件适配任务与运动规划、模型预测控制…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.19633">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.19633.webp" alt="LENS: LLM-guided Environment Simplification for Planning and Control in Clutter" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对多物体杂乱场景下机器人操作中规划与控制方法的计算复杂度高、分布偏移严重、场景抽象依赖人工设计等痛点，提出LENS（LLM-guided E…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">LENS: LLM-guided Environment Simplification for Planning and Control in Clutter</h1>
+            <div class="detail-meta">2026-07-22 · <a href="http://arxiv.org/abs/2607.19633" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.19633" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.19633</span></div>
+            <p class="detail-summary">针对多物体杂乱场景下机器人操作中规划与控制方法的计算复杂度高、分布偏移严重、场景抽象依赖人工设计等痛点，提出LENS（LLM-guided Environment Simplification）框架 该框架通过多模态大语言模型自动生成任务相关的场景抽象表示，仅保留对任务执行必要的物体信息，无需任务特定的手动工程 支持闭环迭代反馈，当下游控制器执行失败时可自动修正抽象，作为即插即用组件适配任务与运动规划、模型预测控制…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文所有作者均隶属于宾夕法尼亚大学（University of Pennsylvania），所属机构邮…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.19633/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对多物体杂乱场景下机器人操作中规划与控制方法的计算复杂度高、分布偏移严重、场景抽象依赖人工设计等痛点，提出LENS（LLM-guided E…</p>
+  <ul class="reading-intro-points"><li>针对多物体杂乱场景下机器人操作中规划与控制方法的计算复杂度高、分布偏移严重、场景抽象依赖人工设计等痛点，提出LENS（LLM-guided E…</li><li>该框架通过多模态大语言模型自动生成任务相关的场景抽象表示，仅保留对任务执行必要的物体信息，无需任务特定的手动工程</li><li>支持闭环迭代反馈，当下游控制器执行失败时可自动修正抽象，作为即插即用组件适配任务与运动规划、模型预测控制、视觉-语言-动作模型三类主流机器人控…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文所有作者均隶属于<strong>宾夕法尼亚大学（University of Pennsylvania）</strong>，所属机构邮箱域名为@seas.upenn.edu</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对多物体杂乱场景下机器人操作中规划与控制方法的计算复杂度高、分布偏移严重、场景抽象依赖人工设计等痛点，提出<strong>LENS（LLM-guided Environment Simplification）</strong>框架</li><li>该框架通过多模态大语言模型自动生成任务相关的场景抽象表示，仅保留对任务执行必要的物体信息，无需任务特定的手动工程</li><li>支持闭环迭代反馈，当下游控制器执行失败时可自动修正抽象，作为即插即用组件适配任务与运动规划、模型预测控制、视觉-语言-动作模型三类主流机器人控制栈</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出通用的、任务无关的闭环场景抽象构建方法，利用VLM的语义推理能力自动估计物体任务相关性，无需人工标注或启发式规则</li><li>实现LENS与三类主流机器人控制范式的适配集成：<strong>PDDLStream任务与运动规划（TAMP）</strong>、<strong>接触隐式模型预测控制（C3+）</strong>、<strong>π₀.5视觉-语言-动作（VLA）模型</strong></li><li>在多种高度杂乱的桌面操作场景（仿真与硬件）中验证框架有效性，证明其可提升下游方法的可扩展性、鲁棒性和执行效率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>核心流程：输入自然语言任务描述与场景描述，调用<strong>GPT-4o</strong>多模态大语言模型，输出任务相关物体的分组列表，进而执行剪枝与合并操作生成简化后的场景抽象</li><li>两大基础抽象操作：</li></ul>
+<p> - <strong>剪枝</strong>：移除与任务无关的物体，可减少TAMP的状态空间变量、C3+的接触约束数量、VLA的视觉干扰输入</p>
+<p> - <strong>合并</strong>：将功能/空间耦合的物体（如堆叠组、可集体推动的物体组）合并为单个复合实体，在保留物理边界的前提下降低问题规模</p>
+<ul><li>闭环反馈机制：当下游控制器出现超时、运行错误或任务失败时，将失败信息补充到VLM提示词中，重新查询生成修正后的场景抽象，最多支持多次迭代修正</li><li>针对不同下游系统做定制化适配：TAMP中剪枝物体固定姿态不参与决策、合并组统一ID不可拆分；C3+中合并组无需满足物理稳定条件，仅需接触可集体推理；VLA中仅执行剪枝操作，对无关图像区域进行修复后输入模型</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>实验场景：自定义桌面杂乱操作场景（含轻度杂乱、重度杂乱、带堆叠物体的三类TAMP场景，平面推动模型控制场景），以及<strong>Spatial LIBERO</strong>基准VLA仿真场景，硬件实验采用桌面操作平台与水果玩偶等日常物体</li><li>模型规模：VLM backbone采用<strong>GPT-4o</strong>，VLA基座模型采用大规模<strong>π₀.5</strong>视觉-语言-动作模型</li><li>推理资源：VLM单次查询平均耗时1.76秒，远低于下游控制器的执行时间，无需额外训练，为即插即用的推理时组件</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估设置：覆盖仿真与真实硬件场景，基线为未经过滤的原始场景下的对应控制器（基线TAMP、基线C3+、基线π₀.5）</li><li>核心评估指标：任务成功率、执行时间、场景复杂度（物体数量）增加时的可扩展性</li><li>关键实验结果：</li></ul>
+<p> - TAMP场景：重度杂乱与带堆叠场景下，LENS-TAMP的成功率显著高于基线，堆叠物体合并为单个实体后可消除干扰器影响，支持2次反馈迭代修正抽象</p>
+<p> - 模型控制场景：随物体数量增加，基线C3+执行时间急剧上升（6个物体时超1000秒，7个物体时超4000秒），LENS-C3+执行时间稳定在40-135秒，成功率（39/45）远高于基线（17/30）</p>
+<p> - VLA场景：仿真中杂乱场景下基线成功率从0.85降至0.5，LENS可提升至0.69；硬件实验中LENS在所有水果放置任务上的成功率均显著高于基线，如菠萝任务从0.2提升至0.5，梨、香蕉任务从0提升至0.3</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.19695/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.18709/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">RoboInter1.5: A Holistic Intermediate Representation Suite for Embodied World Modeling and Robotic Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
