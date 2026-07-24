@@ -1,5 +1,89 @@
 [
   {
+    "date": "2026-07-23",
+    "title": "AXIS: A Growable Community-Driven Data Engine for Scalable Robot Manipulation",
+    "link": "http://arxiv.org/abs/2607.21588",
+    "arxiv_id": "2607.21588",
+    "detail_path": "papers/2607.21588/",
+    "cover_path": "covers/2607.21588/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.21588.webp",
+    "preview_text": "提出 AXIS，一个可增长的、社区驱动的数据引擎和基准，用于可扩展的机器人操作学习。 解决现有机器人数据管道难以扩展的问题，这些管道通常依赖专用硬件、集中式操作员或固定的任务套件。 通过基于浏览器的遥操作、自动化任务生成、数据处理和增强，实现大规模、多样化的机器人演示数据收集与策略训练。",
+    "research_unit": "Axis Robotics",
+    "hook_text": "提出 AXIS，一个可增长的、社区驱动的数据引擎和基准，用于可扩展的机器人操作学习。",
+    "key_points": [
+      "提出 AXIS，一个可增长的、社区驱动的数据引擎和基准，用于可扩展的机器人操作学习。",
+      "解决现有机器人数据管道难以扩展的问题，这些管道通常依赖专用硬件、集中式操作员或固定的任务套件。",
+      "通过基于浏览器的遥操作、自动化任务生成、数据处理和增强，实现大规模、多样化的机器人演示数据收集与策略训练。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-23",
+    "title": "HyWorldVLA: A Vision-Language-Action Model with Hybrid World Modeling for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2607.20988",
+    "arxiv_id": "2607.20988",
+    "detail_path": "papers/2607.20988/",
+    "cover_path": "covers/2607.20988/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.20988.webp",
+    "preview_text": "提出 HyWorldVLA，一个面向端到端自动驾驶的混合世界模型视觉-语言-动作（VLA）框架，旨在统一像素级监督和潜在表征学习的优势 解决现有像素级世界模型对场景噪声敏感、潜在世界模型缺乏可解释性和表征退化的问题，在保证驾驶性能的同时提升场景噪声鲁棒性",
+    "research_unit": "比亚迪股份有限公司 汽车新技术研究院 (Automotive New Technology Resea…",
+    "hook_text": "提出 HyWorldVLA，一个面向端到端自动驾驶的混合世界模型视觉-语言-动作（VLA）框架，旨在统一像素级监督和潜在表征学习的优势",
+    "key_points": [
+      "提出 HyWorldVLA，一个面向端到端自动驾驶的混合世界模型视觉-语言-动作（VLA）框架，旨在统一像素级监督和潜在表征学习的优势",
+      "解决现有像素级世界模型对场景噪声敏感、潜在世界模型缺乏可解释性和表征退化的问题，在保证驾驶性能的同时提升场景噪声鲁棒性",
+      "提出 HyWorldVLA 混合世界建模范式，将像素级世界动作模型与潜在世界模型统一到单一框架中"
+    ],
+    "reading_minutes": 4,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-22",
+    "title": "Emergent Compositional Skills in Mixture-of-Experts VLAs",
+    "link": "http://arxiv.org/abs/2607.20771",
+    "arxiv_id": "2607.20771",
+    "detail_path": "papers/2607.20771/",
+    "cover_path": "covers/2607.20771/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.20771.webp",
+    "preview_text": "针对传统视觉-语言-动作模型（VLA）作为单体策略、缺乏可复用可组合技能的问题，研究是否能在VLA的动作头加入简化版混合专家（MoE）架构，让模型从专家演示数据中自动涌现出可组合、可解释的基础技能，无需预定义任务分解或技能库 核心目标是验证MoE架构能否让VLA自发学习将复杂操作任务分解为可复用的低级行为基元，同时保持原有的任务完成能力 论文同时探索学习到的专家是通用的可复用技能还是任务特定策略，以及长时序任务如何…",
+    "research_unit": "未在提供的论文内容中明确标注作者所属研究机构",
+    "hook_text": "针对传统视觉-语言-动作模型（VLA）作为单体策略、缺乏可复用可组合技能的问题，研究是否能在VLA的动作头加入简化版混合专家（MoE）架构，让…",
+    "key_points": [
+      "针对传统视觉-语言-动作模型（VLA）作为单体策略、缺乏可复用可组合技能的问题，研究是否能在VLA的动作头加入简化版混合专家（MoE）架构，让…",
+      "核心目标是验证MoE架构能否让VLA自发学习将复杂操作任务分解为可复用的低级行为基元，同时保持原有的任务完成能力",
+      "论文同时探索学习到的专家是通用的可复用技能还是任务特定策略，以及长时序任务如何通过基元组合完成"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
     "date": "2026-07-22",
     "title": "Closing the Lab-to-Store Gap: A Data-Efficient Post-Training and Experience-Driven Learning VLA Framework for Retail Humanoids",
     "link": "http://arxiv.org/abs/2607.20345",
