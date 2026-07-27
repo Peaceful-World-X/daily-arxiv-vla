@@ -1,6 +1,34 @@
 [
   {
     "date": "2026-07-23",
+    "title": "Addressing the Orchestration Gap in Generalist Robots via Physical Agency",
+    "link": "http://arxiv.org/abs/2607.21725",
+    "arxiv_id": "2607.21725",
+    "detail_path": "papers/2607.21725/",
+    "cover_path": "covers/2607.21725/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.21725.webp",
+    "preview_text": "论文核心是提出Pigey（Physical Agency orchestrator，物理感知编排器），用于解决通用机器人的编排缺口问题，将感知、世界知识、推理、规划、成功检测、恢复、控制等任务级能力解耦，而非全部整合到预训练的视觉语言动作（VLA）策略中 研究目标是通过推理时的闭环智能体编排，调用已有的冻结VLA策略和参数化技能，在不收集额外机器人数据或进行策略后训练的前提下，提升通用机器人在复杂推理任务上的表现…",
+    "research_unit": "Princeton University",
+    "hook_text": "论文核心是提出Pigey（Physical Agency orchestrator，物理感知编排器），用于解决通用机器人的编排缺口问题，将感知…",
+    "key_points": [
+      "论文核心是提出Pigey（Physical Agency orchestrator，物理感知编排器），用于解决通用机器人的编排缺口问题，将感知…",
+      "研究目标是通过推理时的闭环智能体编排，调用已有的冻结VLA策略和参数化技能，在不收集额外机器人数据或进行策略后训练的前提下，提升通用机器人在复…",
+      "论文要解决的问题是：当前直接提示VLA策略时，无法处理需要否定、世界知识、任务分解、进度追踪、失败恢复等能力的复杂指令，而现有模块化方法要么需…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-07-23",
     "title": "AXIS: A Growable Community-Driven Data Engine for Scalable Robot Manipulation",
     "link": "http://arxiv.org/abs/2607.21588",
     "arxiv_id": "2607.21588",
@@ -10585,14 +10613,16 @@
     "detail_path": "papers/2606.03159/",
     "cover_path": "covers/2606.03159/",
     "paper_image_path": "assets/paper-images/thumbs/2606.03159.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "提出 OmniDreams，一个从 Cosmos 扩散模型中期和后训练得到的生成式世界模型，用于自动驾驶闭环仿真 解决基于重建的神经模拟器受限于原始捕捉数据、难以泛化到高度动态或新颖场景的问题，支持安全评估长尾驾驶场景 将 OmniDreams 与 Alpamayo 1 策略模型和 AlpaSim 编排器集成，构建实时交互式闭环仿真系统",
+    "research_unit": "NVIDIA（英伟达实验室）",
+    "hook_text": "提出 OmniDreams，一个从 Cosmos 扩散模型中期和后训练得到的生成式世界模型，用于自动驾驶闭环仿真",
     "key_points": [
-      "待生成"
+      "提出 OmniDreams，一个从 Cosmos 扩散模型中期和后训练得到的生成式世界模型，用于自动驾驶闭环仿真",
+      "解决基于重建的神经模拟器受限于原始捕捉数据、难以泛化到高度动态或新颖场景的问题，支持安全评估长尾驾驶场景",
+      "将 OmniDreams 与 Alpamayo 1 策略模型和 AlpaSim 编排器集成，构建实时交互式闭环仿真系统"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#ef6c3f",
       "to": "#f6b13d",

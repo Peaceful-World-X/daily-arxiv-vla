@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Addressing the Orchestration Gap in Generalist Robots via Physical Agency - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文核心是提出Pigey（Physical Agency orchestrator，物理感知编排器），用于解决通用机器人的编排缺口问题，将感知、世界知识、推理、规划、成功检测、恢复、控制等任务级能力解耦，而非全部整合到预训练的视觉语言动作（VLA）策略中 研究目标是通过推理时的闭环智能体编排，调用已有的冻结VLA策略和参数化技能，在不收集额外机器人数据或进行策略后训练的前提下，提升通用机器人在复杂推理任务上的表现…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.21725">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.21725.webp" alt="Addressing the Orchestration Gap in Generalist Robots via Physical Agency" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文核心是提出Pigey（Physical Agency orchestrator，物理感知编排器），用于解决通用机器人的编排缺口问题，将感知…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Addressing the Orchestration Gap in Generalist Robots via Physical Agency</h1>
+            <div class="detail-meta">2026-07-23 · <a href="http://arxiv.org/abs/2607.21725" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.21725" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.21725</span></div>
+            <p class="detail-summary">论文核心是提出Pigey（Physical Agency orchestrator，物理感知编排器），用于解决通用机器人的编排缺口问题，将感知、世界知识、推理、规划、成功检测、恢复、控制等任务级能力解耦，而非全部整合到预训练的视觉语言动作（VLA）策略中 研究目标是通过推理时的闭环智能体编排，调用已有的冻结VLA策略和参数化技能，在不收集额外机器人数据或进行策略后训练的前提下，提升通用机器人在复杂推理任务上的表现…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Princeton University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.21725/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文核心是提出Pigey（Physical Agency orchestrator，物理感知编排器），用于解决通用机器人的编排缺口问题，将感知…</p>
+  <ul class="reading-intro-points"><li>论文核心是提出Pigey（Physical Agency orchestrator，物理感知编排器），用于解决通用机器人的编排缺口问题，将感知…</li><li>研究目标是通过推理时的闭环智能体编排，调用已有的冻结VLA策略和参数化技能，在不收集额外机器人数据或进行策略后训练的前提下，提升通用机器人在复…</li><li>论文要解决的问题是：当前直接提示VLA策略时，无法处理需要否定、世界知识、任务分解、进度追踪、失败恢复等能力的复杂指令，而现有模块化方法要么需…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>Princeton University</li><li>Together AI</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文核心是提出<strong>Pigey</strong>（Physical Agency orchestrator，物理感知编排器），用于解决通用机器人的<strong>编排缺口</strong>问题，将感知、世界知识、推理、规划、成功检测、恢复、控制等任务级能力解耦，而非全部整合到预训练的视觉语言动作（VLA）策略中</li><li>研究目标是通过推理时的闭环智能体编排，调用已有的冻结VLA策略和参数化技能，在不收集额外机器人数据或进行策略后训练的前提下，提升通用机器人在复杂推理任务上的表现</li><li>论文要解决的问题是：当前直接提示VLA策略时，无法处理需要否定、世界知识、任务分解、进度追踪、失败恢复等能力的复杂指令，而现有模块化方法要么需要额外训练、依赖符号API或特权仿真状态，要么无法形成完整的闭环验证恢复流程</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出全栈机器人泛化框架，将感知、推理、规划、验证、恢复、控制等能力解耦，任务失败可归因到缺失的特定组件，而非笼统的“数据不足”</li><li>设计<strong>Pigey</strong>闭环推理时编排器，无需额外数据收集或后训练，即可通过调用冻结的VLA策略和参数化技能，完成复杂真实世界的操作任务</li><li>首次明确定义并弥合<strong>编排缺口</strong>：证明相同的冻结运动技能在Pigey闭环驱动下的成功率远高于直接提示，且性能提升集中在推理受限类任务而非运动控制类任务</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>Pigey是由前沿视觉语言模型（VLM）驱动的闭环智能体，核心运行流程为：读取当前观测和交互历史→生成工具调用→执行工具→验证结果→失败则恢复，循环直到任务完成或达到最大工具调用次数</li><li>核心组件包括5个工具：<strong>Perceive</strong>（返回相机视角、机器人状态、检测到的物体标签集）、<strong>Pick/DropAbove</strong>（基于TiPToP的TAMP后端，执行刚性物体的抓取和放置）、<strong>VLARollout</strong>（基于π₀.₅的VLA后端，执行可变形、接触丰富或恢复类子目标）、<strong>Done</strong>（终止任务）；智能体维护episode级别的记忆模块，记录已尝试的子目标、当前持有的物体、已放置的物体，支持长时序任务的进度追踪</li><li>关键创新点：将原本开环的TiPToP抓取放置拆分为独立的抓取和放置两个工具，在两者之间插入传感器验证环节，仅当抓取被视觉和夹爪宽度传感器的双重确认成功后才执行放置，将开环流程转化为闭环；支持TAMP和VLA双后端双向路由，某一后端失败时自动升级到另一后端，同时支持失败重试、遮挡物移除等恢复策略</li><li>采用确定性传感器信号和视觉信号保守结合的验证机制，若后端报告成功但传感器显示夹爪为空，则直接判定为失败，避免乐观后端的误导；该编排流程不依赖特定前沿VLM，在7种及以上不同reasoner下均能复现性能提升</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真评估数据集：<strong>LIBERO-PRO</strong>基准测试集，包含6类扰动套件，覆盖物体状态、指令、环境的分布外场景，测试策略鲁棒性</li><li>真实机器人评估平台：<strong>DROID</strong>桌面操作平台，搭配<strong>Franka FR3</strong>机械臂，共30个任务，涵盖8类能力探测类别（简单拾取放置、世界知识、条件逻辑、多步推理、空间推理、障碍物推理、错误恢复、长时记忆）</li><li>使用的冻结后端模型：基于TiPToP的TAMP抓取规划器（使用Gemini Robotics-ER做开放词汇grounding）、<strong>π₀.₅ VLA</strong>（用于可变形物体和恢复场景的闭环控制）</li><li>推理资源：真实机器人实验使用<strong>Claude Opus 4.7</strong>作为编排器reasoner，仿真实验sweep 9个前沿VLM；计算资源由Gemini Academic Program提供支持</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真使用LIBERO-PRO基准，真实机器人使用DROID平台的Franka FR3机械臂，所有对比实验固定机器人、相机、场景、演示数据和策略权重，仅改变推理时的编排流程</li><li>主要评估指标：二分类任务成功率，真实机器人每个任务测试5次，仿真每个任务每个reasoner测试10次</li><li>关键实验结果：</li></ul>
+<p> - 在LIBERO-PRO仿真基准上，Pigey将冻结的π₀.₅-LIBERO基线的平均成功率从12.8%提升至53.3%，是此前最优方法CaP-Agent0（18.2%）的近3倍，超越原SOTA 4倍以上，且无需任务特定微调</p>
+<p> - 在真实机器人30个任务上，Pigey的总体成功率达到97.3%；其中简单拾取放置任务从95%提升至100%，推理受限类任务从平均4.6%提升至96.9%</p>
+<p> - 与开环的TiPToP基线相比，Pigey通过闭环验证抓取结果，避免开环规划中物体移位或初始遮挡导致的失败，在简单拾取放置任务上将成功率从80%提升至100%，在多步、障碍物、恢复类任务上的优势更显著</p>
+<p> - 所有性能提升完全来自推理时的闭环编排流程，未对底层运动策略做任何修改或额外训练，证明“编排缺口”是通用机器人性能提升的重要来源</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2607.21588/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">AXIS: A Growable Community-Driven Data Engine for Scalable Robot Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
