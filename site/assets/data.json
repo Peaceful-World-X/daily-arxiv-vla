@@ -1,5 +1,257 @@
 [
   {
+    "date": "2026-07-27",
+    "title": "Data Pyramid for Embodied Manipulation",
+    "link": "http://arxiv.org/abs/2607.24744",
+    "arxiv_id": "2607.24744",
+    "detail_path": "papers/2607.24744/",
+    "cover_path": "covers/2607.24744/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.24744.webp",
+    "preview_text": "提出一个“数据金字塔”框架，系统性地组织和分析具身智能（Embodied Intelligence）领域用于训练操作模型的海量异构数据。 核心问题在于解决具身智能数据在“可扩展性”与“机器人对齐性”之间的根本矛盾，因为不同数据源在物理保真度、成本、规模和可迁移性上差异巨大。 旨在为下一代具身基础模型的开发和训练提供数据分类、组合和利用的指导原则。",
+    "research_unit": "北京大学 (PKU)",
+    "hook_text": "提出一个“数据金字塔”框架，系统性地组织和分析具身智能（Embodied Intelligence）领域用于训练操作模型的海量异构数据。",
+    "key_points": [
+      "提出一个“数据金字塔”框架，系统性地组织和分析具身智能（Embodied Intelligence）领域用于训练操作模型的海量异构数据。",
+      "核心问题在于解决具身智能数据在“可扩展性”与“机器人对齐性”之间的根本矛盾，因为不同数据源在物理保真度、成本、规模和可迁移性上差异巨大。",
+      "旨在为下一代具身基础模型的开发和训练提供数据分类、组合和利用的指导原则。"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-27",
+    "title": "τ: Learning Touch-Augmented Vision-Language-Action Models from Future Visual Supervision",
+    "link": "http://arxiv.org/abs/2607.24485",
+    "arxiv_id": "2607.24485",
+    "detail_path": "papers/2607.24485/",
+    "cover_path": "covers/2607.24485/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.24485.webp",
+    "preview_text": "论文提出了 τ，一个触觉增强的视觉-语言-动作（VLA）框架，旨在解决接触密集型机器人操作任务 核心问题是在有限数据下，如何学习有效的触觉时空表征，并将其高效融入预训练的VLA模型 通过引入基于未来视觉监督的自监督学习，模型能学习到动作条件的动态触觉表征，从而提升操作性能和泛化能力",
+    "research_unit": "论文作者主要来自 北京交通大学（Beijing Jiaotong University）",
+    "hook_text": "论文提出了 τ，一个触觉增强的视觉-语言-动作（VLA）框架，旨在解决接触密集型机器人操作任务",
+    "key_points": [
+      "论文提出了 τ，一个触觉增强的视觉-语言-动作（VLA）框架，旨在解决接触密集型机器人操作任务",
+      "核心问题是在有限数据下，如何学习有效的触觉时空表征，并将其高效融入预训练的VLA模型",
+      "通过引入基于未来视觉监督的自监督学习，模型能学习到动作条件的动态触觉表征，从而提升操作性能和泛化能力"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-07-27",
+    "title": "DeVA: Decoupled Video-Action Model with physical guidance for robot policy learning",
+    "link": "http://arxiv.org/abs/2607.24159",
+    "arxiv_id": "2607.24159",
+    "detail_path": "papers/2607.24159/",
+    "cover_path": "covers/2607.24159/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.24159.webp",
+    "preview_text": "论文提出解耦视频-动作模型DeVA，用于语言条件机器人操作策略学习，解决现有视觉-语言-动作（VLA）模型静态预训练缺乏物理动态与时序因果性、现有视频-动作模型架构耦合难优化或未充分利用视频信息的问题 核心目标是通过视频生成先验与物理感知引导的结合，提升机器人策略的少样本学习能力、泛化性与优化效率 覆盖仿真多任务操作、真实家庭环境、真实双臂协调操作三类场景，验证方法的通用性与实用性",
+    "research_unit": "University of California, Irvine",
+    "hook_text": "论文提出解耦视频-动作模型DeVA，用于语言条件机器人操作策略学习，解决现有视觉-语言-动作（VLA）模型静态预训练缺乏物理动态与时序因果性、…",
+    "key_points": [
+      "论文提出解耦视频-动作模型DeVA，用于语言条件机器人操作策略学习，解决现有视觉-语言-动作（VLA）模型静态预训练缺乏物理动态与时序因果性、…",
+      "核心目标是通过视频生成先验与物理感知引导的结合，提升机器人策略的少样本学习能力、泛化性与优化效率",
+      "覆盖仿真多任务操作、真实家庭环境、真实双臂协调操作三类场景，验证方法的通用性与实用性"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-27",
+    "title": "A Motion-Aware Vector Quantization Framework with Centroid Reuse for Efficient VLA Inference",
+    "link": "http://arxiv.org/abs/2607.24148",
+    "arxiv_id": "2607.24148",
+    "detail_path": "papers/2607.24148/",
+    "cover_path": "covers/2607.24148/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.24148.webp",
+    "preview_text": "针对Vision-Language-Action（VLA）模型推理延迟高、难以满足实时机器人控制需求的问题，指出现有加速方案（如Dadu-Corki）仅减少模型调用次数，未挖掘模型内部的计算与内存冗余，传统向量量化方法又忽略机器人执行状态的敏感度差异，存在明显效率瓶颈。 提出软硬件协同设计的VQVLA框架，核心是通过运动感知的动态量化策略和质心复用计算机制，同时降低VLA推理的内存访问和计算开销，在几乎不损失任务成…",
+    "research_unit": "上海交通大学计算机学院",
+    "hook_text": "针对Vision-Language-Action（VLA）模型推理延迟高、难以满足实时机器人控制需求的问题，指出现有加速方案（如Dadu-Co…",
+    "key_points": [
+      "针对Vision-Language-Action（VLA）模型推理延迟高、难以满足实时机器人控制需求的问题，指出现有加速方案（如Dadu-Co…",
+      "提出软硬件协同设计的VQVLA框架，核心是通过运动感知的动态量化策略和质心复用计算机制，同时降低VLA推理的内存访问和计算开销，在几乎不损失任…",
+      "研究目标是为VLA模型提供高效推理加速方案，支撑边缘设备和实时场景下的具身智能应用落地。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 5,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-27",
+    "title": "FutureRTC: Real-Time Robot Execution with Anticipatory-Conditioned Action Chunking",
+    "link": "http://arxiv.org/abs/2607.24008",
+    "arxiv_id": "2607.24008",
+    "detail_path": "papers/2607.24008/",
+    "cover_path": "covers/2607.24008/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.24008.webp",
+    "preview_text": "针对Vision-Language-Action（VLA）模型异步执行时存在的预测-执行错位问题，现有方法存在仅平滑边界、需 costly 策略优化、忽略视觉观测等局限，本文提出FutureRTC即插即用适配框架，无需修改基础VLA策略即可缓解该问题 FutureRTC通过预测执行时的观测和状态，使VLA策略能够基于执行时刻的真实上下文生成动作，实现更平滑、快速、高成功率的实时机器人控制 论文核心目标是解决VLA部…",
+    "research_unit": "提供的HTML原文片段中未明确标注作者所属研究机构（仅出现作者上标编号1、2、3，无对应机构说明）",
+    "hook_text": "针对Vision-Language-Action（VLA）模型异步执行时存在的预测-执行错位问题，现有方法存在仅平滑边界、需 costly 策…",
+    "key_points": [
+      "针对Vision-Language-Action（VLA）模型异步执行时存在的预测-执行错位问题，现有方法存在仅平滑边界、需 costly 策…",
+      "FutureRTC通过预测执行时的观测和状态，使VLA策略能够基于执行时刻的真实上下文生成动作，实现更平滑、快速、高成功率的实时机器人控制",
+      "论文核心目标是解决VLA部署中推理延迟导致的异步执行不连续问题，在不修改预训练VLA的前提下提升延迟鲁棒性和控制性能"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-26",
+    "title": "A Few Words Go a Long Way: Language Guided Robot Policy Synthesis",
+    "link": "http://arxiv.org/abs/2607.23784",
+    "arxiv_id": "2607.23784",
+    "detail_path": "papers/2607.23784/",
+    "cover_path": "covers/2607.23784/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.23784.webp",
+    "preview_text": "提出ARCHITECT（Agentic Robot Code with Human In ThE loop CorrecTions）框架，将机器人策略获取定义为交互式程序合成任务，无需任何机器人特定训练数据 解决现有 Vision-Language-Action（VLA）黑盒策略不可解释、难以修正、微调成本高，以及传统模块化方法存在自然语言指令与执行之间的specification gap的核心问题 通过人类在环的…",
+    "research_unit": "University of Washington（Daphne Chen, Archit Ritesh…",
+    "hook_text": "提出ARCHITECT（Agentic Robot Code with Human In ThE loop CorrecTions）框架，将机…",
+    "key_points": [
+      "提出ARCHITECT（Agentic Robot Code with Human In ThE loop CorrecTions）框架，将机…",
+      "解决现有 Vision-Language-Action（VLA）黑盒策略不可解释、难以修正、微调成本高，以及传统模块化方法存在自然语言指令与执…",
+      "通过人类在环的自然语言修正与持久化技能库，实现可 steerable 的机器人策略生成与跨任务知识迁移，在真实机器人复杂操作任务上验证有效性"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-26",
+    "title": "LabRobFail: A Benchmark for Robotic Failure Analysis in Chemical Self-driving Laboratories",
+    "link": "http://arxiv.org/abs/2607.23704",
+    "arxiv_id": "2607.23704",
+    "detail_path": "papers/2607.23704/",
+    "cover_path": "covers/2607.23704/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.23704.webp",
+    "preview_text": "论文提出LabRobFail故障分析框架，针对化学自驱动实验室（Self-Driving Laboratories, SDLs）中机器人部署可靠性不足的核心痛点展开研究，解决现有领域大规模故障数据稀缺、评估基准粗粒度、无法支撑可执行故障恢复的问题。 框架包含三个核心组件：面向化学实验室的故障注入模拟平台LabRobFail-Sim、大规模故障轨迹数据集LabRobFail-Data、多维度故障理解评估基准LabRo…",
+    "research_unit": "注：提供的论文HTML内容存在截断，未包含作者所属机构的具体名称，仅标注了作者的多机构 affilia…",
+    "hook_text": "论文提出LabRobFail故障分析框架，针对化学自驱动实验室（Self-Driving Laboratories, SDLs）中机器人部署可…",
+    "key_points": [
+      "论文提出LabRobFail故障分析框架，针对化学自驱动实验室（Self-Driving Laboratories, SDLs）中机器人部署可…",
+      "框架包含三个核心组件：面向化学实验室的故障注入模拟平台LabRobFail-Sim、大规模故障轨迹数据集LabRobFail-Data、多维度…",
+      "研究目标是为高安全要求的化学实验室自治场景提供从故障检测、定位、诊断到闭环恢复的全链路能力，避免不可逆实验故障导致的安全风险与资源浪费。"
+    ],
+    "reading_minutes": 10,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-25",
+    "title": "WCM: World-Cognition Model for Generalizable Human-Robot Interaction",
+    "link": "http://arxiv.org/abs/2607.22999",
+    "arxiv_id": "2607.22999",
+    "detail_path": "papers/2607.22999/",
+    "cover_path": "covers/2607.22999/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.22999.webp",
+    "preview_text": "当前机器人控制范式（如视觉-语言-动作模型 VLA、世界模型规划器）主要优化指令执行，将语言视为动作生成的条件信号，导致用户难以在执行过程中进行实时干预、获取可解释说明或通过交互教学机器人。 本文提出 WCM（World-Cognition Model），一种以人为中心的具身智能体，采用 SLAK 架构（Sensing、Logic、Action、Knowledge）与异步运行时，显式分离感知、推理、控制与记忆，并支…",
+    "research_unit": "Cyberbrain, Inc.（论文资助方及系统、数据集、知识产权的所有方）",
+    "hook_text": "当前机器人控制范式（如视觉-语言-动作模型 VLA、世界模型规划器）主要优化指令执行，将语言视为动作生成的条件信号，导致用户难以在执行过程中进…",
+    "key_points": [
+      "当前机器人控制范式（如视觉-语言-动作模型 VLA、世界模型规划器）主要优化指令执行，将语言视为动作生成的条件信号，导致用户难以在执行过程中进…",
+      "本文提出 WCM（World-Cognition Model），一种以人为中心的具身智能体，采用 SLAK 架构（Sensing、Logic、…",
+      "WCM 引入人在回路教学模式，将自主执行 rollouts 与人类教学片段统一提炼为思维链（CoT）监督信号，实现机器人的持续自我改进与泛化。"
+    ],
+    "reading_minutes": 10,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-25",
+    "title": "Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline",
+    "link": "http://arxiv.org/abs/2607.22997",
+    "arxiv_id": "2607.22997",
+    "detail_path": "papers/2607.22997/",
+    "cover_path": "covers/2607.22997/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.22997.webp",
+    "preview_text": "本文围绕Physical AI（物理AI）场景，提出了一套端到端全AMD加速的视觉-语言-动作（VLA）机器人操作技术栈，覆盖数据中心训练、仿真渲染、边缘部署全流程，完全基于开源的ROCm软件栈，无需依赖CUDA生态，解决了当前 embodied AI 开发中硬件生态锁定、仿真到现实迁移难、开发门槛高的问题。 论文通过四个渐进的技术演示，验证了全AMD栈在机器人操作、语义理解、合成数据生成、强化学习训练等核心场景的…",
+    "research_unit": "AMD AIG Team",
+    "hook_text": "本文围绕Physical AI（物理AI）场景，提出了一套端到端全AMD加速的视觉-语言-动作（VLA）机器人操作技术栈，覆盖数据中心训练、仿…",
+    "key_points": [
+      "本文围绕Physical AI（物理AI）场景，提出了一套端到端全AMD加速的视觉-语言-动作（VLA）机器人操作技术栈，覆盖数据中心训练、仿…",
+      "论文通过四个渐进的技术演示，验证了全AMD栈在机器人操作、语义理解、合成数据生成、强化学习训练等核心场景的可行性，为 embodied AI…",
+      "所有技术 pipeline 均可在免费的Radeon Cloud Platform上运行，无需本地高端硬件，降低了社区开发者的参与门槛。"
+    ],
+    "reading_minutes": 10,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
     "date": "2026-07-23",
     "title": "Addressing the Orchestration Gap in Generalist Robots via Physical Agency",
     "link": "http://arxiv.org/abs/2607.21725",

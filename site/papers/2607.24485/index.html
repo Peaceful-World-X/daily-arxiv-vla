@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>τ: Learning Touch-Augmented Vision-Language-Action Models from Future Visual Supervision - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出了 τ，一个触觉增强的视觉-语言-动作（VLA）框架，旨在解决接触密集型机器人操作任务 核心问题是在有限数据下，如何学习有效的触觉时空表征，并将其高效融入预训练的VLA模型 通过引入基于未来视觉监督的自监督学习，模型能学习到动作条件的动态触觉表征，从而提升操作性能和泛化能力" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.24485">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.24485.webp" alt="τ: Learning Touch-Augmented Vision-Language-Action Models from Future Visual Supervision" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出了 τ，一个触觉增强的视觉-语言-动作（VLA）框架，旨在解决接触密集型机器人操作任务</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">τ: Learning Touch-Augmented Vision-Language-Action Models from Future Visual Supervision</h1>
+            <div class="detail-meta">2026-07-27 · <a href="http://arxiv.org/abs/2607.24485" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.24485" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.24485</span></div>
+            <p class="detail-summary">论文提出了 τ，一个触觉增强的视觉-语言-动作（VLA）框架，旨在解决接触密集型机器人操作任务 核心问题是在有限数据下，如何学习有效的触觉时空表征，并将其高效融入预训练的VLA模型 通过引入基于未来视觉监督的自监督学习，模型能学习到动作条件的动态触觉表征，从而提升操作性能和泛化能力</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者主要来自 北京交通大学（Beijing Jiaotong University）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.24485/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出了 τ，一个触觉增强的视觉-语言-动作（VLA）框架，旨在解决接触密集型机器人操作任务</p>
+  <ul class="reading-intro-points"><li>论文提出了 τ，一个触觉增强的视觉-语言-动作（VLA）框架，旨在解决接触密集型机器人操作任务</li><li>核心问题是在有限数据下，如何学习有效的触觉时空表征，并将其高效融入预训练的VLA模型</li><li>通过引入基于未来视觉监督的自监督学习，模型能学习到动作条件的动态触觉表征，从而提升操作性能和泛化能力</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者主要来自 <strong>北京交通大学</strong>（Beijing Jiaotong University）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出了 <strong>τ</strong>，一个触觉增强的视觉-语言-动作（VLA）框架，旨在解决接触密集型机器人操作任务</li><li>核心问题是在有限数据下，如何学习有效的触觉时空表征，并将其高效融入预训练的VLA模型</li><li>通过引入基于未来视觉监督的自监督学习，模型能学习到动作条件的动态触觉表征，从而提升操作性能和泛化能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了一种<strong>动作条件的跨模态预测目标</strong>，通过从当前触觉和后续动作预测未来视觉特征变化，来学习动态感知的触觉表征，且不增加推理开销</li><li>提出了 <strong>τ 框架</strong>，将学到的触觉表征与预训练VLA模型的语义空间对齐，在保留其原有能力的同时实现触觉增强</li><li>构建并发布了 <strong>TacAura 数据集</strong>，包含四个接触密集型任务的同步视觉、本体感知和触觉信号，为触觉增强策略学习提供支持</li><li>在真实机器人实验中，<strong>τ 显著优于</strong>现有的视觉VLA和触觉增强多模态策略基线，并表现出对未见物体和场景的泛化能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>模型架构</strong>：基于预训练VLA模型 <strong>π0.5</strong>，引入触觉编码与适配模块，将触觉信号映射到与VLA兼容的语义空间；并增加一个受JEPA启发的辅助预测分支，仅在训练时用于自监督学习</li><li><strong>关键技术</strong>：<strong>JEPA式自监督学习</strong>，不直接预测像素，而是在潜在空间预测未来视觉特征的变化，以捕捉触觉交互的动态；<strong>触觉适配模块</strong>，通过可学习的投影将触觉特征与视觉-语言令牌对齐</li><li><strong>训练策略</strong>：端到端联合优化模仿学习损失和预测自监督损失，自监督分支在推理时被移除，不影响部署效率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：<strong>TacAura</strong>，包含4个任务（插头插入、USB插入、盖章、白板擦除），每个任务100个演示，共400条轨迹，数据包含多视角RGB图像、本体感知和视触觉传感器信号</li><li><strong>模型基础</strong>：基于 <strong>π0.5</strong> VLA模型，参数规模未明确提及，但属于预训练大模型</li><li><strong>训练资源</strong>：使用 <strong>2块 NVIDIA A800 80GB GPU</strong> 进行训练，在单块 <strong>NVIDIA RTX 4090 GPU</strong> 上进行推理评估</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：在真实世界的 <strong>Franka Research 3</strong> 机器人平台上进行，针对四个接触密集型任务，每个任务20次试验，评估分阶段成功率</li><li><strong>主要评估指标</strong>：任务各阶段的成功率（如抓取、对齐、插入完成率）和最终平均成功率</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - <strong>τ</strong> 的最好变体（使用腕部视图监督）平均成功率<strong>71.25%</strong>，远超最强基线ForceVLA（30.00%）和视觉VLA模型π0.5（28.75%）</p>
+<p> - 在未见物体和场景的泛化测试中，<strong>τ</strong> 在白板擦除任务上保持<strong>95%</strong>的成功率，而在USB插入任务上成功率从40%下降至22.5%，显示出任务依赖的泛化能力</p>
+<p> - 消融实验表明，<strong>触觉编码与适配模块</strong>对性能贡献最大（移除后成功率下降42.5个百分点），其次是<strong>预测自监督学习</strong>（下降20个百分点）和<strong>动作序列条件</strong>（下降12.5个百分点）</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.24744/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Data Pyramid for Embodied Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.24159/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">DeVA: Decoupled Video-Action Model with physical guidance for robot policy learning</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

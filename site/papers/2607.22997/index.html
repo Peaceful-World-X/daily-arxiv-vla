@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文围绕Physical AI（物理AI）场景，提出了一套端到端全AMD加速的视觉-语言-动作（VLA）机器人操作技术栈，覆盖数据中心训练、仿真渲染、边缘部署全流程，完全基于开源的ROCm软件栈，无需依赖CUDA生态，解决了当前 embodied AI 开发中硬件生态锁定、仿真到现实迁移难、开发门槛高的问题。 论文通过四个渐进的技术演示，验证了全AMD栈在机器人操作、语义理解、合成数据生成、强化学习训练等核心场景的…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.22997">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.22997.webp" alt="Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文围绕Physical AI（物理AI）场景，提出了一套端到端全AMD加速的视觉-语言-动作（VLA）机器人操作技术栈，覆盖数据中心训练、仿…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline</h1>
+            <div class="detail-meta">2026-07-25 · <a href="http://arxiv.org/abs/2607.22997" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.22997" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.22997</span></div>
+            <p class="detail-summary">本文围绕Physical AI（物理AI）场景，提出了一套端到端全AMD加速的视觉-语言-动作（VLA）机器人操作技术栈，覆盖数据中心训练、仿真渲染、边缘部署全流程，完全基于开源的ROCm软件栈，无需依赖CUDA生态，解决了当前 embodied AI 开发中硬件生态锁定、仿真到现实迁移难、开发门槛高的问题。 论文通过四个渐进的技术演示，验证了全AMD栈在机器人操作、语义理解、合成数据生成、强化学习训练等核心场景的…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">10 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">AMD AIG Team</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.22997/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文围绕Physical AI（物理AI）场景，提出了一套端到端全AMD加速的视觉-语言-动作（VLA）机器人操作技术栈，覆盖数据中心训练、仿…</p>
+  <ul class="reading-intro-points"><li>本文围绕Physical AI（物理AI）场景，提出了一套端到端全AMD加速的视觉-语言-动作（VLA）机器人操作技术栈，覆盖数据中心训练、仿…</li><li>论文通过四个渐进的技术演示，验证了全AMD栈在机器人操作、语义理解、合成数据生成、强化学习训练等核心场景的可行性，为 embodied AI…</li><li>所有技术 pipeline 均可在免费的Radeon Cloud Platform上运行，无需本地高端硬件，降低了社区开发者的参与门槛。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>AMD AIG Team</strong></li><li><strong>北京理工大学（Beijing Institute of Technology）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文围绕Physical AI（物理AI）场景，提出了一套端到端全AMD加速的视觉-语言-动作（VLA）机器人操作技术栈，覆盖数据中心训练、仿真渲染、边缘部署全流程，完全基于开源的<strong>ROCm</strong>软件栈，无需依赖CUDA生态，解决了当前 embodied AI 开发中硬件生态锁定、仿真到现实迁移难、开发门槛高的问题。</li><li>论文通过四个渐进的技术演示，验证了全AMD栈在机器人操作、语义理解、合成数据生成、强化学习训练等核心场景的可行性，为 embodied AI 研究提供了可复现的开放基础设施。</li><li>所有技术 pipeline 均可在免费的<strong>Radeon Cloud Platform</strong>上运行，无需本地高端硬件，降低了社区开发者的参与门槛。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次构建了端到端全AMD硬件+ROCm软件栈的 embodied AI 技术 pipeline，覆盖Data Center MI系列GPU、<strong>Radeon PRO</strong>系列仿真渲染GPU、<strong>Ryzen AI</strong>系列边缘芯片，完全无需CUDA转换层，打破了机器人开发的生态锁定问题。</li><li>完成了四个渐进式技术演示：Sim-to-Real机械臂操作、语义对象选择、Real2Sim合成数据生成、四足/人形机器人RL训练，覆盖了 embodied AI research 的核心需求场景。</li><li>验证了轻量级VLA模型在AMD硬件上的高效训练与部署可行性：<strong>SmolVLA-450M</strong>模型在桌面级Radeon PRO GPU上微调仅需7-11分钟，峰值VRAM占用低于2.4GB，纯仿真训练的 policy 可直接零样本迁移到真实<strong>Franka</strong>机械臂完成操作，全流程耗时不到1小时。</li><li>提出了结合<strong>3D高斯泼溅（3DGS）</strong>与<strong>Genesis</strong>物理引擎的Real2Sim pipeline，可将真实场景重建为高保真仿真环境，支持可控域随机化生成大规模训练数据，有效缩小仿真到现实的视觉与交互差距。</li><li>验证了AMD Ryzen AI平台的RL训练能力：统一内存架构（UMA）消除了主机-设备拷贝开销，在部分 locomotion 任务上训练吞吐量超越独立GPU+CPU的组合，证明边缘级硬件也可用于机器人RL训练。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体技术方案基于开源的<strong>ROCm + PyTorch</strong>统一软件栈，适配AMD三大硬件 tier：数据中心级MI系列GPU用于大规模VLA训练和仿真rollout，Radeon PRO系列GPU用于高保真物理仿真与渲染，Ryzen AI系列芯片用于边缘部署与轻量训练。四个demo的技术路径分别为：Demo1采用Genesis物理仿真器生成合成操作数据，转换为LeRobot格式后训练SmolVLA模型，最终部署到真实Franka机械臂；Demo2复用Demo1的VLA backbone，通过语言条件分支实现自然语言引导的语义对象选择；Demo3首先用3DGS重建真实场景，再将重建结果导入Genesis仿真器，结合程序生成的交互对象与可控域随机化生成训练数据；Demo4采用Unilab框架，在AMD硬件上训练四足（Unitree Go2）和人形（Unitree G1）机器人的locomotion策略，支持FastSAC、FlashSAC、PPO等多种RL算法。</li><li>核心创新点包括：1. 首次实现全AMD生态下的 embodied AI 全流程覆盖，无CUDA依赖，所有环节均可通过ROCm栈完成；2. Real2Sim pipeline结合神经场景重建与物理仿真，兼顾真实场景的视觉保真度和仿真的可交互性、可扩展性；3. 验证了桌面级乃至边缘级AMD硬件即可满足VLA训练和RL训练的需求，大幅降低了 embodied AI 研究的硬件门槛。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：Demo1使用Genesis物理仿真器生成的合成操作数据集，转换为LeRobot标准格式；Demo3使用真实场景采集的图像与相机位姿重建3DGS场景，结合程序生成的交互对象数据；RL训练使用Unilab框架自带的四足、人形机器人locomotion仿真数据集。</li><li>模型规模：核心VLA模型为<strong>SmolVLA-450M</strong>，参数量4.5亿，训练时峰值VRAM占用低于2.4GB。</li><li>训练资源：支持<strong>RDNA4（Radeon AI PRO R9700）</strong>、<strong>RDNA3.5（Radeon PRO W7900）</strong>桌面级GPU，<strong>Ryzen AI MAX 395</strong>边缘芯片，也可在免费的<strong>Radeon Cloud Platform</strong>上运行，无需本地高端硬件。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：硬件测试覆盖Radeon AI PRO R9700、Radeon PRO W7900、Ryzen AI MAX 395、RTX 4090（基线）、Apple M5 Max等；软件栈为ROCm + PyTorch，仿真基准为Genesis物理引擎，机器人操作基准为Franka Emika Panda机械臂，RL基准为Unitree Go2四足机器人和Unitree G1人形机器人。</li><li>主要评估指标：操作任务的抓取成功率、模型训练收敛时间、VRAM占用、RL训练吞吐量（steps/秒）、语义选择任务准确率。</li><li>关键实验结果：1. Demo1的抓取任务在合成数据上达到100%成功率，SmolVLA-450M微调4000步仅需7-11分钟，纯仿真训练的 policy 可直接迁移到真实Franka臂，无需额外真实数据微调，全流程（数据生成到部署）耗时不到1小时；2. Demo2验证了VLA模型的语义 grounding 能力，可准确完成自然语言引导的对象选择，与操作能力解耦便于故障诊断；3. Demo3的Real2Sim pipeline可在约30分钟内完成从真实照片到可用操作策略的全流程，无需下载外部数据集；4. RL训练中，Ryzen AI MAX 395在FastSAC/G1全身追踪、FlashSAC/Go2摇杆 locomotion 任务上的吞吐量分别达33.6 steps/s和4.2 steps/s，高于RTX 4090+AMD 9950X3D的组合，验证了UMA架构对RL训练的加速优势。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.22999/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">WCM: World-Cognition Model for Generalizable Human-Robot Interaction</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.21725/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Addressing the Orchestration Gap in Generalist Robots via Physical Agency</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

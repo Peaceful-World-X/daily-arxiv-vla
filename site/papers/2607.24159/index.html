@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DeVA: Decoupled Video-Action Model with physical guidance for robot policy learning - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出解耦视频-动作模型DeVA，用于语言条件机器人操作策略学习，解决现有视觉-语言-动作（VLA）模型静态预训练缺乏物理动态与时序因果性、现有视频-动作模型架构耦合难优化或未充分利用视频信息的问题 核心目标是通过视频生成先验与物理感知引导的结合，提升机器人策略的少样本学习能力、泛化性与优化效率 覆盖仿真多任务操作、真实家庭环境、真实双臂协调操作三类场景，验证方法的通用性与实用性" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.24159">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.24159.webp" alt="DeVA: Decoupled Video-Action Model with physical guidance for robot policy learning" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出解耦视频-动作模型DeVA，用于语言条件机器人操作策略学习，解决现有视觉-语言-动作（VLA）模型静态预训练缺乏物理动态与时序因果性、…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">DeVA: Decoupled Video-Action Model with physical guidance for robot policy learning</h1>
+            <div class="detail-meta">2026-07-27 · <a href="http://arxiv.org/abs/2607.24159" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.24159" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.24159</span></div>
+            <p class="detail-summary">论文提出解耦视频-动作模型DeVA，用于语言条件机器人操作策略学习，解决现有视觉-语言-动作（VLA）模型静态预训练缺乏物理动态与时序因果性、现有视频-动作模型架构耦合难优化或未充分利用视频信息的问题 核心目标是通过视频生成先验与物理感知引导的结合，提升机器人策略的少样本学习能力、泛化性与优化效率 覆盖仿真多任务操作、真实家庭环境、真实双臂协调操作三类场景，验证方法的通用性与实用性</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">University of California, Irvine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.24159/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出解耦视频-动作模型DeVA，用于语言条件机器人操作策略学习，解决现有视觉-语言-动作（VLA）模型静态预训练缺乏物理动态与时序因果性、…</p>
+  <ul class="reading-intro-points"><li>论文提出解耦视频-动作模型DeVA，用于语言条件机器人操作策略学习，解决现有视觉-语言-动作（VLA）模型静态预训练缺乏物理动态与时序因果性、…</li><li>核心目标是通过视频生成先验与物理感知引导的结合，提升机器人策略的少样本学习能力、泛化性与优化效率</li><li>覆盖仿真多任务操作、真实家庭环境、真实双臂协调操作三类场景，验证方法的通用性与实用性</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>University of California, Irvine</strong></li><li><strong>Georgia Institute of Technology</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出解耦视频-动作模型<strong>DeVA</strong>，用于语言条件机器人操作策略学习，解决现有视觉-语言-动作（VLA）模型静态预训练缺乏物理动态与时序因果性、现有视频-动作模型架构耦合难优化或未充分利用视频信息的问题</li><li>核心目标是通过视频生成先验与物理感知引导的结合，提升机器人策略的少样本学习能力、泛化性与优化效率</li><li>覆盖仿真多任务操作、真实家庭环境、真实双臂协调操作三类场景，验证方法的通用性与实用性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出解耦的视频-动作专家架构，分离视觉动态建模与动作预测两个目标，保留模态特定表征能力，避免单一特征空间同时支撑两类任务的优化难题，降低策略学习难度</li><li>设计多层级特征交互机制，通过层-wise交叉注意力与可学习桥接token，将视频骨干不同层的中间表征传递给动作专家，充分挖掘视频先验中分布在不同层级的互补信息</li><li>引入物理显著引导模块，通过功能可供性与相对深度监督 shaping 视频特征，同时将解码后的物理特征直接注入动作预测流，增强策略的物理空间感知与交互区域定位能力</li><li>在仿真与真实世界共7类机器人操作基准上验证，仅用少量演示即可达到SOTA性能，收敛速度显著快于统一架构的同类模型</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>解耦架构：<strong>DeVA</strong>由视频专家与动作专家两部分独立组成，视频专家基于<strong>Cosmos-Predict2</strong>初始化，负责预测未来观测序列；动作专家采用类DiT架构，负责预测对应动作序列，两者参数独立、优化目标独立</li><li>多层级特征交互：从视频骨干均匀采样8个中间层的表征，通过层对应的交叉注意力层传递给动作专家；额外引入12个可学习桥接token聚合视频全局上下文，通过自注意力机制传播至动作流</li><li>物理显著引导：在视频骨干后附加两个轻量DPT风格解码器，分别预测任务条件的功能可供性图与相对深度图，可供性解码器通过FiLM层融合语言特征；解码器第三阶段的特征经重采样后与视频特征拼接，作为键值输入动作专家的交叉注意力层</li><li>两阶段训练流程：第一阶段热身视频专家与物理解码器，联合优化视频预测、可供性预测、深度预测三类损失；第二阶段引入动作专家，冻结物理解码器，联合优化视频与动作的流匹配损失；推理时联合采样视频与动作序列</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>RoboCasa</strong>（24个厨房操作任务）、<strong>LIBERO</strong>（4类套件共40个桌面操作任务）、<strong>LIBERO-plus</strong>（10030个带7类系统扰动的鲁棒性变体）</li><li>真实世界数据集：I2RT YAM Ultra双臂机器人平台的3个双臂操作任务（marker传递、提锅、多外观瓶子拾取），每任务收集30条专家演示</li><li>模型规模：总参数量<strong>7.55B</strong>，其中可训练参数量2.56B，包括1.96B的视频骨干（Video2World DiT）、564M的动作专家、36.3M的物理引导解码器与融合投影；T5-XXL文本编码器与VAE分词器全程冻结</li><li>训练资源：论文未明确说明具体GPU/TPU等训练硬件配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真侧覆盖多任务操作、多样化环境、系统扰动三类场景；真实世界侧覆盖双臂协调操作、物体抓取、泛化抓取三类任务</li><li>主要评估指标：任务成功率（Success Rate）</li><li>关键实验结果：</li></ul>
+<p> - <strong>RoboCasa</strong>基准上，仅用每任务50条演示即达到72.0%的平均成功率，比同数据量的<strong>Cosmos-Policy</strong>高4.9个百分点，超过使用300-3000条演示的多类基线</p>
+<p> - <strong>LIBERO</strong>基准上平均成功率达99.0%，<strong>LIBERO-plus</strong>鲁棒性基准上达80.8%，比最强基线<strong>OpenVLA-OFT</strong>高11.2个百分点</p>
+<p> - 真实世界双臂操作任务上平均成功率达74%，显著高于<strong>GR00T-N1.6</strong>（48%）与<strong>Cosmos Policy</strong>（34%）</p>
+<p> - 收敛效率上，同优化预算下<strong>DeVA</strong>约40-50K步即可收敛，性能远超统一架构的同类模型，且训练样本数仅为<strong>Cosmos-Policy</strong>的1/20</p>
+<p> - 消融实验验证了解耦架构、多层级特征交互、物理可供性与深度引导均对最终性能有正向贡献</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.24485/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">τ: Learning Touch-Augmented Vision-Language-Action Models from Future Visual Supervision</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.24148/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">A Motion-Aware Vector Quantization Framework with Centroid Reuse for Efficient VLA Inference</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
