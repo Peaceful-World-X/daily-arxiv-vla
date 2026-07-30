@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DLAM: Distributional Latent Actions with Temporal Constraints - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文提出DLAM（Distributional Latent Actions with Temporal Constraints，带时间约束的分布式潜在动作模型），解决视觉-语言-动作（VLA）模型依赖稀缺动作标注数据、现有潜在动作模型（LAM）为确定性表示且递归组合时误差易累积的核心问题 该方法将无动作视频中的帧间转换建模为对角线高斯分布，通过时间约束同时监督转换的均值和维度方差，无需动作、语言或本体感受标签即可…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.27138">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.27138.webp" alt="DLAM: Distributional Latent Actions with Temporal Constraints" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文提出DLAM（Distributional Latent Actions with Temporal Constraints，带时间约束的…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">DLAM: Distributional Latent Actions with Temporal Constraints</h1>
+            <div class="detail-meta">2026-07-29 · <a href="http://arxiv.org/abs/2607.27138" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.27138" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.27138</span></div>
+            <p class="detail-summary">本文提出DLAM（Distributional Latent Actions with Temporal Constraints，带时间约束的分布式潜在动作模型），解决视觉-语言-动作（VLA）模型依赖稀缺动作标注数据、现有潜在动作模型（LAM）为确定性表示且递归组合时误差易累积的核心问题 该方法将无动作视频中的帧间转换建模为对角线高斯分布，通过时间约束同时监督转换的均值和维度方差，无需动作、语言或本体感受标签即可…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者所属机构的具体名称在提供的截断原文中未完整展示，仅通过作者上标标注编号：1、2、3、4、5、6、7…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.27138/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文提出DLAM（Distributional Latent Actions with Temporal Constraints，带时间约束的…</p>
+  <ul class="reading-intro-points"><li>本文提出DLAM（Distributional Latent Actions with Temporal Constraints，带时间约束的…</li><li>该方法将无动作视频中的帧间转换建模为对角线高斯分布，通过时间约束同时监督转换的均值和维度方差，无需动作、语言或本体感受标签即可完成预训练</li><li>预训练后的编码器仅需输出转换均值，即可迁移到下游机器人策略学习，在仿真和真实操作任务上均取得优于现有基线的性能</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者所属机构的具体名称在提供的截断原文中未完整展示，仅通过作者上标标注编号：1、2、3、4、5、6、7，对应作者分别为Zuojin Tang[1,2]、Feifan Luo[1]、Haoyun Liu[3,5,2]、Botai Yuan[4,2]、Dekang Qi[2]、Ronghan Chen[2]、Yandan Yang[2]、Tong Lin[6,2]、Xinyuan Chang[2]、Mu Xu[2]、Bin Liu[7]、De Ma[1]、Zhiheng Ma[5]</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文提出<strong>DLAM</strong>（Distributional Latent Actions with Temporal Constraints，带时间约束的分布式潜在动作模型），解决视觉-语言-动作（VLA）模型依赖稀缺动作标注数据、现有潜在动作模型（LAM）为确定性表示且递归组合时误差易累积的核心问题</li><li>该方法将无动作视频中的帧间转换建模为对角线高斯分布，通过时间约束同时监督转换的均值和维度方差，无需动作、语言或本体感受标签即可完成预训练</li><li>预训练后的编码器仅需输出转换均值，即可迁移到下游机器人策略学习，在仿真和真实操作任务上均取得优于现有基线的性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>将结构化潜在动作的表示从确定性点扩展到对角线高斯转换，使时间约束可以同时监督转换的均值和方差</li><li>推导了高斯转换的归一化组合与反转规则，其中方差组合引入轻量级共享相关系数，建模共享中间帧的相邻转换的相关性</li><li>在直接重建、累积重建和下游策略任务上均取得性能提升，仅将学到的后验均值迁移至联合流匹配VLA学习，无需依赖预测的方差或新的VLA主干</li><li>通过控制消融实验，分离了归一化均值约束、学习到的方差、相关性感知组合对下游控制任务的互补贡献</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>分布式潜在动作预训练</strong>：编码器输入帧对，通过K个可学习查询输出对应转换token的均值和维度标准差（构成对角线高斯后验），源条件解码器以源帧和转换均值为输入重建目标帧，同时加入KL散度先验损失将后验正则化到标准高斯</li><li><strong>时间约束设计</strong>：对等间隔视频三元组，归一化组合约束直接编码的长跨度转换与两个相邻短跨度转换组合后的均值与方差，其中方差组合通过可学习的标量相关系数ρ建模相邻转换的维度相关性；反转操作通过反转均值、保留方差实现正向-反向转换的一致性约束，所有约束均为局部定义，不假设精确的全局群结构</li><li><strong>下游迁移</strong>：冻结预训练编码器，提取连续帧对的转换均值作为辅助生成目标，与机器人动作序列一同通过流匹配策略联合生成，推理时仅执行生成的机器人动作流</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>预训练数据集</strong>：11个无动作标注的机器人视频数据集混合体，主要来自<strong>Open X-Embodiment</strong>和<strong>CALVIN</strong>数据集</li><li><strong>下游评估数据集</strong>：仿真环境包括<strong>MetaWorld MT50</strong>（50个操作任务，分为Easy/Medium/Hard/Very Hard四个难度 tier）、<strong>LIBERO</strong>（4个操作泛化套件：Spatial、Object、Goal、Long）；真实环境为Piper 6-DoF机械臂的4个操作任务（insert cylinder、insert cube、arrange flowers、hang cup）</li><li><strong>模型规模</strong>：下游迁移使用<strong>π₀</strong>政策作为主干，视觉-语言主干为<strong>PaliGemma-2B</strong>，动作专家为<strong>Gemma-300M</strong>，总参数量3B；预训练潜在动作模型的Transformer容量与基线方法保持一致</li><li><strong>训练资源</strong>：预训练阶段使用64块AMD MI308X GPU，训练57轮，单设备batch size为64，AdamW优化器，峰值学习率1e-4，权重衰减1e-4，损失权重设置为λ_rec=1、λ_prior=0.005、λ_comp=λ_rev=0.05、λ_ℓ=0.1；下游政策训练使用AdamW优化器，学习率5e-5，权重衰减1e-4，单设备batch size为32</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估基准与指标</strong>：转换表示评估采用归一化组合残差R_comp^μ、反转残差R_rev^μ；重建评估采用PSNR、SSIM、LPIPS指标；下游控制评估采用任务成功率，评估覆盖3k-10k帧的时间跨度</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - 转换表示层面，<strong>DLAM</strong>的组合与反转残差显著低于确定性基线<strong>ALAM</strong>，且在3k-10k的未监督长跨度下残差增长更平缓，时序一致性更强</p>
+<p> - 重建层面，<strong>DLAM</strong>在3k-5k跨度下的直接重建PSNR比ALAM高3.45dB，累积重建高1.17dB，LPIPS分别降低45.6%和26.1%，SSIM也有稳定提升</p>
+<p> - 下游政策层面，<strong>DLAM</strong>在<strong>MetaWorld MT50</strong>上取得87.6%的平均成功率，比ALAM高2.7个百分点，比纯动作的π₀高39.7个百分点；在<strong>LIBERO</strong>上取得99.0%的平均成功率，比ALAM高0.9个百分点；在真实世界任务上平均成功率达73.8%，比ALAM高10个百分点，所有任务均优于基线</p>
+<p> - 消融实验显示，无时间关系的变体下游平均成功率为76.6%，仅保留归一化均值约束的变体为82.1%，仅加入学习方差的变体为85.3%，完整DLAM达到87.6%，证明归一化均值约束贡献了大部分收益，学习到的方差和相关性感知组合带来额外互补提升</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.27205/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with &lt;1 GB VRAM</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.26991/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">RL$^2$-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

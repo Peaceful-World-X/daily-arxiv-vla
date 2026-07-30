@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explicit Kinematic Guidance from Analytic Concepts for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对当前视觉-语言-动作（VLA）模型依赖2D输入、缺乏3D物体结构信息与物理常识，导致复杂高精度操作任务泛化性与微调效率不足的问题，本文提出名为SAGE（Spatial Analytic-concept Guided Enhancement）的VLA后训练框架 框架引入可执行的解析概念（Analytic Concepts）作为以物体为中心的结构先验，通过Concept Expert模块实现概念的实例化与动态参数追…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.26513">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.26513.webp" alt="Explicit Kinematic Guidance from Analytic Concepts for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对当前视觉-语言-动作（VLA）模型依赖2D输入、缺乏3D物体结构信息与物理常识，导致复杂高精度操作任务泛化性与微调效率不足的问题，本文提出…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Explicit Kinematic Guidance from Analytic Concepts for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-07-29 · <a href="http://arxiv.org/abs/2607.26513" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.26513" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.26513</span></div>
+            <p class="detail-summary">针对当前视觉-语言-动作（VLA）模型依赖2D输入、缺乏3D物体结构信息与物理常识，导致复杂高精度操作任务泛化性与微调效率不足的问题，本文提出名为SAGE（Spatial Analytic-concept Guided Enhancement）的VLA后训练框架 框架引入可执行的解析概念（Analytic Concepts）作为以物体为中心的结构先验，通过Concept Expert模块实现概念的实例化与动态参数追…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">浙江大学</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.26513/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对当前视觉-语言-动作（VLA）模型依赖2D输入、缺乏3D物体结构信息与物理常识，导致复杂高精度操作任务泛化性与微调效率不足的问题，本文提出…</p>
+  <ul class="reading-intro-points"><li>针对当前视觉-语言-动作（VLA）模型依赖2D输入、缺乏3D物体结构信息与物理常识，导致复杂高精度操作任务泛化性与微调效率不足的问题，本文提出…</li><li>框架引入可执行的解析概念（Analytic Concepts）作为以物体为中心的结构先验，通过Concept Expert模块实现概念的实例化…</li><li>该方法同时支持监督微调（SFT）与强化学习（RL）微调，旨在提升VLA模型在复杂铰接物体操作任务中的成功率和样本效率</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>浙江大学</strong></li><li><strong>上海创新研究院</strong></li><li><strong>复旦大学</strong></li><li><strong>西湖大学</strong></li><li><strong>上海交通大学</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对当前视觉-语言-动作（VLA）模型依赖2D输入、缺乏3D物体结构信息与物理常识，导致复杂高精度操作任务泛化性与微调效率不足的问题，本文提出名为SAGE（Spatial Analytic-concept Guided Enhancement）的VLA后训练框架</li><li>框架引入可执行的<strong>解析概念（Analytic Concepts）</strong>作为以物体为中心的结构先验，通过Concept Expert模块实现概念的实例化与动态参数追踪，为VLA微调提供显式的运动学与空间引导</li><li>该方法同时支持监督微调（SFT）与强化学习（RL）微调，旨在提升VLA模型在复杂铰接物体操作任务中的成功率和样本效率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出全新的VLA微调范式，通过可执行的以物体为中心的解析概念结构先验增强策略学习，弥补2D VLA模型的3D空间感知缺陷</li><li>设计<strong>Concept Expert</strong>模块，能够从视觉观测中实例化解析概念并动态追踪其运动学参数，实现物体结构与VLA策略执行的实时对齐</li><li>开发统一的显式知识引导机制，将解析概念转化为动作空间约束正则化（运动学约束监督）与密集几何感知奖励（解析概念派生奖励），为策略优化提供高质量监督信号</li><li>在仿真与真实世界的多类操作任务（尤其是铰接物体操作任务）上验证了该方法在性能与样本效率上的一致提升</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>SAGE框架核心是附加在VLA模型外的<strong>Concept Expert</strong>模块，分为两个协同阶段运行：推理前的概念初始化阶段，和操作过程中的动态参数追踪阶段</li><li>概念初始化阶段（t=0）：利用<strong>VGGT</strong>、<strong>SAM 2</strong>等视觉基础模型提取3D视觉特征，结合解析概念的<strong>Structural Blueprint（结构蓝图）</strong>与<strong>Manipulation Blueprint（操作蓝图）</strong>，通过预训练的结构参数头估计物体的结构参数$P_s$与初始运动学参数$P_k^0$</li><li>动态追踪阶段（t∈[0,T]）：从VLA模型的中间层提取特征，经Adapter适配后输入动态参数头，结合VLA的视觉特征与动作预测作为上下文先验，实时追踪运动学参数的变化$P_k^t$；同时通过VLA特征对齐损失，用VGGT的空间特征监督VLA的内部特征，提升VLA的3D几何感知能力</li><li>微调阶段提供两种显式引导信号：①<strong>运动学约束监督损失</strong>，将解析概念计算的最优3D交互方向作为监督信号，约束VLA输出的动作方向符合物体运动学约束；②<strong>解析概念派生奖励</strong>，包含运动进展奖励与 affordance 对齐奖励，为RL微调提供密集的、与物体结构相关的反馈</li><li>总优化目标结合任务原始损失、运动学约束损失与特征对齐损失，通过超参数平衡各部分的贡献</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>SimplerEnv</strong>仿真环境、<strong>ShapeNet-Mobility</strong>数据集（用于构建Sapien仿真环境下的6类铰接物体操作任务：水龙头、微波炉、笔记本电脑、储物家具、厨房锅、水桶）</li><li>基座模型：主要基座为<strong>OpenVLA-OFT</strong>，对比基线包括$\pi_0$、Octo、OpenVLA、RoboVLM、SpatialVLA等</li><li>辅助模型：<strong>VGGT</strong>（视觉几何基础模型）、<strong>SAM 2</strong>（分割基础模型）</li><li>训练硬件：文中未明确提及具体的GPU/TPU等训练硬件配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境包含SimplerEnv（线性滑动等简单运动学约束任务）与基于ShapeNet-Mobility构建的Sapien仿真环境（6类复杂铰接物体操作任务）；真实世界环境使用<strong>AGILE PiPER双臂机器人</strong>，配备Orbbec DABAI相机，测试5项挑战性多步操作任务</li><li>评估指标：任务成功率</li><li>关键实验结果：</li></ul>
+<p> - 离线微调场景下，SAGE的两个变体（SAGE-SFT、SAGE-CQL）均显著优于基线：OpenVLA-OFT的平均成功率从54.3%提升至SAGE-CQL的71.7%，超过专门设计3D输入处理的SpatialVLA(FT)的70.6%，在“开/关抽屉”这类运动学复杂的任务上提升最为显著</p>
+<p> - 在线强化学习场景下，SAGE增强的PPO与GRPO在SimplerEnv的Open Drawer任务上收敛速度更快、最终成功率更高；在ShapeNet-Mobility的6类任务上，PPO(SAGE)在微波炉、储物家具、锅类任务上接近100%成功率，全面优于对应非SAGE基线</p>
+<p> - 消融实验验证：移除特征对齐损失会降低性能，说明其对稳定策略学习有贡献；使用真实运动学参数仅带来轻微性能提升，说明SAGE估计的参数精度足够满足策略学习需求</p>
+<p> - 真实世界实验中，SAGE-SFT在$\pi_{0.5}$基座上，5项任务的成功率较基座平均提升25个百分点，最高从50%提升至100%，验证了方法在真实场景的有效性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.26789/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">CheckVLA: Execution-Time Verification with Action-Conditioned World Model for Long-Horizon Mobile Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.26452/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">CG-World: A Large-Scale World-State Dataset and Protocol for World Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

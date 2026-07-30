@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Route by Kinematics, Act by Observation: Kinematics-Supervised Expert Routing in MoE-Augmented VLA - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对MoE增强的视觉-语言-动作（VLA）模型中，因任务运动学异质性导致的专家路由失效问题，提出运动学监督显式路由范式KinRT，同时构建低成本开源机器人平台DIYRobot及对应基准测试集 核心解决两大关键问题：一是传统MoE隐式、观测驱动的路由无法匹配任务运动学语义，导致专家分配不合理；二是推理阶段无法获取动作运动学先验，存在训练与推理的信息不对称 研究目标是实现“训练时利用动作运动学监督路由训练，推理时仅依赖…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.26807">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.26807.webp" alt="Route by Kinematics, Act by Observation: Kinematics-Supervised Expert Routing in MoE-Augmented VLA" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对MoE增强的视觉-语言-动作（VLA）模型中，因任务运动学异质性导致的专家路由失效问题，提出运动学监督显式路由范式KinRT，同时构建低成…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Route by Kinematics, Act by Observation: Kinematics-Supervised Expert Routing in MoE-Augmented VLA</h1>
+            <div class="detail-meta">2026-07-29 · <a href="http://arxiv.org/abs/2607.26807" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.26807" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.26807</span></div>
+            <p class="detail-summary">针对MoE增强的视觉-语言-动作（VLA）模型中，因任务运动学异质性导致的专家路由失效问题，提出运动学监督显式路由范式KinRT，同时构建低成本开源机器人平台DIYRobot及对应基准测试集 核心解决两大关键问题：一是传统MoE隐式、观测驱动的路由无法匹配任务运动学语义，导致专家分配不合理；二是推理阶段无法获取动作运动学先验，存在训练与推理的信息不对称 研究目标是实现“训练时利用动作运动学监督路由训练，推理时仅依赖…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">上海交通大学（单位编号1）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.26807/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对MoE增强的视觉-语言-动作（VLA）模型中，因任务运动学异质性导致的专家路由失效问题，提出运动学监督显式路由范式KinRT，同时构建低成…</p>
+  <ul class="reading-intro-points"><li>针对MoE增强的视觉-语言-动作（VLA）模型中，因任务运动学异质性导致的专家路由失效问题，提出运动学监督显式路由范式KinRT，同时构建低成…</li><li>核心解决两大关键问题：一是传统MoE隐式、观测驱动的路由无法匹配任务运动学语义，导致专家分配不合理；二是推理阶段无法获取动作运动学先验，存在训…</li><li>研究目标是实现“训练时利用动作运动学监督路由训练，推理时仅依赖视觉-语言观测完成专家调度”的异步桥接机制，提升VLA模型在多任务机器人操作中的…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>上海交通大学</strong>（单位编号1）</li><li><strong>上海人工智能实验室</strong>（单位编号2）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对MoE增强的视觉-语言-动作（VLA）模型中，因任务运动学异质性导致的专家路由失效问题，提出运动学监督显式路由范式<strong>KinRT</strong>，同时构建低成本开源机器人平台<strong>DIYRobot</strong>及对应基准测试集</li><li>核心解决两大关键问题：一是传统MoE隐式、观测驱动的路由无法匹配任务运动学语义，导致专家分配不合理；二是推理阶段无法获取动作运动学先验，存在训练与推理的信息不对称</li><li>研究目标是实现“训练时利用动作运动学监督路由训练，推理时仅依赖视觉-语言观测完成专家调度”的异步桥接机制，提升VLA模型在多任务机器人操作中的泛化性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>发现机器人操作任务存在<strong>运动学原型坍缩</strong>现象：多样化的语义操作任务可收敛为少量离散的运动学原型，为MoE专家的专业化分工提供依据</li><li>提出<strong>KinRT</strong>路由范式，通过运动学聚类得到的原型标签监督路由器训练，实现从动作运动学空间到视觉-语言观测空间的异步知识蒸馏，解决传统路由的信息不对称问题</li><li>构建基于3D打印技术的低成本<strong>DIYRobot</strong>机器人平台（制备成本低于2000美元），适配小规模研究团队的使用需求，同时开源包含5类操作任务的对应benchmark</li><li>实验验证KinRT在<strong>RoboTwin</strong>和<strong>DIYRobot</strong> benchmark上，相比密集VLA和MoE类VLA基线，任务成功率分别提升超过23.26%和20.27%</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础架构采用<strong>Mixture-of-Transformers</strong>，共18层Transformer块：前缀流用冻结的<strong>SigLIP</strong>编码多视角图像、<strong>PaliGemma-2B</strong>编码语言指令，后缀流用<strong>Gemma-300M</strong>生成动作序列；每层的前馈网络（FFN）替换为MoE结构，包含共享分支和专家分支，模型维度$d_{model}=1024$，MLP维度$d_{mlp}=4096$</li><li><strong>运动学原型聚类模块</strong>：将未来50步的动作块（维度$50 \times 14$，对应双臂6自由度+双臂夹爪各1自由度）展平为位置特征，相邻动作的时间差作为速度特征，拼接为1386维描述子，经PCA降维至64维后执行K-means聚类，得到对应任务运动学原型的标签，作为路由器训练的监督信号</li><li><strong>运动学监督全局路由器</strong>：将前缀流的输出做掩码均值池化得到2048维上下文向量，通过单线性层输出路由logits，加入高斯噪声和温度缩放后选择Top-K专家；路由决策为全局共享（一次路由结果广播至所有层），采用交叉熵损失训练路由器，同时引入重采样权重$\alpha=0.5$的样本平衡策略缓解运动学原型的不平衡问题</li><li><strong>推理时异步动作生成</strong>：部署阶段路由器仅依赖视觉-语言观测完成专家调度，无需动作运动学先验；动作生成采用流匹配范式，通过预测速度场迭代去噪得到最终动作序列，完成从训练阶段动作空间到推理阶段观测空间的异步桥接</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：<strong>RoboTwin</strong> benchmark、自研<strong>DIYRobot</strong> benchmark（包含5类操作任务，每类任务提供100条演示数据）</li><li>模型规模：基座模型采用<strong>OpenVLA</strong>、<strong>π0</strong>（Full/LoRA）、<strong>π0.5</strong>（Full/LoRA），KinRT的MoE专家数$K=4$（匹配运动学原型数量），共享FFN与专家FFN维度均为$d_{model}=1024$、$d_{mlp}=4096$</li><li>训练资源：原文截断未明确披露具体GPU/TPU等训练硬件配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：<strong>RoboTwin</strong> benchmark、自研<strong>DIYRobot</strong>平台</li><li>评估指标：任务成功率（每类任务100次/50次测试中的成功执行次数，部分任务报告清洁场景与随机场景双指标）</li><li>关键实验结果：</li></ul>
+<p> - <strong>KinRT-Full(π0)</strong>在RoboTwin上平均成功率为36.0%（清洁场景\|随机场景：34%\|22%），相比基线π0-Full的8.9%（\|8.8%）提升超过27个百分点；在DIYRobot上平均成功率35.6%，相比π0-Full的14.0%提升超过21个百分点</p>
+<p> - <strong>KinRT-LoRA(π0)</strong>在RoboTwin上平均成功率15.8%（\|14.4%），优于基线π0-LoRA的13.9%（\|12.6%）；在DIYRobot上平均成功率11.6%，优于基线的7.0%</p>
+<p> - <strong>KinRT-AdaMoE</strong>在DIYRobot上平均成功率28.4%，优于MoE基线<strong>AdaMoE</strong>的21.4%</p>
+<p> - 消融实验验证了运动学监督路由、样本平衡策略等核心模块的有效性，同时证明KinRT可适配不同架构的基础模型，具备架构无关性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.26991/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">RL$^2$-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.26789/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">CheckVLA: Execution-Time Verification with Action-Conditioned World Model for Long-Horizon Mobile Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

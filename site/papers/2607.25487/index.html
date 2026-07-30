@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CoTinyVLA: Chain-of-Thought Distillation for a Sub-Billion-Parameter Vision-Language-Action Model - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="`），Plan由35B参数的Qwen3.5-35B-A3B混合专家教师模型根据指令和首帧生成，Think的Gripper槽位根据对应时间步的本体感觉向量推导生成，避免静态帧下视觉判断夹爪状态的歧义，学生模型通过动作回归损失和推理token的语言模型交叉熵损失联合训练，损失权重分别为1.0和0.1 指令增强：通过动词替换、物体同义词替换、礼貌度变化三种方式将40条基础指令扩展为800条复述变体，训练时以0.8概率替换…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.25487">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.25487.webp" alt="CoTinyVLA: Chain-of-Thought Distillation for a Sub-Billion-Parameter Vision-Language-Action Model" loading="lazy" />
+  <figcaption class="paper-figure-caption">指令增强：通过动词替换、物体同义词替换、礼貌度变化三种方式将40条基础指令扩展为800条复述变体，训练时以0.8概率替换样本的原指令，评估时始…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">CoTinyVLA: Chain-of-Thought Distillation for a Sub-Billion-Parameter Vision-Language-Action Model</h1>
+            <div class="detail-meta">2026-07-28 · <a href="http://arxiv.org/abs/2607.25487" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.25487" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.25487</span></div>
+            <p class="detail-summary">`），Plan由35B参数的Qwen3.5-35B-A3B混合专家教师模型根据指令和首帧生成，Think的Gripper槽位根据对应时间步的本体感觉向量推导生成，避免静态帧下视觉判断夹爪状态的歧义，学生模型通过动作回归损失和推理token的语言模型交叉熵损失联合训练，损失权重分别为1.0和0.1 指令增强：通过动词替换、物体同义词替换、礼貌度变化三种方式将40条基础指令扩展为800条复述变体，训练时以0.8概率替换…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">13 分钟读完</span>
+              <span class="meta-pill">9 张阅读卡</span>
+              <span class="meta-pill">Chung-Ang University, Republic of Korea（对应作者邮箱：mlee…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.25487/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">指令增强：通过动词替换、物体同义词替换、礼貌度变化三种方式将40条基础指令扩展为800条复述变体，训练时以0.8概率替换样本的原指令，评估时始…</p>
+  <ul class="reading-intro-points"><li>指令增强：通过动词替换、物体同义词替换、礼貌度变化三种方式将40条基础指令扩展为800条复述变体，训练时以0.8概率替换样本的原指令，评估时始…</li><li>推理优化：Plan每回合仅生成一次并缓存，8步动作块开环执行，推理tokens采用贪心解码且上限120个token，稳态推理单步耗时1.37s…</li><li>提出CoTinyVLA，总参数量仅0.9B，在LIBERO-Plus的Spatial、Object、Goal、Long四个套件上分别以90.8…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><p>`），<strong>Plan</strong>由35B参数的<strong>Qwen3.5-35B-A3B</strong>混合专家教师模型根据指令和首帧生成，<strong>Think</strong>的Gripper槽位根据对应时间步的本体感觉向量推导生成，避免静态帧下视觉判断夹爪状态的歧义，学生模型通过动作回归损失和推理token的语言模型交叉熵损失联合训练，损失权重分别为1.0和0.1</p>
+<ul><li>指令增强：通过动词替换、物体同义词替换、礼貌度变化三种方式将40条基础指令扩展为800条复述变体，训练时以0.8概率替换样本的原指令，评估时始终使用原始或基准定义的扰动指令</li><li>推理优化：Plan每回合仅生成一次并缓存，8步动作块开环执行，推理tokens采用贪心解码且上限120个token，稳态推理单步耗时1.37s，其中76%为自回归生成耗时，缓存Plan可将单步推理token数从70降至26，推理成本减半</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：<strong>LIBERO-Plus</strong>鲁棒性基准（覆盖10,030个扰动任务，包含7个独立扰动维度：相机视角、机器人初始状态、语言指令、光照条件、背景纹理、传感器噪声、物体布局，分为Spatial/Object/Goal/Long四个测试套件）、标准<strong>LIBERO</strong>基准（4个套件，每套件10个任务，每任务50次rollout，用于验证分布内性能）</li><li>模型规模：学生模型总参数量约0.9B，骨干为<strong>Qwen3.5-0.8B</strong>；教师模型为35B参数的<strong>Qwen3.5-35B-A3B</strong>混合专家模型，标签生成时采用4-bit量化</li><li>训练资源：单节点8张<strong>NVIDIA H100 GPU</strong>，使用AdamW优化器，骨干学习率2×10⁻⁵，投影器和动作头学习率1×10⁻⁴，3%步数线性预热，采用梯度检查点和FlashAttention-2加速训练</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境下的LIBERO基准Franka Panda机械臂，推理测试在单张<strong>NVIDIA L40S</strong>上进行，遵循LIBERO-Plus标准协议（每个扰动任务单次rollout），标准LIBERO每任务50次rollout</li><li>评估指标：各扰动维度及总体的任务成功率（%）</li><li>关键实验结果：</li></ul>
+<p> - LIBERO-Plus测试中，CoTinyVLA在四个套件上均达到最高总成功率，且在 hardest 的Robot Initial States维度上大幅领先基线：Goal套件达到73.6%，远超最强基线的39.9%，而所有基线在该维度的最高成绩均不超过53.2%</p>
+<p> - 标准LIBERO测试中平均成功率达到97.5%，与最强7B基线<strong>RIPT-VLA</strong>持平，领先最强亚1B基线<strong>Evo-1</strong> 2.7个百分点，验证了模型的分布内性能没有损失</p>
+<p> - 消融实验显示：移除复述增强仅会使语言指令维度成功率下降12.3个百分点，其余6个非语言维度无变化；移除分层CoT蒸馏主要影响物理状态相关扰动维度；将16帧时序输入替换为单帧会使Robot Initial States维度成功率下降16.0个百分点</p>
+
+<p>对，这样就符合要求了，每个部分都是列表，关键信息粗体，没有代码块，格式正确。现在整理成最终的输出就行。</p>
+<p></think></p></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Chung-Ang University, Republic of Korea</strong>（对应作者邮箱：mlee@cau.ac.kr）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对当前主流3-7B参数的视觉-语言-动作（VLA）模型内存需求过高、难以适配移动机械臂、人形机器人等嵌入式硬件部署的问题，提出<strong>CoTinyVLA</strong>，一款仅0.9B参数的紧凑型VLA模型</li><li>核心研究问题是：大模型在LIBERO-Plus鲁棒性基准上的优异表现是否依赖大规模参数，还是可以通过结构化监督信号在紧凑模型上实现同等甚至更优的鲁棒性</li><li>目标是通过三类针对性设计，在不扩大模型规模的前提下，让0.9B参数的模型在LIBERO-Plus全部测试套件上超越现有7B参数的基线模型</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>CoTinyVLA</strong>，总参数量仅0.9B，在LIBERO-Plus的Spatial、Object、Goal、Long四个套件上分别以90.8%、87.3%、86.6%、80.7%的总成功率领先最强7B基线4.7、2.8、15.9、3.0个百分点，所有性能差异的置信区间均不包含0，推理峰值内存仅2.25 GiB</li><li>设计两层级分层思维链（CoT）推理框架：每任务回合生成一次任务级<strong>Plan</strong>（拆解自然语言指令为有序子目标列表），每8步动作块生成一次块级<strong>Think</strong>（包含任务阶段、夹爪状态、下一步动作三个固定槽位），通过35B参数的教师模型蒸馏获得推理监督，测试时缓存Plan可将稳态推理成本减半，测试时干预实验证明Plan是动作生成的关键依赖</li><li>分解鲁棒性问题的扰动轴：通过系统性消融实验证明三类核心组件分别对应不同维度的鲁棒性提升，且固定图像预算下双视角时序输入的帧分配方式本身可带来8.6个百分点的性能提升，证明输入结构是可设计的性能杠杆而非架构固定成本</li><li>提出基于复述的指令增强方法，将LIBERO-Plus的40条基础指令扩展为800条包含动词替换、同义词替换、礼貌度变化的自然变体，训练时以0.8的概率替换原指令，仅该项就将语言指令维度的鲁棒性提升12.3个百分点，且不影响其他非语言维度的性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 07</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础架构：基于<strong>Qwen3.5-0.8B</strong>视觉-语言骨干构建，总参数量约0.9B（新增控制token嵌入、本体感觉投影器、动作头），每控制步输入8帧第三人称视角图像、8帧手腕视角图像、8维本体感觉向量和自然语言指令，图像分辨率224×224，每个图像前添加显式文本帧标记（标注视角和时间步索引），本体感觉通过约100万参数的2层MLP投影后作为软标记插入语言流，动作头输出8步7自由度的动作块</li><li>分层CoT蒸馏：引入4个特殊token（<code><plan></code>、<code></plan></code>、``），<strong>Plan</strong>由35B参数的<strong>Qwen3.5-35B-A3B</strong>混合专家教师模型根据指令和首帧生成，<strong>Think</strong>的Gripper槽位根据对应时间步的本体感觉向量推导生成，避免静态帧下视觉判断夹爪状态的歧义，学生模型通过动作回归损失和推理token的语言模型交叉熵损失联合训练，损失权重分别为1.0和0.1</li><li>指令增强：通过动词替换、物体同义词替换、礼貌度变化三种方式将40条基础指令扩展为800条复述变体，训练时以0.8概率替换样本的原指令，评估时始终使用原始或基准定义的扰动指令</li><li>推理优化：Plan每回合仅生成一次并缓存，8步动作块开环执行，推理tokens采用贪心解码且上限120个token，稳态推理单步耗时1.37s，其中76%为自回归生成耗时，缓存Plan可将单步推理token数从70降至26，推理成本减半</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 08</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：<strong>LIBERO-Plus</strong>鲁棒性基准（覆盖10,030个扰动任务，包含7个独立扰动维度：相机视角、机器人初始状态、语言指令、光照条件、背景纹理、传感器噪声、物体布局，分为Spatial/Object/Goal/Long四个测试套件）、标准<strong>LIBERO</strong>基准（4个套件，每套件10个任务，每任务50次rollout，用于验证分布内性能）</li><li>模型规模：学生模型总参数量约0.9B，骨干为<strong>Qwen3.5-0.8B</strong>；教师模型为35B参数的<strong>Qwen3.5-35B-A3B</strong>混合专家模型，标签生成时采用4-bit量化</li><li>训练资源：单节点8张<strong>NVIDIA H100 GPU</strong>，使用AdamW优化器，骨干学习率2×10⁻⁵，投影器和动作头学习率1×10⁻⁴，3%步数线性预热，采用梯度检查点和FlashAttention-2加速训练</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 09</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境下的LIBERO基准Franka Panda机械臂，推理测试在单张<strong>NVIDIA L40S</strong>上进行，遵循LIBERO-Plus标准协议（每个扰动任务单次rollout），标准LIBERO每任务50次rollout</li><li>评估指标：各扰动维度及总体的任务成功率（%）</li><li>关键实验结果：</li></ul>
+<p> - LIBERO-Plus测试中，CoTinyVLA在四个套件上均达到最高总成功率，且在难度最高的Robot Initial States维度上大幅领先基线：Goal套件达到73.6%，远超最强基线的39.9%，而所有基线在该维度的最高成绩均不超过53.2%</p>
+<p> - 标准LIBERO测试中平均成功率达到97.5%，与最强7B基线<strong>RIPT-VLA</strong>持平，领先最强亚1B基线<strong>Evo-1</strong> 2.7个百分点，验证了模型的分布内性能没有损失</p>
+<p> - 消融实验显示：移除复述增强仅会使语言指令维度成功率下降12.3个百分点，其余6个非语言维度无变化；移除分层CoT蒸馏主要影响物理状态相关扰动维度；将16帧时序输入替换为单帧会使Robot Initial States维度成功率下降16.0个百分点</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.25516/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">A Causality-aware Infer-diagnose-refine Framework for Test-time Modality Adaptation in VLA Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.24744/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Data Pyramid for Embodied Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

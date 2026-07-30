@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RL$^2$-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文提出RL²-VLA自适应推理时引导框架，旨在解决Vision-Language-Action（VLA）模型在挑战性任务、域外（OOD）场景下性能骤降的问题，针对现有测试时引导方法样本多样性不足、继承相关性失败模式、固定干预策略易扰动已准确动作的缺陷，实现无需重新训练基础VLA的性能提升。 核心回答VLA推理时引导的“如何引导”与“何时引导”两个关键问题：通过轻量离线RL潜变量策略实现动作空间的组合引导，结合失败…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.26991">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.26991.webp" alt="RL$^2$-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文提出RL²-VLA自适应推理时引导框架，旨在解决Vision-Language-Action（VLA）模型在挑战性任务、域外（OOD）场景…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RL$^2$-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-07-29 · <a href="http://arxiv.org/abs/2607.26991" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.26991" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.26991</span></div>
+            <p class="detail-summary">本文提出RL²-VLA自适应推理时引导框架，旨在解决Vision-Language-Action（VLA）模型在挑战性任务、域外（OOD）场景下性能骤降的问题，针对现有测试时引导方法样本多样性不足、继承相关性失败模式、固定干预策略易扰动已准确动作的缺陷，实现无需重新训练基础VLA的性能提升。 核心回答VLA推理时引导的“如何引导”与“何时引导”两个关键问题：通过轻量离线RL潜变量策略实现动作空间的组合引导，结合失败…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">新加坡国立大学（National University of Singapore）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.26991/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文提出RL²-VLA自适应推理时引导框架，旨在解决Vision-Language-Action（VLA）模型在挑战性任务、域外（OOD）场景…</p>
+  <ul class="reading-intro-points"><li>本文提出RL²-VLA自适应推理时引导框架，旨在解决Vision-Language-Action（VLA）模型在挑战性任务、域外（OOD）场景…</li><li>核心回答VLA推理时引导的“如何引导”与“何时引导”两个关键问题：通过轻量离线RL潜变量策略实现动作空间的组合引导，结合失败检测模块仅在基础V…</li><li>研究目标是构建轻量、模块化、兼容多类VLA与验证器的通用引导框架，提升VLA在复杂场景下的泛化性与鲁棒性，同时验证框架在仿真与真实机器人场景的…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>新加坡国立大学</strong>（National University of Singapore）</li><li><strong>多伦多大学</strong>（University of Toronto）</li><li><strong>新加坡科技工程有限公司</strong>（Singapore Technologies Engineering）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文提出<strong>RL²-VLA</strong>自适应推理时引导框架，旨在解决Vision-Language-Action（VLA）模型在挑战性任务、域外（OOD）场景下性能骤降的问题，针对现有测试时引导方法样本多样性不足、继承相关性失败模式、固定干预策略易扰动已准确动作的缺陷，实现无需重新训练基础VLA的性能提升。</li><li>核心回答VLA推理时引导的“如何引导”与“何时引导”两个关键问题：通过轻量离线RL潜变量策略实现动作空间的组合引导，结合失败检测模块仅在基础VLA可能失败时激活引导，避免不必要的动作扰动。</li><li>研究目标是构建轻量、模块化、兼容多类VLA与验证器的通用引导框架，提升VLA在复杂场景下的泛化性与鲁棒性，同时验证框架在仿真与真实机器人场景的有效性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出首个基于VLA动作专家潜变量的轻量离线RL组合引导策略，将大规模示教学习的行为先验与RL诱导的动作多样性结合，无需修改基础VLA即可生成更优动作候选</li><li>首次建立VLA引导方法在成功/失败状态下的差异化测试时扩展定律，揭示组合引导仅在基础VLA可能失败时能降低动作误差，成功状态下反而会扰动已准确的动作</li><li>引入轻量多任务失败检测模块与保真预测校准机制，实现自适应引导触发，仅在预测失败时激活组合引导，保留基础VLA在成功场景下的性能优势</li><li>在SIMPLER、PolaRiS仿真基准与真实PiperX机械臂实验验证框架有效性，OOD场景下成功率最高提升17.3%，真实场景平均提升17.5%，同时框架可适配不同VLA、验证器与基准</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体采用<strong>RL²</strong>自适应组合引导框架，核心包含RL潜变量策略训练、组合引导、自适应触发、动作验证四个模块</li><li>RL潜变量策略训练：采用QAM（Q-learning with Adjoint Matching）训练轻量离线RL流匹配策略，条件为从基础VLA动作专家提取的潜变量嵌入，训练数据与VLA微调数据集一致，在2张<strong>NVIDIA L40s</strong> GPU上训练50万-100万步</li><li>组合引导机制：推理时将RL策略的流速度与基础VLA的流速度做加权平均组合，生成多样且符合示教先验的动作候选；针对自回归类VLA（如OpenVLA），采用高斯扰动策略实现组合引导</li><li>自适应触发机制：采用SAFE多任务失败检测器，结合保真预测（Conformal Prediction, CP）校准时间维度阈值，仅在预测当前步骤可能失败时激活组合引导，否则回退到基础VLA的动作分布</li><li>动作验证模块：采用外部可训练验证器对候选动作打分，选择最高分动作执行，兼容偏好学习、对比学习等不同范式训练的验证器</li><li>核心创新点：首次将VLA潜变量与离线RL结合用于测试时引导，建立成功/失败状态差异化扩展定律，实现轻量模块化的自适应引导，无需修改基础VLA即可提升泛化性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>训练数据集：<strong>BridgeV2</strong>、<strong>DROID</strong>大规模机器人操作数据集，用于训练RL潜变量策略</li><li>评估基准：<strong>SIMPLER</strong>（含域内原始任务、OOD提示任务、OOD环境任务）、<strong>PolaRiS</strong> OOD操作基准，以及真实PiperX机械臂实验场景</li><li>基础VLA模型：<strong>OpenVLA</strong>、<strong>π0</strong>、<strong>π0.5</strong>，配套RL策略为适配上述VLA的轻量流匹配策略</li><li>训练资源：2张<strong>NVIDIA L40s</strong> GPU，RL策略训练步数为50万-100万步</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：SIMPLER三个子场景（域内、OOD提示、OOD环境）、PolaRiS OOD场景，以及真实PiperX机械臂操作场景</li><li>主要评估指标：任务成功率（Success Rate）、归一化均方根误差（NRMSE，用于测试时扩展定律分析）</li><li>关键实验结果：</li></ul>
+<p> - 仿真场景下，OOD任务成功率最高提升17.3%，域内任务平均提升7.5%，任务级最高提升19.4%，显著优于Repeated、Rephrase等基线方法</p>
+<p> - 测试时扩展定律分析表明，组合引导在失败状态下随样本数增加动作误差呈指数下降，成功状态下性能劣于基线，验证自适应触发机制的必要性</p>
+<p> - 消融实验证明VLA潜变量表示与RL训练是引导效果的关键，SAFE失败检测模块引入的额外延迟可忽略</p>
+<p> - 真实机器人场景下，RL²相比最强基线平均成功率提升17.5%，验证框架的实际部署有效性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.27138/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">DLAM: Distributional Latent Actions with Temporal Constraints</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.26807/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Route by Kinematics, Act by Observation: Kinematics-Supervised Expert Routing in MoE-Augmented VLA</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

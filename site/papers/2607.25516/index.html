@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Causality-aware Infer-diagnose-refine Framework for Test-time Modality Adaptation in VLA Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对视觉-语言-动作（VLA）模型中多模态融合的动态性问题，提出一种模型无关的测试时框架 IDR（Infer-diagnose-refine），无需重新训练即可在推理阶段动态调整视觉观测的重要性 通过因果推断方法，在事实场景和反事实场景下推断动作，诊断视觉观测的因果效应，并据此精细化动作预测 解决的核心问题是：VLA模型在不同执行阶段、不同架构和不同环境中对视觉信息的依赖程度动态变化，而现有方法难以在测试时自适应地…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.25516">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.25516.webp" alt="A Causality-aware Infer-diagnose-refine Framework for Test-time Modality Adaptation in VLA Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对视觉-语言-动作（VLA）模型中多模态融合的动态性问题，提出一种模型无关的测试时框架 IDR（Infer-diagnose-refine）…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">A Causality-aware Infer-diagnose-refine Framework for Test-time Modality Adaptation in VLA Models</h1>
+            <div class="detail-meta">2026-07-28 · <a href="http://arxiv.org/abs/2607.25516" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.25516" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.25516</span></div>
+            <p class="detail-summary">针对视觉-语言-动作（VLA）模型中多模态融合的动态性问题，提出一种模型无关的测试时框架 IDR（Infer-diagnose-refine），无需重新训练即可在推理阶段动态调整视觉观测的重要性 通过因果推断方法，在事实场景和反事实场景下推断动作，诊断视觉观测的因果效应，并据此精细化动作预测 解决的核心问题是：VLA模型在不同执行阶段、不同架构和不同环境中对视觉信息的依赖程度动态变化，而现有方法难以在测试时自适应地…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">北京理工大学 (Beijing Institute of Technology)：Haoyu Zhan…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.25516/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对视觉-语言-动作（VLA）模型中多模态融合的动态性问题，提出一种模型无关的测试时框架 IDR（Infer-diagnose-refine）…</p>
+  <ul class="reading-intro-points"><li>针对视觉-语言-动作（VLA）模型中多模态融合的动态性问题，提出一种模型无关的测试时框架 IDR（Infer-diagnose-refine）…</li><li>通过因果推断方法，在事实场景和反事实场景下推断动作，诊断视觉观测的因果效应，并据此精细化动作预测</li><li>解决的核心问题是：VLA模型在不同执行阶段、不同架构和不同环境中对视觉信息的依赖程度动态变化，而现有方法难以在测试时自适应地调整这种依赖关系</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>北京理工大学</strong> (Beijing Institute of Technology)：Haoyu Zhang, Yuwei Wu, Gao Zhi (通讯作者), Zhenxin Diao, Mingyang Gao</li><li><strong>AInnovation Co. Ltd.</strong>：Jin Chen (通讯作者), Yongchun Liu, Fan Li</li><li><strong>北京人形机器人创新中心</strong> (Beijing Innovation Center of Humanoid Robotics)：Kun Wu</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对视觉-语言-动作（VLA）模型中多模态融合的动态性问题，提出一种模型无关的测试时框架 <strong>IDR</strong>（Infer-diagnose-refine），无需重新训练即可在推理阶段动态调整视觉观测的重要性</li><li>通过因果推断方法，在事实场景和反事实场景下推断动作，诊断视觉观测的因果效应，并据此精细化动作预测</li><li>解决的核心问题是：VLA模型在不同执行阶段、不同架构和不同环境中对视觉信息的依赖程度动态变化，而现有方法难以在测试时自适应地调整这种依赖关系</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>IDR 框架</strong>，一种训练免费的模型无关测试时模态适配框架，通过"推断-诊断-细化"三阶段流程，在每个时间步估计视觉重要性并动态精细化动作</li><li>设计 <strong>因果感知动作细化器</strong>（Causality-Aware Action Refiner），通过零填充干预（zero-padding interventions）推断反事实动作，基于范数量化（norm-based quantification）诊断模态特定的因果效应</li><li>提出 <strong>门控残差融合</strong>（gated residual fusion）机制，根据诊断的因果效应自适应地注入视觉校正，同时限制对低级控制的过度扰动</li><li>在四个VLA主干网络、多个仿真基准（LIBERO、SIMPLER、CALVIN）和真实世界操作任务上验证了框架的普适性和有效性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>推断阶段（Infer）</strong>：对视觉观测和本体感觉状态分别进行零填充干预（do(V=0ᵥ) 和 do(S=0ₛ)），将原始输入替换为同维度的全零张量，从而在冻结的VLA模型上推断反事实动作 a_no_img,t 和 a_no_prop,t</li><li><strong>诊断阶段（Diagnose）</strong>：计算事实动作与反事实动作之间的偏差向量 Δ_img,t 和 Δ_prop,t，通过L₂范数量化各自的因果效应 E_img,t 和 E_prop,t，作为当前时间步视觉重要性的诊断信号</li><li><strong>细化阶段（Refine）</strong>：设计门控机制 gₜ = 𝕀[E_img,t < τ]，当视觉效应低于阈值 τ 时激活门控，通过公式 a_final,t = a_base,t + gₜ·(αΔ_img,t + w_prop,t·u_prop,t) 进行残差融合，其中 w_prop,t 动态缩放本体感觉校正，u_prop,t 经裁剪限制高频抖动</li><li>关键参数设置：α=0.08（视觉细化强度），β=0.05（正则化强度），λ=0.1（裁剪边界）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真基准数据集</strong>：</li></ul>
+<p> - <strong>LIBERO</strong>：包含Spatial、Object、Goal、Long四个任务套件</p>
+<p> - <strong>SIMPLER</strong>：评估Google Robot和WidowX两种机械臂，包含Visual Matching (VM) 和Variant Aggregation (VA) 设置</p>
+<p> - <strong>CALVIN</strong>：采用ABC→D跨域迁移协议</p>
+<ul><li><strong>真实世界任务</strong>：Fold Clothes（叠衣服）和 Organize Table（整理桌面）长程序列任务</li><li><strong>评估的VLA主干网络</strong>：</li></ul>
+<p> - Large (≥4B)：UniVLA, UnifiedVLA, OpenVLA, DD-VLA, PD-VLA, MolmoAct, ThinkAct, CoT-VLA, WorldVLA</p>
+<p> - Small (<4B)：π₀, SmolVLA, GR00T-N1</p>
+<p> - Tiny (<1B)：GraspVLA, VLA-OS, UniAct</p>
+<p> - 重点评估：<strong>π₀.₅</strong>, <strong>X-VLA</strong>, <strong>VLA-Adapter</strong>, <strong>OpenVLA-OFT</strong></p></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：仿真环境在LIBERO、SIMPLER、CALVIN官方评估协议下测试；真实世界在真实机器人平台上验证</li><li><strong>主要评估指标</strong>：任务成功率（%）、平均完成子任务数（Avg Len）、5/5完成率、效率-成功权衡（完成时间与成功率）</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - <strong>LIBERO基准</strong>：IDR在全部四个主干上均有提升，VLA-Adapter提升+1.40%，π₀.₅提升+1.25%，OpenVLA-OFT提升+0.90%，X-VLA提升+0.45%</p>
+<p> - <strong>SIMPLER基准</strong>：在Variant Aggregation (VA) 设置下实现最大提升+6.33%，证明视觉适应性在分布偏移下的关键作用</p>
+<p> - <strong>CALVIN基准</strong>：平均完成长度从4.22提升至4.44，5/5完成率从70.5%提升至77.3%</p>
+<p> - <strong>真实世界</strong>：基线模型在执行Fold Clothes和Organize Table任务时提前停滞失败，而IDR通过测试时适配成功完成完整操作序列</p>
+<p> - <strong>诊断发现</strong>：视觉重要性模式随环境、模型架构和操作阶段动态变化（如X-VLA在LIBERO中本体感觉主导，在SIMPLER中视觉主导）</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.25895/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.25487/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">CoTinyVLA: Chain-of-Thought Distillation for a Sub-Billion-Parameter Vision-Language-Action Model</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
