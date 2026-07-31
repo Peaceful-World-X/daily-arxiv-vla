@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cross-Embodiment Transfer via Behavior-Aligned Representations - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="研究在视觉-语言-动作（VLA）模型中使用行为对齐表示（behavior-aligned representations，如物体边界框、语言运动描述、末端执行器轨迹）来促进跨形态迁移（cross-embodiment transfer）的作用 核心假设：这些表示在不同机器人形态间具有不变性，同时对动作预测有指导作用，能够以隐式方式统一大规模跨形态数据 开发了仿真基准 RoboCasa-X，用于系统评估不同表示及其组…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.27549">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.27549.webp" alt="Cross-Embodiment Transfer via Behavior-Aligned Representations" loading="lazy" />
+  <figcaption class="paper-figure-caption">研究在视觉-语言-动作（VLA）模型中使用行为对齐表示（behavior-aligned representations，如物体边界框、语言运…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Cross-Embodiment Transfer via Behavior-Aligned Representations</h1>
+            <div class="detail-meta">2026-07-30 · <a href="http://arxiv.org/abs/2607.27549" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.27549" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.27549</span></div>
+            <p class="detail-summary">研究在视觉-语言-动作（VLA）模型中使用行为对齐表示（behavior-aligned representations，如物体边界框、语言运动描述、末端执行器轨迹）来促进跨形态迁移（cross-embodiment transfer）的作用 核心假设：这些表示在不同机器人形态间具有不变性，同时对动作预测有指导作用，能够以隐式方式统一大规模跨形态数据 开发了仿真基准 RoboCasa-X，用于系统评估不同表示及其组…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Stanford University（斯坦福大学）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.27549/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">研究在视觉-语言-动作（VLA）模型中使用行为对齐表示（behavior-aligned representations，如物体边界框、语言运…</p>
+  <ul class="reading-intro-points"><li>研究在视觉-语言-动作（VLA）模型中使用行为对齐表示（behavior-aligned representations，如物体边界框、语言运…</li><li>核心假设：这些表示在不同机器人形态间具有不变性，同时对动作预测有指导作用，能够以隐式方式统一大规模跨形态数据</li><li>开发了仿真基准 RoboCasa-X，用于系统评估不同表示及其组合方式对新形态迁移的影响</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Stanford University</strong>（斯坦福大学）</li><li><strong>Toyota Research Institute</strong>（丰田研究院，TRI）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>研究在视觉-语言-动作（<strong>VLA</strong>）模型中使用<strong>行为对齐表示</strong>（behavior-aligned representations，如物体边界框、语言运动描述、末端执行器轨迹）来促进<strong>跨形态迁移</strong>（cross-embodiment transfer）的作用</li><li>核心假设：这些表示在不同机器人形态间具有不变性，同时对动作预测有指导作用，能够以隐式方式统一大规模跨形态数据</li><li>开发了仿真基准 <strong>RoboCasa-X</strong>，用于系统评估不同表示及其组合方式对新形态迁移的影响</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出基于行为对齐表示的跨形态模仿学习框架，通过隐式数据对齐替代显式的观测/动作空间对齐</li><li>构建首个面向跨形态操作的仿真基准 <strong>RoboCasa-X</strong>（基于 RoboCasa），包含 3 个源机器人和 3 个目标机器人</li><li>系统比较三种表示（<strong>边界框</strong>、<strong>语言运动</strong>、<strong>末端执行器轨迹</strong>）及多种整合方式，发现<strong>末端执行器轨迹</strong>对迁移最有帮助</li><li>证明表示的效用随先验数据规模扩大而增强，且能促进<strong>无动作数据</strong>（action-free data）的跨形态迁移</li><li>在真实机器人上验证仿真到真实的跨形态迁移，任务完成度提升 <strong>28%</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>使用 <strong>MiniVLA</strong> 架构作为策略模型，从预训练 VLM 初始化（无机器人预训练）</li><li>将行为对齐表示作为文本自回归预测，与动作构成单一序列；通过不同文本提示指定预测哪种表示子集</li><li>三种表示的标注方式：边界框使用 <strong>Grounding DINO</strong> + VLM 场景描述；语言运动通过对本体状态变化阈值化获得；末端执行器轨迹使用 <strong>LLARVA</strong> 预训练检测模型</li><li>训练时随机采样表示子集（分布 p_rep），总损失 = 行为克隆损失 + 表示辅助损失（权重 λ_k=1）</li><li>比较四种整合策略：<strong>No Reps</strong>（无表示）、<strong>Single Rep</strong>（单一表示）、<strong>ECoT</strong>（链式思维顺序预测）、<strong>Joint Reps</strong>（单模型联合所有表示）</li><li>迁移流程：在跨形态先验数据上预训练 → 用目标机器人数据与先验数据协同微调</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真基准 <strong>RoboCasa-X</strong>：基于 <strong>RoboCasa</strong> 平台，使用 <strong>MimicGen</strong> 生成数据</li><li>源机器人：<strong>IIWA</strong>、<strong>Kinova3</strong>、<strong>UR5e</strong>（配 Robotiq 2F-85/2F-140 夹爪）；目标机器人：<strong>Panda</strong>、<strong>Jaco</strong>（配 Robotiq 2F-85）、<strong>Panda-OG</strong>（Franka Hand）</li><li>先验数据集规模：<strong>XP-900</strong>（每任务/形态 300 条演示，共 900 条）和 <strong>XP-3K</strong>（每任务/形态 1000 条，共 3000 条）；每个目标机器人每任务 50 条人类演示</li><li>任务：<strong>PnP Counter to Sink</strong>、<strong>PnP Sink to Counter</strong>、<strong>Turn On Sink Faucet</strong>、<strong>Flip Mug Upright</strong>，涵盖厨房布局、纹理、物体类型和位姿的多样化变化</li><li>真实机器人：<strong>Franka Research 3 (FR3)</strong> 和 <strong>ViperX 300 S</strong></li><li>计算资源由 <strong>Toyota Research Institute</strong> 提供</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>仿真评估：每次评估 100 次 rollout，报告三个检查点中的最高成功率；真实评估：每形态/任务 10-30 次 rollout，报告任务完成进度</li><li>每种表示单独使用均优于无表示，<strong>末端执行器轨迹</strong>帮助最大，其次为语言运动、边界框；<strong>Joint Reps</strong> 整体表现最佳（Panda-OG 上单独使用轨迹更优）</li><li>表示收益随数据规模增长：无先验 +5%，XP-900 +15%，<strong>XP-3K +19%</strong>；XP-3K + 表示在 Panda/Jaco 上可匹配甚至超过同形态先验（SP-900）</li><li>推理时预测表示收益不显著，直接预测动作即可，说明表示主要通过隐式方式增强迁移</li><li>无动作预训练有效：较从头学习提升 14%，较有动作但无表示的先验提升 11%</li><li>真实世界实验：<strong>Joint Reps</strong> 使跨形态数据的任务完成度整体提升 <strong>28%</strong>（仅用目标数据时仅 +8%），证明表示能实现原本难以达成的跨形态迁移</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.27599/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.27205/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with &lt;1 GB VRAM</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
