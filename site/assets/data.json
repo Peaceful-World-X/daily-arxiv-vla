@@ -1,5 +1,145 @@
 [
   {
+    "date": "2026-07-31",
+    "title": "WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2607.29613",
+    "arxiv_id": "2607.29613",
+    "detail_path": "papers/2607.29613/",
+    "cover_path": "covers/2607.29613/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.29613.webp",
+    "preview_text": "提出了一种名为 World Critic Model (WCM) 的新型统一架构，用于视觉-语言-动作（VLA）模型的强化学习后训练。 解决了现有 VLA-RL 中 critic 模型因部分可观测性（POMDP）导致的表示瓶颈问题：单帧观测或弱监督历史嵌入不足以准确估计价值。 核心思想是引入世界模型目标，让 critic 能够显式学习环境的时间动态，从而更好地利用历史信息，提升价值估计的准确性和泛化能力。",
+    "research_unit": "同济大学 (Tongji University)",
+    "hook_text": "提出了一种名为 World Critic Model (WCM) 的新型统一架构，用于视觉-语言-动作（VLA）模型的强化学习后训练。",
+    "key_points": [
+      "提出了一种名为 World Critic Model (WCM) 的新型统一架构，用于视觉-语言-动作（VLA）模型的强化学习后训练。",
+      "解决了现有 VLA-RL 中 critic 模型因部分可观测性（POMDP）导致的表示瓶颈问题：单帧观测或弱监督历史嵌入不足以准确估计价值。",
+      "核心思想是引入世界模型目标，让 critic 能够显式学习环境的时间动态，从而更好地利用历史信息，提升价值估计的准确性和泛化能力。"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-31",
+    "title": "FibVLA: An Efficient Temporal Vision-Language-Action Model with Fibonacci Sampling",
+    "link": "http://arxiv.org/abs/2607.29596",
+    "arxiv_id": "2607.29596",
+    "detail_path": "papers/2607.29596/",
+    "cover_path": "covers/2607.29596/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.29596.webp",
+    "preview_text": "提出 FibVLA，一个高效的时序视觉-语言-动作（VLA）模型，旨在解决现有 VLA 模型在捕获长程时序信息时导致的推理效率下降问题。 通过引入对数后见采样和斐波那契循环推理，在保持实时推理效率的同时，充分感知历史上下文，提升长程任务的执行成功率和动作平滑性。",
+    "research_unit": "论文作者所属机构未在论文中明确列出。",
+    "hook_text": "提出 FibVLA，一个高效的时序视觉-语言-动作（VLA）模型，旨在解决现有 VLA 模型在捕获长程时序信息时导致的推理效率下降问题。",
+    "key_points": [
+      "提出 FibVLA，一个高效的时序视觉-语言-动作（VLA）模型，旨在解决现有 VLA 模型在捕获长程时序信息时导致的推理效率下降问题。",
+      "通过引入对数后见采样和斐波那契循环推理，在保持实时推理效率的同时，充分感知历史上下文，提升长程任务的执行成功率和动作平滑性。",
+      "提出 FibVLA 框架，结合对数后见采样与斐波那契采样，在数学上实现了推理时对先前动作块的直接复用，大幅降低时序 VLA 的推理开销。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-31",
+    "title": "Safe Vision Language Action Models via Barrier Enhanced Flow Matching",
+    "link": "http://arxiv.org/abs/2607.29569",
+    "arxiv_id": "2607.29569",
+    "detail_path": "papers/2607.29569/",
+    "cover_path": "covers/2607.29569/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.29569.webp",
+    "preview_text": "提出一种模块化推理框架，将流匹配（Flow Matching）生成模型与控制障碍函数（CBF）安全保证相结合，用于视觉语言动作模型（VLA）的安全控制。 解决现有方法仅对模型最终输出进行外部安全过滤，易导致分布偏移和成功率下降的问题，转而直接在模型内部去噪过程中生成安全轨迹。 方法无需安全特定数据集或模型重新训练，可即插即用地为VLA提供安全推理。",
+    "research_unit": "宾夕法尼亚州立大学（The Pennsylvania State University）电气工程系",
+    "hook_text": "提出一种模块化推理框架，将流匹配（Flow Matching）生成模型与控制障碍函数（CBF）安全保证相结合，用于视觉语言动作模型（VLA）的…",
+    "key_points": [
+      "提出一种模块化推理框架，将流匹配（Flow Matching）生成模型与控制障碍函数（CBF）安全保证相结合，用于视觉语言动作模型（VLA）的…",
+      "解决现有方法仅对模型最终输出进行外部安全过滤，易导致分布偏移和成功率下降的问题，转而直接在模型内部去噪过程中生成安全轨迹。",
+      "方法无需安全特定数据集或模型重新训练，可即插即用地为VLA提供安全推理。"
+    ],
+    "reading_minutes": 4,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-31",
+    "title": "CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning",
+    "link": "http://arxiv.org/abs/2607.29172",
+    "arxiv_id": "2607.29172",
+    "detail_path": "papers/2607.29172/",
+    "cover_path": "covers/2607.29172/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.29172.webp",
+    "preview_text": "研究在闭源机器人基础模型（仅通过管理式SFT API访问）上，如何实现对人形机器人在敏捷、接触密集型任务上的高效适配。 发现直接通过API进行监督微调（SFT）虽能大幅超越开源模型，但仍有性能瓶颈，因此提出CLIFT方法，在不访问模型权重、梯度等内部信息的情况下，实现闭环策略改进。 旨在将Gemini Robotics On-Device (GROD) 模型通过仅API的闭环迭代微调，转变为能掌握复杂任务的人形机器…",
+    "research_unit": "University of California, Berkeley",
+    "hook_text": "研究在闭源机器人基础模型（仅通过管理式SFT API访问）上，如何实现对人形机器人在敏捷、接触密集型任务上的高效适配。",
+    "key_points": [
+      "研究在闭源机器人基础模型（仅通过管理式SFT API访问）上，如何实现对人形机器人在敏捷、接触密集型任务上的高效适配。",
+      "发现直接通过API进行监督微调（SFT）虽能大幅超越开源模型，但仍有性能瓶颈，因此提出CLIFT方法，在不访问模型权重、梯度等内部信息的情况下…",
+      "旨在将Gemini Robotics On-Device (GROD) 模型通过仅API的闭环迭代微调，转变为能掌握复杂任务的人形机器人专家。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-31",
+    "title": "ActFovea: Runtime Safeguarding for VLA Policies via Spatiotemporal Visual-Action Consistency",
+    "link": "http://arxiv.org/abs/2607.29169",
+    "arxiv_id": "2607.29169",
+    "detail_path": "papers/2607.29169/",
+    "cover_path": "covers/2607.29169/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.29169.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）策略在运行时易遭受空间视觉干扰、时间错位、动作轨迹漂移等扰动，破坏视觉观测、机器人本体感知与执行动作的时空对齐，导致控制失效；且现有运行时保护方案大多针对单一扰动类型或采取过度保守策略，无法统一处理多样本扰动 本文提出ActFovea即插即用运行时保护框架，无需重训练或修改底层冻结的VLA策略，通过监测时空视觉-动作一致性检测故障，对可恢复扰动进行修复，对不可恢复场景触发安全失效 研究…",
+    "research_unit": "提供的论文原文未明确标注作者所属研究机构",
+    "hook_text": "现有视觉-语言-动作（VLA）策略在运行时易遭受空间视觉干扰、时间错位、动作轨迹漂移等扰动，破坏视觉观测、机器人本体感知与执行动作的时空对齐…",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）策略在运行时易遭受空间视觉干扰、时间错位、动作轨迹漂移等扰动，破坏视觉观测、机器人本体感知与执行动作的时空对齐…",
+      "本文提出ActFovea即插即用运行时保护框架，无需重训练或修改底层冻结的VLA策略，通过监测时空视觉-动作一致性检测故障，对可恢复扰动进行修…",
+      "研究目标是实现VLA策略在多种运行时扰动下的鲁棒性，同时保持无扰动时的原有性能，避免无保护的安全风险"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-07-30",
     "title": "ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine",
     "link": "http://arxiv.org/abs/2607.28625",

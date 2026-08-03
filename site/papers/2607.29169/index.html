@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ActFovea: Runtime Safeguarding for VLA Policies via Spatiotemporal Visual-Action Consistency - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有视觉-语言-动作（VLA）策略在运行时易遭受空间视觉干扰、时间错位、动作轨迹漂移等扰动，破坏视觉观测、机器人本体感知与执行动作的时空对齐，导致控制失效；且现有运行时保护方案大多针对单一扰动类型或采取过度保守策略，无法统一处理多样本扰动 本文提出ActFovea即插即用运行时保护框架，无需重训练或修改底层冻结的VLA策略，通过监测时空视觉-动作一致性检测故障，对可恢复扰动进行修复，对不可恢复场景触发安全失效 研究…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.29169">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.29169.webp" alt="ActFovea: Runtime Safeguarding for VLA Policies via Spatiotemporal Visual-Action Consistency" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有视觉-语言-动作（VLA）策略在运行时易遭受空间视觉干扰、时间错位、动作轨迹漂移等扰动，破坏视觉观测、机器人本体感知与执行动作的时空对齐…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ActFovea: Runtime Safeguarding for VLA Policies via Spatiotemporal Visual-Action Consistency</h1>
+            <div class="detail-meta">2026-07-31 · <a href="http://arxiv.org/abs/2607.29169" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.29169" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.29169</span></div>
+            <p class="detail-summary">现有视觉-语言-动作（VLA）策略在运行时易遭受空间视觉干扰、时间错位、动作轨迹漂移等扰动，破坏视觉观测、机器人本体感知与执行动作的时空对齐，导致控制失效；且现有运行时保护方案大多针对单一扰动类型或采取过度保守策略，无法统一处理多样本扰动 本文提出ActFovea即插即用运行时保护框架，无需重训练或修改底层冻结的VLA策略，通过监测时空视觉-动作一致性检测故障，对可恢复扰动进行修复，对不可恢复场景触发安全失效 研究…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">提供的论文原文未明确标注作者所属研究机构</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.29169/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有视觉-语言-动作（VLA）策略在运行时易遭受空间视觉干扰、时间错位、动作轨迹漂移等扰动，破坏视觉观测、机器人本体感知与执行动作的时空对齐…</p>
+  <ul class="reading-intro-points"><li>现有视觉-语言-动作（VLA）策略在运行时易遭受空间视觉干扰、时间错位、动作轨迹漂移等扰动，破坏视觉观测、机器人本体感知与执行动作的时空对齐…</li><li>本文提出ActFovea即插即用运行时保护框架，无需重训练或修改底层冻结的VLA策略，通过监测时空视觉-动作一致性检测故障，对可恢复扰动进行修…</li><li>研究目标是实现VLA策略在多种运行时扰动下的鲁棒性，同时保持无扰动时的原有性能，避免无保护的安全风险</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>提供的论文原文未明确标注作者所属研究机构</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有视觉-语言-动作（VLA）策略在运行时易遭受空间视觉干扰、时间错位、动作轨迹漂移等扰动，破坏视觉观测、机器人本体感知与执行动作的时空对齐，导致控制失效；且现有运行时保护方案大多针对单一扰动类型或采取过度保守策略，无法统一处理多样本扰动</li><li>本文提出<strong>ActFovea</strong>即插即用运行时保护框架，无需重训练或修改底层冻结的VLA策略，通过监测<strong>时空视觉-动作一致性</strong>检测故障，对可恢复扰动进行修复，对不可恢复场景触发安全失效</li><li>研究目标是实现VLA策略在多种运行时扰动下的鲁棒性，同时保持无扰动时的原有性能，避免无保护的安全风险</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>将空间视觉干扰、时间错位、动作轨迹漂移、观测重放等多样本扰动统一表述为视觉证据、本体感知过渡和动作历史共同支持的<strong>时空视觉-动作一致性</strong>的违反</li><li>开发即插即用的运行时保护框架，结合动作条件注视、扰动条件观测恢复、动作块验证和可恢复性感知的安全失效机制，全程保持底层VLA策略冻结</li><li>在40个LIBERO任务上开展闭环评估，验证了框架在局部视觉覆盖、视觉延迟、动作漂移下的恢复能力，无扰动时的性能保持，以及观测重放下的100%及时安全失效</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>ActFovea为轻量推理时插件，仅通过VLA策略的观测-动作接口交互，完全不修改底层策略的参数和结构，实现 plug-and-play 部署</li><li>核心创新是<strong>动作条件注视</strong>为交互中心而非图像中心：基于机器人运动学、本体感知状态和历史动作，动态构建覆盖预测接触点和运动走廊的感兴趣区域，抑制任务无关背景，保留交互相关的视觉证据，随交互阶段自适应调整区域位置</li><li><strong>一致性监测与威胁分类</strong>：融合几何一致性、动态视觉运动一致性、时间戳健康、动作-本体感知一致性等多维度指标计算风险得分，无需扰动标签即可自动识别扰动类型和场景可恢复性，路由到对应的处理路径</li><li><strong>扰动条件恢复与动作验证</strong>：对可恢复扰动构建多类候选观测（含原始观测、注视后观测、时间对齐观测、干扰修复观测等），通过动作块的方向、幅度、平滑度、漂移等指标验证候选安全性，仅执行验证通过的动作块</li><li><strong>风险自适应执行与安全失效</strong>：对可恢复场景执行运动阻尼、短时域执行等恢复策略；对无法恢复的观测重放等场景，触发有界运动抑制的安全失效，避免无保护失败</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用<strong>LIBERO</strong>仿真基准的四个任务套件：LIBERO-Spatial、LIBERO-Object、LIBERO-Goal、LIBERO-10，共40个任务，每个任务测试50轮，总计2000轮每方法-场景单元</li><li>底层VLA策略为冻结的<strong>π₀</strong>模型，ActFovea本身无额外可训练参数，属于轻量推理时插件</li><li>无需训练过程，仅需推理时算力，原文未提及具体GPU/TPU等硬件配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境为LIBERO仿真平台，对比基线包括原始VLA、动作裁剪/平滑、固定短时域 replanning、仅时间戳保持等方法，所有对比使用相同的冻结π₀策略 checkpoint</li><li>核心评估指标包括任务成功率（SR）、防御增益（Gain，百分比 points）、标准化恢复率（NRR）、安全失效及时率、无保护失败率</li><li>关键实验结果：</li></ul>
+<p> - 局部视觉覆盖场景下，成功率从基线VLA的49.3%提升至90.3%，增益41.0个百分点，恢复93.7%的性能损失</p>
+<p> - 视觉延迟场景下，成功率从76.2%提升至86.0%，增益9.8个百分点，恢复59.8%的性能损失</p>
+<p> - 动作漂移场景下，成功率从83.1%提升至90.1%，增益7.0个百分点，恢复73.1%的性能损失</p>
+<p> - 无扰动场景下，ActFovea保持原有性能（93.8% vs 基线93.0%），无性能回退</p>
+<p> - 观测重放场景下，所有2000轮试验均触发及时安全失效，无任务成功和无保护失败；检测后平均仅执行2.0个有界动作，累计动作空间运动范数仅0.326，相比无安全失效机制的基线减少99.23%的检测后动作数和99.87%的累计运动</p>
+<p> - 消融实验显示，移除威胁分类、恢复候选库、候选扩展、动作验证等模块会显著降低对应扰动场景的恢复效果，证明各模块存在互补作用</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2607.29172/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2607.28625/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出了一种名为 World Critic Model (WCM) 的新型统一架构，用于视觉-语言-动作（VLA）模型的强化学习后训练。 解决了现有 VLA-RL 中 critic 模型因部分可观测性（POMDP）导致的表示瓶颈问题：单帧观测或弱监督历史嵌入不足以准确估计价值。 核心思想是引入世界模型目标，让 critic 能够显式学习环境的时间动态，从而更好地利用历史信息，提升价值估计的准确性和泛化能力。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.29613">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.29613.webp" alt="WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出了一种名为 World Critic Model (WCM) 的新型统一架构，用于视觉-语言-动作（VLA）模型的强化学习后训练。</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning</h1>
+            <div class="detail-meta">2026-07-31 · <a href="http://arxiv.org/abs/2607.29613" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.29613" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.29613</span></div>
+            <p class="detail-summary">提出了一种名为 World Critic Model (WCM) 的新型统一架构，用于视觉-语言-动作（VLA）模型的强化学习后训练。 解决了现有 VLA-RL 中 critic 模型因部分可观测性（POMDP）导致的表示瓶颈问题：单帧观测或弱监督历史嵌入不足以准确估计价值。 核心思想是引入世界模型目标，让 critic 能够显式学习环境的时间动态，从而更好地利用历史信息，提升价值估计的准确性和泛化能力。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">同济大学 (Tongji University)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.29613/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出了一种名为 World Critic Model (WCM) 的新型统一架构，用于视觉-语言-动作（VLA）模型的强化学习后训练。</p>
+  <ul class="reading-intro-points"><li>提出了一种名为 World Critic Model (WCM) 的新型统一架构，用于视觉-语言-动作（VLA）模型的强化学习后训练。</li><li>解决了现有 VLA-RL 中 critic 模型因部分可观测性（POMDP）导致的表示瓶颈问题：单帧观测或弱监督历史嵌入不足以准确估计价值。</li><li>核心思想是引入世界模型目标，让 critic 能够显式学习环境的时间动态，从而更好地利用历史信息，提升价值估计的准确性和泛化能力。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>同济大学</strong> (Tongji University)</li><li><strong>上海创新研究院</strong> (Shanghai Innovation Institute)</li><li><strong>复旦大学</strong> (Fudan University)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出了一种名为 <strong>World Critic Model (WCM)</strong> 的新型统一架构，用于视觉-语言-动作（VLA）模型的强化学习后训练。</li><li>解决了现有 VLA-RL 中 critic 模型因部分可观测性（POMDP）导致的表示瓶颈问题：单帧观测或弱监督历史嵌入不足以准确估计价值。</li><li>核心思想是引入世界模型目标，让 critic 能够显式学习环境的时间动态，从而更好地利用历史信息，提升价值估计的准确性和泛化能力。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>识别了 VLA-RL 中 critic 模型的表示瓶颈：在部分可观测环境下，仅依赖单帧输入或弱监督历史嵌入无法恢复足够的时间信息状态。</li><li>提出了 <strong>World Critic Model (WCM)</strong>，一个将未来状态预测与价值估计统一起来的 critic 架构，使 critic 表示能显式编码环境动态。</li><li>展示了 WCM 可无缝集成到 <strong>on-policy</strong>（如 PPO、Flow-SDE）和 <strong>off-policy</strong>（如 AWR、RECAP）训练流程中，并兼容多种主流 VLA 骨干网络（如 π₀、π₀.5、OpenVLA-OFT）。</li><li>在 4 个仿真基准（共 149 个任务）和 7 个真实世界操作任务中，验证了 WCM 在分布内（IND）和分布外（OOD）场景下一致且显著的性能与泛化能力提升。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>问题建模</strong>：将机器人操作建模为部分可观测马尔可夫决策过程（POMDP），强调 critic 需要基于历史信息而非单帧观测来估计价值。</li><li><strong>核心架构</strong>：基于轻量级 <strong>LeJEPA</strong> 架构构建 WCM，包含四个组件：</li></ul>
+<p> - <strong>观测编码器</strong>：将历史帧序列独立编码为潜在状态，同时将语言指令通过 CLIP 编码后适配到潜在空间。</p>
+<p> - <strong>世界预测器</strong>：一个因果 Transformer 主干，处理语言条件化的历史序列，生成隐藏表示。</p>
+<p> - <strong>价值解码头</strong>：从隐藏表示中估计当前状态的价值。</p>
+<p> - <strong>世界解码头</strong>：以动作条件，利用残差连接预测下一个潜在状态，从而学习环境动态。</p>
+<ul><li><strong>训练目标</strong>：联合优化三个损失函数：</li></ul>
+<p> - <strong>价值损失</strong>：预测价值与真实回报之间的 L2 损失。</p>
+<p> - <strong>预测损失</strong>：预测的下一潜在状态与真实下一潜在状态之间的 L2 损失。</p>
+<p> - <strong>SIGReg 正则化损失</strong>：防止潜在空间特征崩塌，强制其分布接近各向同性高斯分布。</p>
+<ul><li><strong>训练流程</strong>：可灵活应用于 on-policy（PPO 和 Flow-SDE）和 off-policy（AWR、RECAP 等）设置，并复用 VLM 骨干网络作为观测编码器以保持轻量。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：</li></ul>
+<p> - <strong>ManiSkill</strong>：用于评估分布内和分布外操作能力。</p>
+<p> - <strong>MetaWorld</strong>：用于评估超出拾取-放置任务的操作能力。</p>
+<p> - <strong>CALVIN</strong>：用于评估长序列任务能力。</p>
+<p> - <strong>LIBERO-Plus</strong>：用于评估泛化能力。</p>
+<p> - <strong>真实世界</strong>：基于 WidowX-250S 机器人的 7 个任务（动态抓取、长序列、可变形物体操作、拾取-放置）。</p>
+<ul><li><strong>模型规模与参数量</strong>：论文未明确提及 WCM 的具体参数量，但强调其架构轻量，可从头训练。</li><li><strong>训练资源</strong>：论文未明确列出 GPU 型号和数量，但使用了标准的 on-policy 和 off-policy RL 训练流程，并在附录中提到了训练细节和推理吞吐量。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：仿真环境为 ManiSkill、MetaWorld、CALVIN、LIBERO-Plus；真实世界使用 WidowX-250S 机器人。</li><li><strong>主要评估指标</strong>：任务成功率（Success Rate）和平均完成长度（Average Length），以及相对于 SFT 基线的性能提升（Δ）。</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - <strong>ManiSkill 基准</strong>：WCM 在 π₀、π₀.5 和 OpenVLA-OFT 三种骨干网络上均取得最高性能，尤其在 OpenVLA-OFT 上，从极低的零样本性能（0.8%）实现了 12,551% 的惊人提升，IND 成功率高达 99.0%。</p>
+<p> - <strong>泛化性能</strong>：在 LIBERO-Plus 的 7 个泛化维度和 ManiSkill 的 OOD 设置中，WCM 均表现出显著优于基线方法的泛化能力。</p>
+<p> - <strong>真实世界表现</strong>：在 7 个真实世界任务上，使用 off-policy RL 训练的 WCM 策略超越了标准 VLM-critic 基线，实现了更稳定和更优的操作性能。</p>
+<p> - <strong>消融与分析</strong>：验证了世界预测目标（World Prediction Objective）对利用历史信息至关重要，且更长的观测历史并非总是有益，存在一个最优长度。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2607.29596/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">FibVLA: An Efficient Temporal Vision-Language-Action Model with Fibonacci Sampling</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
