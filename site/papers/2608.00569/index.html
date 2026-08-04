@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Latency-Tolerant Cloud-Edge Collaborative Vision-Language-Action Models via Emergent Representational Specialization - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对十亿参数级Vision-Language-Action（VLA）模型部署到移动机器人时，云端语义推理与边缘闭环控制的网络延迟矛盾问题，提出CloudEdgeVLA云边协同框架 将时间错位问题转化为表征学习问题，通过云端生成缓慢变化的任务规划特征、边缘结合实时视觉特征生成动作，实现无阻塞的异步控制 研究目标是让云端大模型可独立扩展的同时，边缘侧保持轻量、高响应，且在大范围网络延迟下仍保持高任务成功率" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.00569">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.00569.webp" alt="Latency-Tolerant Cloud-Edge Collaborative Vision-Language-Action Models via Emergent Representational Specialization" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对十亿参数级Vision-Language-Action（VLA）模型部署到移动机器人时，云端语义推理与边缘闭环控制的网络延迟矛盾问题，提出…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Latency-Tolerant Cloud-Edge Collaborative Vision-Language-Action Models via Emergent Representational Specialization</h1>
+            <div class="detail-meta">2026-08-01 · <a href="http://arxiv.org/abs/2608.00569" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.00569" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.00569</span></div>
+            <p class="detail-summary">针对十亿参数级Vision-Language-Action（VLA）模型部署到移动机器人时，云端语义推理与边缘闭环控制的网络延迟矛盾问题，提出CloudEdgeVLA云边协同框架 将时间错位问题转化为表征学习问题，通过云端生成缓慢变化的任务规划特征、边缘结合实时视觉特征生成动作，实现无阻塞的异步控制 研究目标是让云端大模型可独立扩展的同时，边缘侧保持轻量、高响应，且在大范围网络延迟下仍保持高任务成功率</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">提供的论文原文内容中未明确列出作者所属的具体研究机构（仅显示作者姓名及对应上标编号，无机构说明文本）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.00569/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对十亿参数级Vision-Language-Action（VLA）模型部署到移动机器人时，云端语义推理与边缘闭环控制的网络延迟矛盾问题，提出…</p>
+  <ul class="reading-intro-points"><li>针对十亿参数级Vision-Language-Action（VLA）模型部署到移动机器人时，云端语义推理与边缘闭环控制的网络延迟矛盾问题，提出…</li><li>将时间错位问题转化为表征学习问题，通过云端生成缓慢变化的任务规划特征、边缘结合实时视觉特征生成动作，实现无阻塞的异步控制</li><li>研究目标是让云端大模型可独立扩展的同时，边缘侧保持轻量、高响应，且在大范围网络延迟下仍保持高任务成功率</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>提供的论文原文内容中未明确列出作者所属的具体研究机构（仅显示作者姓名及对应上标编号，无机构说明文本）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对十亿参数级Vision-Language-Action（VLA）模型部署到移动机器人时，云端语义推理与边缘闭环控制的网络延迟矛盾问题，提出<strong>CloudEdgeVLA</strong>云边协同框架</li><li>将时间错位问题转化为表征学习问题，通过云端生成缓慢变化的任务规划特征、边缘结合实时视觉特征生成动作，实现无阻塞的异步控制</li><li>研究目标是让云端大模型可独立扩展的同时，边缘侧保持轻量、高响应，且在大范围网络延迟下仍保持高任务成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出非阻塞的云边VLA控制接口：轻量级的视觉增强动作头融合最新云端特征与当前边缘视觉，无需时钟或频率对齐即可输出动作</li><li>提出配对帧双路径训练方法：对新鲜和随机延迟的云端特征均使用当前动作标签监督，无需显式不变性损失即可鼓励云端表征学习对时间位移不敏感的任务级信息</li><li>在<strong>LIBERO</strong>基准上完成系统评估，分解延迟敏感性机制，并通过真实机器人实验验证方案的物理可行性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>系统架构分为三个时间不对称组件：①云端侧的7B参数VLA骨干网络（System 2，延迟不敏感），经LoRA适配的预训练视觉语言模型，处理观测与语言指令生成高层规划表征，编码“要做什么”的任务级信息；②边缘侧冻结的轻量级<strong>SigLIP-Base</strong>视觉编码器（System 1感知，延迟敏感），提取当前观测的实时无延迟视觉特征；③边缘侧可学习的动作头（System 1控制，延迟敏感），融合云端规划特征与实时视觉特征，通过均值池化、投影、拼接后经残差MLP输出动作，作为实时grounding层</li><li>配对帧双路径训练：从同一演示轨迹窗口中提取当前帧与均匀采样的随机延迟帧，分别通过云端骨干得到新鲜与过时规划特征，两者与同一实时视觉特征融合后，通过加权L1损失联合监督，采用课程学习逐步提升过时路径损失的权重，先让骨干学习强表征再鼓励延迟不变性</li><li>创新点：①将云边协同的时间错位问题从推理调度问题转化为表征学习问题，无需依赖显式延迟提示或时间对齐；②云端表征自动特化为对观测年龄不敏感的任务级特征，边缘视觉负责补偿状态敏感信息，双方协同实现延迟鲁棒性；③边缘侧永远使用最新收到的云端特征，从不阻塞等待云端响应，控制循环完全异步</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用<strong>LIBERO</strong>机器人操作仿真基准，包含4个任务套件（Spatial、Object、Goal、Long），每个套件10个任务，每任务提供50条人类演示轨迹</li><li>模型规模：云端骨干为7B参数的OpenVLA（LoRA微调），边缘视觉编码器为轻量级SigLIP-Base（冻结），边缘动作头为小型残差MLP，整体边缘侧计算量极低</li><li>训练硬件资源未在提供的原文内容中明确说明；真实机器人验证中，边缘侧（视觉编码器、动作头、控制循环）部署于RTX 5080工作站，7B云端骨干部署于RTX 4090工作站</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境为LIBERO四个任务套件，真实机器人验证采用Franka机械臂抓取放置任务</li><li>评估指标：主要指标为任务成功率（%），辅助分析指标包括归一化延迟曲线下面积、同步成功率保留率、骨干表征漂移、动作头staleness转移增益等</li><li>关键实验结果：①在最大40步均匀采样延迟（d_max=40）条件下，CloudEdgeVLA在四个LIBERO套件上保持63.8%-78.0%的任务成功率，而异步基线<strong>VLASH</strong>最高仅6.4%，单路径VLA基线最高仅3.0%；②四套件平均的归一化延迟AUC达90.8%（VLASH为32.4%），d_max=40下保留76.5%的同步成功率（VLASH为1.8%）；③消融实验显示，加入当前边缘视觉特征后成功率从31.6%提升至95.1%，证明实时视觉grounding是延迟鲁棒性的核心；仅用过时路径监督可达89.2%，联合监督进一步提升至95.1%，证明双路径损失的互补性；④真实机器人验证中，添加1000ms模拟网络延迟时，CloudEdgeVLA仍保持80%（静态）/70%（动态）任务成功率，VLASH降至0%/0%，验证了方案的物理可行性</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.01013/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">RL Bootstrapping of OpenVLA-OFT for a Novel Robot Embodiment</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.00391/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">The Gate, Not the Cache: Gate Provenance Bounds the Closed-Loop Reliability of Training-Free VLA Token Skipping</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文系统诊断了视觉-语言-动作（VLA）模型在接触密集型操作任务中失败的原因，并提出了针对性的解决方案。 将VLA模型的失败归结为两种独立的模式：精度失败（源于流匹配训练中的噪声调度缺陷）和力失败（源于力信号结构未被有效利用）。 旨在通过修复训练过程和力信号处理机制，提升VLA模型在需要精细力控和精确位姿的任务上的表现。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.01402">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.01402.webp" alt="Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文系统诊断了视觉-语言-动作（VLA）模型在接触密集型操作任务中失败的原因，并提出了针对性的解决方案。</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them</h1>
+            <div class="detail-meta">2026-08-02 · <a href="http://arxiv.org/abs/2608.01402" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.01402" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.01402</span></div>
+            <p class="detail-summary">论文系统诊断了视觉-语言-动作（VLA）模型在接触密集型操作任务中失败的原因，并提出了针对性的解决方案。 将VLA模型的失败归结为两种独立的模式：精度失败（源于流匹配训练中的噪声调度缺陷）和力失败（源于力信号结构未被有效利用）。 旨在通过修复训练过程和力信号处理机制，提升VLA模型在需要精细力控和精确位姿的任务上的表现。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">斯坦福大学（Stanford University）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.01402/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文系统诊断了视觉-语言-动作（VLA）模型在接触密集型操作任务中失败的原因，并提出了针对性的解决方案。</p>
+  <ul class="reading-intro-points"><li>论文系统诊断了视觉-语言-动作（VLA）模型在接触密集型操作任务中失败的原因，并提出了针对性的解决方案。</li><li>将VLA模型的失败归结为两种独立的模式：精度失败（源于流匹配训练中的噪声调度缺陷）和力失败（源于力信号结构未被有效利用）。</li><li>旨在通过修复训练过程和力信号处理机制，提升VLA模型在需要精细力控和精确位姿的任务上的表现。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>斯坦福大学</strong>（Stanford University）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文系统诊断了<strong>视觉-语言-动作（VLA）模型</strong>在接触密集型操作任务中失败的原因，并提出了针对性的解决方案。</li><li>将VLA模型的失败归结为两种独立的模式：<strong>精度失败</strong>（源于流匹配训练中的噪声调度缺陷）和<strong>力失败</strong>（源于力信号结构未被有效利用）。</li><li>旨在通过修复训练过程和力信号处理机制，提升VLA模型在需要精细力控和精确位姿的任务上的表现。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>对VLA在接触密集型任务中的失败进行了<strong>原理性分解</strong>，识别出<strong>精度失败</strong>和<strong>力失败</strong>两种因果独立的模式，并进行了根因分析。</li><li>提出了<strong>Logit-Normal（LN）噪声调度</strong>，通过将训练梯度信号重新分配到接触校正阶段，解决了精度失败问题，无需额外参数、数据或架构改动。</li><li>设计了一种<strong>时间感知的力注入机制</strong>，通过利用力信号的稀疏性、时序结构和灵敏度调制特性，解决了力失败问题。</li><li>将两种机制结合为<strong>FACT</strong>方法，在涵盖近2500次真实世界评估的5个接触密集型任务中，平均成功率相比最佳基线<strong>提升超过25个百分点</strong>。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>Logit-Normal（LN）噪声调度</strong>：在微调阶段替换常用的Beta调度，使噪声水平（τ）的采样更集中于低噪声区域，从而强化对细小校正动作的训练信号。</li><li><strong>时间感知力注入机制</strong>：包含三个核心设计：</li></ul>
+<p> - <strong>接触状态</strong>：将当前力矩读数通过MLP后，注入到动作生成模块的<strong>AdaRMSNorm归一化层</strong>，调制各层对接触状态的敏感度。</p>
+<p> - <strong>接触历史</strong>：将过去2秒的力矩历史序列通过因果编码器编码为令牌，并<strong>前置</strong>到动作生成模块的输入中，以捕捉时序动态。</p>
+<p> - <strong>接触门控</strong>：在自由空间阶段，通过<strong>梯度门控</strong>阻断力编码组件的梯度传播，防止模型拟合无意义的近零读数。</p></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：为每个任务（共5个）收集<strong>100个</strong>遥操作演示，使用<strong>Haply Inverse 3</strong>触觉设备提供力反馈。</li><li><strong>模型规模</strong>：基于预训练的VLA模型<strong>π₀.₅</strong>和<strong>π₀</strong>进行微调，使用<strong>LoRA</strong>技术。</li><li><strong>训练资源</strong>：在<strong>Franka Research 3</strong>机械臂上部署，配备腕部<strong>Bota SensONE F/T传感器</strong>，所有方法均使用相同演示数据进行<strong>20,000步</strong>微调。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：在<strong>5个</strong>真实世界接触密集型任务上进行，包括插头插入、USB插入、按钮按压、板擦和白板擦除和钥匙插入，总计近<strong>2500次</strong>测试。</li><li><strong>主要评估指标</strong>：<strong>成功率（SR%）</strong>，并使用费舍尔精确检验进行统计显著性分析。</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - <strong>FACT</strong>方法平均成功率<strong>66.0%</strong>，远超基线<strong>ForceVLA</strong>（40.5%）和<strong>TA-VLA</strong>（37.5%）。</p>
+<p> - <strong>LN噪声调度</strong>在精度关键任务上带来最高<strong>+20个百分点</strong>的提升，在力量关键任务上带来最高<strong>+45个百分点</strong>的提升。</p>
+<p> - <strong>力注入机制</strong>在力量关键任务上相比仅用LN的模型，额外带来最高<strong>+22.5个百分点</strong>的提升。</p>
+<p> - 消融实验表明，<strong>力历史信息</strong>对力量关键任务最重要，三个力组件（状态、历史、门控）均为必要。</p>
+<p> - LN和力注入机制能<strong>成功迁移到不同的VLA骨干网络</strong>（如π₀）上并保持性能提升。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.01573/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Uncovering and Mitigating Positional Blind Spots in Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.01381/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">DreamTrajectory: Trajectory-Guided Action Generation with World Model Alignment for Mobile Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

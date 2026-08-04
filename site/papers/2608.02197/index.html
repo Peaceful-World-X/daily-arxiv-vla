@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Look Where It Matters: Adaptive Visual Refinement for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出 AtVLA 框架，旨在解决视觉-语言-动作（VLA）模型中视觉编码器因具身后训练产生的注意力伪影问题，这些伪影会破坏空间定位的可靠性 通过引入寄存器令牌（register tokens）吸收全局信息，并结合不确定性门控的局部视觉细化，恢复干净的空间注意力并提升高分辨率感知能力，从而实现更精确的机器人操作 核心目标是增强 VLA 模型在空间推理、目标定位和精细接触方面的视觉感知可靠性" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.02197">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.02197.webp" alt="Look Where It Matters: Adaptive Visual Refinement for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出 AtVLA 框架，旨在解决视觉-语言-动作（VLA）模型中视觉编码器因具身后训练产生的注意力伪影问题，这些伪影会破坏空间定位的可靠性</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Look Where It Matters: Adaptive Visual Refinement for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-08-03 · <a href="http://arxiv.org/abs/2608.02197" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.02197" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.02197</span></div>
+            <p class="detail-summary">论文提出 AtVLA 框架，旨在解决视觉-语言-动作（VLA）模型中视觉编码器因具身后训练产生的注意力伪影问题，这些伪影会破坏空间定位的可靠性 通过引入寄存器令牌（register tokens）吸收全局信息，并结合不确定性门控的局部视觉细化，恢复干净的空间注意力并提升高分辨率感知能力，从而实现更精确的机器人操作 核心目标是增强 VLA 模型在空间推理、目标定位和精细接触方面的视觉感知可靠性</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">未在提供的 HTML 中明确列出具体机构名称，作者信息仅显示上标 1 和 2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.02197/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出 AtVLA 框架，旨在解决视觉-语言-动作（VLA）模型中视觉编码器因具身后训练产生的注意力伪影问题，这些伪影会破坏空间定位的可靠性</p>
+  <ul class="reading-intro-points"><li>论文提出 AtVLA 框架，旨在解决视觉-语言-动作（VLA）模型中视觉编码器因具身后训练产生的注意力伪影问题，这些伪影会破坏空间定位的可靠性</li><li>通过引入寄存器令牌（register tokens）吸收全局信息，并结合不确定性门控的局部视觉细化，恢复干净的空间注意力并提升高分辨率感知能力…</li><li>核心目标是增强 VLA 模型在空间推理、目标定位和精细接触方面的视觉感知可靠性</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>未在提供的 HTML 中明确列出具体机构名称，作者信息仅显示上标 1 和 2</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出 <strong>AtVLA</strong> 框架，旨在解决视觉-语言-动作（VLA）模型中视觉编码器因具身后训练产生的注意力伪影问题，这些伪影会破坏空间定位的可靠性</li><li>通过引入寄存器令牌（register tokens）吸收全局信息，并结合不确定性门控的局部视觉细化，恢复干净的空间注意力并提升高分辨率感知能力，从而实现更精确的机器人操作</li><li>核心目标是增强 VLA 模型在空间推理、目标定位和精细接触方面的视觉感知可靠性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>发现并揭示了 VLA 视觉编码器中的注意力伪影与具身后训练期间获取的空间特征（如物体位置、深度）之间的关联，并证明寄存器令牌可稳定承载这些空间信息，同时恢复干净的注意力分布</li><li>提出了一种不确定性门控、注意力引导的视觉细化机制，通过选择性地裁剪和重编码任务相关区域，仅在需要时实现高分辨率感知</li><li>在 <strong>LIBERO</strong>、<strong>SimplerEnv</strong> 和真实世界基准上进行了大量实验，证明了显著性能提升（如 LIBERO 平均成功率从 94.2% 提升至 98.4%），且额外计算开销有限（仅约 30% 的重规划步骤触发细化）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>在 <strong>SigLIP</strong> 视觉编码器中插入可学习的寄存器令牌，仅使用具身数据和原始动作目标进行端到端训练，使其成为空间信息的专用载体，同时恢复补丁令牌的干净注意力分布</li><li>基于流匹配的动作专家采样多个动作块，并通过其不一致性估计不确定性；在不确定性超过阈值时，利用动作条件注意力展开（attention rollout）定位任务相关区域</li><li>对定位区域进行裁剪并重编码为高分辨率令牌，附加到缓存的前缀中，用于生成细化动作，而无需重新编码整个图像序列</li><li>采用三阶段课程训练：寄存器适应、真实裁剪对齐、联合优化与推理对齐，逐步整合寄存器、裁剪定位和注意力引导</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>LIBERO</strong>（四个标准套件）、<strong>SimplerEnv</strong>（Google Robot 套件中的 Pick Coke Can、Move Near、Open/Close Drawer 任务）、自定义真实世界基准（厨房和积木场景）</li><li>模型规模：基于 <strong>π0</strong> 初始化，包含 3B 参数的 <strong>PaliGemma</strong> 模型（<strong>SigLIP-So400m</strong> 视觉编码器、<strong>Gemma-2B</strong> 语言骨干）和 300M 参数的动作专家；新增 4 个寄存器令牌（仅 4608 个参数）和轻量级裁剪位置编码器</li><li>训练资源：8 块 NVIDIA RTX 6000 Ada GPU；部署使用单块 NVIDIA RTX 4090 GPU 和 Franka Research 3 机器人</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：模拟环境（LIBERO、SimplerEnv）和真实世界环境（Franka 机器人，单视角 RealSense 摄像头）</li><li>主要评估指标：任务成功率，部分报告标准差</li><li>关键实验结果：</li></ul>
+<p> - 在 LIBERO 四个套件上，<strong>AtVLA</strong> 均取得最高成功率，平均成功率达 98.4%，较 <strong>π0</strong> 基线（94.2%）提升 4.2%</p>
+<p> - 在真实世界基准中，<strong>AtVLA</strong> 在所有任务上表现最佳，平均成功率从 46.5% 提升至 69.0%</p>
+<p> - 消融实验表明，寄存器令牌不仅抑制伪影，还保留了任务相关的空间信息，移除后性能显著下降</p>
+<p> - 局部细化仅在约 30% 的重规划步骤触发，计算开销约为 <strong>π0</strong> 的 1.4–1.6 倍</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.02257/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Learning Panorama-Aware VLA for Mobile Manipulation with Whole-Body Teleoperation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.01851/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Weights or Skills? A Survey of Robot-Learning Techniques: from Action-Predicting Weights to Robots that Write their Own Skills</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ProtoAct: Turning Wet-Lab Protocols into Embodied Robotic Actions - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 ProtoAct 框架，将自由形式的生物湿实验协议转化为结构化的、状态感知的、可被机器人执行的动作序列，解决协议中隐含操作、状态依赖和参数上下文难以被机器直接理解的问题。 构建 BioP2E 数据集，手动标注 22 个细胞培养协议，包含监控条件、可执行子任务和接地动作调用，用于评估协议解析和机器人任务生成。 建立多级基准，验证 ProtoAct 在协议解析、动作序列生成以及仿真和真实机器人执行中的有效性。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.01690">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.01690.webp" alt="ProtoAct: Turning Wet-Lab Protocols into Embodied Robotic Actions" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 ProtoAct 框架，将自由形式的生物湿实验协议转化为结构化的、状态感知的、可被机器人执行的动作序列，解决协议中隐含操作、状态依赖和参…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ProtoAct: Turning Wet-Lab Protocols into Embodied Robotic Actions</h1>
+            <div class="detail-meta">2026-08-03 · <a href="http://arxiv.org/abs/2608.01690" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.01690" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.01690</span></div>
+            <p class="detail-summary">提出 ProtoAct 框架，将自由形式的生物湿实验协议转化为结构化的、状态感知的、可被机器人执行的动作序列，解决协议中隐含操作、状态依赖和参数上下文难以被机器直接理解的问题。 构建 BioP2E 数据集，手动标注 22 个细胞培养协议，包含监控条件、可执行子任务和接地动作调用，用于评估协议解析和机器人任务生成。 建立多级基准，验证 ProtoAct 在协议解析、动作序列生成以及仿真和真实机器人执行中的有效性。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者所属机构信息未在给定 HTML 中明确列出，但论文作者包括 Zhe Liu、Jiaming Gu、…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.01690/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 ProtoAct 框架，将自由形式的生物湿实验协议转化为结构化的、状态感知的、可被机器人执行的动作序列，解决协议中隐含操作、状态依赖和参…</p>
+  <ul class="reading-intro-points"><li>提出 ProtoAct 框架，将自由形式的生物湿实验协议转化为结构化的、状态感知的、可被机器人执行的动作序列，解决协议中隐含操作、状态依赖和参…</li><li>构建 BioP2E 数据集，手动标注 22 个细胞培养协议，包含监控条件、可执行子任务和接地动作调用，用于评估协议解析和机器人任务生成。</li><li>建立多级基准，验证 ProtoAct 在协议解析、动作序列生成以及仿真和真实机器人执行中的有效性。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者所属机构信息未在给定 HTML 中明确列出，但论文作者包括 <strong>Zhe Liu</strong>、<strong>Jiaming Gu</strong>、<strong>Zhaohui Du</strong>、<strong>Zhe Wang</strong> 等，请参考原始 PDF 获取完整机构信息。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>ProtoAct</strong> 框架，将自由形式的生物湿实验协议转化为结构化的、状态感知的、可被机器人执行的动作序列，解决协议中隐含操作、状态依赖和参数上下文难以被机器直接理解的问题。</li><li>构建 <strong>BioP2E</strong> 数据集，手动标注 22 个细胞培养协议，包含监控条件、可执行子任务和接地动作调用，用于评估协议解析和机器人任务生成。</li><li>建立多级基准，验证 ProtoAct 在协议解析、动作序列生成以及仿真和真实机器人执行中的有效性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次提出面向湿实验具身执行的协议接地（protocol-grounding）形式化，将自由文本实验指令与状态感知任务表示和参数化机器人动作相连接。</li><li>构建 <strong>BioP2E</strong> 数据集，将 22 个细胞培养协议手工标注为 258 个监控条件、910 个可执行子任务和 962 个接地动作调用，为评估和机器人任务构建提供资源。</li><li>建立多级生物协议接地基准，并通过 VLA 模型训练和仿真/真实机器人执行验证了接地表示的有效性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>使用 <strong>ProtoRAG</strong> 检索增强生成，从手工标注的示例知识库中检索相似协议片段，辅助大语言模型进行上下文敏感的协议解析，生成监控条件和子任务序列。</li><li>采用 <strong>RefineChecker</strong> 后验检查与修正，通过用户提供的实验特定信息对初始解析结果进行验证和修订，解决缺失动作、参数、顺序错误和解析粒度不当四类缺陷。</li><li>通过 <strong>ActSchema</strong> 将修正后的自然语言中间表示映射为受约束的 JSON 动作函数序列，定义监控条件类型、动作原语名称和参数模式，确保输出格式统一且可自动评估。</li><li>整体流程先产生可人读的监控条件与子任务，再转换为机器可执行的动作序列，形成从语义解析到动作映射的中间表示，支持人工检查与下游任务学习。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：<strong>BioP2E</strong>，包含 22 个细胞培养协议，其中 2 个用于 ProtoRAG 知识库，20 个用于评估；标注包括 4 类监控条件、30 种动作原语，共计 258 个监控条件、910 个子任务、962 个动作函数。</li><li>模型：评估了 <strong>Qwen3-max</strong>、<strong>Qwen-max</strong>、<strong>GPT-5.3</strong>、<strong>DeepSeek-v3.2</strong>、<strong>DeepSeek-r1</strong>、<strong>Kimi-k2</strong>、<strong>GLM-4.5</strong> 等 7 个大语言模型，未明确给出参数规模。</li><li>训练资源：在仿真和真实机器人验证中，使用 <strong>SmolVLA</strong> 和 <strong>π₀</strong> 模型，基于 <strong>LeRobot</strong> 框架进行训练，未详细说明 GPU 资源。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估基准：BioP2E 的 20 个协议，使用自动指标（F1、BLEU、SciBERTScore、归一化编辑距离）和 <strong>GPT-5.3</strong> 语义评估。</li><li>主要指标：监控条件类型和动作原语 F1，参数字段 F1，参数值 BLEU 和 SciBERTScore，动作序列顺序一致性（归一化编辑距离）。</li><li>关键结果：</li></ul>
+<p> - <strong>GPT-5.3</strong> 在动作原语 F1（0.95）、参数字段 F1（0.96）和序列一致性（0.09）上表现最佳，<strong>Qwen3-max</strong> 在参数值相似度（BLEU 0.87，SciBERT 0.98）上最优。</p>
+<p> - 消融实验表明 <strong>ProtoRAG</strong>、<strong>RefineChecker</strong> 和 <strong>ActSchema</strong> 对监控条件识别、动作生成和序列一致性均有互补贡献。</p>
+<p> - 仿真任务中，<strong>SmolVLA</strong> 成功率达到 59%–98%，<strong>π₀</strong> 达到 34%–96%；真实机器人任务中两者均完成动作序列，验证了 ProtoAct 输出的子任务可支持示教收集、VLA 训练和实体执行。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.01755/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.01573/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Uncovering and Mitigating Positional Blind Spots in Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

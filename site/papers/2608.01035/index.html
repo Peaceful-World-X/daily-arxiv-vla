@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WAM-Diff2: Hierarchical AR-to-Diffusion Distillation for Highly Efficient Autonomous Driving VLA - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有自回归（AR）Vision-Language-Action（VLA）模型用于自动驾驶时存在逐token顺序解码导致的高推理延迟，以及teacher forcing训练引入的暴露偏差问题；而现有扩散类驾驶VLA多为单任务架构，缺乏多任务视觉-语言推理能力 本文提出WAM-Diff2，一种多任务离散扩散VLA框架，通过三阶段分层蒸馏策略将预训练的多任务AR驾驶通用模型转换为并行扩散模型，同时保留多任务智能并大幅提升…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.01035">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.01035.webp" alt="WAM-Diff2: Hierarchical AR-to-Diffusion Distillation for Highly Efficient Autonomous Driving VLA" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有自回归（AR）Vision-Language-Action（VLA）模型用于自动驾驶时存在逐token顺序解码导致的高推理延迟，以及tea…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">WAM-Diff2: Hierarchical AR-to-Diffusion Distillation for Highly Efficient Autonomous Driving VLA</h1>
+            <div class="detail-meta">2026-08-02 · <a href="http://arxiv.org/abs/2608.01035" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.01035" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.01035</span></div>
+            <p class="detail-summary">现有自回归（AR）Vision-Language-Action（VLA）模型用于自动驾驶时存在逐token顺序解码导致的高推理延迟，以及teacher forcing训练引入的暴露偏差问题；而现有扩散类驾驶VLA多为单任务架构，缺乏多任务视觉-语言推理能力 本文提出WAM-Diff2，一种多任务离散扩散VLA框架，通过三阶段分层蒸馏策略将预训练的多任务AR驾驶通用模型转换为并行扩散模型，同时保留多任务智能并大幅提升…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属的具体研究机构信息未在提供的截断HTML内容中呈现（仅标注了作者所属分组上标1和2，未给出…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.01035/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有自回归（AR）Vision-Language-Action（VLA）模型用于自动驾驶时存在逐token顺序解码导致的高推理延迟，以及tea…</p>
+  <ul class="reading-intro-points"><li>现有自回归（AR）Vision-Language-Action（VLA）模型用于自动驾驶时存在逐token顺序解码导致的高推理延迟，以及tea…</li><li>本文提出WAM-Diff2，一种多任务离散扩散VLA框架，通过三阶段分层蒸馏策略将预训练的多任务AR驾驶通用模型转换为并行扩散模型，同时保留多…</li><li>该方法旨在解决AR与扩散范式的核心架构鸿沟：注意力模式不匹配（因果vs双向）、优化目标 divergent（下一token预测vs迭代去噪）…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属的具体研究机构信息未在提供的截断HTML内容中呈现（仅标注了作者所属分组上标1和2，未给出对应机构名称）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有自回归（AR）Vision-Language-Action（VLA）模型用于自动驾驶时存在逐token顺序解码导致的高推理延迟，以及teacher forcing训练引入的暴露偏差问题；而现有扩散类驾驶VLA多为单任务架构，缺乏多任务视觉-语言推理能力</li><li>本文提出<strong>WAM-Diff2</strong>，一种多任务离散扩散VLA框架，通过三阶段分层蒸馏策略将预训练的多任务AR驾驶通用模型转换为并行扩散模型，同时保留多任务智能并大幅提升推理效率</li><li>该方法旨在解决AR与扩散范式的核心架构鸿沟：注意力模式不匹配（因果vs双向）、优化目标 divergent（下一token预测vs迭代去噪），实现多任务认知能力与并行执行效率的统一</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次提出通用的自动驾驶VLA架构转换范式，区别于从零训练的单任务扩散驾驶模型，可复用预训练AR模型的多任务语义知识</li><li>设计三阶段分层蒸馏框架解决范式转换的核心挑战：Stage I渐进式块大小扩展适配注意力机制从因果到块因果的转变，Stage II块级蒸馏对齐扩散预测分布消除暴露偏差，Stage III跨尺度模型蒸馏实现大模型知识向高效小模型的迁移</li><li>提出块因果注意力机制，实现块内token双向并行注意力、块间保留因果约束，在保证语义一致性的同时支持并行解码</li><li>结合FlashInfer和CUDA Graphs系统级优化，实现最高15.1倍的推理加速，同时在多任务驾驶基准上保持与AR基线相当甚至更优的性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>三阶段AR-to-Diffusion蒸馏流程：Stage I将AR模型作为块大小B=1的初始模型，通过课程学习逐步扩展B（4→8→16→32）渐进式适配注意力机制，采用渐进自举初始化（小块模型参数初始化更大块模型）保障训练稳定性；Stage II采用渐进块级蒸馏，用前一个块大小的稳定扩散模型作为教师，通过Jensen-Shannon Divergence（JSD）损失对齐学生与教师的token预测分布，避免标准KL散度导致的模式覆盖问题，同时让学生学习并行去噪机制；Stage III采用模型级跨尺度蒸馏，利用扩散模型间Top-K预测重叠率远高于AR-扩散模型对的特点，用8B块大小32的扩散模型作为教师，通过JSD损失将复杂感知、理解与规划能力迁移到2B学生模型</li><li>关键创新包括：块因果注意力模式的设计、渐进式块适配的课程训练策略、基于JSD损失的范式一致蒸馏目标、利用扩散模型预测对齐性实现的高效跨尺度知识迁移</li><li>系统级推理优化：针对块因果注意力模式定制<strong>FlashInfer</strong>内核加速块内双向token计算，利用并行重掩码过程的固定计算图封装<strong>CUDA Graphs</strong>消除CPU启动开销</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>训练数据集：<strong>DriveLM</strong> 多任务驾驶数据集（截断内容未展示完整构建细节）</li><li>评估数据集：<strong>NAVSIM v1/v2</strong>（运动规划）、<strong>Bench2Drive</strong>（闭环驾驶）、<strong>DriveBench</strong>（驾驶视觉问答）、<strong>LingoQA</strong>（驾驶场景问答）、<strong>COCO</strong>（通用视觉感知）</li><li>模型规模：基于<strong>Qwen3-VL</strong>框架构建两个版本，8B版本采用SigLIP2-SO-400M视觉编码器（27层，4096隐藏维度）+36层Transformer解码器；2B版本采用SigLIP2-Large视觉编码器（24层，2048隐藏维度）+28层Transformer解码器，支持多视角图像、语言指令、轨迹token的统一输入</li><li>训练资源：硬件基础设施、算力配置等信息未在提供的截断HTML内容中展示</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：与主流AR-VLA、扩散驾驶模型在统一多任务基准上对比，解码吞吐量（Tokens Per Second, TPS）在相同硬件配置下测试</li><li>主要评估指标：驾驶理解任务（DriveBench分数、LingoQA分数）、视觉感知任务（COCO mAP）、运动规划任务（NAVSIM的NC、DAC、TTC、舒适度、EP、PDMS、EPDMS等指标）、解码效率（TPS）</li><li>关键实验结果：1. 2B模型在块大小B=32时相比AR基线实现2.8倍解码加速，结合FlashInfer和CUDA Graphs后最高达到15.1倍加速；2. 多任务性能与AR基线持平，例如NAVSIM v2的EPDMS指标达88.6，结合score-based候选选择后提升至90.7，超过TransFuser、Hydra-MDP++、DiffusionDriveV2等现有SOTA方法；3. 块大小缩放实验中，B=16时在保持性能的同时实现108.4 TPS的标准解码吞吐，优化后达635.3 TPS；4. 消融实验验证了三阶段蒸馏、JSD损失、块因果注意力等设计的有效性，证明范式一致蒸馏可有效缓解暴露偏差</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.01066/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">OC-VLA++: Monocular Geometry-Guided Cross-View Consistency for Viewpoint-Robust Robotic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.01028/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">VLAGuard: A Framework for Evaluating and Mitigating Physical Attention Hijacking in Vision-Language-Action Robots within Wireless Sensor Networks</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

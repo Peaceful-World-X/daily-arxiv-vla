@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Uncovering and Mitigating Positional Blind Spots in Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="首次揭示并形式化视觉语言动作模型（VLA）中的位置盲区（Positional Blind Spots, PBS）现象：即使任务无关的干扰物仅改变放置位置，也会在特定空间区域引发系统性失败，而现有评估仅关注平均成功率，忽略了这一空间脆弱性。 提出一种两阶段黑盒框架，先通过空间网格化与对数似然比检验高效发现PBS区域，再基于发现区域收集演示数据并用LoRA微调策略，以提升空间鲁棒性。 在五个主流VLA模型和两个基准上验…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.01573">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.01573.webp" alt="Uncovering and Mitigating Positional Blind Spots in Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">首次揭示并形式化视觉语言动作模型（VLA）中的位置盲区（Positional Blind Spots, PBS）现象：即使任务无关的干扰物仅改…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Uncovering and Mitigating Positional Blind Spots in Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-08-03 · <a href="http://arxiv.org/abs/2608.01573" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.01573" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.01573</span></div>
+            <p class="detail-summary">首次揭示并形式化视觉语言动作模型（VLA）中的位置盲区（Positional Blind Spots, PBS）现象：即使任务无关的干扰物仅改变放置位置，也会在特定空间区域引发系统性失败，而现有评估仅关注平均成功率，忽略了这一空间脆弱性。 提出一种两阶段黑盒框架，先通过空间网格化与对数似然比检验高效发现PBS区域，再基于发现区域收集演示数据并用LoRA微调策略，以提升空间鲁棒性。 在五个主流VLA模型和两个基准上验…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Shanghai Normal University（上海师范大学）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.01573/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">首次揭示并形式化视觉语言动作模型（VLA）中的位置盲区（Positional Blind Spots, PBS）现象：即使任务无关的干扰物仅改…</p>
+  <ul class="reading-intro-points"><li>首次揭示并形式化视觉语言动作模型（VLA）中的位置盲区（Positional Blind Spots, PBS）现象：即使任务无关的干扰物仅改…</li><li>提出一种两阶段黑盒框架，先通过空间网格化与对数似然比检验高效发现PBS区域，再基于发现区域收集演示数据并用LoRA微调策略，以提升空间鲁棒性。</li><li>在五个主流VLA模型和两个基准上验证了PBS的普遍性（失败率最高达0.58），并证明所提搜索方法显著优于基线，针对性缓解可将总体失败率降低40…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Shanghai Normal University</strong>（上海师范大学）</li><li><strong>East China Normal University</strong>（华东师范大学）</li><li><strong>Northwest A&F University</strong>（西北农林科技大学）</li><li><strong>Xidian University</strong>（西安电子科技大学）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>首次揭示并形式化<strong>视觉语言动作模型（VLA）</strong>中的<strong>位置盲区（Positional Blind Spots, PBS）</strong>现象：即使任务无关的干扰物仅改变放置位置，也会在特定空间区域引发系统性失败，而现有评估仅关注平均成功率，忽略了这一空间脆弱性。</li><li>提出一种<strong>两阶段黑盒框架</strong>，先通过<strong>空间网格化与对数似然比检验</strong>高效发现PBS区域，再基于发现区域<strong>收集演示数据并用LoRA微调</strong>策略，以提升空间鲁棒性。</li><li>在五个主流VLA模型和两个基准上验证了PBS的普遍性（失败率最高达0.58），并证明所提搜索方法显著优于基线，针对性缓解可将总体失败率降低40%–85%。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次定义并系统研究<strong>位置盲区（PBS）</strong>，揭示VLA策略在任务无关物体位置变化时的空间脆弱性。</li><li>提出<strong>PBS发现与缓解的两阶段框架</strong>：通过<strong>均匀网格采样+对数似然比（LLR）风险排序</strong>实现黑盒下的高效空间搜索；通过<strong>PBS引导的LoRA微调</strong>实现针对性策略增强，不修改模型架构与接口。</li><li>在<strong>LIBERO</strong>和<strong>VLA-Arena</strong>两个基准上，对<strong>π₀、π₀.₅、OpenVLA-OFT、UniVLA、VLA-Adapter</strong> 五种VLA策略进行详尽空间评估，证明了PBS的普遍性和架构依赖性。</li><li>相比随机采样和自适应采样基线，所提搜索策略在有限预算下将<strong>F1分数平均提升0.268和0.178</strong>，并实现<strong>仅用穷举评估十分之一的rollout数</strong>即可准确定位PBS。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>PBS发现阶段</strong>：将可行放置区域划分为<strong>N×N均匀网格</strong>，每个单元格内进行<strong>K次均匀采样rollout</strong>，得到二元成败结果；对每个单元格计算<strong>对数似然比（LLR）</strong>，与其余工作空间的失败概率对比，识别出失败风险显著偏高的单元格，并按LLR排序，选取前<strong>M个单元格</strong>作为预测的PBS区域。</li><li><strong>PBS缓解阶段</strong>：在发现的PBS区域内采样位置，通过<strong>人工遥操作收集成功演示轨迹</strong>，形成<strong>PBS引导的演示数据集</strong>；然后<strong>冻结原始策略参数，仅训练LoRA适配器</strong>，使用策略原生的训练目标进行微调，从而增强在脆弱区域的任务成功率，同时尽量保持其他区域性能。</li><li>创新点：将连续空间搜索转化为<strong>统计假设检验问题</strong>，利用<strong>均匀预算分配和LLR排序</strong>平衡探索与开发，避免对模型内部信息的依赖；通过<strong>空间定位的演示数据收集</strong>，实现<strong>低成本、高针对性的策略鲁棒性提升</strong>。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的基准数据集：<strong>LIBERO</strong>（机器人操作基准）和<strong>VLA-Arena</strong>（VLA评估框架）。</li><li>评估的模型：<strong>π₀</strong>、<strong>π₀.₅</strong>、<strong>OpenVLA-OFT</strong>、<strong>UniVLA</strong>、<strong>VLA-Adapter</strong>，均使用其公开的LIBERO或VLA-Arena适配检查点，未报告具体参数量。</li><li>训练资源：论文未明确提及所用的GPU/TPU等硬件配置。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：在LIBERO和VLA-Arena上，设置<strong>14×14的细粒度评估网格</strong>（共计196个单元格），每个单元格执行多次rollout以获得地面真实PBS区域。</li><li>主要评估指标：<strong>位置脆弱性</strong>用LLR、<strong>全局Moran’s I</strong>（空间自相关）和<strong>失败率（FR）</strong>衡量；<strong>PBS发现性能</strong>用精度、召回率、F1和IoU衡量。</li><li>关键实验结果：</li></ul>
+<p> - 所有模型均存在PBS，失败率范围<strong>0.15–0.58</strong>，且具有明显空间聚集性（Moran’s I > 0.2）。</p>
+<p> - 所提搜索策略平均F1达到<strong>0.678</strong>，超过随机采样（0.410）和自适应采样（0.500）。</p>
+<p> - PBS缓解后，LLR下降<strong>92.61%–99.93%</strong>，失败率下降<strong>40.00%–85.19%</strong>，Moran’s I普遍下降，表明空间脆弱性被有效消除或减弱。</p>
+<p> - 消融实验显示，搜索网格粒度<strong>N=7</strong>时取得最佳F1分数，且缓解轮次增加可进一步提升性能。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.01690/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ProtoAct: Turning Wet-Lab Protocols into Embodied Robotic Actions</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.01402/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
