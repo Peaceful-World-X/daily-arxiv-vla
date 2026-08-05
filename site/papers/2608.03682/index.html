@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="核心目标是解决物理AI（Physical AI）策略在模型评估、云强化学习（RL） rollout、边缘GPU服务、板载部署等全生命周期中，虽使用相同模型checkpoint和动作语义，但往往依赖独立推理程序，导致各场景路径需独立优化验证、行为无法跨场景复用的问题。 论文提出PhyAI统一物理AI推理引擎，通过分离模型适配器与共享运行时，实现一套代码库同时适配视觉-语言-动作（VLA）模型和世界-动作模型（WAM）…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.03682">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.03682.webp" alt="PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud" loading="lazy" />
+  <figcaption class="paper-figure-caption">核心目标是解决物理AI（Physical AI）策略在模型评估、云强化学习（RL） rollout、边缘GPU服务、板载部署等全生命周期中，虽…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud</h1>
+            <div class="detail-meta">2026-08-04 · <a href="http://arxiv.org/abs/2608.03682" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.03682" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.03682</span></div>
+            <p class="detail-summary">核心目标是解决物理AI（Physical AI）策略在模型评估、云强化学习（RL） rollout、边缘GPU服务、板载部署等全生命周期中，虽使用相同模型checkpoint和动作语义，但往往依赖独立推理程序，导致各场景路径需独立优化验证、行为无法跨场景复用的问题。 论文提出PhyAI统一物理AI推理引擎，通过分离模型适配器与共享运行时，实现一套代码库同时适配视觉-语言-动作（VLA）模型和世界-动作模型（WAM）…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属研究机构包括：北京邮电大学、南京大学、北京大学、清华大学、明钛科技（MingTi Tech…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.03682/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">核心目标是解决物理AI（Physical AI）策略在模型评估、云强化学习（RL） rollout、边缘GPU服务、板载部署等全生命周期中，虽…</p>
+  <ul class="reading-intro-points"><li>核心目标是解决物理AI（Physical AI）策略在模型评估、云强化学习（RL） rollout、边缘GPU服务、板载部署等全生命周期中，虽…</li><li>论文提出PhyAI统一物理AI推理引擎，通过分离模型适配器与共享运行时，实现一套代码库同时适配视觉-语言-动作（VLA）模型和世界-动作模型（…</li><li>统一推理运行时：提供VLA和WAM在板载、边缘、云执行的统一模型路径，模型适配器保留架构特定的条件、求解器、缓存、输出逻辑，共享服务提供图执行…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属研究机构包括：<strong>北京邮电大学</strong>、<strong>南京大学</strong>、<strong>北京大学</strong>、<strong>清华大学</strong>、<strong>明钛科技（MingTi Technology）</strong>、<strong>面壁智能（ModelBest）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>核心目标是解决物理AI（Physical AI）策略在模型评估、云强化学习（RL） rollout、边缘GPU服务、板载部署等全生命周期中，虽使用相同模型checkpoint和动作语义，但往往依赖独立推理程序，导致各场景路径需独立优化验证、行为无法跨场景复用的问题。</li><li>论文提出<strong>PhyAI</strong>统一物理AI推理引擎，通过分离模型适配器与共享运行时，实现一套代码库同时适配视觉-语言-动作（VLA）模型和世界-动作模型（WAM），覆盖板载、边缘、云多种部署场景，同时保留各架构的特定条件、求解器、缓存与输出逻辑。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>统一推理运行时</strong>：提供VLA和WAM在板载、边缘、云执行的统一模型路径，模型适配器保留架构特定的条件、求解器、缓存、输出逻辑，共享服务提供图执行、优化内核、内存管理、量化、通信与并行执行能力，支持从Jetson Thor到多GPU H20/A100服务器的多种设备，且可在模型发布当天快速添加新模型适配（如MiniCPM-Robot）。</li><li><strong>控制时间Roofline分析框架</strong>：提出区分推理受限与环境受限控制的量化模型，关联推理延迟与环境执行时间，为不同部署场景的延迟优化与资源规划提供理论指导。</li><li><strong>全场景系统评估</strong>：在多种主流VLA和WAM模型上系统评估单请求延迟、阶段行为、静态批次扩展、多GPU执行及模拟云RL rollout工作负载，验证统一运行时的性能优势与不同模型的执行特征。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用分层架构明确模型与运行时的边界：模型适配器负责保留架构特定的预处理、求解器状态、可复用张量、调度与动作转换逻辑；运行时负责请求调度、内存管理、并行执行、算子选择与图执行，保证模型路径在批次大小、设备 placement、硬件后端变化时无需修改。</li><li>关键优化技术包括：</li></ul>
+<p> - <strong>内核融合</strong>：针对小批次场景优化内核 launch 开销与中间张量传输，实现定制AdaRMSNorm、残差加RMSNorm融合内核，π₀.₅的QKV投影与MLP门控投影融合，MiniCPM-Robot的定制Triton内核，在H20 BF16配置下吞吐量提升10.5%。</p>
+<p> - <strong>图重放（Graph replay）</strong>：利用迭代策略的重复控制流与固定状态，缓存视觉-语言前缀的KV张量、注意力元数据等可复用状态，待控制流稳定后捕获完整循环到CUDA Graph桶，新观测会失效前缀状态，减少重复计算开销。</p>
+<p> - <strong>配置感知算子选择</strong>：根据张量形状、数据类型、加速器模型、执行配置自动选择最快内核，如π₀.₅动作专家50 token查询前缀、头维度256的场景下，优先选择比默认FA3更快的FlashInfer FA2预填充内核，不同加速器可独立配置选择规则。</p>
+<p> - <strong>离线量化</strong>：通过phyai-model-optimizer实现离线round-to-nearest（RTN）量化，支持W4A16、W8A16、W8A8、W4A8精度，执行时调用FlashInfer与Humming的高性能量化算子。</p>
+<ul><li>并行执行支持数据并行（DP）、张量并行（TP）与分类器自由引导（CFG）并行：调度器根据模型和部署配置形成设备组，π₀.₅采用DP实现单GPU路径复用，Cosmos3采用TP+CFG的2×N_TP网格实现多GPU分支并行，CFG分支独立计算后通过all-gather合并结果。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>LIBERO</strong>（用于π₀.₅、MiniCPM-Robot等VLA模型的策略评估）、<strong>DROID</strong>（用于Cosmos3-Nano-Policy-DROID的评估）。</li><li>支持的模型与规模：涵盖<strong>π₀</strong>、<strong>π₀.₅</strong>、<strong>GR00T N1.7</strong>、<strong>Cosmos3-Nano-Policy</strong>、<strong>Cosmos3-Edge</strong>、<strong>MiniCPM-Robot</strong>、<strong>MiniCPM-Track</strong>等多款主流VLA与WAM模型。</li><li>训练/推理硬件资源：测试设备覆盖<strong>Jetson Thor</strong>、<strong>RTX 5090</strong>、<strong>A40</strong>、<strong>H100</strong>、多GPU <strong>H20</strong>与<strong>A100</strong>服务器、<strong>Jetson Orin NX</strong>（用于MiniCPM-Track测试）；云RL rollout模拟采用8块A100 GPU，批次大小为40，每RL步包含41次策略推理调用。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：单请求延迟对比覆盖11组模型-设备对，阶段与批次分析采用Hopper系列GPU、RTX 5090，RL rollout模拟基于8 A100 GPU集群，以各模型的官方实现作为统一对比基准。</li><li>主要评估指标：单请求延迟加速比（相对于官方实现）、吞吐量（samples/s）、批次同步时间、控制时间Roofline的归一化推理速率X（推理速率/环境执行速率）、控制速率Y（控制速率/环境执行极限）、RL rollout中推理耗时占比、训练吞吐量提升率。</li><li>关键实验结果：</li></ul>
+<p> - 所有11组模型-设备对比中PhyAI均优于官方实现，加速比为<strong>1.40×至4.65×</strong>；Cosmos3-Nano-Policy-DROID在8块H20（CFG=2、TP=4）配置下延迟从2.46s降至1.18s，实现<strong>2.08×加速</strong>。</p>
+<p> - 阶段分析显示：Hopper GPU批次大小为1时，π₀.₅的动作专家仅占8.8%的估计FLOPs，但贡献57.2%的延迟；批次大小为32时延迟占比降至13.5%，吞吐量达约100 samples/s，批次同步时间约320ms；GR00T在RTX 5090上批次大小为8即可达到批次大小32吞吐量的92.2%，瓶颈从批次1的Action Head转变为批次4及以后的Backbone；Cosmos3为生成主导，批次从1增至16时吞吐量仅提升14.3%。</p>
+<p> - 控制时间分析表明：π₀.₅在四个LIBERO套件上的测量点均为<strong>环境受限</strong>，而Cosmos3的生成路径仍为<strong>推理受限</strong>。</p>
+<p> - RL rollout模拟中，推理占总步时间的比例从53.1%降至36.2%（相对下降31.8%），rollout步延迟降低26.5%，训练吞吐量提升约<strong>1.36×</strong>。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.03727/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Track4Action: Distilling World-Centric 3D Tracker into Vision-Language-Action Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.03563/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Unified Visuomotor Targets: Supervising VLAs Beyond Physical Actions</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

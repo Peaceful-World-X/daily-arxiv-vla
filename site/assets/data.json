@@ -1,5 +1,225 @@
 [
   {
+    "date": "2026-08-04",
+    "title": "Track4Action: Distilling World-Centric 3D Tracker into Vision-Language-Action Policies",
+    "link": "http://arxiv.org/abs/2608.03727",
+    "arxiv_id": "2608.03727",
+    "detail_path": "papers/2608.03727/",
+    "cover_path": "covers/2608.03727/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.03727.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）策略的动作标签仅提供机器人执行指令，未编码动作对应的3D世界变化（几何、运动、可见性、相机变化等），导致策略难以理解动作对场景的实际影响，是核心待解决问题。 论文提出Track4Action框架，将冻结的以世界为中心的3D追踪器Track4World提取的、与动作块对齐的3D追踪特征蒸馏到当前观测的VLA策略中，训练阶段用追踪器特征提供特权监督，部署阶段无需追踪器，实现无追踪器的VLA…",
+    "research_unit": "提供的论文HTML原文未明确标注作者所属研究机构",
+    "hook_text": "现有视觉-语言-动作（VLA）策略的动作标签仅提供机器人执行指令，未编码动作对应的3D世界变化（几何、运动、可见性、相机变化等），导致策略难以…",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）策略的动作标签仅提供机器人执行指令，未编码动作对应的3D世界变化（几何、运动、可见性、相机变化等），导致策略难以…",
+      "论文提出Track4Action框架，将冻结的以世界为中心的3D追踪器Track4World提取的、与动作块对齐的3D追踪特征蒸馏到当前观测的…",
+      "该方法旨在提升VLA策略在零样本分布偏移、双手机械臂仿真及真实场景下的泛化性与任务成功率。"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-04",
+    "title": "PhyAI: Real-Time Physical AI at the Edge, Scalable Rollouts in the Cloud",
+    "link": "http://arxiv.org/abs/2608.03682",
+    "arxiv_id": "2608.03682",
+    "detail_path": "papers/2608.03682/",
+    "cover_path": "covers/2608.03682/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.03682.webp",
+    "preview_text": "核心目标是解决物理AI（Physical AI）策略在模型评估、云强化学习（RL） rollout、边缘GPU服务、板载部署等全生命周期中，虽使用相同模型checkpoint和动作语义，但往往依赖独立推理程序，导致各场景路径需独立优化验证、行为无法跨场景复用的问题。 论文提出PhyAI统一物理AI推理引擎，通过分离模型适配器与共享运行时，实现一套代码库同时适配视觉-语言-动作（VLA）模型和世界-动作模型（WAM）…",
+    "research_unit": "论文作者所属研究机构包括：北京邮电大学、南京大学、北京大学、清华大学、明钛科技（MingTi Tech…",
+    "hook_text": "核心目标是解决物理AI（Physical AI）策略在模型评估、云强化学习（RL） rollout、边缘GPU服务、板载部署等全生命周期中，虽…",
+    "key_points": [
+      "核心目标是解决物理AI（Physical AI）策略在模型评估、云强化学习（RL） rollout、边缘GPU服务、板载部署等全生命周期中，虽…",
+      "论文提出PhyAI统一物理AI推理引擎，通过分离模型适配器与共享运行时，实现一套代码库同时适配视觉-语言-动作（VLA）模型和世界-动作模型（…",
+      "统一推理运行时：提供VLA和WAM在板载、边缘、云执行的统一模型路径，模型适配器保留架构特定的条件、求解器、缓存、输出逻辑，共享服务提供图执行…"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Unified Visuomotor Targets: Supervising VLAs Beyond Physical Actions",
+    "link": "http://arxiv.org/abs/2608.03563",
+    "arxiv_id": "2608.03563",
+    "detail_path": "papers/2608.03563/",
+    "cover_path": "covers/2608.03563/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.03563.webp",
+    "preview_text": "VLA模型通常直接预测机器人动作，但VLM编码的是高层语义表示而动作是低层信号，存在监督目标与预训练表示不匹配的问题 论文提出UVT（Unified Visuomotor Target），通过将机器人动作与预训练LAM的视觉动态编码融合为统一的潜变量预测目标，无需修改VLA架构即可提升训练效率和任务性能 在LIBERO/LIBERO-Plus仿真基准和三个真实双臂操作任务上验证了UVT在训练效率、最终性能和鲁棒性上…",
+    "research_unit": "加州大学欧文分校（University of California, Irvine）计算机科学系",
+    "hook_text": "VLA模型通常直接预测机器人动作，但VLM编码的是高层语义表示而动作是低层信号，存在监督目标与预训练表示不匹配的问题",
+    "key_points": [
+      "VLA模型通常直接预测机器人动作，但VLM编码的是高层语义表示而动作是低层信号，存在监督目标与预训练表示不匹配的问题",
+      "论文提出UVT（Unified Visuomotor Target），通过将机器人动作与预训练LAM的视觉动态编码融合为统一的潜变量预测目标…",
+      "在LIBERO/LIBERO-Plus仿真基准和三个真实双臂操作任务上验证了UVT在训练效率、最终性能和鲁棒性上的优势"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Continue or Replan? Bernoulli-Continuation Policy Learning for Adaptive Horizon Execution",
+    "link": "http://arxiv.org/abs/2608.03483",
+    "arxiv_id": "2608.03483",
+    "detail_path": "papers/2608.03483/",
+    "cover_path": "covers/2608.03483/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.03483.webp",
+    "preview_text": "针对现有分块视觉-语言-动作（VLA）模型采用固定执行地平线的问题，其重规划为与任务进度无关的周期性调度，可能在关键操作阶段前无重规划边界，导致机器人基于陈旧动作块执行而失败 提出伯努利连续策略（BCP），一种轻量即插即用框架，在保持基础VLA冻结的前提下，将自适应执行地平线选择建模为一系列继续或重规划决策，解决重规划时机与任务关键阶段错位的核心问题 通过强化学习从轨迹级结果训练策略，引入重规划效率奖励平衡任务成功…",
+    "research_unit": "上海交通大学",
+    "hook_text": "针对现有分块视觉-语言-动作（VLA）模型采用固定执行地平线的问题，其重规划为与任务进度无关的周期性调度，可能在关键操作阶段前无重规划边界，导…",
+    "key_points": [
+      "针对现有分块视觉-语言-动作（VLA）模型采用固定执行地平线的问题，其重规划为与任务进度无关的周期性调度，可能在关键操作阶段前无重规划边界，导…",
+      "提出伯努利连续策略（BCP），一种轻量即插即用框架，在保持基础VLA冻结的前提下，将自适应执行地平线选择建模为一系列继续或重规划决策，解决重规…",
+      "通过强化学习从轨迹级结果训练策略，引入重规划效率奖励平衡任务成功与VLA调用效率，实现智能、高效的自适应地平线执行"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-04",
+    "title": "Structure-Aware Robust Fine-Tuning: Defending Vision-Language-Action Robots Against Physical Attention Hijacking",
+    "link": "http://arxiv.org/abs/2608.03231",
+    "arxiv_id": "2608.03231",
+    "detail_path": "papers/2608.03231/",
+    "cover_path": "covers/2608.03231/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.03231.webp",
+    "preview_text": "研究 Vision-Language-Action (VLA) 机器人在物理对抗补丁攻击下的安全鲁棒性问题，揭示了一种名为 policy-critical action-to-vision attention hijacking 的新型失败机制 提出攻击方法 AGSD (Attention-Guided Semantic Disruption)：一种 EOT 优化的可打印对抗补丁，通过劫持动作到视觉的交叉注意力并破…",
+    "research_unit": "Guangdong Laboratory of Artificial Intelligence and…",
+    "hook_text": "研究 Vision-Language-Action (VLA) 机器人在物理对抗补丁攻击下的安全鲁棒性问题，揭示了一种名为 policy-cr…",
+    "key_points": [
+      "研究 Vision-Language-Action (VLA) 机器人在物理对抗补丁攻击下的安全鲁棒性问题，揭示了一种名为 policy-cr…",
+      "提出攻击方法 AGSD (Attention-Guided Semantic Disruption)：一种 EOT 优化的可打印对抗补丁，通过…",
+      "提出防御方法 SARF (Structure-Aware Robust Fine-Tuning)：一种零推理开销的教师-学生鲁棒微调框架，仅微…"
+    ],
+    "reading_minutes": 11,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-04",
+    "title": "DRIFT: Derailing Denoising Trajectories of Flow-Matching VLAs with Adversarial Patch Attack",
+    "link": "http://arxiv.org/abs/2608.03207",
+    "arxiv_id": "2608.03207",
+    "detail_path": "papers/2608.03207/",
+    "cover_path": "covers/2608.03207/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.03207.webp",
+    "preview_text": "针对流匹配视觉-语言-动作（VLA）模型（如π₀、π₀.₅）提出测试时通用对抗补丁攻击方法DRIFT，仅需将小尺寸补丁贴在机器人夹爪的腕部相机视野内，无需修改模型权重或访问训练流程，即可破坏模型的任务执行能力 揭示既往观点中“流匹配VLA抗对抗扰动”的结论是假象，源于既往攻击未针对流匹配VLA特有的多步去噪常微分方程（ODE）过程设计 发现仅攻击去噪过程的第一步即可达到比攻击多步更强的攻击效果，打破“攻击步数越多攻…",
+    "research_unit": "论文作者所属机构为延世大学集成技术学院（School of Integrated Technology…",
+    "hook_text": "针对流匹配视觉-语言-动作（VLA）模型（如π₀、π₀.₅）提出测试时通用对抗补丁攻击方法DRIFT，仅需将小尺寸补丁贴在机器人夹爪的腕部相机…",
+    "key_points": [
+      "针对流匹配视觉-语言-动作（VLA）模型（如π₀、π₀.₅）提出测试时通用对抗补丁攻击方法DRIFT，仅需将小尺寸补丁贴在机器人夹爪的腕部相机…",
+      "揭示既往观点中“流匹配VLA抗对抗扰动”的结论是假象，源于既往攻击未针对流匹配VLA特有的多步去噪常微分方程（ODE）过程设计",
+      "发现仅攻击去噪过程的第一步即可达到比攻击多步更强的攻击效果，打破“攻击步数越多攻击效果越好”的直觉，成因是输入空间优化特有的梯度冲突现象，与训…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-04",
+    "title": "How Should Vision-Language-Action Models Use Proprioceptive State?",
+    "link": "http://arxiv.org/abs/2608.03052",
+    "arxiv_id": "2608.03052",
+    "detail_path": "papers/2608.03052/",
+    "cover_path": "covers/2608.03052/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.03052.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "title": "ValueFormer: A Causal Transformer Value Function with Stage-Aware Labels for Semi-Autonomous Vision-Language-Action Policies",
+    "link": "http://arxiv.org/abs/2608.02958",
+    "arxiv_id": "2608.02958",
+    "detail_path": "papers/2608.02958/",
+    "cover_path": "covers/2608.02958/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.02958.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-03",
     "title": "Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data",
     "link": "http://arxiv.org/abs/2608.02580",
@@ -562,7 +782,7 @@
     "arxiv_id": "2608.00337",
     "detail_path": "papers/2608.00337/",
     "cover_path": "covers/2608.00337/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2608.00337.webp",
     "preview_text": "针对Vision-Language-Action（VLA）等机器人基础模型计算开销大、端侧算力受限的问题，研究多机器人远程策略服务的调度问题，解决批处理推理带来的吞吐量增益与机器人闭环控制低延迟要求之间的核心矛盾 揭示传统批处理调度策略与机器人闭环需求的错配：不同任务的机器人对动作块新鲜度、执行饥饿的敏感度存在差异，异构机器人fleet下的均匀调度会严重低延迟敏感型机器人的服务 提出端到端服务系统Armory，通过…",
     "research_unit": "佐治亚理工学院（Georgia Institute of Technology）",
     "hook_text": "针对Vision-Language-Action（VLA）等机器人基础模型计算开销大、端侧算力受限的问题，研究多机器人远程策略服务的调度问题…",

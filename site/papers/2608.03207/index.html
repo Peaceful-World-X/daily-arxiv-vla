@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DRIFT: Derailing Denoising Trajectories of Flow-Matching VLAs with Adversarial Patch Attack - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对流匹配视觉-语言-动作（VLA）模型（如π₀、π₀.₅）提出测试时通用对抗补丁攻击方法DRIFT，仅需将小尺寸补丁贴在机器人夹爪的腕部相机视野内，无需修改模型权重或访问训练流程，即可破坏模型的任务执行能力 揭示既往观点中“流匹配VLA抗对抗扰动”的结论是假象，源于既往攻击未针对流匹配VLA特有的多步去噪常微分方程（ODE）过程设计 发现仅攻击去噪过程的第一步即可达到比攻击多步更强的攻击效果，打破“攻击步数越多攻…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.03207">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.03207.webp" alt="DRIFT: Derailing Denoising Trajectories of Flow-Matching VLAs with Adversarial Patch Attack" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对流匹配视觉-语言-动作（VLA）模型（如π₀、π₀.₅）提出测试时通用对抗补丁攻击方法DRIFT，仅需将小尺寸补丁贴在机器人夹爪的腕部相机…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">DRIFT: Derailing Denoising Trajectories of Flow-Matching VLAs with Adversarial Patch Attack</h1>
+            <div class="detail-meta">2026-08-04 · <a href="http://arxiv.org/abs/2608.03207" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.03207" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.03207</span></div>
+            <p class="detail-summary">针对流匹配视觉-语言-动作（VLA）模型（如π₀、π₀.₅）提出测试时通用对抗补丁攻击方法DRIFT，仅需将小尺寸补丁贴在机器人夹爪的腕部相机视野内，无需修改模型权重或访问训练流程，即可破坏模型的任务执行能力 揭示既往观点中“流匹配VLA抗对抗扰动”的结论是假象，源于既往攻击未针对流匹配VLA特有的多步去噪常微分方程（ODE）过程设计 发现仅攻击去噪过程的第一步即可达到比攻击多步更强的攻击效果，打破“攻击步数越多攻…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构为延世大学集成技术学院（School of Integrated Technology…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.03207/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对流匹配视觉-语言-动作（VLA）模型（如π₀、π₀.₅）提出测试时通用对抗补丁攻击方法DRIFT，仅需将小尺寸补丁贴在机器人夹爪的腕部相机…</p>
+  <ul class="reading-intro-points"><li>针对流匹配视觉-语言-动作（VLA）模型（如π₀、π₀.₅）提出测试时通用对抗补丁攻击方法DRIFT，仅需将小尺寸补丁贴在机器人夹爪的腕部相机…</li><li>揭示既往观点中“流匹配VLA抗对抗扰动”的结论是假象，源于既往攻击未针对流匹配VLA特有的多步去噪常微分方程（ODE）过程设计</li><li>发现仅攻击去噪过程的第一步即可达到比攻击多步更强的攻击效果，打破“攻击步数越多攻击效果越好”的直觉，成因是输入空间优化特有的梯度冲突现象，与训…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构为<strong>延世大学集成技术学院（School of Integrated Technology, Yonsei University）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对流匹配视觉-语言-动作（VLA）模型（如π₀、π₀.₅）提出测试时通用对抗补丁攻击方法<strong>DRIFT</strong>，仅需将小尺寸补丁贴在机器人夹爪的腕部相机视野内，无需修改模型权重或访问训练流程，即可破坏模型的任务执行能力</li><li>揭示既往观点中“流匹配VLA抗对抗扰动”的结论是假象，源于既往攻击未针对流匹配VLA特有的多步去噪常微分方程（ODE）过程设计</li><li>发现仅攻击去噪过程的第一步即可达到比攻击多步更强的攻击效果，打破“攻击步数越多攻击效果越好”的直觉，成因是输入空间优化特有的梯度冲突现象，与训练时后门攻击的范式完全相反</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>新的攻击面与实用威胁模型</strong>：DRIFT是首个明确利用流匹配VLA去噪速度场的测试时对抗补丁攻击，仅需物理可实现的贴纸，无需模型修改或训练流程访问，威胁模型更贴近实际场景</li><li><strong>少即是多的攻击效果</strong>：证明测试时场景下仅攻击第一个去噪步的效果优于攻击更宽的早期去噪步窗口，与训练时后门攻击需要宽注入窗口的结论形成直接对比</li><li><strong>梯度冲突的机理解释</strong>：揭示输入空间优化特有的梯度冲突是“少即是多”效果的成因——不同去噪步的补丁梯度相互反对齐，多步求和时梯度相互抵消，导致攻击效果下降</li><li><strong>高效性优势</strong>：DRIFT仅需单步去噪的前向与反向传播，优化成本比全轨迹攻击降低K倍（K为去噪总步数），同时攻击效果更强</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>攻击目标为流匹配VLA的去噪速度场：将优化后的补丁粘贴到腕部相机图像的固定区域，通过投影梯度下降（PGD）最大化扰动条件下与干净条件下速度场的 divergence，使去噪轨迹偏离正常路径</li><li>核心分析为分步脆弱性分析：首先通过单步ablation发现早期去噪步（尤其是第一步k=0）的脆弱性最高，早期注入的误差会在ODE求解过程中被逐级放大（级联效应）；随后发现攻击多步早期步时效果下降，源于不同步的补丁梯度相互冲突</li><li>最终方法DRIFT仅针对第一个去噪步（k=0）优化补丁，优化目标为单步速度场的L2距离，每次迭代仅需单次前向反向传播，大幅降低优化开销</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用<strong>LIBERO机器人操作基准</strong>作为评估数据集，包含4个套件：Spatial、Goal、Object、Long（LIBERO-10），每个套件包含10项操作任务，每项任务运行10次试验，共100集/套件</li><li>补丁优化使用的腕部相机观测来自libero_spatial套件的696帧图像，优化后的补丁为通用补丁，无需针对单场景优化</li><li>被攻击模型为公开LIBERO微调检查点的流匹配VLA：<strong>π₀</strong>（默认去噪步数K=10）及其升级版<strong>π₀.₅</strong>，攻击全程模型权重冻结，仅通过白盒梯度计算优化补丁</li><li>训练资源为单张<strong>NVIDIA RTX 3090（24GB显存）</strong>，PGD迭代500次，步长α=0.01，补丁初始化为均匀灰色，尺寸为32×32像素，约占224×224腕部图像的2%</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：补丁在libero_spatial（分布内）套件上优化，在LIBERO全部4个套件上评估，验证分布内与分布外的攻击效果</li><li>主要评估指标：任务级指标为<strong>相对攻击成功率（ASR）</strong>，即原本可完成的任务被攻击破坏的比例，越高说明攻击越强；动作级指标为<strong>归一化动作差异（NAD）</strong>，衡量攻击后动作与干净策略输出动作的偏离程度，越高说明扰动越强</li><li>关键实验结果：1. 针对π₀的32px补丁在4个套件上的平均ASR达99.8%，几乎破坏所有原本可完成的任务，远超动作空间攻击基线UADA（13.2%）和嵌入空间攻击基线EDPA（25.3%，需64px补丁）；2. NAD指标也显著高于基线，说明攻击不仅在任务层面有效，动作层面的扰动强度也最高；3. 攻击在分布外的Goal、Object、Long套件上同样有效，验证了补丁的通用性；4. 针对鲁棒性更强的π₀.₅，64px补丁即可达到相近的攻击效果；5. 单步攻击的效果显著优于3步、5步的早期步窗口攻击，验证了“少即是多”的结论</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.03231/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Structure-Aware Robust Fine-Tuning: Defending Vision-Language-Action Robots Against Physical Attention Hijacking</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.03052/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">How Should Vision-Language-Action Models Use Proprioceptive State?</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
