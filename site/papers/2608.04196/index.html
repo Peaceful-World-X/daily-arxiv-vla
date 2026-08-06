@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SiMDex: Mining Similar Egocentric Videos for Cross-Embodiment Dexterous Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对Vision-Language-Action（VLA）模型训练中机器人数据成本高、大规模自我中心人类视频数据混杂导致 indiscriminate 使用会引入噪声的痛点，提出SiMDex相似性数据挖掘框架 将VLA灵巧操作后训练的人类数据选择重构为推荐问题，从约3200万自我中心人类样本中为每个机器人演示挖掘任务相关的数据子集 该方法无需修改VLA架构或训练流程，即可提升灵巧操作性能，解决“如何高效选择跨形态人…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.04196">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.04196.webp" alt="SiMDex: Mining Similar Egocentric Videos for Cross-Embodiment Dexterous Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对Vision-Language-Action（VLA）模型训练中机器人数据成本高、大规模自我中心人类视频数据混杂导致 indiscrimi…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">SiMDex: Mining Similar Egocentric Videos for Cross-Embodiment Dexterous Manipulation</h1>
+            <div class="detail-meta">2026-08-04 · <a href="http://arxiv.org/abs/2608.04196" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.04196" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.04196</span></div>
+            <p class="detail-summary">针对Vision-Language-Action（VLA）模型训练中机器人数据成本高、大规模自我中心人类视频数据混杂导致 indiscriminate 使用会引入噪声的痛点，提出SiMDex相似性数据挖掘框架 将VLA灵巧操作后训练的人类数据选择重构为推荐问题，从约3200万自我中心人类样本中为每个机器人演示挖掘任务相关的数据子集 该方法无需修改VLA架构或训练流程，即可提升灵巧操作性能，解决“如何高效选择跨形态人…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构包括：The University of Tokyo、ByteDance Seed、T…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.04196/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对Vision-Language-Action（VLA）模型训练中机器人数据成本高、大规模自我中心人类视频数据混杂导致 indiscrimi…</p>
+  <ul class="reading-intro-points"><li>针对Vision-Language-Action（VLA）模型训练中机器人数据成本高、大规模自我中心人类视频数据混杂导致 indiscrimi…</li><li>将VLA灵巧操作后训练的人类数据选择重构为推荐问题，从约3200万自我中心人类样本中为每个机器人演示挖掘任务相关的数据子集</li><li>该方法无需修改VLA架构或训练流程，即可提升灵巧操作性能，解决“如何高效选择跨形态人类数据用于VLA后训练”的核心问题</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构包括：<strong>The University of Tokyo</strong>、<strong>ByteDance Seed</strong>、<strong>The University of Hong Kong</strong>、<strong>Shanghai Jiao Tong University</strong>、<strong>Tsinghua University</strong></li><li>标注*表示该工作在ByteDance Seed完成，标注†为通讯作者</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对Vision-Language-Action（VLA）模型训练中机器人数据成本高、大规模自我中心人类视频数据混杂导致 indiscriminate 使用会引入噪声的痛点，提出<strong>SiMDex</strong>相似性数据挖掘框架</li><li>将VLA灵巧操作后训练的人类数据选择重构为推荐问题，从约3200万自我中心人类样本中为每个机器人演示挖掘任务相关的数据子集</li><li>该方法无需修改VLA架构或训练流程，即可提升灵巧操作性能，解决“如何高效选择跨形态人类数据用于VLA后训练”的核心问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>推荐视角重构</strong>：将人类数据选择问题定义为推荐任务，重新挖掘VLA预训练使用的同一批自我中心数据，让大规模数据收集同时实现广度覆盖和任务精度匹配</li><li><strong>轻量可扩展挖掘流水线</strong>：提出三层召回-排序-重排序的级联pipeline，在形态无关的动作空间操作，可适配千万级样本规模，无需对VLA架构做任何修改</li><li><strong>显著的实证性能增益</strong>：在3项真实世界灵巧操作任务中，仅使用不足数据池5%的 mined 样本，就将整体成功率从47.7%提升至61.1%，在低机器人数据场景下增益最为明显</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>统一形态无关表示</strong>：采用指尖中心几何表示，通过腕部局部重定向将机器人和人类的腕部6D姿态、指尖3D位置映射到统一的42维共享动作空间，消除不同 embodiment 的形态差异，为跨形态相似性计算提供基础</li><li><strong>三层相似性数据挖掘pipeline</strong>：</li></ul>
+<p> - Stage I 召回：通过初始抓取姿态的ℓ2归一化描述符欧氏距离检索、语言指令句子嵌入余弦相似度检索，粗筛得到候选集</p>
+<p> - Stage II 排序：基于未来30步动作序列的腕部位移波形、旋转波形、指尖轨迹、腕部轨迹四个细粒度运动信号分别计算排名，融合后按源轨迹去重，得到最终用于训练的 mined 子集</p>
+<p> - Stage III 重排序：引入光流特征做形态无关的验证，解决纯运动信号的不匹配问题，进一步优化检索质量</p>
+<ul><li><strong>VLA训练适配</strong>：基于π0-like流匹配VLA，将 mined 人类数据与机器人数据按1:1混合训练，人类数据仅通过掩码监督42维共享动作维度，无需修改模型架构</li><li>核心创新点是将工业推荐系统的级联检索pipeline引入跨形态机器人数据挖掘，以极低的计算成本实现大规模自我中心数据的任务级筛选</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：</li></ul>
+<p> - 机器人演示数据：约<strong>1.35M</strong>帧级样本（约12.4小时），由双臂遥操作收集</p>
+<p> - 人类数据池：来自<strong>EgoDex</strong>数据集的约<strong>32,034,551</strong>帧级样本（约300小时，164,959个片段，30fps）</p>
+<p> - mined 训练子集：约<strong>1.49M</strong>帧级样本，不足人类数据池的5%</p>
+<ul><li>模型规模：基座模型为<strong>GR-Dexter</strong>（π0-like流匹配VLA），动作空间共88维（42维跨形态共享维度+46维机器人专属维度），动作预测步长H=30</li><li>训练资源：论文未明确披露具体使用的GPU/TPU等硬件资源</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：在3项真实世界双臂灵巧操作任务上评估，基线为完全相同的GR-Dexter模型，仅将 mined 人类数据替换为等量随机采样的人类数据</li></ul>
+<p> - 任务包括：<strong>Drill</strong>（钻孔组装，最高3分）、<strong>Flick Wheel</strong>（拨轮操作，最高3分）、<strong>Pick & Place</strong>（多物体抓取放置，最高4分）</p>
+<p> - 每个任务测试10次试验（2轮×5次），报告均值±标准差</p>
+<ul><li>主要评估指标：子任务完成度（0-1分）、任务总得分、成功率（总得分/最高总分×100%）</li><li>关键实验结果：</li></ul>
+<p> - 整体成功率从基线的47.7%提升至61.1%，绝对增益+13.4%，验证了任务级数据筛选优于 indiscriminate 随机采样</p>
+<p> - 分任务增益显著：Flick Wheel成功率从24.5%提升至45.5%（+21.0%），Pick & Place从54.0%提升至83.4%（+29.4%），说明 mined 数据有效传递了细粒度手指操作技能和跨物体泛化能力</p>
+<p> - 低数据 regime 下优势突出：当机器人数据规模缩减至0.5×（约6小时）时，SiMDex仍能保持~57-58%的稳定成功率，而基线降至50.9%，可实现约4倍的机器人数据收集成本降低</p>
+<p> - 消融实验验证了三层流水线的必要性：召回层粗筛任务相关候选、排序层细化运动匹配、重排序层修正形态无关误差，每层都对最终检索质量有正向贡献</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.04246/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">SAFECAST: Robust Failure Detection for VLA Policies with Contrast-Set Training and Calibration</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.03727/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Track4Action: Distilling World-Centric 3D Tracker into Vision-Language-Action Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

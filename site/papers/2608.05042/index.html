@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 BridgeVLA++，一种面向三维机器人操作的数据高效、可泛化且具有记忆增强的视觉-语言-动作（VLA）框架 主要解决现有 3D VLA 方法数据需求大、分布偏移下泛化性差、缺乏对历史观测的显式记忆等问题 在原有 BridgeVLA 的基础上，通过统一的时空记忆架构增强对历史交互和场景几何的建模能力，使其能够同时处理记忆无关和记忆依赖的操作任务" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.05042">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.05042.webp" alt="BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 BridgeVLA++，一种面向三维机器人操作的数据高效、可泛化且具有记忆增强的视觉-语言-动作（VLA）框架</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation</h1>
+            <div class="detail-meta">2026-08-05 · <a href="http://arxiv.org/abs/2608.05042" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.05042" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.05042</span></div>
+            <p class="detail-summary">提出 BridgeVLA++，一种面向三维机器人操作的数据高效、可泛化且具有记忆增强的视觉-语言-动作（VLA）框架 主要解决现有 3D VLA 方法数据需求大、分布偏移下泛化性差、缺乏对历史观测的显式记忆等问题 在原有 BridgeVLA 的基础上，通过统一的时空记忆架构增强对历史交互和场景几何的建模能力，使其能够同时处理记忆无关和记忆依赖的操作任务</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">New Laboratory of Pattern Recognition (NLPR), Insti…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.05042/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 BridgeVLA++，一种面向三维机器人操作的数据高效、可泛化且具有记忆增强的视觉-语言-动作（VLA）框架</p>
+  <ul class="reading-intro-points"><li>提出 BridgeVLA++，一种面向三维机器人操作的数据高效、可泛化且具有记忆增强的视觉-语言-动作（VLA）框架</li><li>主要解决现有 3D VLA 方法数据需求大、分布偏移下泛化性差、缺乏对历史观测的显式记忆等问题</li><li>在原有 BridgeVLA 的基础上，通过统一的时空记忆架构增强对历史交互和场景几何的建模能力，使其能够同时处理记忆无关和记忆依赖的操作任务</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>New Laboratory of Pattern Recognition (NLPR), Institute of Automation, Chinese Academy of Sciences</strong></li><li><strong>School of Artificial Intelligence, University of Chinese Academy of Sciences</strong></li><li><strong>FiveAges, Beijing</strong></li><li><strong>ByteDance Seed</strong> (Hongtao Wu, Xiao Ma, Tao Kong 在字节跳动种子部门期间参与此项工作)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 BridgeVLA++，一种面向三维机器人操作的数据高效、可泛化且具有记忆增强的视觉-语言-动作（VLA）框架</li><li>主要解决现有 3D VLA 方法数据需求大、分布偏移下泛化性差、缺乏对历史观测的显式记忆等问题</li><li>在原有 BridgeVLA 的基础上，通过统一的时空记忆架构增强对历史交互和场景几何的建模能力，使其能够同时处理记忆无关和记忆依赖的操作任务</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 BridgeVLA，一种基于输入-输出对齐的 3D VLA 框架，通过将点云投影为多视图图像并预测二维热图来生成三维动作，保持预训练 VLM 的输入输出空间一致性</li><li>设计可扩展的语言条件热图预训练策略，从大规模目标检测数据中迁移物体定位知识到下游机器人动作预测</li><li>提出 BridgeVLA++，引入统一时空记忆架构：时间记忆融合交互历史以决定“下一步做什么”，空间记忆恢复被遮挡的几何信息以决定“精确作用于何处”</li><li>在五个仿真基准和两个真实机器人平台上进行大量实验，证明了模型在数据效率、泛化性、记忆依赖推理和跨平台可扩展性方面的先进性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>BridgeVLA 基础框架</strong>：将三维点云渲染为多视角正交投影图像，利用预训练 VLM（PaliGemma）处理图像和语言指令，预测每个视图的二维平移热图，再通过反投影恢复三维末端执行器位置；采用粗到细的 refinement 策略提高定位精度</li><li><strong>2D 热图预训练</strong>：在 RoboPoint 数据集上训练模型预测语言指定物体的高斯热图，将 VLM 的输出从非结构化 token 生成转变为结构化的空间定位</li><li><strong>BridgeVLA++ 时空记忆</strong>：</li></ul>
+<p> - 时间记忆：包含初始锚点视图、近期邻近关键帧和自适应选择的子目标关键帧，通过交叉注意力注入粗阶段表征，帮助推理任务进度</p>
+<p> - 空间记忆：存储初始观测的彩色点云，在精细阶段根据当前粗预测位姿动态裁剪、渲染并编码，为被遮挡区域提供几何参考</p>
+<p> - 记忆集成：使用轻量级注意力模块将时间记忆和空间记忆分别注入粗、细阶段，不改变原有热图输出接口</p>
+<ul><li><strong>双臂扩展</strong>：共享 VLM 主干和记忆模块，为每个机械臂配备独立的动作头，利用场景级记忆支持双手协调操作</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真数据集</strong>：RLBench（18 个任务）、COLOSSEUM、GemBench、RMBench、MemoryBench</li><li><strong>真实世界数据</strong>：在 Franka Research 3 和 Dobot CR5A 平台上采集，每个任务仅使用 10 条演示</li><li><strong>预训练数据集</strong>：RoboPoint 的 120K 目标检测分割</li><li><strong>模型规模</strong>：基础 VLM 采用 PaliGemma（SigLIP 视觉编码器 + Gemma 语言模型），总参数量约 2.92B，记忆模块额外增加约 269.77M 参数（9.2% 增幅）</li><li><strong>训练资源</strong>：单张 NVIDIA RTX 4090 GPU，推理单步约 0.57 秒</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：仿真基准采用标准协议，真实世界实验涵盖多种视觉扰动、未见物体类别和指令</li><li><strong>主要指标</strong>：任务成功率（Success Rate）</li><li><strong>关键结果</strong>：</li></ul>
+<p> - 在 RLBench 上平均成功率 87.8%，显著优于 PerAct、Act3D、RVT-2 等方法</p>
+<p> - 在 COLOSSEUM 和 GemBench 泛化基准上表现出色，对光照、背景、新物体-技能组合等分布偏移具有鲁棒性</p>
+<p> - 在记忆依赖基准 RMBench 和 MemoryBench 上达到 SOTA，BridgeVLA++ 相比 BridgeVLA 在 RMBench 上平均成功率从 20.0% 提升至 93.3%</p>
+<p> - 真实世界实验中，基于 10 个演示的训练即能有效泛化，且记忆增强模块未损害原始数据效率与泛化能力</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2608.04765/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Explicit Language Memory for Long-Horizon Planning in Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

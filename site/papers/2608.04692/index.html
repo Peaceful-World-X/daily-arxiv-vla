@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文聚焦多任务视觉语言动作（VLA）策略中任务向量减法这一闭式编辑方法，解决现有任务算术研究仅通过静态损失评估编辑效果、无法反映机器人闭环控制中编辑对无关技能实际影响的研究空白 研究设计了闭环目标-控制审计框架，在LIBERO机器人操控基准的多任务VLA策略上，同时评估单技能任务向量减法对目标技能的消除效果以及对其余所有控制技能的保留效果，揭示该编辑方法的实际效应边界与安全风险" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.04692">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.04692.webp" alt="Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文聚焦多任务视觉语言动作（VLA）策略中任务向量减法这一闭式编辑方法，解决现有任务算术研究仅通过静态损失评估编辑效果、无法反映机器人闭环控制…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies</h1>
+            <div class="detail-meta">2026-08-05 · <a href="http://arxiv.org/abs/2608.04692" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.04692" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.04692</span></div>
+            <p class="detail-summary">本文聚焦多任务视觉语言动作（VLA）策略中任务向量减法这一闭式编辑方法，解决现有任务算术研究仅通过静态损失评估编辑效果、无法反映机器人闭环控制中编辑对无关技能实际影响的研究空白 研究设计了闭环目标-控制审计框架，在LIBERO机器人操控基准的多任务VLA策略上，同时评估单技能任务向量减法对目标技能的消除效果以及对其余所有控制技能的保留效果，揭示该编辑方法的实际效应边界与安全风险</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">提供的截断原文未包含作者所属研究机构的明确对应文本，仅通过上标标注了3个不同机构归属</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.04692/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文聚焦多任务视觉语言动作（VLA）策略中任务向量减法这一闭式编辑方法，解决现有任务算术研究仅通过静态损失评估编辑效果、无法反映机器人闭环控制…</p>
+  <ul class="reading-intro-points"><li>本文聚焦多任务视觉语言动作（VLA）策略中任务向量减法这一闭式编辑方法，解决现有任务算术研究仅通过静态损失评估编辑效果、无法反映机器人闭环控制…</li><li>研究设计了闭环目标-控制审计框架，在LIBERO机器人操控基准的多任务VLA策略上，同时评估单技能任务向量减法对目标技能的消除效果以及对其余所…</li><li>首次对VLA策略中的任务向量减法开展闭环目标-控制审计，发现该方法可稳健消除目标技能，但局部性呈现脆弱、异质的特点</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>提供的截断原文未包含作者所属研究机构的明确对应文本，仅通过上标标注了3个不同机构归属</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文聚焦多任务视觉语言动作（VLA）策略中<strong>任务向量减法</strong>这一闭式编辑方法，解决现有任务算术研究仅通过静态损失评估编辑效果、无法反映机器人闭环控制中编辑对无关技能实际影响的研究空白</li><li>研究设计了闭环目标-控制审计框架，在LIBERO机器人操控基准的多任务VLA策略上，同时评估单技能任务向量减法对目标技能的消除效果以及对其余所有控制技能的保留效果，揭示该编辑方法的实际效应边界与安全风险</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次对VLA策略中的任务向量减法开展闭环目标-控制审计，发现该方法可稳健消除目标技能，但局部性呈现脆弱、异质的特点</li><li>在LIBERO-Goal 10技能测试集上划分出三种明确的减法效应分类：5个技能实现<strong>目标-控制分离</strong>、3个技能<strong>抗抑制</strong>、2个技能出现<strong>全局崩溃</strong>，量化了编辑对无关技能的附带损害范围</li><li>划定了该编辑方法的实际边界：在共享运动基元的机器人套件（如LIBERO-Spatial、Object、Long10）中效果失效，多技能联合减法会快速触发全局崩溃，选择性仅存在于单技能单向量场景</li><li>通过锚点/符号依赖性、损失景观、重学习探针等系列诊断，证明该编辑是快速可逆的行为掩码，而非认证遗忘；同时提供的数据依赖前向对齐诊断仅能套件内预测可抑制性，无法跨套件迁移</li><li>与NegGrad、Gradient-Difference等梯度基线对比，验证该减法是无删除时数据/梯度需求的轻量干预，控制保留表现优于部分梯度方法</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于<strong>MergeVLA框架</strong>构建实验基线，模型总参数量约1.4B，包含Qwen2.5-0.5B语言 backbone、dinosiglip-224px视觉编码器、0.16B动作专家，可训练的LoRA部分（语言 backbone+动作专家）约0.68B，专家通过LoRA秩64训练得到</li><li>任务向量定义为单技能专家权重与基础权重的差值，覆盖VLM backbone、动作头、本体感知投影器三个组件，减法核心公式为 θ_edit = θ_Goal - α·τ_i，通过扫描缩放系数α选择约束工作点α*（目标成功率为0%时最高控制保留率）</li><li>创新点在于采用闭环 rollout 替代静态损失评估，同时测试目标技能与所有控制技能的实际表现，而非仅评估目标任务的损失变化；扩展测试了多技能联合减法、不同动作头家族（连续回归、离散token、流匹配）下的编辑效果，以及梯度上升基线、重学习探针、随机方向对照等诊断实验</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用<strong>LIBERO系列机器人操控仿真基准</strong>，核心测试集为<strong>LIBERO-Goal</strong>（10个桌面操控技能），跨套件测试使用LIBERO-Spatial、LIBERO-Object、LIBERO-Long10</li><li>核心模型为<strong>MergeVLA-LIBERO-Goal</strong>，总参数量约1.4B，其中可训练的LoRA部分（语言 backbone+动作专家）约0.68B，视觉编码器为冻结的dinosiglip-224px</li><li>提供的截断原文未提及具体训练硬件（GPU/TPU）相关信息</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境为LIBERO系列仿真环境，核心评估指标为<strong>闭环成功率（SR）</strong>，每个评估单元 rollout 20次，报告原始x/n计数与95% Wilson置信区间，采用配对对比控制初始状态变量</li><li>关键实验结果：</li></ul>
+<p> - 10个Goal技能中5个实现目标-控制分离：目标成功率降至0%，控制保留均值57.8%，留出初始状态下控制保留均值52%，范围4%-78%，4/5的行会使至少1个无关控制成功率降至0%</p>
+<p> - 3个技能抗抑制（目标无法通过减法消除），2个技能出现全局崩溃（目标与所有控制成功率均降至0%）</p>
+<p> - 分离模式在连续、离散token、流匹配三类动作头下均可复现，但在共享运动基元的Spatial、Object、Long10套件中失效：Spatial套件无任何技能实现分离，Object和Long10的控制保留率仅5.8%和11.7%</p>
+<p> - 多技能联合减法（k≥3）会触发全局崩溃，选择性仅存在于单技能单向量场景；目标-控制分离的效应随α增大呈剂量反应，α≥1.5时所有技能成功率均降至0%</p>
+<p> - 与梯度基线对比：减法无删除时数据/梯度需求，控制保留率73.9%，优于NegGrad（0%）和NegGrad+（66.1%），低于Gradient-Difference（88.3%），远低于全重训练上限（95.6%）</p>
+<p> - 权重空间任务向量余弦均值无法预测控制保留情况，重学习探针结果符合行为掩码的可逆特征，而非认证遗忘</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.04765/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Explicit Language Memory for Long-Horizon Planning in Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.04633/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Mind-VLA: Instruction-Aware Spatial Representation Alignment for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

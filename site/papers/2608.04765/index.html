@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explicit Language Memory for Long-Horizon Planning in Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文针对现有Vision-Language-Action（VLA）模型在长时序任务中的四大痛点：稀疏专家演示限制跨任务组合泛化、长时序任务的非马尔可夫性导致仅依赖当前观测的策略难以维持时序一致性、有限闭环纠错能力导致执行误差累积、端到端动作微调可能削弱VLM骨干的语义表征，提出带显式语言记忆模块的分层长时序VLA架构 核心设计思路是将离散时序观测转换为带时序逻辑的连贯文本记忆序列，系统解耦为高层VLM和低层VLA…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.04765">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.04765.webp" alt="Explicit Language Memory for Long-Horizon Planning in Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文针对现有Vision-Language-Action（VLA）模型在长时序任务中的四大痛点：稀疏专家演示限制跨任务组合泛化、长时序任务的非…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Explicit Language Memory for Long-Horizon Planning in Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-08-05 · <a href="http://arxiv.org/abs/2608.04765" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.04765" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.04765</span></div>
+            <p class="detail-summary">本文针对现有Vision-Language-Action（VLA）模型在长时序任务中的四大痛点：稀疏专家演示限制跨任务组合泛化、长时序任务的非马尔可夫性导致仅依赖当前观测的策略难以维持时序一致性、有限闭环纠错能力导致执行误差累积、端到端动作微调可能削弱VLM骨干的语义表征，提出带显式语言记忆模块的分层长时序VLA架构 核心设计思路是将离散时序观测转换为带时序逻辑的连贯文本记忆序列，系统解耦为高层VLM和低层VLA…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">复旦大学，论文作者Houze Xu、Jizhong Li、Ziyi Ye均隶属于该机构</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.04765/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文针对现有Vision-Language-Action（VLA）模型在长时序任务中的四大痛点：稀疏专家演示限制跨任务组合泛化、长时序任务的非…</p>
+  <ul class="reading-intro-points"><li>本文针对现有Vision-Language-Action（VLA）模型在长时序任务中的四大痛点：稀疏专家演示限制跨任务组合泛化、长时序任务的非…</li><li>核心设计思路是将离散时序观测转换为带时序逻辑的连贯文本记忆序列，系统解耦为高层VLM和低层VLA：高层VLM通过视觉问答范式执行语义推理，低层…</li><li>研究目标是通过多仿真环境和真实机器人平台验证显式语言记忆对长时序VLA任务成功率、鲁棒性的提升作用，同时提供决策过程的可解释语义解释</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>复旦大学</strong>，论文作者Houze Xu、Jizhong Li、Ziyi Ye均隶属于该机构</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文针对现有Vision-Language-Action（VLA）模型在长时序任务中的四大痛点：稀疏专家演示限制跨任务组合泛化、长时序任务的非马尔可夫性导致仅依赖当前观测的策略难以维持时序一致性、有限闭环纠错能力导致执行误差累积、端到端动作微调可能削弱VLM骨干的语义表征，提出带显式语言记忆模块的分层长时序VLA架构</li><li>核心设计思路是将离散时序观测转换为带时序逻辑的连贯文本记忆序列，系统解耦为高层VLM和低层VLA：高层VLM通过视觉问答范式执行语义推理，低层VLA根据子任务指令和视觉观测执行精确连续控制，高层VLM递归更新语言记忆和子任务指令，实现长时序执行中的持久时序追踪和动态纠错</li><li>研究目标是通过多仿真环境和真实机器人平台验证显式语言记忆对长时序VLA任务成功率、鲁棒性的提升作用，同时提供决策过程的可解释语义解释</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出分层VLM-VLA架构，将长时序策略解耦为递归语义状态追踪与连续动作生成两部分，分离高层规划和低层控制的优化目标</li><li>设计显式滚动语言记忆机制，采用滚动压缩规则更新记忆，在压缩已完成阶段信息的同时保留当前及下一子任务所需的决策关键信息，维持记忆长度 bounded</li><li>构建自动化记忆监督管线，可自动将专家视频、技能标签及时间戳转换为对齐的子任务与记忆监督标签，支持高低层分支的独立训练</li><li>通过BEHAVIOR-1K、Genie Sim 3.0仿真及真实XLeRobot平台的实验，验证显式语言记忆能够提升长时序任务成功率、减少阶段跳步错误，同时支持简单的上下文故障恢复</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>技术方法：整体采用分层策略解耦设计，高层分支使用<strong>PaliGemma</strong>（3B参数VLM），以全局任务指令、当前观测、上一时刻语言记忆为输入，递归更新语言记忆并生成简洁子任务指令；低层分支基于<strong>π₀.₅</strong>的300M参数Gemma动作专家，以当前观测和子任务指令为输入，生成长度为H=30的连续动作块</li><li>创新点：1. 显式递归语言记忆作为可读的状态载体，替代全视觉历史拼接，以自然语言压缩任务进展，提供阶段推进的语义锚点；2. 自动化监督管线利用通用VLM（Gemini 3.5 Flash或本地Qwen3.5-9B）从专家演示数据自动生成对齐的记忆与子任务标签，降低标注成本；3. 高低层分支独立训练，高层采用自回归交叉熵损失优化记忆和子任务预测，低层采用流匹配损失优化动作生成，避免单目标下的损失权衡问题</li><li>关键技术：分层策略解耦、滚动压缩式语言记忆更新规则、自动化演示数据标注、闭环推理时的可读状态记录</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>BEHAVIOR-1K</strong>（使用开收音机任务，包含4个评估阶段）、<strong>Genie Sim 3.0</strong>（包含单包裹分拣、连续四包裹分拣任务，分别有6个和4个评估阶段）</li><li>真实机器人数据集：<strong>XLeRobot</strong>平台的抓取放置任务，包含25条手动收集的专家轨迹，评估使用20次试验</li><li>模型规模：高层VLM为3B参数的<strong>PaliGemma</strong>，低层动作专家为300M参数的<strong>Gemma</strong>，动作块预测长度H=30</li><li>训练资源：训练与微调阶段使用4块<strong>NVIDIA A100 GPU</strong>，推理阶段使用1块<strong>NVIDIA RTX 5880 Ada Generation GPU</strong>；优化器采用AdamW，采用预热+余弦衰减学习率策略，峰值学习率2.5×10⁻⁵，批次大小64，总训练步数50000步</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：BEHAVIOR-1K居家仿真环境、Genie Sim 3.0人形机器人操作仿真环境、真实XLeRobot低成本双臂移动机器人平台</li><li>主要评估指标：<strong>阶段级成功率（Stage Success Rate, SR）</strong>，对N个评估样本，计算每个样本所有任务阶段的平均成功率，可暴露长序列任务的失败位置而非仅统计最终任务完成率</li><li>关键实验结果：1. BEHAVIOR-1K开收音机任务：基线π₀.₅平均成功率30.0%，加入语言记忆后提升至40.0%，PickUp阶段成功率从10.0%提升至30.0%，PlaceOn阶段从10.0%提升至20.0%；2. Genie Sim 3.0单包裹分拣任务：基线平均成功率41.7%，加入记忆后提升至63.9%，扫描区放置成功率从50.0%提升至83.3%；连续四包裹分拣任务：基线平均成功率31.3%，加入记忆后提升至46.9%，基线从未完成第三、第四个成功放置，记忆模型在12.5%的评估中完成了全部四个包裹的放置；3. 真实XLeRobot抓取放置任务：基线平均成功率62.5%，加入记忆后提升至66.3%，PickUp、MoveTo、Place阶段成功率均从50.0%提升至55.0%；4. 定性分析证明显式语言记忆能够减少阶段跳步错误，支持上下文故障恢复，同时明确区分高层语义规划与低层控制能力的边界</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.05042/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.04692/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

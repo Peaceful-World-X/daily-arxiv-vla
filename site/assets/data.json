@@ -1,5 +1,255 @@
 [
   {
+    "date": "2026-08-05",
+    "title": "BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation",
+    "link": "http://arxiv.org/abs/2608.05042",
+    "arxiv_id": "2608.05042",
+    "detail_path": "papers/2608.05042/",
+    "cover_path": "covers/2608.05042/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.05042.webp",
+    "preview_text": "提出 BridgeVLA++，一种面向三维机器人操作的数据高效、可泛化且具有记忆增强的视觉-语言-动作（VLA）框架 主要解决现有 3D VLA 方法数据需求大、分布偏移下泛化性差、缺乏对历史观测的显式记忆等问题 在原有 BridgeVLA 的基础上，通过统一的时空记忆架构增强对历史交互和场景几何的建模能力，使其能够同时处理记忆无关和记忆依赖的操作任务",
+    "research_unit": "New Laboratory of Pattern Recognition (NLPR), Insti…",
+    "hook_text": "提出 BridgeVLA++，一种面向三维机器人操作的数据高效、可泛化且具有记忆增强的视觉-语言-动作（VLA）框架",
+    "key_points": [
+      "提出 BridgeVLA++，一种面向三维机器人操作的数据高效、可泛化且具有记忆增强的视觉-语言-动作（VLA）框架",
+      "主要解决现有 3D VLA 方法数据需求大、分布偏移下泛化性差、缺乏对历史观测的显式记忆等问题",
+      "在原有 BridgeVLA 的基础上，通过统一的时空记忆架构增强对历史交互和场景几何的建模能力，使其能够同时处理记忆无关和记忆依赖的操作任务"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-05",
+    "title": "Explicit Language Memory for Long-Horizon Planning in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.04765",
+    "arxiv_id": "2608.04765",
+    "detail_path": "papers/2608.04765/",
+    "cover_path": "covers/2608.04765/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.04765.webp",
+    "preview_text": "本文针对现有Vision-Language-Action（VLA）模型在长时序任务中的四大痛点：稀疏专家演示限制跨任务组合泛化、长时序任务的非马尔可夫性导致仅依赖当前观测的策略难以维持时序一致性、有限闭环纠错能力导致执行误差累积、端到端动作微调可能削弱VLM骨干的语义表征，提出带显式语言记忆模块的分层长时序VLA架构 核心设计思路是将离散时序观测转换为带时序逻辑的连贯文本记忆序列，系统解耦为高层VLM和低层VLA…",
+    "research_unit": "复旦大学，论文作者Houze Xu、Jizhong Li、Ziyi Ye均隶属于该机构",
+    "hook_text": "本文针对现有Vision-Language-Action（VLA）模型在长时序任务中的四大痛点：稀疏专家演示限制跨任务组合泛化、长时序任务的非…",
+    "key_points": [
+      "本文针对现有Vision-Language-Action（VLA）模型在长时序任务中的四大痛点：稀疏专家演示限制跨任务组合泛化、长时序任务的非…",
+      "核心设计思路是将离散时序观测转换为带时序逻辑的连贯文本记忆序列，系统解耦为高层VLM和低层VLA：高层VLM通过视觉问答范式执行语义推理，低层…",
+      "研究目标是通过多仿真环境和真实机器人平台验证显式语言记忆对长时序VLA任务成功率、鲁棒性的提升作用，同时提供决策过程的可解释语义解释"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-05",
+    "title": "Suppression Sticks, Locality Is Fragile: A Closed-Loop Target-and-Control Audit of Task-Vector Negation in VLA Policies",
+    "link": "http://arxiv.org/abs/2608.04692",
+    "arxiv_id": "2608.04692",
+    "detail_path": "papers/2608.04692/",
+    "cover_path": "covers/2608.04692/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.04692.webp",
+    "preview_text": "本文聚焦多任务视觉语言动作（VLA）策略中任务向量减法这一闭式编辑方法，解决现有任务算术研究仅通过静态损失评估编辑效果、无法反映机器人闭环控制中编辑对无关技能实际影响的研究空白 研究设计了闭环目标-控制审计框架，在LIBERO机器人操控基准的多任务VLA策略上，同时评估单技能任务向量减法对目标技能的消除效果以及对其余所有控制技能的保留效果，揭示该编辑方法的实际效应边界与安全风险",
+    "research_unit": "提供的截断原文未包含作者所属研究机构的明确对应文本，仅通过上标标注了3个不同机构归属",
+    "hook_text": "本文聚焦多任务视觉语言动作（VLA）策略中任务向量减法这一闭式编辑方法，解决现有任务算术研究仅通过静态损失评估编辑效果、无法反映机器人闭环控制…",
+    "key_points": [
+      "本文聚焦多任务视觉语言动作（VLA）策略中任务向量减法这一闭式编辑方法，解决现有任务算术研究仅通过静态损失评估编辑效果、无法反映机器人闭环控制…",
+      "研究设计了闭环目标-控制审计框架，在LIBERO机器人操控基准的多任务VLA策略上，同时评估单技能任务向量减法对目标技能的消除效果以及对其余所…",
+      "首次对VLA策略中的任务向量减法开展闭环目标-控制审计，发现该方法可稳健消除目标技能，但局部性呈现脆弱、异质的特点"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-05",
+    "title": "Mind-VLA: Instruction-Aware Spatial Representation Alignment for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.04633",
+    "arxiv_id": "2608.04633",
+    "detail_path": "papers/2608.04633/",
+    "cover_path": "covers/2608.04633/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.04633.webp",
+    "preview_text": "现有Vision-Language-Action (VLA)模型的3D感知方法普遍存在指令无关缺陷：仅对整个场景做统一的3D表示对齐，未聚焦语言指令指定的目标物体的3D几何，导致精细操作、目标遮挡等依赖目标物体3D认知的任务表现不佳 本文提出Mind-VLA，一种指令感知的VLA空间表示对齐方法，通过将VLA隐层表示与指令指定目标物体的3D特征对齐，实现指令感知的3D理解能力 研究目标是无需修改推理时输入的前提下…",
+    "research_unit": "南京大学（Nanjing University）",
+    "hook_text": "现有Vision-Language-Action (VLA)模型的3D感知方法普遍存在指令无关缺陷：仅对整个场景做统一的3D表示对齐，未聚焦语…",
+    "key_points": [
+      "现有Vision-Language-Action (VLA)模型的3D感知方法普遍存在指令无关缺陷：仅对整个场景做统一的3D表示对齐，未聚焦语…",
+      "本文提出Mind-VLA，一种指令感知的VLA空间表示对齐方法，通过将VLA隐层表示与指令指定目标物体的3D特征对齐，实现指令感知的3D理解能力",
+      "研究目标是无需修改推理时输入的前提下，仅通过训练时的辅助监督提升VLA对目标物体的3D感知能力，同时保持低部署开销"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-05",
+    "title": "Retrieve in Time, Correct in Frequency",
+    "link": "http://arxiv.org/abs/2608.04527",
+    "arxiv_id": "2608.04527",
+    "detail_path": "papers/2608.04527/",
+    "cover_path": "covers/2608.04527/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.04527.webp",
+    "preview_text": "提出 RTCF（Retrieve in Time, Correct in Frequency），一种训练免费的测试时校正框架，用于改进冻结的视觉-语言-动作（VLA）策略在长程操作中的性能，无需参数更新或额外 GPU 资源。 解决冻结 VLA 在执行过程中因累积执行误差和视觉混淆（visual aliasing）导致的成功率高但执行质量下降的问题，特别是在多阶段长程任务中。 在四个 LIBERO 套件共 2,000…",
+    "research_unit": "清华大学深圳国际研究生院（Tsinghua Shenzhen International Gradua…",
+    "hook_text": "提出 RTCF（Retrieve in Time, Correct in Frequency），一种训练免费的测试时校正框架，用于改进冻结的视…",
+    "key_points": [
+      "提出 RTCF（Retrieve in Time, Correct in Frequency），一种训练免费的测试时校正框架，用于改进冻结的视…",
+      "解决冻结 VLA 在执行过程中因累积执行误差和视觉混淆（visual aliasing）导致的成功率高但执行质量下降的问题，特别是在多阶段长程…",
+      "在四个 LIBERO 套件共 2,000 个回合上验证，将总体成功率从 86.4% 提升至 88.4%，其中 LIBERO-Long 从 61…"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-05",
+    "title": "GUARD: Grounding Uncertainty and Ablation-Based Risk Detection for Diffusion-Based VLAs",
+    "link": "http://arxiv.org/abs/2608.04510",
+    "arxiv_id": "2608.04510",
+    "detail_path": "papers/2608.04510/",
+    "cover_path": "covers/2608.04510/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-05",
+    "title": "CofactVLA: Deconfounding Vision-Language-Action Models via Counterfactual Intervention",
+    "link": "http://arxiv.org/abs/2608.04396",
+    "arxiv_id": "2608.04396",
+    "detail_path": "papers/2608.04396/",
+    "cover_path": "covers/2608.04396/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.04396.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）模型存在视觉优先（Vision-Override）现象：因训练数据中密集视觉流与稀疏语言指令的严重模态不平衡，模型陷入因果混淆，过度依赖视觉混淆器（如显著物体、熟悉场景布局）的伪捷径，完全忽略语言指令，导致分布外泛化能力差 论文提出CofactVLA因果干预框架，将VLA动作生成过程形式化为双路径解混淆图（DDG），通过构建语言掩码的反事实分支，在单次前向传播中隔离视觉混淆器 研究目标…",
+    "research_unit": "清华大学自动化系（Department of Automation, Tsinghua Univers…",
+    "hook_text": "现有视觉-语言-动作（VLA）模型存在视觉优先（Vision-Override）现象：因训练数据中密集视觉流与稀疏语言指令的严重模态不平衡，模…",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）模型存在视觉优先（Vision-Override）现象：因训练数据中密集视觉流与稀疏语言指令的严重模态不平衡，模…",
+      "论文提出CofactVLA因果干预框架，将VLA动作生成过程形式化为双路径解混淆图（DDG），通过构建语言掩码的反事实分支，在单次前向传播中隔…",
+      "研究目标是系统性消除视觉混淆对动作生成的干扰，让机器人动作严格由语言语义指令驱动，提升开放环境下的鲁棒性和零样本泛化能力"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-04",
+    "title": "SAFECAST: Robust Failure Detection for VLA Policies with Contrast-Set Training and Calibration",
+    "link": "http://arxiv.org/abs/2608.04246",
+    "arxiv_id": "2608.04246",
+    "detail_path": "papers/2608.04246/",
+    "cover_path": "covers/2608.04246/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.04246.webp",
+    "preview_text": "现有基于隐藏态的VLA失败检测方法（如SAFE）依赖校准数据与部署数据同分布的假设，当部署时遭遇视觉、语言、多模态分布偏移时，校准的时间-varying风险阈值会失配，导致失败检测可靠性不足 本文提出SAFECAST框架，通过引入对比集增强的探针训练和功能保形校准，对齐校准分布与部署分布的风险轨迹，提升VLA策略在分布偏移下的失败检测鲁棒性 实验在真实世界DROID平台和LIBERO仿真环境、跨多个VLA back…",
+    "research_unit": "University of Southern California, Thomas Lord Depa…",
+    "hook_text": "现有基于隐藏态的VLA失败检测方法（如SAFE）依赖校准数据与部署数据同分布的假设，当部署时遭遇视觉、语言、多模态分布偏移时，校准的时间-va…",
+    "key_points": [
+      "现有基于隐藏态的VLA失败检测方法（如SAFE）依赖校准数据与部署数据同分布的假设，当部署时遭遇视觉、语言、多模态分布偏移时，校准的时间-va…",
+      "本文提出SAFECAST框架，通过引入对比集增强的探针训练和功能保形校准，对齐校准分布与部署分布的风险轨迹，提升VLA策略在分布偏移下的失败检…",
+      "实验在真实世界DROID平台和LIBERO仿真环境、跨多个VLA backbone验证了方法的有效性，证明了其在不同部署偏移场景下的泛化能力"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-04",
+    "title": "SiMDex: Mining Similar Egocentric Videos for Cross-Embodiment Dexterous Manipulation",
+    "link": "http://arxiv.org/abs/2608.04196",
+    "arxiv_id": "2608.04196",
+    "detail_path": "papers/2608.04196/",
+    "cover_path": "covers/2608.04196/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.04196.webp",
+    "preview_text": "针对Vision-Language-Action（VLA）模型训练中机器人数据成本高、大规模自我中心人类视频数据混杂导致 indiscriminate 使用会引入噪声的痛点，提出SiMDex相似性数据挖掘框架 将VLA灵巧操作后训练的人类数据选择重构为推荐问题，从约3200万自我中心人类样本中为每个机器人演示挖掘任务相关的数据子集 该方法无需修改VLA架构或训练流程，即可提升灵巧操作性能，解决“如何高效选择跨形态人…",
+    "research_unit": "论文作者所属机构包括：The University of Tokyo、ByteDance Seed、T…",
+    "hook_text": "针对Vision-Language-Action（VLA）模型训练中机器人数据成本高、大规模自我中心人类视频数据混杂导致 indiscrimi…",
+    "key_points": [
+      "针对Vision-Language-Action（VLA）模型训练中机器人数据成本高、大规模自我中心人类视频数据混杂导致 indiscrimi…",
+      "将VLA灵巧操作后训练的人类数据选择重构为推荐问题，从约3200万自我中心人类样本中为每个机器人演示挖掘任务相关的数据子集",
+      "该方法无需修改VLA架构或训练流程，即可提升灵巧操作性能，解决“如何高效选择跨形态人类数据用于VLA后训练”的核心问题"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-04",
     "title": "Track4Action: Distilling World-Centric 3D Tracker into Vision-Language-Action Policies",
     "link": "http://arxiv.org/abs/2608.03727",
@@ -175,14 +425,16 @@
     "detail_path": "papers/2608.03052/",
     "cover_path": "covers/2608.03052/",
     "paper_image_path": "assets/paper-images/thumbs/2608.03052.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "本文针对当前不同Vision-Language-Action（VLA）模型接入机器人本体感知状态的方式不统一、结论互不兼容的问题，开展系统性的受控实验研究 研究围绕三个核心开放问题展开：本体感知状态是否能提升闭环控制性能、需要多长的状态历史、状态应注入视觉-语言骨干网络还是动作生成模块 实验固定除状态接入方式外的所有变量（骨干网络、训练数据、动作表示、评估协议），排除无关变量干扰，最终提炼出可测试的状态感知VLA设…",
+    "research_unit": "论文提供的HTML原文未完整展示作者所属研究机构的对应说明，仅能看到作者包含Yiren Zhao、Zi…",
+    "hook_text": "本文针对当前不同Vision-Language-Action（VLA）模型接入机器人本体感知状态的方式不统一、结论互不兼容的问题，开展系统性的…",
     "key_points": [
-      "待生成"
+      "本文针对当前不同Vision-Language-Action（VLA）模型接入机器人本体感知状态的方式不统一、结论互不兼容的问题，开展系统性的…",
+      "研究围绕三个核心开放问题展开：本体感知状态是否能提升闭环控制性能、需要多长的状态历史、状态应注入视觉-语言骨干网络还是动作生成模块",
+      "实验固定除状态接入方式外的所有变量（骨干网络、训练数据、动作表示、评估协议），排除无关变量干扰，最终提炼出可测试的状态感知VLA设计原则"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#ef6c3f",
       "to": "#f6b13d",
@@ -201,14 +453,16 @@
     "detail_path": "papers/2608.02958/",
     "cover_path": "covers/2608.02958/",
     "paper_image_path": "assets/paper-images/thumbs/2608.02958.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对行为克隆训练的Vision-Language-Action（VLA）策略无法感知进度、会静默失败的问题，论文指出真实机器人强化学习不现实（经验成本高、易变形食物难仿真），终端成功/失败 bit 过于稀疏无法定位失败时机，核心挑战在于标注设计而非架构 提出ValueFormer，一个轻量、与策略无关的因果Transformer价值函数，基于冻结的DINOv3骨干，单次前传同时输出平滑的蒙特卡洛价值$V_{mc}$…",
+    "research_unit": "论文作者所属研究机构未在提供的截取内容中显示",
+    "hook_text": "针对行为克隆训练的Vision-Language-Action（VLA）策略无法感知进度、会静默失败的问题，论文指出真实机器人强化学习不现实（…",
     "key_points": [
-      "待生成"
+      "针对行为克隆训练的Vision-Language-Action（VLA）策略无法感知进度、会静默失败的问题，论文指出真实机器人强化学习不现实（…",
+      "提出ValueFormer，一个轻量、与策略无关的因果Transformer价值函数，基于冻结的DINOv3骨干，单次前传同时输出平滑的蒙特卡…",
+      "在真实机器人双臂三明治组装任务上验证，任务完成率从70%提升至85%（n=20，在噪声范围内），同时优化实时推理成本，使评判能以2Hz频率与V…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 9,
+    "section_count": 6,
     "cover_theme": {
       "from": "#177e89",
       "to": "#5ec2a8",
@@ -2292,7 +2546,7 @@
     "arxiv_id": "2607.15641",
     "detail_path": "papers/2607.15641/",
     "cover_path": "covers/2607.15641/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2607.15641.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -3746,7 +4000,7 @@
     "arxiv_id": "2607.08182",
     "detail_path": "papers/2607.08182/",
     "cover_path": "covers/2607.08182/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2607.08182.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -3912,7 +4166,7 @@
     "arxiv_id": "2607.06706",
     "detail_path": "papers/2607.06706/",
     "cover_path": "covers/2607.06706/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2607.06706.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -5114,7 +5368,7 @@
     "arxiv_id": "2607.01658",
     "detail_path": "papers/2607.01658/",
     "cover_path": "covers/2607.01658/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2607.01658.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",

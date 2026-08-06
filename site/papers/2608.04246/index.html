@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SAFECAST: Robust Failure Detection for VLA Policies with Contrast-Set Training and Calibration - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有基于隐藏态的VLA失败检测方法（如SAFE）依赖校准数据与部署数据同分布的假设，当部署时遭遇视觉、语言、多模态分布偏移时，校准的时间-varying风险阈值会失配，导致失败检测可靠性不足 本文提出SAFECAST框架，通过引入对比集增强的探针训练和功能保形校准，对齐校准分布与部署分布的风险轨迹，提升VLA策略在分布偏移下的失败检测鲁棒性 实验在真实世界DROID平台和LIBERO仿真环境、跨多个VLA back…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.04246">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.04246.webp" alt="SAFECAST: Robust Failure Detection for VLA Policies with Contrast-Set Training and Calibration" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有基于隐藏态的VLA失败检测方法（如SAFE）依赖校准数据与部署数据同分布的假设，当部署时遭遇视觉、语言、多模态分布偏移时，校准的时间-va…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">SAFECAST: Robust Failure Detection for VLA Policies with Contrast-Set Training and Calibration</h1>
+            <div class="detail-meta">2026-08-04 · <a href="http://arxiv.org/abs/2608.04246" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.04246" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.04246</span></div>
+            <p class="detail-summary">现有基于隐藏态的VLA失败检测方法（如SAFE）依赖校准数据与部署数据同分布的假设，当部署时遭遇视觉、语言、多模态分布偏移时，校准的时间-varying风险阈值会失配，导致失败检测可靠性不足 本文提出SAFECAST框架，通过引入对比集增强的探针训练和功能保形校准，对齐校准分布与部署分布的风险轨迹，提升VLA策略在分布偏移下的失败检测鲁棒性 实验在真实世界DROID平台和LIBERO仿真环境、跨多个VLA back…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">University of Southern California, Thomas Lord Depa…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.04246/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有基于隐藏态的VLA失败检测方法（如SAFE）依赖校准数据与部署数据同分布的假设，当部署时遭遇视觉、语言、多模态分布偏移时，校准的时间-va…</p>
+  <ul class="reading-intro-points"><li>现有基于隐藏态的VLA失败检测方法（如SAFE）依赖校准数据与部署数据同分布的假设，当部署时遭遇视觉、语言、多模态分布偏移时，校准的时间-va…</li><li>本文提出SAFECAST框架，通过引入对比集增强的探针训练和功能保形校准，对齐校准分布与部署分布的风险轨迹，提升VLA策略在分布偏移下的失败检…</li><li>实验在真实世界DROID平台和LIBERO仿真环境、跨多个VLA backbone验证了方法的有效性，证明了其在不同部署偏移场景下的泛化能力</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>University of Southern California, Thomas Lord Department of Computer Science</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有基于隐藏态的VLA失败检测方法（如<strong>SAFE</strong>）依赖校准数据与部署数据同分布的假设，当部署时遭遇视觉、语言、多模态分布偏移时，校准的时间-varying风险阈值会失配，导致失败检测可靠性不足</li><li>本文提出<strong>SAFECAST</strong>框架，通过引入对比集增强的探针训练和功能保形校准，对齐校准分布与部署分布的风险轨迹，提升VLA策略在分布偏移下的失败检测鲁棒性</li><li>实验在真实世界<strong>DROID</strong>平台和<strong>LIBERO</strong>仿真环境、跨多个VLA backbone验证了方法的有效性，证明了其在不同部署偏移场景下的泛化能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>SAFECAST</strong>对比集增强框架，通过在探针训练和功能保形校准阶段加入可控扰动的对比集轨迹，解决部署时分布偏移导致的VLA隐藏态失败检测校准失配问题</li><li>证明联合视觉-语言对比集相比单模态对比集更能提升失败检测在多分布偏移下的鲁棒性，验证了覆盖联合扰动空间的必要性</li><li>提出仿真训练探针+真实世界对比集校准的迁移范式，在降低真实数据收集成本的同时，性能优于仅在真实世界数据上训练校准的方案</li><li>在真实世界<strong>DROID</strong>和<strong>LIBERO</strong>仿真场景，跨<strong>π₀</strong>、<strong>OpenVLA</strong>等多个VLA backbone上验证方法的有效性，失败检测性能显著优于<strong>SAFE</strong>基线且具有统计显著性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础框架基于<strong>SAFE</strong>的隐藏态探针机制，提取冻结VLA策略的预最终层隐藏状态，通过轻量级MLP探针输出 timestep 级的失败风险分数</li><li>构建三类对比集轨迹：视觉对比集（扰动视觉观测、固定语言指令）、语言对比集（对指令进行释义改写、固定视觉输入）、联合视觉-语言对比集（同时扰动视觉和语言输入），所有对比集均通过重新执行冻结VLA策略生成真实交互轨迹</li><li>采用基于动态时间规整（DTW）的主动拒绝策略过滤相似轨迹，降低训练集中的冗余样本</li><li>核心创新是通过对比集增强训练和校准的分布，使功能保形预测校准得到的时间-varying风险阈值更贴合部署场景的分布，在不破坏保形预测统计保证的前提下提升失败检测的可靠性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO-Spatial</strong>、<strong>LIBERO-Plus</strong></li><li>真实世界数据集：<strong>DROID</strong>（Franka硬件平台采集）</li><li>使用的VLA模型 backbone：<strong>π₀</strong>、<strong>π₀-FAST</strong>、<strong>OpenVLA</strong></li><li>模型参数量与训练硬件资源：原文未明确说明</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境为<strong>LIBERO-Spatial/LIBERO-Plus</strong>，真实世界评估平台为Franka/<strong>DROID</strong>硬件 setup，覆盖 clutter、光照变化、新物体、改写指令等多种部署偏移</li><li>对比基准：现有最先进的VLA隐藏态失败检测方法<strong>SAFE</strong></li><li>评估指标：<strong>F1-score</strong>、<strong>ROC-AUC</strong>，通过保形显著性水平α∈{0.1,0.2,…,0.9}的边际化结果评估不同风险容忍度下的性能鲁棒性</li><li>关键实验结果：</li></ul>
+<p> - <strong>SAFECAST</strong>相比<strong>SAFE</strong>基线，在仿真和真实世界场景下的失败检测ROC-AUC均有统计显著提升，验证了方法在分布偏移下的有效性</p>
+<p> - 联合视觉-语言对比集的效果优于单模态对比集，如OpenVLA上峰值F1从视觉-only的0.922提升至0.959</p>
+<p> - 仿真训练探针+真实世界对比集校准的方案，性能优于仅在真实世界数据上训练校准的探针，可大幅降低真实数据收集成本</p>
+<p> - 方法在<strong>π₀</strong>、<strong>OpenVLA</strong>等多个VLA backbone上均表现有效，验证了良好的泛化能力</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.04396/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">CofactVLA: Deconfounding Vision-Language-Action Models via Counterfactual Intervention</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.04196/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">SiMDex: Mining Similar Egocentric Videos for Cross-Embodiment Dexterous Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
