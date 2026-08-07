@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有视觉-语言-动作（VLA）模型普遍依赖行为克隆训练、无法有效理解多样化语言指令，且引入的自由形式思维链（CoT）会损害低层控制性能的问题，提出VLA-Talker框架，核心目标是为VLA注入语言理解能力的同时保持控制精度 论文通过理论分析与实验证明生成式CoT的三大缺陷：自生成推理无新增感知信息、语言token与动作token的优化目标冲突、长文本自回归推理破坏闭环控制时序，明确VLA的核心需求是“消费gr…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.05738">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.05738.webp" alt="In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有视觉-语言-动作（VLA）模型普遍依赖行为克隆训练、无法有效理解多样化语言指令，且引入的自由形式思维链（CoT）会损害低层控制性能的问…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use</h1>
+            <div class="detail-meta">2026-08-06 · <a href="http://arxiv.org/abs/2608.05738" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.05738" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.05738</span></div>
+            <p class="detail-summary">针对现有视觉-语言-动作（VLA）模型普遍依赖行为克隆训练、无法有效理解多样化语言指令，且引入的自由形式思维链（CoT）会损害低层控制性能的问题，提出VLA-Talker框架，核心目标是为VLA注入语言理解能力的同时保持控制精度 论文通过理论分析与实验证明生成式CoT的三大缺陷：自生成推理无新增感知信息、语言token与动作token的优化目标冲突、长文本自回归推理破坏闭环控制时序，明确VLA的核心需求是“消费gr…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">提供的HTML原文中未完整呈现作者所属机构的对应说明，可见作者为Jiarui Yang、Wen Hua…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.05738/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有视觉-语言-动作（VLA）模型普遍依赖行为克隆训练、无法有效理解多样化语言指令，且引入的自由形式思维链（CoT）会损害低层控制性能的问…</p>
+  <ul class="reading-intro-points"><li>针对现有视觉-语言-动作（VLA）模型普遍依赖行为克隆训练、无法有效理解多样化语言指令，且引入的自由形式思维链（CoT）会损害低层控制性能的问…</li><li>论文通过理论分析与实验证明生成式CoT的三大缺陷：自生成推理无新增感知信息、语言token与动作token的优化目标冲突、长文本自回归推理破坏…</li><li>通过在仿真和真实机器人任务上的验证，证明VLA-Talker在任务成功率和推理效率上均优于现有CoT-based VLA方法</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>提供的HTML原文中未完整呈现作者所属机构的对应说明，可见作者为Jiarui Yang、Wen Huang、Jiale Zhang、Maowei Hu、Hang Guo</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有视觉-语言-动作（VLA）模型普遍依赖行为克隆训练、无法有效理解多样化语言指令，且引入的自由形式思维链（CoT）会损害低层控制性能的问题，提出<strong>VLA-Talker</strong>框架，核心目标是为VLA注入语言理解能力的同时保持控制精度</li><li>论文通过理论分析与实验证明生成式CoT的三大缺陷：自生成推理无新增感知信息、语言token与动作token的优化目标冲突、长文本自回归推理破坏闭环控制时序，明确VLA的核心需求是“消费grounded语言”而非“生成语言”</li><li>通过在仿真和真实机器人任务上的验证，证明VLA-Talker在任务成功率和推理效率上均优于现有CoT-based VLA方法</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>揭示自由形式生成式CoT损害VLA低层控制的三重原因，明确VLA的核心需求是消费grounded语言而非生成语言，为后续方法设计提供方向</li><li>提出<strong>VLA-Talker</strong>框架，包含智能体工具调用接口与上下文后训练两个核心模块：工具调用主动获取结构化空间证据，后训练仅对动作token监督，从根源规避CoT的目标冲突与延迟问题</li><li>设计数据引擎将结构化空间证据渲染为多样化、复述式的自然语言描述，解决VLA对指令表述泛化性差的问题，让模型学习理解未在训练中逐字出现的语言表达</li><li>引入轨迹级GRPO强化学习，以稀疏任务成功奖励对齐工具调用行为与任务结果，弥合per-token模仿学习与轨迹级目标的差距</li><li>在<strong>RoboCasa-GR1</strong>、<strong>SimplerEnv</strong>、<strong>LIBERO</strong>三个仿真基准及8个真实机器人操作任务上验证，相比CoT基线和现有SOTA方法，在性能和效率上均取得最优结果</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>保留原有VLA主干和动作头不变，新增智能体工具调用循环与上下文后训练两个核心组件</li><li>工具调用模块在关键帧触发，调用<strong>GroundingDino</strong>（开放词汇检测）、<strong>DepthAnything</strong>（单目深度估计）获取抓取器与目标物体的坐标、深度信息，检测失败时回退到<strong>Qwen2.5-VL-7B</strong>获取定性空间描述，输出结构化证据元组</li><li>上下文后训练将渲染后的空间描述（包裹在<code><spatial></code>标签中）作为只读上下文注入，仅对动作token计算损失，掩码掉指令与空间描述的所有token，使模型仅学习基于证据执行动作</li><li>采用关键帧门控机制，仅在初始帧、抓取器状态变化帧、周期性检查帧注入证据，其余帧留空，降低推理开销</li><li>轨迹级RL阶段采用GRPO算法，以稀疏任务成功奖励+工具调用格式正则化奖励，通过组相对优势估计降低稀疏奖励下的方差，进一步优化策略的工具调用时机与动作精度</li><li>核心创新：解耦证据获取与证据使用，从根源规避生成式CoT的问题；多样化空间描述渲染强制模型学习语言与grounded意图的映射，而非表面字符串匹配</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>RoboCasa-GR1</strong>（GR1人形机器人厨房操作基准，24个长程任务）、<strong>SimplerEnv</strong>（WidowX机械臂操作基准，4个未见桌面配置任务）、<strong>LIBERO</strong>（包含Spatial、Object、Goal、Long四个语言条件任务套件）</li><li>真实任务平台：<strong>AgiBot G1</strong>人形机器人，覆盖8个桌面操作任务</li><li>模型与工具：基于公开<strong>OpenVLA-OFT</strong>权重初始化，工具模块采用<strong>GroundingDino</strong>、<strong>DepthAnything</strong>、<strong>Qwen2.5-VL-7B</strong></li><li>训练配置：上下文后训练阶段batch size为64，学习率1×10⁻⁵；RL阶段batch size为128，学习率2×10⁻⁶，采用AdamW优化器；具体GPU/TPU等计算资源在论文附录K中详细说明</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：三个仿真基准（RoboCasa-GR1、SimplerEnv、LIBERO）+ AgiBot G1真实机器人平台</li><li>主要评估指标：任务成功率（Success Rate, SR，%）</li><li>关键实验结果：</li></ul>
+<p> - <strong>LIBERO</strong>基准平均成功率97.4%，超过所有对比VLA系统（如π0.5的96.9%、VLA-Thinker的97.0%），相比匹配证据的生成式CoT基线<strong>Gen-CoT</strong>提升1.2个百分点</p>
+<p> - <strong>RoboCasa-GR1</strong>基准平均成功率59.5%，超过Gen-CoT基线的46.5%，在4个代表性拾取放置任务上均优于现有方法</p>
+<p> - <strong>SimplerEnv</strong>基准平均成功率72.4%，远超Gen-CoT基线的43.8%，在未见桌面配置上泛化性优势显著</p>
+<p> - 推理效率方面，相比生成式CoT的4.6倍单决策延迟，VLA-Talker保持与普通证据注入相当的1.0倍延迟，同时精度更高</p>
+<p> - 消融实验验证：两阶段训练（上下文后训练+GRPO）效果最佳；仅对动作token监督的方案比同时监督证据文本的方案成功率提升7.7个百分点，证明该设计的关键作用</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.05970/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">SkillMemo: Expert-guided Skill Memory Framework for Compositional Embodied Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.05369/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

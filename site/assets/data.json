@@ -1,5 +1,201 @@
 [
   {
+    "date": "2026-08-06",
+    "title": "$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation",
+    "link": "http://arxiv.org/abs/2608.06375",
+    "arxiv_id": "2608.06375",
+    "detail_path": "papers/2608.06375/",
+    "cover_path": "covers/2608.06375/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.06375.webp",
+    "preview_text": "针对人形机器人家庭场景中并发运动-操作（loco-manipulation）需求，现有方法多将运动、平衡、操作解耦，且现有世界动作模型多为臂中心或视频中心，无法直接支持全身协调控制，论文提出ω-0潜在预测全身世界动作模型，实现无需模块解耦的并发运动-操作 针对真实人形机器人演示数据稀缺、人类/公开视频数据无法直接用于机器人策略训练的痛点，论文设计分阶段训练流程，通过SONIC仿真回放桥接人类数据与机器人动作空间，同…",
+    "research_unit": "MARS Lab, 南洋理工大学（NTU）",
+    "hook_text": "针对人形机器人家庭场景中并发运动-操作（loco-manipulation）需求，现有方法多将运动、平衡、操作解耦，且现有世界动作模型多为臂中…",
+    "key_points": [
+      "针对人形机器人家庭场景中并发运动-操作（loco-manipulation）需求，现有方法多将运动、平衡、操作解耦，且现有世界动作模型多为臂中…",
+      "针对真实人形机器人演示数据稀缺、人类/公开视频数据无法直接用于机器人策略训练的痛点，论文设计分阶段训练流程，通过SONIC仿真回放桥接人类数据…",
+      "研究目标为验证单个统一模型即可在多样真实家庭任务上实现平滑的全身协调控制，覆盖短时序和长时序的loco-manipulation场景"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-06",
+    "title": "DyPES-VLA: Learning Shared Dynamics Priors and Embodiment-Specific Control for Cross-Embodiment Manipulation",
+    "link": "http://arxiv.org/abs/2608.06374",
+    "arxiv_id": "2608.06374",
+    "detail_path": "papers/2608.06374/",
+    "cover_path": "covers/2608.06374/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.06374.webp",
+    "preview_text": "现有跨具身视觉-语言-动作（VLA）模型存在两大核心局限：一是仅依赖动作标签学习动力学先验，未充分利用大量无动作的人机交互视频中的共享运动、接触、场景变化规律；二是需要大量人工预处理将异构具身的动作映射到统一空间，混淆了跨具身的交互规律与具身特定的控制语义。 论文提出DyPES-VLA，一种跨具身VLA模型，旨在学习共享动力学先验与具身特定控制，无需统一动作空间即可实现单检查点适配多种异构机器人具身。 研究目标是解…",
+    "research_unit": "香港科技大学（广州），中国广州",
+    "hook_text": "现有跨具身视觉-语言-动作（VLA）模型存在两大核心局限：一是仅依赖动作标签学习动力学先验，未充分利用大量无动作的人机交互视频中的共享运动、接…",
+    "key_points": [
+      "现有跨具身视觉-语言-动作（VLA）模型存在两大核心局限：一是仅依赖动作标签学习动力学先验，未充分利用大量无动作的人机交互视频中的共享运动、接…",
+      "论文提出DyPES-VLA，一种跨具身VLA模型，旨在学习共享动力学先验与具身特定控制，无需统一动作空间即可实现单检查点适配多种异构机器人具身。",
+      "研究目标是解决跨具身通用操控策略中“共享知识”与“具身特定知识”的分离学习问题，在仿真和真实场景都实现高性能的跨具身操控。"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Beyond Flat Policies: Hierarchical Post-Training for Embodied Agents in Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2608.05999",
+    "arxiv_id": "2608.05999",
+    "detail_path": "papers/2608.05999/",
+    "cover_path": "covers/2608.05999/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.05999.webp",
+    "preview_text": "针对现有视觉-语言-动作（VLA）模型的后训练方法普遍采用扁平策略，无法显式建模任务阶段进展、难以处理长时序机器人操作任务的问题，提出分层后训练框架HiRoC，通过解耦高层任务规划与低层动作执行，提升长 horizon 操作的鲁棒性。 解决现有分层操作方法主要依赖离线监督学习、无法通过在线交互提升执行性能，以及规划器与执行器存在分布偏移导致执行冷启动的问题。 研究目标是为VLA模型构建兼具任务分解能力与在线学习能力…",
+    "research_unit": "作者所属机构标注为1、2、3（原文未明确列出具体机构名称）",
+    "hook_text": "针对现有视觉-语言-动作（VLA）模型的后训练方法普遍采用扁平策略，无法显式建模任务阶段进展、难以处理长时序机器人操作任务的问题，提出分层后训…",
+    "key_points": [
+      "针对现有视觉-语言-动作（VLA）模型的后训练方法普遍采用扁平策略，无法显式建模任务阶段进展、难以处理长时序机器人操作任务的问题，提出分层后训…",
+      "解决现有分层操作方法主要依赖离线监督学习、无法通过在线交互提升执行性能，以及规划器与执行器存在分布偏移导致执行冷启动的问题。",
+      "研究目标是为VLA模型构建兼具任务分解能力与在线学习能力的分层控制框架，实现复杂长时序机器人操作任务的高成功率完成。"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-06",
+    "title": "SkillMemo: Expert-guided Skill Memory Framework for Compositional Embodied Manipulation",
+    "link": "http://arxiv.org/abs/2608.05970",
+    "arxiv_id": "2608.05970",
+    "detail_path": "papers/2608.05970/",
+    "cover_path": "covers/2608.05970/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.05970.webp",
+    "preview_text": "针对现有具身视觉运动模型（如Diffusion Policy、VLA模型）因大规模具身轨迹数据集稀缺，在分布外（OOD）场景下组合泛化能力不足、难以捕捉可复用技能结构的问题，提出SkillMemo技能记忆框架 框架核心目标是隐式分解长期专家演示为原子技能，结合技能级情景记忆机制，提升模型对未见任务配置的组合泛化能力 解决现有记忆增强方法缺乏细粒度技能级特征记忆、无法高效复用历史行为经验的核心痛点",
+    "research_unit": "清华大学深圳国际研究生院",
+    "hook_text": "针对现有具身视觉运动模型（如Diffusion Policy、VLA模型）因大规模具身轨迹数据集稀缺，在分布外（OOD）场景下组合泛化能力不足…",
+    "key_points": [
+      "针对现有具身视觉运动模型（如Diffusion Policy、VLA模型）因大规模具身轨迹数据集稀缺，在分布外（OOD）场景下组合泛化能力不足…",
+      "框架核心目标是隐式分解长期专家演示为原子技能，结合技能级情景记忆机制，提升模型对未见任务配置的组合泛化能力",
+      "解决现有记忆增强方法缺乏细粒度技能级特征记忆、无法高效复用历史行为经验的核心痛点"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-06",
+    "title": "In-Context VLA: Endowing Vision-Language-Action Models with Language via In-Context Post-Training and Agentic Tool Use",
+    "link": "http://arxiv.org/abs/2608.05738",
+    "arxiv_id": "2608.05738",
+    "detail_path": "papers/2608.05738/",
+    "cover_path": "covers/2608.05738/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.05738.webp",
+    "preview_text": "针对现有视觉-语言-动作（VLA）模型普遍依赖行为克隆训练、无法有效理解多样化语言指令，且引入的自由形式思维链（CoT）会损害低层控制性能的问题，提出VLA-Talker框架，核心目标是为VLA注入语言理解能力的同时保持控制精度 论文通过理论分析与实验证明生成式CoT的三大缺陷：自生成推理无新增感知信息、语言token与动作token的优化目标冲突、长文本自回归推理破坏闭环控制时序，明确VLA的核心需求是“消费gr…",
+    "research_unit": "提供的HTML原文中未完整呈现作者所属机构的对应说明，可见作者为Jiarui Yang、Wen Hua…",
+    "hook_text": "针对现有视觉-语言-动作（VLA）模型普遍依赖行为克隆训练、无法有效理解多样化语言指令，且引入的自由形式思维链（CoT）会损害低层控制性能的问…",
+    "key_points": [
+      "针对现有视觉-语言-动作（VLA）模型普遍依赖行为克隆训练、无法有效理解多样化语言指令，且引入的自由形式思维链（CoT）会损害低层控制性能的问…",
+      "论文通过理论分析与实验证明生成式CoT的三大缺陷：自生成推理无新增感知信息、语言token与动作token的优化目标冲突、长文本自回归推理破坏…",
+      "通过在仿真和真实机器人任务上的验证，证明VLA-Talker在任务成功率和推理效率上均优于现有CoT-based VLA方法"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-05",
+    "title": "World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation",
+    "link": "http://arxiv.org/abs/2608.05369",
+    "arxiv_id": "2608.05369",
+    "detail_path": "papers/2608.05369/",
+    "cover_path": "covers/2608.05369/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.05369.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）模型通常将主视角与手腕视角观测作为并行视觉输入，未明确区分二者在机器人操作中的不同作用，忽略了手腕观测对精细操作中局部交互动态建模的价值，难以处理需要全局任务上下文与局部交互动态协调的接触敏感型精细任务。 本文提出 W²-VLA（World-to-Wrist VLA），一种基于任务条件化未来腕部建模的精细操作VLA模型，通过构建从全局任务上下文到未来腕部局部动态的建模路径，提升精细操作…",
+    "research_unit": "香港科技大学 (The Hong Kong University of Science and Tec…",
+    "hook_text": "现有视觉-语言-动作（VLA）模型通常将主视角与手腕视角观测作为并行视觉输入，未明确区分二者在机器人操作中的不同作用，忽略了手腕观测对精细操作…",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）模型通常将主视角与手腕视角观测作为并行视觉输入，未明确区分二者在机器人操作中的不同作用，忽略了手腕观测对精细操作…",
+      "本文提出 W²-VLA（World-to-Wrist VLA），一种基于任务条件化未来腕部建模的精细操作VLA模型，通过构建从全局任务上下文到…",
+      "论文同时提出 W²-CoT 结构化注释合成管线，生成包含操作进度、物理转换线索、腕部局部证据三类结构化注释，为模型提供辅助监督信号，解决腕部未…"
+    ],
+    "reading_minutes": 10,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-07-30",
+    "title": "The Geometry of Flow-Matching Uncertainty: A Cost-free Uncertainty Proxy and Its Application in Flow-based VLA Failure Detection",
+    "link": "http://arxiv.org/abs/2607.27933",
+    "arxiv_id": "2607.27933",
+    "detail_path": "papers/2607.27933/",
+    "cover_path": "covers/2607.27933/",
+    "paper_image_path": "assets/paper-images/thumbs/2607.27933.webp",
+    "preview_text": "针对流匹配（Flow Matching, FM）模型作为具身智能（embodied AI）动作头时缺乏显式不确定性估计的问题，提出从速度场几何偏离的角度定义 FM 不确定性 理论证明高确定性 FM 的速度场应为理想仿射各向同性收缩场（affine-isotropic contraction field），不确定性表现为该模板的偏离 提出 denoising acceleration (accel) 作为零成本不确定…",
+    "research_unit": "上海交通大学 (Shanghai Jiao Tong University)",
+    "hook_text": "针对流匹配（Flow Matching, FM）模型作为具身智能（embodied AI）动作头时缺乏显式不确定性估计的问题，提出从速度场几何…",
+    "key_points": [
+      "针对流匹配（Flow Matching, FM）模型作为具身智能（embodied AI）动作头时缺乏显式不确定性估计的问题，提出从速度场几何…",
+      "理论证明高确定性 FM 的速度场应为理想仿射各向同性收缩场（affine-isotropic contraction field），不确定性表…",
+      "提出 denoising acceleration (accel) 作为零成本不确定性代理，并将其应用于基于流匹配的视觉-语言-动作模型（VL…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-05",
     "title": "BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation",
     "link": "http://arxiv.org/abs/2608.05042",

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对人形机器人家庭场景中并发运动-操作（loco-manipulation）需求，现有方法多将运动、平衡、操作解耦，且现有世界动作模型多为臂中心或视频中心，无法直接支持全身协调控制，论文提出ω-0潜在预测全身世界动作模型，实现无需模块解耦的并发运动-操作 针对真实人形机器人演示数据稀缺、人类/公开视频数据无法直接用于机器人策略训练的痛点，论文设计分阶段训练流程，通过SONIC仿真回放桥接人类数据与机器人动作空间，同…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.06375">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.06375.webp" alt="$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对人形机器人家庭场景中并发运动-操作（loco-manipulation）需求，现有方法多将运动、平衡、操作解耦，且现有世界动作模型多为臂中…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation</h1>
+            <div class="detail-meta">2026-08-06 · <a href="http://arxiv.org/abs/2608.06375" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.06375" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.06375</span></div>
+            <p class="detail-summary">针对人形机器人家庭场景中并发运动-操作（loco-manipulation）需求，现有方法多将运动、平衡、操作解耦，且现有世界动作模型多为臂中心或视频中心，无法直接支持全身协调控制，论文提出ω-0潜在预测全身世界动作模型，实现无需模块解耦的并发运动-操作 针对真实人形机器人演示数据稀缺、人类/公开视频数据无法直接用于机器人策略训练的痛点，论文设计分阶段训练流程，通过SONIC仿真回放桥接人类数据与机器人动作空间，同…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">MARS Lab, 南洋理工大学（NTU）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.06375/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对人形机器人家庭场景中并发运动-操作（loco-manipulation）需求，现有方法多将运动、平衡、操作解耦，且现有世界动作模型多为臂中…</p>
+  <ul class="reading-intro-points"><li>针对人形机器人家庭场景中并发运动-操作（loco-manipulation）需求，现有方法多将运动、平衡、操作解耦，且现有世界动作模型多为臂中…</li><li>针对真实人形机器人演示数据稀缺、人类/公开视频数据无法直接用于机器人策略训练的痛点，论文设计分阶段训练流程，通过SONIC仿真回放桥接人类数据…</li><li>研究目标为验证单个统一模型即可在多样真实家庭任务上实现平滑的全身协调控制，覆盖短时序和长时序的loco-manipulation场景</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>MARS Lab, 南洋理工大学（NTU）</li><li>北京大学（PKU）</li><li>北京智源人工智能研究院（BAAI）</li><li>香港科技大学（广州）（HKUST(GZ)）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对人形机器人家庭场景中<strong>并发运动-操作（loco-manipulation）</strong>需求，现有方法多将运动、平衡、操作解耦，且现有世界动作模型多为臂中心或视频中心，无法直接支持全身协调控制，论文提出<strong>ω-0</strong>潜在预测全身世界动作模型，实现无需模块解耦的并发运动-操作</li><li>针对真实人形机器人演示数据稀缺、人类/公开视频数据无法直接用于机器人策略训练的痛点，论文设计分阶段训练流程，通过SONIC仿真回放桥接人类数据与机器人动作空间，同时收集大规模真实家庭人形机器人数据集<strong>ω-HOME</strong></li><li>研究目标为验证单个统一模型即可在多样真实家庭任务上实现平滑的全身协调控制，覆盖短时序和长时序的loco-manipulation场景</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>ω-0</strong>潜在预测全身世界动作模型，将轻量级未来视觉嵌入预测作为辅助监督信号，与基于扩散的全身动作生成耦合，实现人形机器人并发loco-manipulation的端到端控制</li><li>开发分阶段训练 pipeline：通过FAST分词器将连续全身动作离散化为token实现VLM预训练，通过SONIC仿真回放将人类/公开视觉运动先验转化为机器人可执行的动作潜在，解决人类数据到人形策略的迁移问题</li><li>收集<strong>ω-HOME</strong>数据集，包含40.3小时、4827集、24种真实家庭任务的同步多模态演示数据，为全身loco-manipulation研究提供标准数据支持</li><li>验证单个统一ω-0模型可在11种真实家庭loco-manipulation任务上实现SOTA性能，无需任务特定策略，且具备跨物体、跨场景和人类数据迁移的泛化能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用三阶段训练流程：第一阶段训练<strong>全身动作VLM</strong>，使用FAST分词器将连续全身动作轨迹离散为动作token，微调Qwen3-VL-2B-Instruct实现语言、视觉输入到动作token的自回归预测；第二阶段训练<strong>联合视频-动作潜在预测器</strong>，冻结V-JEPA视觉编码器和Wan编码器，以未来视觉潜在预测为轻量级辅助监督，同时训练Action DiT生成控制器兼容的全身动作潜在，通过SONIC回放将公开人类运动数据转化为机器人可执行的动作-状态对；第三阶段在真实世界数据上微调，引入<strong>训练时实时分块（RTC）</strong>机制保证相邻动作块的时序连续性</li><li>核心创新点：1. 放弃视频生成作为中间表示，将未来视觉预测作为潜在空间轻量级辅助信号，避免视频生成不稳定性对动作控制的负面影响；2. 设计token特定旋转位置编码，分别用2D RoPE处理视觉前缀token、3D RoPE处理视频查询token、1D RoPE处理动作查询token，适配多模态输入的结构差异；3. 支持第一人称RGB、第三人称RGB、第三人称深度三种视觉输入，通过可学习视角token区分不同摄像头视角；4. 通过SONIC仿真回放桥接人类运动数据与机器人动作空间，解决真实人形机器人演示数据稀缺的瓶颈</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>训练用公开数据集：<strong>ARCTIC</strong>（含第一/第三人称视频，用于视角条件动作学习）、<strong>Xperience-10M</strong>（大规模第一人称多模态数据，筛选后用于预训练）、<strong>Motion-X</strong>（第三人称人类运动视频，用于提升第三人称动作理解）</li><li>自有数据集：<strong>ω-HOME</strong>，共40.3小时演示、4827集、24种任务，30Hz采样，包含同步的第一人称RGB、第三人称RGB-D、机器人本体感知状态、全身SMPL运动、控制器兼容动作潜在6种模态</li><li>模型规模：视觉语言backbone为<strong>Qwen3-VL-2B-Instruct</strong>，视觉编码器为冻结的<strong>V-JEPA 2.1</strong>，语言编码器为预训练<strong>T5</strong>，动作生成模块为扩散Transformer（Action DiT）</li><li>训练资源：全流程训练使用<strong>8块NVIDIA H100 GPU</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：真实世界人形机器人平台，采用<strong>SONIC</strong>作为低层全身控制器，评估11种家庭loco-manipulation任务，涵盖桌面操作、清洁、洗衣、物体转移、家电交互、移动操作等需全身协调的场景</li><li>评估指标：1. 成功率（SR）：10次独立试验中完全完成任务的占比；2. 子任务得分：每个任务拆分为多个子任务，完成1个子任务得1分，全任务 suite 满分41分；3. 任务进度：首次不可恢复失败前完成的子任务占比，满分100%</li><li>关键实验结果：<strong>ω-0_Omni</strong>（全模态输入版本）在11个任务上的平均成功率达<strong>81.8%</strong>，子任务得分<strong>36.7/41</strong>，任务进度<strong>90.3%</strong>，显著优于所有基线；对比基线中表现最好的<strong>DiT4DiT</strong>成功率为43.6%，<strong>ψ-0</strong>为44.5%，传统模仿学习基线<strong>ACT</strong>成功率仅8.2%；消融实验验证了未来视觉预测、全身VLM前缀、RTC机制等设计的有效性；模型在跨物体、跨场景、人类数据迁移的held-out任务设置下也表现出良好的泛化能力</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2608.06374/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">DyPES-VLA: Learning Shared Dynamics Priors and Embodiment-Specific Control for Cross-Embodiment Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Geometry of Flow-Matching Uncertainty: A Cost-free Uncertainty Proxy and Its Application in Flow-based VLA Failure Detection - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对流匹配（Flow Matching, FM）模型作为具身智能（embodied AI）动作头时缺乏显式不确定性估计的问题，提出从速度场几何偏离的角度定义 FM 不确定性 理论证明高确定性 FM 的速度场应为理想仿射各向同性收缩场（affine-isotropic contraction field），不确定性表现为该模板的偏离 提出 denoising acceleration (accel) 作为零成本不确定…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2607.27933">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2607.27933.webp" alt="The Geometry of Flow-Matching Uncertainty: A Cost-free Uncertainty Proxy and Its Application in Flow-based VLA Failure Detection" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对流匹配（Flow Matching, FM）模型作为具身智能（embodied AI）动作头时缺乏显式不确定性估计的问题，提出从速度场几何…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">The Geometry of Flow-Matching Uncertainty: A Cost-free Uncertainty Proxy and Its Application in Flow-based VLA Failure Detection</h1>
+            <div class="detail-meta">2026-07-30 · <a href="http://arxiv.org/abs/2607.27933" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2607.27933" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2607.27933</span></div>
+            <p class="detail-summary">针对流匹配（Flow Matching, FM）模型作为具身智能（embodied AI）动作头时缺乏显式不确定性估计的问题，提出从速度场几何偏离的角度定义 FM 不确定性 理论证明高确定性 FM 的速度场应为理想仿射各向同性收缩场（affine-isotropic contraction field），不确定性表现为该模板的偏离 提出 denoising acceleration (accel) 作为零成本不确定…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">上海交通大学 (Shanghai Jiao Tong University)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2607.27933/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对流匹配（Flow Matching, FM）模型作为具身智能（embodied AI）动作头时缺乏显式不确定性估计的问题，提出从速度场几何…</p>
+  <ul class="reading-intro-points"><li>针对流匹配（Flow Matching, FM）模型作为具身智能（embodied AI）动作头时缺乏显式不确定性估计的问题，提出从速度场几何…</li><li>理论证明高确定性 FM 的速度场应为理想仿射各向同性收缩场（affine-isotropic contraction field），不确定性表…</li><li>提出 denoising acceleration (accel) 作为零成本不确定性代理，并将其应用于基于流匹配的视觉-语言-动作模型（VL…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>上海交通大学</strong> (Shanghai Jiao Tong University)</li><li><strong>上海人工智能实验室</strong> (Shanghai AI Laboratory)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对流匹配（Flow Matching, FM）模型作为具身智能（embodied AI）动作头时缺乏显式不确定性估计的问题，提出从速度场几何偏离的角度定义 FM 不确定性</li><li>理论证明高确定性 FM 的速度场应为理想仿射各向同性收缩场（affine-isotropic contraction field），不确定性表现为该模板的偏离</li><li>提出 <strong>denoising acceleration (accel)</strong> 作为零成本不确定性代理，并将其应用于基于流匹配的视觉-语言-动作模型（VLA）的在线故障检测</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>几何定义 FM 不确定性</strong>：将高确定性 FM 建模为径向仿射各向同性场，将不确定性量化为其与理想模板的偏离程度</li><li><strong>提出无成本代理 accel</strong>：从单次去噪轨迹前缀计算归一化速度变化（加速度），无需额外训练、模型集成或重采样</li><li><strong>理论 faithful 证明</strong>：证明 accel 满足零基线（零不确定性时 accel=0）和局部单调性（不确定性越大期望 accel 越高）两个关键性质</li><li><strong>零成本故障检测</strong>：基于 accel 构建实时故障检测器，在真实部署预算下达到与重采样或训练基线相当甚至更优的性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>几何理论分析</strong>：通过条件流匹配（CFM）速度场公式推导，证明当后验协方差 Σ→0 时，速度场 Jacobian 为 J = -I/(1-s)，去噪轨迹为直线且加速度为零；偏离该模板的程度正比于后验不确定性</li><li><strong>Denoising Acceleration 定义</strong>：accel_τ = ∫_0^τ \|\|v'(s)\|\|ds / ∫_0^τ \|\|v(s)\|\|ds，离散版本为 accel_p = p·Σ\|\|v_t - v_{t-1}\|\|/ Σ\|\|v_t\|\|，仅需记录去噪过程中的速度变化</li><li><strong> faithfulness 证明</strong>：通过 Tweedie 公式建立速度场 Jacobian 与后验协方差的显式关系，证明在小扩散近似下 E[accel] ≈ κσ²，满足局部单调性</li><li><strong>故障检测机制</strong>：将 accel 作为故障分数，结合 CUSUM 或阈值 η 监控，实现闭环在线预警</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：</li></ul>
+<p> - <strong>D3IL</strong>：机器人避障任务基准</p>
+<p> - <strong>LIBERO</strong>：桌面操作技能套件（含 LIBERO-all）</p>
+<p> - <strong>RoboCasa</strong>：大规模家庭厨房模拟环境（Atomic-Seen 分割）</p>
+<ul><li><strong>模型</strong>：</li></ul>
+<p> - <strong>π0.5</strong>：基于 MoE 架构的 VLA 模型</p>
+<p> - <strong>GR00T N1.7</strong>：双系统级联架构通用人形机器人模型</p>
+<p> - <strong>VLA-JEPA</strong>：结合 V-JEPA2 潜在世界模型的 VLA</p>
+<p> - <strong>SmolVLA</strong>：0.24B 参数的轻量级 VLA</p>
+<p> - <strong>Toy model</strong>：2D 可控条件流匹配网络（用于几何可视化）</p>
+<ul><li><strong>训练资源</strong>：使用上述公开模型在各基准上进行微调（fine-tuning），未明确指定特定 GPU/TPU 型号</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：在 D3IL、LIBERO、RoboCasa 三个基准上对四种 FM-VLA 模型进行 closed-loop（闭环）评估</li><li><strong>主要指标</strong>：</li></ul>
+<p> - <strong>Spearman 秩相关系数 ρ</strong>：衡量 accel 与蒙特卡洛重采样动作块发散度之间的相关性</p>
+<p> - <strong>TPR@FAR=0.1</strong>：在假阳性率 0.1 下的真阳性率</p>
+<p> - <strong>中位检测提前步数</strong>：故障预警与失败结束之间的 re-planning 步数</p>
+<ul><li><strong>关键实验结果</strong>：</li></ul>
+<p> - accel 与不确定性参考的 Spearman ρ 最高达 <strong>0.844</strong>（π0.5 on D3IL），最佳前缀 accel 的 ρ_best 普遍优于全路径 ρ_full（如 π0.5 on LIBERO：0.541 → 0.792）</p>
+<p> - 在线故障检测中，Accel 检测器在 LIBERO-all 和 RoboCasa 上分别达到 <strong>0.87</strong> 和 <strong>0.82</strong> 的 TPR（π0.5），平均提前 <strong>18-19</strong> 步发出预警</p>
+<p> - 在 GR00T-N1.7（训练不足模型）和 SmolVLA（轻量模型）上均保持较强检测能力（TPR 0.53-0.87），验证了方法的泛化性和零成本优势</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.05369/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">World-to-Wrist: Task-Conditioned Future Wrist Modeling for Fine-Grained Robot Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.05042/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
