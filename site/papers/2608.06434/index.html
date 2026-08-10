@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对具身智能对长时序推理与实时闭环控制的双重需求，以及现有Vision-Language-Action（VLA）模型推理延迟高、现有双系统VLA架构与慢系统中间表示紧密耦合、需端到端联合训练、模块化与可扩展性差的痛点，提出环境感知模型选择（EMS）自适应VLA推理框架 框架通过完全解耦的大规模 deliberative 慢系统（System 2）与轻量 reactive 快系统（System 1），配合轻量切换模块…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.06434">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.06434.webp" alt="Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对具身智能对长时序推理与实时闭环控制的双重需求，以及现有Vision-Language-Action（VLA）模型推理延迟高、现有双系统VL…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection</h1>
+            <div class="detail-meta">2026-08-06 · <a href="http://arxiv.org/abs/2608.06434" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.06434" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.06434</span></div>
+            <p class="detail-summary">针对具身智能对长时序推理与实时闭环控制的双重需求，以及现有Vision-Language-Action（VLA）模型推理延迟高、现有双系统VLA架构与慢系统中间表示紧密耦合、需端到端联合训练、模块化与可扩展性差的痛点，提出环境感知模型选择（EMS）自适应VLA推理框架 框架通过完全解耦的大规模 deliberative 慢系统（System 2）与轻量 reactive 快系统（System 1），配合轻量切换模块…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">提供的HTML原文未明确标注作者所属机构的具体名称，除Yuxin Ma外，其余作者均属于标注为1的机构…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.06434/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对具身智能对长时序推理与实时闭环控制的双重需求，以及现有Vision-Language-Action（VLA）模型推理延迟高、现有双系统VL…</p>
+  <ul class="reading-intro-points"><li>针对具身智能对长时序推理与实时闭环控制的双重需求，以及现有Vision-Language-Action（VLA）模型推理延迟高、现有双系统VL…</li><li>框架通过完全解耦的大规模 deliberative 慢系统（System 2）与轻量 reactive 快系统（System 1），配合轻量切…</li><li>论文在仿真与真实机器人场景验证框架有效性，旨在实现高精度、高速的具身控制</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>提供的HTML原文未明确标注作者所属机构的具体名称，除Yuxin Ma外，其余作者均属于标注为1的机构，Yuxin Ma属于标注为2的机构</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对具身智能对长时序推理与实时闭环控制的双重需求，以及现有Vision-Language-Action（VLA）模型推理延迟高、现有双系统VLA架构与慢系统中间表示紧密耦合、需端到端联合训练、模块化与可扩展性差的痛点，提出<strong>环境感知模型选择（EMS）</strong>自适应VLA推理框架</li><li>框架通过完全解耦的大规模 deliberative 慢系统（System 2）与轻量 reactive 快系统（System 1），配合轻量切换模块，在保证任务成功率的同时提升推理速度，平衡预训练知识利用与运行时效率</li><li>论文在仿真与真实机器人场景验证框架有效性，旨在实现高精度、高速的具身控制</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出完全解耦的双系统VLA推理架构，慢系统与快系统均支持独立端到端动作生成，仅在动作层面交互，支持即插即用的模型替换，无需昂贵的协同训练</li><li>提出环境感知的自适应切换策略，将系统选择建模为二动作马尔可夫决策过程（MDP），通过强化学习训练轻量切换模块，基于实时环境反馈按需调用对应系统</li><li>设计三阶段训练流水线与动作融合机制，保障双系统切换时的轨迹平滑性与执行稳定性</li><li>大量仿真与真实实验证明，框架可在保持与大规模VLA相当任务成功率的同时，实现高频率闭环控制，显著缩短任务完成时间</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>框架采用完全解耦的双系统设计：<strong>System 2（慢系统）</strong>为大规模预训练VLA模型（如PI0），负责全局轨迹规划，生成动作块，推理频率约10Hz，保证任务成功率；<strong>System 1（快系统）</strong>为轻量反应式策略（如BCVILT、ACT），支持端到端单步动作推理，频率约100Hz，保障实时闭环控制，两者共享相同的观测与语言指令输入，无特征级耦合，支持独立训练、部署和升级</li><li>引入轻量全连接切换模块，输入仅为机器人状态，在动作执行完成的决策边界选择调用系统，切换时刻通过平均两个系统的对应动作实现动作融合，避免轨迹不连续</li><li>采用三阶段训练流水线：Stage I对System 2在遥操作收集的任务特定轨迹上做模仿学习微调，保留预训练知识的同时适配目标任务；Stage II用System 2生成的成功轨迹蒸馏训练System 1，对齐两者的轨迹分布，减少切换偏差；Stage III分别采用在线DQN与离线IQL强化学习训练切换模块，优先调用快系统，仅在需要精细操作、阶段切换或纠错时稀疏调用慢系统，最大化效率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO基准</strong>（包含LIBERO-Object、LIBERO-Spatial、LIBERO-Goal、LIBERO-10四个任务套件，共40项单臂操作任务）、<strong>Realman RM75-6F机器人的MuJoCo仿真环境</strong>（包含单臂简单/困难任务、双臂任务）</li><li>真实场景数据集：双<strong>Realman RM75-6F</strong>机械臂平台的多阶段堆叠任务（Stack Bowls Two），初始位置在10cm半径内随机化</li><li>模型规模：System 2采用大规模预训练VLA模型<strong>PI0</strong>，System 1单臂场景采用<strong>BCVILT</strong>、双臂场景采用<strong>ACT</strong>，切换模块为轻量全连接网络，计算开销可忽略</li><li>训练资源：论文未明确标注具体GPU/TPU等训练硬件规格，仿真实验基于Franka Panda/Realman仿真模型，真实实验采用2台Realman RM75-6F机械臂</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境覆盖LIBERO基准与Realman双臂仿真场景，真实环境为双Realman RM75-6F硬件平台</li><li>评估指标：<strong>任务成功率（S.R.）</strong>、<strong>切换比率（ρ_sw，慢系统动作数与快系统动作数的比值）</strong>、有效动作频率（仅仿真统计）、<strong>任务完成时间</strong>（仅真实场景统计）</li><li>关键实验结果：</li></ul>
+<p> - LIBERO基准上，EMS平均成功率达<strong>92.40%</strong>，超过轻量基线BCVILT 5.45%，有效动作频率达<strong>93.37Hz</strong>，切换比率低至<strong>0.153</strong>，低于固定切换基线的0.33，成功率比固定切换基线高2.05%，在最具挑战的LIBERO-10套件上甚至超过 standalone 慢系统PI0</p>
+<p> - Realman仿真场景中，单臂简单任务成功率84%（超过System 2的83%），单臂困难任务成功率50%（接近System 2的56%），双臂仿真任务成功率94%（超过System 2的93%）</p>
+<p> - 真实双臂Stack Bowls Two任务中，EMS成功率达<strong>70%</strong>，高于System 1的60%，任务完成时间仅<strong>23秒</strong>，比System 2的29秒缩短21%，验证了框架在真实场景的实用性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.06688/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">CrossTracer: Cross-Embodiment Navigation via VLA Model Reasoning and Trace Residuals Adapting</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.06375/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,5 +1,199 @@
 [
   {
+    "date": "2026-08-07",
+    "title": "Depth-Wise Probing and Pruning of the Planning Token in a Driving Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2608.07361",
+    "arxiv_id": "2608.07361",
+    "detail_path": "papers/2608.07361/",
+    "cover_path": "covers/2608.07361/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.07361.webp",
+    "preview_text": "研究驾驶视觉-语言-行动（VLA）模型中，规划相关信息在解码器深度上的分布，以及深度冗余性 通过轨迹空间的原生头部透镜和线性探测，分析规划令牌（planning token）在不同层中的语义意图和规划器兼容性 基于分析结果，提出一种按层对规划令牌角度偏差进行排序的剪枝方法，以在保持开环误差的前提下减少解码器层数",
+    "research_unit": "Robert Bosch GmbH, Stuttgart, Germany",
+    "hook_text": "研究驾驶视觉-语言-行动（VLA）模型中，规划相关信息在解码器深度上的分布，以及深度冗余性",
+    "key_points": [
+      "研究驾驶视觉-语言-行动（VLA）模型中，规划相关信息在解码器深度上的分布，以及深度冗余性",
+      "通过轨迹空间的原生头部透镜和线性探测，分析规划令牌（planning token）在不同层中的语义意图和规划器兼容性",
+      "基于分析结果，提出一种按层对规划令牌角度偏差进行排序的剪枝方法，以在保持开环误差的前提下减少解码器层数"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "title": "TEMPO: Semantic-Action Decoupled RL Post-Training for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.07314",
+    "arxiv_id": "2608.07314",
+    "detail_path": "papers/2608.07314/",
+    "cover_path": "covers/2608.07314/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.07314.webp",
+    "preview_text": "提出 TEMPO，一种面向视觉-语言-动作（VLA）模型的语义-动作解耦强化学习（RL）后训练框架 解决现有 VLA 模型 RL 后训练中，统一更新策略忽略不同模块功能角色差异的问题 通过冻结预训练视觉-语言骨干网络，仅对语义投影层和动作专家进行解耦优化，实现语义稳定性与动作适应性的平衡",
+    "research_unit": "浙江工商大学 计算机科学与技术学院",
+    "hook_text": "提出 TEMPO，一种面向视觉-语言-动作（VLA）模型的语义-动作解耦强化学习（RL）后训练框架",
+    "key_points": [
+      "提出 TEMPO，一种面向视觉-语言-动作（VLA）模型的语义-动作解耦强化学习（RL）后训练框架",
+      "解决现有 VLA 模型 RL 后训练中，统一更新策略忽略不同模块功能角色差异的问题",
+      "通过冻结预训练视觉-语言骨干网络，仅对语义投影层和动作专家进行解耦优化，实现语义稳定性与动作适应性的平衡"
+    ],
+    "reading_minutes": 4,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "title": "WNM-3D: A World Navigation Model with 3D Scene Conditioning for Closed-Loop VLN",
+    "link": "http://arxiv.org/abs/2608.07267",
+    "arxiv_id": "2608.07267",
+    "detail_path": "papers/2608.07267/",
+    "cover_path": "covers/2608.07267/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "title": "Cross-View Action Consistency for Camera-Robust Vision-Language-Action Policies",
+    "link": "http://arxiv.org/abs/2608.06965",
+    "arxiv_id": "2608.06965",
+    "detail_path": "papers/2608.06965/",
+    "cover_path": "covers/2608.06965/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.06965.webp",
+    "preview_text": "研究场景相机视点变化对视觉-语言-动作（VLA）策略的影响，即使任务、物体、语言和机器人状态不变，相机移动也会导致策略失败 目标是在不使用深度、点云、相机标定或几何输入的情况下，仅通过单张 RGB 场景图像、语言指令和本体感知，使基于流的 VLA 策略对相机视点具有鲁棒性 提出跨视图动作一致性训练方法，利用同一物理状态在不同相机视角下的观测对，强制策略的动作流预测保持一致",
+    "research_unit": "Tsinghua University",
+    "hook_text": "研究场景相机视点变化对视觉-语言-动作（VLA）策略的影响，即使任务、物体、语言和机器人状态不变，相机移动也会导致策略失败",
+    "key_points": [
+      "研究场景相机视点变化对视觉-语言-动作（VLA）策略的影响，即使任务、物体、语言和机器人状态不变，相机移动也会导致策略失败",
+      "目标是在不使用深度、点云、相机标定或几何输入的情况下，仅通过单张 RGB 场景图像、语言指令和本体感知，使基于流的 VLA 策略对相机视点具有…",
+      "提出跨视图动作一致性训练方法，利用同一物理状态在不同相机视角下的观测对，强制策略的动作流预测保持一致"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "title": "AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.06729",
+    "arxiv_id": "2608.06729",
+    "detail_path": "papers/2608.06729/",
+    "cover_path": "covers/2608.06729/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.06729.webp",
+    "preview_text": "当前Vision-Language-Action（VLA）模型采用反应式范式，仅依赖瞬时视觉输入直接映射到动作，在仅使用腕部相机的部分可观测环境中，存在感知遗忘（物体离开视野后丢失空间信息）和任务进度遗忘（长时序任务中忘记已完成的子步骤）两个核心瓶颈 本文提出AtlasVLA框架，通过构建持久的世界-自我双记忆状态，将VLA从反应式操作升级为主动推理，有效解决上述遗忘问题 该方法仅需单视角腕部相机输入，即可在仿真和…",
+    "research_unit": "论文作者所属机构标注为1、2、3、4四个编号，具体机构名称未在提供的截断原文中完整呈现",
+    "hook_text": "当前Vision-Language-Action（VLA）模型采用反应式范式，仅依赖瞬时视觉输入直接映射到动作，在仅使用腕部相机的部分可观测环…",
+    "key_points": [
+      "当前Vision-Language-Action（VLA）模型采用反应式范式，仅依赖瞬时视觉输入直接映射到动作，在仅使用腕部相机的部分可观测环…",
+      "本文提出AtlasVLA框架，通过构建持久的世界-自我双记忆状态，将VLA从反应式操作升级为主动推理，有效解决上述遗忘问题",
+      "该方法仅需单视角腕部相机输入，即可在仿真和真实机器人任务中达到领先性能，显著优于依赖多视角输入的基线方法"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "title": "CrossTracer: Cross-Embodiment Navigation via VLA Model Reasoning and Trace Residuals Adapting",
+    "link": "http://arxiv.org/abs/2608.06688",
+    "arxiv_id": "2608.06688",
+    "detail_path": "papers/2608.06688/",
+    "cover_path": "covers/2608.06688/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.06688.webp",
+    "preview_text": "本文提出CrossTracer分层跨具身导航框架，针对现有视觉-语言-动作（VLA）模型导航忽略机器人运动约束、不同具身对应可行路径差异大的问题，探索像素空间轨迹作为语义推理与物理感知统一接口的方案。 框架核心思路是解耦语义目标理解与具身约束适配：先由VLA模型生成与具身无关的初始语义轨迹，再通过轻量适配模块针对不同机器人的运动特性做轨迹残差修正，平衡导航路径的语义合理性与物理可行性。 研究目标是实现无需针对单个机…",
+    "research_unit": "鹏城实验室",
+    "hook_text": "本文提出CrossTracer分层跨具身导航框架，针对现有视觉-语言-动作（VLA）模型导航忽略机器人运动约束、不同具身对应可行路径差异大的问…",
+    "key_points": [
+      "本文提出CrossTracer分层跨具身导航框架，针对现有视觉-语言-动作（VLA）模型导航忽略机器人运动约束、不同具身对应可行路径差异大的问…",
+      "框架核心思路是解耦语义目标理解与具身约束适配：先由VLA模型生成与具身无关的初始语义轨迹，再通过轻量适配模块针对不同机器人的运动特性做轨迹残差…",
+      "研究目标是实现无需针对单个机器人单独训练、可适配多种具身类型的通用导航能力，解决传统导航方法语义灵活性不足、端到端VLA方法跨具身迁移困难的问…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-06",
+    "title": "Fast and Accurate: An Adaptive VLA Inference Framework through Environment-aware Model Selection",
+    "link": "http://arxiv.org/abs/2608.06434",
+    "arxiv_id": "2608.06434",
+    "detail_path": "papers/2608.06434/",
+    "cover_path": "covers/2608.06434/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.06434.webp",
+    "preview_text": "针对具身智能对长时序推理与实时闭环控制的双重需求，以及现有Vision-Language-Action（VLA）模型推理延迟高、现有双系统VLA架构与慢系统中间表示紧密耦合、需端到端联合训练、模块化与可扩展性差的痛点，提出环境感知模型选择（EMS）自适应VLA推理框架 框架通过完全解耦的大规模 deliberative 慢系统（System 2）与轻量 reactive 快系统（System 1），配合轻量切换模块…",
+    "research_unit": "提供的HTML原文未明确标注作者所属机构的具体名称，除Yuxin Ma外，其余作者均属于标注为1的机构…",
+    "hook_text": "针对具身智能对长时序推理与实时闭环控制的双重需求，以及现有Vision-Language-Action（VLA）模型推理延迟高、现有双系统VL…",
+    "key_points": [
+      "针对具身智能对长时序推理与实时闭环控制的双重需求，以及现有Vision-Language-Action（VLA）模型推理延迟高、现有双系统VL…",
+      "框架通过完全解耦的大规模 deliberative 慢系统（System 2）与轻量 reactive 快系统（System 1），配合轻量切…",
+      "论文在仿真与真实机器人场景验证框架有效性，旨在实现高精度、高速的具身控制"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-06",
     "title": "$ω$-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation",
     "link": "http://arxiv.org/abs/2608.06375",
