@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 JEPA-WAM，一种在预训练 V-JEPA 表示空间中构建的潜在世界动作模型（WAM），通过共享预测器将潜在状态转移预测与连续动作生成耦合在一起。 旨在解决现有潜在 WAM 在预测目标选择和预测监督与动作生成集成方式上的局限性，同时避免显式未来帧生成带来的部署开销。 通过构造空间结构化的联合当前–未来转换目标，保留密集的 patch 级信息，直接优化策略骨干网络，提升模型在视觉和空间分布外（OOD）场景下的…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.09381">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.09381.webp" alt="JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 JEPA-WAM，一种在预训练 V-JEPA 表示空间中构建的潜在世界动作模型（WAM），通过共享预测器将潜在状态转移预测与连续动作生成…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">JEPA-WAM: Learning Vision-Language-Action Policies with Joint-Embedding World Modeling</h1>
+            <div class="detail-meta">2026-08-10 · <a href="http://arxiv.org/abs/2608.09381" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.09381" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.09381</span></div>
+            <p class="detail-summary">提出 JEPA-WAM，一种在预训练 V-JEPA 表示空间中构建的潜在世界动作模型（WAM），通过共享预测器将潜在状态转移预测与连续动作生成耦合在一起。 旨在解决现有潜在 WAM 在预测目标选择和预测监督与动作生成集成方式上的局限性，同时避免显式未来帧生成带来的部署开销。 通过构造空间结构化的联合当前–未来转换目标，保留密集的 patch 级信息，直接优化策略骨干网络，提升模型在视觉和空间分布外（OOD）场景下的…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者在脚注中提及 XYZ Embodied AI（部分作者实习单位），其他机构编号未在 HTML 中明…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.09381/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 JEPA-WAM，一种在预训练 V-JEPA 表示空间中构建的潜在世界动作模型（WAM），通过共享预测器将潜在状态转移预测与连续动作生成…</p>
+  <ul class="reading-intro-points"><li>提出 JEPA-WAM，一种在预训练 V-JEPA 表示空间中构建的潜在世界动作模型（WAM），通过共享预测器将潜在状态转移预测与连续动作生成…</li><li>旨在解决现有潜在 WAM 在预测目标选择和预测监督与动作生成集成方式上的局限性，同时避免显式未来帧生成带来的部署开销。</li><li>通过构造空间结构化的联合当前–未来转换目标，保留密集的 patch 级信息，直接优化策略骨干网络，提升模型在视觉和空间分布外（OOD）场景下的…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者在脚注中提及 <strong>XYZ Embodied AI</strong>（部分作者实习单位），其他机构编号未在 HTML 中明确列出，无法获取完整列表。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>JEPA-WAM</strong>，一种在预训练 V-JEPA 表示空间中构建的潜在世界动作模型（WAM），通过共享预测器将潜在状态转移预测与连续动作生成耦合在一起。</li><li>旨在解决现有潜在 WAM 在预测目标选择和预测监督与动作生成集成方式上的局限性，同时避免显式未来帧生成带来的部署开销。</li><li>通过构造空间结构化的联合当前–未来转换目标，保留密集的 patch 级信息，直接优化策略骨干网络，提升模型在视觉和空间分布外（OOD）场景下的泛化能力。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>JEPA-WAM</strong>，一种基于 V-JEPA 表示空间的潜在 WAM，利用共享预测器实现潜在转换建模与动作生成的紧密耦合。</li><li>设计了一种<strong>空间结构化的联合当前–未来转换目标</strong>，该目标保留密集 patch 级信息，并能无缝迁移到预训练 VLA 策略中，增强其泛化性。</li><li>在 <strong>LIBERO-Plus</strong>、<strong>RoboTwin 2.0</strong> 和真实世界双手机械臂操作中展示了强大的 OOD 泛化能力，其中基于预训练 π₀.₅ 的实例化在 LIBERO-Plus 上取得 <strong>86.3%</strong> 的最佳总体结果。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于<strong>冻结的 V-JEPA 2.1 编码器</strong>构建视觉表示空间，分别编码当前观察和由当前–未来帧堆叠构成的联合目标，后者捕捉任务共有的视觉时间结构。</li><li>使用 <strong>Qwen2.5-0.5B</strong> 作为共享预测器，同时处理视觉特征和任务指令，输出用于转换预测的视觉 token 隐状态和用于动作生成的条件表示。</li><li>通过<strong>共享预测器</strong>，转换预测损失直接优化策略骨干网络，动作生成部分则使用 DiT 流匹配专家，从条件表示中生成动作块。</li><li>训练时联合优化转换预测（patch 级余弦距离）和动作生成损失，<strong>部署时仅保留动作生成分支</strong>，不引入额外推理开销。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>LIBERO</strong>（四个子集）、<strong>LIBERO-Plus</strong>（七种 OOD 场景）、<strong>RoboTwin 2.0</strong>（20 个任务，Clean 和 Random 设置）、真实世界 <strong>AgileX COBOT Magic</strong> 双手机器人平台。</li><li>模型规模：V-JEPA 2.1 编码器约 <strong>300M</strong> 参数，Qwen2.5-0.5B 预测器约 <strong>0.5B</strong> 参数，DiT 流匹配动作专家。</li><li>训练资源：论文未明确提及具体 GPU 型号，但提及使用标准训练配置，推理效率在 RoboTwin 上单次推理耗时 <strong>85ms</strong>（11.76 Hz）。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：LIBERO 标准四类任务（ID），LIBERO-Plus 七种 OOD 场景（相机、机器人、语言、光照、背景、噪声、布局），RoboTwin 2.0 的 Clean 和 Random 设置，以及真实世界双手机器人操作。</li><li>主要评估指标：<strong>任务成功率（%）</strong>。</li><li>关键结果：</li></ul>
+<p> - 在 <strong>LIBERO</strong> 上，JEPA-WAM 平均成功率达 <strong>96.7%</strong>，与强基线持平；π₀.₅ + JEPA 目标提升至 <strong>97.8%</strong>。</p>
+<p> - 在 <strong>LIBERO-Plus</strong> 上，JEPA-WAM 取得 <strong>79.2%</strong>，为无大规模机器人策略预训练方法的最优结果；π₀.₅ + JEPA 目标达到 <strong>86.3%</strong>，为所有方法中的最佳。</p>
+<p> - 在 <strong>RoboTwin 2.0</strong> 上，JEPA-WAM 在 Clean 设置下达到 <strong>79.9%</strong>，Random 下达到 <strong>36.9%</strong>；π₀.₅ + JEPA 目标在 Clean 下提升至 <strong>84.6%</strong>。</p>
+<p> - 真实世界实验中，JEPA-WAM 在视觉和空间位移下表现出强泛化能力。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.09410/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.09125/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Trajectory Divergence Horizon Decision for Reliable Dual-Arm Surgical Subtask Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GWM-VLA: Geometry-Aware Latent World Modeling for Vision-Language-Action Learning - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有Vision-Language-Action（VLA）模型在相机视角、光照、背景等视觉与环境偏移下性能退化的问题，提出GWM-VLA几何感知潜在世界建模框架，旨在通过建模动作诱导的场景状态变化提升VLA策略的鲁棒性与泛化能力 现有潜在世界建模方法（如VLA-JEPA）独立编码各相机视角、未显式建模跨视角几何关系，且需预测完整多视角状态导致预测目标分散，GWM-VLA针对上述问题设计针对性改进 论文在仿真与真…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.07619">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.07619.webp" alt="GWM-VLA: Geometry-Aware Latent World Modeling for Vision-Language-Action Learning" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有Vision-Language-Action（VLA）模型在相机视角、光照、背景等视觉与环境偏移下性能退化的问题，提出GWM-VLA几…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">GWM-VLA: Geometry-Aware Latent World Modeling for Vision-Language-Action Learning</h1>
+            <div class="detail-meta">2026-08-07 · <a href="http://arxiv.org/abs/2608.07619" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.07619" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.07619</span></div>
+            <p class="detail-summary">针对现有Vision-Language-Action（VLA）模型在相机视角、光照、背景等视觉与环境偏移下性能退化的问题，提出GWM-VLA几何感知潜在世界建模框架，旨在通过建模动作诱导的场景状态变化提升VLA策略的鲁棒性与泛化能力 现有潜在世界建模方法（如VLA-JEPA）独立编码各相机视角、未显式建模跨视角几何关系，且需预测完整多视角状态导致预测目标分散，GWM-VLA针对上述问题设计针对性改进 论文在仿真与真…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者所属研究机构未在提供的截断原文片段中明确列出</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.07619/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有Vision-Language-Action（VLA）模型在相机视角、光照、背景等视觉与环境偏移下性能退化的问题，提出GWM-VLA几…</p>
+  <ul class="reading-intro-points"><li>针对现有Vision-Language-Action（VLA）模型在相机视角、光照、背景等视觉与环境偏移下性能退化的问题，提出GWM-VLA几…</li><li>现有潜在世界建模方法（如VLA-JEPA）独立编码各相机视角、未显式建模跨视角几何关系，且需预测完整多视角状态导致预测目标分散，GWM-VLA…</li><li>论文在仿真与真实机器人场景下验证GWM-VLA的操控精度与鲁棒性，目标是实现高成功率且对环境偏移不敏感的通用机器人操作策略</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者所属研究机构未在提供的截断原文片段中明确列出</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有Vision-Language-Action（VLA）模型在相机视角、光照、背景等视觉与环境偏移下性能退化的问题，提出<strong>GWM-VLA</strong>几何感知潜在世界建模框架，旨在通过建模动作诱导的场景状态变化提升VLA策略的鲁棒性与泛化能力</li><li>现有潜在世界建模方法（如VLA-JEPA）独立编码各相机视角、未显式建模跨视角几何关系，且需预测完整多视角状态导致预测目标分散，GWM-VLA针对上述问题设计针对性改进</li><li>论文在仿真与真实机器人场景下验证GWM-VLA的操控精度与鲁棒性，目标是实现高成功率且对环境偏移不敏感的通用机器人操作策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出几何感知潜在世界建模范式：使用联合聚合的多视角几何表征作为预测状态，建模其动作条件的时间转移，避免预测完整多视角状态带来的目标分散问题，更聚焦控制相关的状态变化</li><li>设计GWM-VLA统一框架：整合几何感知潜在世界建模与流匹配动作生成，通过共享潜在动作表征将两者耦合，使潜在预测监督与机器人动作监督共同优化同一表征</li><li>提出全局上下文条件的目标视角预测方案：仅预测选定的腕部视角的下一时步patch tokens，利用多视角聚合后的对应register tokens作为全局几何上下文，在保留多视角几何信息的同时聚焦末端执行器运动与局部手爪-物体交互</li><li>多场景验证有效性：在LIBERO、LIBERO-Plus仿真基准与真实SO-101机器人上的实验表明，GWM-VLA在分布内任务与分布外鲁棒性任务上均达到先进性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体架构包含三个核心组件：(1) 基于<strong>VGGT-Ω</strong>的几何感知多视角状态编码器（推理时冻结）；(2) 带全局上下文条件的目标视角预测的潜在世界模型；(3) 基于共享潜在动作表征的流匹配动作头</li><li>几何感知多视角状态编码：每个时步将多视角观测作为单一几何样本输入冻结的VGGT-Ω编码器，联合聚合跨视角几何关系，输出包含register tokens与patch tokens的几何感知多视角状态</li><li>全局上下文条件的目标视角预测：选定腕部视角作为预测目标，仅预测该视角下一时步的patch tokens，同时用对应视角的register tokens作为全局几何上下文conditioning潜在世界模型；采用因果注意力掩码保证时序因果性，训练时采用教师强制，以ℓ1损失优化潜在预测目标</li><li>统一潜在动作表征：采用<strong>Qwen3-VL-2B</strong>作为视觉-语言骨干，插入可学习的时步分组潜在动作查询，输出共享的潜在动作序列，同时conditioning潜在世界模型与流匹配动作头，让两种监督信号共同优化该表征</li><li>联合训练策略：联合优化动作生成损失（流匹配损失）与潜在预测损失，默认世界模型损失权重λ=0.1，世界模型损失仅作为训练辅助目标，部署时不使用</li><li>关键创新：首次将几何感知多视图表征引入潜在世界建模，通过目标视角预测聚焦关键交互区域，以共享潜在动作表征耦合预测学习与动作控制，避免冗余表征设计</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>预训练数据集：<strong>DROID</strong>，大规模机器人操作数据集，包含约76,000条跨多个机构和操作者收集的演示轨迹，覆盖多样化的操作任务、相机视角、工作区布局与视觉背景</li><li>仿真微调数据集：<strong>LIBERO</strong>标准演示集，包含Spatial、Object、Goal、LIBERO-10四个任务套件</li><li>模型规模：视觉-语言骨干采用<strong>Qwen3-VL-2B</strong>，几何编码器采用<strong>VGGT-Ω</strong></li><li>训练资源：预训练与仿真微调使用8块<strong>NVIDIA A800 GPU</strong>，消融实验使用单块<strong>NVIDIA RTX 6000D GPU</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真基准包括分布内基准<strong>LIBERO</strong>（评估空间推理、物体中心操作、目标条件控制、长程执行能力）与分布外鲁棒性基准<strong>LIBERO-Plus</strong>（包含相机视角、机器人初始状态、语言指令、光照、背景、视觉噪声、物体布局7类扰动）；真实机器人评估采用<strong>SO-101机器人</strong>，基于<strong>LeRobot</strong>部署栈，设置分布内（ID）、分布外任务（OOD-task）、分布外布局（OOD-layout）三类评估场景</li><li>主要评估指标：任务成功率（%）</li><li>关键实验结果：</li></ul>
+<p> - LIBERO基准：平均成功率<strong>97.1%</strong>，与OpenVLA-OFT并列最优，比仅用机器人数据的VLA-JEPA基线高1.0个百分点，在四个任务套件上均表现稳定</p>
+<p> - LIBERO-Plus鲁棒性基准：平均成功率<strong>76.9%</strong>，达到最优，比OpenVLA-OFT高7.3个百分点，比VLA-JEPA高14.0个百分点；在语言、光照、物体布局扰动下排名第一，在相机视角、机器人初始状态、背景扰动下排名第二，在视觉噪声、背景、相机视角、语言变化下提升幅度最大</p>
+<p> - 真实机器人实验：在有限演示条件下，GWM-VLA在ID与OOD-layout场景下取得最高平均成功率；OOD-task场景下成功率为53.3%，优于π₀，略低于π₀.5的60.0%</p>
+<p> - 消融实验：腕部视角作为预测目标的效果最优（92.8%成功率，高于第三人称视角的87.8%）；VGGT-Ω的第24层表征效果最好，成功率随表征层数增加而提升；直接共享潜在动作表征比额外引入具身动作查询的版本高4.8个百分点的成功率</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.07621/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">CMU-Drive and V2V-VLA: Cooperative Multi-agent Unified Driving with Reasoning Benchmark and Vehicle-to-Vehicle Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.07596/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">LIRA: Local Cross-Layer Information Routing for Vision-Language-Action Decoding</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

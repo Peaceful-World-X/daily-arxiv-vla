@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 SLIM (Self-supervised Latent Interaction Model)，一种紧凑的 0.5B 参数潜在交互策略，用于语言条件机器人操作 核心思想是分离语义条件与动作控制，通过自监督掩码轨迹预测学习动作与观测之间的双向交互关系，避免使用大型 VLM 或像素级未来预测 旨在解决现有大模型策略计算冗余、像素级世界模型效率低的问题，提供低延迟、低内存占用的高效控制策略" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.09771">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.09771.webp" alt="SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 SLIM (Self-supervised Latent Interaction Model)，一种紧凑的 0.5B 参数潜在交互策略…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation</h1>
+            <div class="detail-meta">2026-08-10 · <a href="http://arxiv.org/abs/2608.09771" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.09771" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.09771</span></div>
+            <p class="detail-summary">提出 SLIM (Self-supervised Latent Interaction Model)，一种紧凑的 0.5B 参数潜在交互策略，用于语言条件机器人操作 核心思想是分离语义条件与动作控制，通过自监督掩码轨迹预测学习动作与观测之间的双向交互关系，避免使用大型 VLM 或像素级未来预测 旨在解决现有大模型策略计算冗余、像素级世界模型效率低的问题，提供低延迟、低内存占用的高效控制策略</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">复旦大学 (Fudan University)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.09771/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 SLIM (Self-supervised Latent Interaction Model)，一种紧凑的 0.5B 参数潜在交互策略…</p>
+  <ul class="reading-intro-points"><li>提出 SLIM (Self-supervised Latent Interaction Model)，一种紧凑的 0.5B 参数潜在交互策略…</li><li>核心思想是分离语义条件与动作控制，通过自监督掩码轨迹预测学习动作与观测之间的双向交互关系，避免使用大型 VLM 或像素级未来预测</li><li>旨在解决现有大模型策略计算冗余、像素级世界模型效率低的问题，提供低延迟、低内存占用的高效控制策略</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>复旦大学</strong> (Fudan University)</li><li><strong>北京人工智能研究院</strong> (Beijing Academy of Artificial Intelligence)</li><li><strong>清华大学</strong> (Tsinghua University)</li><li><strong>中国人民大学</strong> (Renmin University of China)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>SLIM</strong> (Self-supervised Latent Interaction Model)，一种紧凑的 0.5B 参数潜在交互策略，用于语言条件机器人操作</li><li>核心思想是分离语义条件与动作控制，通过自监督掩码轨迹预测学习动作与观测之间的双向交互关系，避免使用大型 VLM 或像素级未来预测</li><li>旨在解决现有大模型策略计算冗余、像素级世界模型效率低的问题，提供低延迟、低内存占用的高效控制策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>SLIM</strong>，一个仅 0.5B 参数的紧凑型潜在交互策略，将控制计算集中在动作-观测潜在交互上</li><li>引入 <strong>动作驱动的掩码轨迹预测</strong>，通过互补的反向动力学（从当前和未来观测重建动作）和正向动力学（从当前观测和动作预测未来观测潜在）目标，学习预测性观测潜在变量</li><li>在多个基准（LIBERO、LIBERO-Plus、CALVIN）和真实世界机器人操作上，以更少参数、更低延迟和更少 GPU 内存，达到或超越代表性 VLA 和世界-动作模型基线</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>两阶段训练</strong>：第一阶段通过掩码轨迹预测学习动作驱动的观测潜在变量；第二阶段使用流匹配训练最终的动作生成策略</li><li><strong>模型架构</strong>：采用紧凑的 <strong>Mixture-of-Transformers (MoT)</strong> 骨干，包含观测流和动作流，通过联合注意力机制交互，语言条件通过交叉注意力注入</li><li><strong>视觉编码器</strong>基于 DINOv2 初始化，<strong>语言编码器</strong>使用 T5-small；动作生成采用流匹配，推理时无需未来观测输入</li><li><strong>创新点</strong>：将反向和正向动力学目标统一在同一个潜在空间中，使得策略在推理时隐式地利用未来预测结构，无需显式生成未来帧或额外世界模型</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真数据集</strong>：LIBERO（10、Object、Spatial、Goal 四个任务套件）、LIBERO-Plus（七种扰动零样本泛化）、CALVIN ABC→D（长视界组合任务）</li><li><strong>真实世界数据集</strong>：5 个任务（胡萝卜入碗、叠盘子、取土司、叠积木、擦白板），每个任务 150 个演示，共 750 个演示</li><li><strong>模型规模</strong>：0.5B 参数（实际 0.47B），视觉编码器基于 DINOv2，语言编码器 T5-small</li><li><strong>训练资源</strong>：未明确列出训练 GPU，但推理评估使用 <strong>NVIDIA H100 80GB</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：LIBERO 和 LIBERO-Plus 采用成功率，CALVIN 采用平均完成序列长度，真实世界采用进度分</li><li><strong>主要指标</strong>：成功率（%）、平均序列长度、推理延迟（ms）、峰值显存（GiB）、GFLOPS</li><li><strong>关键结果</strong>：</li></ul>
+<p> - LIBERO 总体成功率 <strong>97.5%</strong>，LIBERO-Plus 零样本成功率 <strong>77.45%</strong>，均优于多数基线</p>
+<p> - CALVIN ABC→D 平均序列长度 <strong>4.556</strong>（满分 5），与最佳基线持平</p>
+<p> - 真实世界多任务中，名义、光照、干扰物条件下平均进度最高，背景变化下与 π0.5 接近</p>
+<p> - 推理延迟 <strong>60.6 ms</strong>，比 π0.5 快 3.19 倍，比 Fast-WAM 快 5.95 倍；峰值显存仅 <strong>4.26 GiB</strong>，GFLOPS 仅为 π0.5 的 1/9.6</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2608.09730/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">World Tokens: Enhancing Embodied Policies with Training-Time World Modeling</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
