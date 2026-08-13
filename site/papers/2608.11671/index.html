@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有Vision-Language-Action（VLA）模型在分布外（OOD）场景下性能骤降，传统测试时自适应方案需要收集新数据并微调模型，成本较高 现有上下文模仿学习（ICIL）方法仅将原始专家动作轨迹作为上下文，模型仅能模仿动作的“做什么”而非背后的“为什么”，存在行为惯性，泛化能力受限 本文提出StellaVLA框架，通过将专家演示转化为包含语义推理与运动学推理的结构化上下文，使模型在测试时仅需检索单个结构…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.11671">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.11671.webp" alt="StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有Vision-Language-Action（VLA）模型在分布外（OOD）场景下性能骤降，传统测试时自适应方案需要收集新数据并微调模型…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">StellaVLA: In-Context Structured Demonstration for Generalizable Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-08-12 · <a href="http://arxiv.org/abs/2608.11671" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.11671" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.11671</span></div>
+            <p class="detail-summary">现有Vision-Language-Action（VLA）模型在分布外（OOD）场景下性能骤降，传统测试时自适应方案需要收集新数据并微调模型，成本较高 现有上下文模仿学习（ICIL）方法仅将原始专家动作轨迹作为上下文，模型仅能模仿动作的“做什么”而非背后的“为什么”，存在行为惯性，泛化能力受限 本文提出StellaVLA框架，通过将专家演示转化为包含语义推理与运动学推理的结构化上下文，使模型在测试时仅需检索单个结构…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">提供的论文原文截断部分未包含作者所属研究机构相关信息</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.11671/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有Vision-Language-Action（VLA）模型在分布外（OOD）场景下性能骤降，传统测试时自适应方案需要收集新数据并微调模型…</p>
+  <ul class="reading-intro-points"><li>现有Vision-Language-Action（VLA）模型在分布外（OOD）场景下性能骤降，传统测试时自适应方案需要收集新数据并微调模型…</li><li>现有上下文模仿学习（ICIL）方法仅将原始专家动作轨迹作为上下文，模型仅能模仿动作的“做什么”而非背后的“为什么”，存在行为惯性，泛化能力受限</li><li>本文提出StellaVLA框架，通过将专家演示转化为包含语义推理与运动学推理的结构化上下文，使模型在测试时仅需检索单个结构化演示即可实现自适应…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>提供的论文原文截断部分未包含作者所属研究机构相关信息</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有Vision-Language-Action（VLA）模型在分布外（OOD）场景下性能骤降，传统测试时自适应方案需要收集新数据并微调模型，成本较高</li><li>现有上下文模仿学习（ICIL）方法仅将原始专家动作轨迹作为上下文，模型仅能模仿动作的“做什么”而非背后的“为什么”，存在行为惯性，泛化能力受限</li><li>本文提出<strong>StellaVLA</strong>框架，通过将专家演示转化为包含语义推理与运动学推理的结构化上下文，使模型在测试时仅需检索单个结构化演示即可实现自适应，无需参数更新，支持跨场景、跨具身泛化</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>StellaVLA</strong>，一种检索增强的VLA框架，将上下文模仿学习从模仿专家动作转向模仿动作背后的推理逻辑，有效降低分布外场景下的行为惯性，提升泛化能力</li><li>设计并行双训练范式，配合零人工标注成本的离线结构化上下文提取流程，训练时通过联合动作-语言目标内化专家推理，推理时移除空间语言专家，控制回路无自回归解码额外开销</li><li>通过大量仿真与真实机器人实验验证效果，在VLA-Arena排行榜（2026年8月1日）以0.63的整体得分位列第一，在<strong>LIBERO</strong>上取得98.8%的平均成功率，在<strong>LIBERO-Plus</strong>上取得85.1%的零样本成功率，真实机器人场景验证了跨具身演示的有效性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>离线结构化上下文提取：采用“语言即动作”范式，利用VLM（如Qwen3-VL）对原始专家轨迹做因果推理，将其分割为K个语义连贯的子目标片段；再通过确定性运动学verbalizer将每个片段的连续动作转化为3D工作空间位移与2D图像平面投影的语言描述，零人工成本生成包含“语义依据（子目标）+ 运动学依据（运动描述）”的结构化演示，支持真实机器人、人手、XR等多具身来源的演示统一表示</li><li>并行双训练范式：训练时采用留一法检索同任务的结构化演示作为上下文前缀，模型配备两个并行专家：①轻量MLP动作专家，回归未来H步的连续动作块；②原生LM空间语言专家，预测当前时间步的子目标与对应动作的语言化运动描述；联合优化动作回归损失与语言生成损失，使动作预测grounded在语义推理之上</li><li>非对称推理与缓存机制：推理时完全移除空间语言专家，仅保留动作专家执行单次前向传播输出动作块，无自回归解码延迟，满足高频机器人控制需求；同时固定检索到的演示前缀的KV缓存，整个任务episode仅需计算一次前缀，大幅降低推理开销</li><li>核心创新：将专家演示从原始动作序列转化为结构化推理上下文，替代表面动作模仿；并行双专家设计实现推理能力的内化与推理时的轻量化部署，兼顾训练效果与推理效率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>模型规格：backbone采用<strong>Qwen3-VL-4B</strong>，动作专家为OpenVLA-OFT风格轻量MLP，总参数量为4B级</li><li>数据集：仿真场景使用<strong>LIBERO</strong>（4个标准任务套件）、<strong>LIBERO-Plus</strong>（7类扰动场景）、<strong>VLA-Arena</strong>（11类任务套件，覆盖安全、干扰物、外推、长程4大类场景）；真实机器人场景使用自建基准，演示数据包含真实机器人遥操作、人手追踪、XR重定向的人类演示，覆盖多具身来源</li><li>训练资源：原文截断部分未明确提及GPU/TPU等硬件资源；训练配置为完全微调<strong>Qwen3-VL-4B-Instruct</strong> 30k步，全局batch size为128，空间语言损失平衡系数λ=0.3，上下文演示dropout率为0（同任务演示可用时）或0.5</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真侧覆盖<strong>LIBERO</strong>（分布内性能验证）、<strong>LIBERO-Plus</strong>（零样本鲁棒性验证）、<strong>VLA-Arena</strong>（任务级泛化验证）；真实机器人侧为自建跨具身真实机器人测试集</li><li>评估指标：任务成功率（仿真rollout任务完成率、真实机器人任务完成率）</li><li>关键实验结果：分布内性能：<strong>LIBERO</strong>平均成功率达<strong>98.8%</strong>，在Goal、Long等依赖子目标顺序的任务上相比无演示基线<strong>StarVLA-OFT</strong>提升更明显；任务级泛化：<strong>VLA-Arena</strong>上L0/L1/L2难度成功率分别为0.84/0.62/0.43，整体得分0.63，比最强基线π₀.₅的0.44提升43.2%，位列2026年8月1日VLA-Arena排行榜第一；零样本鲁棒性：<strong>LIBERO-Plus</strong>上平均成功率85.1%，相比StarVLA-OFT提升10.1个百分点，在相机视角、传感器噪声、初始状态、语言扰动等场景下增益最大；跨具身泛化：真实机器人实验中，模型可有效利用人类演示、机器人演示、XR重定向的人类演示作为结构化上下文，适配OOD任务</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.11739/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">G0.5: One Autoregressive Stream for Robot Reasoning and Action</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.11363/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Adaptation of Generalist Robot Policies with Minimal Data</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

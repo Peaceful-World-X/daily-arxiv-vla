@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文针对基于视觉-语言-动作（VLA）的人形机器人双臂操作任务，揭示现有固定初始姿态的评估方案掩盖的严重问题：相同初始姿态下不同策略成功率差异可达80%，同一策略在不同初始姿态下成功率波动超50%，且特定初始姿态会诱导策略产生与目标位置不符的固定手选择偏好（如目标在左侧时仍优先选右手），该现象被定义为策略诱导手先验 研究目标是量化该手先验的影响，诊断其核心成因（初始姿态局部配置、腕部摄像头观测的作用），并探索通过调…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.11769">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.11769.webp" alt="Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文针对基于视觉-语言-动作（VLA）的人形机器人双臂操作任务，揭示现有固定初始姿态的评估方案掩盖的严重问题：相同初始姿态下不同策略成功率差异…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence</h1>
+            <div class="detail-meta">2026-08-12 · <a href="http://arxiv.org/abs/2608.11769" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.11769" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.11769</span></div>
+            <p class="detail-summary">本文针对基于视觉-语言-动作（VLA）的人形机器人双臂操作任务，揭示现有固定初始姿态的评估方案掩盖的严重问题：相同初始姿态下不同策略成功率差异可达80%，同一策略在不同初始姿态下成功率波动超50%，且特定初始姿态会诱导策略产生与目标位置不符的固定手选择偏好（如目标在左侧时仍优先选右手），该现象被定义为策略诱导手先验 研究目标是量化该手先验的影响，诊断其核心成因（初始姿态局部配置、腕部摄像头观测的作用），并探索通过调…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">10 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者Chaeyeon Jung、Juyoun Park所属机构为韩国科学技术研究院（KIST）人形…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.11769/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文针对基于视觉-语言-动作（VLA）的人形机器人双臂操作任务，揭示现有固定初始姿态的评估方案掩盖的严重问题：相同初始姿态下不同策略成功率差异…</p>
+  <ul class="reading-intro-points"><li>本文针对基于视觉-语言-动作（VLA）的人形机器人双臂操作任务，揭示现有固定初始姿态的评估方案掩盖的严重问题：相同初始姿态下不同策略成功率差异…</li><li>研究目标是量化该手先验的影响，诊断其核心成因（初始姿态局部配置、腕部摄像头观测的作用），并探索通过调整初始姿态覆盖、训练数据组成缓解初始姿态依…</li><li>解决的核心痛点是：聚合任务成功率无法暴露的姿态相关手选择错误，以及初始姿态作为捷径导致策略忽略目标视觉信息、做出错误选手决策的缺陷</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者Chaeyeon Jung、Juyoun Park所属机构为<strong>韩国科学技术研究院（KIST）人形机器人研究中心</strong>（韩国）</li><li>Juyoun Park为论文通讯作者</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文针对基于视觉-语言-动作（VLA）的人形机器人双臂操作任务，揭示现有固定初始姿态的评估方案掩盖的严重问题：相同初始姿态下不同策略成功率差异可达80%，同一策略在不同初始姿态下成功率波动超50%，且特定初始姿态会诱导策略产生与目标位置不符的固定手选择偏好（如目标在左侧时仍优先选右手），该现象被定义为<strong>策略诱导手先验</strong></li><li>研究目标是量化该手先验的影响，诊断其核心成因（初始姿态局部配置、腕部摄像头观测的作用），并探索通过调整初始姿态覆盖、训练数据组成缓解初始姿态依赖、提升策略跨姿态鲁棒性的方法</li><li>解决的核心痛点是：聚合任务成功率无法暴露的姿态相关手选择错误，以及初始姿态作为捷径导致策略忽略目标视觉信息、做出错误选手决策的缺陷</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次将人形双臂操作中的初始姿态依赖问题形式化为<strong>策略诱导手先验</strong>，提出HandPriorScore、残差手偏置、目标响应性三个可量化的指标，用于衡量策略在初始决策窗口的左右手偏好强度、与目标无关的固有偏置以及对目标位置的响应能力</li><li>通过双向关节级反事实干预和腕部摄像头掩码分析，定位到右臂关节$R_{\mathrm{arm},3}$和$R_{\mathrm{arm},5}$的局部配置是诱导手先验的因果关键，证实腕部观测会调节手偏好与任务性能，但无法完全解释错误的选手行为</li><li>验证了初始姿态覆盖对鲁棒性的关键作用：将两姿态训练集扩展为八姿态可将A1策略的平均成功率从5.8%提升至63.3%；针对低性能姿态的定向数据增强可将其成功率从30%提升至75%</li><li>系统分析了训练配置的影响：足够的目标任务仿真数据暴露是提升鲁棒性的核心，真实/辅助数据的增益取决于姿态覆盖度、仿真数据比例和观测可用性，盲目增加辅助数据反而可能因降低仿真数据比例、引入观测不一致导致性能下降</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>HandPriorScore量化体系</strong>：基于初始决策窗口（T=120时间步）的相对关节动作（策略预测的关节目标位置与当前关节状态的差值）计算，先通过跨策略统一的关节级标准差做归一化，再分别计算左右侧臂、手的归一化动作幅度加权和，最终通过左右侧幅度差除以总和得到[-1,1]的手先验分数；进一步拆解为残差手偏置（跨左右目标位置的平均偏好，反映与目标无关的固有偏置）和目标响应性（左右目标位置的偏好差，反映对目标位置的响应能力）</li><li>采用双向关节级反事实干预法定位成因：交换两个行为差异显著的初始姿态的特定关节值，观察策略手选择行为的变化，验证局部关节配置对手偏置的因果作用，同时设置低差异控制关节交换组排除关节数量本身的影响</li><li>采用腕部摄像头掩码分析评估视觉观测的作用：分别遮挡左右腕摄像头、双腕摄像头，对比全观测基线的手尝试率和任务成功率，分析腕部观测对手偏置的调节作用</li><li>创新点：首次揭示VLA策略在人形双臂操作中的姿态诱导手先验问题，提出可解释的量化指标和因果定位方法，明确了局部关节配置对手偏置的直接因果作用，打破了“腕部观测不足是错误选手主因”的认知</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集$P_{\mathrm{sim}}$：PickApple任务的仿真遥操作数据集，包含8个多样化初始姿态，每个姿态搭配左、右两种苹果目标位置，共304条episode，观测包含高机位和腕部双摄像头流</li><li>真实数据集：基于Unitree G1-Dex3机器人遥操作数据集构建的4组任务数据，包括单任务PickApple的$P_{\mathrm{real}}$（仅高机位摄像头）、7类抓取任务的7-task（仅高摄像头）、13类抓取+非抓取任务的13-common（仅高摄像头）、13类全任务的13-all（抓取类用高+腕摄像头，非抓取类仅高摄像头）</li><li>模型规模：所有实验策略均基于<strong>GR00T-N1.5-3B</strong>（30亿参数的通用人形机器人基础模型）微调得到</li><li>训练资源：原文未明确披露具体GPU/TPU等硬件配置，采用仿真与真实数据混合训练的范式微调VLA策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真场景下的Unitree G1人形机器人（搭配Dex3-1灵巧手）的PickApple任务，共设置17个初始姿态（含8个训练用姿态多样化姿态、9个评估专用姿态，涵盖姿态均值、零姿态、遥操作默认姿态、真实机器人首帧姿态、外推未见姿态等）</li><li>评估基准：每个策略-初始姿态组合进行20次闭环rollout，总计340次rollout/策略，手动评估任务成功率，成功标准为任意手抓取苹果、运输到粉色目标盘、释放并完成抬臂动作</li><li>主要评估指标：任务成功率、HandPriorScore（残差手偏置$H_{\mathrm{prior}}$、目标响应性$H_{\mathrm{target}}$）、左右手尝试率、视觉/动作表征的余弦距离</li><li>关键实验结果：</li></ul>
+<p> - 初始姿态-策略交互效应显著：teleop_default姿态下，A1策略成功率仅60%，而C2策略可达80%；pose_mean姿态下成功率跨策略波动范围为15%-95%</p>
+<p> - 腕部观测的作用具有两面性：整体上添加腕部观测可将A1的平均成功率从61.5%提升至76.8%，但在teleop_default姿态下会加剧右偏置，导致左手目标任务的右尝试率从6%升至33%，成功率从85%降至60%</p>
+<p> - 姿态覆盖与定向增强效果突出：将2姿态训练集扩展为8姿态，A1平均成功率从5.8%升至63.3%；针对right_real姿态添加2个邻近训练姿态，成功率从30%提升至75%</p>
+<p> - 训练配置影响明确：当仿真数据比例从9.4%提升至45.5%时，B2策略的成功率从40.3%回升至61.5%；混合腕部观测可用性的C1策略比纯高摄像头的B1策略整体成功率从62.9%提升至80.9%</p>
+<p> - 关节干预证实因果性：交换teleop_default和right_sim的右臂$R_{\mathrm{arm},3}$和$R_{\mathrm{arm},5}$关节，可将teleop_default的左目标右尝试率从87.5%降至0%，控制关节（$R_{\mathrm{arm},0}$、$R_{\mathrm{arm},6}$）交换无此效果，证明局部关节配置是手先验的直接诱因</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.12308/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.11739/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">G0.5: One Autoregressive Stream for Robot Reasoning and Action</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lost in Reconstruction: Aligning Action Representations with Language in Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
-    <meta name="description" content="待生成" />
+    <meta name="description" content="现有视觉-语言-动作模型（VLA）的动作表示仅优化连续空间的重建损失，未考虑与语言语义的对齐，离散tokenization会丢失动作中的动词grounding信息，成为语言条件控制的性能瓶颈 本文基于BridgeV2数据集开展两项诊断性研究，揭示动作轨迹包含视觉状态变化无法捕捉的动词信息，且仅优化重建的离散分词会系统性丢失该类信息 本文提出SALT（语义对齐动作分词器），通过辅助语言对齐目标引导动作分词器保留语言相…" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,17 +26,17 @@
         <div class="detail-hero-grid">
           <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
   <img class="paper-figure-image" src="../../assets/paper-images/2608.10484.webp" alt="Lost in Reconstruction: Aligning Action Representations with Language in Vision-Language-Action Models" loading="lazy" />
-  <figcaption class="paper-figure-caption">待生成</figcaption>
+  <figcaption class="paper-figure-caption">现有视觉-语言-动作模型（VLA）的动作表示仅优化连续空间的重建损失，未考虑与语言语义的对齐，离散tokenization会丢失动作中的动词g…</figcaption>
 </figure></div>
           <div class="detail-hero-copy">
             <p class="eyebrow">论文详情</p>
             <h1 class="detail-page-title">Lost in Reconstruction: Aligning Action Representations with Language in Vision-Language-Action Models</h1>
             <div class="detail-meta">2026-08-11 · <a href="http://arxiv.org/abs/2608.10484" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.10484" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.10484</span></div>
-            <p class="detail-summary">待生成</p>
+            <p class="detail-summary">现有视觉-语言-动作模型（VLA）的动作表示仅优化连续空间的重建损失，未考虑与语言语义的对齐，离散tokenization会丢失动作中的动词grounding信息，成为语言条件控制的性能瓶颈 本文基于BridgeV2数据集开展两项诊断性研究，揭示动作轨迹包含视觉状态变化无法捕捉的动词信息，且仅优化重建的离散分词会系统性丢失该类信息 本文提出SALT（语义对齐动作分词器），通过辅助语言对齐目标引导动作分词器保留语言相…</p>
             <div class="detail-micro-meta">
-              <span class="meta-pill">1 分钟读完</span>
-              <span class="meta-pill">1 张阅读卡</span>
-              
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">5 张阅读卡</span>
+              <span class="meta-pill">论文作者均隶属于Carnegie Mellon University（卡内基梅隆大学），通讯作者为Li…</span>
             </div>
           </div>
         </div>
@@ -50,16 +50,48 @@
     <span class="reading-badge">一眼看懂</span>
     <a class="cover-preview-link" href="../../covers/2608.10484/">封面预览</a>
   </div>
-  <p class="reading-intro-hook">待生成</p>
-  <ul class="reading-intro-points"><li>待生成</li></ul>
+  <p class="reading-intro-hook">现有视觉-语言-动作模型（VLA）的动作表示仅优化连续空间的重建损失，未考虑与语言语义的对齐，离散tokenization会丢失动作中的动词g…</p>
+  <ul class="reading-intro-points"><li>现有视觉-语言-动作模型（VLA）的动作表示仅优化连续空间的重建损失，未考虑与语言语义的对齐，离散tokenization会丢失动作中的动词g…</li><li>本文基于BridgeV2数据集开展两项诊断性研究，揭示动作轨迹包含视觉状态变化无法捕捉的动词信息，且仅优化重建的离散分词会系统性丢失该类信息</li><li>本文提出SALT（语义对齐动作分词器），通过辅助语言对齐目标引导动作分词器保留语言相关的动作结构，验证动作表示需要同时保留可执行轨迹和语言对动…</li></ul>
 </section>
 <section class="reading-card reading-card-section">
   <div class="reading-card-topline">
     <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者均隶属于<strong>Carnegie Mellon University</strong>（卡内基梅隆大学），通讯作者为Li Wenjie，联系邮箱为wenjiel2@andrew.cmu.edu</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
     <span class="reading-step-note">论文概述</span>
   </div>
   <h2>论文概述</h2>
-  <div class="reading-card-content"><p>待生成</p></div>
+  <div class="reading-card-content"><ul><li>现有视觉-语言-动作模型（VLA）的动作表示仅优化连续空间的重建损失，未考虑与语言语义的对齐，离散tokenization会丢失动作中的动词grounding信息，成为语言条件控制的性能瓶颈</li><li>本文基于BridgeV2数据集开展两项诊断性研究，揭示动作轨迹包含视觉状态变化无法捕捉的动词信息，且仅优化重建的离散分词会系统性丢失该类信息</li><li>本文提出<strong>SALT</strong>（语义对齐动作分词器），通过辅助语言对齐目标引导动作分词器保留语言相关的动作结构，验证动作表示需要同时保留可执行轨迹和语言对动作的抽象描述</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>揭示动作-语言对齐的关键缺口：动作轨迹的动词信息由<strong>动作目标</strong>（首尾帧视觉状态变化）和<strong>运动动态</strong>（7-DoF动作轨迹）共同构成，两者互补，仅靠视觉无法完全捕捉动词语义；同时仅优化重建的离散分词会系统性削弱动词-动作表示的互信息，压缩率越高损失越大</li><li>提出<strong>SALT</strong>方法：在VQ-VAE分词器训练中新增语言对齐辅助目标，通过冻结预训练VLM从量化动作隐变量生成对应自然语言指令，引导分词器的隐空间保留语言可区分的动作结构，且不损失轨迹重建保真度</li><li>验证SALT的有效性：在SimplerEnv WidowX套件上，SALT的平均任务成功率达到71.9%，显著高于纯重建VQ-VAE（42.7%）和FAST分词器（31.2%）</li><li>发现语义对齐的组织效应：SALT学习到的分词词汇会围绕动词形成专用代码（如<code>flip</code>、<code>turn</code>对应高度选择性的token），而仅优化重建的分词器的词汇为语义混合的通用代码</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于残差VQ-VAE架构，在标准重建损失、码本损失、承诺损失的基础上，新增语言对齐损失：将episode内的所有动作块量化为隐变量序列，转换为带位置编码的前缀嵌入，输入冻结的预训练语言模型，通过指令生成的交叉熵损失进行监督</li><li>梯度通过直通估计器回传至分词器的编码器和码本，仅修改分词器的训练阶段，下游VLA的训练、推理流程完全无需调整</li><li>该方法无需预设动词词典、额外文本编码器或对比学习负样本，直接利用数据集中的自由格式自然语言指令完成对齐监督</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>训练与评估数据集：<strong>BridgeV2</strong>，包含27,271个带自由格式自然语言指令的真实机器人遥操作操作轨迹，覆盖17类动作动词，机器人平台为7自由度的WidowX机械臂</li><li>模型配置：下游VLA采用<strong>miniVLA</strong>，基于<strong>Qwen2.5-0.5B</strong>视觉-语言骨干网络；动作分词器为残差VQ-VAE，每个8步动作块输出7个token，与基线分词器保持相当的压缩率（7.0~8.6 bits per timestep）</li><li>训练配置：VLA从基础视觉-语言checkpoint训练15,000个梯度步，全局批次大小为128，无 prior 机器人动作预训练；动作分词器是唯一变化的组件</li><li>评估环境：<strong>SimplerEnv</strong>的WidowX视觉匹配套件，包含4个桌面操作任务，共96次闭环rollout测试</li></ul></div>
 </section></article>
         <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
           <p class="detail-toc-title">阅读目录</p>
