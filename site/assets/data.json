@@ -1,5 +1,229 @@
 [
   {
+    "date": "2026-08-13",
+    "title": "Decoding Task Progress from VLA Representations",
+    "link": "http://arxiv.org/abs/2608.13474",
+    "arxiv_id": "2608.13474",
+    "detail_path": "papers/2608.13474/",
+    "cover_path": "covers/2608.13474/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.13474.webp",
+    "preview_text": "聚焦视觉-语言-动作模型（VLA）的可解释性与运行时监控问题，以π₀.₅为研究对象，通过线性探针技术验证任务进度（轨迹剩余归一化时间）可从模型内部表征中线性解码 针对VLA部署中缺乏轻量级监控工具、无法理解其内部任务相关语义表征的痛点，探索任务进度信号在无监督分布外（OOD）检测、语言鲁棒性诊断等下游场景的应用价值 揭示VLA内部表征与模型行为之间的gap：部分语义信号可被观测但无法通过简单线性方式操控",
+    "research_unit": "Cornell University（康奈尔大学）",
+    "hook_text": "聚焦视觉-语言-动作模型（VLA）的可解释性与运行时监控问题，以π₀.₅为研究对象，通过线性探针技术验证任务进度（轨迹剩余归一化时间）可从模型…",
+    "key_points": [
+      "聚焦视觉-语言-动作模型（VLA）的可解释性与运行时监控问题，以π₀.₅为研究对象，通过线性探针技术验证任务进度（轨迹剩余归一化时间）可从模型…",
+      "针对VLA部署中缺乏轻量级监控工具、无法理解其内部任务相关语义表征的痛点，探索任务进度信号在无监督分布外（OOD）检测、语言鲁棒性诊断等下游场…",
+      "揭示VLA内部表征与模型行为之间的gap：部分语义信号可被观测但无法通过简单线性方式操控"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-13",
+    "title": "UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.13453",
+    "arxiv_id": "2608.13453",
+    "detail_path": "papers/2608.13453/",
+    "cover_path": "covers/2608.13453/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.13453.webp",
+    "preview_text": "现有针对视觉-语言-动作（VLA）模型的对抗攻击普遍存在局限性：2D通用对抗补丁缺乏3D表面约束，3D纹理攻击又需要为每个任务单独优化，无法利用多任务VLA共享策略的跨任务攻击面，且缺乏对VLA原生动作空间的定向控制能力 本文提出UniTexture，首个跨任务通用3D对抗纹理攻击方法，通过单个绑定在目标物体表面的纹理，在多个操作任务上诱导VLA产生攻击者指定的定向动作偏差，无需为每个任务单独优化或调整纹理 研究旨…",
+    "research_unit": "原文未明确标注作者所属研究机构信息",
+    "hook_text": "现有针对视觉-语言-动作（VLA）模型的对抗攻击普遍存在局限性：2D通用对抗补丁缺乏3D表面约束，3D纹理攻击又需要为每个任务单独优化，无法利…",
+    "key_points": [
+      "现有针对视觉-语言-动作（VLA）模型的对抗攻击普遍存在局限性：2D通用对抗补丁缺乏3D表面约束，3D纹理攻击又需要为每个任务单独优化，无法利…",
+      "本文提出UniTexture，首个跨任务通用3D对抗纹理攻击方法，通过单个绑定在目标物体表面的纹理，在多个操作任务上诱导VLA产生攻击者指定的…",
+      "研究旨在揭示多任务VLA的部署级安全漏洞，验证单纹理在不同任务、不同任务套件、不同模型架构上的攻击泛化性与迁移能力"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-13",
+    "title": "FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving",
+    "link": "http://arxiv.org/abs/2608.13395",
+    "arxiv_id": "2608.13395",
+    "detail_path": "papers/2608.13395/",
+    "cover_path": "covers/2608.13395/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.13395.webp",
+    "preview_text": "针对自动驾驶视觉-语言-动作（VLA）模型后训练场景下，组相对策略优化（GRPO）在遇到全为低奖励、低多样性的未解决失败rollout组时，仅能对失败轨迹进行内部排名、无法提供脱离失败区域纠正信息的局限，提出FIRE-VLA失败感知自我进化框架 该框架将未解决失败转化为下一轮策略的特权监督信号，通过特权自蒸馏与轮次式自我进化提升模型轨迹规划的鲁棒性 核心目标是减少自动驾驶VLA的严重规划失败，同时保持标称规划性能不…",
+    "research_unit": "哈尔滨工业大学（Harbin Institute of Technology）",
+    "hook_text": "针对自动驾驶视觉-语言-动作（VLA）模型后训练场景下，组相对策略优化（GRPO）在遇到全为低奖励、低多样性的未解决失败rollout组时，仅…",
+    "key_points": [
+      "针对自动驾驶视觉-语言-动作（VLA）模型后训练场景下，组相对策略优化（GRPO）在遇到全为低奖励、低多样性的未解决失败rollout组时，仅…",
+      "该框架将未解决失败转化为下一轮策略的特权监督信号，通过特权自蒸馏与轮次式自我进化提升模型轨迹规划的鲁棒性",
+      "核心目标是减少自动驾驶VLA的严重规划失败，同时保持标称规划性能不下降"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-13",
+    "title": "Temporal GRPO: Beyond Trajectory-Level Credit in Vision-Language-Action Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2608.13026",
+    "arxiv_id": "2608.13026",
+    "detail_path": "papers/2608.13026/",
+    "cover_path": "covers/2608.13026/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.13026.webp",
+    "preview_text": "针对 Vision-Language-Action (VLA) 模型后训练中基于GRPO的强化学习方法存在的轨迹级信用别名问题：不同阶段进度的失败轨迹会被赋予相同的轨迹级优势，导致前序阶段成功的动作和后续失败的动作被同等更新，降低长程操作的样本效率和子技能稳定性 研究目标是提出Temporal GRPO框架，通过构建可检测的有序任务阶段、阶段条件化的轨迹分组和阶段级优势分配，解决信用别名问题，提升VLA后训练的性能…",
+    "research_unit": "未在提供的论文内容中明确标注作者所属研究机构",
+    "hook_text": "针对 Vision-Language-Action (VLA) 模型后训练中基于GRPO的强化学习方法存在的轨迹级信用别名问题：不同阶段进度的…",
+    "key_points": [
+      "针对 Vision-Language-Action (VLA) 模型后训练中基于GRPO的强化学习方法存在的轨迹级信用别名问题：不同阶段进度的…",
+      "研究目标是提出Temporal GRPO框架，通过构建可检测的有序任务阶段、阶段条件化的轨迹分组和阶段级优势分配，解决信用别名问题，提升VLA…",
+      "论文核心要解决的问题是：如何在不修改VLA架构、不引入额外价值模型的前提下，将轨迹级的广播式信用分配重构为阶段级的精准时序信用分配，适配长程机…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-13",
+    "title": "FlashDrive: Flash Vision-Language-Action Inference for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2608.12932",
+    "arxiv_id": "2608.12932",
+    "detail_path": "papers/2608.12932/",
+    "cover_path": "covers/2608.12932/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.12932.webp",
+    "preview_text": "针对自动驾驶领域Vision-Language-Action（VLA）模型推理延迟过高、无法满足实时控制需求的问题，提出算法-系统协同设计的加速框架FlashDrive 揭示VLA推理存在四个级联瓶颈：视觉编码重复处理重叠帧、语言模型预填充重复计算可复用的上下文、推理token串行生成、流匹配去噪对非均匀速度场施加均匀计算 目标是让10B参数的推理型VLA在单GPU上达到实时部署要求，同时几乎不损失轨迹预测精度",
+    "research_unit": "论文作者所属机构包括：z-lab.ai、普林斯顿大学（Princeton）、加州大学圣地亚哥分校（UC…",
+    "hook_text": "针对自动驾驶领域Vision-Language-Action（VLA）模型推理延迟过高、无法满足实时控制需求的问题，提出算法-系统协同设计的加…",
+    "key_points": [
+      "针对自动驾驶领域Vision-Language-Action（VLA）模型推理延迟过高、无法满足实时控制需求的问题，提出算法-系统协同设计的加…",
+      "揭示VLA推理存在四个级联瓶颈：视觉编码重复处理重叠帧、语言模型预填充重复计算可复用的上下文、推理token串行生成、流匹配去噪对非均匀速度场…",
+      "目标是让10B参数的推理型VLA在单GPU上达到实时部署要求，同时几乎不损失轨迹预测精度"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-13",
+    "title": "BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2608.12854",
+    "arxiv_id": "2608.12854",
+    "detail_path": "papers/2608.12854/",
+    "cover_path": "covers/2608.12854/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.12854.webp",
+    "preview_text": "论文聚焦自动驾驶端到端轨迹规划任务，针对现有Vision-Language-Action (VLA)模型仅擅长交通场景语义推理、World Action Models (WAMs)仅擅长未来场景动态预测的问题，研究如何有效融合两类方法的互补能力 研究发现 naive 的 token 级联合注意力方案（Tri-MoT）存在注意力分配错配问题：语义token因学习难度低主导共享注意力空间，抑制预测动态信号的利用，甚至性…",
+    "research_unit": "论文作者所属机构包括NLPR, Institute of Automation, Chinese Ac…",
+    "hook_text": "论文聚焦自动驾驶端到端轨迹规划任务，针对现有Vision-Language-Action (VLA)模型仅擅长交通场景语义推理、World A…",
+    "key_points": [
+      "论文聚焦自动驾驶端到端轨迹规划任务，针对现有Vision-Language-Action (VLA)模型仅擅长交通场景语义推理、World A…",
+      "研究发现 naive 的 token 级联合注意力方案（Tri-MoT）存在注意力分配错配问题：语义token因学习难度低主导共享注意力空间…",
+      "论文提出BrainWAM框架，受脑功能特化启发，将语义推理和预测世界建模转化为两个专门的动作导向通路，在紧凑的动作表示层面完成协调，同时引入异…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-12",
+    "title": "Scaling Automatic Research Agents via World Models",
+    "link": "http://arxiv.org/abs/2608.12564",
+    "arxiv_id": "2608.12564",
+    "detail_path": "papers/2608.12564/",
+    "cover_path": "covers/2608.12564/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.12564.webp",
+    "preview_text": "针对自动研究（AutoResearch）智能体的强化学习（RL）训练中，轨迹的「智能体生成」和「环境执行」两部分扩展性严重不对称的问题：生成可通过批量推理复用计算，但每个候选方案的执行需要独占沙箱和真实GPU资源，导致环境执行成为训练扩展的核心瓶颈 提出World Model RL（WMRL）框架，用世界模型替代真实环境执行消除该瓶颈，同时针对世界模型不完美带来的奖励偏差和噪声问题设计纠错机制，保证训练性能不下降…",
+    "research_unit": "University of Illinois Urbana-Champaign（伊利诺伊大学厄巴纳-香…",
+    "hook_text": "针对自动研究（AutoResearch）智能体的强化学习（RL）训练中，轨迹的「智能体生成」和「环境执行」两部分扩展性严重不对称的问题：生成可…",
+    "key_points": [
+      "针对自动研究（AutoResearch）智能体的强化学习（RL）训练中，轨迹的「智能体生成」和「环境执行」两部分扩展性严重不对称的问题：生成可…",
+      "提出World Model RL（WMRL）框架，用世界模型替代真实环境执行消除该瓶颈，同时针对世界模型不完美带来的奖励偏差和噪声问题设计纠错…",
+      "研究目标是实现AutoResearch智能体RL训练的高效扩展，同时解决世界模型替代真实执行带来的误差问题，最终提升智能体的自主研究能力"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-12",
+    "title": "RoboSynChallenge: Mastering Real-World Dexterity via Generalizing Synthesized Manipulation Skills",
+    "link": "http://arxiv.org/abs/2608.12416",
+    "arxiv_id": "2608.12416",
+    "detail_path": "papers/2608.12416/",
+    "cover_path": "covers/2608.12416/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.12416.webp",
+    "preview_text": "RoboSynChallenge 是一个专注于双臂灵巧操作通用性评估的竞赛基准，旨在量化在真实世界数据稀缺时，合成数据能否有效提升操作策略的泛化能力 提出统一的 Sim2Real（仿真到真实） 评估框架，整合基于 EmbodiChain 的大规模仿真数据生成与标准化真实机器人评估，解决现有基准仅覆盖单一模态（纯仿真或纯真实）的局限性 涵盖从入门到高难度的多层次双臂操作任务（包括刚性物体、铰接物体、可变形物体及工具使…",
+    "research_unit": "The Chinese University of Hong Kong, Shenzhen (Runy…",
+    "hook_text": "RoboSynChallenge 是一个专注于双臂灵巧操作通用性评估的竞赛基准，旨在量化在真实世界数据稀缺时，合成数据能否有效提升操作策略的泛…",
+    "key_points": [
+      "RoboSynChallenge 是一个专注于双臂灵巧操作通用性评估的竞赛基准，旨在量化在真实世界数据稀缺时，合成数据能否有效提升操作策略的泛…",
+      "提出统一的 Sim2Real（仿真到真实） 评估框架，整合基于 EmbodiChain 的大规模仿真数据生成与标准化真实机器人评估，解决现有基…",
+      "涵盖从入门到高难度的多层次双臂操作任务（包括刚性物体、铰接物体、可变形物体及工具使用），通过系统化的背景、光照、物体、干扰物和空间变化评估策略…"
+    ],
+    "reading_minutes": 11,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-12",
     "title": "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation",
     "link": "http://arxiv.org/abs/2608.12308",
@@ -27569,14 +27793,16 @@
     "detail_path": "papers/2512.22615/",
     "cover_path": "covers/2512.22615/",
     "paper_image_path": "assets/paper-images/thumbs/2512.22615.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "论文提出Dream-VL（扩散视觉语言模型）与Dream-VLA（扩散视觉语言动作模型）两个开源模型，旨在探索扩散语言模型（dLLM）作为视觉语言/视觉语言动作模型骨干的可行性，解决现有自回归骨干模型的长程规划能力弱、推理误差累积、生成效率低等核心问题 研究目标是在多模态理解、视觉规划、机器人控制三类任务上验证扩散架构的优势，构建性能达到社区领先水平的开源扩散VLM/VLA 论文核心要解决的问题是：当前主流VLM/…",
+    "research_unit": "Huawei Technologies",
+    "hook_text": "论文提出Dream-VL（扩散视觉语言模型）与Dream-VLA（扩散视觉语言动作模型）两个开源模型，旨在探索扩散语言模型（dLLM）作为视觉…",
     "key_points": [
-      "待生成"
+      "论文提出Dream-VL（扩散视觉语言模型）与Dream-VLA（扩散视觉语言动作模型）两个开源模型，旨在探索扩散语言模型（dLLM）作为视觉…",
+      "研究目标是在多模态理解、视觉规划、机器人控制三类任务上验证扩散架构的优势，构建性能达到社区领先水平的开源扩散VLM/VLA",
+      "论文核心要解决的问题是：当前主流VLM/VLA普遍采用自回归LLM作为骨干，其顺序生成范式难以胜任需要长程全局推理、高一致性动作生成的复杂视觉…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#ef6c3f",
       "to": "#f6b13d",
@@ -27595,14 +27821,16 @@
     "detail_path": "papers/2512.22539/",
     "cover_path": "covers/2512.22539/",
     "paper_image_path": "assets/paper-images/thumbs/2512.22539.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "提出 VLA-Arena，首个系统性评估视觉-语言-动作模型（VLA）性能与安全性的开源基准框架，核心是通过三个正交轴量化任务难度，精准刻画VLA的能力边界与失败模式 针对现有机器人评测基准的三大痛点：静态单一难度任务设计、鲁棒性与外推能力割裂评估、忽略真实部署必需的安全约束，解决当前无法系统理解VLA“如何失败”的问题 配套提供从场景建模到自动评测的完整工具链，以及标准化的 VLA-Arena-S/M/L 微调数…",
+    "research_unit": "北京大学人工智能研究院",
+    "hook_text": "提出 VLA-Arena，首个系统性评估视觉-语言-动作模型（VLA）性能与安全性的开源基准框架，核心是通过三个正交轴量化任务难度，精准刻画V…",
     "key_points": [
-      "待生成"
+      "提出 VLA-Arena，首个系统性评估视觉-语言-动作模型（VLA）性能与安全性的开源基准框架，核心是通过三个正交轴量化任务难度，精准刻画V…",
+      "针对现有机器人评测基准的三大痛点：静态单一难度任务设计、鲁棒性与外推能力割裂评估、忽略真实部署必需的安全约束，解决当前无法系统理解VLA“如何…",
+      "配套提供从场景建模到自动评测的完整工具链，以及标准化的 VLA-Arena-S/M/L 微调数据集，保障研究可复现性"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#316b57",
       "to": "#8bb174",
@@ -29887,14 +30115,16 @@
     "detail_path": "papers/2511.22697/",
     "cover_path": "covers/2511.22697/",
     "paper_image_path": "assets/paper-images/thumbs/2511.22697.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对 Vision-Language-Action（VLA）模型在真实机器人场景中需要针对不同物理配置（机器人本体、环境、空间关系等）进行针对性微调的需求，现有通用微调方法（如全头 LoRA）采用统一参数更新策略，未适配任务的特定物理、视觉和语言特性，存在计算开销大、泛化性差、可解释性不足的问题。 论文提出 Robotic Steering 微调框架，受神经科学功能特异性和机器学习机制可解释性启发，利用少样本专家演…",
+    "research_unit": "Carnegie Mellon University",
+    "hook_text": "针对 Vision-Language-Action（VLA）模型在真实机器人场景中需要针对不同物理配置（机器人本体、环境、空间关系等）进行针对…",
     "key_points": [
-      "待生成"
+      "针对 Vision-Language-Action（VLA）模型在真实机器人场景中需要针对不同物理配置（机器人本体、环境、空间关系等）进行针对…",
+      "论文提出 Robotic Steering 微调框架，受神经科学功能特异性和机器学习机制可解释性启发，利用少样本专家演示编码任务的物理细节，识…",
+      "研究目标是通过稀疏的任务特定组件更新，在匹配或超越全参数微调性能的同时，降低计算成本、提升任务泛化性和环境鲁棒性，为真实机器人系统的 VLA…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -30080,15 +30310,17 @@
     "arxiv_id": "2511.20633",
     "detail_path": "papers/2511.20633/",
     "cover_path": "covers/2511.20633/",
-    "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "paper_image_path": "assets/paper-images/thumbs/2511.20633.webp",
+    "preview_text": "针对 Vision-Language-Action (VLA) 策略主要依赖模仿学习、易在分布偏移下过拟合的问题，提出利用学习到的世界模型 Prophet 作为仿真器，为 VLA 策略提供强化学习 (RL) 后训练的可行路径。 通过 Prophet 在大规模异构机器人数据上进行预训练，并以少样本方式适应新环境、物体和轨迹，生成动作对齐的长时程回滚 (rollouts)。 提出定制的 RL 算法 FA-GRPO 与…",
+    "research_unit": "复旦大学 数据科学学院 (School of Data Science, Fudan Universi…",
+    "hook_text": "针对 Vision-Language-Action (VLA) 策略主要依赖模仿学习、易在分布偏移下过拟合的问题，提出利用学习到的世界模型 P…",
     "key_points": [
-      "待生成"
+      "针对 Vision-Language-Action (VLA) 策略主要依赖模仿学习、易在分布偏移下过拟合的问题，提出利用学习到的世界模型 P…",
+      "通过 Prophet 在大规模异构机器人数据上进行预训练，并以少样本方式适应新环境、物体和轨迹，生成动作对齐的长时程回滚 (rollouts)。",
+      "提出定制的 RL 算法 FA-GRPO 与 FlowScale，稳定优化基于流的动作头 (flow-based action heads)，解…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -30134,15 +30366,17 @@
     "arxiv_id": "2511.19878",
     "detail_path": "papers/2511.19878/",
     "cover_path": "covers/2511.19878/",
-    "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "paper_image_path": "assets/paper-images/thumbs/2511.19878.webp",
+    "preview_text": "提出 MAPS (Module-Wise Proximity Scheduling)，首个针对视觉-语言-动作（VLA）模型的鲁棒微调框架，旨在解决VLA模型在动作微调过程中的灾难性遗忘问题 通过系统性分析揭示VLA各模块（视觉编码器、语言模型）的邻近约束应按特定顺序放松，以平衡稳定性与灵活性 在 SimplerEnv、CALVIN、LIBERO 及真实世界 Franka Emika Panda 机器人上验证，一致…",
+    "research_unit": "Georgia Institute of Technology（佐治亚理工学院）",
+    "hook_text": "提出 MAPS (Module-Wise Proximity Scheduling)，首个针对视觉-语言-动作（VLA）模型的鲁棒微调框架，旨…",
     "key_points": [
-      "待生成"
+      "提出 MAPS (Module-Wise Proximity Scheduling)，首个针对视觉-语言-动作（VLA）模型的鲁棒微调框架，旨…",
+      "通过系统性分析揭示VLA各模块（视觉编码器、语言模型）的邻近约束应按特定顺序放松，以平衡稳定性与灵活性",
+      "在 SimplerEnv、CALVIN、LIBERO 及真实世界 Franka Emika Panda 机器人上验证，一致提升分布外（OOD）…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
@@ -31644,15 +31878,17 @@
     "arxiv_id": "2510.14902",
     "detail_path": "papers/2510.14902/",
     "cover_path": "covers/2510.14902/",
-    "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "paper_image_path": "assets/paper-images/thumbs/2510.14902.webp",
+    "preview_text": "当前预训练的视觉-语言-动作（VLA）模型虽在分布内任务上具备一定泛化能力，但在训练集外的未见物体概念（如新描述、新纹理）上操作成功率骤降，无法复用已学习的操作经验。 本文提出VLA²智能体框架，以开源OpenVLA为执行 backbone，集成任务规划、网页检索、目标检测、过程验证等外部模块，将未见概念转换为模型可识别的已知信息，解决分布外物体操作的泛化失效问题。 基于LIBERO仿真环境构建Easy/Mediu…",
+    "research_unit": "论文作者主要隶属于以下机构：Zhejiang University、MiLAB, Westlake U…",
+    "hook_text": "当前预训练的视觉-语言-动作（VLA）模型虽在分布内任务上具备一定泛化能力，但在训练集外的未见物体概念（如新描述、新纹理）上操作成功率骤降，无…",
     "key_points": [
-      "待生成"
+      "当前预训练的视觉-语言-动作（VLA）模型虽在分布内任务上具备一定泛化能力，但在训练集外的未见物体概念（如新描述、新纹理）上操作成功率骤降，无…",
+      "本文提出VLA²智能体框架，以开源OpenVLA为执行 backbone，集成任务规划、网页检索、目标检测、过程验证等外部模块，将未见概念转换…",
+      "基于LIBERO仿真环境构建Easy/Medium/Hard三个难度的未见概念操作评估基准，验证框架在不损失领域内任务性能的前提下，显著提升分…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 9,
+    "section_count": 6,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
@@ -32256,15 +32492,17 @@
     "arxiv_id": "2510.03342",
     "detail_path": "papers/2510.03342/",
     "cover_path": "covers/2510.03342/",
-    "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "paper_image_path": "assets/paper-images/thumbs/2510.03342.webp",
+    "preview_text": "本论文推出了 Gemini Robotics 1.5 模型家族，包含多具身Vision-Language-Action（VLA）模型Gemini Robotics 1.5，以及通用具身推理模型Gemini Robotics-ER 1.5，目标是推动具备感知、思考、行动能力的通用机器人的发展 针对通用机器人面临的物理世界理解不足、跨具身迁移困难、复杂多步任务执行能力弱等问题，论文提出三大核心创新：Motion Tra…",
+    "research_unit": "Google DeepMind 的 Gemini Robotics 团队",
+    "hook_text": "本论文推出了 Gemini Robotics 1.5 模型家族，包含多具身Vision-Language-Action（VLA）模型Gemin…",
     "key_points": [
-      "待生成"
+      "本论文推出了 Gemini Robotics 1.5 模型家族，包含多具身Vision-Language-Action（VLA）模型Gemin…",
+      "针对通用机器人面临的物理世界理解不足、跨具身迁移困难、复杂多步任务执行能力弱等问题，论文提出三大核心创新：Motion Transfer多具身…",
+      "通过将两个模型组合为智能体系统，实现了机器人在开放环境中的长时序任务规划、工具调用、错误恢复等能力，向物理智能体的方向迈出关键一步"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#ef6c3f",
       "to": "#f6b13d",
@@ -32759,14 +32997,16 @@
     "detail_path": "papers/2509.19480/",
     "cover_path": "covers/2509.19480/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对现有机器人导航策略大多仅支持单模态目标条件、泛化性不足的问题，提出全模态视觉-语言-动作（VLA）模型OmniVLA，支持2D位姿、第一人称目标图像、自然语言及任意组合的多模态目标条件导航 通过随机模态融合的训练框架，整合多源异构导航数据集，让模型学习更丰富的几何、语义和视觉表征，提升跨环境、跨模态的泛化能力 目标是构建可适配多场景、多用户输入方式的通用导航基础模型，为后续可扩展的机器人导航研究提供范式",
+    "research_unit": "UC Berkeley：Noriaki Hirose、Catherine Glossop、Sergey…",
+    "hook_text": "针对现有机器人导航策略大多仅支持单模态目标条件、泛化性不足的问题，提出全模态视觉-语言-动作（VLA）模型OmniVLA，支持2D位姿、第一人…",
     "key_points": [
-      "待生成"
+      "针对现有机器人导航策略大多仅支持单模态目标条件、泛化性不足的问题，提出全模态视觉-语言-动作（VLA）模型OmniVLA，支持2D位姿、第一人…",
+      "通过随机模态融合的训练框架，整合多源异构导航数据集，让模型学习更丰富的几何、语义和视觉表征，提升跨环境、跨模态的泛化能力",
+      "目标是构建可适配多场景、多用户输入方式的通用导航基础模型，为后续可扩展的机器人导航研究提供范式"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#ef6c3f",
       "to": "#f6b13d",
@@ -33121,14 +33361,16 @@
     "detail_path": "papers/2509.08820/",
     "cover_path": "covers/2509.08820/",
     "paper_image_path": "assets/paper-images/thumbs/2509.08820.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对化学实验机器人自动化中的长时序、安全合规性核心挑战，解决现有VLM-based系统（如VoxPoser、ReKep）依赖深度感知、难以处理透明器皿，以及现有VLA模型（如RDT、π₀）缺乏语义级反馈、易出现不安全或失败行为的问题 提出RoboChemist双闭环框架，整合Vision-Language Models（VLMs）与Vision-Language-Action（VLA）模型，实现高成功率、高安全合规…",
+    "research_unit": "北京智源人工智能研究院（Beijing Academy of Artificial Intellige…",
+    "hook_text": "针对化学实验机器人自动化中的长时序、安全合规性核心挑战，解决现有VLM-based系统（如VoxPoser、ReKep）依赖深度感知、难以处理…",
     "key_points": [
-      "待生成"
+      "针对化学实验机器人自动化中的长时序、安全合规性核心挑战，解决现有VLM-based系统（如VoxPoser、ReKep）依赖深度感知、难以处理…",
+      "提出RoboChemist双闭环框架，整合Vision-Language Models（VLMs）与Vision-Language-Actio…",
+      "研究目标为让机器人能够自主完成从原语操作到多步完整化学实验的全流程，同时保证实验安全性和操作合规性，并具备跨场景泛化能力"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#177e89",
       "to": "#5ec2a8",
@@ -34011,14 +34253,16 @@
     "detail_path": "papers/2508.02190/",
     "cover_path": "covers/2508.02190/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "提出首个面向机器人操作的联邦视觉-语言-动作（VLA）学习框架FedVLA，解决传统VLA训练依赖大规模用户特定数据带来的隐私泄露风险，通过分布式训练避免原始数据上传云端 针对联邦VLA训练中多客户端任务异构性导致的性能下降问题，设计面向任务的场景解析、双门控混合专家和专家驱动聚合策略，解决传统联邦学习（如FedAvg）忽略任务差异、知识聚合效率低的问题 解决现有混合专家（MoE）机制固定激活专家数量、无法适配不同…",
+    "research_unit": "国防科技大学（National University of Defense Technology）",
+    "hook_text": "提出首个面向机器人操作的联邦视觉-语言-动作（VLA）学习框架FedVLA，解决传统VLA训练依赖大规模用户特定数据带来的隐私泄露风险，通过分…",
     "key_points": [
-      "待生成"
+      "提出首个面向机器人操作的联邦视觉-语言-动作（VLA）学习框架FedVLA，解决传统VLA训练依赖大规模用户特定数据带来的隐私泄露风险，通过分…",
+      "针对联邦VLA训练中多客户端任务异构性导致的性能下降问题，设计面向任务的场景解析、双门控混合专家和专家驱动聚合策略，解决传统联邦学习（如Fed…",
+      "解决现有混合专家（MoE）机制固定激活专家数量、无法适配不同任务复杂度的问题，提升模型在资源受限场景下的计算效率，适配机器人实时操作需求"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#d84f61",
       "to": "#f29c6b",
@@ -34149,14 +34393,16 @@
     "detail_path": "papers/2507.17294/",
     "cover_path": "covers/2507.17294/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "当前主流视觉-语言-动作（VLA）模型缺乏原生触觉感知能力，在接触丰富的真实世界任务中表现受限，而将触觉信号融入大模型面临多模态数据集缺失、基础模型无触觉模态等核心挑战 本文提出VLA-Touch双级触觉反馈框架，无需微调基础VLA模型，同时提升高层任务规划能力与低层动作执行精度 通过真实世界实验验证双级触觉反馈对接触丰富任务的有效性，为触觉增强的具身智能体提供轻量模块化解决方案",
+    "research_unit": "新加坡国立大学计算机科学系（Dept. of Computer Science, National U…",
+    "hook_text": "当前主流视觉-语言-动作（VLA）模型缺乏原生触觉感知能力，在接触丰富的真实世界任务中表现受限，而将触觉信号融入大模型面临多模态数据集缺失、基…",
     "key_points": [
-      "待生成"
+      "当前主流视觉-语言-动作（VLA）模型缺乏原生触觉感知能力，在接触丰富的真实世界任务中表现受限，而将触觉信号融入大模型面临多模态数据集缺失、基…",
+      "本文提出VLA-Touch双级触觉反馈框架，无需微调基础VLA模型，同时提升高层任务规划能力与低层动作执行精度",
+      "通过真实世界实验验证双级触觉反馈对接触丰富任务的有效性，为触觉增强的具身智能体提供轻量模块化解决方案"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#316b57",
       "to": "#8bb174",
@@ -34959,14 +35205,16 @@
     "detail_path": "papers/2506.12723/",
     "cover_path": "covers/2506.12723/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "现有VLA（Vision-Language-Action）模型参数量大、推理速度慢，难以满足机器人操控、自动驾驶等实时任务需求；当前VLA加速方法仅关注单步计算冗余，未考虑VLA在顺序决策场景中的时序冗余（连续动作生成的重复计算）和视觉输入的时空冗余 本文提出SP-VLA统一加速框架，通过联合模型调度与token剪枝技术，同时解决VLA模型的时序和空间冗余问题，实现高效加速的同时保持高任务精度 核心目标是在不损失（…",
+    "research_unit": "清华大学（Ye Li, Yuan Meng, Kangye Ji, Shutao Xia, Zhi W…",
+    "hook_text": "现有VLA（Vision-Language-Action）模型参数量大、推理速度慢，难以满足机器人操控、自动驾驶等实时任务需求；当前VLA加速…",
     "key_points": [
-      "待生成"
+      "现有VLA（Vision-Language-Action）模型参数量大、推理速度慢，难以满足机器人操控、自动驾驶等实时任务需求；当前VLA加速…",
+      "本文提出SP-VLA统一加速框架，通过联合模型调度与token剪枝技术，同时解决VLA模型的时序和空间冗余问题，实现高效加速的同时保持高任务精度",
+      "核心目标是在不损失（或少量损失）模型性能的前提下，最大化VLA模型的推理加速比，提升其在实时场景的部署可行性"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#177e89",
       "to": "#5ec2a8",
@@ -35265,14 +35513,16 @@
     "detail_path": "papers/2506.03350/",
     "cover_path": "covers/2506.03350/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "首次针对机器人视觉-语言-动作（VLA）模型开展对抗攻击研究，将大语言模型（LLM）越狱攻击 adapted 为对 VLA 的完全控制权获取 核心目标是证明通过在初始输入中添加对抗性文本提示，即可驱动机器人执行任意目标动作或动作序列，且攻击在物理世界 rollout 中具有持久性 区别于传统 LLM 越狱，VLA 攻击无需语义上的“有害”关联，而是聚焦于对机器人底层动作空间的完全控制权（control author…",
+    "research_unit": "Gray Swan AI",
+    "hook_text": "首次针对机器人视觉-语言-动作（VLA）模型开展对抗攻击研究，将大语言模型（LLM）越狱攻击 adapted 为对 VLA 的完全控制权获取",
     "key_points": [
-      "待生成"
+      "首次针对机器人视觉-语言-动作（VLA）模型开展对抗攻击研究，将大语言模型（LLM）越狱攻击 adapted 为对 VLA 的完全控制权获取",
+      "核心目标是证明通过在初始输入中添加对抗性文本提示，即可驱动机器人执行任意目标动作或动作序列，且攻击在物理世界 rollout 中具有持久性",
+      "区别于传统 LLM 越狱，VLA 攻击无需语义上的“有害”关联，而是聚焦于对机器人底层动作空间的完全控制权（control authority）"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 5,
+    "section_count": 5,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
@@ -35403,14 +35653,16 @@
     "detail_path": "papers/2506.01300/",
     "cover_path": "covers/2506.01300/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对现有视频理解方法采用单次静态推理、缺乏动态反馈与自我纠正能力的问题，提出 ReAgent-V，一个奖励驱动的多智能体框架，用于视频理解、推理增强及视觉-语言-动作（VLA）模型对齐 核心创新在于推理过程中实时生成奖励信号，通过保守、中立、激进三种视角的多轮反思机制迭代优化答案，并自动筛选高质量训练数据用于后续模型微调 在 12 个数据集 上的三大应用（视频理解、视频 LLM 推理、VLA 对齐）分别取得最高 6…",
+    "research_unit": "UNC-Chapel Hill（北卡罗来纳大学教堂山分校）",
+    "hook_text": "针对现有视频理解方法采用单次静态推理、缺乏动态反馈与自我纠正能力的问题，提出 ReAgent-V，一个奖励驱动的多智能体框架，用于视频理解、推…",
     "key_points": [
-      "待生成"
+      "针对现有视频理解方法采用单次静态推理、缺乏动态反馈与自我纠正能力的问题，提出 ReAgent-V，一个奖励驱动的多智能体框架，用于视频理解、推…",
+      "核心创新在于推理过程中实时生成奖励信号，通过保守、中立、激进三种视角的多轮反思机制迭代优化答案，并自动筛选高质量训练数据用于后续模型微调",
+      "在 12 个数据集 上的三大应用（视频理解、视频 LLM 推理、VLA 对齐）分别取得最高 6.9%、2.1% 和 9.8% 的性能提升，验证…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 6,
+    "section_count": 5,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -35761,14 +36013,16 @@
     "detail_path": "papers/2505.18793/",
     "cover_path": "covers/2505.18793/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对Vision-Language-Action（VLA）模型训练所需的大规模高质量示教数据，传统遥操作收集方式存在操作者持续关注成本高、效率低、难以规模化，且仿真数据存在sim-to-real迁移gap的问题，本文提出Genie Centurion（GCENT）这一面向真实机器人的可扩展数据收集与训练范式。 GCENT以不完美的初始策略为基础，仅在策略执行失败时触发人工干预，结合倒回-精炼机制收集针对性修正示教…",
+    "research_unit": "论文所有作者均隶属于AgiBot，相关项目主页为genie-centurion.github.io",
+    "hook_text": "针对Vision-Language-Action（VLA）模型训练所需的大规模高质量示教数据，传统遥操作收集方式存在操作者持续关注成本高、效率…",
     "key_points": [
-      "待生成"
+      "针对Vision-Language-Action（VLA）模型训练所需的大规模高质量示教数据，传统遥操作收集方式存在操作者持续关注成本高、效率…",
+      "GCENT以不完美的初始策略为基础，仅在策略执行失败时触发人工干预，结合倒回-精炼机制收集针对性修正示教，实现机器人在部署中的迭代式自我优化…",
+      "该框架配套Task Sentinel自主监测模块，可大幅降低人工监控需求，最终支持单人同时监管多台机器人，显著降低机器人策略训练的人力与时间成…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#177e89",
       "to": "#5ec2a8",
@@ -36291,14 +36545,16 @@
     "detail_path": "papers/2603.18532/",
     "cover_path": "covers/2603.18532/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "现有VLA的RL微调存在两难：真实世界RL受限于场景多样性易导致策略过拟合，仿真RL则面临场景设计成本高、sim-to-real迁移难的问题 本文提出利用生成式3D世界模型自动构建大规模可交互仿真场景，配合语言驱动的场景设计器，实现可扩展的VLA sim-to-real RL微调，在不牺牲泛用性的前提下降低人力成本 研究目标是通过生成式仿真提升VLA的仿真性能、真实世界迁移效果和零样本泛化能力，同时验证流匹配VLA…",
+    "research_unit": "论文作者为 Andrew Choi、Xinjie Wang、Zhizhong Su、Wei Xu，均隶…",
+    "hook_text": "现有VLA的RL微调存在两难：真实世界RL受限于场景多样性易导致策略过拟合，仿真RL则面临场景设计成本高、sim-to-real迁移难的问题",
     "key_points": [
-      "待生成"
+      "现有VLA的RL微调存在两难：真实世界RL受限于场景多样性易导致策略过拟合，仿真RL则面临场景设计成本高、sim-to-real迁移难的问题",
+      "本文提出利用生成式3D世界模型自动构建大规模可交互仿真场景，配合语言驱动的场景设计器，实现可扩展的VLA sim-to-real RL微调，在…",
+      "研究目标是通过生成式仿真提升VLA的仿真性能、真实世界迁移效果和零样本泛化能力，同时验证流匹配VLA的RL微调可行性与高效推理方案"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
@@ -36681,14 +36937,16 @@
     "detail_path": "papers/2603.15620/",
     "cover_path": "covers/2603.15620/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对现有Vision-Language-Action（VLA）模型在动态环境（含移动目标、环境突变）中性能骤降的核心问题，明确瓶颈为大规模动态操作数据集稀缺，且主流VLA依赖单帧观测缺乏时空推理能力 提出大规模动态操作数据集与基准DOMINO，以及动态感知VLA架构PUMA，旨在实现通用的动态环境机器人操作 通过系统性实验验证动态数据训练的时空表示具备泛化性，可迁移至静态操作任务，PUMA相比基线实现6.3%的绝对…",
+    "research_unit": "华中科技大学（Huazhong University of Science and Technolog…",
+    "hook_text": "针对现有Vision-Language-Action（VLA）模型在动态环境（含移动目标、环境突变）中性能骤降的核心问题，明确瓶颈为大规模动态…",
     "key_points": [
-      "待生成"
+      "针对现有Vision-Language-Action（VLA）模型在动态环境（含移动目标、环境突变）中性能骤降的核心问题，明确瓶颈为大规模动态…",
+      "提出大规模动态操作数据集与基准DOMINO，以及动态感知VLA架构PUMA，旨在实现通用的动态环境机器人操作",
+      "通过系统性实验验证动态数据训练的时空表示具备泛化性，可迁移至静态操作任务，PUMA相比基线实现6.3%的绝对成功率提升"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#316b57",
       "to": "#8bb174",
@@ -37323,14 +37581,16 @@
     "detail_path": "papers/2603.12553/",
     "cover_path": "covers/2603.12553/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "现有基于世界模型的视觉-语言-动作（VLA）机器人操作框架存在两类核心缺陷：密集未来预测会引入视觉冗余并累积误差导致长程规划漂移，现有稀疏方法（语义子目标/隐式表示）缺乏显式运动学 grounding，无法与低层动作执行对齐。 论文提出StructVLA框架，将生成式世界模型重构为显式的、物理 grounded 的结构化规划器，通过预测基于运动学线索的稀疏结构化帧作为中层视觉子目标，解决长程操作的误差累积和物理对齐…",
+    "research_unit": "中国科学技术大学（University of Science and Technology of Ch…",
+    "hook_text": "现有基于世界模型的视觉-语言-动作（VLA）机器人操作框架存在两类核心缺陷：密集未来预测会引入视觉冗余并累积误差导致长程规划漂移，现有稀疏方法…",
     "key_points": [
-      "待生成"
+      "现有基于世界模型的视觉-语言-动作（VLA）机器人操作框架存在两类核心缺陷：密集未来预测会引入视觉冗余并累积误差导致长程规划漂移，现有稀疏方法…",
+      "论文提出StructVLA框架，将生成式世界模型重构为显式的、物理 grounded 的结构化规划器，通过预测基于运动学线索的稀疏结构化帧作为…",
+      "研究目标是在仿真和真实机器人场景中实现可靠的长程操作，同时验证方法的泛化性和鲁棒性，覆盖基础操作和复杂长程任务。"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#d84f61",
       "to": "#f29c6b",
@@ -37825,14 +38085,16 @@
     "detail_path": "papers/2603.09482/",
     "cover_path": "covers/2603.09482/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "本文提出StyleVLA，首个面向自动驾驶的驾驶风格感知视觉-语言-动作（VLA）框架，解决现有VLA模型仅生成通用无碰撞轨迹、忽略驾驶风格个性化需求，以及轨迹生成忽略运动学约束导致不可行的问题。 核心研究目标是让自动驾驶系统能够根据用户指令生成符合指定驾驶风格（如舒适、运动、安全等）且物理可行的未来轨迹，提升用户乘坐体验。 现有公开自动驾驶数据集缺乏多驾驶风格的地面真值标注，是制约风格感知VLA发展的核心瓶颈，本…",
+    "research_unit": "Technical University of Munich (TUM)：包含Professorshi…",
+    "hook_text": "本文提出StyleVLA，首个面向自动驾驶的驾驶风格感知视觉-语言-动作（VLA）框架，解决现有VLA模型仅生成通用无碰撞轨迹、忽略驾驶风格个…",
     "key_points": [
-      "待生成"
+      "本文提出StyleVLA，首个面向自动驾驶的驾驶风格感知视觉-语言-动作（VLA）框架，解决现有VLA模型仅生成通用无碰撞轨迹、忽略驾驶风格个…",
+      "核心研究目标是让自动驾驶系统能够根据用户指令生成符合指定驾驶风格（如舒适、运动、安全等）且物理可行的未来轨迹，提升用户乘坐体验。",
+      "现有公开自动驾驶数据集缺乏多驾驶风格的地面真值标注，是制约风格感知VLA发展的核心瓶颈，本文同时配套构建了对应的大规模风格感知指令数据集。"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#177e89",
       "to": "#5ec2a8",
@@ -37991,14 +38253,16 @@
     "detail_path": "papers/2603.08519/",
     "cover_path": "covers/2603.08519/",
     "paper_image_path": "",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "提出 AtomVLA，首个子任务感知的 Vision-Language-Action (VLA) 框架，集成可扩展的离线后训练流程，用于解决长 horizon 机器人操作任务中的指令 grounding 差距问题 针对当前 VLA 模型依赖粗粒度高层指令导致的误差累积问题，利用大语言模型将高层演示分解为细粒度原子子任务，提供显式的阶段级指导 引入基于 V-JEPA2 的预测性潜在世界模型，在潜在空间中评估候选动作轨…",
+    "research_unit": "华中科技大学 (Huazhong University of Science and Technolo…",
+    "hook_text": "提出 AtomVLA，首个子任务感知的 Vision-Language-Action (VLA) 框架，集成可扩展的离线后训练流程，用于解决长…",
     "key_points": [
-      "待生成"
+      "提出 AtomVLA，首个子任务感知的 Vision-Language-Action (VLA) 框架，集成可扩展的离线后训练流程，用于解决长…",
+      "针对当前 VLA 模型依赖粗粒度高层指令导致的误差累积问题，利用大语言模型将高层演示分解为细粒度原子子任务，提供显式的阶段级指导",
+      "引入基于 V-JEPA2 的预测性潜在世界模型，在潜在空间中评估候选动作轨迹，生成可靠的奖励信号，实现高效的离线强化学习后训练，避免物理机器人…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 9,
+    "section_count": 6,
     "cover_theme": {
       "from": "#177e89",
       "to": "#5ec2a8",

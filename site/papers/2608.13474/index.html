@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Decoding Task Progress from VLA Representations - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="聚焦视觉-语言-动作模型（VLA）的可解释性与运行时监控问题，以π₀.₅为研究对象，通过线性探针技术验证任务进度（轨迹剩余归一化时间）可从模型内部表征中线性解码 针对VLA部署中缺乏轻量级监控工具、无法理解其内部任务相关语义表征的痛点，探索任务进度信号在无监督分布外（OOD）检测、语言鲁棒性诊断等下游场景的应用价值 揭示VLA内部表征与模型行为之间的gap：部分语义信号可被观测但无法通过简单线性方式操控" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.13474">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.13474.webp" alt="Decoding Task Progress from VLA Representations" loading="lazy" />
+  <figcaption class="paper-figure-caption">聚焦视觉-语言-动作模型（VLA）的可解释性与运行时监控问题，以π₀.₅为研究对象，通过线性探针技术验证任务进度（轨迹剩余归一化时间）可从模型…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Decoding Task Progress from VLA Representations</h1>
+            <div class="detail-meta">2026-08-13 · <a href="http://arxiv.org/abs/2608.13474" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.13474" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.13474</span></div>
+            <p class="detail-summary">聚焦视觉-语言-动作模型（VLA）的可解释性与运行时监控问题，以π₀.₅为研究对象，通过线性探针技术验证任务进度（轨迹剩余归一化时间）可从模型内部表征中线性解码 针对VLA部署中缺乏轻量级监控工具、无法理解其内部任务相关语义表征的痛点，探索任务进度信号在无监督分布外（OOD）检测、语言鲁棒性诊断等下游场景的应用价值 揭示VLA内部表征与模型行为之间的gap：部分语义信号可被观测但无法通过简单线性方式操控</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Cornell University（康奈尔大学）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.13474/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">聚焦视觉-语言-动作模型（VLA）的可解释性与运行时监控问题，以π₀.₅为研究对象，通过线性探针技术验证任务进度（轨迹剩余归一化时间）可从模型…</p>
+  <ul class="reading-intro-points"><li>聚焦视觉-语言-动作模型（VLA）的可解释性与运行时监控问题，以π₀.₅为研究对象，通过线性探针技术验证任务进度（轨迹剩余归一化时间）可从模型…</li><li>针对VLA部署中缺乏轻量级监控工具、无法理解其内部任务相关语义表征的痛点，探索任务进度信号在无监督分布外（OOD）检测、语言鲁棒性诊断等下游场…</li><li>揭示VLA内部表征与模型行为之间的gap：部分语义信号可被观测但无法通过简单线性方式操控</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>Cornell University（康奈尔大学）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>聚焦视觉-语言-动作模型（VLA）的可解释性与运行时监控问题，以<strong>π₀.₅</strong>为研究对象，通过线性探针技术验证任务进度（轨迹剩余归一化时间）可从模型内部表征中线性解码</li><li>针对VLA部署中缺乏轻量级监控工具、无法理解其内部任务相关语义表征的痛点，探索任务进度信号在无监督分布外（OOD）检测、语言鲁棒性诊断等下游场景的应用价值</li><li>揭示VLA内部表征与模型行为之间的gap：部分语义信号可被观测但无法通过简单线性方式操控</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>形式化了生成模型的<strong>弱可解码性</strong>、<strong>强可解码性</strong>、<strong>可操控性</strong>三层表征评估标准，明确了信号存在性、输入扰动响应性、输出因果影响三个不同强度的表征定义</li><li>证明任务进度在<strong>π₀.₅</strong>的残差流中同时满足弱和强可解码性，且该信号在大规模机器人预训练阶段已 emergent 出现，早于任务微调；但任务进度信号不可通过线性注入方式操控，暴露了表征可观测性与行为可控性的gap</li><li>提出基于进度探针的无监督OOD检测器，在跨任务、跨扰动场景下表现优异，无需OOD标签即可检测策略停滞等部署故障，性能媲美有监督基线</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>从<strong>π₀.₅</strong>（基于3B参数的<strong>PaliGemma</strong>视觉-语言骨干网络）的各层残差流提取中间嵌入，针对任务进度τ（归一化轨迹剩余时间）训练单层线性探针</li><li>定义三类探针评估指标：弱可解码性通过分布内验证集风险衡量，强可解码性通过语言 counterfactual 扰动下的探针性能衡量，可操控性通过激活注入后模型输出动作与真实 counterfactual 动作的分布距离衡量</li><li>设计基于进度探针的无监督OOD检测器：估计单任务预期完成时间，计算预测进度与理论进度的残差，残差超过阈值时判定为OOD状态，无需任何OOD标注</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：<strong>VLABench</strong>，包含10种桌面操作任务，每任务500条专家演示轨迹，共5000条轨迹，用于探针训练与评估</li><li>模型规模：骨干网络<strong>PaliGemma</strong>为3B参数，<strong>π₀.₅</strong>是在PaliGemma基础上微调的VLA模型</li><li>训练资源：论文未明确说明具体使用的GPU/TPU等训练硬件配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：VLABench仿真桌面操作环境，覆盖10种语义变体操作任务</li><li>主要评估指标：弱/强可解码性用R²、探针风险；可操控性用动作分布 divergence、注入动作与GT动作的L2距离；OOD检测用<strong>per-replan</strong>和<strong>per-episode</strong>两种粒度下的AUROC</li><li>关键实验结果：</li></ul>
+<p> - 任务进度在π₀.₅的早期视觉层和前10层Gemma层中弱可解码（R²达0.95），且在PaliGemma预训练阶段已存在该信号，微调不会改变其可解码性</p>
+<p> - 仅用单提示训练的探针不响应语言扰动（不具备强可解码性），经 counterfactual 训练的对比探针可响应语言切换，但进度信号无法通过线性注入操控模型行为</p>
+<p> - 进度探针OOD检测器在跨任务泛化中per-episode AUROC达<strong>0.910</strong>，跨扰动泛化per-episode AUROC达<strong>0.960</strong>，无需OOD监督即可媲美有监督的<strong>SAFE-MLP</strong>基线，且对未见过的扰动模式泛化性更强</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2608.13453/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

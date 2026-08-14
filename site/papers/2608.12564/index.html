@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scaling Automatic Research Agents via World Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对自动研究（AutoResearch）智能体的强化学习（RL）训练中，轨迹的「智能体生成」和「环境执行」两部分扩展性严重不对称的问题：生成可通过批量推理复用计算，但每个候选方案的执行需要独占沙箱和真实GPU资源，导致环境执行成为训练扩展的核心瓶颈 提出World Model RL（WMRL）框架，用世界模型替代真实环境执行消除该瓶颈，同时针对世界模型不完美带来的奖励偏差和噪声问题设计纠错机制，保证训练性能不下降…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.12564">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.12564.webp" alt="Scaling Automatic Research Agents via World Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对自动研究（AutoResearch）智能体的强化学习（RL）训练中，轨迹的「智能体生成」和「环境执行」两部分扩展性严重不对称的问题：生成可…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Scaling Automatic Research Agents via World Models</h1>
+            <div class="detail-meta">2026-08-12 · <a href="http://arxiv.org/abs/2608.12564" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.12564" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.12564</span></div>
+            <p class="detail-summary">针对自动研究（AutoResearch）智能体的强化学习（RL）训练中，轨迹的「智能体生成」和「环境执行」两部分扩展性严重不对称的问题：生成可通过批量推理复用计算，但每个候选方案的执行需要独占沙箱和真实GPU资源，导致环境执行成为训练扩展的核心瓶颈 提出World Model RL（WMRL）框架，用世界模型替代真实环境执行消除该瓶颈，同时针对世界模型不完美带来的奖励偏差和噪声问题设计纠错机制，保证训练性能不下降…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">University of Illinois Urbana-Champaign（伊利诺伊大学厄巴纳-香…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.12564/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对自动研究（AutoResearch）智能体的强化学习（RL）训练中，轨迹的「智能体生成」和「环境执行」两部分扩展性严重不对称的问题：生成可…</p>
+  <ul class="reading-intro-points"><li>针对自动研究（AutoResearch）智能体的强化学习（RL）训练中，轨迹的「智能体生成」和「环境执行」两部分扩展性严重不对称的问题：生成可…</li><li>提出World Model RL（WMRL）框架，用世界模型替代真实环境执行消除该瓶颈，同时针对世界模型不完美带来的奖励偏差和噪声问题设计纠错…</li><li>研究目标是实现AutoResearch智能体RL训练的高效扩展，同时解决世界模型替代真实执行带来的误差问题，最终提升智能体的自主研究能力</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>University of Illinois Urbana-Champaign</strong>（伊利诺伊大学厄巴纳-香槟分校）</li><li><strong>Amazon</strong>（亚马逊）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对自动研究（AutoResearch）智能体的强化学习（RL）训练中，轨迹的「智能体生成」和「环境执行」两部分扩展性严重不对称的问题：生成可通过批量推理复用计算，但每个候选方案的执行需要独占沙箱和真实GPU资源，导致环境执行成为训练扩展的核心瓶颈</li><li>提出<strong>World Model RL（WMRL）</strong>框架，用世界模型替代真实环境执行消除该瓶颈，同时针对世界模型不完美带来的奖励偏差和噪声问题设计纠错机制，保证训练性能不下降</li><li>研究目标是实现AutoResearch智能体RL训练的高效扩展，同时解决世界模型替代真实执行带来的误差问题，最终提升智能体的自主研究能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>引入世界模型到AutoResearch智能体的RL训练流程中，以世界模型的前向推理替代昂贵的真实环境执行，彻底消除训练扩展的瓶颈，整体训练加速3-4倍</li><li>设计<strong>Online Debiasing（在线去偏）</strong>和<strong>Inverse-Variance Denoising（逆方差去噪）</strong>两种纠错机制，分别抵消世界模型奖励的系统偏差和随机噪声，经校准时训练效果可匹配甚至超过使用真实环境执行的RL训练</li><li>从理论上完整论证框架有效性：证明不完美世界模型会额外引入两类收敛误差项，所提出的两种机制可严格改进RL训练的收敛界</li><li>在多个AutoResearch任务、两种智能体规模下验证了WMRL的效率和性能增益，进一步将方法迁移到具身视觉语言动作（VLA）模型的后训练任务，证明了方法的泛化能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>核心方法WMRL将真实环境替换为与智能体同骨干的通用语言模型作为世界模型：输入任务上下文和智能体生成的解决方案，预测执行结果并提取为奖励信号，替代真实执行得分，完全复用生成阶段的批量推理能力，解决扩展瓶颈</li><li>针对世界模型的误差问题，保留小比例的「锚定组」：同时由世界模型和真实环境执行打分，得到得分对用于纠错</li></ul>
+<p> - <strong>Online Debiasing</strong>：用保序回归拟合世界模型得分与真实得分的单调映射函数，在线校准所有世界模型得分，消除系统偏差</p>
+<p> - <strong>Inverse-Variance Denoising</strong>：按梯度估计的方差倒数，融合锚定组的低噪声梯度与世界模型组的大量梯度，降低更新方差</p>
+<ul><li>创新点：首次针对AutoResearch智能体RL训练的环境执行瓶颈提出世界模型替代方案，同时通过锚定信号和两种理论可证有效的纠错机制，解决了世界模型误差对收敛性的负面影响</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：AutoResearch任务采用<strong>MLE-Dojo</strong>（按类别平衡划分为训练集和测试集）、<strong>DSBench</strong>（与训练集完全独立的数据科学基准）；VLA任务采用<strong>LIBERO-Long</strong>（标准模拟操作基准）</li><li>模型规模：AutoResearch智能体采用<strong>Qwen3.5-4B</strong>和<strong>Qwen3.5-9B</strong>，世界模型与智能体共享同规模骨干；VLA智能体采用<strong>MiniVLA-1B</strong>，世界模型采用<strong>Robometer</strong></li><li>训练资源：所有实验使用相同的<strong>A100 GPU</strong>分配，总训练计算量以GPU小时统计</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：AutoResearch任务在MLE-Dojo（test）、DSBench上评估；VLA任务在LIBERO-Long上评估</li><li>主要评估指标：MLE-Dojo和DSBench采用per-task avg@8的排行榜百分位（数值越高性能越好）；VLA任务采用任务成功率</li><li>关键实验结果：</li></ul>
+<p> - WMRL在各类任务、不同智能体规模上均实现3-4倍训练加速，且性能超过同规模的标准GRPO基线</p>
+<p> - 经WMRL后训练的4B、9B智能体，在留出测试基准上的性能超过了48B、120B参数的大规模开放权重智能体</p>
+<p> - 方法成功迁移到VLA后训练任务，证明了框架的跨领域泛化能力</p>
+<p> - 消融实验验证了Online Debiasing和Inverse-Variance Denoising两个机制各自对收敛性和性能的提升作用</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.12854/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.12416/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">RoboSynChallenge: Mastering Real-World Dexterity via Generalizing Synthesized Manipulation Skills</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

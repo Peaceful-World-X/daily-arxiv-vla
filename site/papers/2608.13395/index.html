@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对自动驾驶视觉-语言-动作（VLA）模型后训练场景下，组相对策略优化（GRPO）在遇到全为低奖励、低多样性的未解决失败rollout组时，仅能对失败轨迹进行内部排名、无法提供脱离失败区域纠正信息的局限，提出FIRE-VLA失败感知自我进化框架 该框架将未解决失败转化为下一轮策略的特权监督信号，通过特权自蒸馏与轮次式自我进化提升模型轨迹规划的鲁棒性 核心目标是减少自动驾驶VLA的严重规划失败，同时保持标称规划性能不…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.13395">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.13395.webp" alt="FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对自动驾驶视觉-语言-动作（VLA）模型后训练场景下，组相对策略优化（GRPO）在遇到全为低奖励、低多样性的未解决失败rollout组时，仅…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving</h1>
+            <div class="detail-meta">2026-08-13 · <a href="http://arxiv.org/abs/2608.13395" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.13395" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.13395</span></div>
+            <p class="detail-summary">针对自动驾驶视觉-语言-动作（VLA）模型后训练场景下，组相对策略优化（GRPO）在遇到全为低奖励、低多样性的未解决失败rollout组时，仅能对失败轨迹进行内部排名、无法提供脱离失败区域纠正信息的局限，提出FIRE-VLA失败感知自我进化框架 该框架将未解决失败转化为下一轮策略的特权监督信号，通过特权自蒸馏与轮次式自我进化提升模型轨迹规划的鲁棒性 核心目标是减少自动驾驶VLA的严重规划失败，同时保持标称规划性能不…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">哈尔滨工业大学（Harbin Institute of Technology）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.13395/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对自动驾驶视觉-语言-动作（VLA）模型后训练场景下，组相对策略优化（GRPO）在遇到全为低奖励、低多样性的未解决失败rollout组时，仅…</p>
+  <ul class="reading-intro-points"><li>针对自动驾驶视觉-语言-动作（VLA）模型后训练场景下，组相对策略优化（GRPO）在遇到全为低奖励、低多样性的未解决失败rollout组时，仅…</li><li>该框架将未解决失败转化为下一轮策略的特权监督信号，通过特权自蒸馏与轮次式自我进化提升模型轨迹规划的鲁棒性</li><li>核心目标是减少自动驾驶VLA的严重规划失败，同时保持标称规划性能不下降</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>哈尔滨工业大学（Harbin Institute of Technology）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对自动驾驶视觉-语言-动作（VLA）模型后训练场景下，组相对策略优化（GRPO）在遇到全为低奖励、低多样性的未解决失败rollout组时，仅能对失败轨迹进行内部排名、无法提供脱离失败区域纠正信息的局限，提出FIRE-VLA失败感知自我进化框架</li><li>该框架将未解决失败转化为下一轮策略的特权监督信号，通过特权自蒸馏与轮次式自我进化提升模型轨迹规划的鲁棒性</li><li>核心目标是减少自动驾驶VLA的严重规划失败，同时保持标称规划性能不下降</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>形式化了基于未解决rollout组的失败感知后训练范式，明确了GRPO在该场景下的信息供给不足问题</li><li>提出同参数规模的同策略特权自蒸馏方法：仅教师获得隐藏的未来真实轨迹，监督沿学生生成的响应前缀进行，仅针对轨迹答案token更新学生参数，无需引入更大的外部教师模型</li><li>设计轮次式自我进化机制，每轮更新后的策略作为下一轮的教师和初始策略，使特权监督的失败分布随策略更新动态适配</li><li>在匹配学生rollout数量和策略更新次数的公平对比下，FIRE-VLA保持与GRPO相当的标称规划性能，同时显著降低严重随机轨迹错误和评估持久性失败率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础训练保留GRPO目标，对所有rollout组生效，通过组内奖励标准化计算相对优势，驱动策略更新</li><li>设计训练时在线失败路由机制：筛选奖励均值低于批次30分位数、奖励标准差低于批次30分位数、有效响应占比≥0.5的组作为未解决失败组，对这些组额外添加特权自蒸馏（PSD）损失，未被路由的组仅使用GRPO更新</li><li>特权自蒸馏阶段：每轮初始时学生和教师参数完全相同，教师固定且仅额外输入隐藏的未来真实轨迹，二者共享学生生成的响应前缀，教师对学生生成的答案token的top16+1残差桶分布进行监督，使用混合权重β=0.5的Jensen-Shannon散度计算损失并做0.05的上限裁剪，最终按答案token数量加权聚合为批次PSD损失</li><li>轮次式自我进化：每轮训练结束后，更新后的学生策略作为下一轮的初始策略，同时作为下一轮的特权教师，未解决失败的分布随策略更新自动变化，无需人工调整</li><li>最终训练损失为通用GRPO损失与加权后的PSD损失之和，PSD损失系数λ=0.1</li><li>关键创新点：无需外部大模型作为教师、特权信息仅在训练时使用且部署时完全移除、监督信号完全贴合当前策略的on-policy分布</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用<strong>nuScenes</strong>自动驾驶数据集，评估集为6,019个样本，来自150个与训练无场景重叠的 held-out 场景</li><li>基础模型为<strong>Qwen2.5-VL-3B</strong>，采用全参数BF16训练</li><li>训练硬件为4块<strong>RTX 3090 GPU</strong>，使用FSDP（全分片数据并行）进行分布式训练</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估设置：与标准GRPO进行配对比较，所有样本固定顺序，置信区间通过10,000次以场景为聚类单元的bootstrap抽样计算，使用独立的SFT校准集固定的评估持久性失败检测器，避免数据泄露</li><li>核心评估指标：不同时间 horizon的轨迹L2误差（1s/2s/3s及平均）、奖励值、评估持久性失败率、严重错误（轨迹误差>10m）占比、条件在险价值（CVaR）等尾部误差指标</li><li>关键实验结果：</li></ul>
+<p> - 单样本低温采样规划场景下，FIRE-VLA与GRPO的标称规划性能无统计显著差异，平均L2从0.642m降至0.602m，但95%置信区间为[-0.1104, 0.0087]跨零</p>
+<p> - G=4随机采样评估场景下，FIRE-VLA平均L2从1.848m降至1.500m（降幅18.8%），配对差值的95%置信区间为[-0.7711, -0.0319]，具备统计显著性</p>
+<p> - 评估持久性失败率从13.03%降至11.20%，严重错误（>10m）样本占比从1.35%降至0.83%</p>
+<p> - 分布分析显示FIRE-VLA的优势主要来自抑制罕见的严重尾部错误，而非对普通轨迹的均匀改进</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.13453/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.13026/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Temporal GRPO: Beyond Trajectory-Level Credit in Vision-Language-Action Reinforcement Learning</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

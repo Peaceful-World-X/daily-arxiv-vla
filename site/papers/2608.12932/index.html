@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FlashDrive: Flash Vision-Language-Action Inference for Autonomous Driving - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对自动驾驶领域Vision-Language-Action（VLA）模型推理延迟过高、无法满足实时控制需求的问题，提出算法-系统协同设计的加速框架FlashDrive 揭示VLA推理存在四个级联瓶颈：视觉编码重复处理重叠帧、语言模型预填充重复计算可复用的上下文、推理token串行生成、流匹配去噪对非均匀速度场施加均匀计算 目标是让10B参数的推理型VLA在单GPU上达到实时部署要求，同时几乎不损失轨迹预测精度" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.12932">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.12932.webp" alt="FlashDrive: Flash Vision-Language-Action Inference for Autonomous Driving" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对自动驾驶领域Vision-Language-Action（VLA）模型推理延迟过高、无法满足实时控制需求的问题，提出算法-系统协同设计的加…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">FlashDrive: Flash Vision-Language-Action Inference for Autonomous Driving</h1>
+            <div class="detail-meta">2026-08-13 · <a href="http://arxiv.org/abs/2608.12932" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.12932" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.12932</span></div>
+            <p class="detail-summary">针对自动驾驶领域Vision-Language-Action（VLA）模型推理延迟过高、无法满足实时控制需求的问题，提出算法-系统协同设计的加速框架FlashDrive 揭示VLA推理存在四个级联瓶颈：视觉编码重复处理重叠帧、语言模型预填充重复计算可复用的上下文、推理token串行生成、流匹配去噪对非均匀速度场施加均匀计算 目标是让10B参数的推理型VLA在单GPU上达到实时部署要求，同时几乎不损失轨迹预测精度</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构包括：z-lab.ai、普林斯顿大学（Princeton）、加州大学圣地亚哥分校（UC…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.12932/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对自动驾驶领域Vision-Language-Action（VLA）模型推理延迟过高、无法满足实时控制需求的问题，提出算法-系统协同设计的加…</p>
+  <ul class="reading-intro-points"><li>针对自动驾驶领域Vision-Language-Action（VLA）模型推理延迟过高、无法满足实时控制需求的问题，提出算法-系统协同设计的加…</li><li>揭示VLA推理存在四个级联瓶颈：视觉编码重复处理重叠帧、语言模型预填充重复计算可复用的上下文、推理token串行生成、流匹配去噪对非均匀速度场…</li><li>目标是让10B参数的推理型VLA在单GPU上达到实时部署要求，同时几乎不损失轨迹预测精度</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构包括：<strong>z-lab.ai</strong>、<strong>普林斯顿大学（Princeton）</strong>、<strong>加州大学圣地亚哥分校（UC San Diego）</strong>，以及独立研究者</li><li>计算资源由 <strong>Yotta Labs</strong> 提供支持</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对自动驾驶领域Vision-Language-Action（VLA）模型推理延迟过高、无法满足实时控制需求的问题，提出算法-系统协同设计的加速框架FlashDrive</li><li>揭示VLA推理存在四个级联瓶颈：视觉编码重复处理重叠帧、语言模型预填充重复计算可复用的上下文、推理token串行生成、流匹配去噪对非均匀速度场施加均匀计算</li><li>目标是让10B参数的推理型VLA在单GPU上达到实时部署要求，同时几乎不损失轨迹预测精度</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次系统分解VLA推理的四阶段瓶颈，明确每个阶段的主导冗余类型，为针对性优化提供依据</li><li>针对每个瓶颈设计轻量级算法shortcut：流式推理复用KV缓存、扩散草稿模型实现推测解码、自适应步长缓存减少流匹配冗余计算，三者叠加实现算法层面的大幅加速</li><li>提出CUDA Graph编译与内核融合的系统级优化，降低多阶段异构流水线的内核启动开销，与算法优化形成增益叠加</li><li>在Alpamayo 1.5-10B上实现4.7倍端到端加速，将推理延迟从717ms降至151ms，控制频率从1.4Hz提升至6.6Hz，精度损失可忽略，同时支持在边缘设备部署</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>流式推理（Encode & Prefill阶段优化）</strong>：仅编码最新帧，复用前一帧的KV缓存；针对视点主序的token布局设计流式注意力掩码，采用预RoPE存储键值以适配位置偏移，解决缓存stale问题；通过仅对动作专家进行流式微调，补偿KV缓存近似带来的分布偏移，恢复精度</li><li><strong>推测推理（Decode阶段优化）</strong>：利用驾驶场景推理token低熵、块内强相关性的特点，采用两层扩散草稿模型（DFlash）并行生成整块候选token，平均接受长度达5.6个token，大幅降低串行解码的开销</li><li><strong>自适应步长流匹配（Action阶段优化）</strong>：分析流匹配速度场的非均匀性，发现中间步骤速度变化极小，通过缓存中间步骤的速度向量，复用4/8的扩散步骤，在几乎不损失精度的前提下减少去噪迭代次数</li><li><strong>量化与系统优化</strong>：采用W4A8量化，4bit权重降低解码内存带宽压力，8bit激活加速预填充的INT8计算，将模型显存占用降至~18.3GB；将每个流水线阶段编译为CUDA Graph，融合注意力、MLP的内核，降低内核启动开销，额外获得1.4倍加速</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>训练与评估数据集：<strong>NVIDIA Autonomous Vehicle Dataset</strong>，流式微调使用4k片段生成约60万训练样本，扩散草稿模型训练使用6万片段，评估使用100片段共12k滑动窗口输入</li><li>模型规模：基于<strong>Alpamayo 1.5-10B</strong>（100亿参数）实现，W4A8量化后显存占用约18.3GB</li><li>评估硬件：覆盖边缘设备<strong>Jetson Thor</strong>、消费级GPU（RTX 3090、RTX 4090、RTX 5090）、工作站级GPU（RTX PRO 6000）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：开环任务在NVIDIA Autonomous Vehicle Dataset测试集评估，闭环任务在<strong>AlpaSim</strong>开源自动驾驶仿真平台评估</li><li>核心评估指标：开环采用minADE₁@6.4s、minADE₆@6.4s衡量轨迹预测精度；闭环采用碰撞率、驶出道路率、错误车道率、轨迹跟踪误差、相对进度、计划偏差等指标衡量驾驶安全性与轨迹跟踪能力</li><li>关键实验结果：</li></ul>
+<p> - 端到端加速效果：相比原始基线实现4.7倍加速，延迟从717ms降至151ms，控制频率从1.4Hz提升至6.6Hz，达到实时部署要求</p>
+<p> - 精度保持：开环minADE₆@6.4s仅增加0.08m，minADE₁@6.4s反而降低0.13m；闭环碰撞率从0.19降至0.15，驶出道路率从0.41降至0.32，驾驶安全性提升</p>
+<p> - 跨设备部署：在不同GPU上实现4.0-10.6倍加速，边缘设备Jetson Thor上生成6个轨迹样本时可实现9.6倍加速，解决了大模型显存不足无法部署的问题</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.13026/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Temporal GRPO: Beyond Trajectory-Level Credit in Vision-Language-Action Reinforcement Learning</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.12854/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

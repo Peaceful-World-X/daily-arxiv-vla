@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有针对视觉-语言-动作（VLA）模型的对抗攻击普遍存在局限性：2D通用对抗补丁缺乏3D表面约束，3D纹理攻击又需要为每个任务单独优化，无法利用多任务VLA共享策略的跨任务攻击面，且缺乏对VLA原生动作空间的定向控制能力 本文提出UniTexture，首个跨任务通用3D对抗纹理攻击方法，通过单个绑定在目标物体表面的纹理，在多个操作任务上诱导VLA产生攻击者指定的定向动作偏差，无需为每个任务单独优化或调整纹理 研究旨…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.13453">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.13453.webp" alt="UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有针对视觉-语言-动作（VLA）模型的对抗攻击普遍存在局限性：2D通用对抗补丁缺乏3D表面约束，3D纹理攻击又需要为每个任务单独优化，无法利…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-08-13 · <a href="http://arxiv.org/abs/2608.13453" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.13453" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.13453</span></div>
+            <p class="detail-summary">现有针对视觉-语言-动作（VLA）模型的对抗攻击普遍存在局限性：2D通用对抗补丁缺乏3D表面约束，3D纹理攻击又需要为每个任务单独优化，无法利用多任务VLA共享策略的跨任务攻击面，且缺乏对VLA原生动作空间的定向控制能力 本文提出UniTexture，首个跨任务通用3D对抗纹理攻击方法，通过单个绑定在目标物体表面的纹理，在多个操作任务上诱导VLA产生攻击者指定的定向动作偏差，无需为每个任务单独优化或调整纹理 研究旨…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">原文未明确标注作者所属研究机构信息</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.13453/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有针对视觉-语言-动作（VLA）模型的对抗攻击普遍存在局限性：2D通用对抗补丁缺乏3D表面约束，3D纹理攻击又需要为每个任务单独优化，无法利…</p>
+  <ul class="reading-intro-points"><li>现有针对视觉-语言-动作（VLA）模型的对抗攻击普遍存在局限性：2D通用对抗补丁缺乏3D表面约束，3D纹理攻击又需要为每个任务单独优化，无法利…</li><li>本文提出UniTexture，首个跨任务通用3D对抗纹理攻击方法，通过单个绑定在目标物体表面的纹理，在多个操作任务上诱导VLA产生攻击者指定的…</li><li>研究旨在揭示多任务VLA的部署级安全漏洞，验证单纹理在不同任务、不同任务套件、不同模型架构上的攻击泛化性与迁移能力</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>原文未明确标注作者所属研究机构信息</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有针对视觉-语言-动作（VLA）模型的对抗攻击普遍存在局限性：2D通用对抗补丁缺乏3D表面约束，3D纹理攻击又需要为每个任务单独优化，无法利用多任务VLA共享策略的跨任务攻击面，且缺乏对VLA原生动作空间的定向控制能力</li><li>本文提出<strong>UniTexture</strong>，首个跨任务通用3D对抗纹理攻击方法，通过单个绑定在目标物体表面的纹理，在多个操作任务上诱导VLA产生攻击者指定的定向动作偏差，无需为每个任务单独优化或调整纹理</li><li>研究旨在揭示多任务VLA的部署级安全漏洞，验证单纹理在不同任务、不同任务套件、不同模型架构上的攻击泛化性与迁移能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出跨任务通用3D纹理攻击框架，单纹理通过联合优化多个任务的分布完成训练，部署时可在所有任务上直接使用，无需任务特定的优化或微调</li><li>设计适配不同VLA动作接口的定向动作空间优化目标，直接在VLA原生动作空间编码攻击者的目标动作，避免特征空间代理指标带来的偏差</li><li>在<strong>OpenVLA</strong>和<strong>π₀.₅</strong>两个主流VLA模型、<strong>LIBERO-Spatial</strong>和<strong>LIBERO-Goal</strong>两个任务套件上完成全面评估，验证了攻击的跨任务有效性、定向控制能力，以及跨套件、跨模型的零样本迁移能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>先进行可微渲染器校准：通过干净场景的多视角观测，拟合视图特定的光照参数和物体特定的材质参数，拟合完成后冻结所有渲染参数，保证渲染的带纹理物体与仿真器原始外观光度和一致，避免渲染伪影干扰攻击优化</li><li>攻击优化阶段仅更新目标物体的共享UV纹理参数：通过可微渲染器将纹理渲染到固定网格的物体表面，合成到VLA的输入视觉观测中，利用针对不同VLA接口设计的定向动作损失反向传播更新纹理，使VLA预测的动作向攻击者指定的目标方向偏移</li><li>针对自回归动作令牌接口的VLA（如OpenVLA），通过最小化目标动作令牌的负对数似然损失优化纹理；针对流匹配动作块接口的VLA（如π₀.₅），通过最小化流匹配速度场在目标动作维度上的残差损失优化纹理</li><li>优化过程采用任务平衡采样，覆盖不同任务的观测、语言指令、物体姿态和相机视角，保证单纹理在所有任务场景下均有效</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>LIBERO-Spatial</strong>和<strong>LIBERO-Goal</strong>机器人操作任务套件，每个套件包含10个语言条件操作任务，两个套件共享plate和bowl两类目标物体，支持跨任务和跨套件评估</li><li>模型规模：<strong>OpenVLA</strong>为7B参数的多模态VLA模型，使用针对两个套件分别微调的专用检查点；<strong>π₀.₅</strong>为基于流匹配架构的VLA模型，使用统一的<code>pi05_libero</code>检查点</li><li>训练资源：原文未明确标注使用的GPU/TPU等训练硬件；攻击渲染基于PyTorch3D可微渲染库，渲染分辨率为224×224，使用软Phong着色模型</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：LIBERO仿真平台，每个模型-套件-物体配置下共测试100个episode（10个任务×10次rollout），遵循官方LIBERO和OpenVLA评估协议，重置后执行10次虚拟动作等待物体稳定再开始评估</li><li>主要评估指标：<strong>任务成功率（SR）</strong>（越低代表任务破坏性越强）、<strong>目标方向动作偏移（TDS）</strong>（衡量攻击诱导的定向动作偏移程度）、<strong>配对方向命中率（pDHR）</strong>（攻击后动作朝向目标方向的比例），以及干净策略的基准指标<strong>目标方向动作（TDA）</strong>和<strong>方向命中率（DHR）</strong></li><li>关键实验结果：</li></ul>
+<p> 1. 跨任务攻击有效性：单纹理在全部8个模型-物体-套件设置中均显著降低任务成功率，<strong>OpenVLA</strong>在Spatial/Goal套件的SR分别从84%/80%降至53%/25%（plate）和58%/29%（bowl）；<strong>π₀.₅</strong>的SR从99%/97%降至33%/40%（Spatial）和77%/72%（Goal），效果显著优于原始纹理和高斯噪声纹理对照组</p>
+<p> 2. 定向控制能力：<strong>π₀.₅</strong>在所有设置中均产生正向TDS和显著高于基线的pDHR，最高pDHR达65.5%；<strong>OpenVLA</strong>虽能造成大幅任务失败，但定向控制不稳定，部分设置出现反向动作偏移，说明其离散自回归动作接口下的攻击机制与连续动作模型存在差异</p>
+<p> 3. 跨迁移能力：跨任务套件迁移时，<strong>π₀.₅</strong>的TDS均为正值，pDHR维持在42.7%-60.3%；跨模型迁移时，<strong>π₀.₅</strong>优化的纹理可降低<strong>OpenVLA</strong>的SR至26%-61%，但<strong>OpenVLA</strong>的纹理对<strong>π₀.₅</strong>的效果较弱，呈现不对称迁移特性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.13474/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Decoding Task Progress from VLA Representations</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.13395/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

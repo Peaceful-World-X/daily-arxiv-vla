@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Beyond Dense Futures: World Models as Structured Planners for Robotic Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
-    <meta name="description" content="待生成" />
+    <meta name="description" content="现有基于世界模型的视觉-语言-动作（VLA）机器人操作框架存在两类核心缺陷：密集未来预测会引入视觉冗余并累积误差导致长程规划漂移，现有稀疏方法（语义子目标/隐式表示）缺乏显式运动学 grounding，无法与低层动作执行对齐。 论文提出StructVLA框架，将生成式世界模型重构为显式的、物理 grounded 的结构化规划器，通过预测基于运动学线索的稀疏结构化帧作为中层视觉子目标，解决长程操作的误差累积和物理对齐…" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,11 +34,11 @@
             <p class="eyebrow">论文详情</p>
             <h1 class="detail-page-title">Beyond Dense Futures: World Models as Structured Planners for Robotic Manipulation</h1>
             <div class="detail-meta">2026-03-13 · <a href="http://arxiv.org/abs/2603.12553" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2603.12553" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2603.12553</span></div>
-            <p class="detail-summary">待生成</p>
+            <p class="detail-summary">现有基于世界模型的视觉-语言-动作（VLA）机器人操作框架存在两类核心缺陷：密集未来预测会引入视觉冗余并累积误差导致长程规划漂移，现有稀疏方法（语义子目标/隐式表示）缺乏显式运动学 grounding，无法与低层动作执行对齐。 论文提出StructVLA框架，将生成式世界模型重构为显式的、物理 grounded 的结构化规划器，通过预测基于运动学线索的稀疏结构化帧作为中层视觉子目标，解决长程操作的误差累积和物理对齐…</p>
             <div class="detail-micro-meta">
-              <span class="meta-pill">1 分钟读完</span>
-              <span class="meta-pill">1 张阅读卡</span>
-              
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">中国科学技术大学（University of Science and Technology of Ch…</span>
             </div>
           </div>
         </div>
@@ -52,16 +52,61 @@
     <span class="reading-badge">一眼看懂</span>
     <a class="cover-preview-link" href="../../covers/2603.12553/">封面预览</a>
   </div>
-  <p class="reading-intro-hook">待生成</p>
-  <ul class="reading-intro-points"><li>待生成</li></ul>
+  <p class="reading-intro-hook">现有基于世界模型的视觉-语言-动作（VLA）机器人操作框架存在两类核心缺陷：密集未来预测会引入视觉冗余并累积误差导致长程规划漂移，现有稀疏方法…</p>
+  <ul class="reading-intro-points"><li>现有基于世界模型的视觉-语言-动作（VLA）机器人操作框架存在两类核心缺陷：密集未来预测会引入视觉冗余并累积误差导致长程规划漂移，现有稀疏方法…</li><li>论文提出StructVLA框架，将生成式世界模型重构为显式的、物理 grounded 的结构化规划器，通过预测基于运动学线索的稀疏结构化帧作为…</li><li>研究目标是在仿真和真实机器人场景中实现可靠的长程操作，同时验证方法的泛化性和鲁棒性，覆盖基础操作和复杂长程任务。</li></ul>
 </section>
 <section class="reading-card reading-card-section">
   <div class="reading-card-topline">
     <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>中国科学技术大学（University of Science and Technology of China）</li><li>穆罕默德·本·扎耶德人工智能大学（MBZUAI）计算机视觉系（Department of CV）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
     <span class="reading-step-note">论文概述</span>
   </div>
   <h2>论文概述</h2>
-  <div class="reading-card-content"><p>待生成</p></div>
+  <div class="reading-card-content"><ul><li>现有基于世界模型的视觉-语言-动作（VLA）机器人操作框架存在两类核心缺陷：密集未来预测会引入视觉冗余并累积误差导致长程规划漂移，现有稀疏方法（语义子目标/隐式表示）缺乏显式运动学 grounding，无法与低层动作执行对齐。</li><li>论文提出<strong>StructVLA</strong>框架，将生成式世界模型重构为显式的、物理 grounded 的结构化规划器，通过预测基于运动学线索的稀疏结构化帧作为中层视觉子目标，解决长程操作的误差累积和物理对齐问题。</li><li>研究目标是在仿真和真实机器人场景中实现可靠的长程操作，同时验证方法的泛化性和鲁棒性，覆盖基础操作和复杂长程任务。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>物理grounded的结构化规划目标</strong>：设计自动化数据整理流水线，从机器人运动学线索（夹爪状态切换、运动学转向点）自动提取结构化帧，无需语义子任务人工标注，提供稀疏且具有机械意义的任务进度锚点。</li><li><strong>统一的StructVLA框架</strong>：提出两阶段训练范式，第一阶段训练自回归世界模型预测结构化帧作为中层视觉子目标，第二阶段在共享视觉-语言-动作离散词表下将结构化规划能力迁移到低层动作生成，桥接高层视觉规划与低层运动控制的gap。</li><li><strong>强实证性能</strong>：在<strong>SimplerEnv-WidowX</strong>基准上达到75.0%平均成功率，在<strong>LIBERO</strong>基准上达到94.8%平均成功率；真实场景部署在基础抓取放置和复杂长程任务上均展现出可靠的泛化性和鲁棒性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>核心方法为两阶段统一训练框架，所有模态（视觉、语言、动作）共享同一离散词表：采用<strong>Emu3 VQ tokenizer</strong>对视觉和语言输入离散化，采用<strong>FAST tokenizer</strong>对连续动作离散化并映射到共享词表的动作专属token区间。</li><li>第一阶段（结构化规划器训练）：初始化自<strong>UniVLA</strong>的预训练世界模型，训练自回归Transformer以指令和历史观测为条件，预测基于运动学线索提取的结构化帧，仅对视觉token计算交叉熵损失，同时采用滑动窗口增强 densify 监督信号，提升训练效率。</li><li>第二阶段（动作策略迁移）：在预训练结构化规划器基础上微调，输入为交错的“语言指令+历史观测-动作token”序列，监督信号仅针对动作token，让模型将结构化视觉预测能力转化为低层动作控制能力。</li><li>关键创新点1：基于运动学线索的自动化结构化帧提取流水线，通过夹爪状态切换窗口、运动学转向点检测、最小时间间隔约束和动作L2变化填充得到候选帧，再用<strong>GPT-5.2</strong>离线过滤冗余/无关帧，完全无需人工标注，推理阶段无需额外VLM辅助。</li><li>关键创新点2：采用LoRA（秩32）进行参数高效微调，在保留预训练模型视觉预测能力的前提下，以极低计算成本实现高质量的结构化预测和动作控制。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：<strong>BridgeData V2</strong>（SimplerEnv基准训练用）、<strong>LIBERO</strong>基准的四个任务套件（SPATIAL、OBJECT、GOAL、LONG，共40个任务，每任务50条专家演示）、真实场景自有数据集（包含4个抓取放置任务的1152条轨迹、1个长程整理任务的648条轨迹）。</li><li>模型规模：基于8.5B参数的自回归Transformer架构，初始化自UniVLA的预训练世界模型权重。</li><li>训练资源：未明确公开具体GPU/TPU硬件型号，采用LoRA（秩32）进行参数高效微调以降低计算开销；不同场景训练配置为：SimplerEnv（规划器30k步、策略20k步，batch size 32/128）、LIBERO（规划器10k步、策略4k步，batch size 32/196）、真实场景（规划器2k步、策略2k步，batch size 32）。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真基准包括<strong>SimplerEnv-WidowX</strong>（评估分布偏移下的策略泛化性）、<strong>LIBERO</strong>四个任务套件（评估多任务和长程一致性）；真实场景部署在Franka机械臂上，包含4个基础抓取放置任务、1个带干扰物的长程整理任务，同时评估零样本泛化（新颜色/几何形状物体）和动态扰动（人类干预）场景。</li><li>主要评估指标：任务成功率、抓取成功率、训练收敛步数、不同历史上下文长度下的性能表现。</li><li>关键实验结果：</li></ul>
+<p> - SimplerEnv-WidowX平均成功率为75.0%，超越所有对比基线，在需要精确空间执行的堆叠任务上表现尤为突出。</p>
+<p> - LIBERO平均成功率为94.8%，在长程任务套件LIBERO-Long上显著优于基线，验证了结构化规划对长程误差累积的抑制效果。</p>
+<p> - 真实场景基础抓取放置任务平均成功率为87.5%，比基线<strong>UniVLA</strong>高20.0%；长程整理任务完成8/10次试验，远高于UniVLA的4/10次和SpatialVLA的2/10次。</p>
+<p> - 零样本泛化到新物体成功率达80.0%，动态扰动下成功率保持80.0%，均显著优于UniVLA的30.0%和40.0%。</p>
+<p> - 训练效率显著更高，仅需10k步即可达到66.7%的精度，优于UniVLA的12k步和RoboVLMs的50k步；且性能随历史上下文长度增加持续提升，而UniVLA性能随上下文增长下降，证明结构化规划器能有效利用长时序信息减少长程漂移。</p></div>
 </section></article>
         <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
           <p class="detail-toc-title">阅读目录</p>
