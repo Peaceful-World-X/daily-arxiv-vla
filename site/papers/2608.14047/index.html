@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evolve Vision-Language-Action Model into an Agent with On-the-fly Tool-use - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文提出 ART (Agentic Robot with Tool-use)，将端到端视觉-语言-动作（VLA）模型与智能体工具使用相结合，以降低动作解空间的复杂性并提升泛化性。 通过工具注入框架，使 VLA 模型能够动态调用外部工具模块（视觉增强、 affordance 增强、实体增强），在保持高精度动作生成的同时快速适应新场景。 旨在解决传统 VLA 模型在遇到新任务时需昂贵后训练、易受灾难性遗忘影响，以及对数…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.14047">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.14047.webp" alt="Evolve Vision-Language-Action Model into an Agent with On-the-fly Tool-use" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文提出 ART (Agentic Robot with Tool-use)，将端到端视觉-语言-动作（VLA）模型与智能体工具使用相结合，以…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Evolve Vision-Language-Action Model into an Agent with On-the-fly Tool-use</h1>
+            <div class="detail-meta">2026-08-14 · <a href="http://arxiv.org/abs/2608.14047" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.14047" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.14047</span></div>
+            <p class="detail-summary">本文提出 ART (Agentic Robot with Tool-use)，将端到端视觉-语言-动作（VLA）模型与智能体工具使用相结合，以降低动作解空间的复杂性并提升泛化性。 通过工具注入框架，使 VLA 模型能够动态调用外部工具模块（视觉增强、 affordance 增强、实体增强），在保持高精度动作生成的同时快速适应新场景。 旨在解决传统 VLA 模型在遇到新任务时需昂贵后训练、易受灾难性遗忘影响，以及对数…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Astribot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.14047/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文提出 ART (Agentic Robot with Tool-use)，将端到端视觉-语言-动作（VLA）模型与智能体工具使用相结合，以…</p>
+  <ul class="reading-intro-points"><li>本文提出 ART (Agentic Robot with Tool-use)，将端到端视觉-语言-动作（VLA）模型与智能体工具使用相结合，以…</li><li>通过工具注入框架，使 VLA 模型能够动态调用外部工具模块（视觉增强、 affordance 增强、实体增强），在保持高精度动作生成的同时快速…</li><li>旨在解决传统 VLA 模型在遇到新任务时需昂贵后训练、易受灾难性遗忘影响，以及对数据依赖过高的问题。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Astribot</strong></li><li><strong>Tsinghua University</strong></li><li><strong>Juxi Tech</strong></li><li><strong>IntelliFusion Inc.</strong></li><li><strong>The Chinese University of Hong Kong</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文提出 <strong>ART (Agentic Robot with Tool-use)</strong>，将端到端视觉-语言-动作（VLA）模型与智能体工具使用相结合，以降低动作解空间的复杂性并提升泛化性。</li><li>通过工具注入框架，使 VLA 模型能够动态调用外部工具模块（视觉增强、 affordance 增强、实体增强），在保持高精度动作生成的同时快速适应新场景。</li><li>旨在解决传统 VLA 模型在遇到新任务时需昂贵后训练、易受灾难性遗忘影响，以及对数据依赖过高的问题。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出一种 <strong>数据生成方法</strong>，将多模态工具集成到现有 VLA 数据集中，实现长任务链中的复杂工具使用，构建了 <strong>30K 工具使用轨迹数据集 AT</strong>。</li><li>设计 <strong>ART 工具注入框架</strong>，通过工具令牌注入和自适应 LoRA 微调，解耦工具推理与核心 VLA 动作生成，避免灾难性遗忘。</li><li>在 <strong>LIBERO 仿真</strong> 和 <strong>Astribot S1 真实机器人</strong> 上验证，ART 在视觉、 affordance、实体扰动任务中成功率显著高于主流基线，展现了高泛化性和低数据依赖的优势。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>工具令牌注入</strong>：将工具激活状态离散化为词汇令牌，融入标准下一令牌预测训练，使模型以离散决策方式调用工具。</li><li><strong>自适应 LoRA 微调</strong>：冻结预训练 VLA 主干，仅微调 LoRA 模块用于工具推理；动作生成时停用 LoRA，确保工具学习不影响原始动作能力。</li><li><strong>工具使用与动作块结合</strong>：遵循现代 VLA 的动作分块策略，每 H 步执行一次工具推理，然后激活工具增强后续观测，再生成动作序列。</li><li><strong>训练目标</strong>：分解为工具推理令牌预测损失和 embodied 动作令牌预测损失，分别在带 LoRA 和不带 LoRA 的参数上优化。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>AT 数据集</strong>：包含 30K 工具使用轨迹，基于 <strong>LIBERO</strong>、<strong>Bridge v2</strong>、<strong>DROID</strong> 等现有数据集，通过任务生成、工具链生成、轨迹生成三步扩展获得。</li><li><strong>模型规模</strong>：基于预训练的 <strong>3B π-FAST</strong> 模型。</li><li><strong>训练资源</strong>：使用 <strong>8 块 A800 GPU</strong>，batch size 为 24，微调 1 个 epoch，学习率 5×10⁻⁵，含 1k 步 warm-up。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：<strong>LIBERO</strong> 仿真环境（含视觉、语义、实体扰动）和 <strong>Astribot S1</strong> 真实机器人（16 自由度双机械臂）。</li><li><strong>主要指标</strong>：任务成功率。</li><li><strong>关键结果</strong>：</li></ul>
+<p> - <strong>ART-FAST</strong> 在 LIBERO 上平均成功率达 <strong>75%</strong>，在 Astribot S1 上达 <strong>62%</strong>，相比 OpenVLA、π0、π0-FAST 等基线提升约 20% 以上。</p>
+<p> - 在视觉腐败、 affordance 查询、实体扰动三类任务中，ART-FAST 均大幅领先，尤其在实体扰动下成功率 <strong>82%</strong>（LIBERO）。</p>
+<p> - 与仅推理模型 <strong>ECoT</strong> 相比，ART 在有视觉腐败时表现更稳健（成功率 72% vs 12%），证明工具增强的有效性。</p>
+<p> - 与端到端微调的 FAST 相比，ART 因工具使用而获得更优泛化，且训练数据量远小于基线。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.14379/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.14028/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">AdvDex: Learning Dexterous Manipulation from Human Demonstrations via Joint-Aligned Actions and Adversarial Learning</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

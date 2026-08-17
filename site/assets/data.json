@@ -1,5 +1,143 @@
 [
   {
+    "date": "2026-08-14",
+    "title": "Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical Manipulation",
+    "link": "http://arxiv.org/abs/2608.14379",
+    "arxiv_id": "2608.14379",
+    "detail_path": "papers/2608.14379/",
+    "cover_path": "covers/2608.14379/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.14379.webp",
+    "preview_text": "论文旨在解决现有视觉-语言-动作（VLA）模型在需要快速反应和未来状态预测的动态操作场景中性能不足的问题 现有基准测试主要评估静态操作任务的泛化能力，忽略了动态交互场景，且通常忽略推理延迟的影响 论文提出了一个专门针对反应关键型操作的基准测试 ReflexBench，以及一个快速且具有预测能力的 VLA 模型 ReflexVLA",
+    "research_unit": "上海交通大学 (Shanghai Jiao Tong University)",
+    "hook_text": "论文旨在解决现有视觉-语言-动作（VLA）模型在需要快速反应和未来状态预测的动态操作场景中性能不足的问题",
+    "key_points": [
+      "论文旨在解决现有视觉-语言-动作（VLA）模型在需要快速反应和未来状态预测的动态操作场景中性能不足的问题",
+      "现有基准测试主要评估静态操作任务的泛化能力，忽略了动态交互场景，且通常忽略推理延迟的影响",
+      "论文提出了一个专门针对反应关键型操作的基准测试 ReflexBench，以及一个快速且具有预测能力的 VLA 模型 ReflexVLA"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "title": "Evolve Vision-Language-Action Model into an Agent with On-the-fly Tool-use",
+    "link": "http://arxiv.org/abs/2608.14047",
+    "arxiv_id": "2608.14047",
+    "detail_path": "papers/2608.14047/",
+    "cover_path": "covers/2608.14047/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.14047.webp",
+    "preview_text": "本文提出 ART (Agentic Robot with Tool-use)，将端到端视觉-语言-动作（VLA）模型与智能体工具使用相结合，以降低动作解空间的复杂性并提升泛化性。 通过工具注入框架，使 VLA 模型能够动态调用外部工具模块（视觉增强、 affordance 增强、实体增强），在保持高精度动作生成的同时快速适应新场景。 旨在解决传统 VLA 模型在遇到新任务时需昂贵后训练、易受灾难性遗忘影响，以及对数…",
+    "research_unit": "Astribot",
+    "hook_text": "本文提出 ART (Agentic Robot with Tool-use)，将端到端视觉-语言-动作（VLA）模型与智能体工具使用相结合，以…",
+    "key_points": [
+      "本文提出 ART (Agentic Robot with Tool-use)，将端到端视觉-语言-动作（VLA）模型与智能体工具使用相结合，以…",
+      "通过工具注入框架，使 VLA 模型能够动态调用外部工具模块（视觉增强、 affordance 增强、实体增强），在保持高精度动作生成的同时快速…",
+      "旨在解决传统 VLA 模型在遇到新任务时需昂贵后训练、易受灾难性遗忘影响，以及对数据依赖过高的问题。"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "title": "AdvDex: Learning Dexterous Manipulation from Human Demonstrations via Joint-Aligned Actions and Adversarial Learning",
+    "link": "http://arxiv.org/abs/2608.14028",
+    "arxiv_id": "2608.14028",
+    "detail_path": "papers/2608.14028/",
+    "cover_path": "covers/2608.14028/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.14028.webp",
+    "preview_text": "针对灵巧操作领域机器人演示采集成本高、不同具身间动作空间异构、视觉表征易 entangled 具身专属外观特征导致跨具身泛化性差的核心问题，提出统一的视觉-语言-动作（VLA）框架AdvDex 核心目标是通过动作空间对齐与视觉表征去具身化，实现从人类演示到机器人的灵巧操作技能零样本迁移，同时支持未见物体、未见环境的泛化 配套提出大规模人类操作数据集OmniShare，降低对昂贵机器人遥操作演示数据的依赖",
+    "research_unit": "浙江大学（Zhejiang University）",
+    "hook_text": "针对灵巧操作领域机器人演示采集成本高、不同具身间动作空间异构、视觉表征易 entangled 具身专属外观特征导致跨具身泛化性差的核心问题，提…",
+    "key_points": [
+      "针对灵巧操作领域机器人演示采集成本高、不同具身间动作空间异构、视觉表征易 entangled 具身专属外观特征导致跨具身泛化性差的核心问题，提…",
+      "核心目标是通过动作空间对齐与视觉表征去具身化，实现从人类演示到机器人的灵巧操作技能零样本迁移，同时支持未见物体、未见环境的泛化",
+      "配套提出大规模人类操作数据集OmniShare，降低对昂贵机器人遥操作演示数据的依赖"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "title": "SSP: An Event-Matched Syn2Sim2Phy Cross-Domain Evaluation Framework for Autonomous Driving VLA Models",
+    "link": "http://arxiv.org/abs/2608.14024",
+    "arxiv_id": "2608.14024",
+    "detail_path": "papers/2608.14024/",
+    "cover_path": "covers/2608.14024/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.14024.webp",
+    "preview_text": "针对自动驾驶视觉-语言-动作（VLA）模型跨域评估的痛点：现有评估独立选取合成、仿真、物理域数据，混淆了域偏移与场景内容变化，导致性能差异归因偏差、能力失效定位不可靠 提出SSP（Synthetic-Simulation-Physical）事件匹配的Syn2Sim2Phy跨域评估框架，以单一安全关键交互事件为核心，分离事件身份与域实现，统一评估VLA从语义理解到轨迹输出的完整行为链 核心目标是为VLA跨域评估提供可…",
+    "research_unit": "同济大学汽车与能源工程学院",
+    "hook_text": "针对自动驾驶视觉-语言-动作（VLA）模型跨域评估的痛点：现有评估独立选取合成、仿真、物理域数据，混淆了域偏移与场景内容变化，导致性能差异归因…",
+    "key_points": [
+      "针对自动驾驶视觉-语言-动作（VLA）模型跨域评估的痛点：现有评估独立选取合成、仿真、物理域数据，混淆了域偏移与场景内容变化，导致性能差异归因…",
+      "提出SSP（Synthetic-Simulation-Physical）事件匹配的Syn2Sim2Phy跨域评估框架，以单一安全关键交互事件为…",
+      "核心目标是为VLA跨域评估提供可复现的场景转移链和证据约束的评估方案，不预设物理域为绝对最优"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "title": "BICPO-VLA: Behavior-Identified Continuation Preference Optimization for Smooth Asynchronous Vision-Language-Action Control",
+    "link": "http://arxiv.org/abs/2608.13924",
+    "arxiv_id": "2608.13924",
+    "detail_path": "papers/2608.13924/",
+    "cover_path": "covers/2608.13924/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.13924.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-13",
     "title": "Decoding Task Progress from VLA Representations",
     "link": "http://arxiv.org/abs/2608.13474",
@@ -34168,7 +34306,7 @@
     "arxiv_id": "2508.04681",
     "detail_path": "papers/2508.04681/",
     "cover_path": "covers/2508.04681/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2508.04681.webp",
     "preview_text": "提出并发布了首个大规模、多模态的以自我为中心（Egocentric）的人-物-人交互数据集 InterVLA，包含11.4小时、120万帧和3900个序列的数据。 旨在解决现有交互数据集交互类别单一和缺乏自我中心视角的问题，以促进构建能在物理世界中运行的通用智能体（AI助手）。",
     "research_unit": "上海交通大学 人工智能教育部重点实验室、人工智能研究院",
     "hook_text": "提出并发布了首个大规模、多模态的以自我为中心（Egocentric）的人-物-人交互数据集 InterVLA，包含11.4小时、120万帧和3…",
@@ -34196,7 +34334,7 @@
     "arxiv_id": "2508.06547",
     "detail_path": "papers/2508.06547/",
     "cover_path": "covers/2508.06547/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2508.06547.webp",
     "preview_text": "本文是一篇关于为视觉-语言-动作 (VLA) 模型收集仿真数据的教程性论文，旨在解决其训练所需的高质量、多模态数据集的构建问题。 论文系统性地回顾和比较了三种代表性的数据收集系统/方法，以指导研究人员构建适用于VLA模型训练的数据集。",
     "research_unit": "The University of Auckland",
     "hook_text": "本文是一篇关于为视觉-语言-动作 (VLA) 模型收集仿真数据的教程性论文，旨在解决其训练所需的高质量、多模态数据集的构建问题。",
@@ -34224,7 +34362,7 @@
     "arxiv_id": "2508.02219",
     "detail_path": "papers/2508.02219/",
     "cover_path": "covers/2508.02219/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2508.02219.webp",
     "preview_text": "提出 CO-RFT（Chunked Offline Reinforced Fine-Tuning）算法，旨在高效微调视觉-语言-动作（VLA）模型，仅需少量演示数据（30-60个样本）。 核心是解决用强化学习（RL）微调VLA模型时面临的样本效率低、与动作分块（Action Chunking）技术不兼容、训练不稳定等挑战。 核心方法结合了分块离线强化学习与模仿学习，以提升模型在真实机器人控制任务中的成功率和泛化能力。",
     "research_unit": "北京航空航天大学（作者关联单位，根据通讯作者邮箱 xch@buaa.edu.cn 推断）",
     "hook_text": "提出 CO-RFT（Chunked Offline Reinforced Fine-Tuning）算法，旨在高效微调视觉-语言-动作（VLA）…",
@@ -34252,7 +34390,7 @@
     "arxiv_id": "2508.02190",
     "detail_path": "papers/2508.02190/",
     "cover_path": "covers/2508.02190/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2508.02190.webp",
     "preview_text": "提出首个面向机器人操作的联邦视觉-语言-动作（VLA）学习框架FedVLA，解决传统VLA训练依赖大规模用户特定数据带来的隐私泄露风险，通过分布式训练避免原始数据上传云端 针对联邦VLA训练中多客户端任务异构性导致的性能下降问题，设计面向任务的场景解析、双门控混合专家和专家驱动聚合策略，解决传统联邦学习（如FedAvg）忽略任务差异、知识聚合效率低的问题 解决现有混合专家（MoE）机制固定激活专家数量、无法适配不同…",
     "research_unit": "国防科技大学（National University of Defense Technology）",
     "hook_text": "提出首个面向机器人操作的联邦视觉-语言-动作（VLA）学习框架FedVLA，解决传统VLA训练依赖大规模用户特定数据带来的隐私泄露风险，通过分…",
@@ -34280,7 +34418,7 @@
     "arxiv_id": "2508.00097",
     "detail_path": "papers/2508.00097/",
     "cover_path": "covers/2508.00097/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2508.00097.webp",
     "preview_text": "针对视觉-语言-动作模型对大规模高质量机器人示范数据的需求，提出一个基于扩展现实的跨平台机器人遥操作框架 XRoboToolkit。 旨在解决当前遥操作方案存在的可扩展性差、设置复杂和数据质量不佳等问题。",
     "research_unit": "ByteDance, PICO (San Jose, CA, USA)",
     "hook_text": "针对视觉-语言-动作模型对大规模高质量机器人示范数据的需求，提出一个基于扩展现实的跨平台机器人遥操作框架 XRoboToolkit。",
