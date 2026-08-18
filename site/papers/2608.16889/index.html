@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Don&#x27;t Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对长期机器人操作（long-horizon robot manipulation）的链式执行难题：现有视觉语言动作（VLA）模型可完成单个接触丰富的子任务，但多阶段链式执行时错误会累积放大，且子任务间的过渡状态不兼容，导致整体任务完成率极低 提出Baton框架，基于冻结的VLA搭配LLM编码智能体（coding agent），完全通过测试时探索获取操作经验，全程不更新任何模型参数 研究目标是将子任务作为探索单元、…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.16889">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.16889.webp" alt="Don&#x27;t Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对长期机器人操作（long-horizon robot manipulation）的链式执行难题：现有视觉语言动作（VLA）模型可完成单个接…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Don&#x27;t Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory</h1>
+            <div class="detail-meta">2026-08-17 · <a href="http://arxiv.org/abs/2608.16889" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.16889" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.16889</span></div>
+            <p class="detail-summary">针对长期机器人操作（long-horizon robot manipulation）的链式执行难题：现有视觉语言动作（VLA）模型可完成单个接触丰富的子任务，但多阶段链式执行时错误会累积放大，且子任务间的过渡状态不兼容，导致整体任务完成率极低 提出Baton框架，基于冻结的VLA搭配LLM编码智能体（coding agent），完全通过测试时探索获取操作经验，全程不更新任何模型参数 研究目标是将子任务作为探索单元、…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">南加州大学（University of Southern California）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.16889/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对长期机器人操作（long-horizon robot manipulation）的链式执行难题：现有视觉语言动作（VLA）模型可完成单个接…</p>
+  <ul class="reading-intro-points"><li>针对长期机器人操作（long-horizon robot manipulation）的链式执行难题：现有视觉语言动作（VLA）模型可完成单个接…</li><li>提出Baton框架，基于冻结的VLA搭配LLM编码智能体（coding agent），完全通过测试时探索获取操作经验，全程不更新任何模型参数</li><li>研究目标是将子任务作为探索单元、过渡作为记忆核心单元，在降低探索成本的同时解决子任务间的状态耦合问题，提升长期任务的完成率</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>南加州大学（University of Southern California）</li><li>中佛罗里达大学（University of Central Florida）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对长期机器人操作（long-horizon robot manipulation）的链式执行难题：现有视觉语言动作（VLA）模型可完成单个接触丰富的子任务，但多阶段链式执行时错误会累积放大，且子任务间的过渡状态不兼容，导致整体任务完成率极低</li><li>提出<strong>Baton</strong>框架，基于冻结的VLA搭配LLM编码智能体（coding agent），完全通过测试时探索获取操作经验，全程不更新任何模型参数</li><li>研究目标是将子任务作为探索单元、过渡作为记忆核心单元，在降低探索成本的同时解决子任务间的状态耦合问题，提升长期任务的完成率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次提出<strong>Baton</strong>，是首个可通过冻结VLA完成端到端长期机器人操作的编码智能体，无需任何模型微调，完全依赖测试时探索学习</li><li>设计<strong>分层子任务探索</strong>机制，将探索单元从完整长时任务拆分为单个短时子任务，将探索成本从指数级（T^K）降为线性加性（T·K），且失败可精准定位到具体子任务或边界，避免全任务探索的资源浪费</li><li>提出<strong>过渡感知记忆（Transition-Aware Memory）</strong>，明确建模三类关键过渡：子任务内的调用过渡（invocation transition）、子任务间的手递过渡（handoff transition）和前瞻过渡（lookahead transition），将每个子任务边界转化为可检查、可复用的“手递合同（handoff contract）”</li><li>在长期操作基准<strong>RoboMemArena</strong>上取得SOTA性能，任务成功率（TSR）达57.7%，累计成功率（CSR）达78.8%，分别超越此前最强系统11.6和14.9个百分点，甚至超过带真值记忆的oracle基线</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于<strong>Harness VLA</strong>框架搭建：LLM智能体负责非接触环节的语言规划、场景感知、轨迹编排等高层决策，冻结的VLA被封装为<code>VLA_ACT</code>可调用工具，仅负责接触丰富的操作环节，二者通过明确的接口分工配合</li><li>核心设计1：分层子任务探索。首先将用户给定的长期指令分解为K个短子任务和K-1个手递边界，每个子任务单独在短时域内通过探索找到可行的执行策略，再按层次逐步组合相邻已验证的子任务单元，直至拼成完整任务，从根源上避免全任务探索的高成本和失败不可定位问题</li><li>核心设计2：过渡感知记忆。记忆采用“节点+边”的结构：节点存储子任务的失败记录和多个候选粗轨迹（每个轨迹附带调用过渡的腕部相机就绪条件）；边存储边界的手递合同，包含手递过渡的条目条件（修复前一个子任务遗留的残留状态）和前瞻过渡的执行约束（根据后续子任务要求调整当前子任务的执行策略）</li><li>系统设置三类专用智能体角色：验证智能体（Verifier）通过腕部相机图像检查调用过渡的就绪条件，仅在场景满足要求时触发VLA执行；调度智能体（Scheduler）根据剩余任务计划选择符合执行约束的子任务执行策略；探索智能体（Explorer）负责子任务的探索、失败记录和成功策略的固化</li><li>全程无任何模型参数更新，所有探索获得的经验均以自然语言形式存储在记忆中，具备可读性、可审计性和跨任务复用性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：<strong>RoboMemArena</strong>，专为长期机器人操作设计的记忆基准，包含26个家庭场景任务，平均每个任务超1000步，包含3-9个验证阶段，分为转移（Transferring）、遮挡（Occlusion）、计数（Counting）、序列（Sequence）四个类别，68.9%的子任务依赖跨阶段记忆</li><li>模型规模：底层采用冻结的<strong>π₀-family VLA</strong>作为接触操作策略，上层为通用LLM智能体，未公开具体参数量，全程无训练环节</li><li>探索资源：未明确提及具体硬件配置，无模型训练需求，仅需测试时探索所需的算力；探索配置为每个任务在单一参考场景（seed 50）上开展，评估在2个独立 held-out 场景（seed 51、52）上进行，每个完整任务的探索预算为20个episode</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：<strong>RoboMemArena</strong>基准，对比基线包括：端到端VLA（π₀.5）、内存增强VLA（HiF-VLA、MemoryVLA、MemER、PrediMem等）、纯VLM智能体（GPT-5.4）、未修改的全任务探索版Harness VLA，以及带真值记忆的oracle基线</li><li>评估指标：任务成功率（TSR，所有验证阶段均满足）、累计成功率（CSR，完成的阶段占总阶段的比例）</li><li>关键实验结果：</li></ul>
+<p> - <strong>Baton</strong>平均TSR达57.7%，CSR达78.8%，为所有方法中最优，超越此前最强系统FrameSamp+Modul 11.6（TSR）和14.9（CSR）个百分点，同时超过带真值记忆的oracle系统（TSR 46.1%，CSR 64.8%）</p>
+<p> - 在依赖跨阶段记忆的类别上提升显著：遮挡类TSR达50.0%（此前最强为39.1%），计数类TSR达68.8%（此前最强为31.4%），验证了过渡感知记忆对状态耦合问题的解决效果</p>
+<p> - 序列类任务TSR达83.4%，超越全任务探索的Harness VLA（82.0%），验证了分层子任务探索在降低探索成本的同时不会损失性能</p>
+<p> - Baton将73%的已完成阶段转化为完整任务完成，为所有方法中最高比例，说明剩余失败主要集中在边界过渡环节，而非子任务本身能力不足</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2608.16885/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">$τ_0$-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

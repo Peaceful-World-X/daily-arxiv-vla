@@ -1,5 +1,555 @@
 [
   {
+    "date": "2026-08-17",
+    "title": "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
+    "link": "http://arxiv.org/abs/2608.16889",
+    "arxiv_id": "2608.16889",
+    "detail_path": "papers/2608.16889/",
+    "cover_path": "covers/2608.16889/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.16889.webp",
+    "preview_text": "针对长期机器人操作（long-horizon robot manipulation）的链式执行难题：现有视觉语言动作（VLA）模型可完成单个接触丰富的子任务，但多阶段链式执行时错误会累积放大，且子任务间的过渡状态不兼容，导致整体任务完成率极低 提出Baton框架，基于冻结的VLA搭配LLM编码智能体（coding agent），完全通过测试时探索获取操作经验，全程不更新任何模型参数 研究目标是将子任务作为探索单元、…",
+    "research_unit": "南加州大学（University of Southern California）",
+    "hook_text": "针对长期机器人操作（long-horizon robot manipulation）的链式执行难题：现有视觉语言动作（VLA）模型可完成单个接…",
+    "key_points": [
+      "针对长期机器人操作（long-horizon robot manipulation）的链式执行难题：现有视觉语言动作（VLA）模型可完成单个接…",
+      "提出Baton框架，基于冻结的VLA搭配LLM编码智能体（coding agent），完全通过测试时探索获取操作经验，全程不更新任何模型参数",
+      "研究目标是将子任务作为探索单元、过渡作为记忆核心单元，在降低探索成本的同时解决子任务间的状态耦合问题，提升长期任务的完成率"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "title": "$τ_0$-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation",
+    "link": "http://arxiv.org/abs/2608.16885",
+    "arxiv_id": "2608.16885",
+    "detail_path": "papers/2608.16885/",
+    "cover_path": "covers/2608.16885/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.16885.webp",
+    "preview_text": "提出了名为τ₀-VLA的分层机器人基础模型，核心是将高层子任务生成建模为可扩展测试时计算的推理问题，通过世界模型引导的测试时计算评估候选子任务的物理后果，低层策略负责执行生成的子任务，支持跨多种机器人本体部署。 解决了现有分层视觉-语言-动作（VLA）模型的高层决策依赖单次前向传播、计算预算固定的问题：错误子任务选择无法通过精准的电机控制修正，成为长程机器人操作的核心瓶颈。 模型在40,115小时异构真实世界数据上…",
+    "research_unit": "Shanghai Innovation Institute",
+    "hook_text": "提出了名为τ₀-VLA的分层机器人基础模型，核心是将高层子任务生成建模为可扩展测试时计算的推理问题，通过世界模型引导的测试时计算评估候选子任务…",
+    "key_points": [
+      "提出了名为τ₀-VLA的分层机器人基础模型，核心是将高层子任务生成建模为可扩展测试时计算的推理问题，通过世界模型引导的测试时计算评估候选子任务…",
+      "解决了现有分层视觉-语言-动作（VLA）模型的高层决策依赖单次前向传播、计算预算固定的问题：错误子任务选择无法通过精准的电机控制修正，成为长程…",
+      "模型在40,115小时异构真实世界数据上训练，在长程家务、烹饪等真实机器人任务上验证了性能，额外测试时计算可显著提升任务成功率。"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "title": "HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL",
+    "link": "http://arxiv.org/abs/2608.16837",
+    "arxiv_id": "2608.16837",
+    "detail_path": "papers/2608.16837/",
+    "cover_path": "covers/2608.16837/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.16837.webp",
+    "preview_text": "提出 HAF (Humanoid Adaptation Framework)，用于将预训练的一般视觉-语言-动作模型 (VLA) 迁移到人形机器人全身运动操控任务 解决高维全身动作空间的协调问题：传统单阶段 VLA 难以有效协调移动、腰部和双臂操控的相互依赖动作 解决离线模仿学习策略在真实部署时的性能退化问题，同时避免直接微调大模型的高计算成本和安全隐患",
+    "research_unit": "Peking University (State Key Laboratory of Multimed…",
+    "hook_text": "提出 HAF (Humanoid Adaptation Framework)，用于将预训练的一般视觉-语言-动作模型 (VLA) 迁移到人形机…",
+    "key_points": [
+      "提出 HAF (Humanoid Adaptation Framework)，用于将预训练的一般视觉-语言-动作模型 (VLA) 迁移到人形机…",
+      "解决高维全身动作空间的协调问题：传统单阶段 VLA 难以有效协调移动、腰部和双臂操控的相互依赖动作",
+      "解决离线模仿学习策略在真实部署时的性能退化问题，同时避免直接微调大模型的高计算成本和安全隐患"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "title": "When State Becomes an Attack Surface: State-Semantic Injection in LLM-Driven Embodied Agents",
+    "link": "http://arxiv.org/abs/2608.16806",
+    "arxiv_id": "2608.16806",
+    "detail_path": "papers/2608.16806/",
+    "cover_path": "covers/2608.16806/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.16806.webp",
+    "preview_text": "本文研究LLM驱动具身智能体中，当单个面向规划器的状态生产者被攻陷时，模式保留的虚假状态记录能否被规划器采纳，并穿越规划-执行闭环产生有目标的物理后果 现有具身攻击研究主要关注对抗信息如何通过感知、中间件等上游通道进入LLM控制管道，本文补充研究已到达规划器可见语义状态边界的 corrupted 任务级状态的下游传播效应，而非估计获取写权限的概率或上游注入的成功率 研究通过数据集级可 grounding 性过滤排除…",
+    "research_unit": "武汉大学（Wuhan University）",
+    "hook_text": "本文研究LLM驱动具身智能体中，当单个面向规划器的状态生产者被攻陷时，模式保留的虚假状态记录能否被规划器采纳，并穿越规划-执行闭环产生有目标的…",
+    "key_points": [
+      "本文研究LLM驱动具身智能体中，当单个面向规划器的状态生产者被攻陷时，模式保留的虚假状态记录能否被规划器采纳，并穿越规划-执行闭环产生有目标的…",
+      "现有具身攻击研究主要关注对抗信息如何通过感知、中间件等上游通道进入LLM控制管道，本文补充研究已到达规划器可见语义状态边界的 corrupte…",
+      "研究通过数据集级可 grounding 性过滤排除实体不存在、不支持交互等平凡失败场景，仅评估在场景可实例化的前提下，虚假状态语义的规划采纳与…"
+    ],
+    "reading_minutes": 11,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "title": "FabriMAE I Trust Myself? Self-Evaluating VLA Action Generation with Markov Attention Entropy",
+    "link": "http://arxiv.org/abs/2608.16697",
+    "arxiv_id": "2608.16697",
+    "detail_path": "papers/2608.16697/",
+    "cover_path": "covers/2608.16697/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.16697.webp",
+    "preview_text": "针对视觉-语言-动作模型（VLA）在无外部监督条件下自我评估动作生成可靠性的核心问题，提出白盒自评估框架MAE（Markov Attention Entropy）、对应基准LIBERO-Reflect，以及无验证器测试时动作选择方法FabriMAE 现有VLA自评估方法要么依赖外部专家标注或辅助模型，要么仅依赖输出统计量，忽略模型内部信号，且缺乏适用于异构VLA架构的统一评估指标 研究目标是挖掘VLA内部注意力信号…",
+    "research_unit": "新加坡国立大学（National University of Singapore）",
+    "hook_text": "针对视觉-语言-动作模型（VLA）在无外部监督条件下自我评估动作生成可靠性的核心问题，提出白盒自评估框架MAE（Markov Attentio…",
+    "key_points": [
+      "针对视觉-语言-动作模型（VLA）在无外部监督条件下自我评估动作生成可靠性的核心问题，提出白盒自评估框架MAE（Markov Attentio…",
+      "现有VLA自评估方法要么依赖外部专家标注或辅助模型，要么仅依赖输出统计量，忽略模型内部信号，且缺乏适用于异构VLA架构的统一评估指标",
+      "研究目标是挖掘VLA内部注意力信号的可靠性评估能力，实现无需外部监督、跨异构架构的自评估与动作选择"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "title": "NebulaVLA: A Dual-Frequency Vision-Language-Action Model With Guide Action for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2608.16503",
+    "arxiv_id": "2608.16503",
+    "detail_path": "papers/2608.16503/",
+    "cover_path": "covers/2608.16503/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.16503.webp",
+    "preview_text": "提出 NebulaVLA，一种异步双频视觉-语言-动作（VLA）模型，旨在解决真实机器人部署中的效率-性能权衡、跨具身泛化和执行平滑性三大瓶颈 通过解耦高级语义推理（System 2，~10Hz VLM）与低级动作控制（System 1，~20Hz DiT生成器），优化计算资源分配与模块化部署 引入 GESTURE-7 统一动作表示和 Guide Action 算法，分别解决跨机器人动作语义鸿沟和动作块边界抖动问题",
+    "research_unit": "ZTE Corporation（中兴通讯），中国",
+    "hook_text": "提出 NebulaVLA，一种异步双频视觉-语言-动作（VLA）模型，旨在解决真实机器人部署中的效率-性能权衡、跨具身泛化和执行平滑性三大瓶颈",
+    "key_points": [
+      "提出 NebulaVLA，一种异步双频视觉-语言-动作（VLA）模型，旨在解决真实机器人部署中的效率-性能权衡、跨具身泛化和执行平滑性三大瓶颈",
+      "通过解耦高级语义推理（System 2，~10Hz VLM）与低级动作控制（System 1，~20Hz DiT生成器），优化计算资源分配与模…",
+      "引入 GESTURE-7 统一动作表示和 Guide Action 算法，分别解决跨机器人动作语义鸿沟和动作块边界抖动问题"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "title": "Exposing the Long-tail in Embodied Urban Navigation via Scalable Learning from In-the-Wild Videos",
+    "link": "http://arxiv.org/abs/2608.16476",
+    "arxiv_id": "2608.16476",
+    "detail_path": "papers/2608.16476/",
+    "cover_path": "covers/2608.16476/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.16476.webp",
+    "preview_text": "针对城市具身导航中任务特定数据收集成本高、罕见安全关键场景覆盖不足的痛点，提出可扩展学习框架，从网络规模的野外第一人称街步行视频中学习点目标城市导航，并系统性揭示导航任务的long-tail结构 开发自动化流水线为无标注野外视频生成度量轨迹与结构化导航推理链（CoT）监督信号，解决野外视频无法直接用于导航策略训练的问题 通过联合分析感知-运动模式的分布稀有度与模型依赖难度，结合基于反思的失败归因，识别导航任务的性能…",
+    "research_unit": "论文未在提供的原文中标注作者所属研究机构",
+    "hook_text": "针对城市具身导航中任务特定数据收集成本高、罕见安全关键场景覆盖不足的痛点，提出可扩展学习框架，从网络规模的野外第一人称街步行视频中学习点目标城…",
+    "key_points": [
+      "针对城市具身导航中任务特定数据收集成本高、罕见安全关键场景覆盖不足的痛点，提出可扩展学习框架，从网络规模的野外第一人称街步行视频中学习点目标城…",
+      "开发自动化流水线为无标注野外视频生成度量轨迹与结构化导航推理链（CoT）监督信号，解决野外视频无法直接用于导航策略训练的问题",
+      "通过联合分析感知-运动模式的分布稀有度与模型依赖难度，结合基于反思的失败归因，识别导航任务的性能瓶颈，为模型改进提供方向"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "title": "SparkVLA: Stop-Aware Hierarchical VLA with Adaptive Action Chunking for Long-Horizon Manipulation",
+    "link": "http://arxiv.org/abs/2608.16172",
+    "arxiv_id": "2608.16172",
+    "detail_path": "papers/2608.16172/",
+    "cover_path": "covers/2608.16172/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.16172.webp",
+    "preview_text": "现有分层Vision-Language-Action（VLA）系统在每个重观察点需要同时做出“终止当前子任务”和“选择动作块执行长度”两个决策，二者相互依赖但现有方法孤立处理，存在结构性信息不对称，导致长时间跨度机器人操作性能不足 论文提出SparkVLA，一个停止感知的分层VLA框架，将两个决策统一为对包含Stop和所有动作前缀的统一候选集的排序问题，消除阈值调优需求，仅需离线序数监督即可训练 该方法在RoboC…",
+    "research_unit": "截取的论文HTML片段未提供作者所属研究机构的相关信息，仅列出作者为Xunyao Lei、Renjun…",
+    "hook_text": "现有分层Vision-Language-Action（VLA）系统在每个重观察点需要同时做出“终止当前子任务”和“选择动作块执行长度”两个决策…",
+    "key_points": [
+      "现有分层Vision-Language-Action（VLA）系统在每个重观察点需要同时做出“终止当前子任务”和“选择动作块执行长度”两个决策…",
+      "论文提出SparkVLA，一个停止感知的分层VLA框架，将两个决策统一为对包含Stop和所有动作前缀的统一候选集的排序问题，消除阈值调优需求…",
+      "该方法在RoboCerebra、LIBERO仿真基准以及真实机器人多步骤任务上验证有效性，显著优于独立VLA和现有分层VLA基线"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "title": "US-VLA: An Ultrasound Vision-Language-Action Model for Embodied Abdomina",
+    "link": "http://arxiv.org/abs/2608.16074",
+    "arxiv_id": "2608.16074",
+    "detail_path": "papers/2608.16074/",
+    "cover_path": "covers/2608.16074/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.16074.webp",
+    "preview_text": "针对现有AI辅助超声扫描方法依赖精心设计的奖励函数或大量交互数据、泛化性与稳定性不足，难以适配不同设备、人群和复杂临床场景的问题，本文提出首个面向腹部超声扫描的视觉-语言-动作（VLA）框架US-VLA US-VLA显式编码临床语义目标，结合实时超声反馈生成连续探头操作动作，实现自动化超声标准平面获取 同时构建真实世界的超声扫描VLA数据集US-VLA-Data，支撑语言条件与动作驱动的超声扫描学习",
+    "research_unit": "中国海洋大学计算机科学与技术学院",
+    "hook_text": "针对现有AI辅助超声扫描方法依赖精心设计的奖励函数或大量交互数据、泛化性与稳定性不足，难以适配不同设备、人群和复杂临床场景的问题，本文提出首个…",
+    "key_points": [
+      "针对现有AI辅助超声扫描方法依赖精心设计的奖励函数或大量交互数据、泛化性与稳定性不足，难以适配不同设备、人群和复杂临床场景的问题，本文提出首个…",
+      "US-VLA显式编码临床语义目标，结合实时超声反馈生成连续探头操作动作，实现自动化超声标准平面获取",
+      "同时构建真实世界的超声扫描VLA数据集US-VLA-Data，支撑语言条件与动作驱动的超声扫描学习"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-16",
+    "title": "GigaBrain-0.7: Scaling Embodied Foundation Models to Emergent Capabilities with a Three-System Architecture",
+    "link": "http://arxiv.org/abs/2608.15875",
+    "arxiv_id": "2608.15875",
+    "detail_path": "papers/2608.15875/",
+    "cover_path": "covers/2608.15875/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.15875.webp",
+    "preview_text": "提出 GigaBrain-0.7，一个面向通用具身智能体的基础模型系统，旨在解决当前VLA模型在架构设计、大规模异构数据扩展及跨任务/跨具身泛化方面的核心挑战 采用三系统架构（System 1动作控制、System 2理解规划、System 3预测评估）统一视觉语言理解、世界预测与连续动作生成 在超过37,000小时的异构具身轨迹数据与约2.7亿视觉语言样本上进行预训练，覆盖16种机器人形态，实现跨家庭与工业场景的…",
+    "research_unit": "GigaBrain Team（按字母顺序：Angen Ye, Axiang Sun, Can Jin…",
+    "hook_text": "提出 GigaBrain-0.7，一个面向通用具身智能体的基础模型系统，旨在解决当前VLA模型在架构设计、大规模异构数据扩展及跨任务/跨具身泛…",
+    "key_points": [
+      "提出 GigaBrain-0.7，一个面向通用具身智能体的基础模型系统，旨在解决当前VLA模型在架构设计、大规模异构数据扩展及跨任务/跨具身泛…",
+      "采用三系统架构（System 1动作控制、System 2理解规划、System 3预测评估）统一视觉语言理解、世界预测与连续动作生成",
+      "在超过37,000小时的异构具身轨迹数据与约2.7亿视觉语言样本上进行预训练，覆盖16种机器人形态，实现跨家庭与工业场景的强泛化能力"
+    ],
+    "reading_minutes": 11,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-16",
+    "title": "ViTaR: Visuo-Tactile Residual Adaptation for Foundation VLA Manipulation",
+    "link": "http://arxiv.org/abs/2608.15816",
+    "arxiv_id": "2608.15816",
+    "detail_path": "papers/2608.15816/",
+    "cover_path": "covers/2608.15816/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.15816.webp",
+    "preview_text": "针对Vision-Language-Action（VLA）模型在接触丰富操作中的触觉盲区问题：现有融合触觉的方法要么修改VLA内部导致灾难性遗忘，要么需要在线强化学习在接近失败的接触状态下探索，且均赋予触觉无约束的动作生成权限，与VLA的视觉语义先验冲突 ViTaR的核心思路是将触觉反馈从动作生成的感知输入转变为执行调制器，在冻结的预训练VLA上叠加有界的、由触觉证据选择和缩放的残差修正，在不修改基础VLA预训练表…",
+    "research_unit": "提供的论文截断内容中未明确标注作者所属研究机构，仅列出作者为Yi Wang、Renjun Wu、Jin…",
+    "hook_text": "针对Vision-Language-Action（VLA）模型在接触丰富操作中的触觉盲区问题：现有融合触觉的方法要么修改VLA内部导致灾难性遗…",
+    "key_points": [
+      "针对Vision-Language-Action（VLA）模型在接触丰富操作中的触觉盲区问题：现有融合触觉的方法要么修改VLA内部导致灾难性遗…",
+      "ViTaR的核心思路是将触觉反馈从动作生成的感知输入转变为执行调制器，在冻结的预训练VLA上叠加有界的、由触觉证据选择和缩放的残差修正，在不修…",
+      "研究目标是验证该范式在仿真和真实机器人接触丰富任务上的有效性，解决VLA对局部接触事件感知缺失导致的动作执行失准问题"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-16",
+    "title": "Robo-Dopamine 2.0: History-Conditioned and OOD-Aware Process Reward Modeling for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2608.15680",
+    "arxiv_id": "2608.15680",
+    "detail_path": "papers/2608.15680/",
+    "cover_path": "covers/2608.15680/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.15680.webp",
+    "preview_text": "针对现有视觉-语言-动作（VLA）模型在机器人操作中易受累积误差、未见场景变化、轨迹外状态影响，以及现有过程奖励模型依赖静态前后观测、存在时间歧义、无法区分分布外（OOD）执行中的鲁棒性变化和任务失败的问题，本文提出Robo-Dopamine 2.0历史与OOD感知的过程奖励模型。 该模型旨在解决长时序、接触丰富的机器人操作场景下的奖励稀疏、不可靠问题，为强化学习提供 dense、任务相关、超越演示分布的奖励信号…",
+    "research_unit": "北京航空航天大学（通讯作者Shanghang Zhang所属机构）",
+    "hook_text": "针对现有视觉-语言-动作（VLA）模型在机器人操作中易受累积误差、未见场景变化、轨迹外状态影响，以及现有过程奖励模型依赖静态前后观测、存在时间…",
+    "key_points": [
+      "针对现有视觉-语言-动作（VLA）模型在机器人操作中易受累积误差、未见场景变化、轨迹外状态影响，以及现有过程奖励模型依赖静态前后观测、存在时间…",
+      "该模型旨在解决长时序、接触丰富的机器人操作场景下的奖励稀疏、不可靠问题，为强化学习提供 dense、任务相关、超越演示分布的奖励信号，支撑机器…",
+      "论文同时构建了面向机器人操作的OOD轨迹数据集和五家族评估基准，覆盖分布内、时间依赖、OOD场景，为过程奖励模型的评估提供标准化测试集。"
+    ],
+    "reading_minutes": 10,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-16",
+    "title": "Algorithm-Architecture Co-Design for Efficient VLA Inference via Speculative Inference and Verification",
+    "link": "http://arxiv.org/abs/2608.15636",
+    "arxiv_id": "2608.15636",
+    "detail_path": "papers/2608.15636/",
+    "cover_path": "covers/2608.15636/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.15636.webp",
+    "preview_text": "针对Vision-Language-Action（VLA）模型推理延迟过高（超过600ms）、无法满足实时机器人控制需求，以及现有VLA加速框架Dadu-Corki未利用环境交互连续性、单次推理预测动作长度不足4的问题 提出算法-系统协同设计的SpecVLA框架，核心目标是在保持任务成功率的前提下，降低端到端推理延迟，实现实时机器人操作 通过环境状态感知区分活跃/非活跃状态，非活跃状态下用全精度VLA做长动作推测式…",
+    "research_unit": "上海交通大学计算机科学与工程学院",
+    "hook_text": "针对Vision-Language-Action（VLA）模型推理延迟过高（超过600ms）、无法满足实时机器人控制需求，以及现有VLA加速框…",
+    "key_points": [
+      "针对Vision-Language-Action（VLA）模型推理延迟过高（超过600ms）、无法满足实时机器人控制需求，以及现有VLA加速框…",
+      "提出算法-系统协同设计的SpecVLA框架，核心目标是在保持任务成功率的前提下，降低端到端推理延迟，实现实时机器人操作",
+      "通过环境状态感知区分活跃/非活跃状态，非活跃状态下用全精度VLA做长动作推测式预测摊平推理开销，活跃状态下用轻量小模型sVLA验证动作可靠性…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-16",
+    "title": "EcoVLA: Energy-Efficient Device-Edge Co-Inference for Vision-Language-Action Models under Real-Time Constraints",
+    "link": "http://arxiv.org/abs/2608.15502",
+    "arxiv_id": "2608.15502",
+    "detail_path": "papers/2608.15502/",
+    "cover_path": "covers/2608.15502/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.15502.webp",
+    "preview_text": "Vision-Language-Action（VLA）模型算力需求极高，端侧设备受限于算力和能耗预算，无法同时满足实时控制要求和能效要求；全量卸载到边缘服务器又会受网络波动和多机器人并发影响，无法保障实时性。 现有VLA加速工作仅关注端侧单点优化，无法突破硬件资源上限；现有端边协同推理研究未针对VLA模型特性和连续机器人控制场景设计，无法同时兼顾实时约束和系统级能效优化。 本文提出EcoVLA，首个面向VLA模型的…",
+    "research_unit": "北京航空航天大学（Beihang University）",
+    "hook_text": "Vision-Language-Action（VLA）模型算力需求极高，端侧设备受限于算力和能耗预算，无法同时满足实时控制要求和能效要求；全量…",
+    "key_points": [
+      "Vision-Language-Action（VLA）模型算力需求极高，端侧设备受限于算力和能耗预算，无法同时满足实时控制要求和能效要求；全量…",
+      "现有VLA加速工作仅关注端侧单点优化，无法突破硬件资源上限；现有端边协同推理研究未针对VLA模型特性和连续机器人控制场景设计，无法同时兼顾实时…",
+      "本文提出EcoVLA，首个面向VLA模型的范式无关自适应端边协同推理框架，核心目标是在满足实时SLO（服务等级目标）的前提下最大化系统能效（单…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-15",
+    "title": "PhaseLoRA: Control-Regime-Conditioned Low-Rank Adaptation for Continuous-Action Vision-Language-Action Policies",
+    "link": "http://arxiv.org/abs/2608.15285",
+    "arxiv_id": "2608.15285",
+    "detail_path": "papers/2608.15285/",
+    "cover_path": "covers/2608.15285/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.15285.webp",
+    "preview_text": "现有连续动作视觉-语言-动作（VLA）策略的参数高效微调（PEFT）方法多采用静态LoRA更新，未考虑单条控制轨迹内不同阶段（接近、接触、抓取、运输、放置等）的控制异质性，适配能力存在明显局限 本文提出PhaseLoRA方法，通过两个弱监督的控制相关描述符动态条件化LoRA更新方向，使低秩修正能够随轨迹内的控制 regime 变化，同时保留LoRA的轻量化特性 研究目标是通过仿真与真实机器人实验，验证轨迹内控制条件…",
+    "research_unit": "清华大学（Tsinghua University），论文所有作者均隶属于该机构",
+    "hook_text": "现有连续动作视觉-语言-动作（VLA）策略的参数高效微调（PEFT）方法多采用静态LoRA更新，未考虑单条控制轨迹内不同阶段（接近、接触、抓取…",
+    "key_points": [
+      "现有连续动作视觉-语言-动作（VLA）策略的参数高效微调（PEFT）方法多采用静态LoRA更新，未考虑单条控制轨迹内不同阶段（接近、接触、抓取…",
+      "本文提出PhaseLoRA方法，通过两个弱监督的控制相关描述符动态条件化LoRA更新方向，使低秩修正能够随轨迹内的控制 regime 变化，同…",
+      "研究目标是通过仿真与真实机器人实验，验证轨迹内控制条件化这一PEFT新维度的有效性，并分析其工作原理与性能增益来源"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-15",
+    "title": "Remember Smarter: Visual History Compressor and Hyperbolic Experience Space for Robotic Memory",
+    "link": "http://arxiv.org/abs/2608.15269",
+    "arxiv_id": "2608.15269",
+    "detail_path": "papers/2608.15269/",
+    "cover_path": "covers/2608.15269/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.15269.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-15",
+    "title": "StructRL: Structured Action-Space Exploration for Flow-Based VLAs",
+    "link": "http://arxiv.org/abs/2608.15139",
+    "arxiv_id": "2608.15139",
+    "detail_path": "papers/2608.15139/",
+    "cover_path": "covers/2608.15139/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.15139.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-15",
+    "title": "PACE: Phase-Progress-Aware Credit for Long-Horizon Embodied Manipulation",
+    "link": "http://arxiv.org/abs/2608.15026",
+    "arxiv_id": "2608.15026",
+    "detail_path": "papers/2608.15026/",
+    "cover_path": "covers/2608.15026/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.15026.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-15",
+    "title": "ForceU-VLA: A Force-Aware Vision-Language-Action Model for Embodied Ultrasound Scanning",
+    "link": "http://arxiv.org/abs/2608.15009",
+    "arxiv_id": "2608.15009",
+    "detail_path": "papers/2608.15009/",
+    "cover_path": "covers/2608.15009/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.15009.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "title": "Imagining Recovery: Inference-Time Counterfactual Realignment for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.14822",
+    "arxiv_id": "2608.14822",
+    "detail_path": "papers/2608.14822/",
+    "cover_path": "covers/2608.14822/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.14822.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-14",
     "title": "Reflex: Enabling Fast and Predictive Vision-Language-Action Models for Reaction-Critical Manipulation",
     "link": "http://arxiv.org/abs/2608.14379",

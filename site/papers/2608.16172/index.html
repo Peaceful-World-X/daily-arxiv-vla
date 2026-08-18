@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SparkVLA: Stop-Aware Hierarchical VLA with Adaptive Action Chunking for Long-Horizon Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有分层Vision-Language-Action（VLA）系统在每个重观察点需要同时做出“终止当前子任务”和“选择动作块执行长度”两个决策，二者相互依赖但现有方法孤立处理，存在结构性信息不对称，导致长时间跨度机器人操作性能不足 论文提出SparkVLA，一个停止感知的分层VLA框架，将两个决策统一为对包含Stop和所有动作前缀的统一候选集的排序问题，消除阈值调优需求，仅需离线序数监督即可训练 该方法在RoboC…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.16172">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.16172.webp" alt="SparkVLA: Stop-Aware Hierarchical VLA with Adaptive Action Chunking for Long-Horizon Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有分层Vision-Language-Action（VLA）系统在每个重观察点需要同时做出“终止当前子任务”和“选择动作块执行长度”两个决策…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">SparkVLA: Stop-Aware Hierarchical VLA with Adaptive Action Chunking for Long-Horizon Manipulation</h1>
+            <div class="detail-meta">2026-08-17 · <a href="http://arxiv.org/abs/2608.16172" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.16172" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.16172</span></div>
+            <p class="detail-summary">现有分层Vision-Language-Action（VLA）系统在每个重观察点需要同时做出“终止当前子任务”和“选择动作块执行长度”两个决策，二者相互依赖但现有方法孤立处理，存在结构性信息不对称，导致长时间跨度机器人操作性能不足 论文提出SparkVLA，一个停止感知的分层VLA框架，将两个决策统一为对包含Stop和所有动作前缀的统一候选集的排序问题，消除阈值调优需求，仅需离线序数监督即可训练 该方法在RoboC…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">截取的论文HTML片段未提供作者所属研究机构的相关信息，仅列出作者为Xunyao Lei、Renjun…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.16172/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有分层Vision-Language-Action（VLA）系统在每个重观察点需要同时做出“终止当前子任务”和“选择动作块执行长度”两个决策…</p>
+  <ul class="reading-intro-points"><li>现有分层Vision-Language-Action（VLA）系统在每个重观察点需要同时做出“终止当前子任务”和“选择动作块执行长度”两个决策…</li><li>论文提出SparkVLA，一个停止感知的分层VLA框架，将两个决策统一为对包含Stop和所有动作前缀的统一候选集的排序问题，消除阈值调优需求…</li><li>该方法在RoboCerebra、LIBERO仿真基准以及真实机器人多步骤任务上验证有效性，显著优于独立VLA和现有分层VLA基线</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>截取的论文HTML片段未提供作者所属研究机构的相关信息，仅列出作者为Xunyao Lei、Renjun Wu、Tianlin Huo、Xuesong Li</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有分层Vision-Language-Action（VLA）系统在每个重观察点需要同时做出“终止当前子任务”和“选择动作块执行长度”两个决策，二者相互依赖但现有方法孤立处理，存在结构性信息不对称，导致长时间跨度机器人操作性能不足</li><li>论文提出<strong>SparkVLA</strong>，一个停止感知的分层VLA框架，将两个决策统一为对包含Stop和所有动作前缀的统一候选集的排序问题，消除阈值调优需求，仅需离线序数监督即可训练</li><li>该方法在<strong>RoboCerebra</strong>、<strong>LIBERO</strong>仿真基准以及真实机器人多步骤任务上验证有效性，显著优于独立VLA和现有分层VLA基线</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>将子任务终止与动作块执行长度选择的相互依赖决策统一为单候选集排序问题，无需单独停止检测器、阈值调优或在线奖励信号，从架构层面解决二者的信息不对称问题</li><li>提出<strong>Anchor-Conditioned Context Encoding</strong>和<strong>Stop-Aware Action-Prefix Selection</strong>两个核心模块，前者通过历史感知的子任务锚点引导视觉token剪枝，提升上下文编码效率；后者在动作块边界通过全注意力完成统一打分，实现高效决策</li><li>证明SparkVLA的高层规划系统可泛化到不同低层VLA执行器，在仿真和真实硬件平台均能实现性能迁移，增益来自统一接口设计而非特定模型组合</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>SparkVLA基于预训练VLA模型<strong>π₀.5</strong>构建双分支分层架构：高层分支保留VLM骨干作为子任务规划器，低层分支使用完整π₀.5作为动作块执行器，选择器部署在高层规划分支</li><li><strong>Anchor-Conditioned Context Encoding</strong>模块分三步工作：① 子任务开始时从高层VLM倒数第二层提取原始锚点，融合历史子任务锚点的自注意力输出得到历史感知子任务锚点αₖ，缓存供整个子任务使用；② 以αₖ为条件，通过Grid-Sampler引导多相机视觉token剪枝，仅保留K个任务相关token；③ 将剪枝后的视觉token、本体感知状态、子任务指令嵌入拼接后，输入带LoRA适配器的高层VLM前ℓₘ层得到高层隐特征mₜ</li><li><strong>Stop-Aware Action-Prefix Selection</strong>头将Stop和所有长度的动作前缀作为统一候选集，通过全注意力Transformer让所有候选相互关注，结合锚点和高层隐特征完成打分，选择得分最高的选项执行；训练时分两阶段：首先监督高层规划器骨干完成子任务指令预测，之后冻结高低层基础分支，仅训练选择器模块通过统一排序目标优化停止和动态块选择，仅需离线示范的序数偏好监督</li><li>核心创新是将终止和长度选择的相互依赖决策统一为单次排序，同时通过锚点缓存和块边界触发机制提升推理效率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>RoboCerebra</strong>（1000条标注轨迹，覆盖100个任务变体，平均每个任务9.1个子任务、2972个步骤，包含动态观察（随机布局/变化观察、观察噪声）、记忆扩展（子任务历史回忆、执行噪声）、混合、理想静态共6种测试条件）、<strong>LIBERO</strong>（40个任务，分为Spatial、Object、Goal、Long四个套件）</li><li>真实世界数据集：自采集的3个多步骤双臂操作任务（Shelf Arrangement 6个子任务、Drawer Restocking 6个子任务、Tea Preparation 12个子任务），每个任务收集50条演示</li><li>模型规模：基于预训练VLA<strong>π₀.5</strong>构建，高层和低层分支独立微调，选择器为轻量Transformer模块，无额外大规模参数增量</li><li>训练与部署资源：截取片段未明确具体GPU/TPU硬件配置，仿真训练基于预训练π₀.5 checkpoint在目标操作数据上微调，真实机器人在<strong>AirbotPlay</strong>双臂平台部署，配备2个腕部RGB摄像头和1个头部RGB摄像头</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真严格遵循RoboCerebra官方协议和LIBERO基准设定，真实世界在AirbotPlay双臂机器人平台测试，每个任务匹配初始状态进行50次rollout</li><li>主要评估指标：<strong>Success Rate（SR）</strong>（完成全部子任务且满足最终状态条件的episode占比，为主要指标）、<strong>Stop Acc.</strong>（选择器停止决策与标注子任务边界的一致性，用于评估终止判断精度）</li><li>关键实验结果：</li></ul>
+<p> - RoboCerebra基准上SparkVLA平均SR达47.12%，比官方分层基线HPE高30.57%，比复现的最新分层方法Mem-0高26.83%，比独立π₀.5高34.83%；动态观察、记忆扩展条件提升最为显著，分别达34.78%、47.69%</p>
+<p> - LIBERO基准上平均SR达98.5%，在长时序LIBERO-Long套件上比π₀.5高5.6%，多步骤序列分解优势明显</p>
+<p> - 真实世界3个任务平均SR达69.3%，比π₀.5高21.3%，12子任务的泡茶任务提升幅度达30.0%</p>
+<p> - 消融实验证明：统一候选集设计将Stop Acc.从80.37%提升至96.65%，同时SR从42.53%提升至47.12%；历史感知锚点比原始锚点额外提升1.94% SR；选择器部署在高层规划器骨干比低层执行器骨干高9.84% SR</p>
+<p> - 推理优化后系统运行频率达4.14Hz，保留独立π₀.5 88%的吞吐量，同时决策精度更高</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.16476/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Exposing the Long-tail in Embodied Urban Navigation via Scalable Learning from In-the-Wild Videos</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.16074/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">US-VLA: An Ultrasound Vision-Language-Action Model for Embodied Abdomina</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

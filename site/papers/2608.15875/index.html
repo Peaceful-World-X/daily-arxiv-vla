@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GigaBrain-0.7: Scaling Embodied Foundation Models to Emergent Capabilities with a Three-System Architecture - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 GigaBrain-0.7，一个面向通用具身智能体的基础模型系统，旨在解决当前VLA模型在架构设计、大规模异构数据扩展及跨任务/跨具身泛化方面的核心挑战 采用三系统架构（System 1动作控制、System 2理解规划、System 3预测评估）统一视觉语言理解、世界预测与连续动作生成 在超过37,000小时的异构具身轨迹数据与约2.7亿视觉语言样本上进行预训练，覆盖16种机器人形态，实现跨家庭与工业场景的…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.15875">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.15875.webp" alt="GigaBrain-0.7: Scaling Embodied Foundation Models to Emergent Capabilities with a Three-System Architecture" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 GigaBrain-0.7，一个面向通用具身智能体的基础模型系统，旨在解决当前VLA模型在架构设计、大规模异构数据扩展及跨任务/跨具身泛…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">GigaBrain-0.7: Scaling Embodied Foundation Models to Emergent Capabilities with a Three-System Architecture</h1>
+            <div class="detail-meta">2026-08-16 · <a href="http://arxiv.org/abs/2608.15875" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.15875" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.15875</span></div>
+            <p class="detail-summary">提出 GigaBrain-0.7，一个面向通用具身智能体的基础模型系统，旨在解决当前VLA模型在架构设计、大规模异构数据扩展及跨任务/跨具身泛化方面的核心挑战 采用三系统架构（System 1动作控制、System 2理解规划、System 3预测评估）统一视觉语言理解、世界预测与连续动作生成 在超过37,000小时的异构具身轨迹数据与约2.7亿视觉语言样本上进行预训练，覆盖16种机器人形态，实现跨家庭与工业场景的…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">11 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">GigaBrain Team（按字母顺序：Angen Ye, Axiang Sun, Can Jin…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.15875/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 GigaBrain-0.7，一个面向通用具身智能体的基础模型系统，旨在解决当前VLA模型在架构设计、大规模异构数据扩展及跨任务/跨具身泛…</p>
+  <ul class="reading-intro-points"><li>提出 GigaBrain-0.7，一个面向通用具身智能体的基础模型系统，旨在解决当前VLA模型在架构设计、大规模异构数据扩展及跨任务/跨具身泛…</li><li>采用三系统架构（System 1动作控制、System 2理解规划、System 3预测评估）统一视觉语言理解、世界预测与连续动作生成</li><li>在超过37,000小时的异构具身轨迹数据与约2.7亿视觉语言样本上进行预训练，覆盖16种机器人形态，实现跨家庭与工业场景的强泛化能力</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>GigaBrain Team</strong>（按字母顺序：Angen Ye, Axiang Sun, Can Jin, Chenxi Cheng, Chong Shi, Dengke Shang, Dingqian Zhang, Guan Huang, Guangqiang Wang, Guangqing Ding, Guo Li, Hangcong Li, Hengyu Zhong, Hongtao Lu, Jianbo Qin, Jiming Mao, Jing Zhu, Jindi Lv, Jingzhi Cui, Junjie Xie, Junyi Bao, Kai Liu, Lei Yuan, Limin Long, Lv Feng, Mingming Yu, Peng Li, Pengfei Yi, Qi Li, Qianli Zhang, Qingfang Li, Qitang Hu, Rui Zhang, Shaoyan Sun, Shibo Sun, Shiying Duan, Tenghui Chen, Tianze Liu, Weijie Ke, Wenyao Xue, Xiaofeng Wang, Xiaoyu Tian, Xinyu Liu, Xinze Chen, Yang Wang, Yankai Wang, Yejun Zeng, Yifan Li, Yifei Nie, Yilong Li, Yilong Liu, Yongchao Feng, Yumeng Wang, Yun Ye, Zhichao Liu, Ziheng He, Zonghai Yang, Zheng Zhu）</li><li>项目所属：<strong>GigaAI</strong>（项目主页：https://gigaai.cc/blog/gigabrain07）</li><li>代码仓库：https://github.com/open-gigaai/giga-brain-0</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>GigaBrain-0.7</strong>，一个面向通用具身智能体的基础模型系统，旨在解决当前VLA模型在架构设计、大规模异构数据扩展及跨任务/跨具身泛化方面的核心挑战</li><li>采用<strong>三系统架构</strong>（System 1动作控制、System 2理解规划、System 3预测评估）统一视觉语言理解、世界预测与连续动作生成</li><li>在超过<strong>37,000小时</strong>的异构具身轨迹数据与约<strong>2.7亿</strong>视觉语言样本上进行预训练，覆盖16种机器人形态，实现跨家庭与工业场景的强泛化能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>单阶段多具身VLA预训练框架</strong>，在统一阶段联合优化视觉语言理解、层次化任务预测、离散动作表示与连续动作生成，消除多阶段训练的优化碎片化</li><li>设计<strong>System 3（预测与评估）</strong>：基于世界模型预测未来子目标图像并估计任务进度价值，为策略学习提供前瞻性条件信号与评估反馈</li><li>引入<strong>软知识绝缘（Soft Knowledge Insulation, Soft KI）</strong>机制，通过衰减而非完全阻断动作梯度回传，在保持VLM通用视觉语言能力的同时促进具身控制适配</li><li>建立<strong>统一具身轨迹处理流程</strong>，实现多源异构机器人数据的格式转换、跨具身状态动作归一化、LLM辅助语言指令重写与多阶段质量控制</li><li>构建<strong>经验增强强化学习</strong> pipeline，结合离线人类干预数据学习、离线经验强化与在线人类纠正强化，实现策略的持续闭环改进</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>System 1（动作与控制）</strong>：以 <strong>PaliGemma2 (3B)</strong> 为视觉语言骨干，搭配 <strong>Action Expert (0.5B)</strong>，采用<strong>混合专家Transformer（MoT）</strong>架构；视觉语言流使用因果自注意力，动作专家流通过联合注意力双向访问视觉语言上下文；支持离散（NTP）与连续（流匹配）双动作路径；引入<strong>时序空间块（Temporal-Spatial Blocks）</strong>编码短期视觉记忆</li><li><strong>System 2（理解与规划）</strong>：基于PaliGemma2 (3B)，通过链式思维（CoT）推理当前场景语义，将长程语言指令分解为可执行的子任务指令</li><li><strong>System 3（预测与评估）</strong>：基于 <strong>GigaWorld-1</strong> 构建世界价值模型（5B），在接收当前观测、本体感受状态与子任务描述后，预测与子任务时间跨度对齐的未来视频序列（提取最后一帧作为<strong>子目标图像</strong>），并估计任务进度价值；价值信号被二值化为优势条件注入System 1</li><li><strong>四阶段训练流程</strong>：(1) Systems 1&2联合预训练；(2) System 3世界模型预训练（机器人中心视频预训练→价值学习）；(3) 世界模型驱动的VLA后训练（子目标图像条件+价值派生条件+条件dropout）；(4) 经验驱动强化学习（离线优势加权回归→在线Actor-Critic微调）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>具身轨迹数据</strong>：清洗后共 <strong>37,256.98小时</strong>，包括真实机器人数据（20,535.65小时，16种形态，1,810,101集）、UMI演示数据（8,251.83小时）、EGO人类第一视角数据（2,862.36小时）、物理仿真数据（1,453.92小时）与世界模型生成数据（4,153.22小时）</li><li><strong>视觉语言数据</strong>：<strong>271,976,674</strong>个图像-文本/问答样本，覆盖图像描述、通用VQA、空间关系推理、区域定位、 affordance理解与机器人任务理解</li><li><strong>代表性机器人平台</strong>：<strong>Maker H01</strong>、<strong>Maker M01</strong>、<strong>Agibot-G1/G2</strong>、<strong>AgileX PiPER/PiPER-X</strong>、<strong>Galaxea R1 Lite</strong>、<strong>Franka</strong>、<strong>UR5</strong>、<strong>Realman RMC-AIDA-L</strong>等</li><li><strong>模型规模</strong>：System 1/2合计约<strong>3.5B参数</strong>（PaliGemma2 3B + Action Expert 0.5B），System 3世界价值模型约<strong>5B参数</strong></li><li><strong>训练数据格式</strong>：统一转换为 <strong>LeRobot v3.0</strong> 格式，支持episode/frame/observation/action/语言指令标准化字段</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：真实机器人平台（<strong>AgileX PiPER/PiPER-X</strong>、自研<strong>Maker H01</strong>）；仿真基准（<strong>RoboTwin 2.0</strong>、<strong>EBench</strong>、<strong>RoboColiseum</strong>）；多模态理解基准</li><li><strong>对比基线</strong>：前代<strong>GigaBrain-0</strong>、<strong>GigaBrain-0.5M\</strong>*，以及<strong>π₀.₅</strong>等主流VLA模型（经任务特定后训练）</li><li><strong>评估维度</strong>：基础零样本能力、语言条件指令遵循、后训练任务成功率、分布外泛化、长程操作、System 3预测与评估消融</li><li><strong>关键结果</strong>：在基础零样本能力、语言条件指令遵循与后训练任务成功率上较GigaBrain-0系列与π₀.₅取得<strong>显著提升</strong>；数据规模扩展实验显示预训练数据增大持续降低验证损失并提升真实机器人行为可靠性；System 3消融验证了未来状态预测与价值评估信号对策略的互补作用；在家庭与工业场景中表现出强任务适应性与跨具身泛化能力</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.16074/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">US-VLA: An Ultrasound Vision-Language-Action Model for Embodied Abdomina</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.15816/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">ViTaR: Visuo-Tactile Residual Adaptation for Foundation VLA Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

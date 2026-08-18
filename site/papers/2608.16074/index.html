@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>US-VLA: An Ultrasound Vision-Language-Action Model for Embodied Abdomina - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有AI辅助超声扫描方法依赖精心设计的奖励函数或大量交互数据、泛化性与稳定性不足，难以适配不同设备、人群和复杂临床场景的问题，本文提出首个面向腹部超声扫描的视觉-语言-动作（VLA）框架US-VLA US-VLA显式编码临床语义目标，结合实时超声反馈生成连续探头操作动作，实现自动化超声标准平面获取 同时构建真实世界的超声扫描VLA数据集US-VLA-Data，支撑语言条件与动作驱动的超声扫描学习" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.16074">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.16074.webp" alt="US-VLA: An Ultrasound Vision-Language-Action Model for Embodied Abdomina" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有AI辅助超声扫描方法依赖精心设计的奖励函数或大量交互数据、泛化性与稳定性不足，难以适配不同设备、人群和复杂临床场景的问题，本文提出首个…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">US-VLA: An Ultrasound Vision-Language-Action Model for Embodied Abdomina</h1>
+            <div class="detail-meta">2026-08-17 · <a href="http://arxiv.org/abs/2608.16074" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.16074" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.16074</span></div>
+            <p class="detail-summary">针对现有AI辅助超声扫描方法依赖精心设计的奖励函数或大量交互数据、泛化性与稳定性不足，难以适配不同设备、人群和复杂临床场景的问题，本文提出首个面向腹部超声扫描的视觉-语言-动作（VLA）框架US-VLA US-VLA显式编码临床语义目标，结合实时超声反馈生成连续探头操作动作，实现自动化超声标准平面获取 同时构建真实世界的超声扫描VLA数据集US-VLA-Data，支撑语言条件与动作驱动的超声扫描学习</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">中国海洋大学计算机科学与技术学院</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.16074/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有AI辅助超声扫描方法依赖精心设计的奖励函数或大量交互数据、泛化性与稳定性不足，难以适配不同设备、人群和复杂临床场景的问题，本文提出首个…</p>
+  <ul class="reading-intro-points"><li>针对现有AI辅助超声扫描方法依赖精心设计的奖励函数或大量交互数据、泛化性与稳定性不足，难以适配不同设备、人群和复杂临床场景的问题，本文提出首个…</li><li>US-VLA显式编码临床语义目标，结合实时超声反馈生成连续探头操作动作，实现自动化超声标准平面获取</li><li>同时构建真实世界的超声扫描VLA数据集US-VLA-Data，支撑语言条件与动作驱动的超声扫描学习</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>中国海洋大学计算机科学与技术学院</li><li>山东大学信息科学与工程学院</li><li>山东大学齐鲁第二医院超声科</li><li>合肥工业大学人工智能学院</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有AI辅助超声扫描方法依赖精心设计的奖励函数或大量交互数据、泛化性与稳定性不足，难以适配不同设备、人群和复杂临床场景的问题，本文提出首个面向腹部超声扫描的视觉-语言-动作（VLA）框架<strong>US-VLA</strong></li><li>US-VLA显式编码临床语义目标，结合实时超声反馈生成连续探头操作动作，实现自动化超声标准平面获取</li><li>同时构建真实世界的超声扫描VLA数据集<strong>US-VLA-Data</strong>，支撑语言条件与动作驱动的超声扫描学习</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出首个面向超声扫描的VLA框架，将临床语义目标、实时感知与探头操作统一到单一模型中，实现语义驱动的超声扫描闭环控制</li><li>构建<strong>US-VLA-Data</strong>真实数据集，覆盖肝脏和肾脏检查的5个临床定义标准平面，包含320条专家扫描轨迹与约80,000个同步时间步，支持多场景超声扫描学习</li><li>实验证明US-VLA在五个腹部超声扫描任务中均优于强基线方法，展现出跨器官、跨扫描目标和多样临床条件的强泛化能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>US-VLA基于改进的π0架构，包含三大核心模块：视觉-语言编码模块、超声感知专家融合模块、动作专家与策略头</li><li>视觉-语言编码模块采用<strong>SigLIP</strong>视觉编码器处理腕式与侧视角RGB图像，语言编码器处理临床扫描指令，专用超声基础模型<strong>USFM</strong>编码超声图像，避免自然图像与超声图像的领域偏差</li><li>超声感知专家融合模块（UAEF）采用交叉模态注意力机制，以视觉-语言特征为查询、超声特征为键值，将实时超声语义注入视觉-语言表征，经残差连接与前馈网络细化后输出融合特征</li><li>动作专家与策略头提取融合特征中的动作相关token，经全连接层得到专家特征，与原始特征残差聚合后线性投影输出连续探头控制指令</li><li>核心创新是首次将实时超声反馈与临床语义目标融入VLA框架，实现成像驱动的语义化超声扫描闭环控制</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集为自建的<strong>US-VLA-Data</strong>，覆盖肝脏和肾脏检查场景，包含5个临床标准平面（腹主动脉矢状面、剑突下横断面、右肋下斜断面、左肾长轴面、左肾横断面），共320条专家演示轨迹，约80,000个同步时间步，由8名参与者完成，每人每类任务从8个不同位置采集以提升多样性</li><li>模型基于π0架构改进，视觉编码器采用SigLIP，超声编码器采用通用超声基础模型USFM，动作维度适配超声扫描需求</li><li>训练资源：8块<strong>NVIDIA RTX 3090 GPU</strong>，采用AdamW优化器（β₁=0.9，β₂=0.95，ε=1e-8），最大学习率5e-5，批次大小8，训练30,000步；数据采集与闭环推理频率均为15Hz，采集设备包括UR7e 6-DOF机械臂、Intel RealSense D435双RGB-D相机、海信医疗HD60超声设备，采用PIKA遥操作系统由临床经验丰富的超声医师完成专家演示</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：在3名不同BMI（18.1、22.9、26.0）的留出受试者上进行测试，每个任务开展10次独立试验</li><li>评估指标：任务成功率（越高越好）、到达目标标准平面的扫描时间步（越低越好）</li><li>关键实验结果：US-VLA平均任务成功率达<strong>84.0%</strong>，平均扫描时间步仅<strong>682步</strong>；相比无超声输入的π0-base（成功率52.7%、时间步1510），成功率提升31.3%，时间步减少54.8%；相比直接将超声信号拼接输入的π0-base（成功率62.0%、时间步1426），成功率提升22.0%，时间步减少52.2%</li><li>消融实验验证了超声输入、USFM超声特征建模、UAEF融合模块的各自有效性，三者共同作用时性能最优</li><li>与不同经验水平的临床超声医师对比，US-VLA在时间-成功率权衡上优于所有基线方法，显著缩小了自主超声扫描与手动操作的性能差距</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.16172/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">SparkVLA: Stop-Aware Hierarchical VLA with Adaptive Action Chunking for Long-Horizon Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.15875/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">GigaBrain-0.7: Scaling Embodied Foundation Models to Emergent Capabilities with a Three-System Architecture</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

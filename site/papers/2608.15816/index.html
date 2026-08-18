@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ViTaR: Visuo-Tactile Residual Adaptation for Foundation VLA Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对Vision-Language-Action（VLA）模型在接触丰富操作中的触觉盲区问题：现有融合触觉的方法要么修改VLA内部导致灾难性遗忘，要么需要在线强化学习在接近失败的接触状态下探索，且均赋予触觉无约束的动作生成权限，与VLA的视觉语义先验冲突 ViTaR的核心思路是将触觉反馈从动作生成的感知输入转变为执行调制器，在冻结的预训练VLA上叠加有界的、由触觉证据选择和缩放的残差修正，在不修改基础VLA预训练表…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.15816">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.15816.webp" alt="ViTaR: Visuo-Tactile Residual Adaptation for Foundation VLA Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对Vision-Language-Action（VLA）模型在接触丰富操作中的触觉盲区问题：现有融合触觉的方法要么修改VLA内部导致灾难性遗…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ViTaR: Visuo-Tactile Residual Adaptation for Foundation VLA Manipulation</h1>
+            <div class="detail-meta">2026-08-16 · <a href="http://arxiv.org/abs/2608.15816" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.15816" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.15816</span></div>
+            <p class="detail-summary">针对Vision-Language-Action（VLA）模型在接触丰富操作中的触觉盲区问题：现有融合触觉的方法要么修改VLA内部导致灾难性遗忘，要么需要在线强化学习在接近失败的接触状态下探索，且均赋予触觉无约束的动作生成权限，与VLA的视觉语义先验冲突 ViTaR的核心思路是将触觉反馈从动作生成的感知输入转变为执行调制器，在冻结的预训练VLA上叠加有界的、由触觉证据选择和缩放的残差修正，在不修改基础VLA预训练表…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">提供的论文截断内容中未明确标注作者所属研究机构，仅列出作者为Yi Wang、Renjun Wu、Jin…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.15816/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对Vision-Language-Action（VLA）模型在接触丰富操作中的触觉盲区问题：现有融合触觉的方法要么修改VLA内部导致灾难性遗…</p>
+  <ul class="reading-intro-points"><li>针对Vision-Language-Action（VLA）模型在接触丰富操作中的触觉盲区问题：现有融合触觉的方法要么修改VLA内部导致灾难性遗…</li><li>ViTaR的核心思路是将触觉反馈从动作生成的感知输入转变为执行调制器，在冻结的预训练VLA上叠加有界的、由触觉证据选择和缩放的残差修正，在不修…</li><li>研究目标是验证该范式在仿真和真实机器人接触丰富任务上的有效性，解决VLA对局部接触事件感知缺失导致的动作执行失准问题</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>提供的论文截断内容中未明确标注作者所属研究机构，仅列出作者为Yi Wang、Renjun Wu、Jinyan Liu、Xuesong Li</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对<strong>Vision-Language-Action（VLA）</strong>模型在接触丰富操作中的触觉盲区问题：现有融合触觉的方法要么修改VLA内部导致灾难性遗忘，要么需要在线强化学习在接近失败的接触状态下探索，且均赋予触觉无约束的动作生成权限，与VLA的视觉语义先验冲突</li><li><strong>ViTaR</strong>的核心思路是将触觉反馈从动作生成的感知输入转变为执行调制器，在冻结的预训练VLA上叠加有界的、由触觉证据选择和缩放的残差修正，在不修改基础VLA预训练表征的前提下提升接触丰富任务的成功率</li><li>研究目标是验证该范式在仿真和真实机器人接触丰富任务上的有效性，解决VLA对局部接触事件感知缺失导致的动作执行失准问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出ViTaR触觉执行调制框架，仅在冻结VLA输出上叠加有界残差修正，通过触觉证据选择修正方向和缩放幅度，不生成新动作方向、不修改预训练表征，保留基础VLA的通用能力</li><li>引入<strong>Effect-Guided Modeling（EGM）</strong>模块，通过同一局部恢复接触状态下的成对动作结果比较进行偏好学习，无需跨状态的全局校准奖励即可获得残差修正的效果排序信号</li><li>在<strong>UniVTAC</strong>仿真基准和真实机器人任务上验证方法有效性，相比冻结VLA基础平均成功率提升30.6个百分点，在插入、滑动、抓取等多类接触任务上均实现真实迁移</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>ViTaR由两个耦合的模块组成，作用于冻结的预训练VLA输出的基础动作上，全程不修改基础VLA的预训练参数：</li></ul>
+<p> 1. <strong>Effect-Guided Modeling（EGM）</strong>：通过短时分支回滚（从恢复的局部决策点执行不同动作选择的短时 rollout）获取每个决策点的动作结果得分，对候选残差动作和基础动作进行成对比较，用加权Bradley-Terry目标训练排序模型，输出状态适应性得分（判断当前接触状态是否需要干预）和不同动作选择的效果得分（排序残差修正的局部效果）</p>
+<p> 2. <strong>Residual Action Modulation（RAM）</strong>：将EGM的排序证据转化为部署时的动作选择和缩放增益，包括偏好引导的残差选择（从基础动作和候选残差集中选择最优动作）和触觉条件残差缩放（基于触觉图像摘要预测连续缩放系数，仅调整残差幅度，不改变动作方向）</p>
+<ul><li>创新点：首次将触觉的角色从动作生成的感知输入限定为执行调制器，仅调整基础动作的有界残差；使用状态内的成对偏好学习替代全局奖励回归，解决跨接触状态得分不可比的问题；残差候选集来自基础VLA动作的主成分方向，避免无约束的动作空间泛化</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>UniVTAC</strong>仿真基准（包含Lift Bottle、Pull-out Key、Lift Can、Put Bottle、Insert HDMI、Insert Tube、Grasp Classify 7个接触丰富任务，提供同步视觉、本体感知和触觉观测）；3个真实机器人接触丰富任务（Insert Hole、Lift Bottle、Wiping the Board）</li><li>模型规模：基础策略为<strong>OpenVLA-OFT</strong>，具体参数量未在提供的截断内容中明确说明</li><li>训练资源：计算训练资源未在提供的截断内容中明确说明；物理机器人硬件包括6-DoF RealMan RM-65B机械臂、9DTact视觉触觉传感器、RealSense D455相机、定制触觉夹具</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真评估在UniVTAC平台上进行，每个方法-任务对测试100个episode；真实机器人评估在配备触觉传感器的RealMan RM-65B平台上进行，每个任务测试20次 trial</li><li>主要评估指标：核心指标为端到端二分类任务成功率；辅助诊断指标包括配对恢复率（Rec.）、配对保留率（Pres.）、安全/提前终止率（Unsafe.）、正例优于基础动作排序准确率（P>B）、基础动作优于负例排序准确率（B>N）、80%召回下的假正率（FPR）、保留集Top1一致率（Off. T1），所有诊断指标仅用于事后分析，不输入部署策略</li><li>关键实验结果：</li></ul>
+<p> - 仿真任务：ViTaR在UniVTAC 7个任务上的平均成功率为61.3%，相比冻结的OpenVLA-OFT基础（30.7%）提升30.6个百分点，超过ACT（32.6%）、VITaL（42.7%）、Tactile-VLA（40.0%）、π₀.₅（48.3%）等基线</p>
+<p> - 真实机器人任务：ViTaR平均成功率为48.3%，相比OpenVLA-OFT高30.0个百分点，比Tactile-VLA高15.0个百分点，比ACT高21.7个百分点，在插入、持续滑动、抓取三类不同接触模态的任务上均实现提升</p>
+<p> - 消融实验：相比直接残差强化学习（PPO-option 36.0%、SAC-residual 32.0%），ViTaR成功率更高且安全/提前终止率更低（0.04 vs 0.25和0.31）；接触描述符是是否干预的关键输入，移除后恢复率从0.79降至0.46；触觉摘要是干预幅度的关键输入，移除后成功率从61.3%降至46.0%；EGM的成对排序、结果间隙加权、恢复感知加权逐步提升效果，最终将P>B/B>N准确率提升至0.83/0.88，FPR@80%降至0.12；RAM的联合选择器相比单一证据或贪心选择效果更优，保留集Top1一致率达0.79</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.15875/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">GigaBrain-0.7: Scaling Embodied Foundation Models to Emergent Capabilities with a Three-System Architecture</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.15680/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Robo-Dopamine 2.0: History-Conditioned and OOD-Aware Process Reward Modeling for Robotic Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

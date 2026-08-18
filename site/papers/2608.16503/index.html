@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NebulaVLA: A Dual-Frequency Vision-Language-Action Model With Guide Action for Robotic Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 NebulaVLA，一种异步双频视觉-语言-动作（VLA）模型，旨在解决真实机器人部署中的效率-性能权衡、跨具身泛化和执行平滑性三大瓶颈 通过解耦高级语义推理（System 2，~10Hz VLM）与低级动作控制（System 1，~20Hz DiT生成器），优化计算资源分配与模块化部署 引入 GESTURE-7 统一动作表示和 Guide Action 算法，分别解决跨机器人动作语义鸿沟和动作块边界抖动问题" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.16503">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.16503.webp" alt="NebulaVLA: A Dual-Frequency Vision-Language-Action Model With Guide Action for Robotic Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 NebulaVLA，一种异步双频视觉-语言-动作（VLA）模型，旨在解决真实机器人部署中的效率-性能权衡、跨具身泛化和执行平滑性三大瓶颈</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">NebulaVLA: A Dual-Frequency Vision-Language-Action Model With Guide Action for Robotic Manipulation</h1>
+            <div class="detail-meta">2026-08-17 · <a href="http://arxiv.org/abs/2608.16503" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.16503" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.16503</span></div>
+            <p class="detail-summary">提出 NebulaVLA，一种异步双频视觉-语言-动作（VLA）模型，旨在解决真实机器人部署中的效率-性能权衡、跨具身泛化和执行平滑性三大瓶颈 通过解耦高级语义推理（System 2，~10Hz VLM）与低级动作控制（System 1，~20Hz DiT生成器），优化计算资源分配与模块化部署 引入 GESTURE-7 统一动作表示和 Guide Action 算法，分别解决跨机器人动作语义鸿沟和动作块边界抖动问题</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">ZTE Corporation（中兴通讯），中国</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.16503/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 NebulaVLA，一种异步双频视觉-语言-动作（VLA）模型，旨在解决真实机器人部署中的效率-性能权衡、跨具身泛化和执行平滑性三大瓶颈</p>
+  <ul class="reading-intro-points"><li>提出 NebulaVLA，一种异步双频视觉-语言-动作（VLA）模型，旨在解决真实机器人部署中的效率-性能权衡、跨具身泛化和执行平滑性三大瓶颈</li><li>通过解耦高级语义推理（System 2，~10Hz VLM）与低级动作控制（System 1，~20Hz DiT生成器），优化计算资源分配与模…</li><li>引入 GESTURE-7 统一动作表示和 Guide Action 算法，分别解决跨机器人动作语义鸿沟和动作块边界抖动问题</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>ZTE Corporation</strong>（中兴通讯），中国</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>NebulaVLA</strong>，一种异步双频视觉-语言-动作（VLA）模型，旨在解决真实机器人部署中的效率-性能权衡、跨具身泛化和执行平滑性三大瓶颈</li><li>通过解耦高级语义推理（System 2，~10Hz VLM）与低级动作控制（System 1，~20Hz DiT生成器），优化计算资源分配与模块化部署</li><li>引入 <strong>GESTURE-7</strong> 统一动作表示和 <strong>Guide Action</strong> 算法，分别解决跨机器人动作语义鸿沟和动作块边界抖动问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>异构双频架构</strong>：借鉴快-慢认知范式，将 deliberative reasoning（System 2，10Hz）与 reactive control（System 1，20Hz）解耦，显式分离计算负载，支持分布式部署并最小化交互延迟</li><li><strong>GESTURE-7 统一表示</strong>：提出7D连续末端执行器向量（[x,y,z,r,p,w,gesture]），通过自然语言关键词（如"grasp"）统一不同具身（机械手、夹爪）的动作语义，原生支持强化学习训练</li><li><strong>Guide Action 机制</strong>：借鉴图像外推（Image Outpainting）思想，在扩散去噪过程中通过二进制掩码强制保留已知动作锚点，确保相邻动作块的无缝边界过渡，消除传统后处理平滑需求</li><li><strong>三阶段训练流程</strong>：Stage 1（S2 SFT）→ Stage 2（GRPO-based RL）→ Stage 3（S1 SFT），渐进式优化语义规划与动作执行能力，严格对齐训练-推理频率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>System 2</strong>：基于 <strong>Qwen3-VL</strong> 的视觉语言骨干网络，以可学习token提取隐藏层特征，输出抽象动作引导（~10Hz）</li><li><strong>System 1</strong>：采用 <strong>Q-Former</strong> 压缩S2引导信息与高频视觉输入，通过<strong>扩散Transformer（DiT）</strong>以20Hz频率生成执行动作；引入预训练 <strong>DINOv2</strong> 的对比微调以改善视觉-本体感受对齐</li><li><strong>Guide Action 技术细节</strong>：将下一动作块的生成条件于前一块中未执行的引导动作点（随机采样0-3个），通过掩码M强制执行 $A_{full}^{t-1}=M\odot A_{prior}^{(t-1)}+(1-M)\odot A_{noisy}^{t-1}$，其中M[1..k]=1严格保留锚点区域，M[k+1..T]=0为模型生成区域</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真数据集</strong>：<strong>LIBERO-Plus</strong>（大规模具身操纵基准，包含10,030个程序生成任务，覆盖5个难度级别L1-L5，7个扰动维度共21个子维度）</li><li><strong>真实世界平台</strong>：<strong>AgiBot A2</strong> 双臂机器人，配备立体RGB相机</li><li><strong>训练资源</strong>：单节点配备 <strong>8×H800 GPU</strong>，batch size为96</li><li><strong>部署硬件</strong>：<strong>NVIDIA RTX 4070 GPU</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估指标</strong>：Success Rate（SR）、Inference Latency（推理延迟）、Joint Jerk（关节加加速度/平滑度）</li><li><strong>仿真结果</strong>：在LIBERO-Plus上达到<strong>85.5%</strong>平均成功率，超越InternVLA-M1（81.3%）4.2%，动作生成加速约<strong>2.7倍</strong></li><li><strong>真实世界结果</strong>：在Pick-and-Place任务达到92.08% SR，Packaging Line Feeding任务达到92.5% SR，均优于InternVLA-M1（77.91%和72.5%）；异构架构将平均推理延迟从115ms降至<strong>42ms</strong></li><li><strong>平滑度改进</strong>：Guide Action机制使关节jerk平均降低<strong>25.6%</strong>（关节12降低41.2%，关节13降低45.1%），有效抑制异步执行导致的边界抖动</li><li><strong>消融验证</strong>：三阶段训练策略相比仅SFT基线提升2.5%总成功率，GESTURE-7在Layout维度提升6.2%；但Camera扰动维度因固定视觉-空间映射假设存在性能退化</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.16697/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">FabriMAE I Trust Myself? Self-Evaluating VLA Action Generation with Markov Attention Entropy</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.16476/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Exposing the Long-tail in Embodied Urban Navigation via Scalable Learning from In-the-Wild Videos</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

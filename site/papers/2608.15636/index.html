@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Algorithm-Architecture Co-Design for Efficient VLA Inference via Speculative Inference and Verification - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对Vision-Language-Action（VLA）模型推理延迟过高（超过600ms）、无法满足实时机器人控制需求，以及现有VLA加速框架Dadu-Corki未利用环境交互连续性、单次推理预测动作长度不足4的问题 提出算法-系统协同设计的SpecVLA框架，核心目标是在保持任务成功率的前提下，降低端到端推理延迟，实现实时机器人操作 通过环境状态感知区分活跃/非活跃状态，非活跃状态下用全精度VLA做长动作推测式…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.15636">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.15636.webp" alt="Algorithm-Architecture Co-Design for Efficient VLA Inference via Speculative Inference and Verification" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对Vision-Language-Action（VLA）模型推理延迟过高（超过600ms）、无法满足实时机器人控制需求，以及现有VLA加速框…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Algorithm-Architecture Co-Design for Efficient VLA Inference via Speculative Inference and Verification</h1>
+            <div class="detail-meta">2026-08-16 · <a href="http://arxiv.org/abs/2608.15636" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.15636" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.15636</span></div>
+            <p class="detail-summary">针对Vision-Language-Action（VLA）模型推理延迟过高（超过600ms）、无法满足实时机器人控制需求，以及现有VLA加速框架Dadu-Corki未利用环境交互连续性、单次推理预测动作长度不足4的问题 提出算法-系统协同设计的SpecVLA框架，核心目标是在保持任务成功率的前提下，降低端到端推理延迟，实现实时机器人操作 通过环境状态感知区分活跃/非活跃状态，非活跃状态下用全精度VLA做长动作推测式…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">上海交通大学计算机科学与工程学院</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.15636/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对Vision-Language-Action（VLA）模型推理延迟过高（超过600ms）、无法满足实时机器人控制需求，以及现有VLA加速框…</p>
+  <ul class="reading-intro-points"><li>针对Vision-Language-Action（VLA）模型推理延迟过高（超过600ms）、无法满足实时机器人控制需求，以及现有VLA加速框…</li><li>提出算法-系统协同设计的SpecVLA框架，核心目标是在保持任务成功率的前提下，降低端到端推理延迟，实现实时机器人操作</li><li>通过环境状态感知区分活跃/非活跃状态，非活跃状态下用全精度VLA做长动作推测式预测摊平推理开销，活跃状态下用轻量小模型sVLA验证动作可靠性…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>上海交通大学计算机科学与工程学院</strong></li><li><strong>阿卜杜拉国王科技大学计算机科学系</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对<strong>Vision-Language-Action（VLA）</strong>模型推理延迟过高（超过600ms）、无法满足实时机器人控制需求，以及现有VLA加速框架<strong>Dadu-Corki</strong>未利用环境交互连续性、单次推理预测动作长度不足4的问题</li><li>提出算法-系统协同设计的<strong>SpecVLA</strong>框架，核心目标是在保持任务成功率的前提下，降低端到端推理延迟，实现实时机器人操作</li><li>通过环境状态感知区分活跃/非活跃状态，非活跃状态下用全精度VLA做长动作推测式预测摊平推理开销，活跃状态下用轻量小模型sVLA验证动作可靠性，自适应平衡效率与准确性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首个面向机器人动作预测的算法-系统协同框架SpecVLA，利用环境帧的连续性和状态差异性，实现自适应长度的推测式动作预测与验证</li><li>提出运行时环境状态识别算法，通过机械臂与周围物体的距离、机械臂自身状态自动划分活跃/非活跃状态，无需额外模型开销</li><li>设计硬件友好的轻量小VLA（sVLA）构建方案，基于帧间差分残差的块级混合精度量化，在几乎不损失精度的情况下大幅降低小模型计算量</li><li>提出推测式数据流与异构计算架构，解耦全精度VLA和轻量sVLA的数据依赖，实现两类模型的并行执行，隐藏推理延迟</li><li>设计机器人专用硬件模块，集成预处理、状态预测、低精度计算单元于单一流水线，消除冗余数据移动，进一步降低验证环节的开销</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>算法侧核心为状态感知的推测式推理范式：非活跃状态下直接调用全精度<strong>OpenVLA</strong>/<strong>RDT</strong>模型预测长动作序列（最多8个动作）直接执行；活跃状态下对每个预测动作调用sVLA生成期望动作，通过加权L1距离验证动作可靠性，不匹配则回滚并重新调用VLA生成新序列</li><li>sVLA构造采用差分块级混合精度量化：计算相邻帧输入的残差特征，按块内绝对值和的阈值将残差块划分为零块、低精度块、高精度块，零块直接置零，高精度块拆分为高低位两部分统一适配低精度计算单元，在保证精度的同时降低计算复杂度</li><li>系统侧采用GPU+机器人专用硬件的异构架构：GPU负责全精度VLA的推测式推理，专用硬件负责sVLA推理、环境状态预测和动作验证；推测式数据流允许VLA在验证结果出来之前提前执行，若验证通过则终止剩余VLA计算，若失败则继续完成VLA推理生成新序列，同时配套回滚机制保证机械臂物理状态正确</li><li>关键创新点为算法与硬件的深度协同：专用硬件的双模式状态预测器复用了环境状态预测和动作验证的距离计算流水线，预处理模块集成残差生成、块级量化功能，消除模块间数据搬运开销</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：<strong>LIBERO</strong>机器人操控基准（包含Spatial、Object、Goal、10四个任务套件，共40个任务）、<strong>ManiSkill</strong>基准（包含PickCube、PushCube、PlugCharger三个任务套件）</li><li>模型规模：基座模型为<strong>OpenVLA</strong>（基于Llama 2 7B构建）和<strong>RDT</strong>，sVLA采用0/4/8位混合精度量化，理论FLOPs仅为基座OpenVLA的10.22%</li><li>训练与评估资源：GPU采用<strong>NVIDIA A100 80GB PCIe</strong>，专用硬件采用28nm工艺、500MHz频率的ASIC设计，通过Verilog实现、Synopsys Design Compiler综合，配套CACTI缓存建模工具、Ramulator DRAM模拟器、Scale-Sim架构模拟器进行性能评估</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：对比基线包括硬件方案<strong>Dadu-Corki-ADAP</strong>、纯算法加速方案（MoLe-VLA、VLA-Cache、Spec-VLA、HeiSD、Eventful、MaskVD、SP-VLA），以及CPU（Intel Xeon Gold 6226R）、GPU（NVIDIA A100）通用硬件 baseline，评估场景包含无噪声理想环境和模拟传感器噪声的真实环境</li><li>主要评估指标：任务成功率、端到端延迟、每动作延迟、能量效率、理论FLOPs、回滚频率、有效动作长度、任务路径长度</li><li>关键实验结果：</li></ul>
+<p> - 延迟优势：相比NVIDIA A100 GPU端到端加速2.9倍，相比SOTA硬件加速方案Dadu-Corki加速1.9倍，每动作延迟平均比CPU低12.1倍、比A100 GPU低2.9倍</p>
+<p> - 精度保持：带传感器噪声的真实场景下，任务成功率相比基线平均领先0.3%，与无噪声下的全精度VLA性能相当，仅在复杂PlugCharger任务上低于基线RDT但仍高出1%</p>
+<p> - 推测效率：非活跃状态平均占比74.2%，平均回滚频率仅9.5%，复杂任务下回滚频率不超过16.4%；有效动作长度平均达7.1（推测长度为8），相比非推测基线减少3.5倍的VLA调用次数，任务路径长度无显著增加（±2%）</p>
+<p> - 量化方案优势：相比QVLA、QuantVLA等量化方法，成功率平均高2.5%和6.25%，理论FLOPs降低1.23倍和1.58倍，端到端加速8.78倍（对比未压缩OpenVLA）；相比剪枝类方案，FLOPs仅为基座的10.22%，远低于基线，成功率高3%-4.25%，端到端加速3.46倍-5.84倍</p>
+<p> - 能效优势：专用硬件实现相比GPU方案2.29倍的能效提升</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.15680/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Robo-Dopamine 2.0: History-Conditioned and OOD-Aware Process Reward Modeling for Robotic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.15502/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">EcoVLA: Energy-Efficient Device-Edge Co-Inference for Vision-Language-Action Models under Real-Time Constraints</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

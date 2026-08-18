@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PhaseLoRA: Control-Regime-Conditioned Low-Rank Adaptation for Continuous-Action Vision-Language-Action Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有连续动作视觉-语言-动作（VLA）策略的参数高效微调（PEFT）方法多采用静态LoRA更新，未考虑单条控制轨迹内不同阶段（接近、接触、抓取、运输、放置等）的控制异质性，适配能力存在明显局限 本文提出PhaseLoRA方法，通过两个弱监督的控制相关描述符动态条件化LoRA更新方向，使低秩修正能够随轨迹内的控制 regime 变化，同时保留LoRA的轻量化特性 研究目标是通过仿真与真实机器人实验，验证轨迹内控制条件…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.15285">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.15285.webp" alt="PhaseLoRA: Control-Regime-Conditioned Low-Rank Adaptation for Continuous-Action Vision-Language-Action Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有连续动作视觉-语言-动作（VLA）策略的参数高效微调（PEFT）方法多采用静态LoRA更新，未考虑单条控制轨迹内不同阶段（接近、接触、抓取…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">PhaseLoRA: Control-Regime-Conditioned Low-Rank Adaptation for Continuous-Action Vision-Language-Action Policies</h1>
+            <div class="detail-meta">2026-08-15 · <a href="http://arxiv.org/abs/2608.15285" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.15285" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.15285</span></div>
+            <p class="detail-summary">现有连续动作视觉-语言-动作（VLA）策略的参数高效微调（PEFT）方法多采用静态LoRA更新，未考虑单条控制轨迹内不同阶段（接近、接触、抓取、运输、放置等）的控制异质性，适配能力存在明显局限 本文提出PhaseLoRA方法，通过两个弱监督的控制相关描述符动态条件化LoRA更新方向，使低秩修正能够随轨迹内的控制 regime 变化，同时保留LoRA的轻量化特性 研究目标是通过仿真与真实机器人实验，验证轨迹内控制条件…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">清华大学（Tsinghua University），论文所有作者均隶属于该机构</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.15285/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有连续动作视觉-语言-动作（VLA）策略的参数高效微调（PEFT）方法多采用静态LoRA更新，未考虑单条控制轨迹内不同阶段（接近、接触、抓取…</p>
+  <ul class="reading-intro-points"><li>现有连续动作视觉-语言-动作（VLA）策略的参数高效微调（PEFT）方法多采用静态LoRA更新，未考虑单条控制轨迹内不同阶段（接近、接触、抓取…</li><li>本文提出PhaseLoRA方法，通过两个弱监督的控制相关描述符动态条件化LoRA更新方向，使低秩修正能够随轨迹内的控制 regime 变化，同…</li><li>研究目标是通过仿真与真实机器人实验，验证轨迹内控制条件化这一PEFT新维度的有效性，并分析其工作原理与性能增益来源</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>清华大学（Tsinghua University），论文所有作者均隶属于该机构</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有连续动作视觉-语言-动作（VLA）策略的参数高效微调（PEFT）方法多采用静态LoRA更新，未考虑单条控制轨迹内不同阶段（接近、接触、抓取、运输、放置等）的控制异质性，适配能力存在明显局限</li><li>本文提出<strong>PhaseLoRA</strong>方法，通过两个弱监督的控制相关描述符动态条件化LoRA更新方向，使低秩修正能够随轨迹内的控制 regime 变化，同时保留LoRA的轻量化特性</li><li>研究目标是通过仿真与真实机器人实验，验证轨迹内控制条件化这一PEFT新维度的有效性，并分析其工作原理与性能增益来源</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次将单条轨迹内的控制异质性明确为连续动作VLA策略PEFT的缺失适配维度，突破了传统静态LoRA适配的固有假设</li><li>提出<strong>PhaseLoRA</strong>轻量LoRA参数化方案：通过弱监督的精细控制趋势（P）和事件/边界强度（E）两个连续描述符，条件化动作专家模块的LoRA左因子，实现轨迹内动态低秩更新，仅增加极少量可训练参数</li><li>在<strong>LIBERO</strong>仿真基准和自建真实桌面操作基准上，PhaseLoRA均显著优于标准LoRA、匹配参数量的高秩LoRA及DoRA、LoRA-MoE、LoRA-SP等 stronger LoRA 变体，且消融实验与更新方向分析证明性能增益来自描述符条件化的更新方向变化，而非参数量增加或任意时间调制</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于标准LoRA框架，仅对VLA策略的<strong>动作专家</strong>模块进行条件化适配，VLM侧的LoRA参数保持时间静态</li><li>设计轻量路由器：输入为VLA主干输出的视觉-语言语义摘要、最近6个控制步的动作与夹爪历史，预测两个[0,1]区间的标量控制描述符：精细控制趋势P（基于动作幅度统计，值越低代表当前需要更精细的控制）、事件/边界强度E（基于动作加加速度统计，值越高代表当前接近抓取、放置等关键控制事件或边界）</li><li>条件化LoRA更新：将标准LoRA的固定左因子替换为描述符相关的动态左因子，右因子A跨控制步共享，保证任意时刻的更新仍为低秩，仅更新方向随控制阶段动态变化</li><li>弱监督训练：描述符的伪标签从训练轨迹的动作/夹爪序列离线计算，无需人工标注阶段标签，路由器用Huber loss（监督P）和BCE loss（监督E）训练，总损失联合策略预测损失、描述符监督损失和LoRA分量的L2正则损失，描述符相关LoRA分量初始化归零，保证训练起点为标准LoRA</li><li>计算效率高：每层仅比标准LoRA多3rd_out的可训练参数，推理时仅需额外计算路由器输出和条件化左因子，无额外大容量专家分支，开销极低</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>主仿真数据集：<strong>LIBERO</strong>基准，包含Spatial、Object、Goal、10四个标准任务套件，用于主要对比、消融实验和描述符分析</li><li>真实世界数据集：自建桌面操作数据集，基于<strong>Piper机械臂</strong>和<strong>LeRobot</strong>框架采集，包含4个操作任务（移动网球、移除蓝色板上的方块、拾取红色方块到黄色板、放置苹果到黄色板），每个任务提供100条演示，每个方法每任务设置3个随机种子、每种子10次测试</li><li>模型基础：基于预训练<strong>π_0.5</strong> VLA主干，LoRA秩r=8，PhaseLoRA整体可训练参数量占比约4.41%，与高秩LoRA、DoRA、LoRA-MoE等基线方法的参数量近似匹配</li><li>训练资源：使用GPU进行训练，路由器为单层GRU结构，隐藏维度仅为128，计算开销极低，适配普通GPU训练</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：LIBERO四个仿真任务套件，自建真实桌面操作环境</li><li>核心评估指标：任务成功率（%）、可训练参数量占比、相邻控制步LoRA更新的Frobenius余弦距离、更新方向变化与描述符变化的Spearman相关性</li><li>关键实验结果：</li></ul>
+<p> - LIBERO仿真基准上，PhaseLoRA平均成功率为<strong>68.9%</strong>，比标准LoRA（38.3%）提升30.6个点，比匹配参数量的高秩LoRA（56.7%）提升12.2个点，优于DoRA（58.4%）、LoRA-MoE（58.3%）、LoRA-SP（59.2%）等其他LoRA变体</p>
+<p> - 真实世界基准上，PhaseLoRA平均成功率为<strong>69.2%</strong>，比高秩LoRA（50.8%）提升18.4个点，验证了方法在物理执行中的有效性</p>
+<p> - 消融实验显示：使用随机描述符、仅采用标量门控不改变更新方向、移除弱监督信号、仅使用单个描述符均会导致性能显著下降，证明方法各设计模块的必要性</p>
+<p> - 更新方向分析表明：相邻控制步的LoRA更新方向变化稀疏，且集中在抓取、运输、放置等关键事件附近，与描述符变化显著正相关，证明条件化更新确实响应了控制阶段的异质性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.15502/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">EcoVLA: Energy-Efficient Device-Edge Co-Inference for Vision-Language-Action Models under Real-Time Constraints</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.15269/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Remember Smarter: Visual History Compressor and Hyperbolic Experience Space for Robotic Memory</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
