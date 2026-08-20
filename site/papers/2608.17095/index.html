@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inference-Time Attention Steering for Vision-Language-Action Driving Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对 Vision-Language-Action（VLA）自动驾驶模型部署后注意力分配固定、无法在推理时无训练引导模型关注安全关键对象（如盲区并车、斑马线行人）的痛点，研究推理时注意力引导方法的可行性 以基于 Qwen3-VL 骨架的 Alpamayo-R1 为研究对象，提出向检测器定位的交通参与者视觉 token 注入有界加性预 Softmax 注意力偏置的方案，完全不修改模型权重 核心研究目标是验证该干预的传…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.17095">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.17095.webp" alt="Inference-Time Attention Steering for Vision-Language-Action Driving Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对 Vision-Language-Action（VLA）自动驾驶模型部署后注意力分配固定、无法在推理时无训练引导模型关注安全关键对象（如盲…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Inference-Time Attention Steering for Vision-Language-Action Driving Models</h1>
+            <div class="detail-meta">2026-08-17 · <a href="http://arxiv.org/abs/2608.17095" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.17095" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.17095</span></div>
+            <p class="detail-summary">针对 Vision-Language-Action（VLA）自动驾驶模型部署后注意力分配固定、无法在推理时无训练引导模型关注安全关键对象（如盲区并车、斑马线行人）的痛点，研究推理时注意力引导方法的可行性 以基于 Qwen3-VL 骨架的 Alpamayo-R1 为研究对象，提出向检测器定位的交通参与者视觉 token 注入有界加性预 Softmax 注意力偏置的方案，完全不修改模型权重 核心研究目标是验证该干预的传…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Darshan Nagendra Prasad、Lars Ullrich、Knut Graichen…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.17095/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对 Vision-Language-Action（VLA）自动驾驶模型部署后注意力分配固定、无法在推理时无训练引导模型关注安全关键对象（如盲…</p>
+  <ul class="reading-intro-points"><li>针对 Vision-Language-Action（VLA）自动驾驶模型部署后注意力分配固定、无法在推理时无训练引导模型关注安全关键对象（如盲…</li><li>以基于 Qwen3-VL 骨架的 Alpamayo-R1 为研究对象，提出向检测器定位的交通参与者视觉 token 注入有界加性预 Softm…</li><li>核心研究目标是验证该干预的传播效果、作用层级和可解释性，而非直接优化驾驶性能，重点回答干预是否、在何处、以多大程度影响模型输出</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>Darshan Nagendra Prasad、Lars Ullrich、Knut Graichen 均隶属于 <strong>FAU Erlangen-Nürnberg（德国）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对 Vision-Language-Action（VLA）自动驾驶模型部署后注意力分配固定、无法在推理时无训练引导模型关注安全关键对象（如盲区并车、斑马线行人）的痛点，研究推理时注意力引导方法的可行性</li><li>以基于 <strong>Qwen3-VL</strong> 骨架的 <strong>Alpamayo-R1</strong> 为研究对象，提出向检测器定位的交通参与者视觉 token 注入有界加性预 Softmax 注意力偏置的方案，完全不修改模型权重</li><li>核心研究目标是验证该干预的传播效果、作用层级和可解释性，而非直接优化驾驶性能，重点回答干预是否、在何处、以多大程度影响模型输出</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次系统开展 VLA 自动驾驶模型的推理时注意力引导研究，搭建了带逐运行验证的检测器 grounding 演员- token 注入流程</li><li>提出与 Qwen3-VL 分组查询注意力、每头 QK-Norm 兼容的有界预 Softmax 偏置 formulation，以 fail-open 前向钩子实现，无权重修改</li><li>设计配对种子验证方法，从比扩散采样噪声底大一个数量级的噪声中分离出厘米级引导效果，得到单调的剂量-反应关系</li><li>通过逐调用注入审计纠正认知偏差：观察到的 Chain-of-Causation（CoC）文本不变是干预未触及推理路径的<strong>暴露不对称</strong>，而非架构鲁棒性，为复合多模态模型的干预研究提供审计规范</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用<strong>有界加性预 Softmax 注意力偏置</strong>：针对 Qwen3-VL 的分组查询注意力，在 softmax 计算前给目标交通参与者的视觉 token 对应 logit 叠加有界偏置，通过 clamp 防止过大的偏置导致生成退化，同时排除前 k 个 sink token 避免干扰初始注意力汇聚</li><li>实现<strong>演员检测与 token 映射</strong>：使用 <strong>YOLO11-nano</strong> 检测器在模型输入分辨率下定位前向摄像头领航车辆，通过针孔模型估算距离与横向偏移，将检测框映射到 Qwen3-VL 的 10×18 视觉 token 网格，所有映射索引均与 tokenizer 的视频 token span 逐运行验证，避免分辨率不匹配导致的映射错误</li><li>通过 <code>register_forward_pre_hook</code> 修改 <code>Qwen3VLTextAttention</code> 模块的 <code>attention_mask</code> 参数实现偏置注入，钩子为 fail-open 设计，异常时返回未修改输入并记录日志</li><li>设计<strong>暴露审计机制</strong>：记录每次前向调用的推理阶段、掩码存在情况、注入 token 数量，明确干预的实际作用范围（仅在扩散动作解码器前向传播中生效，Chain-of-Causation 的预填充/解码阶段使用无显式掩码的融合因果内核，从未被干预）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用 <strong>PhysicalAI WorldModel-Synthetic</strong> 自动驾驶场景数据集的 50 个变道场景，为 Omniverse 渲染的多摄像头视频，采用前向广角摄像头、4 个上下文帧、0.5s 步长，输入分辨率调整为 576×320</li><li>实验模型为 <strong>Alpamayo-R1-10B</strong>，基于 Qwen3-VL 骨架，包含 36 层 transformer、8 个 KV 头、28 个查询头，使用 NF4 量化，显存占用约 12GB，单张 24GB GPU 即可完成所有推理实验</li><li>本方法为推理时干预，无额外训练过程，轨迹预测为 64 个航点、10Hz、6.4s 预测 horizon</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估采用<strong>配对种子协议</strong>：基线与引导运行共享完全相同的种子和确定性算法配置，确保轨迹差异仅由注意力偏置导致；零偏置控制条件（head_scale=0）下配对轨迹 ADE 严格为 0，验证配对有效性</li><li>主要评估指标包括：平均位移误差（ADE，64 航点轨迹 L2 距离）、最大横向偏移、Chain-of-Causation 文本变化率（精确字符串匹配）、Cliff's δ、经 Holm 校正的 Wilcoxon 符号秩检验、位移方向相对演员侧的占比</li><li>关键实验结果：</li></ul>
+<p> - 注入验证：目标列 logit 恰好增加 +4.0，非目标列无变化，无越界索引，每次运行仅 40 次偏置注入，全部作用于扩散动作解码器前向传播</p>
+<p> - 剂量-反应：ADE 随偏置幅度单调增长，head_scale=4 时平均 ADE≈17cm，最大横向偏移平均≈38cm，单场景最大可达≈140cm；所有非零偏置条件与零偏置控制的差异均极显著（p<<1e-10，Cliff's δ=1.0）</p>
+<p> - 层级定位：效应集中在 late 层，前 8 层几乎无效应（ADE 2.0cm），全部 36 层 hooked 时效应最大（ADE 67.6cm，最大横向偏移≈205cm），效应随 hooked 层数增加单调累积</p>
+<p> - 轨迹几何：引导后轨迹前 2 秒与基线接近，之后逐渐向演员侧偏移，横向偏差呈超线性增长，在 horizon 末期达到峰值</p>
+<p> - CoC 不变性：所有配对比较中 CoC 文本完全不变，但审计证实是干预未到达 CoC 路径，属于暴露不对称而非架构鲁棒性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.17163/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Q-Learning With World Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.16889/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Don&#x27;t Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

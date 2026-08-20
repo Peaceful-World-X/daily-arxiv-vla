@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prism-GRPO: Faster VLA Policy Optimization via Splitting Same-outcome Groups - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对GRPO训练视觉-语言-动作（VLA）策略时，二元成功奖励下全成功/全失败的退化组（degenerate group）组内优势为0，会被动态采样丢弃，导致昂贵的机器人rollout预算浪费的问题开展研究 提出Prism-GRPO方法，通过为二元奖励加权添加轨迹级执行质量分数，拆分同结果组以恢复训练信号，同时保证所有成功轨迹的奖励始终高于所有失败轨迹 研究目标是提升VLA策略的rollout样本效率，同时保持甚至…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.17423">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.17423.webp" alt="Prism-GRPO: Faster VLA Policy Optimization via Splitting Same-outcome Groups" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对GRPO训练视觉-语言-动作（VLA）策略时，二元成功奖励下全成功/全失败的退化组（degenerate group）组内优势为0，会被动…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Prism-GRPO: Faster VLA Policy Optimization via Splitting Same-outcome Groups</h1>
+            <div class="detail-meta">2026-08-18 · <a href="http://arxiv.org/abs/2608.17423" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.17423" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.17423</span></div>
+            <p class="detail-summary">针对GRPO训练视觉-语言-动作（VLA）策略时，二元成功奖励下全成功/全失败的退化组（degenerate group）组内优势为0，会被动态采样丢弃，导致昂贵的机器人rollout预算浪费的问题开展研究 提出Prism-GRPO方法，通过为二元奖励加权添加轨迹级执行质量分数，拆分同结果组以恢复训练信号，同时保证所有成功轨迹的奖励始终高于所有失败轨迹 研究目标是提升VLA策略的rollout样本效率，同时保持甚至…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文核心研究单位为AWS AI，第一作者Zeyun Deng的工作于AWS AI实习期间完成</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.17423/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对GRPO训练视觉-语言-动作（VLA）策略时，二元成功奖励下全成功/全失败的退化组（degenerate group）组内优势为0，会被动…</p>
+  <ul class="reading-intro-points"><li>针对GRPO训练视觉-语言-动作（VLA）策略时，二元成功奖励下全成功/全失败的退化组（degenerate group）组内优势为0，会被动…</li><li>提出Prism-GRPO方法，通过为二元奖励加权添加轨迹级执行质量分数，拆分同结果组以恢复训练信号，同时保证所有成功轨迹的奖励始终高于所有失败…</li><li>研究目标是提升VLA策略的rollout样本效率，同时保持甚至提升任务成功率与执行质量，解决GRPO在机器人操作任务中的样本效率瓶颈</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文核心研究单位为<strong>AWS AI</strong>，第一作者Zeyun Deng的工作于AWS AI实习期间完成</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对GRPO训练视觉-语言-动作（VLA）策略时，二元成功奖励下全成功/全失败的退化组（degenerate group）组内优势为0，会被动态采样丢弃，导致昂贵的机器人rollout预算浪费的问题开展研究</li><li>提出Prism-GRPO方法，通过为二元奖励加权添加轨迹级执行质量分数，拆分同结果组以恢复训练信号，同时保证所有成功轨迹的奖励始终高于所有失败轨迹</li><li>研究目标是提升VLA策略的rollout样本效率，同时保持甚至提升任务成功率与执行质量，解决GRPO在机器人操作任务中的样本效率瓶颈</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>Prism-GRPO</strong>强化学习框架，结合二元任务成功与有界轨迹执行质量奖励，无需任务特定的过程奖励、外部验证器或神谕演示，即可恢复同结果组的训练信号，适用于各类机器人操作任务</li><li>理论证明Prism-GRPO不会增加获得信息组所需的期望rollout数量，且在成功-质量梯度对齐条件下，联合更新方向是任务成功与执行质量两个目标的共同一阶上升方向</li><li>在4个<strong>RoboTwin 2.0</strong>双臂操作任务上的实验表明，达到目标成功率时Prism-GRPO最多可减少56%的rollout消耗，同时显著提升执行质量</li><li>实验证明Prism-GRPO可有效抑制二元奖励的捷径hack行为（如<strong>Move Can Pot</strong>任务中的推罐子作弊），且更优的执行质量可成功迁移到真实机器人部署</li><li>消融实验验证方法在接触、运动平滑度、VLM推导的多种质量信号下均能取得一致增益，证明方案的质量信号定义具备跨任务通用性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础框架基于<strong>GRPO</strong>（Group Relative Policy Optimization），无需训练Critic网络，通过同场景下组内轨迹的相对优势进行策略更新</li><li>核心创新是设计组合奖励函数：$R_{\text{combined}}(\tau) = \text{success}(\tau) + \lambda q(\tau)$，其中$\text{success}(\tau)$为二元任务成功标签，$q(\tau) \in [0,1]$为连续轨迹质量分数，$\lambda \in (0,1)$为质量权重，既保证所有成功轨迹奖励始终高于所有失败轨迹，又用质量分数拆分同结果组内的排序，恢复训练信号</li><li>关键技术1：采用<strong>Leave-One-Out (RLOO)</strong> 优势估计器，避免在同结果组上进行标准差标准化时抵消质量权重$\lambda$的尺度，保留质量差异带来的信号</li><li>关键技术2：理论分析成功与质量的梯度对齐条件，证明在梯度非冲突时，联合更新不会牺牲任务成功率，同时可提升执行质量</li><li>质量信号$q(\tau)$无需任务特定的进度奖励，可从仿真器接触数据、执行动作平滑度或视觉观测（如VLM判定）推导，具备跨任务通用性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集为<strong>RoboTwin 2.0</strong>双臂操作基准，包含场景随机化（杂乱度、光照、背景、桌面高度、语言指令），实验覆盖4个任务：<strong>Lift Pot</strong>、<strong>Move Can Pot</strong>、<strong>Handover Block</strong>、<strong>Beat Block Hammer</strong></li><li>训练配置：基于SimpleVLA-RL的GRPO配置，组大小$G=8$，每轮策略更新使用512条rollout，默认质量权重$\lambda=0.2$，每个实验配置使用5个随机种子训练，报告均值与标准误</li><li>硬件与模型规模：论文提供的截断内容中未明确说明具体GPU/TPU等硬件配置与基础VLA模型的参数量</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境为<strong>RoboTwin 2.0</strong>，真实机器人部署使用<strong>Piper</strong>双臂机器人平台</li><li>主要评估指标：成功率（Success rate）、校准成功率（Calibrated success rate，按非目标接触次数折扣）、最大力质量（Max-Force Quality，非目标接触的最大作用力）、总冲量质量（Sum-Impulse Quality，全程非目标接触的总冲量），所有非二元指标归一化到[0,1]，数值越高性能越好</li><li>关键实验结果：</li></ul>
+<p> - 匹配rollout预算时，Prism-GRPO相比<strong>Binary GRPO</strong>基线可节省22%-56%的rollout，同时校准成功率同步提升，且执行质量（最大力质量、总冲量质量）显著优于所有基线</p>
+<p> - 在<strong>Move Can Pot</strong>任务的捷径抑制实验中，Prism-GRPO的推罐子作弊率仅为0.6%-1.3%，远低于<strong>RL-ZVP</strong>基线的0.6%-20%和Binary GRPO基线的0.7%-7%</p>
+<p> - 质量权重$\lambda$在$(0,1)$的成功主导区间内表现鲁棒，而使用随机质量替代时性能不稳定，无法稳定提升执行质量</p>
+<p> - 质量信号的计算开销极低：仿真器推导的质量仅增加0.04%的时钟开销，VLM推导的质量仅增加4.8%，rollout生成仍是训练的主要成本</p>
+<p> - 真实机器人部署时，Prism-GRPO生成的干净执行行为可成功迁移，而RL-ZVP基线仍会出现推罐子作弊行为</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.17453/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">EATR-Stereo: Embodiment-Aware Token Routing of Paired Stereo Evidence for Humanoid Vision-Language-Action Control</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.17386/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">MANIGUARD: A Benchmark and Data Suite for Specification-Grounded Safety Evaluation and Improvement of Robotic Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

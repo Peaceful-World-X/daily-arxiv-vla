@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reuse Before You Retrieve: Diagnosing Headroom and Complementarity for Test-Time Augmentation of Embodied Multimodal Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文聚焦冻结视觉语言动作（VLA）策略的测试时增强，解决现有重试选择、检索增强等方法效果不稳定、缺乏选择指导的核心问题 提出两个可测量诊断指标：可恢复headroom（衡量策略自身随机行为中可挖掘的成功能力上限）和检索互补性（衡量是否需要引入外部动作先验），用于区分两类测试时增强的适用场景 通过多VLA骨干、多环境的实证实验，验证诊断指标的可靠性，为测试时增强方法的选择提供依据" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.17484">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.17484.webp" alt="Reuse Before You Retrieve: Diagnosing Headroom and Complementarity for Test-Time Augmentation of Embodied Multimodal Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文聚焦冻结视觉语言动作（VLA）策略的测试时增强，解决现有重试选择、检索增强等方法效果不稳定、缺乏选择指导的核心问题</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Reuse Before You Retrieve: Diagnosing Headroom and Complementarity for Test-Time Augmentation of Embodied Multimodal Policies</h1>
+            <div class="detail-meta">2026-08-18 · <a href="http://arxiv.org/abs/2608.17484" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.17484" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.17484</span></div>
+            <p class="detail-summary">论文聚焦冻结视觉语言动作（VLA）策略的测试时增强，解决现有重试选择、检索增强等方法效果不稳定、缺乏选择指导的核心问题 提出两个可测量诊断指标：可恢复headroom（衡量策略自身随机行为中可挖掘的成功能力上限）和检索互补性（衡量是否需要引入外部动作先验），用于区分两类测试时增强的适用场景 通过多VLA骨干、多环境的实证实验，验证诊断指标的可靠性，为测试时增强方法的选择提供依据</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">KAIST Visual Intelligence Lab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.17484/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文聚焦冻结视觉语言动作（VLA）策略的测试时增强，解决现有重试选择、检索增强等方法效果不稳定、缺乏选择指导的核心问题</p>
+  <ul class="reading-intro-points"><li>论文聚焦冻结视觉语言动作（VLA）策略的测试时增强，解决现有重试选择、检索增强等方法效果不稳定、缺乏选择指导的核心问题</li><li>提出两个可测量诊断指标：可恢复headroom（衡量策略自身随机行为中可挖掘的成功能力上限）和检索互补性（衡量是否需要引入外部动作先验），用于…</li><li>通过多VLA骨干、多环境的实证实验，验证诊断指标的可靠性，为测试时增强方法的选择提供依据</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>KAIST Visual Intelligence Lab</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文聚焦冻结视觉语言动作（VLA）策略的测试时增强，解决现有重试选择、检索增强等方法效果不稳定、缺乏选择指导的核心问题</li><li>提出两个可测量诊断指标：<strong>可恢复headroom</strong>（衡量策略自身随机行为中可挖掘的成功能力上限）和<strong>检索互补性</strong>（衡量是否需要引入外部动作先验），用于区分两类测试时增强的适用场景</li><li>通过多VLA骨干、多环境的实证实验，验证诊断指标的可靠性，为测试时增强方法的选择提供依据</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>可恢复headroom</strong>和<strong>检索互补性</strong>两个可测量诊断指标，区分重用冻结策略现有行为与引入外部动作先验的测试时增强机会</li><li>设计无需训练的<strong>episode-level retry selector</strong>，在多个VLA骨架上一致提升性能，增益与可恢复headroom高度匹配</li><li>检索实验表明外部演示先验仅对动作先验差距最大的骨干稳定有效，且检索与选择可组合获得额外增益</li><li>跨机器人、仿真器、退化观测、自回归VLA的泛化实验，揭示了可用headroom与排序能力的差异对测试时增强效果的影响</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>定义<strong>可恢复headroom</strong>为pass@N与pass@1的差值，量化冻结策略多次随机执行中已存在但未稳定复现的成功行为上限</li><li>定义<strong>演示拟合误差（DFE）</strong>衡量检索互补性，通过计算策略采样动作与演示动作的最小L2距离，判断策略是否已可靠复现演示动作先验</li><li>提出<strong>episode-level retry selector</strong>：同一初始状态下执行N次策略rollout，利用共享的L2归一化视觉编码器（由DINOv2和SigLIP特征拼接为1536维向量得到，优先使用腕部相机视角）计算每个轨迹与演示流形的平均余弦相似度，选择得分最高的轨迹，无需训练、无需成功标签</li><li>设计<strong>事件模式检索</strong>方法：识别演示的事件起始帧作为子技能边界，检索与当前事件匹配的演示片段，将其动作块按权重混合后初始化流匹配采样器的输入，实现动作生成的warm-start</li><li>核心创新点：首次将测试时增强机会拆分为“重用现有能力”和“引入外部先验”两类，提供可量化的诊断手段，episode级选择器完全训练免费</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>主评估数据集：<strong>LIBERO</strong>（包含Spatial、Object、Goal、LIBERO-10四个套件，Franka机器人，每任务50条标准演示）</li><li>跨域评估数据集：<strong>SimplerEnv-Bridge</strong>（carrot、spoon、stack三个任务，WidowX机器人，任务特定演示库共510帧）、<strong>LIBERO-Occ</strong>（带场景遮挡的LIBERO变体）、SimplerEnv coke-can任务（Google机器人，评估用演示库共1360帧）</li><li>模型规模：三个流匹配VLA骨干（<strong>π₀</strong>、<strong>SmolVLA</strong>、<strong>π₀.5</strong>），1个自回归VLA骨干（<strong>OpenVLA-7B</strong>）</li><li>训练资源：所有实验基于冻结预训练VLA策略，测试时方法无需额外训练，未报告特定训练硬件配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：LIBERO四套件、SimplerEnv-Bridge、LIBERO-Occ、SimplerEnv coke-can任务</li><li>主要评估指标：任务成功率、可恢复headroom、演示拟合误差（DFE）、排序信号与任务成功的AUC</li><li>关键实验结果：</li></ul>
+<p> - episode-level selector在所有12个LIBERO骨干×套件单元上均带来正向增益，平均增益+7.8%~+21.0%，增益与可恢复headroom的相关系数达r=0.954，平均恢复90%的可用headroom，且该关系在无共享样本的拆分下仍保持r=0.91±0.04，排除伪相关</p>
+<p> - 检索增强仅对动作先验差距最大的π₀有稳定增益（+6.4%），对SmolVLA和π₀.5增益微弱甚至为负，说明检索机会由动作先验差距决定而非基线性能</p>
+<p> - 两种方法组合可带来额外收益，π₀在LIBERO上平均增益达+23.3%，比单独使用selector高2.4个百分点</p>
+<p> - 跨仿真器迁移时selector仍有效（+12.5%），检索无提升；退化观测下selector增益随headroom增加而提升；OpenVLA上可用headroom达0.72（pass@3）但仅能恢复至0.44，证明可用headroom不等于可实现增益，排序信号是关键限制因素</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.17496/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Calibrated Predictive Safety for Heterogeneous Robots: An Action-Conditioned JEPA Framework with Model-Based Safety Shields</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.17453/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">EATR-Stereo: Embodiment-Aware Token Routing of Paired Stereo Evidence for Humanoid Vision-Language-Action Control</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

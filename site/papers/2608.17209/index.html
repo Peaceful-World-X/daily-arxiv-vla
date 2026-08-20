@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teach and Grow: An Agent-Centered Architecture for General Robot Learning - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出Teach-and-Grow Learning（TGL）架构，解决端到端视觉语言动作（VLA）模型遇到分布外物体、传感器、执行器或接触场景时，需要重新采集数据、更新策略、回归测试的“重训练税”问题 架构核心是通过少量成功示教，让多模态智能体将任务结构转化为可复用的闭环技能块，通过物理反馈动态调整任务路线，实现无需任务特定策略重训练的持续学习 目标是让机器人的部署阶段成为持续学习阶段，单个任务的学习成果可降低后续…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.17209">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.17209.webp" alt="Teach and Grow: An Agent-Centered Architecture for General Robot Learning" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出Teach-and-Grow Learning（TGL）架构，解决端到端视觉语言动作（VLA）模型遇到分布外物体、传感器、执行器或接触场景…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Teach and Grow: An Agent-Centered Architecture for General Robot Learning</h1>
+            <div class="detail-meta">2026-08-17 · <a href="http://arxiv.org/abs/2608.17209" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.17209" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.17209</span></div>
+            <p class="detail-summary">提出Teach-and-Grow Learning（TGL）架构，解决端到端视觉语言动作（VLA）模型遇到分布外物体、传感器、执行器或接触场景时，需要重新采集数据、更新策略、回归测试的“重训练税”问题 架构核心是通过少量成功示教，让多模态智能体将任务结构转化为可复用的闭环技能块，通过物理反馈动态调整任务路线，实现无需任务特定策略重训练的持续学习 目标是让机器人的部署阶段成为持续学习阶段，单个任务的学习成果可降低后续…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">上海交通大学自动化与智能感知学院</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.17209/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出Teach-and-Grow Learning（TGL）架构，解决端到端视觉语言动作（VLA）模型遇到分布外物体、传感器、执行器或接触场景…</p>
+  <ul class="reading-intro-points"><li>提出Teach-and-Grow Learning（TGL）架构，解决端到端视觉语言动作（VLA）模型遇到分布外物体、传感器、执行器或接触场景…</li><li>架构核心是通过少量成功示教，让多模态智能体将任务结构转化为可复用的闭环技能块，通过物理反馈动态调整任务路线，实现无需任务特定策略重训练的持续学习</li><li>目标是让机器人的部署阶段成为持续学习阶段，单个任务的学习成果可降低后续任务的教学需求</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>上海交通大学自动化与智能感知学院</strong></li><li><strong>上海市导航与位置服务重点实验室</strong></li><li>通信作者：Hesheng Wang（wanghesheng@sjtu.edu.cn）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>Teach-and-Grow Learning（TGL）</strong>架构，解决端到端视觉语言动作（VLA）模型遇到分布外物体、传感器、执行器或接触场景时，需要重新采集数据、更新策略、回归测试的“重训练税”问题</li><li>架构核心是通过少量成功示教，让多模态智能体将任务结构转化为可复用的闭环技能块，通过物理反馈动态调整任务路线，实现无需任务特定策略重训练的持续学习</li><li>目标是让机器人的部署阶段成为持续学习阶段，单个任务的学习成果可降低后续任务的教学需求</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>Teach-and-Grow Learning</strong>以智能体为中心的通用机器人学习架构，支持从稀疏示教中学习新操作任务，通过动态能力组合和物理反馈执行，无需任务特定策略重训练即可持续成长</li><li>设计可复用的闭环<strong>Skill Blocks（技能块）</strong>，将多组演示的共享子目标策略抽象为可跨场景重用的行为单元，每个技能块可基于当前场景重新实例化物理实现，而非简单回放轨迹片段</li><li>构建持久的<strong>Skill Library（技能库）</strong>与结构化<strong>Experience Memory（经验记忆）</strong>，分别存储可执行行为和成功/失败/修复的经验知识，让机器人的学习成果可检索、可编辑、可跨任务复用</li><li>提出<strong>Teach-and-Grow Scaling-Law假设</strong>，将“有效可复用经验”作为核心扩展资源，预测未来任务误差和获取新任务所需的教学需求会随该资源增长按幂律趋近于任务相关的不可降低下限</li><li>在<strong>LIBERO</strong>基准上完成验证，通过受控实验证明了技能归纳、持久复用和智能体引导的自适应执行能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>核心机制为固定预训练基础模型的权重，仅通过扩展显式技能和记忆实现新任务学习，避免全局策略重训练的高昂开销</li><li>智能体通过对齐多组演示的语义效果，抽象出Skill Blocks：每个技能块包含目标、适用场景、可复用策略、场景grounding函数、兼容执行器集合、成功验证函数和恢复选项，是闭环的可复用子目标行为单元</li><li>运行时智能体根据当前任务指令、场景观测和持久状态（技能库、经验记忆）检索、组合技能块形成任务路线，选择匹配的执行器（几何规划器、VLA策略、触觉策略等）执行单个技能块，通过物理反馈验证执行效果，动态调整剩余任务路线，支持有界探索和定向教学请求</li><li>创新点：将推理层与执行层解耦，智能体仅在语义决策节点（子目标达成、证据不确定、执行器不满足契约、路线不匹配场景）介入，物理执行由专门的快速执行器完成，实现局部能力增长不影响已有技能；技能块和经验记忆的可解释、可编辑设计让机器人学习过程透明可控</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>评估数据集：<strong>LIBERO</strong>（机器人操作终身学习基准）</li><li>模型规模：采用预训练的通用VLA/世界动作模型作为基础执行后端，无需任务特定的模型重训练，保持预训练模型的原始参数量</li><li>训练资源：无额外的模型训练开销，计算资源主要用于智能体推理、演示处理和经验存储，评估在LIBERO仿真环境中开展</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：<strong>LIBERO</strong>终身机器人学习基准，配套受控实验验证架构各组件能力</li><li>主要评估指标：任务成功率、技能持久性、技能复用率、教学需求量、任务路线调整合理性</li><li>关键实验结果：</li></ul>
+<p> - 标准LIBERO评估中，TGL达到state-of-the-art的任务成功率</p>
+<p> - 技能持久性验证：10组视觉演示可抽象为2个技能块，解决3/3评估场景，保存重载后仍保持100%成功率，且不会干扰已有的6个技能块的可用性</p>
+<p> - 反馈驱动验证：在碗盘放置、抽屉开启任务中，智能体根据物理执行结果动态调整剩余任务路线，证明物理反馈会改变智能体的后续决策</p>
+<p> - 局部增长验证：固定执行器的技能库增长实验中，6个技能块时系统解决0/6评估任务，新增2个学习得到的技能块后提升至4/6，无需修改模型权重、运行时或评估预算即可提升系统能力</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.17386/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">MANIGUARD: A Benchmark and Data Suite for Specification-Grounded Safety Evaluation and Improvement of Robotic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.17163/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Q-Learning With World Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

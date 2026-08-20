@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Q-Learning With World Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出QWM（Q-Learning With World Models）框架，针对传统基于模型的强化学习（model-based RL）在训练时使用想象轨迹导致的模型偏差累积问题，同时提升Q-learning的样本效率。 核心思路是将学习到的world模型仅用于测试时（test-time）的动作搜索，既在在线交互采样时提升数据质量，也在评估时提升动作选择质量，而策略和Q函数仅在真实环境过渡数据上训练，避免偏差传导…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.17163">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.17163.webp" alt="Q-Learning With World Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出QWM（Q-Learning With World Models）框架，针对传统基于模型的强化学习（model-based RL）在训…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Q-Learning With World Models</h1>
+            <div class="detail-meta">2026-08-17 · <a href="http://arxiv.org/abs/2608.17163" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.17163" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.17163</span></div>
+            <p class="detail-summary">论文提出QWM（Q-Learning With World Models）框架，针对传统基于模型的强化学习（model-based RL）在训练时使用想象轨迹导致的模型偏差累积问题，同时提升Q-learning的样本效率。 核心思路是将学习到的world模型仅用于测试时（test-time）的动作搜索，既在在线交互采样时提升数据质量，也在评估时提升动作选择质量，而策略和Q函数仅在真实环境过渡数据上训练，避免偏差传导…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Stanford University（Perry Dong, Chelsea Finn, Dorsa…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.17163/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出QWM（Q-Learning With World Models）框架，针对传统基于模型的强化学习（model-based RL）在训…</p>
+  <ul class="reading-intro-points"><li>论文提出QWM（Q-Learning With World Models）框架，针对传统基于模型的强化学习（model-based RL）在训…</li><li>核心思路是将学习到的world模型仅用于测试时（test-time）的动作搜索，既在在线交互采样时提升数据质量，也在评估时提升动作选择质量，而…</li><li>研究目标是证明该框架能在机器人操作等复杂、稀疏奖励任务中，同时实现优于无模型和基于模型SOTA方法的性能与样本效率，解决现有world mod…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Stanford University</strong>（Perry Dong, Chelsea Finn, Dorsa Sadigh）</li><li><strong>Peking University</strong>（Yueru Jia）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出<strong>QWM</strong>（Q-Learning With World Models）框架，针对传统基于模型的强化学习（model-based RL）在训练时使用想象轨迹导致的模型偏差累积问题，同时提升Q-learning的样本效率。</li><li>核心思路是将学习到的world模型仅用于测试时（test-time）的动作搜索，既在在线交互采样时提升数据质量，也在评估时提升动作选择质量，而策略和Q函数仅在真实环境过渡数据上训练，避免偏差传导到训练流程。</li><li>研究目标是证明该框架能在机器人操作等复杂、稀疏奖励任务中，同时实现优于无模型和基于模型SOTA方法的性能与样本效率，解决现有world model在RL应用中多作为训练数据生成源、易引入偏差的痛点。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>QWM</strong>框架，首次将world模型与Q-learning结合用于测试时动作搜索，不参与策略和价值函数的训练，从根源上避免了传统model-based RL的偏差累积问题。</li><li>在<strong>Robomimic</strong>和<strong>LIBERO</strong>机器人操作基准上，QWM在样本效率和最终任务成功率上均显著优于现有SOTA无模型和基于模型RL方法，在长时序任务（如Tool Hang）上提升尤为明显。</li><li>QWM具有良好的通用性，可无缝叠加到多种无模型Q-learning算法（如<strong>EXPO</strong>、<strong>RLPD</strong>）上，且支持扩展到高维像素观测场景。</li><li>通过全面的消融实验，明确了测试时搜索在采样、评估阶段的作用，以及搜索深度、递归折扣因子、候选动作数等关键超参数的最优设置，验证了各组件的必要性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>技术方法：QWM在标准Q-learning基础上叠加三层核心组件：① 构建world model引导的搜索树，从当前状态出发，每层采样N个候选动作，用world模型预测每个动作对应的K个下一状态，递归展开到深度D；② 设计融合的节点值聚合方式，结合Q函数估计的state-action value（低方差、不受模型误差累积影响）和world模型+奖励模型估计的state value（包含未来轨迹信息但会累积模型误差），两者加权平均得到节点综合价值；③ 采用基于Q函数的启发式剪枝策略，保留累计Q值最高的J个路径，控制搜索计算量。</li><li>创新点与关键技术：纯测试时使用world模型，不参与策略和critic的训练，避免模型偏差在训练中累积；融合两种互补的价值估计器，平衡了低方差和包含未来信息的优势；基于Q函数的路径剪枝在不大幅损失搜索效果的前提下降低了计算开销。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：机器人操作基准<strong>Robomimic</strong>（包含Lift、Can、Square、Tool Hang四个任务）和<strong>LIBERO</strong>（包含5个任务），观测模态覆盖低维状态和128×128像素图像两类。</li><li>模型规模：低维状态场景下，world model为3层隐藏层、隐藏维度256的残差动力学MLP，用离线演示数据以MSE损失预训练；像素场景下，基于<strong>Wan2.2-TI2V-5B</strong>视频生成模型改造为动作条件世界模型，加入3层MLP动作编码器，冻结VAE和文本编码器，仅微调动作编码器与扩散Transformer，用演示视频片段和flow-matching损失训练。</li><li>训练资源：使用美国国家超级计算应用中心的Delta系统，通过ACCESS项目获得计算资源分配。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：在Robomimic和LIBERO的稀疏奖励机器人操作任务上评估，无模型基准包括RLPD、DSRL、QSM、QAM、FQL、IDQL，基于模型基准包括<strong>TD-MPC2</strong>、<strong>EfficientZero V2</strong>。</li><li>主要评估指标：任务成功率（success rate）、样本效率（达到相同成功率所需的交互步数）。</li><li>关键实验结果：① 相比所有SOTA基线，QWM在所有任务上均取得更高的成功率和更好的样本效率，在长时序复杂任务（如Tool Hang）上优势更显著；② 相比基础算法（EXPO、RLPD），叠加QWM后样本效率一致提升，且基于更优基础算法EXPO的QWM性能优于基于RLPD的版本，验证了基础算法性能的传导性；③ 像素观测场景下QWM仍能稳定提升性能，在LIBERO多个任务上学习速度更快、最终性能更强；④ 消融实验表明，测试时搜索同时应用于在线采样和评估时效果最优，搜索深度D=2、递归折扣因子λ=0.2、中等规模候选动作数时性能最佳，搜索路径剪枝策略对性能影响较小。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.17209/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Teach and Grow: An Agent-Centered Architecture for General Robot Learning</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.17095/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Inference-Time Attention Steering for Vision-Language-Action Driving Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

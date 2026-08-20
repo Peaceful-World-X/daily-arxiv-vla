@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GS-VLA: Plug-and-Play Viewpoint Canonicalization for Frozen VLA Policies via Gaussian Splatting - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="当前Vision-Language-Action (VLA)策略的性能高度依赖训练与部署场景的相机视角一致性，微小相机偏移即可导致任务成功率从约90%暴跌至约10%，而现有改进方案（大规模微调、生成式数据增强）存在计算成本高、灾难性遗忘等问题，难以适配实际部署需求 本文提出轻量即插即用框架GS-VLA，核心思路是将视角鲁棒性问题的解决空间从VLA策略参数转移到观测空间，无需修改冻结VLA策略的权重 研究目标是基于3…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.19066">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.19066.webp" alt="GS-VLA: Plug-and-Play Viewpoint Canonicalization for Frozen VLA Policies via Gaussian Splatting" loading="lazy" />
+  <figcaption class="paper-figure-caption">当前Vision-Language-Action (VLA)策略的性能高度依赖训练与部署场景的相机视角一致性，微小相机偏移即可导致任务成功率从…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">GS-VLA: Plug-and-Play Viewpoint Canonicalization for Frozen VLA Policies via Gaussian Splatting</h1>
+            <div class="detail-meta">2026-08-19 · <a href="http://arxiv.org/abs/2608.19066" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.19066" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.19066</span></div>
+            <p class="detail-summary">当前Vision-Language-Action (VLA)策略的性能高度依赖训练与部署场景的相机视角一致性，微小相机偏移即可导致任务成功率从约90%暴跌至约10%，而现有改进方案（大规模微调、生成式数据增强）存在计算成本高、灾难性遗忘等问题，难以适配实际部署需求 本文提出轻量即插即用框架GS-VLA，核心思路是将视角鲁棒性问题的解决空间从VLA策略参数转移到观测空间，无需修改冻结VLA策略的权重 研究目标是基于3…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者均隶属于Dankook University（地址：韩国龙仁市）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.19066/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">当前Vision-Language-Action (VLA)策略的性能高度依赖训练与部署场景的相机视角一致性，微小相机偏移即可导致任务成功率从…</p>
+  <ul class="reading-intro-points"><li>当前Vision-Language-Action (VLA)策略的性能高度依赖训练与部署场景的相机视角一致性，微小相机偏移即可导致任务成功率从…</li><li>本文提出轻量即插即用框架GS-VLA，核心思路是将视角鲁棒性问题的解决空间从VLA策略参数转移到观测空间，无需修改冻结VLA策略的权重</li><li>研究目标是基于3D高斯散射技术实现视角规范化，在不重训VLA策略的前提下，恢复视角偏移导致的性能损失，提升策略的实际部署鲁棒性</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者均隶属于<strong>Dankook University</strong>（地址：韩国龙仁市）</li><li>通讯作者HyunJin Kim所属单位为Dankook大学电子电气工程系（Dept. of EEE, Dankook University）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>当前<strong>Vision-Language-Action (VLA)</strong>策略的性能高度依赖训练与部署场景的相机视角一致性，微小相机偏移即可导致任务成功率从约90%暴跌至约10%，而现有改进方案（大规模微调、生成式数据增强）存在计算成本高、灾难性遗忘等问题，难以适配实际部署需求</li><li>本文提出轻量即插即用框架<strong>GS-VLA</strong>，核心思路是将视角鲁棒性问题的解决空间从VLA策略参数转移到观测空间，无需修改冻结VLA策略的权重</li><li>研究目标是基于3D高斯散射技术实现视角规范化，在不重训VLA策略的前提下，恢复视角偏移导致的性能损失，提升策略的实际部署鲁棒性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出VLA视角适配的新 formulation：将视角鲁棒性问题从策略参数学习转移到观测空间，通过<strong>Locality（局部性）</strong>假设将复杂的全局新视角合成问题简化为局部遮挡区域补全任务，大幅降低问题复杂度</li><li>首个面向VLA策略的3D高斯视角规范化模块：设计仅4M参数的轻量模块，可作为即插即用组件前置到任意冻结VLA策略前，无需修改策略权重，单张RTX A5000显卡仅需5小时即可完成训练</li><li>跨维度的强泛化能力：单次训练的检查点可无重训迁移到多种VLA架构、未见过的任务套件、不同规模的视角扰动，证明模块的通用性</li><li>实证分析视角恢复机制：验证了大部分目标视角内容可通过确定性几何映射恢复，学习仅需作用于空间局部的残差区域，解释了轻量设计的合理性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>核心前提是<strong>Locality假设</strong>：实际部署中相机偏移通常是相对于工作区的小范围有界偏移，视角变化仅会导致图像中沿深度不连续线的窄条状新遮挡区域（disocclusion band），其面积随扰动幅度ρ线性增长，其余大部分像素可通过几何映射恢复到规范视角，无需复杂的新视角合成</li><li>模块采用<strong>像素对齐的3D高斯架构</strong>：输入为源视角RGB图像、对齐的像素级深度图、源视角与规范视角的相机参数；对称U-Net（4M参数）接收拼接的RGB+深度输入，由128维姿态对嵌入通过FiLM调制；每个源像素通过深度反投影锚定一个3D高斯原语，U-Net预测每个高斯的14维属性（深度受限的位置残差、各向异性对数尺度、四元数朝向、不透明度、颜色残差），所有预测头零初始化保证初始状态等价于纯几何 warp；通过gsplat的可微分α混合器在规范视角下光栅化高斯，自动处理遮挡排序和局部遮挡补全，无需额外 inpainting 头</li><li>创新点：将视角规范化问题从通用新视角合成降维到局部补全任务，参数量比通用前向NVS模型低1-2个数量级；即插即用设计完全不修改冻结VLA策略参数；几何 warp 与轻量学习组件结合，零初始化保证训练稳定性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>LIBERO机器人操作基准套件</strong>，包含<strong>libero_spatial</strong>、<strong>libero_object</strong>、<strong>libero_goal</strong>、<strong>libero_10</strong>四个子任务套件，覆盖空间推理、物体交互、长时序任务等多样化操作场景</li><li>模型规模：视角规范化器仅<strong>4M参数</strong>，是通用前向新视角合成预测器的25倍以上，是AnyCamVLA的42倍，是π₀.₅策略微调的840倍</li><li>训练资源：仅需单张<strong>RTX A5000显卡</strong>，训练时长仅5小时，仅使用L1+SSIM（权重比0.8:0.2）的重建损失，无任何特殊训练技巧</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：在LIBERO四个子套件上评估，主评估策略为<strong>π₀.₅（3.4B参数，lerobot/pi05_libero_finetuned）</strong>，跨策略评估额外覆盖<strong>OpenVLA-OFT（7B）</strong>、RynnVLA-002、XVLA，所有评估策略均为冻结状态；基线包括<strong>No canon</strong>（直接输入偏移视角）、<strong>Fwd-warp</strong>（仅深度前向warp并置零遮挡区域）；所有实验均使用单次在libero_spatial以100cm扰动训练的检查点，未针对不同轴做重训</li><li>主要评估指标：任务成功率（Success Rate, SR）、相对提升量Δ（百分点，pp）</li><li>关键实验结果：</li></ul>
+<p> 1. 三轴泛化性：单检查点跨策略、跨任务、跨扰动均生效：跨策略评估中XVLA成功率从1.4%提升至81.0%（+79.6pp），OpenVLA-OFT从19.8%提升至81.6%（+61.8pp）；跨任务评估中libero_10的π₀.₅成功率从9.3%提升至72.1%（+62.8pp）；跨扰动评估中200cm极端扰动下π₀.₅成功率从35.7%提升至78.5%（+42.8pp）</p>
+<p> 2. 扰动尺度鲁棒性：在5-200cm的扰动 sweep 中，GS-VLA的成功率波动仅9.5pp，而无规范化的基线波动达49.5pp，在局部性边界内性能稳定，且增益随基线性能下降而增大</p>
+<p> 3. 复合偏移鲁棒性：在100/200cm平移联合10°/20°偏航的复合偏移下，成功率提升仍保持在+21~+42pp区间，验证了对实际部署中常见复合偏移的适配能力</p>
+<p> 4. 长时序任务增益更显著：在长时序任务套件libero_10上的提升幅度远高于短时序套件，原因是局部性约束限制了帧间误差累积，避免了长轨迹下的误差放大</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.19161/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.18433/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">The Embodiment Gap in Robot Foundation Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
