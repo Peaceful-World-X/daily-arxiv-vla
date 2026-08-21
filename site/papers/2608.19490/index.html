@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fine-Tuning VLAs with Self-Demonstrated Generative Control for Multi-Task Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文针对视觉-语言-动作（VLA）基础模型（如 π0.5）在适配新机器人硬件时，因微调导致其原有指令遵循能力和行为先验（如物体放置技能）遗忘的问题。 核心目标是提出一种自监督方法，通过利用基础模型在目标机器人上生成的自演示数据，与专家演示数据协同训练，从而在适配新任务的同时，保留并迁移预训练模型的语义理解和行为能力。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.19490">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.19490.webp" alt="Fine-Tuning VLAs with Self-Demonstrated Generative Control for Multi-Task Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文针对视觉-语言-动作（VLA）基础模型（如 π0.5）在适配新机器人硬件时，因微调导致其原有指令遵循能力和行为先验（如物体放置技能）遗忘的…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Fine-Tuning VLAs with Self-Demonstrated Generative Control for Multi-Task Manipulation</h1>
+            <div class="detail-meta">2026-08-19 · <a href="http://arxiv.org/abs/2608.19490" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.19490" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.19490</span></div>
+            <p class="detail-summary">论文针对视觉-语言-动作（VLA）基础模型（如 π0.5）在适配新机器人硬件时，因微调导致其原有指令遵循能力和行为先验（如物体放置技能）遗忘的问题。 核心目标是提出一种自监督方法，通过利用基础模型在目标机器人上生成的自演示数据，与专家演示数据协同训练，从而在适配新任务的同时，保留并迁移预训练模型的语义理解和行为能力。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">伊利诺伊大学厄巴纳-香槟分校（University of Illinois Urbana-Champa…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.19490/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文针对视觉-语言-动作（VLA）基础模型（如 π0.5）在适配新机器人硬件时，因微调导致其原有指令遵循能力和行为先验（如物体放置技能）遗忘的…</p>
+  <ul class="reading-intro-points"><li>论文针对视觉-语言-动作（VLA）基础模型（如 π0.5）在适配新机器人硬件时，因微调导致其原有指令遵循能力和行为先验（如物体放置技能）遗忘的…</li><li>核心目标是提出一种自监督方法，通过利用基础模型在目标机器人上生成的自演示数据，与专家演示数据协同训练，从而在适配新任务的同时，保留并迁移预训练…</li><li>提出了一种自监督的生成式回放方法，利用冻结的基础VLA模型在目标机器人上生成在线交互作为伪演示数据，用于微调过程中的知识蒸馏，无需访问原始预训…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>伊利诺伊大学厄巴纳-香槟分校</strong>（University of Illinois Urbana-Champaign）：作者 Prachi Garg、Steve Xing、Prahit Yaugand、Saurabh Gupta、Derek Hoiem 均来自该校。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文针对视觉-语言-动作（VLA）基础模型（如 π0.5）在适配新机器人硬件时，因微调导致其原有指令遵循能力和行为先验（如物体放置技能）遗忘的问题。</li><li>核心目标是提出一种自监督方法，通过利用基础模型在目标机器人上生成的自演示数据，与专家演示数据协同训练，从而在适配新任务的同时，保留并迁移预训练模型的语义理解和行为能力。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了一种自监督的生成式回放方法，利用冻结的基础VLA模型在目标机器人上生成在线交互作为伪演示数据，用于微调过程中的知识蒸馏，无需访问原始预训练数据。</li><li>该方法能够从预训练模型中蒸馏出行为先验（如“放置”动作），即使这些行为从未在专家数据中出现过，也能恢复零样本时被遗忘的技能。</li><li>通过联合训练专家演示和自演示数据，显著提升了微调后策略的指令遵循能力，并增强了在接触密集型新任务上的样本效率。</li><li>分别构建了基于真实 <strong>ALOHA</strong> 机器人平台和 <strong>RoboTwin</strong> 仿真环境的基准测试，系统评估了模型在专家任务、自监督任务、新物体泛化及新任务组合上的表现。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于预训练的 <strong>π0.5</strong> VLA 模型，该模型使用流匹配（flow matching）和快动作令牌（FAST tokens）进行动作生成。将微调分为两个数据源：专家监督的模仿学习（ES）和自监督的模仿学习（SS）。</li><li><strong>专家监督</strong>：使用目标机器人在特定任务上的遥操作数据，通过流匹配损失和交叉熵损失进行标准的动作克隆微调。</li><li><strong>自监督</strong>：在目标机器人上，使用冻结的预训练模型根据一系列自我监督任务指令进行在线交互，收集其生成的观测-动作对作为回放数据。这些数据不要求模型成功完成任务，仅保留其语义相关的行为轨迹。</li><li>最终模型通过联合优化专家监督损失和自监督损失进行训练，其中自监督损失权重λ用于平衡两项损失。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：</li></ul>
+<p> - 真实机器人：<strong>ALOHA</strong> 平台上收集的专家遥操作数据（如拾取立方体、齿轮放置）和自监督回放数据（如拾取并放置物体、拾取衣物）。</p>
+<p> - 仿真环境：<strong>RoboTwin</strong> 模拟器中基于运动规划收集的专家数据（如堆叠积木）和自监督回放数据（包含10个预训练任务）。</p>
+<ul><li><strong>模型规模与参数量</strong>：基于 <strong>π0.5</strong> 模型，该模型包含一个视觉-语言主干（VLM）和一个专门的动作专家模块。动作预测维度为 H=50, D=32。</li><li><strong>训练资源</strong>：真实 ALOHA 机器人实验使用了 14 分钟的专家遥操作数据。仿真实验训练了 50 个种子。控制频率为 30-50 Hz。具体 GPU 资源未在摘要中明确指出，但提到了使用公开的 OpenPI 代码库进行训练。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境与基准</strong>：</li></ul>
+<p> - 真实 <strong>ALOHA</strong> 机器人：测试了“拾取立方体”（专家任务）、“拾取并放置物体”（自监督任务）、“拾取新物体”（新物体泛化）和“齿轮放置”（接触密集型新任务）等。</p>
+<p> - <strong>RoboTwin</strong> 仿真器：测试了专家任务（堆叠积木）、自监督任务（10个预训练任务）、新物体任务（堆叠不同形状物体）和新任务组合（堆叠三个物体）。</p>
+<ul><li><strong>主要评估指标</strong>：</li></ul>
+<p> - <strong>成功率 (SR)</strong>：测量任务是否完整完成。</p>
+<p> - <strong>指令遵循率 (IF)</strong>：细分为预抓取阶段（IF pre-grasp）和抓取后阶段（IF post-grasp），衡量机器人是否朝着正确的目标物体或目标位置移动。</p>
+<ul><li><strong>关键实验结果</strong>：</li></ul>
+<p> - 在 ALOHA 机器人上，<strong>本文方法</strong>（ES+SS）在专家任务（拾取立方体）上获得 90% 成功率，在自监督任务（拾取并放置）上达到 55% 成功率，而仅使用专家监督的基线（Multi-Task ES）在后者成功率为 0%。</p>
+<p> - 在新物体泛化任务上，<strong>本文方法</strong>以 55% 成功率优于仅专家监督的 50%；在接触密集型齿轮放置任务上，<strong>本文方法</strong>以 90% 成功率显著优于基线（30%），并展现出对新颜色齿轮的泛化能力（30%）。</p>
+<p> - 在 RoboTwin 仿真中，<strong>本文方法</strong>将旧任务（自监督任务）性能从微调后的 16.6% 提升至 70.6%，同时将新任务性能从 93% 提升至 98%，接近保留全部专家数据的预言机（Oracle）基准。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.19589/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">OrthoSkillVLA: Continual Skill Learning via Gradient-Informed Skill Subspace Adaptation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.19161/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

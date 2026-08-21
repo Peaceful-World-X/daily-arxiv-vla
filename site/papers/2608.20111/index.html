@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Planning-Oriented End-to-End Autonomous Driving: Architectures, Evaluation, and Emerging Paradigms - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="该论文是一篇综述，系统梳理了面向规划的端到端自动驾驶（Planning-Oriented E2E-AD）的发展脉络，从早期的行为克隆到最新的世界模型和视觉-语言-动作（VLA）系统 核心问题是如何设计、评估和比较端到端自动驾驶系统，使其输出安全、可行且符合路线规划的轨迹或控制指令 论文强调，现代E2E系统的关键不在于是否使用中间表示，而在于这些表示是否被学习和优化以支持规划，以及评估协议是否反映真实驾驶质量" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.20111">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.20111.webp" alt="Planning-Oriented End-to-End Autonomous Driving: Architectures, Evaluation, and Emerging Paradigms" loading="lazy" />
+  <figcaption class="paper-figure-caption">该论文是一篇综述，系统梳理了面向规划的端到端自动驾驶（Planning-Oriented E2E-AD）的发展脉络，从早期的行为克隆到最新的世…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Planning-Oriented End-to-End Autonomous Driving: Architectures, Evaluation, and Emerging Paradigms</h1>
+            <div class="detail-meta">2026-08-20 · <a href="http://arxiv.org/abs/2608.20111" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.20111" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.20111</span></div>
+            <p class="detail-summary">该论文是一篇综述，系统梳理了面向规划的端到端自动驾驶（Planning-Oriented E2E-AD）的发展脉络，从早期的行为克隆到最新的世界模型和视觉-语言-动作（VLA）系统 核心问题是如何设计、评估和比较端到端自动驾驶系统，使其输出安全、可行且符合路线规划的轨迹或控制指令 论文强调，现代E2E系统的关键不在于是否使用中间表示，而在于这些表示是否被学习和优化以支持规划，以及评估协议是否反映真实驾驶质量</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构包括：澳门大学（University of Macau）、重庆大学（Chongqing…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.20111/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">该论文是一篇综述，系统梳理了面向规划的端到端自动驾驶（Planning-Oriented E2E-AD）的发展脉络，从早期的行为克隆到最新的世…</p>
+  <ul class="reading-intro-points"><li>该论文是一篇综述，系统梳理了面向规划的端到端自动驾驶（Planning-Oriented E2E-AD）的发展脉络，从早期的行为克隆到最新的世…</li><li>核心问题是如何设计、评估和比较端到端自动驾驶系统，使其输出安全、可行且符合路线规划的轨迹或控制指令</li><li>论文强调，现代E2E系统的关键不在于是否使用中间表示，而在于这些表示是否被学习和优化以支持规划，以及评估协议是否反映真实驾驶质量</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构包括：<strong>澳门大学</strong>（University of Macau）、<strong>重庆大学</strong>（Chongqing University）、<strong>香港科技大学</strong>（The Hong Kong University of Science and Technology）、<strong>同济大学</strong>（Tongji University）、<strong>北京航空航天大学</strong>（Beihang University）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>该论文是一篇综述，系统梳理了<strong>面向规划的端到端自动驾驶（Planning-Oriented E2E-AD）</strong>的发展脉络，从早期的行为克隆到最新的世界模型和视觉-语言-动作（VLA）系统</li><li>核心问题是如何设计、评估和比较端到端自动驾驶系统，使其输出安全、可行且符合路线规划的轨迹或控制指令</li><li>论文强调，现代E2E系统的关键不在于是否使用中间表示，而在于这些表示是否被学习和优化以支持规划，以及评估协议是否反映真实驾驶质量</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了<strong>规划导向的四轴分类法</strong>：输入表示、规划输出、监督信号、评估协议，将现有方法统一组织</li><li>回顾了<strong>端到端自动驾驶的演变</strong>：从行为克隆、条件模仿学习、特权蒸馏，到BEV/向量化规划、统一架构、世界模型和VLA系统</li><li>分析了<strong>基准转型</strong>：从开环轨迹匹配到闭环模拟、非反应式日志评估、长尾测试和偏好感知评估，讨论了开环与闭环指标不一致的原因</li><li>指出了<strong>开放挑战</strong>：不确定性感知规划、学习者-专家不匹配、运行时安全保证、语言-动作对齐、世界模型验证和可复现基准</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>该综述采用<strong>结构化叙事回顾</strong>方法，收集了2015年至2026年6月的相关文献，包括已发表论文、arXiv预印本、基准仓库和代码库</li><li>采用<strong>规划导向视角</strong>，将端到端自动驾驶系统按四个维度分类：输入（传感器、地图、语言等）、输出（控制、路径点、轨迹分布）、监督（行为克隆、特权蒸馏、辅助任务、世界模型、语言指令等）、评估（开环、闭环、非反应式、偏好感知）</li><li>创新点在于<strong>围绕规划目标组织技术分析</strong>，而非按骨干网络或时间顺序，揭示了不同架构选择如何影响规划行为、安全性和可评估性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>综述中涉及的主要数据集和基准包括：<strong>nuScenes</strong>、<strong>nuPlan</strong>、<strong>NAVSIM</strong>、<strong>Bench2Drive</strong>、<strong>CARLA</strong>（仿真器）、<strong>WOD-E2E</strong>（Waymo开放数据集变体）、<strong>Fail2Drive</strong>等</li><li>模型规模和参数量未在综述中详细说明，但涵盖了从轻量级卷积网络到大型Transformer和VLM（如<strong>EMMA</strong>、<strong>SimLingo</strong>）的多种架构</li><li>训练资源未明确提及，但讨论了不同方法对计算、延迟和部署的权衡</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境包括<strong>CARLA仿真器</strong>（闭环路由）、<strong>nuScenes</strong>（开环）、<strong>NAVSIM</strong>（非反应式真实日志）、<strong>Bench2Drive</strong>（闭环基准）等</li><li>主要评估指标从<strong>单纯位移误差</strong>扩展到<strong>碰撞率、路线完成度、舒适度、规则合规性</strong>，以及<strong>偏好评分</strong>等</li><li>关键发现：<strong>开环轨迹匹配与闭环性能相关性弱</strong>，许多方法在开环上表现良好但在闭环中退化；<strong>非反应式评估</strong>（如NAVSIM）提供了可扩展的中间方案；<strong>长尾和偏好感知评估</strong>（如WOD-E2E）揭示了现有方法在稀有场景和人类对齐方面的不足</li><li>论文强调<strong>架构创新需与基准一致的评估协议相结合</strong>，单纯位移误差不足以证明安全和人类对齐的驾驶能力</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2608.19891/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">EXIMO: VLM Guided Exploration of VLA Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

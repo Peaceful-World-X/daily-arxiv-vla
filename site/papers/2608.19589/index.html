@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OrthoSkillVLA: Continual Skill Learning via Gradient-Informed Skill Subspace Adaptation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对预训练视觉-语言-动作（VLA）模型在持续学习新技能时出现的灾难性遗忘问题，提出了一种参数高效的持续技能学习框架 OrthoSkillVLA 分析并揭示了VLA模型在持续学习中的两个特定挑战：模块级表示异质性（VLM与ActionHead对子空间约束需求不同）和输出端速度解码器的表达瓶颈 旨在无需重放历史数据的情况下，通过梯度信息引导的子空间适应和模块化设计，实现技能的稳定连续获取" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.19589">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.19589.webp" alt="OrthoSkillVLA: Continual Skill Learning via Gradient-Informed Skill Subspace Adaptation" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对预训练视觉-语言-动作（VLA）模型在持续学习新技能时出现的灾难性遗忘问题，提出了一种参数高效的持续技能学习框架 OrthoSkillVLA</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">OrthoSkillVLA: Continual Skill Learning via Gradient-Informed Skill Subspace Adaptation</h1>
+            <div class="detail-meta">2026-08-20 · <a href="http://arxiv.org/abs/2608.19589" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.19589" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.19589</span></div>
+            <p class="detail-summary">针对预训练视觉-语言-动作（VLA）模型在持续学习新技能时出现的灾难性遗忘问题，提出了一种参数高效的持续技能学习框架 OrthoSkillVLA 分析并揭示了VLA模型在持续学习中的两个特定挑战：模块级表示异质性（VLM与ActionHead对子空间约束需求不同）和输出端速度解码器的表达瓶颈 旨在无需重放历史数据的情况下，通过梯度信息引导的子空间适应和模块化设计，实现技能的稳定连续获取</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">School of Computer Science and Engineering, Southea…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.19589/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对预训练视觉-语言-动作（VLA）模型在持续学习新技能时出现的灾难性遗忘问题，提出了一种参数高效的持续技能学习框架 OrthoSkillVLA</p>
+  <ul class="reading-intro-points"><li>针对预训练视觉-语言-动作（VLA）模型在持续学习新技能时出现的灾难性遗忘问题，提出了一种参数高效的持续技能学习框架 OrthoSkillVLA</li><li>分析并揭示了VLA模型在持续学习中的两个特定挑战：模块级表示异质性（VLM与ActionHead对子空间约束需求不同）和输出端速度解码器的表达…</li><li>旨在无需重放历史数据的情况下，通过梯度信息引导的子空间适应和模块化设计，实现技能的稳定连续获取</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>School of Computer Science and Engineering, Southeast University, China</strong></li><li><strong>Key Laboratory of New Generation Artificial Intelligence Technology and Its Interdisciplinary Applications, Ministry of Education, China</strong></li><li><strong>School of Electronic Science and Engineering, Southeast University, China</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对预训练视觉-语言-动作（VLA）模型在持续学习新技能时出现的灾难性遗忘问题，提出了一种参数高效的持续技能学习框架 <strong>OrthoSkillVLA</strong></li><li>分析并揭示了VLA模型在持续学习中的两个特定挑战：模块级表示异质性（VLM与ActionHead对子空间约束需求不同）和输出端速度解码器的表达瓶颈</li><li>旨在无需重放历史数据的情况下，通过梯度信息引导的子空间适应和模块化设计，实现技能的稳定连续获取</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>识别VLA模型持续学习的特定挑战</strong>：通过实证研究揭示了预训练VLA模型中存在的模块级表示异质性和输出端速度解码器的表达瓶颈问题</li><li><strong>提出模块级子空间预算策略</strong>：为VLM和ActionHead分别分配不同的能量阈值，以实现语义可塑性与速度模式保留之间的平衡</li><li><strong>设计特征感知的MoE速度解码器</strong>：引入基于免训练投影路由的轻量级专家混合解码器，以保持速度解码的表达能力，同时最小化架构开销</li><li><strong>验证框架有效性</strong>：在模拟和真实世界环境中，OrthoSkillVLA在保持先前技能和最终成功率上均优于主流子空间约束基线方法</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>模块感知的子空间预算</strong>：分别对VLM和ActionHead的每一层，基于累积梯度通过SVD估计技能特征子空间，并采用不同的能量阈值（\( \epsilon_{VLM} \) 和 \( \epsilon_{Head} \)）来控制子空间预算，以平衡语义可塑性和速度模式保护</li><li><strong>梯度信息正交低秩适应</strong>：在微调新技能时，将参数更新约束在先前技能特征子空间的正交补集中。通过初始化LoRA的降维矩阵A为无干扰梯度方向的奇异向量并冻结，仅优化升维矩阵B，确保新知识的学习不干扰旧知识</li><li><strong>特征感知MoE速度解码器</strong>：为每个技能分配一个紧凑的专家网络，并冻结预训练的基座解码器。使用免训练的投影路由机制，根据特征投影量选择最匹配的专家，以保持速度解码的灵活性并避免输出映射被覆盖</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>模拟数据集</strong>：在 <strong>LIBERO</strong> 基准上重新组织了一个技能增量学习协议，包含 <strong>OpenClose、Turn、PickPlace</strong> 三个技能</li><li><strong>真实世界数据</strong>：使用 <strong>7-DoF xArm</strong> 机械臂和 <strong>Inspire 灵巧手</strong> 采集了 <strong>Flip、Pick、Push、Press</strong> 四个技能的演示数据，每个技能50个演示</li><li><strong>模型规模</strong>：基于预训练的 <strong>X-VLA</strong> 模型（约 <strong>0.9B</strong> 参数）</li><li><strong>训练资源</strong>：使用 <strong>LoRA</strong> 进行参数高效微调，适配器秩为 <strong>16</strong>，优化器为 <strong>AdamW</strong>，学习率峰值为 <strong>5e-5</strong>，训练步数约 <strong>40,000</strong> 步</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>模拟环境评估</strong>：在LIBERO技能增量设置下，使用 <strong>FWT、NBT、AUC、Final SR</strong> 等指标。OrthoSkillVLA的 <strong>NBT</strong> 从KeepLoRA的0.46降至 <strong>0.13</strong>，<strong>Final SR</strong> 从56.61%提升至 <strong>83.50%</strong></li><li><strong>真实世界评估</strong>：在四个技能上连续学习，最终平均成功率达 <strong>86.25%</strong>，相比KeepLoRA基线提升 <strong>15.0%</strong>，尤其在早期学习的技能上表现更稳定</li><li><strong>消融实验</strong>：验证了模块感知预算和MoE解码器皆至关重要。同时，免训练路由器的准确率接近 <strong>98.9%</strong>，其性能与理论上的“Oracle路由”非常接近（83.5% vs. 86.2%）</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.19891/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">EXIMO: VLM Guided Exploration of VLA Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.19490/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Fine-Tuning VLAs with Self-Demonstrated Generative Control for Multi-Task Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

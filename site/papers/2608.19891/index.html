@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EXIMO: VLM Guided Exploration of VLA Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 Eximo，一种用于高效微调视觉-语言-动作（VLA）策略的三阶段算法 解决在无额外远程操作数据的情况下，如何让预训练 VLA 快速学习新的长时程、组合性或推理类操作任务 核心思想是利用 VLM 引导探索收集高质量数据，再通过监督微调与在线强化学习逐步提升策略性能" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.19891">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.19891.webp" alt="EXIMO: VLM Guided Exploration of VLA Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 Eximo，一种用于高效微调视觉-语言-动作（VLA）策略的三阶段算法</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">EXIMO: VLM Guided Exploration of VLA Policies</h1>
+            <div class="detail-meta">2026-08-20 · <a href="http://arxiv.org/abs/2608.19891" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.19891" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.19891</span></div>
+            <p class="detail-summary">提出 Eximo，一种用于高效微调视觉-语言-动作（VLA）策略的三阶段算法 解决在无额外远程操作数据的情况下，如何让预训练 VLA 快速学习新的长时程、组合性或推理类操作任务 核心思想是利用 VLM 引导探索收集高质量数据，再通过监督微调与在线强化学习逐步提升策略性能</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">所有作者均隶属于 Google DeepMind</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.19891/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 Eximo，一种用于高效微调视觉-语言-动作（VLA）策略的三阶段算法</p>
+  <ul class="reading-intro-points"><li>提出 Eximo，一种用于高效微调视觉-语言-动作（VLA）策略的三阶段算法</li><li>解决在无额外远程操作数据的情况下，如何让预训练 VLA 快速学习新的长时程、组合性或推理类操作任务</li><li>核心思想是利用 VLM 引导探索收集高质量数据，再通过监督微调与在线强化学习逐步提升策略性能</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>所有作者均隶属于 <strong>Google DeepMind</strong></li><li>第一作者 Bhavya Sukhija 同时标注为 <strong>Google DeepMind</strong> 的学生研究员（2025年）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>Eximo</strong>，一种用于高效微调视觉-语言-动作（VLA）策略的三阶段算法</li><li>解决在无额外远程操作数据的情况下，如何让预训练 VLA 快速学习新的长时程、组合性或推理类操作任务</li><li>核心思想是利用 VLM 引导探索收集高质量数据，再通过监督微调与在线强化学习逐步提升策略性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>VLM 引导的探索</strong> 机制：将 VLM 作为高层规划器，把复杂任务分解为 VLA 可执行的原子技能，实现高效数据收集</li><li>设计 <strong>Eximo 三阶段流程</strong>：探索（Explore）→ 模仿（Imitate）→ 优化（Optimize），融合 VLM 编排、行为克隆与残差强化学习</li><li>通过 <strong>蒸馏 VLM 编排数据</strong> 到 VLA，使策略在脱离 VLM 的条件下仍能保持高成功率，并降低推理延迟</li><li>在 <strong>22 个 ALOHA 模拟任务</strong> 上验证，Eximo 在样本效率和最终性能上均显著优于基础 VLA 及纯 RL 微调基线</li><li>实验表明，经 SFT 后的 VLA 甚至超过 VLM 在线编排的表现，验证了知识蒸馏的有效性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>Explore 阶段</strong>：使用 <strong>Gemini VLM</strong> 作为编排器，根据历史状态和任务目标，逐步生成自然语言子目标，驱动 <strong>GROD VLA</strong> 执行，仅保留成功轨迹</li><li><strong>Imitate 阶段</strong>：对收集的（状态，原始任务目标，动作）数据进行监督微调，将 VLM 的编排知识蒸馏到 VLA 中，使其直接根据原始目标生成动作</li><li><strong>Optimize 阶段</strong>：引入残差策略，在 VLA 输出上叠加可学习的动作修正，使用 <strong>MPO</strong> 算法进行离线到在线的强化学习微调，以最大化稀疏成功奖励</li><li>残差策略以状态、目标任务和 VLA 动作作为输入，训练时 VLA 参数冻结，仅更新残差网络</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>基础 VLA 模型：<strong>GROD (Gemini Robotics On-Device)</strong>，3B 参数，基于 PaliGemma VLM 和扩散策略头，使用大量远程操作数据预训练</li><li>VLM 编排器：<strong>Gemini</strong>（具体版本未说明，为 SOTA 多模态模型）</li><li>任务环境：<strong>ALOHA 双臂机器人模拟平台</strong>，共 22 个操作任务，涵盖 dish-placement、reasoning、spatial-understanding、chained 等类别</li><li>训练资源：论文未明确说明 GPU/TPU 配置，所有实验均在模拟环境中完成</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估基准：22 个未见过的操作任务，每组 1000 次评估回放，指标为成功率、成功用时和回放长度</li><li><strong>VLM 编排 vs. 无编排</strong>：VLM 编排显著提升成功率，尤其在长时程（如 PlateBowlOnRack）和推理类任务上，且回放长度更短，数据收集更高效</li><li><strong>SFT 后性能</strong>：在 VLM 编排数据上微调后，VLA 成功率超过在线 VLM 编排，说明了蒸馏的有效性</li><li><strong>在线 RL 增益</strong>：微调后的 VLA（GROD + SFT）在 RL 初始阶段成功率更高，收敛后也优于仅做 RL 的基础 VLA，且基础 VLA 即使更多环境步数也无法达到同等性能</li><li>附加实验：自由形式指令与仅 pick-and-place 指令的 VLM 编排效果相当，证实 GROD 对自然语言指令的鲁棒性</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.20111/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Planning-Oriented End-to-End Autonomous Driving: Architectures, Evaluation, and Emerging Paradigms</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.19589/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">OrthoSkillVLA: Continual Skill Learning via Gradient-Informed Skill Subspace Adaptation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
