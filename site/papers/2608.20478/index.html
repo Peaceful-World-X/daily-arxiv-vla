@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EndoLIFT: Language-Disambiguated Latent-Conditioned Rectified Flow for Bidirectional Endoscopic Control - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文聚焦胃肠道内镜双向操作中的核心挑战，识别并形式化了意图别名（intent aliasing）问题：当外部程序意图（正常前进/紧急撤回）切换但内镜视觉场景未发生明显变化时，视觉上几乎相同的观测需要相反的轴向动作，仅靠视觉输入无法区分正确的操作模式。 研究目标是提出语言消歧的双向内镜视觉-语言-动作（VLA）策略，通过自然语言指令明确指定当前操作意图，结合轨迹潜变量条件生成模型，实现可控、高精度的双向内镜运动。 论…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.20478">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.20478.webp" alt="EndoLIFT: Language-Disambiguated Latent-Conditioned Rectified Flow for Bidirectional Endoscopic Control" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文聚焦胃肠道内镜双向操作中的核心挑战，识别并形式化了意图别名（intent aliasing）问题：当外部程序意图（正常前进/紧急撤回）切换…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">EndoLIFT: Language-Disambiguated Latent-Conditioned Rectified Flow for Bidirectional Endoscopic Control</h1>
+            <div class="detail-meta">2026-08-20 · <a href="http://arxiv.org/abs/2608.20478" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.20478" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.20478</span></div>
+            <p class="detail-summary">论文聚焦胃肠道内镜双向操作中的核心挑战，识别并形式化了意图别名（intent aliasing）问题：当外部程序意图（正常前进/紧急撤回）切换但内镜视觉场景未发生明显变化时，视觉上几乎相同的观测需要相反的轴向动作，仅靠视觉输入无法区分正确的操作模式。 研究目标是提出语言消歧的双向内镜视觉-语言-动作（VLA）策略，通过自然语言指令明确指定当前操作意图，结合轨迹潜变量条件生成模型，实现可控、高精度的双向内镜运动。 论…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">香港中文大学（The Chinese University of Hong Kong, Hong Ko…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.20478/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文聚焦胃肠道内镜双向操作中的核心挑战，识别并形式化了意图别名（intent aliasing）问题：当外部程序意图（正常前进/紧急撤回）切换…</p>
+  <ul class="reading-intro-points"><li>论文聚焦胃肠道内镜双向操作中的核心挑战，识别并形式化了意图别名（intent aliasing）问题：当外部程序意图（正常前进/紧急撤回）切换…</li><li>研究目标是提出语言消歧的双向内镜视觉-语言-动作（VLA）策略，通过自然语言指令明确指定当前操作意图，结合轨迹潜变量条件生成模型，实现可控、高…</li><li>论文进一步通过严格的消融实验、跨域幻影迁移和离体组织验证，验证所提方法的有效性和泛化性，评估其向临床转化的潜力。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>香港中文大学（The Chinese University of Hong Kong, Hong Kong SAR, China）</strong>：Chi Kit Ng、Yidong Zhang、Lui Siu Hing、Jinsong Lin、Tianchun Wu、Ho Yin Chim、Zhiqing Tang、Huxin Gao、Trevor Yeung、Raymond Shing-Yan Tang、Hongliang Ren</li><li><strong>中山大学第六附属医院（The Sixth Affiliated Hospital, Sun Yat-sen University, Guangzhou, China）</strong>：Tao Yang</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文聚焦胃肠道内镜双向操作中的核心挑战，识别并形式化了<strong>意图别名（intent aliasing）</strong>问题：当外部程序意图（正常前进/紧急撤回）切换但内镜视觉场景未发生明显变化时，视觉上几乎相同的观测需要相反的轴向动作，仅靠视觉输入无法区分正确的操作模式。</li><li>研究目标是提出语言消歧的双向内镜视觉-语言-动作（VLA）策略，通过自然语言指令明确指定当前操作意图，结合轨迹潜变量条件生成模型，实现可控、高精度的双向内镜运动。</li><li>论文进一步通过严格的消融实验、跨域幻影迁移和离体组织验证，验证所提方法的有效性和泛化性，评估其向临床转化的潜力。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>识别并形式化了双向内镜控制中的<strong>意图别名</strong>问题：视觉上几乎相同的观测在外部程序意图改变时，需要相反的轴向动作，仅靠视觉输入无法解决该歧义，是双向内镜自主控制的核心瓶颈。</li><li>提出<strong>EndoLIFT</strong>方法，基于LoRA适配的PaliGemma 2-3B视觉-语言骨干，搭配32-D<strong>变分轨迹潜变量（VTL）</strong>条件的修正流Transformer动作专家，可生成32×3的连续三维动作块，支持语言指令驱动的双向内镜控制。</li><li>通过相同观测指令翻转、架构控制的1比特ModeFlag参考、无VTL匹配消融、44个保留语言变体验证、跨幻影迁移和离体猪气管试验，系统隔离了语言意图选择与轨迹潜变量在方向正确性和轨迹执行质量上的各自作用。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用分层安全架构设计：外部触发监督器独立处理生理信号和语音事件，生成规范语言指令后输入神经策略，事件检测与指令选择模块完全独立于 learned 控制策略，保障临床操作的安全性。</li><li>视觉-语言编码模块使用LoRA适配的<strong>PaliGemma 2-3B</strong>作为多模态骨干，将RGB图像、语言指令、上一时刻动作状态编码为视觉-语言前缀，为动作专家提供多模态上下文。</li><li>动作空间为三维连续动作，分别对应内镜纵向进退、远端上下弯曲、远端左右弯曲三个控制通道，动作按轴归一化后转换为电机指令执行。</li><li>核心动作专家为8块宽度1024、16注意力头的Transformer，基于<strong>修正流（Rectified Flow）</strong>生成32步的连续动作块；创新性引入32-D变分轨迹潜变量（VTL），训练时从以后验分布采样，与流时间步共同条件化动作生成，损失函数结合修正流损失与带0.5 nat自由比特下限的KL散度损失（KL权重线性增长至1e-3）；推理时从标准正态分布采样VTL，通过20步欧拉积分从噪声生成动作块。</li><li>额外设计架构控制的<strong>ModeFlag-LCRF</strong>参考模型，用1比特标志替代文本指令，用于量化验证自然语言接口相较于简单标志的额外价值。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>基础模仿数据集：共44,942帧，来自结肠幻影的已见域，包含4种指令字符串（3种对应前进模式，1种对应撤回模式）；后续指令条件微调使用1,200采样帧，搭配40个前进和40个撤回的文本释义及扰动，混合20%的规范锚点，最终支持44种保留语言变体的泛化验证。</li><li>测试数据集：已见域为结肠幻影，未见域为肺幻影、胃幻影，额外包含10组离体猪气管的闭环试验数据。</li><li>模型规模：视觉-语言骨干为<strong>PaliGemma 2-3B</strong>（仅LoRA适配层可训练），动作专家为8层Transformer（隐藏层宽度1024，16个注意力头），轨迹潜变量维度为32，单次预测生成32步、3维的连续动作块。</li><li>训练资源：原文未明确标注具体GPU/TPU等训练硬件，仅提及部署时采用480×480分辨率RGB相机、20Hz主机与电机控制环路、异步VLA推理的硬件配置。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：已见域为结肠幻影，未见域为肺、胃幻影，额外开展离体猪气管闭环试验；对比基线包括DINOv2+MLP、Qwen3-VL+MLP、Qwen3-VL+GR00T、EndoLIFT w/o VTL（无潜变量匹配消融）、ModeFlag-LCRF、关键词/TF-IDF路由+规范策略。</li><li>主要评估指标：意图遵循准确率（IFA）、规范配对翻转率、动作分离度、导航方向准确率、错误前进率、弯曲MAE、闭环任务成功率、撤回任务精确率/召回率/F1、触发-动作延迟等。</li><li>关键实验结果：</li></ul>
+<p> - 语言指令的消歧效果显著优于1比特标志：规范文本相比ModeFlag-LCRF，意图遵循准确率提升16.2个百分点，规范配对翻转率提升32.5个百分点，动作分离度达2.86倍于1比特标志。</p>
+<p> - 语言泛化性优异：在44个保留语言变体（含英语/中文释义、口语指令、噪声/ASR变体、含干扰词的长指令）上，EndoLIFT的IFA达82.8%，显著高于无VTL版本的78.2%、Qwen3-VL+GR00T的63.1%和Qwen3-VL+MLP的59.7%。</p>
+<p> - 轨迹潜变量显著提升执行质量：相比匹配的无VTL消融版本，EndoLIFT的导航方向准确率提升11.1个百分点，错误前进率降低83%，差异的95%置信区间无重叠。</p>
+<p> - 闭环性能优异且泛化性好：在已见结肠幻影和未见肺、胃幻影上，整体任务成功率比无VTL版本高30个百分点；离体猪气管试验10/10成功完成，验证了方法的真实世界可行性。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.20556/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Logic-VLA: A Temporal Logic Conditioned Vision-Language-Action Model</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.20111/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Planning-Oriented End-to-End Autonomous Driving: Architectures, Evaluation, and Emerging Paradigms</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

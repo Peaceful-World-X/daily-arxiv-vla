@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Logic-VLA: A Temporal Logic Conditioned Vision-Language-Action Model - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有视觉-语言-动作（VLA）模型的自然语言指令无法精确表达安全关键、时空约束类需求的问题，提出Logic-VLA，一种可被形式化时序逻辑条件化的VLA模型 核心研究目标是让单一预训练VLA在推理时无需针对每个新需求单独训练，即可适配不同的信号时序逻辑（STL）形式化需求，同时保留原自然语言任务跟随能力 模型聚焦于VLA的需求感知后训练范式，将STL规范作为推理时的策略输入，解决形式化需求与自然语言任务协同执行…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.20556">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.20556.webp" alt="Logic-VLA: A Temporal Logic Conditioned Vision-Language-Action Model" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有视觉-语言-动作（VLA）模型的自然语言指令无法精确表达安全关键、时空约束类需求的问题，提出Logic-VLA，一种可被形式化时序逻辑…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Logic-VLA: A Temporal Logic Conditioned Vision-Language-Action Model</h1>
+            <div class="detail-meta">2026-08-20 · <a href="http://arxiv.org/abs/2608.20556" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.20556" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.20556</span></div>
+            <p class="detail-summary">针对现有视觉-语言-动作（VLA）模型的自然语言指令无法精确表达安全关键、时空约束类需求的问题，提出Logic-VLA，一种可被形式化时序逻辑条件化的VLA模型 核心研究目标是让单一预训练VLA在推理时无需针对每个新需求单独训练，即可适配不同的信号时序逻辑（STL）形式化需求，同时保留原自然语言任务跟随能力 模型聚焦于VLA的需求感知后训练范式，将STL规范作为推理时的策略输入，解决形式化需求与自然语言任务协同执行…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">所有作者均隶属于南加州大学Thomas Lord计算机科学系，其中Yiqi Zhao与Jyotirmo…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.20556/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有视觉-语言-动作（VLA）模型的自然语言指令无法精确表达安全关键、时空约束类需求的问题，提出Logic-VLA，一种可被形式化时序逻辑…</p>
+  <ul class="reading-intro-points"><li>针对现有视觉-语言-动作（VLA）模型的自然语言指令无法精确表达安全关键、时空约束类需求的问题，提出Logic-VLA，一种可被形式化时序逻辑…</li><li>核心研究目标是让单一预训练VLA在推理时无需针对每个新需求单独训练，即可适配不同的信号时序逻辑（STL）形式化需求，同时保留原自然语言任务跟随…</li><li>模型聚焦于VLA的需求感知后训练范式，将STL规范作为推理时的策略输入，解决形式化需求与自然语言任务协同执行的难题</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>所有作者均隶属于<strong>南加州大学Thomas Lord计算机科学系</strong>，其中Yiqi Zhao与Jyotirmoy V. Deshmukh为共同指导</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有视觉-语言-动作（VLA）模型的自然语言指令无法精确表达安全关键、时空约束类需求的问题，提出<strong>Logic-VLA</strong>，一种可被形式化时序逻辑条件化的VLA模型</li><li>核心研究目标是让单一预训练VLA在推理时无需针对每个新需求单独训练，即可适配不同的<strong>信号时序逻辑（STL）</strong>形式化需求，同时保留原自然语言任务跟随能力</li><li>模型聚焦于VLA的需求感知后训练范式，将STL规范作为推理时的策略输入，解决形式化需求与自然语言任务协同执行的难题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>Logic-VLA</strong>，基于π₀.₅的时序逻辑条件化VLA，通过结构化逻辑通路将STL形式化需求与VLA的多模态视觉、语言输入融合</li><li>设计两阶段需求感知后训练框架：第一阶段基于满足STL的演示做监督微调，第二阶段基于匹配的满足-违反轨迹对做轨迹级偏好优化，适配形式化需求</li><li>在闭环四旋翼导航仿真基准上验证，Logic-VLA相比STL盲基线将STL满足率提升<strong>24.8至40.7个百分点</strong>，同时自然语言任务成功率最多仅下降1.8个百分点，且可泛化到训练时未见过的STL公式</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>技术基础：基于预训练VLA <strong>π₀.₅</strong>构建，新增STL条件化通路，不改变原VLA主干架构，仅通过后训练适配需求</li><li>STL编码器：采用TeLoGraF的<strong>语法图 backbone</strong>将STL公式表示为有向图，节点编码布尔、时序、比较运算符及谓词参数；先通过轨迹-公式对预训练，以鲁棒语义预测为辅助目标学习STL语义，预训练后丢弃辅助轨迹编码器和回归头，仅保留STL编码器并投影为VLA conditioning空间的spec token，追加到视觉-语言前缀后</li><li>两阶段后训练：</li></ul>
+<p> 1. 第一阶段：STL条件监督微调（SFT），使用满足对应STL的演示数据，优化标准条件流匹配目标，让策略模仿满足形式化需求的行为</p>
+<p> 2. 第二阶段：轨迹级偏好优化，使用匹配的满足-违反轨迹对，采用<strong>Identity Preference Optimization（IPO）</strong>的流匹配代理目标，通过流匹配损失差替代似然比，聚合多时间窗口的轨迹级偏好，同时引入单侧偏好锚点防止策略在满足行为上退化</p>
+<ul><li>创新点：将STL语义编码为VLA可理解的条件输入，通过两阶段后训练让单一策略适配动态变化的推理时STL需求，无需为每个规范单独训练策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>随机化照片级仓库环境四旋翼导航仿真数据集</strong>，包含6类自然语言导航任务、10个随机化仓库场景，以及用于STL编码器预训练的轨迹-公式对</li><li>模型规模：基于<strong>π₀.₅</strong> VLA搭建，STL编码器为图卷积网络，论文未明确报告具体参数量</li><li>训练资源：提供文本未明确说明所使用的GPU/TPU等训练硬件</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：闭环四旋翼导航仿真环境，基准按STL公式的泛化难度分为三类：<strong>Seen</strong>（训练时见过的公式）、<strong>Unseen Parameter</strong>（未见过的参数值）、<strong>Unseen Structure</strong>（未见过的结构）</li><li>主要评估指标：STL满足率、鲁棒语义均值ρ、鲁棒语义最小值ρ_min、自然语言任务成功率</li><li>关键实验结果：</li></ul>
+<p> - 相比STL盲基线，Logic-VLA在Seen、Unseen Parameter、Unseen Structure三类基准下STL满足率分别提升40.7pp、24.8pp、25.2pp，自然语言任务成功率最多仅下降1.8pp</p>
+<p> - 消融实验验证了STL编码器预训练的必要性，且语法图结构化编码的效果优于直接提示STL公式的方式</p>
+<p> - 模型可泛化到训练时未见过结构和参数的STL公式，证明其对形式化需求的泛化能力</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.20735/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ForeTime-VLA: Causal Future-Token Distillation from a World Action Model for Conveyor-Belt Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.20478/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">EndoLIFT: Language-Disambiguated Latent-Conditioned Rectified Flow for Bidirectional Endoscopic Control</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

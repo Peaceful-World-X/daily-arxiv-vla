@@ -1,5 +1,229 @@
 [
   {
+    "date": "2026-08-21",
+    "title": "Just Noticeable Difference Modeling for Token Compression in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.21247",
+    "arxiv_id": "2608.21247",
+    "detail_path": "papers/2608.21247/",
+    "cover_path": "covers/2608.21247/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.21247.webp",
+    "preview_text": "本文针对视觉-语言-动作（VLA）模型在机器人操作任务中的Token压缩需求，指出现有压缩方法（如KV缓存复用、Token剪枝）通常基于视觉相似性、注意力得分等间接信号判定Token可压缩性，未直接考虑压缩对下游机器人动作的影响，在激进压缩场景下动作保持性不足 研究目标是提出Action-JND（动作可察觉差异）建模范式，将VLA的Token压缩转化为动作条件的容忍度建模问题，以机器人动作偏差作为压缩安全的直接判定…",
+    "research_unit": "南洋理工大学（Nanyang Technological University）计算机科学与工程学院…",
+    "hook_text": "本文针对视觉-语言-动作（VLA）模型在机器人操作任务中的Token压缩需求，指出现有压缩方法（如KV缓存复用、Token剪枝）通常基于视觉相…",
+    "key_points": [
+      "本文针对视觉-语言-动作（VLA）模型在机器人操作任务中的Token压缩需求，指出现有压缩方法（如KV缓存复用、Token剪枝）通常基于视觉相…",
+      "研究目标是提出Action-JND（动作可察觉差异）建模范式，将VLA的Token压缩转化为动作条件的容忍度建模问题，以机器人动作偏差作为压缩…",
+      "核心解决的问题是：如何量化单个视觉Token的表示变化对VLA策略动作预测的影响，实现既降低推理成本、又保证闭环控制下机器人动作可靠性的Tok…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-21",
+    "title": "PhysCaP: Grounding Code-as-Policy Agent with Physics-Informed Exploration",
+    "link": "http://arxiv.org/abs/2608.21031",
+    "arxiv_id": "2608.21031",
+    "detail_path": "papers/2608.21031/",
+    "cover_path": "covers/2608.21031/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.21031.webp",
+    "preview_text": "提出PhysCaP（Physics-Informed Code-as-Policy）机器人操作智能体，针对现有视觉-语言-动作（VLA）策略与被动感知的代码即策略无法处理依赖隐式物理属性（如物体质量、刚度）的部分可观测操作任务的问题，通过物理感知探索层让智能体主动通过交互获取缺失物理信息 设计了双智能体探索架构（规划器+优先级排序器），平衡探索成本与信息获取效率，避免不必要的过度交互，提升任务完成效率 无需额外传感…",
+    "research_unit": "National Taiwan University",
+    "hook_text": "提出PhysCaP（Physics-Informed Code-as-Policy）机器人操作智能体，针对现有视觉-语言-动作（VLA）策略与…",
+    "key_points": [
+      "提出PhysCaP（Physics-Informed Code-as-Policy）机器人操作智能体，针对现有视觉-语言-动作（VLA）策略与…",
+      "设计了双智能体探索架构（规划器+优先级排序器），平衡探索成本与信息获取效率，避免不必要的过度交互，提升任务完成效率",
+      "无需额外传感器，仅依赖机器人本体感知即可完成物理属性估计，在真实桌面操作与仿真任务上验证了方法的有效性"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-21",
+    "title": "A Collaborative Multi-Modality Interaction for VLA-based End-to-End Autonomous Driving",
+    "link": "http://arxiv.org/abs/2608.20890",
+    "arxiv_id": "2608.20890",
+    "detail_path": "papers/2608.20890/",
+    "cover_path": "covers/2608.20890/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.20890.webp",
+    "preview_text": "现有基于视觉-语言-动作（VLA）模型的端到端自动驾驶（E2E-AD）系统存在两类核心缺陷：一是将驾驶任务建模为视觉问答形式，决策可靠性低、可解释性不足；二是缺乏有效的多模态交互机制，异质传感器与语言指令的信息难以充分融合，长尾驾驶场景下的感知与决策能力受限。 本文提出一种融合多模态交互与多轨迹规划优化的VLA-based E2E-AD系统，核心目标是实现更可靠、可解释、安全的驾驶决策，同时提升系统在长尾驾驶场景下…",
+    "research_unit": "论文作者分别所属以下研究机构：",
+    "hook_text": "现有基于视觉-语言-动作（VLA）模型的端到端自动驾驶（E2E-AD）系统存在两类核心缺陷：一是将驾驶任务建模为视觉问答形式，决策可靠性低、可…",
+    "key_points": [
+      "现有基于视觉-语言-动作（VLA）模型的端到端自动驾驶（E2E-AD）系统存在两类核心缺陷：一是将驾驶任务建模为视觉问答形式，决策可靠性低、可…",
+      "本文提出一种融合多模态交互与多轨迹规划优化的VLA-based E2E-AD系统，核心目标是实现更可靠、可解释、安全的驾驶决策，同时提升系统在…",
+      "该系统采用两阶段训练范式，同时支持道路场景感知（3D目标检测、BEV地图分割）与ego车辆轨迹预测两类任务，可适配自然语言导航指令输入，实现人…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-21",
+    "title": "CertVLA: Certified Defense against Physical Visual Attacks for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.20791",
+    "arxiv_id": "2608.20791",
+    "detail_path": "papers/2608.20791/",
+    "cover_path": "covers/2608.20791/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.20791.webp",
+    "preview_text": "针对Vision-Language-Action（VLA）模型易受局部物理视觉攻击（如对抗补丁、纹理攻击）威胁的问题，现有认证补丁防御仅针对离散标签设计，无法适配连续动作输出与闭环控制的场景 本文提出CertVLA，首个模型无关的闭环VLA控制认证防御框架，可应对有界补丁攻击与纹理攻击，核心解决连续动作的认证判定、单步查询认证向完整闭环执行序列扩展两大关键问题 框架的认证保证独立于补丁内容、生成方式与物理变换，仅要…",
+    "research_unit": "论文作者主要隶属于南洋理工大学（Nanyang Technological University）相关…",
+    "hook_text": "针对Vision-Language-Action（VLA）模型易受局部物理视觉攻击（如对抗补丁、纹理攻击）威胁的问题，现有认证补丁防御仅针对离…",
+    "key_points": [
+      "针对Vision-Language-Action（VLA）模型易受局部物理视觉攻击（如对抗补丁、纹理攻击）威胁的问题，现有认证补丁防御仅针对离…",
+      "本文提出CertVLA，首个模型无关的闭环VLA控制认证防御框架，可应对有界补丁攻击与纹理攻击，核心解决连续动作的认证判定、单步查询认证向完整…",
+      "框架的认证保证独立于补丁内容、生成方式与物理变换，仅要求攻击的投影支撑落在预设的有界区域内，且在满足双掩码闭环正确性条件时可进一步保证任务成功"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-21",
+    "title": "Is Multimodal Speculative Decoding Ready for Diffusion-Based Parallel Drafting? A Survey and Empirical Diagnosis",
+    "link": "http://arxiv.org/abs/2608.20743",
+    "arxiv_id": "2608.20743",
+    "detail_path": "papers/2608.20743/",
+    "cover_path": "covers/2608.20743/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.20743.webp",
+    "preview_text": "本文是一篇针对多模态投机解码的综述与实证诊断研究，核心研究问题为：多模态模型是否已具备采用扩散式并行草稿（L2级草稿侧并行）的落地可行性 针对现有多模态投机解码研究多聚焦于输入压缩、适配器对齐、候选覆盖、模态特定验证等方向，尚未系统探索块并行生成式草稿在多模态场景适配性的空白，本文结合跨架构实证分析展开研究 研究覆盖视觉-语言、视频-语言、视觉-语言-动作、语音音频、自回归视觉生成五大多模态应用领域，从草稿侧并行性…",
+    "research_unit": "中国联通数据科学与人工智能研究院",
+    "hook_text": "本文是一篇针对多模态投机解码的综述与实证诊断研究，核心研究问题为：多模态模型是否已具备采用扩散式并行草稿（L2级草稿侧并行）的落地可行性",
+    "key_points": [
+      "本文是一篇针对多模态投机解码的综述与实证诊断研究，核心研究问题为：多模态模型是否已具备采用扩散式并行草稿（L2级草稿侧并行）的落地可行性",
+      "针对现有多模态投机解码研究多聚焦于输入压缩、适配器对齐、候选覆盖、模态特定验证等方向，尚未系统探索块并行生成式草稿在多模态场景适配性的空白，本…",
+      "研究覆盖视觉-语言、视频-语言、视觉-语言-动作、语音音频、自回归视觉生成五大多模态应用领域，从草稿侧并行性与跨模态信息交互双视角梳理领域现状…"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-21",
+    "title": "ForeTime-VLA: Causal Future-Token Distillation from a World Action Model for Conveyor-Belt Manipulation",
+    "link": "http://arxiv.org/abs/2608.20735",
+    "arxiv_id": "2608.20735",
+    "detail_path": "papers/2608.20735/",
+    "cover_path": "covers/2608.20735/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.20735.webp",
+    "preview_text": "针对动态传送带抓取任务，现有VLA策略仅依赖当前观察，无法预见接触事件和时间，导致在移动物体操作中表现不佳 提出 ForeTime-VLA，通过教师-学生框架将 Fast-WAM（世界动作模型）的未来感知、动作等效表示蒸馏为紧凑的64维未来令牌，学生仅需8帧因果历史即可预测，推理时无需未来帧或视频级教师前向传播 在保留 π₀.₅ 原始流程匹配动作目标不变的前提下，通过未来、操作阶段和转换时间条件提升动态操作性能，实…",
+    "research_unit": "清华大学 (Tsinghua University, Beijing, China)",
+    "hook_text": "针对动态传送带抓取任务，现有VLA策略仅依赖当前观察，无法预见接触事件和时间，导致在移动物体操作中表现不佳",
+    "key_points": [
+      "针对动态传送带抓取任务，现有VLA策略仅依赖当前观察，无法预见接触事件和时间，导致在移动物体操作中表现不佳",
+      "提出 ForeTime-VLA，通过教师-学生框架将 Fast-WAM（世界动作模型）的未来感知、动作等效表示蒸馏为紧凑的64维未来令牌，学生…",
+      "在保留 π₀.₅ 原始流程匹配动作目标不变的前提下，通过未来、操作阶段和转换时间条件提升动态操作性能，实现可部署的高效策略"
+    ],
+    "reading_minutes": 10,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-20",
+    "title": "Logic-VLA: A Temporal Logic Conditioned Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2608.20556",
+    "arxiv_id": "2608.20556",
+    "detail_path": "papers/2608.20556/",
+    "cover_path": "covers/2608.20556/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.20556.webp",
+    "preview_text": "针对现有视觉-语言-动作（VLA）模型的自然语言指令无法精确表达安全关键、时空约束类需求的问题，提出Logic-VLA，一种可被形式化时序逻辑条件化的VLA模型 核心研究目标是让单一预训练VLA在推理时无需针对每个新需求单独训练，即可适配不同的信号时序逻辑（STL）形式化需求，同时保留原自然语言任务跟随能力 模型聚焦于VLA的需求感知后训练范式，将STL规范作为推理时的策略输入，解决形式化需求与自然语言任务协同执行…",
+    "research_unit": "所有作者均隶属于南加州大学Thomas Lord计算机科学系，其中Yiqi Zhao与Jyotirmo…",
+    "hook_text": "针对现有视觉-语言-动作（VLA）模型的自然语言指令无法精确表达安全关键、时空约束类需求的问题，提出Logic-VLA，一种可被形式化时序逻辑…",
+    "key_points": [
+      "针对现有视觉-语言-动作（VLA）模型的自然语言指令无法精确表达安全关键、时空约束类需求的问题，提出Logic-VLA，一种可被形式化时序逻辑…",
+      "核心研究目标是让单一预训练VLA在推理时无需针对每个新需求单独训练，即可适配不同的信号时序逻辑（STL）形式化需求，同时保留原自然语言任务跟随…",
+      "模型聚焦于VLA的需求感知后训练范式，将STL规范作为推理时的策略输入，解决形式化需求与自然语言任务协同执行的难题"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-20",
+    "title": "EndoLIFT: Language-Disambiguated Latent-Conditioned Rectified Flow for Bidirectional Endoscopic Control",
+    "link": "http://arxiv.org/abs/2608.20478",
+    "arxiv_id": "2608.20478",
+    "detail_path": "papers/2608.20478/",
+    "cover_path": "covers/2608.20478/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.20478.webp",
+    "preview_text": "论文聚焦胃肠道内镜双向操作中的核心挑战，识别并形式化了意图别名（intent aliasing）问题：当外部程序意图（正常前进/紧急撤回）切换但内镜视觉场景未发生明显变化时，视觉上几乎相同的观测需要相反的轴向动作，仅靠视觉输入无法区分正确的操作模式。 研究目标是提出语言消歧的双向内镜视觉-语言-动作（VLA）策略，通过自然语言指令明确指定当前操作意图，结合轨迹潜变量条件生成模型，实现可控、高精度的双向内镜运动。 论…",
+    "research_unit": "香港中文大学（The Chinese University of Hong Kong, Hong Ko…",
+    "hook_text": "论文聚焦胃肠道内镜双向操作中的核心挑战，识别并形式化了意图别名（intent aliasing）问题：当外部程序意图（正常前进/紧急撤回）切换…",
+    "key_points": [
+      "论文聚焦胃肠道内镜双向操作中的核心挑战，识别并形式化了意图别名（intent aliasing）问题：当外部程序意图（正常前进/紧急撤回）切换…",
+      "研究目标是提出语言消歧的双向内镜视觉-语言-动作（VLA）策略，通过自然语言指令明确指定当前操作意图，结合轨迹潜变量条件生成模型，实现可控、高…",
+      "论文进一步通过严格的消融实验、跨域幻影迁移和离体组织验证，验证所提方法的有效性和泛化性，评估其向临床转化的潜力。"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-20",
     "title": "Planning-Oriented End-to-End Autonomous Driving: Architectures, Evaluation, and Emerging Paradigms",
     "link": "http://arxiv.org/abs/2608.20111",
@@ -36268,7 +36492,7 @@
     "arxiv_id": "2506.14079",
     "detail_path": "papers/2506.14079/",
     "cover_path": "covers/2506.14079/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2506.14079.webp",
     "preview_text": "提出了 FormGym，首个用于评估端到端表单填写任务的 benchmark，专门针对文档样式表单（如 PDF 表格）的自动填充 针对现有数据集仅关注解析、提取和网络表单交互的问题，构建了包含多种语言和领域的多样化表单数据集 发现当前视觉语言代理（VLAs）在表单填写任务上表现极差，主要原因是字段定位能力不足 开发了 FieldFinder 工具来增强 VLA 的字段定位能力，显著提升填写准确率",
     "research_unit": "Columbia University - Matthew Toles, Rattandeep Sin…",
     "hook_text": "提出了 FormGym，首个用于评估端到端表单填写任务的 benchmark，专门针对文档样式表单（如 PDF 表格）的自动填充",
@@ -36296,7 +36520,7 @@
     "arxiv_id": "2506.13757",
     "detail_path": "papers/2506.13757/",
     "cover_path": "covers/2506.13757/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2506.13757.webp",
     "preview_text": "论文提出了 AutoVLA，一种用于端到端自动驾驶的视觉-语言-动作（VLA）模型，旨在解决现有模型在动作可行性、结构复杂性和推理灵活性方面的不足。 该模型将连续轨迹离散化为物理动作标记，统一了推理和动作生成，支持“快思考”（直接轨迹生成）和“慢思考”（思维链推理）两种模式。 通过引入基于强化学习的微调方法，模型实现了自适应推理，在简单场景中减少冗余推理以提高效率，在复杂场景中保持高规划性能。",
     "research_unit": "University of California, Los Angeles",
     "hook_text": "论文提出了 AutoVLA，一种用于端到端自动驾驶的视觉-语言-动作（VLA）模型，旨在解决现有模型在动作可行性、结构复杂性和推理灵活性方面的…",
