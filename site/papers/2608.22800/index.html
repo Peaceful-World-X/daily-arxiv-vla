@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Triplet2Track: A Hierarchical System with Object-Centric Representations for Reliable Long-Horizon Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 Triplet-to-Track 系统 (TTS)，一个面向可靠长时域机器人操作的闭环分层模仿学习框架 旨在解决现有端到端 VLA 模型数据需求大、可解释性差，以及分层方法子目标与观测/动作脱节、缺乏闭环验证的问题 通过将高层子目标表示为 实例级三元组，并将其转化为 连续轨迹先验 供低层执行，同时引入在线监控与重规划，提升长时域任务的可靠性" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.22800">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.22800.webp" alt="Triplet2Track: A Hierarchical System with Object-Centric Representations for Reliable Long-Horizon Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 Triplet-to-Track 系统 (TTS)，一个面向可靠长时域机器人操作的闭环分层模仿学习框架</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Triplet2Track: A Hierarchical System with Object-Centric Representations for Reliable Long-Horizon Manipulation</h1>
+            <div class="detail-meta">2026-08-24 · <a href="http://arxiv.org/abs/2608.22800" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.22800" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.22800</span></div>
+            <p class="detail-summary">提出 Triplet-to-Track 系统 (TTS)，一个面向可靠长时域机器人操作的闭环分层模仿学习框架 旨在解决现有端到端 VLA 模型数据需求大、可解释性差，以及分层方法子目标与观测/动作脱节、缺乏闭环验证的问题 通过将高层子目标表示为 实例级三元组，并将其转化为 连续轨迹先验 供低层执行，同时引入在线监控与重规划，提升长时域任务的可靠性</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">上海交通大学 人工智能学院（School of Artificial Intelligence, Sh…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.22800/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 Triplet-to-Track 系统 (TTS)，一个面向可靠长时域机器人操作的闭环分层模仿学习框架</p>
+  <ul class="reading-intro-points"><li>提出 Triplet-to-Track 系统 (TTS)，一个面向可靠长时域机器人操作的闭环分层模仿学习框架</li><li>旨在解决现有端到端 VLA 模型数据需求大、可解释性差，以及分层方法子目标与观测/动作脱节、缺乏闭环验证的问题</li><li>通过将高层子目标表示为 实例级三元组，并将其转化为 连续轨迹先验 供低层执行，同时引入在线监控与重规划，提升长时域任务的可靠性</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>上海交通大学 人工智能学院</strong>（School of Artificial Intelligence, Shanghai Jiao Tong University）</li><li><strong>萨塞克斯大学 工程与信息学学院</strong>（School of Engineering and Informatics, University of Sussex）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>Triplet-to-Track 系统 (TTS)</strong>，一个面向可靠长时域机器人操作的闭环分层模仿学习框架</li><li>旨在解决现有端到端 VLA 模型数据需求大、可解释性差，以及分层方法子目标与观测/动作脱节、缺乏闭环验证的问题</li><li>通过将高层子目标表示为 <strong>实例级三元组</strong>，并将其转化为 <strong>连续轨迹先验</strong> 供低层执行，同时引入在线监控与重规划，提升长时域任务的可靠性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>TTS 系统</strong>，利用人类视频降低对机器人数据的依赖，通过基于观测的监控与重规划提升执行可靠性</li><li>设计了一种结构化规划与控制接口，将 <strong>实例级三元组</strong> 作为高层子目标，并转化为 <strong>连续轨迹先验</strong> 用于低层执行，使任务进展可验证</li><li>在真实世界长时域操作任务中验证了 TTS 的有效性，在扰动和有限数据条件下表现出可靠性能，并展现出对未见对象实例和任务组合的泛化能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>三层层次架构</strong>：任务规划器（Task Planner）→ 轨迹预测器（Track Predictor）→ 动作策略（Action Policy）</li><li><strong>任务规划器</strong>：包含轻量级 Transformer 关系预测器（LTP）与 LoRA 微调 VLM 的级联检测模块，以及基于时序图的下一三元组生成器，约束规划在可行转换内，抑制幻觉</li><li><strong>轨迹预测器</strong>：以三元组转换（如 (A, on, B) → (A, grasped, B)）为条件，预测实体对齐的连续点轨迹，作为运动先验</li><li><strong>动作策略</strong>：将预测轨迹先验与当前观测融合，通过 Transformer 骨干和动作头输出机器人动作，采用行为克隆训练</li><li><strong>闭环执行</strong>：在线检测关系变化，验证子目标达成，若违反守卫条件则触发重定位与重规划</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>任务与数据</strong>：在真实世界 7-DoF <strong>Franka</strong> 机器人上评估三类长时域任务：动态天平平衡（DSB）、顺序堆叠（SS）、多样化拾放（DPP）；每个任务收集 30 条机器人演示和 50 条人类演示，仅 5 条轨迹标注</li><li><strong>模型规模</strong>：未明确给出总参数量，但涉及 <strong>InternVL2.5</strong>（VLM）、<strong>GPT-4o</strong>（用于规划）、<strong>Grounding-DINO</strong> 和 <strong>SAM2</strong>（检测与分割）、<strong>CoTracker</strong>（点跟踪）等模型</li><li><strong>训练资源</strong>：使用 <strong>两台 NVIDIA A100 GPU</strong>，PyTorch 框架，CUDA 11.8</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估基准</strong>：在三个真实世界长时域任务（DSB、SS、DPP）上，与 <strong>FT-Pi0.5</strong>（端到端 VLA）、<strong>SeeDo</strong>（QA 式分层规划）和 <strong>PALO</strong>（语义分解规划）进行对比</li><li><strong>主要指标</strong>：任务成功率（%），涵盖 Seen、Unseen（组合/跨类别泛化）和扰动（Perturbed）设置</li><li><strong>关键结果</strong>：TTS 在 7 个评估设置中平均成功率达 <strong>74.8%</strong>，显著优于最佳基线 SeeDo 的 30.4%；在扰动测试中保持较高成功率（如 DSB 扰动下 60.0% vs 基线 0.0%）；消融实验验证了各组件（任务规划器、轨迹预测器、时序图、关系预测器）的必要性，并展示了利用有限动作标注数据（几十条）即可实现合理性能的数据效率</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.22869/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">UniMem: Unifying Multimodal Memory and Control for Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.22419/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Robust Bimanual Vision-Language-Action Models via Embarrassingly Simple Modality Masking</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

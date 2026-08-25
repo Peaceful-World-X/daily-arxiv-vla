@@ -1,5 +1,285 @@
 [
   {
+    "date": "2026-08-24",
+    "title": "Act with Intent: Distilling Behavior Intent for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.23478",
+    "arxiv_id": "2608.23478",
+    "detail_path": "papers/2608.23478/",
+    "cover_path": "covers/2608.23478/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.23478.webp",
+    "preview_text": "论文提出了一种名为Intention Distillation (Indi) 的方法，旨在为视觉-语言-动作（VLA）模型的动作解码器提供行为层面的意图监督。 现有方法主要通过行为克隆或未来状态、运动轨迹等信号进行监督，但未能显式地建模行为序列所要实现的中期语义目标（即意图）。 论文旨在解决如何让VLA动作解码器在生成动作的同时，显式地建模和理解当前行为在指令指导下所服务的局部目标。",
+    "research_unit": "GSAI, POSTECH (Graduate School of Artificial Intell…",
+    "hook_text": "论文提出了一种名为Intention Distillation (Indi) 的方法，旨在为视觉-语言-动作（VLA）模型的动作解码器提供行为…",
+    "key_points": [
+      "论文提出了一种名为Intention Distillation (Indi) 的方法，旨在为视觉-语言-动作（VLA）模型的动作解码器提供行为…",
+      "现有方法主要通过行为克隆或未来状态、运动轨迹等信号进行监督，但未能显式地建模行为序列所要实现的中期语义目标（即意图）。",
+      "论文旨在解决如何让VLA动作解码器在生成动作的同时，显式地建模和理解当前行为在指令指导下所服务的局部目标。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-24",
+    "title": "ROS2SmolVLA: Enabling Small Vision-Language-Action Models for Integration into Industrial-Grade Lightweight Robots",
+    "link": "http://arxiv.org/abs/2608.23320",
+    "arxiv_id": "2608.23320",
+    "detail_path": "papers/2608.23320/",
+    "cover_path": "covers/2608.23320/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.23320.webp",
+    "preview_text": "提出 ROS2SmolVLA，一个将 Hugging Face 的轻量级视觉-语言-动作模型 SmolVLA 与工业级轻量机器人（如 Universal Robots）通过 ROS 2 集成的开源框架 解决当前 VLA 模型在工业环境中部署面临的计算资源限制、合规性挑战以及实验室硬件与真实工业硬件之间的差距问题 验证 SmolVLA 在 Universal Robots UR10e 上执行拾取放置任务的可行性，并提…",
+    "research_unit": "奥格斯堡大学机电一体化系 (University of Augsburg, Chair of Mech…",
+    "hook_text": "提出 ROS2SmolVLA，一个将 Hugging Face 的轻量级视觉-语言-动作模型 SmolVLA 与工业级轻量机器人（如 Univ…",
+    "key_points": [
+      "提出 ROS2SmolVLA，一个将 Hugging Face 的轻量级视觉-语言-动作模型 SmolVLA 与工业级轻量机器人（如 Univ…",
+      "解决当前 VLA 模型在工业环境中部署面临的计算资源限制、合规性挑战以及实验室硬件与真实工业硬件之间的差距问题",
+      "验证 SmolVLA 在 Universal Robots UR10e 上执行拾取放置任务的可行性，并提供部署指导"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Think Only When Needed: Prompt-Authority Control for Selective Slow-Path Intervention in Vision-Language-Action Manipulation",
+    "link": "http://arxiv.org/abs/2608.23224",
+    "arxiv_id": "2608.23224",
+    "detail_path": "papers/2608.23224/",
+    "cover_path": "covers/2608.23224/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.23224.webp",
+    "preview_text": "论文针对冻结的视觉-语言-动作（VLA）策略在测试时通过检索文本进行增强时出现的提示形式崩溃（prompt-form collapse）问题，即任意附加文本都会导致成功率急剧下降 提出 TOWN-VLA（Think Only When Needed），一种提示授权控制接口，将候选生成与对策略输入的修改权限分离，仅允许经过授权的紧凑规范指令替换原始提示，否则严格恢复原始提示 目标是在不重新训练策略的前提下，通过约束检…",
+    "research_unit": "作者所属机构信息未在摘要中明确列出，作者包括 Zhiruo Zhou、Zelin Li、Xiwen C…",
+    "hook_text": "论文针对冻结的视觉-语言-动作（VLA）策略在测试时通过检索文本进行增强时出现的提示形式崩溃（prompt-form collapse）问题…",
+    "key_points": [
+      "论文针对冻结的视觉-语言-动作（VLA）策略在测试时通过检索文本进行增强时出现的提示形式崩溃（prompt-form collapse）问题…",
+      "提出 TOWN-VLA（Think Only When Needed），一种提示授权控制接口，将候选生成与对策略输入的修改权限分离，仅允许经过…",
+      "目标是在不重新训练策略的前提下，通过约束检索文本的注入方式，提升 VLA 系统在扰动下的鲁棒性和任务成功率"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Pointing-VLA: Typed Spatial Grounding Interfaces for Vision-Language-Action Manipulation",
+    "link": "http://arxiv.org/abs/2608.23138",
+    "arxiv_id": "2608.23138",
+    "detail_path": "papers/2608.23138/",
+    "cover_path": "covers/2608.23138/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.23138.webp",
+    "preview_text": "提出 Pointing-VLA，一种基于隐藏状态空间读取的视觉-语言-动作（VLA）接口，用于解决现有 VLA 模型通过自回归文本坐标输出空间信息时存在的解析脆弱、几何信息丢失等问题 将空间接地（grounding）重新定义为类型化接口预测，而非文本坐标生成，并通过几何特定的头部（点、物体功能接地热图、视觉轨迹）直接输出机器人可用的空间目标 在仿真和真实机器人部署中验证了该接口在拾取-放置任务中的有效性，实现了更优…",
+    "research_unit": "作者单位未在论文中明确列出",
+    "hook_text": "提出 Pointing-VLA，一种基于隐藏状态空间读取的视觉-语言-动作（VLA）接口，用于解决现有 VLA 模型通过自回归文本坐标输出空间…",
+    "key_points": [
+      "提出 Pointing-VLA，一种基于隐藏状态空间读取的视觉-语言-动作（VLA）接口，用于解决现有 VLA 模型通过自回归文本坐标输出空间…",
+      "将空间接地（grounding）重新定义为类型化接口预测，而非文本坐标生成，并通过几何特定的头部（点、物体功能接地热图、视觉轨迹）直接输出机器…",
+      "在仿真和真实机器人部署中验证了该接口在拾取-放置任务中的有效性，实现了更优的成功率和更快的推理速度"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-24",
+    "title": "InstructMove: A Text-Indispensable Benchmark for Instruction-Following Manipulation",
+    "link": "http://arxiv.org/abs/2608.22990",
+    "arxiv_id": "2608.22990",
+    "detail_path": "papers/2608.22990/",
+    "cover_path": "covers/2608.22990/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.22990.webp",
+    "preview_text": "提出了 InstructMove，一个专为指令遵循操作设计的“文本不可或缺”基准测试，专注于衡量视觉-语言-动作（VLA）模型是否真正依赖语言指令来做出决策。 解决了现有基准测试中普遍存在的“视觉捷径”问题，即模型仅通过视觉场景就能推断出正确动作，导致语言指令降级为辅助信息而非必要的决策信号。 通过在场景中引入语义和空间上的干扰项（distractors），迫使模型必须理解和遵循文本指令，才能从多个视觉上看似合理且…",
+    "research_unit": "Horizon Robotics",
+    "hook_text": "提出了 InstructMove，一个专为指令遵循操作设计的“文本不可或缺”基准测试，专注于衡量视觉-语言-动作（VLA）模型是否真正依赖语言…",
+    "key_points": [
+      "提出了 InstructMove，一个专为指令遵循操作设计的“文本不可或缺”基准测试，专注于衡量视觉-语言-动作（VLA）模型是否真正依赖语言…",
+      "解决了现有基准测试中普遍存在的“视觉捷径”问题，即模型仅通过视觉场景就能推断出正确动作，导致语言指令降级为辅助信息而非必要的决策信号。",
+      "通过在场景中引入语义和空间上的干扰项（distractors），迫使模型必须理解和遵循文本指令，才能从多个视觉上看似合理且物理上可行的候选项中…"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-08-24",
+    "title": "UniMem: Unifying Multimodal Memory and Control for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.22869",
+    "arxiv_id": "2608.22869",
+    "detail_path": "papers/2608.22869/",
+    "cover_path": "covers/2608.22869/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.22869.webp",
+    "preview_text": "提出 UniMem，一个统一多模态记忆与控制的框架，解决视觉-语言-动作（VLA）模型在非马尔可夫任务中缺乏记忆的问题 现有分层记忆方法引入额外视觉语言模型（VLM），造成记忆瓶颈和割裂的训练流程，UniMem 将高层次多模态记忆与低层次控制统一在一个骨干网络下 通过事件驱动的记忆更新、关键帧编码和缓存机制，实现高效记忆保持与实时推理",
+    "research_unit": "Stanford University, Stanford, CA, USA",
+    "hook_text": "提出 UniMem，一个统一多模态记忆与控制的框架，解决视觉-语言-动作（VLA）模型在非马尔可夫任务中缺乏记忆的问题",
+    "key_points": [
+      "提出 UniMem，一个统一多模态记忆与控制的框架，解决视觉-语言-动作（VLA）模型在非马尔可夫任务中缺乏记忆的问题",
+      "现有分层记忆方法引入额外视觉语言模型（VLM），造成记忆瓶颈和割裂的训练流程，UniMem 将高层次多模态记忆与低层次控制统一在一个骨干网络下",
+      "通过事件驱动的记忆更新、关键帧编码和缓存机制，实现高效记忆保持与实时推理"
+    ],
+    "reading_minutes": 4,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Triplet2Track: A Hierarchical System with Object-Centric Representations for Reliable Long-Horizon Manipulation",
+    "link": "http://arxiv.org/abs/2608.22800",
+    "arxiv_id": "2608.22800",
+    "detail_path": "papers/2608.22800/",
+    "cover_path": "covers/2608.22800/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.22800.webp",
+    "preview_text": "提出 Triplet-to-Track 系统 (TTS)，一个面向可靠长时域机器人操作的闭环分层模仿学习框架 旨在解决现有端到端 VLA 模型数据需求大、可解释性差，以及分层方法子目标与观测/动作脱节、缺乏闭环验证的问题 通过将高层子目标表示为 实例级三元组，并将其转化为 连续轨迹先验 供低层执行，同时引入在线监控与重规划，提升长时域任务的可靠性",
+    "research_unit": "上海交通大学 人工智能学院（School of Artificial Intelligence, Sh…",
+    "hook_text": "提出 Triplet-to-Track 系统 (TTS)，一个面向可靠长时域机器人操作的闭环分层模仿学习框架",
+    "key_points": [
+      "提出 Triplet-to-Track 系统 (TTS)，一个面向可靠长时域机器人操作的闭环分层模仿学习框架",
+      "旨在解决现有端到端 VLA 模型数据需求大、可解释性差，以及分层方法子目标与观测/动作脱节、缺乏闭环验证的问题",
+      "通过将高层子目标表示为 实例级三元组，并将其转化为 连续轨迹先验 供低层执行，同时引入在线监控与重规划，提升长时域任务的可靠性"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-23",
+    "title": "Robust Bimanual Vision-Language-Action Models via Embarrassingly Simple Modality Masking",
+    "link": "http://arxiv.org/abs/2608.22419",
+    "arxiv_id": "2608.22419",
+    "detail_path": "papers/2608.22419/",
+    "cover_path": "covers/2608.22419/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.22419.webp",
+    "preview_text": "查询式视觉-语言-动作模型在双手机器人操作中常出现注意力分散、动作不连续和执行失败，本文将其归因于多视图与语言的不稳定融合 提出一种仅训练时使用的模态掩码机制，通过随机隐藏部分模态通道（如腕部视图、语言、动作查询），迫使策略依赖可靠证据，而无需架构修改或大规模预训练 在仿真和真实世界双手机器人任务上验证该方法的有效性，显著提升干净场景和分布偏移场景下的成功率",
+    "research_unit": "Shanghai Innovation Institute",
+    "hook_text": "查询式视觉-语言-动作模型在双手机器人操作中常出现注意力分散、动作不连续和执行失败，本文将其归因于多视图与语言的不稳定融合",
+    "key_points": [
+      "查询式视觉-语言-动作模型在双手机器人操作中常出现注意力分散、动作不连续和执行失败，本文将其归因于多视图与语言的不稳定融合",
+      "提出一种仅训练时使用的模态掩码机制，通过随机隐藏部分模态通道（如腕部视图、语言、动作查询），迫使策略依赖可靠证据，而无需架构修改或大规模预训练",
+      "在仿真和真实世界双手机器人任务上验证该方法的有效性，显著提升干净场景和分布偏移场景下的成功率"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-22",
+    "title": "CounterAlign: Counterfactual Supervision for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.21740",
+    "arxiv_id": "2608.21740",
+    "detail_path": "papers/2608.21740/",
+    "cover_path": "covers/2608.21740/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.21740.webp",
+    "preview_text": "提出 CounterAlign，一个离线强化学习框架，通过反事实重标记将专家演示转化为纠正性监督，用于训练视觉-语言-动作（VLA）模型。 解决行为克隆（BC）缺乏负样本信号，以及 VLA 模型对指令改写、目标位置变化等扰动鲁棒性不足的问题。 无需额外数据收集、环境交互或奖励标注，仅从现有专家演示中提取更多监督信号。",
+    "research_unit": "作者：Haru Kondoh, Kei Ota, Asako Kanezaki, Yueh-Hua W…",
+    "hook_text": "提出 CounterAlign，一个离线强化学习框架，通过反事实重标记将专家演示转化为纠正性监督，用于训练视觉-语言-动作（VLA）模型。",
+    "key_points": [
+      "提出 CounterAlign，一个离线强化学习框架，通过反事实重标记将专家演示转化为纠正性监督，用于训练视觉-语言-动作（VLA）模型。",
+      "解决行为克隆（BC）缺乏负样本信号，以及 VLA 模型对指令改写、目标位置变化等扰动鲁棒性不足的问题。",
+      "无需额外数据收集、环境交互或奖励标注，仅从现有专家演示中提取更多监督信号。"
+    ],
+    "reading_minutes": 4,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-18",
+    "title": "Geo-VLA: Geometry-Aware Vision-Language-Action Planning via Internalization of Map Semantics",
+    "link": "http://arxiv.org/abs/2608.21440",
+    "arxiv_id": "2608.21440",
+    "detail_path": "papers/2608.21440/",
+    "cover_path": "covers/2608.21440/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.21440.webp",
+    "preview_text": "针对现有视觉-语言-动作（VLA）模型在自动驾驶规划中，因仅依赖图像而难以充分捕捉道路几何与拓扑结构的问题，提出改进方案 核心目标是让 VLA 模型在训练时内部化地图语义，从而在推理时不依赖高精地图，即可生成更符合道路结构的轨迹 通过构建几何导向的问答数据集（Geo-QA），并设计两阶段训练框架，增强视觉语言表征对规划相关道路几何的感知能力",
+    "research_unit": "论文作者主要来自中国的科研机构，通信作者为 Bochao Zou（未在摘要中明确列出具体大学或公司名称…",
+    "hook_text": "针对现有视觉-语言-动作（VLA）模型在自动驾驶规划中，因仅依赖图像而难以充分捕捉道路几何与拓扑结构的问题，提出改进方案",
+    "key_points": [
+      "针对现有视觉-语言-动作（VLA）模型在自动驾驶规划中，因仅依赖图像而难以充分捕捉道路几何与拓扑结构的问题，提出改进方案",
+      "核心目标是让 VLA 模型在训练时内部化地图语义，从而在推理时不依赖高精地图，即可生成更符合道路结构的轨迹",
+      "通过构建几何导向的问答数据集（Geo-QA），并设计两阶段训练框架，增强视觉语言表征对规划相关道路几何的感知能力"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-21",
     "title": "Just Noticeable Difference Modeling for Token Compression in Vision-Language-Action Models",
     "link": "http://arxiv.org/abs/2608.21247",

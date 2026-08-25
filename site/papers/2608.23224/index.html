@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Think Only When Needed: Prompt-Authority Control for Selective Slow-Path Intervention in Vision-Language-Action Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文针对冻结的视觉-语言-动作（VLA）策略在测试时通过检索文本进行增强时出现的提示形式崩溃（prompt-form collapse）问题，即任意附加文本都会导致成功率急剧下降 提出 TOWN-VLA（Think Only When Needed），一种提示授权控制接口，将候选生成与对策略输入的修改权限分离，仅允许经过授权的紧凑规范指令替换原始提示，否则严格恢复原始提示 目标是在不重新训练策略的前提下，通过约束检…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.23224">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.23224.webp" alt="Think Only When Needed: Prompt-Authority Control for Selective Slow-Path Intervention in Vision-Language-Action Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文针对冻结的视觉-语言-动作（VLA）策略在测试时通过检索文本进行增强时出现的提示形式崩溃（prompt-form collapse）问题…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Think Only When Needed: Prompt-Authority Control for Selective Slow-Path Intervention in Vision-Language-Action Manipulation</h1>
+            <div class="detail-meta">2026-08-24 · <a href="http://arxiv.org/abs/2608.23224" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.23224" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.23224</span></div>
+            <p class="detail-summary">论文针对冻结的视觉-语言-动作（VLA）策略在测试时通过检索文本进行增强时出现的提示形式崩溃（prompt-form collapse）问题，即任意附加文本都会导致成功率急剧下降 提出 TOWN-VLA（Think Only When Needed），一种提示授权控制接口，将候选生成与对策略输入的修改权限分离，仅允许经过授权的紧凑规范指令替换原始提示，否则严格恢复原始提示 目标是在不重新训练策略的前提下，通过约束检…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者所属机构信息未在摘要中明确列出，作者包括 Zhiruo Zhou、Zelin Li、Xiwen C…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.23224/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文针对冻结的视觉-语言-动作（VLA）策略在测试时通过检索文本进行增强时出现的提示形式崩溃（prompt-form collapse）问题…</p>
+  <ul class="reading-intro-points"><li>论文针对冻结的视觉-语言-动作（VLA）策略在测试时通过检索文本进行增强时出现的提示形式崩溃（prompt-form collapse）问题…</li><li>提出 TOWN-VLA（Think Only When Needed），一种提示授权控制接口，将候选生成与对策略输入的修改权限分离，仅允许经过…</li><li>目标是在不重新训练策略的前提下，通过约束检索文本的注入方式，提升 VLA 系统在扰动下的鲁棒性和任务成功率</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者所属机构信息未在摘要中明确列出，作者包括 <strong>Zhiruo Zhou</strong>、<strong>Zelin Li</strong>、<strong>Xiwen Chen</strong>、<strong>Jiazhuo Li</strong>、<strong>Chenwei Wang</strong>、<strong>Huiming Chen</strong>、<strong>Xiaojun Zhu</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文针对冻结的视觉-语言-动作（VLA）策略在测试时通过检索文本进行增强时出现的<strong>提示形式崩溃（prompt-form collapse）</strong>问题，即任意附加文本都会导致成功率急剧下降</li><li>提出 <strong>TOWN-VLA（Think Only When Needed）</strong>，一种提示授权控制接口，将候选生成与对策略输入的修改权限分离，仅允许经过授权的紧凑规范指令替换原始提示，否则严格恢复原始提示</li><li>目标是在不重新训练策略的前提下，通过约束检索文本的注入方式，提升 VLA 系统在扰动下的鲁棒性和任务成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次将<strong>提示授权控制（prompt-authority control）</strong>定义为冻结 VLA 的测试时接口问题，并识别出<strong>提示形式崩溃</strong>为其关键失败模式，原始附加文本使平均成功率从 92.47% 降至 3.00%</li><li>实现了<strong>提案与授权分离</strong>的冷冻策略边界控制：TOWN-VLA 仅允许规范指导，拒绝时精确恢复原始提示，并将检查限制在 Top-2 候选内，保证了可审计的运行时状态</li><li>在匹配评估中，TOWN-VLA 将 <strong>LIBERO-Plus</strong> 成功率从 69.46% 提升至 73.07%（+362 个成功案例），在物理 <strong>PiPER</strong> 臂上从 52.7% 提升至 78.7%，无策略重训练</li><li>量化了<strong>选择性慢路径计算</strong>的上界，通过预言机路由在保持 2,826 次成功的同时将慢路径调用减半，并揭示了无预言机准入校准的挑战</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>使用<strong>兼容性重排序胶囊（Compatibility-Reranked Capsule）</strong>：基于 CLIP 文本特征和固定解析器提取对象-目标对，通过结构化兼容性得分重排序检索到的演示轨迹，不训练，仅改变检查顺序</li><li>采用<strong>Top-2 失效关闭级联（Top-2 Fail-Closed Cascade）</strong>：硬性检查器按重排序结果检查至多两个候选，若任一通过兼容性检查则渲染为规范指令（如 "put [object] [relation] [target]"），否则精确恢复原始 Base 提示，保证字节相同</li><li>引入<strong>任务先验准入（Task-Prior Admission）</strong>作为预言机控制，利用基准标签预先指定哪些任务允许慢路径调用，用于量化可移除计算的上界，但不用于实际部署</li><li>接口保证可审计的运行时状态：绕过、检查但未授权、授权三种状态，并记录候选 ID、冲突原因、提示哈希，实现提案顺序、授权及控制器输入的分离</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>主要数据集：<strong>LIBERO-Plus</strong> 基准，包含 7 个扰动轴（相机、机器人、语言、光照、背景、噪声、布局）和 4 个任务套件，采用 10,030 个回合的匹配评估</li><li>基础策略：<strong>OpenVLA-OFT</strong>（优化微调版本），参数冻结，使用单视角输入</li><li>记忆库：<strong>48 条</strong>演示轨迹，不包含评估回放，仅用于检索候选文本</li><li>计算资源：<strong>NVIDIA RTX A6000</strong> GPU，CUDA 12.1，无头 MuJoCo 渲染</li><li>物理实验：<strong>PiPER</strong> 机器人臂，双 <strong>RealSense D405</strong> 相机，冻结的 <strong>π0.5</strong> 模型，每个场景 50 次试验</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>在 <strong>LIBERO-Plus</strong> 上，TOWN-VLA（始终开启）成功率为 73.07%，较 Base 的 69.46% 提升 3.61 个百分点（配对单元格 95% CI: 1.89–5.45），在 7 个轴中有 6 个轴改善，语言和机器人轴增益最大</li><li><strong>提示形式崩溃</strong>诊断：原始附加文本成功率为 3.00%，而规范指令恢复至 91.08%；在 500 状态的因子控制中，语义正确和长度匹配的无意义附加均导致 0/500 成功，而精确恢复和规范指令几乎保持全部成功</li><li><strong>授权与恢复审计</strong>：在 900 条路由中，525 条恢复哈希一致的 Base 提示，375 条授权提示保持任务签名；在受限 OOD 平移下，失效关闭级联成功率高于 Base（空间 89.33% vs 85.80%，物体 97.53% vs 93.93%）</li><li><strong>选择性计算</strong>：预言机路由在 3,000 个配对状态上保持成功率 94.20% 不变，同时将慢路径调用减半，决策延迟降低 10.24%；无预言机门控在 36 个保留单元格中仅授权 2 个，匹配 Base 的 91.81% 成功率，但未能识别应移除的调用</li><li><strong>物理机器人迁移</strong>：在 <strong>PiPER</strong> 上，TOWN-VLA 整体成功率从 52.7% 提升至 78.7%（p=3.16×10⁻⁶），三个场景均有 22–32 个百分点的提升，且提示在回放前一次性解析</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.23320/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ROS2SmolVLA: Enabling Small Vision-Language-Action Models for Integration into Industrial-Grade Lightweight Robots</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.23138/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Pointing-VLA: Typed Spatial Grounding Interfaces for Vision-Language-Action Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
