@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gripper-aware Vision Language Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有视觉-语言-动作模型（VLA）普遍默认夹爪不变性假设，但不同末端执行器（夹爪）的抓取策略本质具有具身依赖性，同一任务目标下不同夹爪需要完全不同的操作策略，而现有VLA训练数据集几乎仅覆盖平行夹爪，无法支撑夹爪感知的策略学习 论文核心目标是解决上述研究gap，提出多夹爪感知的解决方案，让VLA能够学习不同夹爪的策略差异，实现更好的跨夹爪泛化与任务适配 论文同时聚焦夹爪表示的嵌入学习与夹爪特定策略的路由调制两个核心…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.24603">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.24603.webp" alt="Gripper-aware Vision Language Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有视觉-语言-动作模型（VLA）普遍默认夹爪不变性假设，但不同末端执行器（夹爪）的抓取策略本质具有具身依赖性，同一任务目标下不同夹爪需要完全…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Gripper-aware Vision Language Action Models</h1>
+            <div class="detail-meta">2026-08-25 · <a href="http://arxiv.org/abs/2608.24603" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.24603" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.24603</span></div>
+            <p class="detail-summary">现有视觉-语言-动作模型（VLA）普遍默认夹爪不变性假设，但不同末端执行器（夹爪）的抓取策略本质具有具身依赖性，同一任务目标下不同夹爪需要完全不同的操作策略，而现有VLA训练数据集几乎仅覆盖平行夹爪，无法支撑夹爪感知的策略学习 论文核心目标是解决上述研究gap，提出多夹爪感知的解决方案，让VLA能够学习不同夹爪的策略差异，实现更好的跨夹爪泛化与任务适配 论文同时聚焦夹爪表示的嵌入学习与夹爪特定策略的路由调制两个核心…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">10 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">University of Liverpool, UK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.24603/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有视觉-语言-动作模型（VLA）普遍默认夹爪不变性假设，但不同末端执行器（夹爪）的抓取策略本质具有具身依赖性，同一任务目标下不同夹爪需要完全…</p>
+  <ul class="reading-intro-points"><li>现有视觉-语言-动作模型（VLA）普遍默认夹爪不变性假设，但不同末端执行器（夹爪）的抓取策略本质具有具身依赖性，同一任务目标下不同夹爪需要完全…</li><li>论文核心目标是解决上述研究gap，提出多夹爪感知的解决方案，让VLA能够学习不同夹爪的策略差异，实现更好的跨夹爪泛化与任务适配</li><li>论文同时聚焦夹爪表示的嵌入学习与夹爪特定策略的路由调制两个核心问题，为具身智能的末端执行器泛化提供新的技术路径</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>University of Liverpool, UK</strong></li><li><strong>Mohamed bin Zayed University of Artificial Intelligence, UAE</strong></li><li><strong>Indian Institute of Science, India</strong></li><li><strong>The University of Tokyo, Japan</strong></li><li><strong>Zürcher Hochschule für Angewandte Wissenschaften, Switzerland</strong></li><li><strong>University of Arkansas, USA</strong></li><li><strong>Huazhong University of Science and Technology, China</strong></li><li><strong>Physical Intelligence, USA</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有视觉-语言-动作模型（VLA）普遍默认夹爪不变性假设，但不同末端执行器（夹爪）的抓取策略本质具有具身依赖性，同一任务目标下不同夹爪需要完全不同的操作策略，而现有VLA训练数据集几乎仅覆盖平行夹爪，无法支撑夹爪感知的策略学习</li><li>论文核心目标是解决上述研究gap，提出多夹爪感知的解决方案，让VLA能够学习不同夹爪的策略差异，实现更好的跨夹爪泛化与任务适配</li><li>论文同时聚焦夹爪表示的嵌入学习与夹爪特定策略的路由调制两个核心问题，为具身智能的末端执行器泛化提供新的技术路径</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>MiGA</strong>大规模多夹爪感知数据集，包含103,000条演示，覆盖36项任务、5种夹爪类型，跨仿真和真实机器人平台，明确捕捉同任务下不同夹爪的策略差异，同时包含子步骤分解、失败案例等丰富标注，共形成132个夹爪-策略对且配有自然语言描述</li><li>提出<strong>GVLA</strong>（Gripper-aware Vision Language Action Model）框架，包含新型多粒度夹爪分词器（Multi-gripper Tokenizer）和双混合适配器（Dual Mixture of Adapters, MoA），实现夹爪感知的参数高效策略学习</li><li>实验验证GVLA在仿真和真实机器人场景下均优于现有基线，平均任务成功率提升7.62%，支持零样本泛化到新物体、少样本适配到新任务/新夹爪</li><li>通过多层探测分析验证了所提出的多粒度夹爪分词器能够生成具有结构化语义的夹爪嵌入，解决了现有夹爪表示无法区分不同夹爪类型的问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>多粒度夹爪分词器：将夹爪信息分解为三层可学习的软提示（soft prompt），分别是平台级token（捕捉机器人平台的运动学特征）、夹爪类型级token（编码同类型夹爪的共享操作先验）、夹爪实例级token（建模单个夹爪的独有特征），三层按固定顺序拼接后前置到观测token前，为VLA主干提供夹爪条件输入</li><li>双混合适配器（Dual MoA）：设计两个并行的路由模块，分别是平台级路由和夹爪级路由，分别基于平台token、夹爪类型+实例token的均值输出路由权重，选择Top-k个低秩瓶颈适配器，将适配结果残差加到主干对应层的激活上；基于层敏感度分析，MoA插入在VLA主干的最后一层（该层对夹爪类型的敏感度最高），可直接调制动作生成，实现平台和夹爪两个维度的解耦调制，兼顾参数共享与策略差异化</li><li>多目标损失函数：结合三类损失，分别是动作预测损失（采用条件流匹配损失监督动作生成）、夹爪分类损失（鼓励共享视觉-语言嵌入学习夹爪判别特征，稳定下游路由）、负载平衡损失（防止路由塌陷，保证各适配器被均匀使用）</li><li>创新点：三层分词器解决了现有MLP、VQ-VAE、语言提示等夹爪表示无法生成结构化夹爪嵌入的问题；双MoA设计实现了跨平台、跨夹爪类型的解耦适配，仅需少量可训练参数即可实现高效的夹爪特定策略学习</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>核心数据集：<strong>MiGA</strong>，大规模多夹爪感知机器人操作数据集</li><li>数据集规模：共103,000条演示轨迹，覆盖36项任务、5种夹爪类型、5个机器人平台，包含多视角RGB-D观测、本体感知状态、夹爪策略标注、子步骤分解及约5%的失败案例</li><li>夹爪类型覆盖：平行夹爪（Franka Panda、Robotiq 2f-85）、三指夹爪（Robotiq 3-Finger）、实验室自制软两指夹爪、吸盘夹爪（Cobot Pump、UR10 Suction Cup）、五指灵巧手（Inspire Hand）</li><li>模型规模：GVLA基于预训练VLA主干<strong>π₀</strong>和<strong>π₀.5</strong>构建，新增的多粒度分词器参数量可忽略，双MoA的每个专家为低秩瓶颈结构（下投影维度远小于主干嵌入维度），整体仅需少量参数即可完成微调</li><li>训练资源：基于预训练VLA主干进行参数高效微调，仿真环境采用NVIDIA Isaac Lab搭建，同时包含真实机器人的实机验证环节，未明确说明具体GPU/TPU配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境基于NVIDIA Isaac Lab搭建，真实机器人实验采用UR5机械臂搭载Robotiq 2f-85夹爪的平台</li><li>评估基准：对比传统两阶段抓取方法（AnyGrasp、GraspMAS）、主流VLA方法（GraspVLA、OpenVLA-OFT、π₀、π₀.5）及GVLA的消融变体</li><li>核心评估指标：任务成功率（Success Rate, SR）、预测误差（Prediction Error, PE）、反事实动作预测差异（CAPD，衡量夹爪特定行为的强弱）、线性探测准确率（LPA，衡量网络各层隐藏状态的夹爪判别能力）、夹爪贡献分数（GCS，衡量软提示对夹爪区分的贡献）</li><li>关键实验结果：</li></ul>
+<p> - 主实验：GVLA（π₀.5主干）在平面、堆叠、受限、语义抓取四类任务的平均成功率达66.00%，比基线π₀.5的58.38%提升7.62%，远超其他对比方法</p>
+<p> - 夹爪感知分析：GVLA的线性探测准确率从网络第0层的59%上升至第12层的80%，远高于噪声提示、固定提示等基线，证明多粒度分词器能够有效编码并传播夹爪特定特征</p>
+<p> - 泛化与适配能力：GVLA支持零样本泛化到训练外的新物体，少样本适配到新任务、新夹爪，混合多夹爪数据训练可进一步提升适配性能</p>
+<p> - 真实机器人验证：仅用10条演示、20k步微调，GVLA在UR5平台的新任务上表现就优于π₀.5基线</p>
+<p> - 失败案例分析：失败原因主要包括同类型夹爪的细粒度几何对齐不足、夹爪物理限制、运动学不可行配置三类</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2608.24115/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

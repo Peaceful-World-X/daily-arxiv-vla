@@ -1,5 +1,145 @@
 [
   {
+    "date": "2026-08-25",
+    "title": "Gripper-aware Vision Language Action Models",
+    "link": "http://arxiv.org/abs/2608.24603",
+    "arxiv_id": "2608.24603",
+    "detail_path": "papers/2608.24603/",
+    "cover_path": "covers/2608.24603/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.24603.webp",
+    "preview_text": "现有视觉-语言-动作模型（VLA）普遍默认夹爪不变性假设，但不同末端执行器（夹爪）的抓取策略本质具有具身依赖性，同一任务目标下不同夹爪需要完全不同的操作策略，而现有VLA训练数据集几乎仅覆盖平行夹爪，无法支撑夹爪感知的策略学习 论文核心目标是解决上述研究gap，提出多夹爪感知的解决方案，让VLA能够学习不同夹爪的策略差异，实现更好的跨夹爪泛化与任务适配 论文同时聚焦夹爪表示的嵌入学习与夹爪特定策略的路由调制两个核心…",
+    "research_unit": "University of Liverpool, UK",
+    "hook_text": "现有视觉-语言-动作模型（VLA）普遍默认夹爪不变性假设，但不同末端执行器（夹爪）的抓取策略本质具有具身依赖性，同一任务目标下不同夹爪需要完全…",
+    "key_points": [
+      "现有视觉-语言-动作模型（VLA）普遍默认夹爪不变性假设，但不同末端执行器（夹爪）的抓取策略本质具有具身依赖性，同一任务目标下不同夹爪需要完全…",
+      "论文核心目标是解决上述研究gap，提出多夹爪感知的解决方案，让VLA能够学习不同夹爪的策略差异，实现更好的跨夹爪泛化与任务适配",
+      "论文同时聚焦夹爪表示的嵌入学习与夹爪特定策略的路由调制两个核心问题，为具身智能的末端执行器泛化提供新的技术路径"
+    ],
+    "reading_minutes": 10,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-25",
+    "title": "PonderPounce: A Pretrained MLLM as an Episode Context Engine for Robot Control",
+    "link": "http://arxiv.org/abs/2608.24115",
+    "arxiv_id": "2608.24115",
+    "detail_path": "papers/2608.24115/",
+    "cover_path": "covers/2608.24115/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.24115.webp",
+    "preview_text": "针对现有视觉-语言-动作（VLA）模型未充分利用预训练多模态大语言模型（MLLM）的原生上下文能力作为机器人情景记忆的问题，提出PonderPounce双系统架构，以预训练MLLM作为可扩展的情景上下文引擎，异步向VLA控制器传递认知信息，无需额外搭建目的建的记忆模块。 研究目标是为机器人控制中的长时情景记忆依赖、测试时演示条件控制两类场景，探索轻量、可扩展的上下文路由方案，解决传统记忆机制需要额外设计采样、存储、…",
+    "research_unit": "MAUM.AI",
+    "hook_text": "针对现有视觉-语言-动作（VLA）模型未充分利用预训练多模态大语言模型（MLLM）的原生上下文能力作为机器人情景记忆的问题，提出PonderP…",
+    "key_points": [
+      "针对现有视觉-语言-动作（VLA）模型未充分利用预训练多模态大语言模型（MLLM）的原生上下文能力作为机器人情景记忆的问题，提出PonderP…",
+      "研究目标是为机器人控制中的长时情景记忆依赖、测试时演示条件控制两类场景，探索轻量、可扩展的上下文路由方案，解决传统记忆机制需要额外设计采样、存…",
+      "核心要解决的问题是：如何将MLLM的原生因果上下文转化为可被动作模型高效利用的机器人记忆，同时不增加控制器的架构负担。"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-25",
+    "title": "TrAct: Bridging Robot Control and Visual Prediction with Visual Tracks",
+    "link": "http://arxiv.org/abs/2608.24101",
+    "arxiv_id": "2608.24101",
+    "detail_path": "papers/2608.24101/",
+    "cover_path": "covers/2608.24101/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.24101.webp",
+    "preview_text": "论文提出TrAct框架，核心是用2D视觉轨迹作为机器人控制与世界模型之间的共享中间接口，解决传统动作作为接口时存在的具身特定性强、与图像空间视觉变化对齐弱的问题 研究目标是构建以视觉轨迹为桥梁的机器人决策框架，同时提升世界模型的未来视频预测精度，以及机器人在分布偏移、跨具身迁移场景下的任务泛化能力 针对传统动作条件世界模型需从低维具身特定动作推断稠密视觉未来、导致预测不准、策略鲁棒性差的问题，通过轨迹提供的稠密图像…",
+    "research_unit": "论文作者所属机构为University of Michigan和Stanford University",
+    "hook_text": "论文提出TrAct框架，核心是用2D视觉轨迹作为机器人控制与世界模型之间的共享中间接口，解决传统动作作为接口时存在的具身特定性强、与图像空间视…",
+    "key_points": [
+      "论文提出TrAct框架，核心是用2D视觉轨迹作为机器人控制与世界模型之间的共享中间接口，解决传统动作作为接口时存在的具身特定性强、与图像空间视…",
+      "研究目标是构建以视觉轨迹为桥梁的机器人决策框架，同时提升世界模型的未来视频预测精度，以及机器人在分布偏移、跨具身迁移场景下的任务泛化能力",
+      "针对传统动作条件世界模型需从低维具身特定动作推断稠密视觉未来、导致预测不准、策略鲁棒性差的问题，通过轨迹提供的稠密图像空间运动引导优化控制-预…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-25",
+    "title": "Hierarchical Skill Retrieval for Data-Efficient Adaptation of Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.24042",
+    "arxiv_id": "2608.24042",
+    "detail_path": "papers/2608.24042/",
+    "cover_path": "covers/2608.24042/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.24042.webp",
+    "preview_text": "针对Vision-Language-Action（VLA）模型在少量目标演示下适配新长时序操作任务时性能下降的问题，现有检索方法多依赖视觉/动作相似性或任务级语言匹配，忽略长时序任务的层次化技能复用结构，难以有效利用先验数据集 提出HSR（Hierarchical Skill Retrieval）层次化技能检索框架，通过任务分解、技能级混合检索和两阶段策略适配，实现数据高效的VLA模型下游任务迁移 在LIBERO仿…",
+    "research_unit": "卡内基梅隆大学机器人研究所（Robotics Institute, Carnegie Mellon U…",
+    "hook_text": "针对Vision-Language-Action（VLA）模型在少量目标演示下适配新长时序操作任务时性能下降的问题，现有检索方法多依赖视觉/动…",
+    "key_points": [
+      "针对Vision-Language-Action（VLA）模型在少量目标演示下适配新长时序操作任务时性能下降的问题，现有检索方法多依赖视觉/动…",
+      "提出HSR（Hierarchical Skill Retrieval）层次化技能检索框架，通过任务分解、技能级混合检索和两阶段策略适配，实现数…",
+      "在LIBERO仿真基准和多个真实机器人长时序操作任务上验证框架有效性，相比最强基线在仿真和真实任务上分别提升10.3%和21.3%的平均任务成…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Learning to Act While Waiting: RL Finetuning of Generalist Robot Policies Under Inference Latency",
+    "link": "http://arxiv.org/abs/2608.23831",
+    "arxiv_id": "2608.23831",
+    "detail_path": "papers/2608.23831/",
+    "cover_path": "covers/2608.23831/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.23831.webp",
+    "preview_text": "针对通用机器人策略（如VLA）推理延迟高的问题，异步推理虽能缓解部署延迟，但会导致RL微调时的状态非马尔可夫，使标准RL方法完全失效，本文旨在解决该问题 提出异步RL框架Arli，通过状态增强技术恢复近马尔可夫结构，实现异步推理场景下的高效RL微调 在模拟和真实双机械臂操作任务上验证方法有效性，在存在推理延迟时仍能实现高成功率，性能匹配甚至超越无延迟下的标准RL",
+    "research_unit": "Siemens",
+    "hook_text": "针对通用机器人策略（如VLA）推理延迟高的问题，异步推理虽能缓解部署延迟，但会导致RL微调时的状态非马尔可夫，使标准RL方法完全失效，本文旨在…",
+    "key_points": [
+      "针对通用机器人策略（如VLA）推理延迟高的问题，异步推理虽能缓解部署延迟，但会导致RL微调时的状态非马尔可夫，使标准RL方法完全失效，本文旨在…",
+      "提出异步RL框架Arli，通过状态增强技术恢复近马尔可夫结构，实现异步推理场景下的高效RL微调",
+      "在模拟和真实双机械臂操作任务上验证方法有效性，在存在推理延迟时仍能实现高成功率，性能匹配甚至超越无延迟下的标准RL"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-24",
     "title": "Act with Intent: Distilling Behavior Intent for Vision-Language-Action Models",
     "link": "http://arxiv.org/abs/2608.23478",
@@ -36828,7 +36968,7 @@
     "arxiv_id": "2506.13751",
     "detail_path": "papers/2506.13751/",
     "cover_path": "covers/2506.13751/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2506.13751.webp",
     "preview_text": "论文提出了 LeVERB (Latent Vision-Language-Encoded Robot Behavior)，这是一个用于人形机器人全身控制的分层潜在指令跟随框架。 旨在解决现有视觉-语言-动作 (VLA) 模型依赖手工设计的低维动作词汇（如末端执行器位姿），限制了人形机器人敏捷全身行为的问题。 论文还引入了 LeVERB-Bench，这是第一个具备照片级真实感、可用于闭环评估的人形机器人视觉-语言全身…",
     "research_unit": "University of California Berkeley",
     "hook_text": "论文提出了 LeVERB (Latent Vision-Language-Encoded Robot Behavior)，这是一个用于人形机器…",
@@ -36856,7 +36996,7 @@
     "arxiv_id": "2506.13725",
     "detail_path": "papers/2506.13725/",
     "cover_path": "covers/2506.13725/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2506.13725.webp",
     "preview_text": "研究目标：显著提升视觉语言动作（VLA）模型的推理效率，同时保持机械臂操作性能 核心问题：VLA模型在实际部署中受推理速度瓶颈限制，特别是在高频和灵巧操作任务中 解决方案：提出一致性蒸馏训练和早退出解码策略，实现超过4倍的推理加速",
     "research_unit": "HKUST(GZ)：香港科技大学（广州）",
     "hook_text": "研究目标：显著提升视觉语言动作（VLA）模型的推理效率，同时保持机械臂操作性能",
@@ -36884,7 +37024,7 @@
     "arxiv_id": "2506.13456",
     "detail_path": "papers/2506.13456/",
     "cover_path": "covers/2506.13456/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2506.13456.webp",
     "preview_text": "论文提出 Block-wise Adaptive Caching (BAC)，一种无需训练的加速方法，旨在降低基于Transformer的 Diffusion Policy 的推理延迟，使其满足实时机器人控制的需求。 核心思路是通过缓存并复用中间动作特征来跳过冗余计算。方法包含两个关键组件：Adaptive Caching Scheduler 用于确定最优缓存更新时间点，Bubbling Union Algorit…",
     "research_unit": "清华大学",
     "hook_text": "论文提出 Block-wise Adaptive Caching (BAC)，一种无需训练的加速方法，旨在降低基于Transformer的 D…",
@@ -36912,7 +37052,7 @@
     "arxiv_id": "2506.13045",
     "detail_path": "papers/2506.13045/",
     "cover_path": "covers/2506.13045/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2506.13045.webp",
     "preview_text": "本文是一篇关于生成式 AI 持续学习的综述，涵盖了 大语言模型、多模态大语言模型、视觉-语言-动作模型 和 扩散模型。 论文旨在解决生成式 AI 在适应新任务时面临的 灾难性遗忘 问题，即模型在学习新知识时会覆盖或干扰旧知识。 研究对比了生成式模型与判别式模型在持续学习上的差异，指出生成式模型面临更复杂的建模目标和更多样的任务格式挑战。",
     "research_unit": "中国科学院大学 (University of Chinese Academy of Sciences)",
     "hook_text": "本文是一篇关于生成式 AI 持续学习的综述，涵盖了 大语言模型、多模态大语言模型、视觉-语言-动作模型 和 扩散模型。",
@@ -36940,7 +37080,7 @@
     "arxiv_id": "2506.12723",
     "detail_path": "papers/2506.12723/",
     "cover_path": "covers/2506.12723/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2506.12723.webp",
     "preview_text": "现有VLA（Vision-Language-Action）模型参数量大、推理速度慢，难以满足机器人操控、自动驾驶等实时任务需求；当前VLA加速方法仅关注单步计算冗余，未考虑VLA在顺序决策场景中的时序冗余（连续动作生成的重复计算）和视觉输入的时空冗余 本文提出SP-VLA统一加速框架，通过联合模型调度与token剪枝技术，同时解决VLA模型的时序和空间冗余问题，实现高效加速的同时保持高任务精度 核心目标是在不损失（…",
     "research_unit": "清华大学（Ye Li, Yuan Meng, Kangye Ji, Shutao Xia, Zhi W…",
     "hook_text": "现有VLA（Vision-Language-Action）模型参数量大、推理速度慢，难以满足机器人操控、自动驾驶等实时任务需求；当前VLA加速…",
