@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MA-VLA: Multi-Arm Vision-Language-Action Model for Collaboration and Compositional Generalization - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有多臂视觉-语言-动作（VLA）模型将语言视为单一全局指令，缺乏显式的臂级分工与组合机制，难以泛化到训练时未见过的协作模式 本文提出MA-VLA多臂VLA框架，通过原子动作分配实现多臂协作的组合泛化，解决上述泛化受限问题 研究目标是让模型无需重训，即可通过重组训练时见过的原子动作，完成未见过的多臂协作任务，实现多臂组合泛化（multi-arm compositional generalization）" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.25864">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.25864.webp" alt="MA-VLA: Multi-Arm Vision-Language-Action Model for Collaboration and Compositional Generalization" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有多臂视觉-语言-动作（VLA）模型将语言视为单一全局指令，缺乏显式的臂级分工与组合机制，难以泛化到训练时未见过的协作模式</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">MA-VLA: Multi-Arm Vision-Language-Action Model for Collaboration and Compositional Generalization</h1>
+            <div class="detail-meta">2026-08-26 · <a href="http://arxiv.org/abs/2608.25864" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.25864" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.25864</span></div>
+            <p class="detail-summary">现有多臂视觉-语言-动作（VLA）模型将语言视为单一全局指令，缺乏显式的臂级分工与组合机制，难以泛化到训练时未见过的协作模式 本文提出MA-VLA多臂VLA框架，通过原子动作分配实现多臂协作的组合泛化，解决上述泛化受限问题 研究目标是让模型无需重训，即可通过重组训练时见过的原子动作，完成未见过的多臂协作任务，实现多臂组合泛化（multi-arm compositional generalization）</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">大连理工大学（Dalian University of Technology）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.25864/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有多臂视觉-语言-动作（VLA）模型将语言视为单一全局指令，缺乏显式的臂级分工与组合机制，难以泛化到训练时未见过的协作模式</p>
+  <ul class="reading-intro-points"><li>现有多臂视觉-语言-动作（VLA）模型将语言视为单一全局指令，缺乏显式的臂级分工与组合机制，难以泛化到训练时未见过的协作模式</li><li>本文提出MA-VLA多臂VLA框架，通过原子动作分配实现多臂协作的组合泛化，解决上述泛化受限问题</li><li>研究目标是让模型无需重训，即可通过重组训练时见过的原子动作，完成未见过的多臂协作任务，实现多臂组合泛化（multi-arm compositi…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>大连理工大学（Dalian University of Technology）</li><li>牛津大学（University of Oxford）</li><li>中山大学（Sun Yat-sen University）</li><li>上海交通大学（Shanghai Jiao Tong University）</li><li>中国科学技术大学（University of Science and Technology of China）</li><li>香港中文大学（深圳）（The Chinese University of Hong Kong, Shenzhen）</li><li>北京航空航天大学（Beihang University）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有多臂视觉-语言-动作（VLA）模型将语言视为单一全局指令，缺乏显式的臂级分工与组合机制，难以泛化到训练时未见过的协作模式</li><li>本文提出<strong>MA-VLA</strong>多臂VLA框架，通过原子动作分配实现多臂协作的组合泛化，解决上述泛化受限问题</li><li>研究目标是让模型无需重训，即可通过重组训练时见过的原子动作，完成未见过的多臂协作任务，实现<strong>多臂组合泛化（multi-arm compositional generalization）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出统一的MA-VLA多臂VLA框架，包含VLM规划器和VLA执行器两部分：规划器将高层任务指令分解为阶段性的臂级原子动作提示，执行器基于多模态输入生成所有臂的协调动作，显式实现多臂分工</li><li>设计<strong>Arm Shuffle</strong>训练策略：训练时以一定概率随机打乱各臂的状态、观测、原子提示和动作的对应关系，消除模型对固定臂身份的依赖，提升角色无关的指令跟随能力</li><li>设计<strong>View Dropout</strong>训练策略：训练时随机掩码部分相机视角的输入，增强模型的多视角冗余感知鲁棒性</li><li>构建多臂组合泛化基准，在仿真（RoboFactory、RoboTwin 2.0）和真实双SO101臂平台上验证，证明MA-VLA在未见协作模式下的性能远超现有SOTA多臂VLA和模仿学习方法</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>系统采用分层架构：上层为<strong>VLM-based Planner</strong>，基于GPT-4.1实现，将高层自然语言指令和视觉观测分解为时间上有序的、分配给每个臂的原子动作序列，原子动作来自预定义的有限动作模板库，单次前向即可生成全序列</li><li>下层为<strong>VLA Executor</strong>，基于官方pi0_base checkpoint初始化，输入多视角全局+腕部视觉观测、所有臂的关节本体感知状态、拼接后的统一多臂原子提示，通过flow-matching生成平滑连续的协调动作，采用多头投影层输出各臂独立动作</li><li>创新训练策略：Arm Shuffle通过随机置换臂的输入输出对应关系，强制模型学习语义层面的动作分配而非绑定固定臂身份；View Dropout通过随机掩码部分视觉输入，提升模型在部分观测缺失下的感知鲁棒性，两者均在训练时以预设概率施加，不改变原始行为克隆训练目标</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集与平台：仿真benchmark为<strong>RoboFactory</strong>（包含2-4臂协作任务，强调协调与并行执行）、<strong>RoboTwin 2.0 (Hard)</strong>（包含强视觉干扰的双臂协作任务，含额外干扰物、背景和光照变化）；真实机器人平台为<strong>双SO101臂系统</strong>（每臂6自由度，配备1个全局RGB相机和1个腕部相机，相机帧率30Hz）</li><li>模型规模：VLA执行器基于<strong>pi0_base</strong> checkpoint初始化，VLM规划器采用<strong>GPT-4.1</strong>，无额外微调</li><li>训练资源：2张<strong>NVIDIA A800 GPU</strong>，batch size为32；2臂任务训练10,000步，3-4臂任务训练15,000步，RoboTwin 2.0 (Hard)任务训练30,000步，真实机器人任务训练15,000步</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真环境（RoboFactory、RoboTwin 2.0 (Hard)）、真实双SO101臂平台；对比基线包括<strong>ACT</strong>、<strong>DP (Diffusion Policy)</strong>、<strong>DP3</strong>、<strong>Pi0-FAST</strong>、<strong>Pi0</strong></li><li>评估指标：任务成功率，分为域内（in-domain，与训练分布一致的协作模式）和域外组合泛化（out-of-domain，原子动作来自训练集，但协作模式、角色分配、时序顺序为未见过的组合）两类场景</li><li>关键实验结果：</li></ul>
+<p> - 域内协作任务：RoboFactory上MA-VLA平均成功率达83.5%，高于基线中最优的Pi0（80.3%）；RoboTwin 2.0 (Hard)上MA-VLA平均成功率达49.0%，高于Pi0的41.1%，在强视觉干扰下仍保持鲁棒性</p>
+<p> - 域外组合泛化任务：RoboFactory和RoboTwin 2.0的未见协作模式下，所有基线（DP、Pi0-FAST、Pi0）成功率均为0%，MA-VLA平均成功率可达13.0%，验证了组合泛化能力</p>
+<p> - 真实机器人任务：域内任务成功率均高于Pi0基线；域外角色反转的协作任务中，Pi0全部失败（0/20），MA-VLA在多个任务上仍有非零成功率（最高10/20），证明了真实场景的泛化有效性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.26058/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.25798/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">TacForcing: Streaming Action Generation with Execution-Time Tactile Feedback</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

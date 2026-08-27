@@ -1,5 +1,285 @@
 [
   {
+    "date": "2026-08-26",
+    "title": "StreamPI: Streaming Multimodal Temporal Modeling for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.26067",
+    "arxiv_id": "2608.26067",
+    "detail_path": "papers/2608.26067/",
+    "cover_path": "covers/2608.26067/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.26067.webp",
+    "preview_text": "论文提出StreamPI流式多模态时序建模框架，为单帧Vision-Language-Action（VLA）基础模型（如π₀.₅）增加时序推理能力，解决单帧VLA范式无历史记忆、精确空间感知不足的核心问题 核心设计包括指令锚定的时序建模、随机间隔流式训练策略，无需引入额外参数，同时自然支持单帧和多帧灵活推理 研究目标是提升机器人操作任务在记忆依赖型、精确感知型场景下的性能，超越现有单帧VLA模型",
+    "research_unit": "香港大学（The University of Hong Kong）",
+    "hook_text": "论文提出StreamPI流式多模态时序建模框架，为单帧Vision-Language-Action（VLA）基础模型（如π₀.₅）增加时序推理…",
+    "key_points": [
+      "论文提出StreamPI流式多模态时序建模框架，为单帧Vision-Language-Action（VLA）基础模型（如π₀.₅）增加时序推理…",
+      "核心设计包括指令锚定的时序建模、随机间隔流式训练策略，无需引入额外参数，同时自然支持单帧和多帧灵活推理",
+      "研究目标是提升机器人操作任务在记忆依赖型、精确感知型场景下的性能，超越现有单帧VLA模型"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-26",
+    "title": "One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied Manipulation",
+    "link": "http://arxiv.org/abs/2608.26058",
+    "arxiv_id": "2608.26058",
+    "detail_path": "papers/2608.26058/",
+    "cover_path": "covers/2608.26058/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.26058.webp",
+    "preview_text": "通用视觉-语言-动作（VLA）策略的扩展受限于异构具身数据的天然差异，包括不同机器人形态、相机配置、低层动作空间等，现有方法多依赖显式动作重定向、人机视频合成或数据集特定适配分支，阻碍了统一策略的联合学习 本文提出UCAG-P，一种相机中心的统一动作表示方法，将异构具身数据集结构对齐到共享的几何动作空间，将机器人手臂、人形机器人、人手视为同一动作schema的不同embodiment 研究目标是实现单一策略在多种异…",
+    "research_unit": "论文作者隶属于Xiaomi Embodied Intelligence Team与University…",
+    "hook_text": "通用视觉-语言-动作（VLA）策略的扩展受限于异构具身数据的天然差异，包括不同机器人形态、相机配置、低层动作空间等，现有方法多依赖显式动作重定…",
+    "key_points": [
+      "通用视觉-语言-动作（VLA）策略的扩展受限于异构具身数据的天然差异，包括不同机器人形态、相机配置、低层动作空间等，现有方法多依赖显式动作重定…",
+      "本文提出UCAG-P，一种相机中心的统一动作表示方法，将异构具身数据集结构对齐到共享的几何动作空间，将机器人手臂、人形机器人、人手视为同一动作…",
+      "研究目标是实现单一策略在多种异构embodiment上的通用操纵，无需针对特定数据集进行微调"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-26",
+    "title": "MA-VLA: Multi-Arm Vision-Language-Action Model for Collaboration and Compositional Generalization",
+    "link": "http://arxiv.org/abs/2608.25864",
+    "arxiv_id": "2608.25864",
+    "detail_path": "papers/2608.25864/",
+    "cover_path": "covers/2608.25864/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.25864.webp",
+    "preview_text": "现有多臂视觉-语言-动作（VLA）模型将语言视为单一全局指令，缺乏显式的臂级分工与组合机制，难以泛化到训练时未见过的协作模式 本文提出MA-VLA多臂VLA框架，通过原子动作分配实现多臂协作的组合泛化，解决上述泛化受限问题 研究目标是让模型无需重训，即可通过重组训练时见过的原子动作，完成未见过的多臂协作任务，实现多臂组合泛化（multi-arm compositional generalization）",
+    "research_unit": "大连理工大学（Dalian University of Technology）",
+    "hook_text": "现有多臂视觉-语言-动作（VLA）模型将语言视为单一全局指令，缺乏显式的臂级分工与组合机制，难以泛化到训练时未见过的协作模式",
+    "key_points": [
+      "现有多臂视觉-语言-动作（VLA）模型将语言视为单一全局指令，缺乏显式的臂级分工与组合机制，难以泛化到训练时未见过的协作模式",
+      "本文提出MA-VLA多臂VLA框架，通过原子动作分配实现多臂协作的组合泛化，解决上述泛化受限问题",
+      "研究目标是让模型无需重训，即可通过重组训练时见过的原子动作，完成未见过的多臂协作任务，实现多臂组合泛化（multi-arm compositi…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-26",
+    "title": "TacForcing: Streaming Action Generation with Execution-Time Tactile Feedback",
+    "link": "http://arxiv.org/abs/2608.25798",
+    "arxiv_id": "2608.25798",
+    "detail_path": "papers/2608.25798/",
+    "cover_path": "covers/2608.25798/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.25798.webp",
+    "preview_text": "针对接触丰富机器人操作中，传统块状视觉-语言-动作（VLA）模型在执行动作块时仅能使用执行前采集的固定触觉反馈，而触觉信息在动作执行 horizon 内变化显著，导致触觉条件与执行时的接触状态存在严重时间错配的问题 针对现有触觉反应方法需要额外独立高频控制器，大幅增加架构和训练复杂度的痛点，提出TacForcing流式动作生成框架，无需额外反应控制器即可有效融入执行过程中采集的触觉反馈 研究目标是通过流式动作生成与…",
+    "research_unit": "上海交通大学计算机科学与工程学院（SJTU）",
+    "hook_text": "针对接触丰富机器人操作中，传统块状视觉-语言-动作（VLA）模型在执行动作块时仅能使用执行前采集的固定触觉反馈，而触觉信息在动作执行 hori…",
+    "key_points": [
+      "针对接触丰富机器人操作中，传统块状视觉-语言-动作（VLA）模型在执行动作块时仅能使用执行前采集的固定触觉反馈，而触觉信息在动作执行 hori…",
+      "针对现有触觉反应方法需要额外独立高频控制器，大幅增加架构和训练复杂度的痛点，提出TacForcing流式动作生成框架，无需额外反应控制器即可有…",
+      "研究目标是通过流式动作生成与触觉反馈的动态对齐，提升接触丰富操作的成功率，在仿真和真实场景下验证框架的通用性和有效性"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-26",
+    "title": "LM-X: Explainable Action Modeling with Progress, Event, and Uncertainty Prediction for Generalist Robot Manipulation",
+    "link": "http://arxiv.org/abs/2608.25757",
+    "arxiv_id": "2608.25757",
+    "detail_path": "papers/2608.25757/",
+    "cover_path": "covers/2608.25757/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.25757.webp",
+    "preview_text": "提出 LM-X，一个可解释的通用视觉-语言-动作(VLA)策略，通过三个显式预测信号（任务进度、事件意图、动作不确定性）实现跨时间尺度的可解释预测控制 解决通用VLA策略中的单目标监督瓶颈（任务进展、中间意图、局部动作可靠性无独立监督目标）和控制可观测性瓶颈（执行时隐藏这些状态） 将生物传感器运动组织原理（慢变量约束快变量）转化为计算架构，使解释成为控制的内在部分而非事后补充",
+    "research_unit": "Humanoid Robot (Shanghai) Co., Ltd.",
+    "hook_text": "提出 LM-X，一个可解释的通用视觉-语言-动作(VLA)策略，通过三个显式预测信号（任务进度、事件意图、动作不确定性）实现跨时间尺度的可解释…",
+    "key_points": [
+      "提出 LM-X，一个可解释的通用视觉-语言-动作(VLA)策略，通过三个显式预测信号（任务进度、事件意图、动作不确定性）实现跨时间尺度的可解释…",
+      "解决通用VLA策略中的单目标监督瓶颈（任务进展、中间意图、局部动作可靠性无独立监督目标）和控制可观测性瓶颈（执行时隐藏这些状态）",
+      "将生物传感器运动组织原理（慢变量约束快变量）转化为计算架构，使解释成为控制的内在部分而非事后补充"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-26",
+    "title": "GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2608.25659",
+    "arxiv_id": "2608.25659",
+    "detail_path": "papers/2608.25659/",
+    "cover_path": "covers/2608.25659/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.25659.webp",
+    "preview_text": "针对 Vision-Language-Action (VLA) 策略在理解度量3D结构和短期物理演化方面的不足，提出 GaussianDream++ 通过将 World State Tokens 和 World Prediction Tokens 直接嵌入VLA骨干网络，在训练时提供密集的3D监督信号 采用非对称训练-部署策略，推理时移除所有高斯解码和渲染组件，仅保留20个world tokens，实现高效闭环控制",
+    "research_unit": "Tuojing Intelligence（通境智能）：Yuqing Jiang, Zijian Zha…",
+    "hook_text": "针对 Vision-Language-Action (VLA) 策略在理解度量3D结构和短期物理演化方面的不足，提出 GaussianDrea…",
+    "key_points": [
+      "针对 Vision-Language-Action (VLA) 策略在理解度量3D结构和短期物理演化方面的不足，提出 GaussianDrea…",
+      "通过将 World State Tokens 和 World Prediction Tokens 直接嵌入VLA骨干网络，在训练时提供密集的3…",
+      "采用非对称训练-部署策略，推理时移除所有高斯解码和渲染组件，仅保留20个world tokens，实现高效闭环控制"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-26",
+    "title": "RA-VLA: Retrieval-Augmented VLA for Test-Time Adaptation",
+    "link": "http://arxiv.org/abs/2608.25585",
+    "arxiv_id": "2608.25585",
+    "detail_path": "papers/2608.25585/",
+    "cover_path": "covers/2608.25585/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.25585.webp",
+    "preview_text": "现有Vision-Language-Action（VLA）模型面对未知新任务时泛化能力极差，严重依赖预训练分布内的知识，遇到分布外任务会出现性能崩溃，且适配新任务需要昂贵的重训练过程 现有In-Context Imitation Learning（ICIL）框架存在三类核心适配瓶颈：检索机制仅关注表面视觉相似性而非行为功能性、策略存在预训练行为惯性忽略上下文指导、随检索专家片段增加计算开销急剧上升 本文提出RA-V…",
+    "research_unit": "韩国浦项工科大学（POSTECH） 计算机科学与工程系",
+    "hook_text": "现有Vision-Language-Action（VLA）模型面对未知新任务时泛化能力极差，严重依赖预训练分布内的知识，遇到分布外任务会出现性…",
+    "key_points": [
+      "现有Vision-Language-Action（VLA）模型面对未知新任务时泛化能力极差，严重依赖预训练分布内的知识，遇到分布外任务会出现性…",
+      "现有In-Context Imitation Learning（ICIL）框架存在三类核心适配瓶颈：检索机制仅关注表面视觉相似性而非行为功能性…",
+      "本文提出RA-VLA检索增强VLA框架，实现无需模型权重更新的训练免费测试时适配，在仿真和真实机器人环境均验证了其有效性和高效性"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-26",
+    "title": "A Taxonomy of Construction Task Activities for Robot Workers",
+    "link": "http://arxiv.org/abs/2608.25395",
+    "arxiv_id": "2608.25395",
+    "detail_path": "papers/2608.25395/",
+    "cover_path": "covers/2608.25395/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.25395.webp",
+    "preview_text": "提出 TARCAT（建筑任务活动分类法），基于 **O*NET 数据库的 91 个任务和 30 个教学视频，定义 41 个动作原语，为建筑机器人提供标准化的能力词汇表 解决当前建筑机器人缺乏通用能力规范的问题，通过将人类工人活动分解为参数化的可重用技能，支持机器人编码智能体的检索与组合 在 DOBOT CR3 机械臂与 CRAFT** 灵巧手上验证分类体系的物理可执行性，证明其可作为连接人类工作分析与机器人开发的桥梁",
+    "research_unit": "加州大学欧文分校 (University of California-Irvine)",
+    "hook_text": "提出 TARCAT（建筑任务活动分类法），基于 **O*NET** 数据库的 91 个任务和 30 个教学视频，定义 41 个动作原语，为建筑…",
+    "key_points": [
+      "提出 TARCAT（建筑任务活动分类法），基于 **O*NET** 数据库的 91 个任务和 30 个教学视频，定义 41 个动作原语，为建筑…",
+      "解决当前建筑机器人缺乏通用能力规范的问题，通过将人类工人活动分解为参数化的可重用技能，支持机器人编码智能体的检索与组合",
+      "在 DOBOT CR3 机械臂与 CRAFT 灵巧手上验证分类体系的物理可执行性，证明其可作为连接人类工作分析与机器人开发的桥梁"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-26",
+    "title": "V-Link: Recovering Lost Visual Representations in Action DiT for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2608.25308",
+    "arxiv_id": "2608.25308",
+    "detail_path": "papers/2608.25308/",
+    "cover_path": "covers/2608.25308/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.25308.webp",
+    "preview_text": "核心解决双系统视觉语言动作（VLA）模型中VL-to-A（视觉语言到动作）特征转移的视觉表示可及性瓶颈：仅转移VLM最终层特征会导致动作专家难以获取精细操作所需的3D几何与2D语义信息，制约性能。 研究目标是提出V-Link表示恢复框架，在VLM内学习互补的空间与语义查询，并非对称注入动作专家（Action DiT），恢复丢失的视觉表示，提升操作性能且无推理时额外开销。 通过仿真基准与真实人形机器人任务验证框架有效…",
+    "research_unit": "Zhejiang University（浙江大学，部分作者所属单位）",
+    "hook_text": "核心解决双系统视觉语言动作（VLA）模型中VL-to-A（视觉语言到动作）特征转移的视觉表示可及性瓶颈：仅转移VLM最终层特征会导致动作专家难…",
+    "key_points": [
+      "核心解决双系统视觉语言动作（VLA）模型中VL-to-A（视觉语言到动作）特征转移的视觉表示可及性瓶颈：仅转移VLM最终层特征会导致动作专家难…",
+      "研究目标是提出V-Link表示恢复框架，在VLM内学习互补的空间与语义查询，并非对称注入动作专家（Action DiT），恢复丢失的视觉表示…",
+      "通过仿真基准与真实人形机器人任务验证框架有效性，实现性能显著提升且推理延迟几乎无增加。"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-25",
+    "title": "GaussVLA: Geometry-Aware Spatial Reasoning for Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2608.24959",
+    "arxiv_id": "2608.24959",
+    "detail_path": "papers/2608.24959/",
+    "cover_path": "covers/2608.24959/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.24959.webp",
+    "preview_text": "提出GaussVLA，一个基于Mamba的Vision-Language-Action模型，专注于几何感知的空间推理，解决现有VLA模型将视觉观察编码为平坦2D patch tokens导致缺乏内在几何结构的问题 引入Gaussian Spatial Tokenizer (GST) 和 Depth-Aware Chain-of-Thought (DA-CoT) 两个核心模块，将深度和视觉特征提升为紧凑的3D Gau…",
+    "research_unit": "Yeungnam University",
+    "hook_text": "提出GaussVLA，一个基于Mamba的Vision-Language-Action模型，专注于几何感知的空间推理，解决现有VLA模型将视觉…",
+    "key_points": [
+      "提出GaussVLA，一个基于Mamba的Vision-Language-Action模型，专注于几何感知的空间推理，解决现有VLA模型将视觉…",
+      "引入Gaussian Spatial Tokenizer (GST) 和 Depth-Aware Chain-of-Thought (DA-C…",
+      "目标是在保持参数效率的同时提升机器人操作任务中的空间推理能力，在仿真和真实世界评估中均达到强空间操作性能"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-25",
     "title": "Gripper-aware Vision Language Action Models",
     "link": "http://arxiv.org/abs/2608.24603",

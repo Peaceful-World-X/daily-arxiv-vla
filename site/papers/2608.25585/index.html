@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RA-VLA: Retrieval-Augmented VLA for Test-Time Adaptation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有Vision-Language-Action（VLA）模型面对未知新任务时泛化能力极差，严重依赖预训练分布内的知识，遇到分布外任务会出现性能崩溃，且适配新任务需要昂贵的重训练过程 现有In-Context Imitation Learning（ICIL）框架存在三类核心适配瓶颈：检索机制仅关注表面视觉相似性而非行为功能性、策略存在预训练行为惯性忽略上下文指导、随检索专家片段增加计算开销急剧上升 本文提出RA-V…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.25585">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.25585.webp" alt="RA-VLA: Retrieval-Augmented VLA for Test-Time Adaptation" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有Vision-Language-Action（VLA）模型面对未知新任务时泛化能力极差，严重依赖预训练分布内的知识，遇到分布外任务会出现性…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RA-VLA: Retrieval-Augmented VLA for Test-Time Adaptation</h1>
+            <div class="detail-meta">2026-08-26 · <a href="http://arxiv.org/abs/2608.25585" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.25585" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.25585</span></div>
+            <p class="detail-summary">现有Vision-Language-Action（VLA）模型面对未知新任务时泛化能力极差，严重依赖预训练分布内的知识，遇到分布外任务会出现性能崩溃，且适配新任务需要昂贵的重训练过程 现有In-Context Imitation Learning（ICIL）框架存在三类核心适配瓶颈：检索机制仅关注表面视觉相似性而非行为功能性、策略存在预训练行为惯性忽略上下文指导、随检索专家片段增加计算开销急剧上升 本文提出RA-V…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">韩国浦项工科大学（POSTECH） 计算机科学与工程系</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.25585/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有Vision-Language-Action（VLA）模型面对未知新任务时泛化能力极差，严重依赖预训练分布内的知识，遇到分布外任务会出现性…</p>
+  <ul class="reading-intro-points"><li>现有Vision-Language-Action（VLA）模型面对未知新任务时泛化能力极差，严重依赖预训练分布内的知识，遇到分布外任务会出现性…</li><li>现有In-Context Imitation Learning（ICIL）框架存在三类核心适配瓶颈：检索机制仅关注表面视觉相似性而非行为功能性…</li><li>本文提出RA-VLA检索增强VLA框架，实现无需模型权重更新的训练免费测试时适配，在仿真和真实机器人环境均验证了其有效性和高效性</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>韩国浦项工科大学（POSTECH）</strong> 计算机科学与工程系</li><li><strong>韩国浦项工科大学（POSTECH）</strong> 人工智能研究生院</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有Vision-Language-Action（VLA）模型面对未知新任务时泛化能力极差，严重依赖预训练分布内的知识，遇到分布外任务会出现性能崩溃，且适配新任务需要昂贵的重训练过程</li><li>现有In-Context Imitation Learning（ICIL）框架存在三类核心适配瓶颈：检索机制仅关注表面视觉相似性而非行为功能性、策略存在预训练行为惯性忽略上下文指导、随检索专家片段增加计算开销急剧上升</li><li>本文提出<strong>RA-VLA</strong>检索增强VLA框架，实现无需模型权重更新的训练免费测试时适配，在仿真和真实机器人环境均验证了其有效性和高效性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>行为对齐检索机制</strong>：通过动态时间规整（DTW）对齐同任务专家演示的动作序列生成行为配对，采用对比学习训练检索器，优先检索行为相似而非表面视觉相似的专家片段，解决现有检索的功能性失配问题</li><li>提出<strong>上下文固守损失</strong>：基于回归间隔机制，通过相关上下文与随机不相关上下文的动作预测损失差值约束，打破策略的预训练行为惯性，强制动作生成 grounded 在检索到的专家上下文上</li><li>设计<strong>可扩展高效推理架构</strong>：将专家片段作为独立编码单元预编码缓存，采用逐层 pairwise 交叉注意力策略融合上下文，推理延迟几乎不随检索片段规模增长，解决现有ICIL方法计算开销随上下文增加而飙升的部署瓶颈</li><li>在<strong>LIBERO</strong>仿真基准和真实UR5e机器人环境验证，RA-VLA的新任务适配成功率大幅优于现有基线，同时保持低推理延迟，证明了框架的实用价值</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体框架分为三个核心模块：上下文缓冲区构建、专家片段检索、 grounded 动作生成</li><li>上下文缓冲区构建：将长时序专家演示按动作预测时窗滑动切分为功能片段，利用冻结的VLM骨干预编码所有片段的视觉-语言特征并缓存，每个片段存储为「检索键-上下文值」对，键用于相似度检索，值为对应的多模态特征、机器人本体状态和动作序列</li><li>专家片段检索：采用轻量2层Transformer编码器作为检索器，对输入的多模态token平均池化得到检索嵌入，通过余弦相似度检索缓冲区中Top-K最相关的专家片段</li><li>Grounded动作生成：动作头采用逐层 pairwise 交叉注意力策略，每层仅拼接当前观测特征与单个专家特征，渐进将高相关片段分配到高层网络做精细动作调整，避免全量注意力带来的计算开销</li><li>关键技术1：<strong>行为对齐损失</strong>：利用DTW对齐同任务的两组专家演示得到正样本对，通过InfoNCE对比损失训练检索器，使行为相似的片段在嵌入空间距离更近，不受视觉外观变化干扰</li><li>关键技术2：<strong>上下文固守损失</strong>：分别计算检索到的相关上下文、随机采样不相关上下文下的动作预测均方误差（MSE）损失，通过最大化两个损失的固定间隔，强制策略依赖检索到的专家指导而非仅依赖预训练先验，训练和推理均无额外开销</li><li>推理优化：将流匹配过程的初始噪声替换为检索到的专家片段的平均动作，加速推理收敛并提升新任务下的生成稳定性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集名称：<strong>LIBERO基准测试集</strong>（包含LIBERO-Spatial、LIBERO-Object、LIBERO-Goal、LIBERO-Long四个任务套件，每个套件10个任务，每个任务提供50条专家演示）、<strong>真实世界UR5e机器人操作数据集</strong>（包含Stack Box、Throw Trash、Close Drawer、Press Pedal四个日常操作任务，每个任务采集30条GELLO遥操作专家演示）</li><li>模型规模和参数量：底层VLA骨架采用<strong>GR00t N1.5</strong>，检索模块为轻量2层Transformer编码器，动作预测时域为16，流匹配去噪步数为4，原文未明确披露具体总参数量</li><li>训练资源：原文未明确披露具体GPU/TPU等训练硬件配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境和基准：仿真环境为<strong>LIBERO基准</strong>，真实环境为UR5e工业机器人平台；对比基线包括Vanilla VLA、RAEA、RICL_G、RICL_R</li><li>主要评估指标：任务成功率、相对上下文敏感度（$\mathcal{S}_{\text{ctx}}$，衡量模型动作预测对专家上下文的依赖程度）、推理延迟</li><li>关键实验结果：1. 仿真环境下RA-VLA平均成功率为38.5%，相比最优基线RICL_R的20.85%提升17.6个百分点，在LIBERO-Goal任务上从10.2%提升至53.2%；2. 真实环境下RA-VLA平均成功率为56.3%，相比最优基线RICL_R的35.4%提升20.83个百分点；3. 推理延迟几乎不随检索的专家片段数量增加，相比现有ICIL方法解决了上下文规模增长带来的计算瓶颈；4. 消融实验证明行为对齐检索和上下文固守损失缺一不可，移除上下文固守损失后相对上下文敏感度从0.3639降至0.0353，成功率大幅下降</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.25659/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">GaussianDream++: Efficient 3D Gaussian World Modeling for Robotic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.25395/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">A Taxonomy of Construction Task Activities for Robot Workers</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
