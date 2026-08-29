@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Decoupling Planning and Control for Instructable Agents - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 Instruct-to-Act 框架，将具身智能体的决策过程解耦为规划（VLM Planner）和控制（World Model Controller）两个模块，前者生成高级自然语言指令，后者执行低级别实时动作 解决预训练视觉-语言模型（VLM）难以直接生成高频率、低延迟动作序列的问题，同时弥补传统世界模型控制器缺乏开放式任务语言指导的不足 通过事后指令标注（post-hoc instruction annot…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.26788">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.26788.webp" alt="Decoupling Planning and Control for Instructable Agents" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 Instruct-to-Act 框架，将具身智能体的决策过程解耦为规划（VLM Planner）和控制（World Model Cont…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Decoupling Planning and Control for Instructable Agents</h1>
+            <div class="detail-meta">2026-08-27 · <a href="http://arxiv.org/abs/2608.26788" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.26788" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.26788</span></div>
+            <p class="detail-summary">提出 Instruct-to-Act 框架，将具身智能体的决策过程解耦为规划（VLM Planner）和控制（World Model Controller）两个模块，前者生成高级自然语言指令，后者执行低级别实时动作 解决预训练视觉-语言模型（VLM）难以直接生成高频率、低延迟动作序列的问题，同时弥补传统世界模型控制器缺乏开放式任务语言指导的不足 通过事后指令标注（post-hoc instruction annot…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">UC Berkeley（Zineng Tang, Alane Suhr）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.26788/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 Instruct-to-Act 框架，将具身智能体的决策过程解耦为规划（VLM Planner）和控制（World Model Cont…</p>
+  <ul class="reading-intro-points"><li>提出 Instruct-to-Act 框架，将具身智能体的决策过程解耦为规划（VLM Planner）和控制（World Model Cont…</li><li>解决预训练视觉-语言模型（VLM）难以直接生成高频率、低延迟动作序列的问题，同时弥补传统世界模型控制器缺乏开放式任务语言指导的不足</li><li>通过事后指令标注（post-hoc instruction annotation）和行为克隆训练环境特定的轻量级控制器，使其能够执行任意预训练…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>UC Berkeley</strong>（Zineng Tang, Alane Suhr）</li><li><strong>Google DeepMind</strong>（Sjoerd van Steenkiste, Ishita Dasgupta，Kelsey R. Allen 的工作在此完成）</li><li><strong>University of British Columbia (UBC)</strong>（Kelsey R. Allen）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>Instruct-to-Act</strong> 框架，将具身智能体的决策过程解耦为<strong>规划</strong>（VLM Planner）和<strong>控制</strong>（World Model Controller）两个模块，前者生成高级自然语言指令，后者执行低级别实时动作</li><li>解决预训练视觉-语言模型（VLM）难以直接生成高频率、低延迟动作序列的问题，同时弥补传统世界模型控制器缺乏开放式任务语言指导的不足</li><li>通过<strong>事后指令标注</strong>（post-hoc instruction annotation）和行为克隆训练环境特定的轻量级控制器，使其能够执行任意预训练 VLM 规划器生成的自然语言指令</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>plug-and-play 的规划-控制解耦范式</strong>，支持任意预训练 VLM 作为规划器而无需微调，仅需训练轻量级的环境特定控制器</li><li>设计<strong>语言感知的世界模型控制器</strong>（基于 DreamerV3 风格的 RSSM），通过 VLM 对控制器自身策略 Rollout 进行事后指令标注，联合优化世界模型、Actor-Critic 和行为克隆损失</li><li>实现<strong>异步在线推理</strong>机制，规划器与控制器并行执行，规划器可在后台持续推理的同时控制器实时执行动作，显著提升吞吐量</li><li>将框架自然扩展到<strong>多智能体协作</strong>场景，支持去中心化/中心化的语言通信协调，无需专门的 MARL 训练</li><li>在 7 个跨领域的具身环境（含 3 个多智能体环境）上验证，在 6/7 任务上达到有竞争力的性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>Planner（规划器）</strong>：使用任意指令调优的 VLM（如 <strong>GPT-4o</strong>、<strong>Qwen-VL-2.5-72B</strong>、<strong>Gemma-3-27B</strong>、<strong>LLaVA-v1.6-34B</strong>），在推理时维护记忆库（memory bank）和部分计划（partial plan），根据观察历史和控制器的指令完成概率异步生成稀疏高级指令</li><li><strong>Controller（控制器）</strong>：基于 <strong>RSSM（Recurrent State Space Model）</strong> 的 800M 参数世界模型，采用 <strong>CLIP-base-224</strong> 和 <strong>DINOv2-base</strong> 视觉特征，<strong>MiniLM-L6-H384-uncased</strong> 语言嵌入；包含额外的指令完成预测头（stop head），当无指令时使用学习的 null embedding 自主执行</li><li><strong>训练流程</strong>：控制器先在空语言条件下收集策略 Rollout 存入 FIFO 重放缓冲区（容量 1024），然后使用 <strong>GPT-4o</strong> 作为标注器对随机采样的时间段（长度 1-20）进行事后指令标注（标注 50% 的缓冲区数据），联合优化模型损失、价值损失、Actor 损失、行为克隆损失（L_BC）和停止预测损失（L_stop）</li><li><strong>多智能体推理</strong>：每个智能体共享控制器参数但维护独立的隐状态，规划器通过共享聊天室（Chatroom）进行去中心化或中心化的语言通信，协调子目标和角色分配</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：<strong>Atari</strong>（Arcade Learning Environment）、<strong>MineRL ObtainDiamond</strong>（Minecraft 钻石任务）、<strong>Crafter</strong>、<strong>DeepMind Lab</strong>（explore_goal_locations）、<strong>Overcooked-AI</strong>、<strong>Pico Park</strong>（2-8 玩家合作平台解谜）、<strong>MindCraft</strong>（Minecraft 多智能体协作）</li><li><strong>模型规模</strong>：Controller 主要使用 <strong>800M 参数</strong> RSSM（另有 50M/200M 变体）；Planner 使用不同规模的 VLM（从 2B 到 72B 参数不等）</li><li><strong>训练资源</strong>：每个环境训练约 <strong>23 GPU-hours</strong>（4 RTX A6000 GPUs），约 <strong>5.5M 环境步</strong>；VLM 事后标注增加约 <strong>17% GPU-hours</strong> 和 <strong>12% 训练开销</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：100 个 episode（无探索噪声，ε=0，温度 τ=0.8），遵循各环境官方协议（Atari sticky actions/no-op starts、MineRL 标准协议等）</li><li><strong>主要指标</strong>：Atari 分数、Minecraft Diamond 完成率、Crafter 成就数、DMLab 目标位置探索、Overcooked 奖励、Pico Park 通关率、MindCraft 成功率；指令遵循准确率（instruction-following accuracy）</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - 平均指令遵循准确率达 <strong>92.8%</strong>，跨不同 VLM 规划器稳定性高（86%-97%）</p>
+<p> - 在 7 个任务中的 <strong>6 个</strong>上性能具有竞争力，优于直接 VLM 动作生成和仅使用控制器的基线</p>
+<p> - <strong>异步在线规划</strong>比同步离线规划吞吐量快一个数量级，且在 Minecraft Diamond 上性能更高（GPT-4o：10.75 vs 9.60）</p>
+<p> - <strong>多智能体去中心化通信</strong>在 Pico Park 上优于中心化方案，且保持相当吞吐量</p>
+<p> - <strong>跨规划器迁移</strong>稳定（训练/评估交叉矩阵 9.2-10.2 分），表明控制器不过度拟合特定规划器的措辞</p>
+<p> - 控制器架构不限于 RSSM，Transformer 世界模型也能达到相近性能（11.2 vs 11.0）</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.26821/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.26673/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">PredVLA: A Sub-Million-Parameter Predictive-Coding Policy for Robot Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

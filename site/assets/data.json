@@ -1,5 +1,201 @@
 [
   {
+    "date": "2026-08-27",
+    "title": "FlashVLA: Streaming Action Decoding for Fast and Asynchronous VLA Inference",
+    "link": "http://arxiv.org/abs/2608.27384",
+    "arxiv_id": "2608.27384",
+    "detail_path": "papers/2608.27384/",
+    "cover_path": "covers/2608.27384/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.27384.webp",
+    "preview_text": "论文提出 FlashVLA，一个针对流匹配（flow-matching）视觉-语言-动作（VLA）模型的流式动作解码框架 核心目标是解决当前 VLA 模型推理延迟高、异步执行不稳定两大部署瓶颈 通过将动作从孤立解码改为联合解码，同时降低每步推理延迟并保持异步执行时的动作连续性",
+    "research_unit": "UC San Diego",
+    "hook_text": "论文提出 FlashVLA，一个针对流匹配（flow-matching）视觉-语言-动作（VLA）模型的流式动作解码框架",
+    "key_points": [
+      "论文提出 FlashVLA，一个针对流匹配（flow-matching）视觉-语言-动作（VLA）模型的流式动作解码框架",
+      "核心目标是解决当前 VLA 模型推理延迟高、异步执行不稳定两大部署瓶颈",
+      "通过将动作从孤立解码改为联合解码，同时降低每步推理延迟并保持异步执行时的动作连续性"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-27",
+    "title": "GRAFT: Grounded and Efficient Online Reinforcement Adaptation for Fine-Grained Robot Manipulation",
+    "link": "http://arxiv.org/abs/2608.27079",
+    "arxiv_id": "2608.27079",
+    "detail_path": "papers/2608.27079/",
+    "cover_path": "covers/2608.27079/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.27079.webp",
+    "preview_text": "本文针对预训练视觉-语言-动作（VLA）策略在精细生物医学机器人操作任务中的在线适应问题，提出了 GRAFT（Grounded Reinforcement Adaptation for Fast Task Learning）框架 核心挑战在于任务成功高度依赖微妙的、视角依赖的局部视觉线索，而标量任务级奖励无法提供关于哪些区域重要的空间指导，且在线适应受限于 VLA 推理和回放更新的计算成本 论文的目标是：通过区域级…",
+    "research_unit": "所有作者均来自 中国科学技术大学 苏州高等研究院（Suzhou Institute for Advan…",
+    "hook_text": "本文针对预训练视觉-语言-动作（VLA）策略在精细生物医学机器人操作任务中的在线适应问题，提出了 GRAFT（Grounded Reinfor…",
+    "key_points": [
+      "本文针对预训练视觉-语言-动作（VLA）策略在精细生物医学机器人操作任务中的在线适应问题，提出了 GRAFT（Grounded Reinfor…",
+      "核心挑战在于任务成功高度依赖微妙的、视角依赖的局部视觉线索，而标量任务级奖励无法提供关于哪些区域重要的空间指导，且在线适应受限于 VLA 推理…",
+      "论文的目标是：通过区域级监督教会 VLA 策略哪些局部视觉线索是重要的，同时确保部署时无需区域建议，并且在线优化计算高效"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-27",
+    "title": "TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation",
+    "link": "http://arxiv.org/abs/2608.26821",
+    "arxiv_id": "2608.26821",
+    "detail_path": "papers/2608.26821/",
+    "cover_path": "covers/2608.26821/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.26821.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）模型在多阶段操作中难以区分视觉相似但执行历史不同的状态，简单添加历史帧无法可靠捕获近期的物理变化，导致长程任务中错误累积 本文提出 TemporalFlow-VLA，通过物理 grounded 的时间监督学习紧凑的执行历史表示，使用机器人-表面时序流（robot-surface temporal flow）作为仅训练时的监督目标 该方法基于记录的机器人状态、URDF 几何模型和相机标定…",
+    "research_unit": "香港科技大学（广州），中国广州",
+    "hook_text": "现有视觉-语言-动作（VLA）模型在多阶段操作中难以区分视觉相似但执行历史不同的状态，简单添加历史帧无法可靠捕获近期的物理变化，导致长程任务中…",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）模型在多阶段操作中难以区分视觉相似但执行历史不同的状态，简单添加历史帧无法可靠捕获近期的物理变化，导致长程任务中…",
+      "本文提出 TemporalFlow-VLA，通过物理 grounded 的时间监督学习紧凑的执行历史表示，使用机器人-表面时序流（robot-…",
+      "该方法基于记录的机器人状态、URDF 几何模型和相机标定参数构建时序流，监督两个执行对齐的时间查询（Q₈ 和 Q₁₅），为动作专家提供结构化历…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-27",
+    "title": "Decoupling Planning and Control for Instructable Agents",
+    "link": "http://arxiv.org/abs/2608.26788",
+    "arxiv_id": "2608.26788",
+    "detail_path": "papers/2608.26788/",
+    "cover_path": "covers/2608.26788/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.26788.webp",
+    "preview_text": "提出 Instruct-to-Act 框架，将具身智能体的决策过程解耦为规划（VLM Planner）和控制（World Model Controller）两个模块，前者生成高级自然语言指令，后者执行低级别实时动作 解决预训练视觉-语言模型（VLM）难以直接生成高频率、低延迟动作序列的问题，同时弥补传统世界模型控制器缺乏开放式任务语言指导的不足 通过事后指令标注（post-hoc instruction annot…",
+    "research_unit": "UC Berkeley（Zineng Tang, Alane Suhr）",
+    "hook_text": "提出 Instruct-to-Act 框架，将具身智能体的决策过程解耦为规划（VLM Planner）和控制（World Model Cont…",
+    "key_points": [
+      "提出 Instruct-to-Act 框架，将具身智能体的决策过程解耦为规划（VLM Planner）和控制（World Model Cont…",
+      "解决预训练视觉-语言模型（VLM）难以直接生成高频率、低延迟动作序列的问题，同时弥补传统世界模型控制器缺乏开放式任务语言指导的不足",
+      "通过事后指令标注（post-hoc instruction annotation）和行为克隆训练环境特定的轻量级控制器，使其能够执行任意预训练…"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-27",
+    "title": "PredVLA: A Sub-Million-Parameter Predictive-Coding Policy for Robot Manipulation",
+    "link": "http://arxiv.org/abs/2608.26673",
+    "arxiv_id": "2608.26673",
+    "detail_path": "papers/2608.26673/",
+    "cover_path": "covers/2608.26673/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.26673.webp",
+    "preview_text": "提出PredVLA，一个仅含67.5万可训练参数的预测编码语言条件机器人操作策略，无需机器人数据预训练，旨在探索通过改变控制架构本身（而非压缩现有VLA模型）实现亚百万参数规模下的强操作性能 研究目标是在标准语言条件操作基准LIBERO上验证该策略的有效性，与匹配参数的当代策略架构进行公平对比 解决的核心问题：现有大规模VLA模型参数量达数十亿，训练、部署成本高昂；现有小参数VLA仍处于数亿参数规模，尚未有研究探索…",
+    "research_unit": "Sony Computer Science Laboratory（东京，日本），论文作者均隶属于该机构",
+    "hook_text": "提出PredVLA，一个仅含67.5万可训练参数的预测编码语言条件机器人操作策略，无需机器人数据预训练，旨在探索通过改变控制架构本身（而非压缩…",
+    "key_points": [
+      "提出PredVLA，一个仅含67.5万可训练参数的预测编码语言条件机器人操作策略，无需机器人数据预训练，旨在探索通过改变控制架构本身（而非压缩…",
+      "研究目标是在标准语言条件操作基准LIBERO上验证该策略的有效性，与匹配参数的当代策略架构进行公平对比",
+      "解决的核心问题：现有大规模VLA模型参数量达数十亿，训练、部署成本高昂；现有小参数VLA仍处于数亿参数规模，尚未有研究探索亚百万参数规模的预测…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-27",
+    "title": "FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2608.26645",
+    "arxiv_id": "2608.26645",
+    "detail_path": "papers/2608.26645/",
+    "cover_path": "covers/2608.26645/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.26645.webp",
+    "preview_text": "当前视觉-语言-动作（VLA）模型依赖无失败、轨迹单调的成功演示数据训练，面对执行错误时鲁棒性极差，无法自主恢复，限制了机器人在开放世界的自主性 论文提出FLARE框架，通过“Retry（重试）”和“Reset（重置）”双范式，为VLA模型赋予强大的错误恢复能力，实现机器人自主性从“追求完美执行”到“具备韧性”的转变 研究核心解决两类错误：分布内（ID）错误（环境状态有效但机器人姿态偏离训练分布）和分布外（OOD）…",
+    "research_unit": "论文作者所属机构包括：香港中文大学、感知与交互智能中心、杜克大学、中山大学、TengenX、腾讯 Ro…",
+    "hook_text": "当前视觉-语言-动作（VLA）模型依赖无失败、轨迹单调的成功演示数据训练，面对执行错误时鲁棒性极差，无法自主恢复，限制了机器人在开放世界的自主性",
+    "key_points": [
+      "当前视觉-语言-动作（VLA）模型依赖无失败、轨迹单调的成功演示数据训练，面对执行错误时鲁棒性极差，无法自主恢复，限制了机器人在开放世界的自主性",
+      "论文提出FLARE框架，通过“Retry（重试）”和“Reset（重置）”双范式，为VLA模型赋予强大的错误恢复能力，实现机器人自主性从“追求…",
+      "研究核心解决两类错误：分布内（ID）错误（环境状态有效但机器人姿态偏离训练分布）和分布外（OOD）错误（环境状态 catastrophic 不…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-08-27",
+    "title": "TrapVLA: Trapping Vision-Language-Action Models in Configured Failure Modes",
+    "link": "http://arxiv.org/abs/2608.26578",
+    "arxiv_id": "2608.26578",
+    "detail_path": "papers/2608.26578/",
+    "cover_path": "covers/2608.26578/",
+    "paper_image_path": "assets/paper-images/thumbs/2608.26578.webp",
+    "preview_text": "针对现有VLA后门攻击仅关注任务是否失败的局限，提出Configured Failure Trapping新任务，要求通过隐蔽的文本触发器诱导机器人产生攻击者配置的细粒度失败模式，而非无约束的任务失败，使攻击更隐蔽难以检测 研究需解决三方面问题：一是如何自动生成高质量带配置失败模式的 backdoor 数据集；二是如何设计评估指标量化配置失败的激活程度；三是如何解决后门注入时的稀疏动作偏差问题，提升攻击可靠性 研究…",
+    "research_unit": "中山大学计算机学院（Sun Yat-sen University, School of Compute…",
+    "hook_text": "针对现有VLA后门攻击仅关注任务是否失败的局限，提出Configured Failure Trapping新任务，要求通过隐蔽的文本触发器诱导…",
+    "key_points": [
+      "针对现有VLA后门攻击仅关注任务是否失败的局限，提出Configured Failure Trapping新任务，要求通过隐蔽的文本触发器诱导…",
+      "研究需解决三方面问题：一是如何自动生成高质量带配置失败模式的 backdoor 数据集；二是如何设计评估指标量化配置失败的激活程度；三是如何解…",
+      "研究目标是在不影响干净任务性能的前提下，可靠诱导VLA模型产生攻击者指定的失败行为，揭示VLA模型的细粒度安全风险"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
     "date": "2026-08-26",
     "title": "StreamPI: Streaming Multimodal Temporal Modeling for Vision-Language-Action Models",
     "link": "http://arxiv.org/abs/2608.26067",
@@ -37668,7 +37864,7 @@
     "arxiv_id": "2506.03350",
     "detail_path": "papers/2506.03350/",
     "cover_path": "covers/2506.03350/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2506.03350.webp",
     "preview_text": "首次针对机器人视觉-语言-动作（VLA）模型开展对抗攻击研究，将大语言模型（LLM）越狱攻击 adapted 为对 VLA 的完全控制权获取 核心目标是证明通过在初始输入中添加对抗性文本提示，即可驱动机器人执行任意目标动作或动作序列，且攻击在物理世界 rollout 中具有持久性 区别于传统 LLM 越狱，VLA 攻击无需语义上的“有害”关联，而是聚焦于对机器人底层动作空间的完全控制权（control author…",
     "research_unit": "Gray Swan AI",
     "hook_text": "首次针对机器人视觉-语言-动作（VLA）模型开展对抗攻击研究，将大语言模型（LLM）越狱攻击 adapted 为对 VLA 的完全控制权获取",
@@ -37696,7 +37892,7 @@
     "arxiv_id": "2506.02112",
     "detail_path": "papers/2506.02112/",
     "cover_path": "covers/2506.02112/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2506.02112.webp",
     "preview_text": "论文提出了一个新的任务 Map and Locate，该任务统一了开放词汇语义分割（基于自然语言查询检测和分割实例）与3D重建（从视觉输入估计场景的3D结构），旨在从无位姿视频中生成点云并分割目标对象。 为了解决这一任务，论文提出了一个简单有效的基线模型 SAB3R，该模型基于 MASt3R 构建，通过轻量级蒸馏策略将 CLIP 和 DINOv2 等2D视觉主干网络的语义特征融入3D重建框架。 该研究解决了现有方法…",
     "research_unit": "University of Virginia",
     "hook_text": "论文提出了一个新的任务 Map and Locate，该任务统一了开放词汇语义分割（基于自然语言查询检测和分割实例）与3D重建（从视觉输入估计…",
@@ -37724,7 +37920,7 @@
     "arxiv_id": "2506.01953",
     "detail_path": "papers/2506.01953/",
     "cover_path": "covers/2506.01953/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2506.01953.webp",
     "preview_text": "论文旨在解决机器人操作领域中策略泛化能力与执行效率两大核心挑战。 现有双系统视觉-语言-动作（VLA）方法将系统分离，限制了快速执行系统（System 1）充分利用慢速推理系统（System 2）中VLM的预训练知识。 提出了Fast-in-Slow (FiS) ，一种统一的双系统VLA基础模型，将System 1执行模块嵌入到基于VLM的System 2内部，通过部分参数共享实现无缝协作。",
     "research_unit": "The Chinese University of Hong Kong",
     "hook_text": "论文旨在解决机器人操作领域中策略泛化能力与执行效率两大核心挑战。",
