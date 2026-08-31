@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DeicticVLA: Unifying Instruction Modes Based on Language and Deictic Gestures in a Single VLA - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 DeicticVLA，一个能在单个预训练 VLA 模型中统一处理 语言指令（LI）、视觉-语言指令（VLI） 和 纯视觉指令（VI） 三种指令模式的接口。 解决现有 VLA 模型在物体类别相同或外观相似场景中难以可靠使用语言描述指定目标的问题，以及缺乏统一支持多种指令模式的设计原则。 通过指令标准化（文本提示补全和指示手势接地）将用户输入转化为统一的文本提示和指示蒙版，并系统比较了不同的视觉提示方法。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.28108">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.28108.webp" alt="DeicticVLA: Unifying Instruction Modes Based on Language and Deictic Gestures in a Single VLA" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 DeicticVLA，一个能在单个预训练 VLA 模型中统一处理 语言指令（LI）、视觉-语言指令（VLI） 和 纯视觉指令（VI） 三…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">DeicticVLA: Unifying Instruction Modes Based on Language and Deictic Gestures in a Single VLA</h1>
+            <div class="detail-meta">2026-08-28 · <a href="http://arxiv.org/abs/2608.28108" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.28108" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.28108</span></div>
+            <p class="detail-summary">提出 DeicticVLA，一个能在单个预训练 VLA 模型中统一处理 语言指令（LI）、视觉-语言指令（VLI） 和 纯视觉指令（VI） 三种指令模式的接口。 解决现有 VLA 模型在物体类别相同或外观相似场景中难以可靠使用语言描述指定目标的问题，以及缺乏统一支持多种指令模式的设计原则。 通过指令标准化（文本提示补全和指示手势接地）将用户输入转化为统一的文本提示和指示蒙版，并系统比较了不同的视觉提示方法。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">大阪大学大学院基础工学研究科系统创新专攻（Dept. of Systems Innovation, G…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.28108/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 DeicticVLA，一个能在单个预训练 VLA 模型中统一处理 语言指令（LI）、视觉-语言指令（VLI） 和 纯视觉指令（VI） 三…</p>
+  <ul class="reading-intro-points"><li>提出 DeicticVLA，一个能在单个预训练 VLA 模型中统一处理 语言指令（LI）、视觉-语言指令（VLI） 和 纯视觉指令（VI） 三…</li><li>解决现有 VLA 模型在物体类别相同或外观相似场景中难以可靠使用语言描述指定目标的问题，以及缺乏统一支持多种指令模式的设计原则。</li><li>通过指令标准化（文本提示补全和指示手势接地）将用户输入转化为统一的文本提示和指示蒙版，并系统比较了不同的视觉提示方法。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>大阪大学大学院基础工学研究科系统创新专攻（Dept. of Systems Innovation, Graduate School of Engineering Science, The University of Osaka）</li><li>东京大学国际神经智能研究中心（International Research Center for Neurointelligence, The University of Tokyo）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>DeicticVLA</strong>，一个能在单个预训练 VLA 模型中统一处理 <strong>语言指令（LI）</strong>、<strong>视觉-语言指令（VLI）</strong> 和 <strong>纯视觉指令（VI）</strong> 三种指令模式的接口。</li><li>解决现有 VLA 模型在物体类别相同或外观相似场景中难以可靠使用语言描述指定目标的问题，以及缺乏统一支持多种指令模式的设计原则。</li><li>通过指令标准化（文本提示补全和指示手势接地）将用户输入转化为统一的文本提示和指示蒙版，并系统比较了不同的视觉提示方法。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了 <strong>DeicticVLA</strong> 统一接口，通过指令标准化实现 LI、VLI 和 VI 三种指令模式在单一模型中的切换。</li><li>引入了 <strong>两阶段训练策略</strong>（先 LI 后联合训练），并在相同模型和演示数据下，系统比较了 <strong>两种 RGB 视觉提示方法</strong>（VP-BBox、VP-Fade）和 <strong>两种分离通道蒙版提示方法</strong>（MP-Early、MP-Late）。</li><li>在三个真实世界操作任务中验证了 <strong>VLI 和 VI 模式</strong>在未见指令、视觉扰动和未见物体条件下的显著优势。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>指令标准化</strong>：将用户输入（语言、点击）统一为文本提示和指示蒙版。使用 <strong>SAM 2</strong> 将用户点击转化为像素级蒙版（Mask-T、Mask-G、Mask-R），LI 模式使用零蒙版。</li><li><strong>视觉提示方法</strong>：对比了 <strong>VP-BBox</strong>（绘制边界框）和 <strong>VP-Fade</strong>（淡化非目标区域）两种 RGB 视觉提示，以及 <strong>MP-Early</strong>（在视觉编码器前融合）和 <strong>MP-Late</strong>（在视觉编码器后融合）两种分离通道蒙版提示。</li><li><strong>两阶段训练</strong>：第一阶段仅用 LI 数据微调，第二阶段联合使用 LI、VLI 和 VI 数据进行训练，以缓解遗忘并提升对齐能力。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>LIBERO</strong> 仿真基准（LIBERO-Object、LIBERO-Spatial、LIBERO-Goal）和三个真实世界操作任务（<strong>PickBlock</strong>、<strong>PutBlock</strong>、<strong>OrganizeToy</strong>）。</li><li>模型基础：预训练的 <strong>π0</strong> VLA 模型，未明确说明参数量。</li><li>训练资源：<strong>2×A100 GPUs</strong>，总训练步数 60,000 步，优化器为 AdamW。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：<strong>LIBERO</strong> 仿真环境的分布内评估和零样本泛化评估（Object-ZS、Spatial-ZS），以及三个真实世界操作任务。</li><li>主要评估指标：<strong>任务成功率（SR）</strong> 和指示蒙版贡献度 <strong>ΔSR</strong>。</li><li>仿真结果：<strong>VP-BBox</strong> 在分布内和零样本评估中表现最佳，尤其在 Spatial-ZS 上具有明显优势；<strong>两阶段训练</strong> 显著提升了零样本泛化能力；保留第二阶段 LI 数据能有效缓解语言指令跟随能力的遗忘。</li><li>真实世界结果：<strong>VLI 和 VI</strong> 模式在未见过的指令表达、视觉扰动和未见物体下均大幅优于 LI 模式，例如在未见类别物体上，VI 和 VLI 的成功率可达 <strong>100%</strong>，而 LI 仅为 <strong>16.7%</strong>。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2608.27609/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">PHR-VLA: Planning Horizon Reasoning for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
