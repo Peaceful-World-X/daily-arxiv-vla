@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DREAM: Deployment-Time Demonstration Generation via Real-to-Sim for Scalable Policy Adaptation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 DREAM 框架，用于在部署工作空间中为预训练的视觉-语言-动作（VLA）模型自动生成微调数据，无需任务特定的人工示教 解决新工作空间中获取动作标注数据成本高昂的问题，通过将工作空间视频和语言指令转化为可执行的机器人轨迹数据 验证重建仿真环境与真实机器人性能的相关性，并评估自动生成数据在真实机器人上的扩展性与人工遥操作的效率对比" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.29078">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.29078.webp" alt="DREAM: Deployment-Time Demonstration Generation via Real-to-Sim for Scalable Policy Adaptation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 DREAM 框架，用于在部署工作空间中为预训练的视觉-语言-动作（VLA）模型自动生成微调数据，无需任务特定的人工示教</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">DREAM: Deployment-Time Demonstration Generation via Real-to-Sim for Scalable Policy Adaptation</h1>
+            <div class="detail-meta">2026-08-29 · <a href="http://arxiv.org/abs/2608.29078" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.29078" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.29078</span></div>
+            <p class="detail-summary">提出 DREAM 框架，用于在部署工作空间中为预训练的视觉-语言-动作（VLA）模型自动生成微调数据，无需任务特定的人工示教 解决新工作空间中获取动作标注数据成本高昂的问题，通过将工作空间视频和语言指令转化为可执行的机器人轨迹数据 验证重建仿真环境与真实机器人性能的相关性，并评估自动生成数据在真实机器人上的扩展性与人工遥操作的效率对比</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">5 张阅读卡</span>
+              <span class="meta-pill">The University of Tokyo（东京大学）, Japan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.29078/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 DREAM 框架，用于在部署工作空间中为预训练的视觉-语言-动作（VLA）模型自动生成微调数据，无需任务特定的人工示教</p>
+  <ul class="reading-intro-points"><li>提出 DREAM 框架，用于在部署工作空间中为预训练的视觉-语言-动作（VLA）模型自动生成微调数据，无需任务特定的人工示教</li><li>解决新工作空间中获取动作标注数据成本高昂的问题，通过将工作空间视频和语言指令转化为可执行的机器人轨迹数据</li><li>验证重建仿真环境与真实机器人性能的相关性，并评估自动生成数据在真实机器人上的扩展性与人工遥操作的效率对比</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>The University of Tokyo</strong>（东京大学）, Japan</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>DREAM</strong> 框架，用于在部署工作空间中为预训练的视觉-语言-动作（VLA）模型自动生成微调数据，无需任务特定的人工示教</li><li>解决新工作空间中获取动作标注数据成本高昂的问题，通过将工作空间视频和语言指令转化为可执行的机器人轨迹数据</li><li>验证重建仿真环境与真实机器人性能的相关性，并评估自动生成数据在真实机器人上的扩展性与人工遥操作的效率对比</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出无需任务特定示教的可扩展数据收集框架，仅需工作空间视频和语言指令即可生成机器人训练数据</li><li>通过 sim-to-real 相关性实验验证重建环境作为数据源的可信度（MMRV=0.000, r=0.98–0.99）</li><li>证明真实世界策略性能随自动生成数据量增加而提升，且无需额外人工示教</li><li>量化比较自动生成与人工遥操作的数据收集成本，展示系统在数据规模扩展上的经济优势</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>数字孪生重建</strong>：使用 <strong>COLMAP</strong> 进行运动恢复结构（SfM），结合 <strong>3D Gaussian Splatting (gsplat)</strong> 优化场景表示；通过 <strong>SAM3</strong> 分割机器人点云，利用 <strong>FPFH+RANSAC+ICP</strong> 自动估计 <strong>SIM(3)</strong> 变换，将重建对齐到机器人基坐标系；分解为背景、机器人连杆（正向动力学重定位）和可操纵物体（<strong>TRELLIS</strong> 生成外观，配碰撞网格）三类可独立定位的资产</li><li><strong>任务与运动规划（TAMP）合成</strong>：使用 <strong>GPT-4o-mini</strong> 将语言指令组合成预定义谓词词汇表中的符号目标（如 <code>On(x,y)</code>）和分阶段成功标准；基于 <strong>PDDL</strong> 领域通过广度搜索生成规划骨架，使用 <strong>cuTAMP</strong> 进行 GPU 并行参数优化（粒子数 1000，结合 <strong>GraspGen</strong> 扩散抓取生成器和启发式放置采样器），最后通过 <strong>cuRobo</strong> 进行碰撞感知关节空间运动规划生成可执行轨迹</li><li><strong>示教增强</strong>：采用类 <strong>MimicGen</strong> 的增强策略，根据符号计划识别子任务边界，通过最近邻选择源演示、刚性变换到新物体坐标系并用插值桥接运动连接，仅当终态标准触发且通过物理合理性过滤（无静态物体扰动、无预抓取碰撞等）时接受</li><li><strong>渲染与数据集构建</strong>：将机器人连杆、物体和背景的高斯泼溅资产按正向动力学和记录姿态组合，通过深度排序 alpha 混合自动处理遮挡，在标定相机（固定第三人称和腕部相机）下渲染 <strong>640×480</strong> RGB 观测，以 <strong>LeRobot</strong> 格式存储语言指令、视觉观测、机器人状态和动作标签</li><li><strong>策略微调</strong>：使用生成的图像-动作数据集对预训练 VLA 进行监督模仿学习微调，部署时策略直接从观测预测动作，无需访问规划器</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>硬件平台</strong>：<strong>xArm7</strong> 机械臂，配备两个 <strong>Intel RealSense D435i</strong> 相机（固定外部视角和腕部 mounted），使用 ArUco 标定相机外参</li><li><strong>任务数据集</strong>：两个桌面操作任务——<strong>BlockIntoBowl</strong>（单步抓取放置）和 <strong>FruitPacking</strong>（多步骤序列抓取放置香蕉和桃子到盘子）</li><li><strong>模型架构</strong>：评估 <strong>SmolVLA</strong>、<strong>π₀.₅</strong> 和 <strong>Diffusion Policy</strong>，均通过监督模仿学习从预训练权重或从头训练微调</li><li><strong>计算资源</strong>：策略训练使用 <strong>NVIDIA GB200</strong> GPU；高斯泼溅优化、资产生成、规划、仿真和渲染使用三块 <strong>NVIDIA RTX A6000</strong>（每块 48GB 显存）</li><li><strong>数据规模</strong>：人工遥操作提供 10/50/100 条示教，DREAM 生成 100/500/1000 条示教，每条数据包含 640×480 RGB 观测、机器人状态和动作标签</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.29208/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">AdaVLA: Adaptive Step Flow Matching for Training-free Acceleration of Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.29005/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">A Degradation-Tolerance Benchmark for Camera-Only End-to-End Driving</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

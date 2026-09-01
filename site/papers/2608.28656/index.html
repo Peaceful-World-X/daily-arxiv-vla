@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RedLight-VLA: Models for traffic-rule grounding and behavioral emphasis in driving policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对行为克隆VLA驾驶策略在信号路口罕见规则操控（红灯刹停、绿灯起步）上表现差的问题，现有损失函数对长尾纵向事件不敏感，且融合表征缺少交通灯、停止线状态的显式监督 提出RedLight-VLA训练框架，仅利用专家未来轨迹和感知栈自动生成的规则目标，无需额外人工规则标注，同时提升长尾操控性能和规则合规性 核心是两种独立可切换的损失层机制：轨迹衍生的行为重加权（BR）和融合后token的辅助规则监督（AUX），二者耦合…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.28656">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.28656.webp" alt="RedLight-VLA: Models for traffic-rule grounding and behavioral emphasis in driving policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对行为克隆VLA驾驶策略在信号路口罕见规则操控（红灯刹停、绿灯起步）上表现差的问题，现有损失函数对长尾纵向事件不敏感，且融合表征缺少交通灯、…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RedLight-VLA: Models for traffic-rule grounding and behavioral emphasis in driving policies</h1>
+            <div class="detail-meta">2026-08-21 · <a href="http://arxiv.org/abs/2608.28656" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.28656" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.28656</span></div>
+            <p class="detail-summary">针对行为克隆VLA驾驶策略在信号路口罕见规则操控（红灯刹停、绿灯起步）上表现差的问题，现有损失函数对长尾纵向事件不敏感，且融合表征缺少交通灯、停止线状态的显式监督 提出RedLight-VLA训练框架，仅利用专家未来轨迹和感知栈自动生成的规则目标，无需额外人工规则标注，同时提升长尾操控性能和规则合规性 核心是两种独立可切换的损失层机制：轨迹衍生的行为重加权（BR）和融合后token的辅助规则监督（AUX），二者耦合…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Qualcomm Technologies, Inc., USA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.28656/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对行为克隆VLA驾驶策略在信号路口罕见规则操控（红灯刹停、绿灯起步）上表现差的问题，现有损失函数对长尾纵向事件不敏感，且融合表征缺少交通灯、…</p>
+  <ul class="reading-intro-points"><li>针对行为克隆VLA驾驶策略在信号路口罕见规则操控（红灯刹停、绿灯起步）上表现差的问题，现有损失函数对长尾纵向事件不敏感，且融合表征缺少交通灯、…</li><li>提出RedLight-VLA训练框架，仅利用专家未来轨迹和感知栈自动生成的规则目标，无需额外人工规则标注，同时提升长尾操控性能和规则合规性</li><li>核心是两种独立可切换的损失层机制：轨迹衍生的行为重加权（BR）和融合后token的辅助规则监督（AUX），二者耦合可进一步提升性能</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>Qualcomm Technologies, Inc., USA</li><li>Qualcomm Auto Ltd Sweden Filial, Sweden</li><li>Qualcomm India Private Limited, India</li><li>Arriver System Software S.r.l., Romania</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对行为克隆VLA驾驶策略在信号路口罕见规则操控（红灯刹停、绿灯起步）上表现差的问题，现有损失函数对长尾纵向事件不敏感，且融合表征缺少交通灯、停止线状态的显式监督</li><li>提出<strong>RedLight-VLA</strong>训练框架，仅利用专家未来轨迹和感知栈自动生成的规则目标，无需额外人工规则标注，同时提升长尾操控性能和规则合规性</li><li>核心是两种独立可切换的损失层机制：轨迹衍生的<strong>行为重加权（BR）</strong>和融合后token的<strong>辅助规则监督（AUX）</strong>，二者耦合可进一步提升性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>无需额外人工规则标注的通用框架，复用现有训练栈的信号（标签衍生的运动学特征、感知衍生的规则状态），提供两个独立可切换的损失层机制，配套运动学与规则尾部的联合覆盖分析</li><li>提出<strong>轨迹衍生的行为重加权（BR）</strong>方法，基于专家未来的旋转不变纵向动力学设计两类复合权重器，采用尺度保持的加权损失均值，禁用时可精确恢复原始基线损失</li><li>设计<strong>监督规则寄存器</strong>机制：在VLA的token总线添加保留占位token，通过并行MLP头在语言模型融合后直接读取交通灯、停止线状态，无需修改轨迹解码器或引入语言生成</li><li>构建开环规则合规性评估套件，覆盖红灯停止线超冲率、绿灯误停率、停止线速度误差三类指标，可基于现有感知信号计算，补充传统位移指标的不足</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基座为<strong>VLA轨迹预测器</strong>：视觉编码器处理5帧前视图像（约0.5s历史，480×960分辨率），ego运动状态和SD地图token组成token总线，约0.6B参数的开源LLM完成多模态融合，独立自回归动作解码器输出50步、时长5s的未来轨迹，LLM和视觉编码器通过LoRA适配</li><li><strong>行为重加权（BR）模块</strong>：首先从专家未来轨迹计算纵向速度、加速度；然后设计两类触发器：减速权重器（DCCL，含持续减速、急刹、整体减速三个触发器）和加速权重器（ACCL，含从静止起步、急加速、提速三个触发器），触发器内取最大权重，两类权重相乘后裁剪到[1,15]；最后采用尺度保持的加权损失均值，通过全局batch归一化确保权重平均值为1，禁用时完全恢复原始损失尺度，不会引入额外超参调优需求</li><li><strong>辅助规则token监督（AUX）模块</strong>：在token总线添加3个学习占位token（1个交通灯token、2个停止线token），LLM融合后读取对应token的隐状态，分别接两个小型MLP头：交通灯头预测是否存在、红/绿颜色；停止线头预测是否存在、距离、方向，损失为二分类交叉熵、平滑L1损失和圆形约束损失的加权和，两个模块仅作用于损失层，互不干扰</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用真实驾驶场景的策划数据集，训练集包含<strong>235,985条序列/1,651,895帧</strong>，验证集16,318条/114,226帧，测试集16,404条/114,828帧，约25.7%的训练帧包含可解析的交通灯信号，10.1%包含符合要求的停止线</li><li>基座LLM为约<strong>0.6B参数</strong>的开源模型，通过LoRA适配视觉编码器和LLM的查询、键、值、输出投影层，仅新增3个token和2个小型MLP头，参数量和计算开销可忽略</li><li>训练采用<strong>多张H100 GPU</strong>组成的集群，使用AdamW优化器、bfloat16精度、梯度裁剪，学习率采用预热-保持-余弦衰减策略，结合batch size缩放</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估采用严格控制变量设计：与基线共享backbone、训练数据、解码器和评估群体，同时与<strong>SimLingo、ORION、Alpamayo-R1</strong>等开源VLA规划器在相同数据和评估集上对比，排除数据集和评估域偏差</li><li>评估指标包括：场景分桶的5s ADE、交通灯/非交通灯切片的3s ADE/FDE、开环规则合规指标（红灯停止线超冲率、绿灯误停率、停止线速度误差）、辅助任务准确率、运动学与规则事件覆盖率</li><li>关键实验结果：<strong>Full模型（BR+AUX）</strong>在3s交通灯切片ADE/FDE上从基线的0.274/0.964m降至0.247/0.897m，非交通灯切片从0.268/0.956m降至0.241/0.876m；红灯停止线超冲率从7.3%降至6.8%，停止线速度误差降低12.7%；绿灯误停率从3.2%升至3.9%，但低于单独使用AUX的4.0%；使用70%的训练数据即可达到全数据基线的性能，75%数据时多数指标优于全数据基线；在外部VLA规划器对比中，Full模型在所有四项位移指标上均取得最优，19/20的场景分桶单元格优于基线；辅助任务中交通灯存在准确率达95.15%，颜色准确率93.66%，停止线距离MAE为2.626m，方向MAE为6.493°</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.29005/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">A Degradation-Tolerance Benchmark for Camera-Only End-to-End Driving</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.28108/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">DeicticVLA: Unifying Instruction Modes Based on Language and Deictic Gestures in a Single VLA</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

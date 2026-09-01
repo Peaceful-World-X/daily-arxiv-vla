@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AGM: Achievement-Grounded Memory for Closed-Loop Agents with Frozen VLA Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对冻结视觉语言动作（VLA）策略在重复操作、计数类任务中缺乏任务进度追踪能力的问题，现有基于操作尝试的记忆更新方式会将瞬时操作错误转化为持久任务状态错误，甚至性能劣于无进度记忆的方案 提出 Achievement-Grounded Memory (AGM) 轻量级闭环框架，将任务表示为带进度指针的子目标序列，仅当前置子目标被物理证据验证通过后才更新进度，解决重复操作的视觉歧义与进度漂移问题 在保持VLA策略完全冻…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.29537">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.29537.webp" alt="AGM: Achievement-Grounded Memory for Closed-Loop Agents with Frozen VLA Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对冻结视觉语言动作（VLA）策略在重复操作、计数类任务中缺乏任务进度追踪能力的问题，现有基于操作尝试的记忆更新方式会将瞬时操作错误转化为持久…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">AGM: Achievement-Grounded Memory for Closed-Loop Agents with Frozen VLA Policies</h1>
+            <div class="detail-meta">2026-08-30 · <a href="http://arxiv.org/abs/2608.29537" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.29537" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.29537</span></div>
+            <p class="detail-summary">针对冻结视觉语言动作（VLA）策略在重复操作、计数类任务中缺乏任务进度追踪能力的问题，现有基于操作尝试的记忆更新方式会将瞬时操作错误转化为持久任务状态错误，甚至性能劣于无进度记忆的方案 提出 Achievement-Grounded Memory (AGM) 轻量级闭环框架，将任务表示为带进度指针的子目标序列，仅当前置子目标被物理证据验证通过后才更新进度，解决重复操作的视觉歧义与进度漂移问题 在保持VLA策略完全冻…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">哈尔滨工业大学</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.29537/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对冻结视觉语言动作（VLA）策略在重复操作、计数类任务中缺乏任务进度追踪能力的问题，现有基于操作尝试的记忆更新方式会将瞬时操作错误转化为持久…</p>
+  <ul class="reading-intro-points"><li>针对冻结视觉语言动作（VLA）策略在重复操作、计数类任务中缺乏任务进度追踪能力的问题，现有基于操作尝试的记忆更新方式会将瞬时操作错误转化为持久…</li><li>提出 Achievement-Grounded Memory (AGM) 轻量级闭环框架，将任务表示为带进度指针的子目标序列，仅当前置子目标被…</li><li>在保持VLA策略完全冻结、无需测试时调用大模型推理的前提下，提升长程重复操作任务的成功率，同时验证框架在真实物理机器人上的可迁移性</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>哈尔滨工业大学</strong></li><li><strong>悉尼大学</strong></li><li><strong>StellarEdge AI</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对冻结视觉语言动作（VLA）策略在重复操作、计数类任务中缺乏任务进度追踪能力的问题，现有基于操作尝试的记忆更新方式会将瞬时操作错误转化为持久任务状态错误，甚至性能劣于无进度记忆的方案</li><li>提出<strong> Achievement-Grounded Memory (AGM)</strong> 轻量级闭环框架，将任务表示为带进度指针的子目标序列，仅当前置子目标被物理证据验证通过后才更新进度，解决重复操作的视觉歧义与进度漂移问题</li><li>在保持VLA策略完全冻结、无需测试时调用大模型推理的前提下，提升长程重复操作任务的成功率，同时验证框架在真实物理机器人上的可迁移性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>识别了记忆增强冻结VLA智能体的关键失败模式：基于尝试的进度更新会将瞬时抓取、放置失败转化为持久任务状态错误，是现有记忆方案性能不足的核心原因</li><li>提出AGM框架，以可观测的执行证据为依据更新紧凑的进度指针，支持子目标前进、当前状态保留、失败回滚三种状态转移，VLA策略、点追踪器、视觉编码器均保持冻结，仅需训练极小的验证头</li><li>在<strong>RoboMME Counting</strong>基准的抓取相关任务上刷新state-of-the-art，四任务平均成功率达55.96%， surpass 最强记忆基线<strong>MemER</strong> 7.1个百分点，仅新增231M冻结参数、训练2.43M参数的验证头，参数效率显著优于基于4B外部VLM的基线</li><li>在真实物理机器人上无需调整框架本身即可获得和仿真一致的性能增益，证明 Achievement-Grounded 的记忆更新方式是跨场景有效的</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>将任务指令解析为带类型标签（抓取、可逆放置、不可逆放置等）的有序子目标序列，配合进度指针构成紧凑任务记忆，仅当前置子目标完成才向冻结VLA策略提供对应子目标作为条件</li><li>采用<strong>夹爪负载状态机</strong>检测交互事件（稳定抓取、负载释放、空载释放等），仅当事件与当前子目标类型兼容时触发验证，避免无意义的验证开销</li><li>抓取验证采用冻结的<strong>CoTracker3点追踪模型</strong>，通过追踪抓取区域点的连贯向上运动，验证被操作物体是否随夹爪同步上升，无需额外训练即可提供运动学层面的成功证据</li><li>放置验证采用冻结的<strong>SigLIP视觉-语言编码器</strong>，对比释放前后的前视图、腕部视图嵌入，结合子目标语言查询，验证目标物体-目标位置关系是否成立，提供语义层面的成功证据</li><li>仅训练2.43M参数的多层感知机作为验证头，根据验证结果执行进度指针的前进、保留或回滚操作，实现“执行-验证-进度更新”的闭环控制</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真评估数据集：<strong>RoboMME Counting</strong> 基准，包含PickXTimes、BinFill、SwingXTimes、StopCube四个重复操作计数任务，使用官方50集测试集，训练数据种子与评估集 disjoint</li><li>真实机器人评估数据集：自建PickXTimes、BinFill任务集，每个指令计数N=1~5各执行10次试验，共50次/任务</li><li>模型规模：冻结的VLA backbone为<strong>π₀.₅</strong>（3.35B参数），额外冻结CoTracker3（25.4M参数）、SigLIP-base编码器（203.2M参数），总外部参数231M（全冻结）；仅训练2.43M参数的验证头，是所有基线中参数量最小的可训练组件</li><li>训练资源：论文未明确说明具体使用的GPU/TPU等训练硬件资源</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真场景基于RoboMME Counting官方测试集，真实机器人场景采用自建物理实验平台；评估指标为任务成功率（单个episode成功需在1300步预算内完成 exactly 指令要求的操作次数，并按下停止按钮）</li><li>关键实验结果：</li></ul>
+<p> - 仿真场景下AGM四任务平均成功率达55.96%，超过最强记忆基线<strong>MemER</strong>（48.83%）7.1个百分点，是冻结π₀.₅基线（28.78%）的近2倍；抓取相关的PickXTimes、BinFill任务分别达100.0%和84.0%，刷新该基准的state-of-the-art，且非抓取相关的SwingXTimes、StopCube任务与冻结基线性能完全匹配</p>
+<p> - 重复深度分析显示，冻结π₀.₅在计数N=5时成功率跌至0%，AGM下PickXTimes全计数区间保持100%成功率，BinFill在N=5时仍有66.7%成功率，证明AGM完全解决了进度漂移问题</p>
+<p> - 消融实验验证了设计合理性：仅用本体感知的抓取验证相比点追踪方案，BinFill成功率从84.0%降至78.0%；统一阈值相比可逆性感知阈值，BinFill成功率从84.0%降至74.0%，证明两种设计均能带来有效增益</p>
+<p> - 真实机器人部署中，AGM下PickXTimes全计数区间达100.0%成功率，BinFill在N=2时达100.0%，N=5时达60.0%，性能趋势与仿真一致，证明框架在真实场景的有效性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.29749/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">DriftingVLA: Native One-Step Vision-Language-Action Generation via Per-Dimension Temporal Drifting</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.29432/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">SMILE: Smooth Motion for Improved Long-Horizon VLA Execution</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

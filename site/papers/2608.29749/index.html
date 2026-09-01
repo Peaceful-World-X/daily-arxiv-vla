@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DriftingVLA: Native One-Step Vision-Language-Action Generation via Per-Dimension Temporal Drifting - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对传统基于流匹配的视觉-语言-动作（VLA）模型生成动作块需要多步迭代推理、在线控制延迟高的问题，提出原生一步式VLA模型DriftingVLA，实现单次动作专家推理生成完整动作块，消除推理时的迭代细化过程。 提出逐维度时序漂移（Per-Dimension Temporal Drifting, PDTD）方法，针对机器人动作块不同维度（如平移、旋转、夹爪）存在异构控制语义和分布特性的特点，将每个动作维度的完整时序…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.29749">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.29749.webp" alt="DriftingVLA: Native One-Step Vision-Language-Action Generation via Per-Dimension Temporal Drifting" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对传统基于流匹配的视觉-语言-动作（VLA）模型生成动作块需要多步迭代推理、在线控制延迟高的问题，提出原生一步式VLA模型DriftingV…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">DriftingVLA: Native One-Step Vision-Language-Action Generation via Per-Dimension Temporal Drifting</h1>
+            <div class="detail-meta">2026-08-30 · <a href="http://arxiv.org/abs/2608.29749" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.29749" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.29749</span></div>
+            <p class="detail-summary">针对传统基于流匹配的视觉-语言-动作（VLA）模型生成动作块需要多步迭代推理、在线控制延迟高的问题，提出原生一步式VLA模型DriftingVLA，实现单次动作专家推理生成完整动作块，消除推理时的迭代细化过程。 提出逐维度时序漂移（Per-Dimension Temporal Drifting, PDTD）方法，针对机器人动作块不同维度（如平移、旋转、夹爪）存在异构控制语义和分布特性的特点，将每个动作维度的完整时序…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">中国科学技术大学（University of Science and Technology of Ch…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.29749/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对传统基于流匹配的视觉-语言-动作（VLA）模型生成动作块需要多步迭代推理、在线控制延迟高的问题，提出原生一步式VLA模型DriftingV…</p>
+  <ul class="reading-intro-points"><li>针对传统基于流匹配的视觉-语言-动作（VLA）模型生成动作块需要多步迭代推理、在线控制延迟高的问题，提出原生一步式VLA模型DriftingV…</li><li>提出逐维度时序漂移（Per-Dimension Temporal Drifting, PDTD）方法，针对机器人动作块不同维度（如平移、旋转、…</li><li>核心目标是同时保障机器人操控性能与在线控制效率，解决现有一步VLA方法从流过程推导、未充分利用动作块结构特性的问题。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>中国科学技术大学（University of Science and Technology of China）</strong>：论文多数作者的所属机构，位于中国合肥，负责研究的核心开展。</li><li><strong>LYNSENSE（上海）</strong>：作者Yifan Duan的所属工业界机构。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对传统基于流匹配的视觉-语言-动作（VLA）模型生成动作块需要多步迭代推理、在线控制延迟高的问题，提出原生一步式VLA模型<strong>DriftingVLA</strong>，实现单次动作专家推理生成完整动作块，消除推理时的迭代细化过程。</li><li>提出<strong>逐维度时序漂移（Per-Dimension Temporal Drifting, PDTD）</strong>方法，针对机器人动作块不同维度（如平移、旋转、夹爪）存在异构控制语义和分布特性的特点，将每个动作维度的完整时序轨迹作为独立漂移单元，实现更细粒度的分布建模。</li><li>核心目标是同时保障机器人操控性能与在线控制效率，解决现有一步VLA方法从流过程推导、未充分利用动作块结构特性的问题。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>将原生漂移式生成框架扩展到预训练流式VLA模型：保留<strong>π₀.₅</strong>预训练多模态骨干的语义与感知先验，重新初始化动作生成分支为直接噪声到动作块的映射，无需推理时的数值积分或流轨迹蒸馏，实现原生一步部署。</li><li>提出<strong>PDTD</strong>机制：针对动作块H×D的张量结构，将每个动作维度的完整时序轨迹作为独立漂移单元，独立计算各维度的分布几何，仅分解训练目标的几何结构，不分解联合动作生成器，既解决异构动作通道的分布建模问题，又保留跨维度的控制依赖。</li><li>在多类模拟与真实机器人任务上验证性能 superiority：在LIBERO、RoboTwin 2.0和6个真实世界单/双臂操控任务上，<strong>DriftingVLA</strong>的成功率均优于多步流策略π₀.₅和主流一步VLA基线。</li><li>提供全面的对照实验与效率分析：验证了PDTD设计的优越性，证明原生一步部署可大幅降低推理延迟，且训练开销增长极小。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础框架基于<strong>漂移模型（Drifting Models, DM）</strong>和<strong>漂移策略（Drift-Based Policy, DBP）</strong>，将分布精炼过程从推理时的样本迭代转移到训练时的生成器参数优化，训练完成后仅需单次前向推理即可生成动作块，与SnapFlow、MeanFlowVLA等从流过程推导一步生成器的方法有本质区别。</li><li>针对预训练流式VLA的适配：保留π₀.₅的预训练多模态骨干用于上下文编码， freshly初始化连续动作生成分支，联合后训练两个组件，使动作专家学习从动作形状的高斯噪声直接生成完整动作块，而非继承流匹配的速度场参数化。</li><li>训练时采用共享上下文的前缀机制：对同一条件下的多个sibling动作假设，仅需一次多模态骨干推理，共享上下文前缀给所有动作生成分支，降低训练时的计算开销。</li><li>关键技术为<strong>PDTD</strong>：将动作块的每个动作维度（如平移x/y/z、旋转、夹爪等）的完整时序轨迹作为独立的漂移单元，独立计算每个维度的距离尺度、亲和力和漂移力，避免异构维度之间的几何干扰，同时联合生成的动作块保留了跨维度的控制耦合。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：模拟基准<strong>LIBERO</strong>、<strong>RoboTwin 2.0</strong>，以及6个覆盖单臂、双臂操作的真实世界机器人任务，涵盖多种常见的家居、工业操控场景。</li><li>模型基础：基于预训练的<strong>π₀.₅</strong>流式VLA架构，重新初始化动作生成分支，保留预训练多模态骨干，未公开具体总参数量。</li><li>训练与评估资源：采用<strong>NVIDIA A800 GPU</strong>进行受控延迟profiling与训练开销分析。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：模拟环境为LIBERO、RoboTwin 2.0，真实世界为6个单/双臂任务；对比基准包括10步推理的π₀.₅、一步VLA基线SnapFlow、MeanFlowVLA，以及直接单步评估的原始π₀.₅。</li><li>主要评估指标：任务成功率、动作块生成推理延迟、训练成本（峰值显存、训练时间）。</li><li>关键实验结果：</li></ul>
+<p> - LIBERO上整体成功率达<strong>98.32%</strong>，高于10-NFE π₀.₅的97.10%和SnapFlow的97.48%；</p>
+<p> - RoboTwin 2.0上成功率达<strong>81.09%</strong>，比10-NFE π₀.₅高1.51个百分点，比SnapFlow高2.56个百分点，而直接单步评估的原始π₀.₅仅63.76%；</p>
+<p> - 真实世界6个任务整体成功率为<strong>77.67%</strong>，高于π₀.₅的74.22%，在单臂和双臂子任务上均有提升；</p>
+<p> - 原生一步部署将动作块生成延迟从227.61ms降低至67.67ms，实现<strong>3.36×</strong>加速；</p>
+<p> - 消融实验验证PDTD consistently优于Chunk-wise和Step-wise漂移策略；</p>
+<p> - 将训练时的漂移sibling数从G=2提升至G=8，训练成本仅增加3.78%，峰值显存增加9.54%，额外开销极小。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.29967/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Training-Free Action Correction for VLA Model Failures via Language Feedback</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.29537/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">AGM: Achievement-Grounded Memory for Closed-Loop Agents with Frozen VLA Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

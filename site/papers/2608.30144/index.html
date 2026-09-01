@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rethinking Language&#x27;s Role in Efficient VLA for Autonomous Vehicles: Toward Smarter, Trustworthy Driving - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文是一篇针对自动驾驶（AD）场景下视觉-语言-动作（VLA）模型效率问题的综述论文，核心矛盾是语言模块可提升长尾场景泛化性、可解释性与决策对齐能力，但车载部署的硬实时约束下，语言模块的推理开销难以满足控制循环的20-100ms延迟要求（单次VLM推理需500-2000ms）。 研究目标是将推理阶段的语言作用重新定义为“分配决策问题”，提出Language Residue（语言残差）分类法系统梳理不同语言参与程度的…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.30144">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.30144.webp" alt="Rethinking Language&#x27;s Role in Efficient VLA for Autonomous Vehicles: Toward Smarter, Trustworthy Driving" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文是一篇针对自动驾驶（AD）场景下视觉-语言-动作（VLA）模型效率问题的综述论文，核心矛盾是语言模块可提升长尾场景泛化性、可解释性与决策对…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Rethinking Language&#x27;s Role in Efficient VLA for Autonomous Vehicles: Toward Smarter, Trustworthy Driving</h1>
+            <div class="detail-meta">2026-08-31 · <a href="http://arxiv.org/abs/2608.30144" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.30144" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.30144</span></div>
+            <p class="detail-summary">本文是一篇针对自动驾驶（AD）场景下视觉-语言-动作（VLA）模型效率问题的综述论文，核心矛盾是语言模块可提升长尾场景泛化性、可解释性与决策对齐能力，但车载部署的硬实时约束下，语言模块的推理开销难以满足控制循环的20-100ms延迟要求（单次VLM推理需500-2000ms）。 研究目标是将推理阶段的语言作用重新定义为“分配决策问题”，提出Language Residue（语言残差）分类法系统梳理不同语言参与程度的…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者Tongfei Guo、Lili Su隶属于美国东北大学（Northeastern Unive…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.30144/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文是一篇针对自动驾驶（AD）场景下视觉-语言-动作（VLA）模型效率问题的综述论文，核心矛盾是语言模块可提升长尾场景泛化性、可解释性与决策对…</p>
+  <ul class="reading-intro-points"><li>本文是一篇针对自动驾驶（AD）场景下视觉-语言-动作（VLA）模型效率问题的综述论文，核心矛盾是语言模块可提升长尾场景泛化性、可解释性与决策对…</li><li>研究目标是将推理阶段的语言作用重新定义为“分配决策问题”，提出Language Residue（语言残差）分类法系统梳理不同语言参与程度的现有…</li><li>论文同时覆盖了开环、闭环驾驶基准的方法评估，并指出了该领域当前面临的可信性、评估体系、部署落地三类开放问题。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者Tongfei Guo、Lili Su隶属于<strong>美国东北大学（Northeastern University）电子与计算机工程系</strong>，工作地点为美国马萨诸塞州波士顿。</li><li>本研究得到美国国家科学基金会（NSF）CAREER项目（grant 2340482）和NSF项目（grant 2414652）的部分资助。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文是一篇针对<strong>自动驾驶（AD）场景下视觉-语言-动作（VLA）模型效率问题</strong>的综述论文，核心矛盾是语言模块可提升长尾场景泛化性、可解释性与决策对齐能力，但车载部署的硬实时约束下，语言模块的推理开销难以满足控制循环的20-100ms延迟要求（单次VLM推理需500-2000ms）。</li><li>研究目标是将推理阶段的语言作用重新定义为“分配决策问题”，提出<strong>Language Residue（语言残差）分类法</strong>系统梳理不同语言参与程度的现有方法，同时分析NLP/LLM领域效率技术向自动驾驶VLA场景的迁移路径与适配约束，为高效可信的自动驾驶VLA设计提供参考。</li><li>论文同时覆盖了开环、闭环驾驶基准的方法评估，并指出了该领域当前面临的可信性、评估体系、部署落地三类开放问题。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>Language Residue分类法</strong>，按照推理时语言的参与程度将现有高效VLA方法划分为L1（仅训练时使用语言）、L2（非文本潜空间推理）、L3（条件触发语言调用）、L4（全帧语言生成）四个层级，为领域研究提供了统一的分类框架。</li><li>系统梳理了代表性高效VLA方法，从<strong>延迟、参数量、内存、FLOPs、Token数</strong>五个部署维度对方法进行标注分析，覆盖nuScenes、NAVSIM、Bench2Drive等主流通闭环自动驾驶基准。</li><li>追溯了NLP/LLM领域的知识蒸馏、剪枝、量化、MoE等效率技术向自动驾驶VLA场景迁移的路径，识别了车载硬实时约束下的特殊需求与技术适配动机。</li><li>建立了持续更新的公开资源库，整理了该领域的研究进展与开源项目，降低了研究者的入门门槛。</li><li>总结了该领域在可信性、基准评估、部署落地方面的开放问题，为后续研究指明了方向。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>论文围绕“推理时语言的参与时机与形式”核心问题，提出<strong>Language Residue（语言残差）分类法</strong>，按推理阶段语言的保留程度将现有方法划分为四个层级：</li></ul>
+<p> - L1（训练时仅使用语言）：语言仅作为训练监督信号，推理阶段无语言模块运行，代表方向包括知识蒸馏、语言辅助监督、特征蒸馏；</p>
+<p> - L2（非文本潜空间推理）：推理时保留语言推理能力，但以连续潜空间token替代文本解码，避免自回归生成的开销，代表方向包括潜空间推理、流/扩散动作头、统一语言-动作码本；</p>
+<p> - L3（条件触发语言）：语言模块存在于系统中，但仅在高风险、高不确定性的场景下触发调用，代表方向包括双系统路由、不确定性门控触发；</p>
+<p> - L4（全帧语言生成）：每帧都执行完整的语言生成流程，是语言开销最大的模式。</p>
+<ul><li>研究的核心创新是将语言在VLA中的作用从“追求更小模型规模”的单一维度，转化为“推理全生命周期的语言分配决策”问题，聚焦推理阶段的持续开销，而非仅关注训练或模型压缩。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>核心评估基准包括：开环基准<strong>nuScenes</strong>，闭环基准<strong>NAVSIM</strong>、<strong>Bench2Drive</strong>，同时涉及DriveLM、LIBERO、SimplerEnv、PhysicalAI-AV、CARLA、nuPlan、Waymo开放数据集等辅助评估数据集。</li><li>综述涉及的方法模型规模覆盖0.1B到7B参数区间，例如<strong>Orion-Lite</strong>将7B参数的教师模型蒸馏为0.1B的视觉-only学生模型，部分方法采用LLaVA-v1.5-7B、Qwen-VL-7B、Qwen3-0.5B等作为语言骨干。</li><li>论文配套了持续更新的公开GitHub仓库，整理了该领域的开源项目与研究成果；分析的方法覆盖车载边缘算力、GPU集群等不同部署场景。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：覆盖开环感知、闭环规划两类自动驾驶任务场景，基于上述主流基准对方法进行多维度评估。</li><li>评估指标：核心关注<strong>延迟↓、参数量↓、内存占用↓、FLOPs↓、Token数↓</strong>五个部署效率指标，同时兼顾规划准确率、长尾场景泛化性、可解释性等性能指标。</li><li>关键实验结果：</li></ul>
+<p> - L1类的<strong>Orion-Lite</strong>将7B教师模型蒸馏为0.1B视觉-only学生模型，在<strong>Bench2Drive</strong>基准上性能超过7B教师，且推理阶段无语言模块开销；</p>
+<p> - L3类的<strong>DualDriveVLA</strong>仅触发约15%场景的语言模块调用，即可达到全时VLM在<strong>NAVSIM v1</strong>基准上的准确率，大幅降低了平均推理开销；</p>
+<p> - L2类的<strong>LaST-VLA</strong>在<strong>NAVSIM v1</strong>上达到91.3的PDMS分数，同时较文本链式推理（CoT）方法实现5-10倍加速，验证了潜空间推理在效率与性能间的平衡能力。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.30289/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">CometVLA: Co-Training on an Embodied Data Pyramid towards Physical Understanding</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.30122/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Aligning Multi-Trajectory Supervision with Policy Optimization for VLA Driving</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

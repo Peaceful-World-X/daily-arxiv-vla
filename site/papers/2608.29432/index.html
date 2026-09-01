@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMILE: Smooth Motion for Improved Long-Horizon VLA Execution - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="聚焦Vision-Language-Action（VLA）模型长时序执行的核心痛点：原始动作块存在高频抖动、时序不一致与离群点，单纯延长执行horizon会导致错误累积，无法同时保障任务准确率与推理效率。 提出SMILE方法，通过仅修改VLA动作侧接口，将原始动作去噪目标替换为B样条系数预测，经解码得到时序平滑的动作序列，在不改变模型骨干与规模的前提下，支持更长的固定执行horizon，同时提升任务准确率、降低摊销…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2608.29432">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2608.29432.webp" alt="SMILE: Smooth Motion for Improved Long-Horizon VLA Execution" loading="lazy" />
+  <figcaption class="paper-figure-caption">聚焦Vision-Language-Action（VLA）模型长时序执行的核心痛点：原始动作块存在高频抖动、时序不一致与离群点，单纯延长执行h…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">SMILE: Smooth Motion for Improved Long-Horizon VLA Execution</h1>
+            <div class="detail-meta">2026-08-29 · <a href="http://arxiv.org/abs/2608.29432" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2608.29432" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2608.29432</span></div>
+            <p class="detail-summary">聚焦Vision-Language-Action（VLA）模型长时序执行的核心痛点：原始动作块存在高频抖动、时序不一致与离群点，单纯延长执行horizon会导致错误累积，无法同时保障任务准确率与推理效率。 提出SMILE方法，通过仅修改VLA动作侧接口，将原始动作去噪目标替换为B样条系数预测，经解码得到时序平滑的动作序列，在不改变模型骨干与规模的前提下，支持更长的固定执行horizon，同时提升任务准确率、降低摊销…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Stony Brook University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2608.29432/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">聚焦Vision-Language-Action（VLA）模型长时序执行的核心痛点：原始动作块存在高频抖动、时序不一致与离群点，单纯延长执行h…</p>
+  <ul class="reading-intro-points"><li>聚焦Vision-Language-Action（VLA）模型长时序执行的核心痛点：原始动作块存在高频抖动、时序不一致与离群点，单纯延长执行h…</li><li>提出SMILE方法，通过仅修改VLA动作侧接口，将原始动作去噪目标替换为B样条系数预测，经解码得到时序平滑的动作序列，在不改变模型骨干与规模的…</li><li>在多个异构VLA基线、多类仿真基准与真实机器人场景验证方法普适性，证明平滑系数空间生成是提升长时序VLA执行性能的有效路径。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Stony Brook University</strong></li><li><strong>Salesforce AI Research</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>聚焦Vision-Language-Action（VLA）模型长时序执行的核心痛点：原始动作块存在高频抖动、时序不一致与离群点，单纯延长执行horizon会导致错误累积，无法同时保障任务准确率与推理效率。</li><li>提出<strong>SMILE</strong>方法，通过仅修改VLA动作侧接口，将原始动作去噪目标替换为B样条系数预测，经解码得到时序平滑的动作序列，在不改变模型骨干与规模的前提下，支持更长的固定执行horizon，同时提升任务准确率、降低摊销推理延迟。</li><li>在多个异构VLA基线、多类仿真基准与真实机器人场景验证方法普适性，证明平滑系数空间生成是提升长时序VLA执行性能的有效路径。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>SMILE</strong>B样条系数动作接口，通过生成平滑动作序列，使VLA能够以更长固定执行horizon运行，同时提升任务准确率、降低每动作摊销推理延迟，尤其受益于LIBERO、CALVIN等长时序操作任务。</li><li>设计架构保持的集成方案，完整保留各基线的原始视觉-语言条件路径与主去噪骨干，模型规模与对应基线保持一致，可支持VLM中心、预测视觉、显式像素运动条件等异构策略设计。</li><li>在<strong>SmolVLA</strong>、<strong>Evo1</strong>、<strong>VPP</strong>、<strong>DAWN</strong>四个异构动作专家上，于<strong>LIBERO</strong>、<strong>CALVIN</strong>、真实xArm操作场景均取得一致性能增益，且直接验证增益与更平滑的固定horizon动作执行强相关。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>保留VLA计算量占比最高的视觉语言骨干、条件模块与主去噪网络，仅替换动作侧的轻量投影与输出头：将原始动作序列去噪改为对紧凑B样条系数的去噪，通过固定B样条基将系数解码为时序耦合的平滑动作序列，控制器仅执行解码结果的前H个动作。</li><li>动作表示设计：对平移、旋转、夹爪三个模态分别预测B样条系数，平移与旋转通过累积轨迹的有限差分、相对旋转转换为原始控制器动作语义，夹爪采用绝对命令，保持与基线动作的语义兼容。</li><li>训练目标保持架构兼容：沿用基线的原生去噪目标（流匹配专家的速度场或扩散专家的噪声），通过最小二乘投影将基线专家动作轨迹转换为B样条系数作为训练目标，仅修改动作侧的去噪变量，不改变原有训练流程的核心逻辑。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：仿真基准采用<strong>LIBERO</strong>（包含40个语言条件操作任务，分为Spatial、Object、Goal、Long四个suite）、<strong>CALVIN</strong>（采用ABC→D长时序协议，评估连续5个子任务的完成能力）；真实场景采用自采xArm数据集（包含1000集episodes、12个任务、6种物体，分为Plain无遮挡与Cluttered高遮挡两种布置）。</li><li>模型规模：各SMILE变体与对应基线模型规模保持一致，分别为<strong>SMILE-SmolVLA（0.4B）</strong>、<strong>SMILE-Evo1（0.8B）</strong>、<strong>SMILE-VPP（1.8B）</strong>、<strong>SMILE-DAWN（1.2B）</strong>。</li><li>训练资源：论文未提及具体的GPU/TPU等训练硬件配置。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：覆盖LIBERO全suite、CALVIN ABC→D长时序基准、单臂<strong>xArm7</strong>真实机器人操作环境，对比基线包括GR00T N1.7、π₀、OpenVLA、OpenVLA-OFT、VidMan、Seer、Seer-Large、DreamVLA等多款异构VLA模型。</li><li>主要评估指标：任务成功率、执行horizon、每动作摊销推理延迟、动作平滑度（非边界加速度、速度符号变化率），真实场景额外包含掉落率（DR）、碰撞率（HR）、错误抓取率（WPR）等安全指标。</li><li>关键实验结果：</li></ul>
+<p> 1. LIBERO基准上，<strong>SMILE-Evo1</strong>整体成功率从基线的92.7%提升至98.0%，执行horizon从14延长至16，摊销推理延迟从8.5ms降至8.0ms，创下该基准下的最优准确率-效率平衡点；<strong>SMILE-SmolVLA</strong>在LIBERO-Long任务上的成功率从42.8%提升至63.6%，整体成功率从74.0%提升至82.6%，执行horizon从1大幅延长至10，摊销延迟从243.9ms降至24.2ms，实现10.1倍加速。</p>
+<p> 2. CALVIN基准上，<strong>SMILE-VPP</strong>平均完成序列长度从4.33提升至4.42，执行horizon从10延长至15，摊销延迟从19.1ms降至13.0ms，相比同规模<strong>DreamVLA</strong>实现14.9倍加速；<strong>SMILE-DAWN</strong>平均完成序列长度从4.10提升至4.18，摊销延迟从32.0ms降至22.7ms，且增益主要集中在易累积错误的后续子任务。</p>
+<p> 3. 真实xArm场景中，Plain布置下<strong>SMILE-Evo1</strong>成功率从26.7%提升至78.3%，<strong>SMILE-VPP</strong>从82.5%提升至98.3%；高遮挡Cluttered布置下<strong>SMILE-Evo1</strong>成功率从8.3%提升至56.7%，<strong>SMILE-VPP</strong>从70.8%提升至88.3%，同时掉落率、碰撞率、错误抓取率均显著降低。</p>
+<p> 4. 匹配执行horizon的消融实验显示，<strong>SMILE-SmolVLA</strong>的非边界加速度降低78.6%，速度符号变化率降低42.3%，直接证明性能增益来自动作序列平滑性的提升。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2608.29537/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">AGM: Achievement-Grounded Memory for Closed-Loop Agents with Frozen VLA Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2608.29208/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">AdaVLA: Adaptive Step Flow Matching for Training-free Acceleration of Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
