@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 EmbodiedSkills，一个统一的框架，将 VLA 模型转化为闭环 VLA 代理，通过可执行技能协调感知、规划、执行、验证和恢复，解决长时程任务中缺乏统一执行检查和验证机制的问题。 将每个技能决策视为一个执行提案，运行时检查其前提条件并验证执行结果，确保决策的物理有效性和可追溯性。 建立共享的可执行技能接口，连接高层技能选择、有界低层 VLA 执行和后动作验证，使低层策略可替换而不影响主干循环。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.01281">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.01281.webp" alt="EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 EmbodiedSkills，一个统一的框架，将 VLA 模型转化为闭环 VLA 代理，通过可执行技能协调感知、规划、执行、验证和恢复…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents</h1>
+            <div class="detail-meta">2026-09-01 · <a href="http://arxiv.org/abs/2609.01281" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.01281" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.01281</span></div>
+            <p class="detail-summary">提出 EmbodiedSkills，一个统一的框架，将 VLA 模型转化为闭环 VLA 代理，通过可执行技能协调感知、规划、执行、验证和恢复，解决长时程任务中缺乏统一执行检查和验证机制的问题。 将每个技能决策视为一个执行提案，运行时检查其前提条件并验证执行结果，确保决策的物理有效性和可追溯性。 建立共享的可执行技能接口，连接高层技能选择、有界低层 VLA 执行和后动作验证，使低层策略可替换而不影响主干循环。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">浙江大学（College of Computer Science and Technology）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.01281/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 EmbodiedSkills，一个统一的框架，将 VLA 模型转化为闭环 VLA 代理，通过可执行技能协调感知、规划、执行、验证和恢复…</p>
+  <ul class="reading-intro-points"><li>提出 EmbodiedSkills，一个统一的框架，将 VLA 模型转化为闭环 VLA 代理，通过可执行技能协调感知、规划、执行、验证和恢复…</li><li>将每个技能决策视为一个执行提案，运行时检查其前提条件并验证执行结果，确保决策的物理有效性和可追溯性。</li><li>建立共享的可执行技能接口，连接高层技能选择、有界低层 VLA 执行和后动作验证，使低层策略可替换而不影响主干循环。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>浙江大学</strong>（College of Computer Science and Technology）</li><li><strong>南京航空航天大学</strong></li><li><strong>康奈尔大学</strong></li><li><strong>Universal Ubiquitous AI Co., Ltd.</strong></li><li><strong>杭州DEEP Robotics Technology Co., Ltd.</strong></li><li><strong>新加坡国立大学</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>EmbodiedSkills</strong>，一个统一的框架，将 VLA 模型转化为闭环 VLA 代理，通过可执行技能协调感知、规划、执行、验证和恢复，解决长时程任务中缺乏统一执行检查和验证机制的问题。</li><li>将每个技能决策视为一个执行提案，运行时检查其前提条件并验证执行结果，确保决策的物理有效性和可追溯性。</li><li>建立共享的可执行技能接口，连接高层技能选择、有界低层 VLA 执行和后动作验证，使低层策略可替换而不影响主干循环。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>技能导向的闭环 AgentLoop</strong>：提出六阶段（观察、规划、预检、执行、验证、恢复）的闭环循环，替代固定流水线，实现状态驱动的柔性决策。</li><li><strong>策略–运行时分离</strong>：通过共享技能契约，高层策略提出结构化技能决策，运行时强制执行前提条件、数据新鲜度、动作有效性和状态转换，使失败可诊断、轨迹可检查。</li><li><strong>模块化适配与跨基准验证</strong>：定义独立可训练和可替换的规划、验证、动作生成与环境交互接口，在 <strong>RoboTwin 2.0</strong> 和 <strong>LIBERO</strong> 上验证了任务适配的低层 VLA 策略性能。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>六阶段 AgentLoop</strong>：运行时按顺序维护 <strong>Observe</strong>、<strong>Plan</strong>、<strong>Preflight</strong>、<strong>Execute</strong>、<strong>Verify</strong>、<strong>Recover</strong> 六个阶段，但允许证据驱动的阶段跳转，而非固定流水线。</li><li><strong>可执行技能契约</strong>：每个技能定义类型化输入/输出、前提条件、执行体、后置更新和失败处理，运行时守卫检查技能提议的合法性，确保只有条件满足的技能才被实际执行。</li><li><strong>有界动作执行</strong>：低层 VLA 策略接收当前子目标和观测，生成一个有限步长的动作块，执行后收集新证据，由验证器决定是否继续当前子目标或推进计划。</li><li><strong>验证与恢复</strong>：验证器基于执行后观测判断子目标是否完成，输出六种路由信号（推进、继续、重新观察、重新规划、恢复、完成），恢复阶段利用失败证据生成修正上下文。</li><li><strong>训练方式</strong>：采用组件级监督微调，高层 <strong>Qwen3-VL</strong> 调度器在部署一致的决策轨迹上训练，低层 <strong>π0.5</strong> 策略冻结，确保调度能力提升而不影响连续控制；同时支持可选的在线闭环策略优化。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>RoboTwin 2.0</strong>：50 个双机械臂操作任务，涵盖多种物体、配置和领域随机化场景。</li><li><strong>LIBERO</strong>：四个套件（LIBERO-Spatial、LIBERO-Object、LIBERO-Goal、LIBERO-Long），评估空间、物体、目标和长时程泛化。</li><li><strong>RMBench</strong>：四个记忆依赖任务，测试依赖历史交互的决策能力。</li><li><strong>模型规模</strong>：高层 VLM 使用 <strong>Qwen3-VL</strong>，低层 VLA 策略基于 <strong>OpenPI/π0.5</strong>（3B 参数量级），各部分均进行任务级微调。</li><li><strong>训练资源</strong>：论文未明确报告 GPU 类型和数量，仅提及对每个任务单独微调 π0.5 策略。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：RoboTwin 2.0 仿真环境，LIBERO 基准，RMBench 记忆任务。</li><li><strong>主要指标</strong>：任务成功率（宏平均）。</li><li><strong>RoboTwin 2.0 结果</strong>：任务适配的 π0.5 策略在 50 个任务上平均成功率 <strong>86.20%</strong>，较 LingBot-VA 报告的 π0.5 基准 <strong>82.74%</strong> 提升 <strong>3.46 个百分点</strong>，在 Hanging Mug、Blocks Ranking Size 等任务上提升显著。</li><li><strong>LIBERO 结果</strong>：四套件平均成功率 <strong>97.40%</strong>，略高于官方 OpenPI 参考的 <strong>96.85%</strong>。</li><li><strong>RMBench 结果</strong>：相同执行方法在记忆依赖任务上仅达 <strong>12.5%</strong> 平均成功率，说明当前方案在需要长程记忆的任务上仍有挑战。</li><li><strong>消融实验</strong>：在 50 个 RoboTwin 2.0 任务上进行 AgentLoop 消融，比较有无语义子任务、中间验证和重复动作块的影响，但具体数值未在摘要中列出。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.01404/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.01215/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">REFACTOR-VLA: Unsupervised Library Learning of Typed Motor Programs</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

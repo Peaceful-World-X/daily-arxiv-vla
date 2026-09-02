@@ -1,5 +1,117 @@
 [
   {
+    "date": "2026-09-01",
+    "title": "Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching",
+    "link": "http://arxiv.org/abs/2609.01404",
+    "arxiv_id": "2609.01404",
+    "detail_path": "papers/2609.01404/",
+    "cover_path": "covers/2609.01404/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.01404.webp",
+    "preview_text": "论文提出了 DroneCATS-Agent，一种将多模态大语言模型（MLLM）直接嵌入无人机控制环路的通用架构，其动作空间完全通过提示词声明，无需微调或函数调用模式 构建了 DroneCATS 基准，从接近、跟踪、搜索和指挥四个维度系统评估 MLLM 作为视觉-语言-动作代理的能力，并特别关注模型作为独立变量的表现 研究发现，小模型在导航能力上接近甚至超越前沿模型，但失败主要源于无法正确使用“声明到达”这一终止动作…",
+    "research_unit": "作者所属机构为 NAVER Cloud 的 Drone AI Team",
+    "hook_text": "论文提出了 DroneCATS-Agent，一种将多模态大语言模型（MLLM）直接嵌入无人机控制环路的通用架构，其动作空间完全通过提示词声明…",
+    "key_points": [
+      "论文提出了 DroneCATS-Agent，一种将多模态大语言模型（MLLM）直接嵌入无人机控制环路的通用架构，其动作空间完全通过提示词声明…",
+      "构建了 DroneCATS 基准，从接近、跟踪、搜索和指挥四个维度系统评估 MLLM 作为视觉-语言-动作代理的能力，并特别关注模型作为独立变…",
+      "研究发现，小模型在导航能力上接近甚至超越前沿模型，但失败主要源于无法正确使用“声明到达”这一终止动作，即协议遵守能力不足"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-01",
+    "title": "EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents",
+    "link": "http://arxiv.org/abs/2609.01281",
+    "arxiv_id": "2609.01281",
+    "detail_path": "papers/2609.01281/",
+    "cover_path": "covers/2609.01281/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.01281.webp",
+    "preview_text": "提出 EmbodiedSkills，一个统一的框架，将 VLA 模型转化为闭环 VLA 代理，通过可执行技能协调感知、规划、执行、验证和恢复，解决长时程任务中缺乏统一执行检查和验证机制的问题。 将每个技能决策视为一个执行提案，运行时检查其前提条件并验证执行结果，确保决策的物理有效性和可追溯性。 建立共享的可执行技能接口，连接高层技能选择、有界低层 VLA 执行和后动作验证，使低层策略可替换而不影响主干循环。",
+    "research_unit": "浙江大学（College of Computer Science and Technology）",
+    "hook_text": "提出 EmbodiedSkills，一个统一的框架，将 VLA 模型转化为闭环 VLA 代理，通过可执行技能协调感知、规划、执行、验证和恢复…",
+    "key_points": [
+      "提出 EmbodiedSkills，一个统一的框架，将 VLA 模型转化为闭环 VLA 代理，通过可执行技能协调感知、规划、执行、验证和恢复…",
+      "将每个技能决策视为一个执行提案，运行时检查其前提条件并验证执行结果，确保决策的物理有效性和可追溯性。",
+      "建立共享的可执行技能接口，连接高层技能选择、有界低层 VLA 执行和后动作验证，使低层策略可替换而不影响主干循环。"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-01",
+    "title": "REFACTOR-VLA: Unsupervised Library Learning of Typed Motor Programs",
+    "link": "http://arxiv.org/abs/2609.01215",
+    "arxiv_id": "2609.01215",
+    "detail_path": "papers/2609.01215/",
+    "cover_path": "covers/2609.01215/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.01215.webp",
+    "preview_text": "当前主流VLA模型（如OpenVLA、RT-2等）为单体架构，仅生成原始 motor 指令或短动作序列，缺乏可复用的高层行为抽象，导致长程任务表现差且可解释性弱；现有技能发现方法未校准机器人自身动力学，行为等价性判定不准确。 论文提出REFACTOR-VLA，基于wake/sleep架构，通过行为等价核（BEK）基于 learned 潜在世界模型判定轨迹片段的行为等价性，结合类型化lambda程序库实现可复用技能的…",
+    "research_unit": "Apple（作者Chandru Venkataraman的所属机构为苹果公司）",
+    "hook_text": "当前主流VLA模型（如OpenVLA、RT-2等）为单体架构，仅生成原始 motor 指令或短动作序列，缺乏可复用的高层行为抽象，导致长程任务…",
+    "key_points": [
+      "当前主流VLA模型（如OpenVLA、RT-2等）为单体架构，仅生成原始 motor 指令或短动作序列，缺乏可复用的高层行为抽象，导致长程任务…",
+      "论文提出REFACTOR-VLA，基于wake/sleep架构，通过行为等价核（BEK）基于 learned 潜在世界模型判定轨迹片段的行为等…",
+      "研究目标是在LIBERO全基准、合成递归倒水环境上验证框架有效性，证明训练目标选择比模型容量扩展对技能学习的影响更显著。"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-01",
+    "title": "Knowing When to Stop: Adaptive Action Chunking via Internal Cross-Attention Dynamics in VLAs",
+    "link": "http://arxiv.org/abs/2609.00908",
+    "arxiv_id": "2609.00908",
+    "detail_path": "papers/2609.00908/",
+    "cover_path": "covers/2609.00908/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.00908.webp",
+    "preview_text": "针对 Vision-Language-Action（VLA）模型中固定动作分块执行时长存在的效率与精度权衡问题，提出基于动作专家内部交叉注意力动态的自适应动作分块方法 揭示动作预测步长增加时，动作到VLM的交叉注意力会逐渐分散、熵值升高并进入稳定平台期的规律，该现象与动作预测误差正相关，可作为预测风险的在线信号 设计无需训练的动态截断机制，在推理时通过检测持续高熵平台自动调整执行时长，在保持高效闭环控制的同时提升任…",
+    "research_unit": "清华大学（所有作者所属机构）",
+    "hook_text": "针对 Vision-Language-Action（VLA）模型中固定动作分块执行时长存在的效率与精度权衡问题，提出基于动作专家内部交叉注意力…",
+    "key_points": [
+      "针对 Vision-Language-Action（VLA）模型中固定动作分块执行时长存在的效率与精度权衡问题，提出基于动作专家内部交叉注意力…",
+      "揭示动作预测步长增加时，动作到VLM的交叉注意力会逐渐分散、熵值升高并进入稳定平台期的规律，该现象与动作预测误差正相关，可作为预测风险的在线信号",
+      "设计无需训练的动态截断机制，在推理时通过检测持续高熵平台自动调整执行时长，在保持高效闭环控制的同时提升任务成功率"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
     "date": "2026-08-31",
     "title": "Zeva: In-Context Causal Learning for Generalizable Embodied Manipulation",
     "link": "http://arxiv.org/abs/2608.30880",
@@ -38924,7 +39036,7 @@
     "arxiv_id": "2505.17685",
     "detail_path": "papers/2505.17685/",
     "cover_path": "covers/2505.17685/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2505.17685.webp",
     "preview_text": "论文提出了 FSDrive，一个用于自动驾驶的视觉-语言-动作（VLA）框架，旨在解决传统文本思维链导致的空间-时间关系模糊和细粒度信息丢失问题。 核心思想是让模型进行“视觉思考”，通过生成包含未来车道线和3D检测框的统一未来帧作为视觉时空思维链。 该框架充当世界模型预测未来状态，并作为逆动力学模型基于当前观测和视觉思维链规划轨迹，从而弥合感知与规划之间的模态差距。",
     "research_unit": "Xi’an Jiaotong University",
     "hook_text": "论文提出了 FSDrive，一个用于自动驾驶的视觉-语言-动作（VLA）框架，旨在解决传统文本思维链导致的空间-时间关系模糊和细粒度信息丢失问…",
@@ -38952,7 +39064,7 @@
     "arxiv_id": "2505.17295",
     "detail_path": "papers/2505.17295/",
     "cover_path": "covers/2505.17295/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2505.17295.webp",
     "preview_text": "论文介绍了 ScanBot，这是一个专为机器人系统中的指令条件化、高精度表面扫描设计的新型数据集。 与现有的专注于抓取或导航等粗糙任务的机器人学习数据集不同，ScanBot 专注于工业激光扫描的亚毫米级路径连续性和参数稳定性需求。 研究旨在解决现有视觉-语言-动作（VLA）模型在细粒度指令和现实世界精度要求下无法生成稳定扫描轨迹的问题。",
     "research_unit": "University of Connecticut",
     "hook_text": "论文介绍了 ScanBot，这是一个专为机器人系统中的指令条件化、高精度表面扫描设计的新型数据集。",
@@ -38980,7 +39092,7 @@
     "arxiv_id": "2505.17016",
     "detail_path": "papers/2505.17016/",
     "cover_path": "covers/2505.17016/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2505.17016.webp",
     "preview_text": "论文提出了 RIPT-VLA，一种基于强化学习的交互式后训练范式，旨在解决现有视觉-语言-动作（VLA）模型训练流程依赖离线数据和大量标注的问题。 该方法仅使用稀疏的二进制成功奖励，通过引入第三训练阶段，使 VLA 模型能够与环境交互并优化策略。 实验表明，该方法在极少数据（如单次演示）下能显著提升模型性能，并具备优秀的跨任务和跨场景泛化能力。",
     "research_unit": "UT Austin",
     "hook_text": "论文提出了 RIPT-VLA，一种基于强化学习的交互式后训练范式，旨在解决现有视觉-语言-动作（VLA）模型训练流程依赖离线数据和大量标注的问…",
@@ -39008,7 +39120,7 @@
     "arxiv_id": "2505.16815",
     "detail_path": "papers/2505.16815/",
     "cover_path": "covers/2505.16815/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2505.16815.webp",
     "preview_text": "论文首次提出了面向具身智能的图像质量评估任务，旨在评估图像在具身任务中的可用性，而非传统的人类视觉偏好。 研究指出人类视觉系统（HVS）、机器视觉系统（MVS）和机器人视觉系统（RVS）之间存在显著差异，RVS 包含独特的决策和执行步骤，导致传统 IQA 方法无法直接应用。 论文通过构建新的数据库和评估基准，解决了具身智能在真实世界复杂失真环境下应用受限的问题，为未来具身场景提供了准确的质量指标。",
     "research_unit": "Shanghai Jiao Tong University",
     "hook_text": "论文首次提出了面向具身智能的图像质量评估任务，旨在评估图像在具身任务中的可用性，而非传统的人类视觉偏好。",
@@ -39036,7 +39148,7 @@
     "arxiv_id": "2505.16278",
     "detail_path": "papers/2505.16278/",
     "cover_path": "covers/2505.16278/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2505.16278.webp",
     "preview_text": "论文提出了 DriveMoE，一个用于端到端自动驾驶（E2E-AD）的混合专家框架，旨在解决多视图视觉数据冗余和单一策略难以处理多样化驾驶场景的问题。 该框架建立在适配于自动驾驶领域的 Drive-$\\pi_0$ 基线模型之上，引入了 场景专用视觉 MoE 和 技能专用动作 MoE。 核心目标是模仿人类驾驶员的认知机制，通过动态选择关键视觉信息和激活特定驾驶技能专家，提高计算效率并增强对罕见驾驶行为的处理能力。",
     "research_unit": "上海交通大学（计算机科学与人工智能学院）",
     "hook_text": "论文提出了 DriveMoE，一个用于端到端自动驾驶（E2E-AD）的混合专家框架，旨在解决多视图视觉数据冗余和单一策略难以处理多样化驾驶场景…",

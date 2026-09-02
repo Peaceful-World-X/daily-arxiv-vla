@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出了 DroneCATS-Agent，一种将多模态大语言模型（MLLM）直接嵌入无人机控制环路的通用架构，其动作空间完全通过提示词声明，无需微调或函数调用模式 构建了 DroneCATS 基准，从接近、跟踪、搜索和指挥四个维度系统评估 MLLM 作为视觉-语言-动作代理的能力，并特别关注模型作为独立变量的表现 研究发现，小模型在导航能力上接近甚至超越前沿模型，但失败主要源于无法正确使用“声明到达”这一终止动作…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.01404">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.01404.webp" alt="Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出了 DroneCATS-Agent，一种将多模态大语言模型（MLLM）直接嵌入无人机控制环路的通用架构，其动作空间完全通过提示词声明…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching</h1>
+            <div class="detail-meta">2026-09-01 · <a href="http://arxiv.org/abs/2609.01404" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.01404" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.01404</span></div>
+            <p class="detail-summary">论文提出了 DroneCATS-Agent，一种将多模态大语言模型（MLLM）直接嵌入无人机控制环路的通用架构，其动作空间完全通过提示词声明，无需微调或函数调用模式 构建了 DroneCATS 基准，从接近、跟踪、搜索和指挥四个维度系统评估 MLLM 作为视觉-语言-动作代理的能力，并特别关注模型作为独立变量的表现 研究发现，小模型在导航能力上接近甚至超越前沿模型，但失败主要源于无法正确使用“声明到达”这一终止动作…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者所属机构为 NAVER Cloud 的 Drone AI Team</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.01404/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出了 DroneCATS-Agent，一种将多模态大语言模型（MLLM）直接嵌入无人机控制环路的通用架构，其动作空间完全通过提示词声明…</p>
+  <ul class="reading-intro-points"><li>论文提出了 DroneCATS-Agent，一种将多模态大语言模型（MLLM）直接嵌入无人机控制环路的通用架构，其动作空间完全通过提示词声明…</li><li>构建了 DroneCATS 基准，从接近、跟踪、搜索和指挥四个维度系统评估 MLLM 作为视觉-语言-动作代理的能力，并特别关注模型作为独立变…</li><li>研究发现，小模型在导航能力上接近甚至超越前沿模型，但失败主要源于无法正确使用“声明到达”这一终止动作，即协议遵守能力不足</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者所属机构为 <strong>NAVER Cloud</strong> 的 <strong>Drone AI Team</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出了 <strong>DroneCATS-Agent</strong>，一种将多模态大语言模型（MLLM）直接嵌入无人机控制环路的通用架构，其动作空间完全通过提示词声明，无需微调或函数调用模式</li><li>构建了 <strong>DroneCATS 基准</strong>，从接近、跟踪、搜索和指挥四个维度系统评估 MLLM 作为视觉-语言-动作代理的能力，并特别关注模型作为独立变量的表现</li><li>研究发现，小模型在导航能力上接近甚至超越前沿模型，但失败主要源于无法正确使用“声明到达”这一终止动作，即协议遵守能力不足</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>DroneCATS-Agent</strong>：一种模型无关的无人机代理，通过提示词声明四种动作（go、rotate、think、finished），使任何能读取提示的 MLLM 均可直接接入</li><li><strong>统一的闭环评估协议</strong>：采用基于模型自身“到达声明”的单一成功标准，覆盖接近、跟踪和搜索所有任务，避免因轨迹漂移通过目标区域而误判成功</li><li><strong>多维度基准测试</strong>：在 100 个仿真 episodes 上评估了 9 个模型（包括前沿 API 模型和开源小模型），涵盖单无人机四大任务和多无人机指挥场景</li><li><strong>“声明发现”</strong>：揭示了小模型在导航能力足够的情况下，因过早或不发出到达声明而失败的核心瓶颈，将差距定位在协议遵守而非空间感知</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>代理架构采用 <strong>点选接口</strong>（go 动作）结合深度估计，模型通过输出像素坐标和深度值控制飞行，几何控制器负责将 2D 点反投影为 3D 位移，由飞控级联闭环执行</li><li>新增 <strong>rotate</strong> 动作支持原地偏航搜索目标，<strong>think</strong> 动作允许悬停推理，<strong>finished</strong> 动作让模型自主声明到达，其中终止声明是模型的责任，由事后验证器判断是否成功</li><li>所有动作仅通过自然语言提示词声明，模型输出 JSON 格式动作，无任何动作头或标记器，确保模型互换性；视觉输入仅限单目 RGB 图像，相机内参不提供给模型</li><li>基准环境基于 <strong>AirSim</strong> 仿真器，采用住宅区和校园两张地图，任务设计通过目标是否移动、是否在初始画面内两个二元变量组合出四种任务类型，并统一使用 δ=5m 为成功半径</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>DroneCATS Benchmark</strong>：包含 100 个仿真 episodes，分布于两个地图（住宅区和校园），其中单无人机任务 80 个（每类 20 个），多无人机（N=4）指挥任务 20 个</li><li>评估模型：4 个前沿 API 模型（<strong>GPT-5</strong>、<strong>Claude Opus 5</strong>、<strong>Gemini 3.7 Flash</strong>、<strong>Gemini Robotics-ER 2</strong>），<strong>Qwen3.5</strong> 系列（2B/4B/9B/27B）和 <strong>Cosmos3-Edge-2B</strong>，共 9 个模型</li><li>训练资源：不涉及模型训练，推理使用本地部署的 <strong>H100 GPU</strong>（2B/4B 模型）和 API 调用（更大模型），2B 模型需求约 10.5 GiB 显存，推理频率约 2 Hz</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：AirSim 仿真器，无人机搭载单目 RGB 摄像头，控制频率约 2 Hz，episode 上限 300 秒</li><li>主要指标：<strong>成功率（SR）</strong>（基于模型声明到达时距离 ≤5m 且目标可见）、<strong>预言成功率（OSR）</strong>（轨迹进入过目标区域）、导航误差（NE）、声明距离比等</li><li>关键结果：<strong>Gemini 3.7 Flash</strong> 在单无人机接近任务中达到 65% 成功率，但搜索任务降至 40%；跟踪任务中该模型达到 80%，而 <strong>GPT-5</strong> 仅 15%；小模型 <strong>Qwen3.5-9B</strong> 在接近任务中虽进入目标区域比例高达 90%，但因声明过早成功率仅 35%；多无人机指挥中 Gemini 3.7 Flash 以 80% 成功率显著领先，而 GPT-5 仅 20%</li><li>分析表明，小模型失败的核心是 <strong>协议遵守</strong>（声明太早或从不声明），而非导航能力，这一发现揭示了在边缘部署场景下模型需具备的持续协议遵守和正确终止能力</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2609.01281/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
