@@ -1,5 +1,145 @@
 [
   {
+    "date": "2026-09-02",
+    "title": "HINT: Human-Intent Inception for Long-Horizon Robot Manipulation",
+    "link": "http://arxiv.org/abs/2609.02653",
+    "arxiv_id": "2609.02653",
+    "detail_path": "papers/2609.02653/",
+    "cover_path": "covers/2609.02653/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.02653.webp",
+    "preview_text": "针对现有视觉-语言-动作（VLA）模型在长时序机器人操作任务中，面对密集演化的视觉输入和稀疏语言指令时，易受视觉相关性干扰产生视觉捷径、意图漂移，且语义推理与动作控制的全耦合导致推理延迟高、难以泛化到未见语义组合的核心问题 提出HINT（Human-Intent Inception）框架，模仿人类操作的感知规律：高层语义意图仅在操作模式转换时稀疏更新，连续控制阶段仅需跟踪目标与机械手的空间关系，将高层语言意图转化为…",
+    "research_unit": "论文作者主要所属机构：Zhejiang University、Shanghai Jiao Tong U…",
+    "hook_text": "针对现有视觉-语言-动作（VLA）模型在长时序机器人操作任务中，面对密集演化的视觉输入和稀疏语言指令时，易受视觉相关性干扰产生视觉捷径、意图漂…",
+    "key_points": [
+      "针对现有视觉-语言-动作（VLA）模型在长时序机器人操作任务中，面对密集演化的视觉输入和稀疏语言指令时，易受视觉相关性干扰产生视觉捷径、意图漂…",
+      "提出HINT（Human-Intent Inception）框架，模仿人类操作的感知规律：高层语义意图仅在操作模式转换时稀疏更新，连续控制阶段…",
+      "核心目标是实现长时序操作中稀疏语义推理与连续视觉运动反馈的无缝耦合，在保证低延迟控制的同时提升意图理解准确性、任务执行进度和端到端任务成功率"
+    ],
+    "reading_minutes": 10,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Latent Cluster Analysis for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2609.02634",
+    "arxiv_id": "2609.02634",
+    "detail_path": "papers/2609.02634/",
+    "cover_path": "covers/2609.02634/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.02634.webp",
+    "preview_text": "提出名为LAVLA的潜在簇分析框架，用于提升Vision-Language-Action（VLA）模型的可解释性，聚焦分析VLA动作解码器的内部表征 针对NVIDIA的GR00T N1.5模型开展分层研究，分析其基于扩散Transformer（DiT）的动作解码器在去噪过程中的潜在空间结构 解决当前VLA模型黑箱问题：现有VLA虽具备强泛化能力，但内部推理过程不透明，在机器人应用中存在不可控风险，需通过潜在空间分析…",
+    "research_unit": "The University of Manchester",
+    "hook_text": "提出名为LAVLA的潜在簇分析框架，用于提升Vision-Language-Action（VLA）模型的可解释性，聚焦分析VLA动作解码器的内…",
+    "key_points": [
+      "提出名为LAVLA的潜在簇分析框架，用于提升Vision-Language-Action（VLA）模型的可解释性，聚焦分析VLA动作解码器的内…",
+      "针对NVIDIA的GR00T N1.5模型开展分层研究，分析其基于扩散Transformer（DiT）的动作解码器在去噪过程中的潜在空间结构",
+      "解决当前VLA模型黑箱问题：现有VLA虽具备强泛化能力，但内部推理过程不透明，在机器人应用中存在不可控风险，需通过潜在空间分析提升系统可信度"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-02",
+    "title": "ZETA: A Controlled Study of Zero-Shot Cross-Embodiment VLA Transfer for Tabletop Manipulation",
+    "link": "http://arxiv.org/abs/2609.02546",
+    "arxiv_id": "2609.02546",
+    "detail_path": "papers/2609.02546/",
+    "cover_path": "covers/2609.02546/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.02546.webp",
+    "preview_text": "针对零样本跨具身视觉-语言-动作（VLA）迁移领域存在协议定义不统一、评估未隔离非具身变量的核心问题，开展系统性受控研究 明确区分两种零样本迁移协议：严格零样本迁移（目标具身完全未出现在所有训练数据中）和预训练暴露零样本迁移（目标具身仅出现在预训练阶段，未出现在后训练中） 以 stationary 桌面两指夹爪操作为受控场景，量化状态-动作表示、源具身多样性、辅助协同训练、目标具身暴露四个核心因素对跨具身迁移的影响…",
+    "research_unit": "Galbot",
+    "hook_text": "针对零样本跨具身视觉-语言-动作（VLA）迁移领域存在协议定义不统一、评估未隔离非具身变量的核心问题，开展系统性受控研究",
+    "key_points": [
+      "针对零样本跨具身视觉-语言-动作（VLA）迁移领域存在协议定义不统一、评估未隔离非具身变量的核心问题，开展系统性受控研究",
+      "明确区分两种零样本迁移协议：严格零样本迁移（目标具身完全未出现在所有训练数据中）和预训练暴露零样本迁移（目标具身仅出现在预训练阶段，未出现在后…",
+      "以 stationary 桌面两指夹爪操作为受控场景，量化状态-动作表示、源具身多样性、辅助协同训练、目标具身暴露四个核心因素对跨具身迁移的影…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-02",
+    "title": "Towards Zero-Shot Transfer Across Embodiments For Driving VLAs",
+    "link": "http://arxiv.org/abs/2609.02341",
+    "arxiv_id": "2609.02341",
+    "detail_path": "papers/2609.02341/",
+    "cover_path": "covers/2609.02341/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.02341.webp",
+    "preview_text": "聚焦自动驾驶领域Vision-Language-Action（VLA）模型的跨不同传感器配置（embodiments）零样本迁移问题，针对现有驾驶VLA多为单数据集训练、缺乏跨相机 rig 的几何迁移能力，且单纯增加训练数据不一定能提升性能的痛点展开研究 提出BEV-Forcing辅助任务，通过引入专用BEV模型的占用图监督信号，引导VLA骨干网络学习统一的空间表征，在不增加推理成本的前提下提升模型的跨embodi…",
+    "research_unit": "论文作者所属机构包括：",
+    "hook_text": "聚焦自动驾驶领域Vision-Language-Action（VLA）模型的跨不同传感器配置（embodiments）零样本迁移问题，针对现有…",
+    "key_points": [
+      "聚焦自动驾驶领域Vision-Language-Action（VLA）模型的跨不同传感器配置（embodiments）零样本迁移问题，针对现有…",
+      "提出BEV-Forcing辅助任务，通过引入专用BEV模型的占用图监督信号，引导VLA骨干网络学习统一的空间表征，在不增加推理成本的前提下提升…",
+      "系统研究了多数据集训练下驾驶VLA的性能变化规律，评估BEV-Forcing在不同训练数据规模下的效果，验证其作为几何感知正则项的有效性，为后…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-02",
+    "title": "MACAW: Reliable And Efficient Surgical Debridement Using Monocular Adaptive Compact Attention Windows",
+    "link": "http://arxiv.org/abs/2609.01961",
+    "arxiv_id": "2609.01961",
+    "detail_path": "papers/2609.01961/",
+    "cover_path": "covers/2609.01961/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.01961.webp",
+    "preview_text": "针对手术清创（坏死/死亡组织碎片移除）任务中存在的空间感知精度不足、线驱手术机器人运动误差大、深度估计不准确的问题，提出仅使用单目RGB相机的增强手术灵巧系统 系统结合新型相机坐标系伺服技术与MACAW（单目自适应紧凑注意力窗口）深度感知方法，实现手术夹持器的高精度对齐与碎片深度感知 研究目标是在外科医生监督下实现手术清创任务的自动化，降低术者认知与体力负荷，提升清创效率与操作一致性",
+    "research_unit": "University of California, Berkeley, USA",
+    "hook_text": "针对手术清创（坏死/死亡组织碎片移除）任务中存在的空间感知精度不足、线驱手术机器人运动误差大、深度估计不准确的问题，提出仅使用单目RGB相机的…",
+    "key_points": [
+      "针对手术清创（坏死/死亡组织碎片移除）任务中存在的空间感知精度不足、线驱手术机器人运动误差大、深度估计不准确的问题，提出仅使用单目RGB相机的…",
+      "系统结合新型相机坐标系伺服技术与MACAW（单目自适应紧凑注意力窗口）深度感知方法，实现手术夹持器的高精度对齐与碎片深度感知",
+      "研究目标是在外科医生监督下实现手术清创任务的自动化，降低术者认知与体力负荷，提升清创效率与操作一致性"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
     "date": "2026-09-01",
     "title": "Evaluating Multimodal LLMs as Generalist Vision-Language-Action Agents for Drone Control: Commanding, Approaching, Tracking and Searching",
     "link": "http://arxiv.org/abs/2609.01404",
@@ -39176,7 +39316,7 @@
     "arxiv_id": "2505.15725",
     "detail_path": "papers/2505.15725/",
     "cover_path": "covers/2505.15725/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2505.15725.webp",
     "preview_text": "论文提出了 Flying-on-a-Word (Flow) 任务，专注于语言引导下的无人机细粒度、短程轨迹控制，区别于传统长程导航。 核心目标是实现 UAV模仿学习，使无人机通过模仿专家飞行员的轨迹来执行原子语言指令。 解决了语言引导的无人机低层控制这一关键但未被充分探索的问题，并提供了首个真实世界基准。",
     "research_unit": "北京航空航天大学人工智能研究院",
     "hook_text": "论文提出了 Flying-on-a-Word (Flow) 任务，专注于语言引导下的无人机细粒度、短程轨迹控制，区别于传统长程导航。",
@@ -39204,7 +39344,7 @@
     "arxiv_id": "2505.15660",
     "detail_path": "papers/2505.15660/",
     "cover_path": "covers/2505.15660/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2505.15660.webp",
     "preview_text": "论文聚焦于视觉-语言-行动（VLA）模型在零样本跨任务泛化方面的能力，这是一个对实现通用机器人操作至关重要但尚未被充分探索的问题。 研究揭示了现有VLA模型在未见任务上泛化能力严重不足的局限性，并为此提出了一个全新的仿真基准 AGNOSTOS 和一种创新方法 X-ICM 来推动该领域发展。 核心目标是系统评估并提升VLA模型在处理全新、未见过的操作任务时的泛化性能。",
     "research_unit": "香港科技大学（广州）",
     "hook_text": "论文聚焦于视觉-语言-行动（VLA）模型在零样本跨任务泛化方面的能力，这是一个对实现通用机器人操作至关重要但尚未被充分探索的问题。",
@@ -39232,7 +39372,7 @@
     "arxiv_id": "2505.15659",
     "detail_path": "papers/2505.15659/",
     "cover_path": "covers/2505.15659/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2505.15659.webp",
     "preview_text": "提出了 FLARE (Future Latent Representation Alignment) 框架，通过将扩散 Transformer 的特征与未来观测的潜在嵌入对齐，将预测性潜在世界模型集成到机器人策略学习中。 旨在解决现有显式像素级未来帧预测方法中存在的计算开销大、视觉生成与动作建模优化冲突等问题。 赋予了机器人策略推理长期后果的能力，并解锁了利用无动作标签的人类视频进行训练的潜力。",
     "research_unit": "NVIDIA",
     "hook_text": "提出了 FLARE (Future Latent Representation Alignment) 框架，通过将扩散 Transformer…",
@@ -39260,7 +39400,7 @@
     "arxiv_id": "2505.15206",
     "detail_path": "papers/2505.15206/",
     "cover_path": "covers/2505.15206/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2505.15206.webp",
     "preview_text": "论文提出了 EndoVLA，一种专门用于连续体机器人内窥镜手术的双阶段视觉-语言-动作（VLA）模型。 该模型旨在解决传统模块化流程在内窥镜动态环境中表现脆弱、泛化能力差以及现有 VLA 模型在胃肠道领域存在域差距的问题。 EndoVLA 能够根据内窥镜图像和医生指令，自主执行息肉追踪、异常区域描绘与跟随以及环形标记 adherence 等核心任务。",
     "research_unit": "The Chinese University of Hong Kong",
     "hook_text": "论文提出了 EndoVLA，一种专门用于连续体机器人内窥镜手术的双阶段视觉-语言-动作（VLA）模型。",

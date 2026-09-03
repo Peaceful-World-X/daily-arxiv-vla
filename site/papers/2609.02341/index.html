@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Towards Zero-Shot Transfer Across Embodiments For Driving VLAs - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="聚焦自动驾驶领域Vision-Language-Action（VLA）模型的跨不同传感器配置（embodiments）零样本迁移问题，针对现有驾驶VLA多为单数据集训练、缺乏跨相机 rig 的几何迁移能力，且单纯增加训练数据不一定能提升性能的痛点展开研究 提出BEV-Forcing辅助任务，通过引入专用BEV模型的占用图监督信号，引导VLA骨干网络学习统一的空间表征，在不增加推理成本的前提下提升模型的跨embodi…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.02341">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.02341.webp" alt="Towards Zero-Shot Transfer Across Embodiments For Driving VLAs" loading="lazy" />
+  <figcaption class="paper-figure-caption">聚焦自动驾驶领域Vision-Language-Action（VLA）模型的跨不同传感器配置（embodiments）零样本迁移问题，针对现有…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Towards Zero-Shot Transfer Across Embodiments For Driving VLAs</h1>
+            <div class="detail-meta">2026-09-02 · <a href="http://arxiv.org/abs/2609.02341" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.02341" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.02341</span></div>
+            <p class="detail-summary">聚焦自动驾驶领域Vision-Language-Action（VLA）模型的跨不同传感器配置（embodiments）零样本迁移问题，针对现有驾驶VLA多为单数据集训练、缺乏跨相机 rig 的几何迁移能力，且单纯增加训练数据不一定能提升性能的痛点展开研究 提出BEV-Forcing辅助任务，通过引入专用BEV模型的占用图监督信号，引导VLA骨干网络学习统一的空间表征，在不增加推理成本的前提下提升模型的跨embodi…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构包括：</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.02341/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">聚焦自动驾驶领域Vision-Language-Action（VLA）模型的跨不同传感器配置（embodiments）零样本迁移问题，针对现有…</p>
+  <ul class="reading-intro-points"><li>聚焦自动驾驶领域Vision-Language-Action（VLA）模型的跨不同传感器配置（embodiments）零样本迁移问题，针对现有…</li><li>提出BEV-Forcing辅助任务，通过引入专用BEV模型的占用图监督信号，引导VLA骨干网络学习统一的空间表征，在不增加推理成本的前提下提升…</li><li>系统研究了多数据集训练下驾驶VLA的性能变化规律，评估BEV-Forcing在不同训练数据规模下的效果，验证其作为几何感知正则项的有效性，为后…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构包括：</li></ul>
+<p> - <strong>École des Mines de Paris</strong>（法国）</p>
+<p> - <strong>Stellantis</strong>（法国）</p></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>聚焦自动驾驶领域<strong>Vision-Language-Action（VLA）</strong>模型的跨不同传感器配置（embodiments）零样本迁移问题，针对现有驾驶VLA多为单数据集训练、缺乏跨相机 rig 的几何迁移能力，且单纯增加训练数据不一定能提升性能的痛点展开研究</li><li>提出<strong>BEV-Forcing</strong>辅助任务，通过引入专用BEV模型的占用图监督信号，引导VLA骨干网络学习统一的空间表征，在不增加推理成本的前提下提升模型的跨embodiment迁移能力</li><li>系统研究了多数据集训练下驾驶VLA的性能变化规律，评估BEV-Forcing在不同训练数据规模下的效果，验证其作为几何感知正则项的有效性，为后续驾驶VLA技术评估提供参考</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>BEV-Forcing</strong>辅助任务：通过轻量级BEV头将专用BEV模型（<strong>SimpleBEV</strong>）输出的地面平面物体占用图作为监督信号，引导VLA骨干的图像特征编码空间信息，推理时可直接移除BEV头无额外开销，在训练embodiment较少时能同时提升同分布性能和零样本迁移性能</li><li>提供多embodiment训练的系统性研究：在多个公开自动驾驶数据集上开展多数据集训练实验，揭示随着训练embodiment数量增加，BEV-Forcing的收益逐步降低的现象，证明数据多样性与BEV监督存在部分重叠的收益，指出现有技术的有效性评估需考虑数据规模的影响</li><li>通过消融实验验证关键设计：证明低容量BEV头（仅交叉注意力层）比高容量BEV头效果更好，且BEV-Forcing可与数据增强、相机参数输入等鲁棒性技术互补，进一步提升零样本迁移性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础方案：基于开源<strong>Qwen 3.5 2B</strong> VLM作为骨干，采用LoRA（秩16）微调避免灾难性遗忘，动作表示采用1Hz的2D轨迹航点文本形式，贴近VLM原始预训练任务，减少语言能力退化</li><li>核心创新<strong>BEV-Forcing</strong>：在VLM指定中间层提取图像特征，经MLP投影后，通过仅包含交叉注意力层的低容量BEV头生成BEV占用图预测，以SimpleBEV输出的占用图作为监督标签，将BEV二元交叉熵损失与下一 token 预测（NTP）损失加权求和作为总损失</li><li>设计逻辑：通过限制BEV头的容量，强制VLM的图像特征本身编码足够的空间信息以支撑BEV预测，从而将空间感知能力迁移到规划任务中，推理时无需保留BEV头，无额外计算成本</li><li>多任务适配：统一不同数据集的输入输出格式，支持规划任务与VQA任务的联合训练，通过 linguistic 监督保持模型的语义推理能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：规划任务采用<strong>WOD-E2E</strong>、<strong>NAVSIM</strong>、<strong>nuScenes</strong>、<strong>Physical AI</strong>（取6000个片段，5k训练1k验证，用于零样本评估）；VQA任务采用<strong>nuScenes-QA</strong>；零样本额外评估采用<strong>KIT LongTail Dataset</strong></li><li>模型规模：基于<strong>Qwen 3.5 2B</strong> VLM，仅微调LoRA参数（秩16），BEV头为轻量级交叉注意力结构，参数量极小</li><li>训练资源：使用4张A100 GPU，全局batch size为64，训练1个epoch，学习率为1e-4，采用余弦衰减策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估场景：涵盖同分布评估（WOD-E2E验证/测试集）和跨embodiment零样本迁移评估（Physical AI-1k验证集、KITScenes LongTail测试集）</li><li>评估指标：规划任务采用<strong>ADE</strong>（平均位移误差，越低越好）、<strong>FDE</strong>（最终位移误差，越低越好）、<strong>RFS</strong>（人工评分反馈分数，越高越好）、<strong>MMS</strong>（多 maneuver 分数，越高越好）；VQA任务采用准确率</li><li>关键实验结果：</li></ul>
+<p> - 少embodiment训练时BEV-Forcing收益显著：仅用WOD-E2E训练时，BEV-Forcing使ADE降低10.1%，KITScenes LongTail的MMS从3.90提升至4.64；加入NAVSIM、nuScenes-QA后，BEV-Forcing的收益逐步降低，证明数据多样性与BEV监督存在收益重叠</p>
+<p> - 零样本迁移性能超越强基线：仅用WOD-E2E+NAVSIM训练并加入BEV-Forcing的模型，在KITScenes LongTail测试集上MMS达5.15，超过Gemini 3 Pro（4.61）、Alpamayo 1.5（4.31）等现有方法</p>
+<p> - 与鲁棒性技术互补：BEV-Forcing与数据增强、相机参数输入等技术结合时，能进一步提升零样本迁移性能，而单独使用这些技术无显著收益</p>
+<p> - 低容量BEV头设计更优：仅用交叉注意力的BEV头比全Transformer BEV头的同分布和零样本性能都更好，证明强制图像特征编码空间信息比提升BEV头容量更有效</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.02546/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ZETA: A Controlled Study of Zero-Shot Cross-Embodiment VLA Transfer for Tabletop Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.01961/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">MACAW: Reliable And Efficient Surgical Debridement Using Monocular Adaptive Compact Attention Windows</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
