@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO? - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本研究针对视觉-语言-动作（VLA）模型参数量过大、边缘部署成本高的痛点，以主流操控基准LIBERO为研究对象，测量其完成任务所需的最小策略容量（经验容量下限） 提出MINERVA（MINimal Efficient Robotic Vision-Action policy）极简 visuomotor 策略家族，基于“标准LIBERO本质是任务记忆测试”的判断，移除了所有非必要的组件（语言编码器、预训练视觉 bac…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.03715">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.03715.webp" alt="MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO?" loading="lazy" />
+  <figcaption class="paper-figure-caption">本研究针对视觉-语言-动作（VLA）模型参数量过大、边缘部署成本高的痛点，以主流操控基准LIBERO为研究对象，测量其完成任务所需的最小策略容…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO?</h1>
+            <div class="detail-meta">2026-09-03 · <a href="http://arxiv.org/abs/2609.03715" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.03715" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.03715</span></div>
+            <p class="detail-summary">本研究针对视觉-语言-动作（VLA）模型参数量过大、边缘部署成本高的痛点，以主流操控基准LIBERO为研究对象，测量其完成任务所需的最小策略容量（经验容量下限） 提出MINERVA（MINimal Efficient Robotic Vision-Action policy）极简 visuomotor 策略家族，基于“标准LIBERO本质是任务记忆测试”的判断，移除了所有非必要的组件（语言编码器、预训练视觉 bac…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者均隶属于日本东京大学大学院工学系研究科松居-岩泽实验室（Matsuo-Iwasawa Lab…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.03715/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本研究针对视觉-语言-动作（VLA）模型参数量过大、边缘部署成本高的痛点，以主流操控基准LIBERO为研究对象，测量其完成任务所需的最小策略容…</p>
+  <ul class="reading-intro-points"><li>本研究针对视觉-语言-动作（VLA）模型参数量过大、边缘部署成本高的痛点，以主流操控基准LIBERO为研究对象，测量其完成任务所需的最小策略容…</li><li>提出MINERVA（MINimal Efficient Robotic Vision-Action policy）极简 visuomotor…</li><li>同时验证了极简策略的任务扩展性、鲁棒性、推理效率等属性，为固定任务集的高效部署提供可参考的容量基准和方案</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者均隶属于<strong>日本东京大学大学院工学系研究科松居-岩泽实验室（Matsuo-Iwasawa Lab, Graduate School of Engineering, The University of Tokyo）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本研究针对视觉-语言-动作（VLA）模型参数量过大、边缘部署成本高的痛点，以主流操控基准LIBERO为研究对象，测量其完成任务所需的最小策略容量（经验容量下限）</li><li>提出<strong>MINERVA（MINimal Efficient Robotic Vision-Action policy）</strong>极简 visuomotor 策略家族，基于“标准LIBERO本质是任务记忆测试”的判断，移除了所有非必要的组件（语言编码器、预训练视觉 backbone 等），不断缩小模型规模直到性能失效</li><li>同时验证了极简策略的任务扩展性、鲁棒性、推理效率等属性，为固定任务集的高效部署提供可参考的容量基准和方案</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>测量得到标准LIBERO的经验容量下限：<strong>0.54M参数的MINERVA-0.5M</strong>在四套标准LIBERO任务上达到95.1%平均成功率，仅比参数量大7700倍的π₀.₅低2.4个百分点；性能在1M参数附近饱和，低于0.25M参数时性能崩溃，长 horizon 任务最先失效</li><li>完成可重复的消融实验（3种子重复），发现仅动作块长度和视觉编码器容量分配能穿过±1点的训练种子波动：流匹配相比直接L1回归无精度优势，但回归推理速度最多快3.8倍；用token混合MLP替换自注意力可减少26%参数且性能相当</li><li>提出固定参数预算的分配规则：应优先将参数分配给视觉编码器而非动作头，压缩视觉容量会导致平均性能下降1.41点，且动作头容量无法弥补该损失</li><li>系统对比了不同推理时块执行策略，证明每步重规划+ACT风格时间集成为最优方案，模式寻优采样可对子1M模型额外提升0.2-2.25个点的成功率</li><li>通过排列探针验证任务ID嵌入对任务选择的因果作用，同时证明食谱在<strong>LIBERO-90</strong>（90任务）上仍能达到94.6%成功率，并在<strong>LIBERO-Plus</strong>扰动测试中明确了记忆级策略的能力边界</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>设计原则为“仅保留基准测试要求的组件”：针对标准LIBERO本质是任务记忆测试的特点，移除语言编码器，用40维学习得到的任务ID嵌入替代语言指令；移除预训练视觉 backbone，采用从零训练的CNN，全部参数用于视觉状态估计和闭环动作生成</li><li>感知模块：输入为agent-view和腕部两个视角的256²图像（训练时resize到144²并随机裁剪到128²，评估时中心裁剪），经共享的深度可分离残差CNN编码，通过FiLM调制注入任务嵌入，再用空间softmax提取关键点后投影为视角特征；8维本体感知经2层MLP编码，2个时间步的观测、视角特征、任务嵌入拼接为条件向量</li><li>动作头：默认采用条件流匹配生成16步长的动作块，训练时回归速度场；也可切换为直接L1回归的单前向传播模式。头基于4层DiT构建，将动作token的自注意力替换为token混合MLP，跨层共享AdaLN-Zero调制MLP；1M以下的小模型额外采用大模型教师的速度场蒸馏提升性能</li><li>推理时策略：每控制步重规划，采用ACT风格的时间集成（重叠预测的指数加权平均）；子1M模型采用0.85的初始噪声温度实现模式寻优采样，提升小模型性能</li><li>创新点包括：针对记忆型基准的极简架构设计、无预训练组件和语言通路、小模型蒸馏方案、适配小模型的推理时优化策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>核心训练与评估数据集为<strong>lerobot/libero</strong>，包含1693条演示、273k帧，覆盖LIBERO四套标准任务（Spatial、Object、Goal、Long共40个任务）；扩展测试使用<strong>LIBERO-90</strong>（3959条演示、90个任务）和<strong>LIBERO-Plus</strong>扰动数据集（10030个扰动变体）</li><li>模型规模覆盖0.09M到10M参数，核心测试模型包括：<strong>MINERVA-0.5M（0.54M参数）</strong>、MINERVA-1M（0.99M参数）、MINERVA-5M（4.89M参数）、MINERVA-10M（9.66M参数）</li><li>训练资源：单模型训练90-120k步，batch size为128，使用AdamW优化器（学习率1e-4，余弦衰减），单张GH200或消费级RTX 5080 GPU即可在约2小时内完成训练</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：标准LIBERO评估采用固定种子，每任务50回合×10任务×4套件共2000次rollout，回合间硬重置；消融实验采用每任务25回合的快速筛查，核心结论均重复验证到50回合</li><li>主要评估指标：任务成功率（%）、推理延迟（ms）、参数量</li><li>关键实验结果：</li></ul>
+<p> - 性能层面：0.54M模型达到95.05%平均成功率，0.99M模型为96.75%，1M以上性能饱和，低于0.25M性能崩溃，且长 horizon 任务最先失效</p>
+<p> - 消融结果：仅动作块长度（16为最优，8/32会分别导致Goal/Long套件性能下降）和视觉容量分配（视觉容量压缩导致平均降1.41点，主要影响Long套件）是统计显著的变量；流匹配与L1回归无显著精度差异，回归推理速度更快</p>
+<p> - 推理效率：0.54M模型在笔记本8线程CPU上每动作块推理仅需5-9ms，比SmolVLA快113倍，比π₀.₅快1400倍，可直接在CPU上实现闭环控制</p>
+<p> - 因果验证：仅修改任务ID映射就将成功率从96.75%降至6.5%，证明任务ID是任务选择的核心信号</p>
+<p> - 扩展与鲁棒性：食谱在LIBERO-90上达到94.6%成功率；LIBERO-Plus扰动下成功率降至46-56%，光度扰动下鲁棒性接近0，说明标准LIBERO高分仅代表记忆能力，不具备真实扰动下的泛化性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.03889/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">FWBC-VLA: Force-Aware Whole-Body Compensation for Contact-Rich Loco-Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.03681/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">WISE: World-model-guided Imagination Scheduling for Efficient Post-training of Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

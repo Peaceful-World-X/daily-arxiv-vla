@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 LaPla，一个统一的视觉-语言-动作（VLA）框架，旨在弥合大规模视觉语言模型的离散语义推理与自动驾驶中连续、物理约束的控制动作之间的差距。 通过 潜在对齐规划 机制，将多模态上下文（多视图图像、历史动作、文本指令）直接映射到预训练的运动学潜在空间，再由冻结解码器生成平滑、物理可行的轨迹。 解决现有方法中因动作离散化引入的量化误差、双系统架构的语义-执行脱节以及扩散模型推理延迟高等问题。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.04070">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.04070.webp" alt="Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 LaPla，一个统一的视觉-语言-动作（VLA）框架，旨在弥合大规模视觉语言模型的离散语义推理与自动驾驶中连续、物理约束的控制动作之间的…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Continuous Actions from Discrete Minds: Latent-Aligned Planning for End-to-End Autonomous Driving</h1>
+            <div class="detail-meta">2026-09-03 · <a href="http://arxiv.org/abs/2609.04070" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.04070" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.04070</span></div>
+            <p class="detail-summary">提出 LaPla，一个统一的视觉-语言-动作（VLA）框架，旨在弥合大规模视觉语言模型的离散语义推理与自动驾驶中连续、物理约束的控制动作之间的差距。 通过 潜在对齐规划 机制，将多模态上下文（多视图图像、历史动作、文本指令）直接映射到预训练的运动学潜在空间，再由冻结解码器生成平滑、物理可行的轨迹。 解决现有方法中因动作离散化引入的量化误差、双系统架构的语义-执行脱节以及扩散模型推理延迟高等问题。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">The Hong Kong University of Science and Technology…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.04070/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 LaPla，一个统一的视觉-语言-动作（VLA）框架，旨在弥合大规模视觉语言模型的离散语义推理与自动驾驶中连续、物理约束的控制动作之间的…</p>
+  <ul class="reading-intro-points"><li>提出 LaPla，一个统一的视觉-语言-动作（VLA）框架，旨在弥合大规模视觉语言模型的离散语义推理与自动驾驶中连续、物理约束的控制动作之间的…</li><li>通过 潜在对齐规划 机制，将多模态上下文（多视图图像、历史动作、文本指令）直接映射到预训练的运动学潜在空间，再由冻结解码器生成平滑、物理可行的…</li><li>解决现有方法中因动作离散化引入的量化误差、双系统架构的语义-执行脱节以及扩散模型推理延迟高等问题。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>The Hong Kong University of Science and Technology (Guangzhou)</strong></li><li><strong>Central Media Technology Institute, Huawei</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>LaPla</strong>，一个统一的视觉-语言-动作（VLA）框架，旨在弥合大规模视觉语言模型的离散语义推理与自动驾驶中连续、物理约束的控制动作之间的差距。</li><li>通过 <strong>潜在对齐规划</strong> 机制，将多模态上下文（多视图图像、历史动作、文本指令）直接映射到预训练的运动学潜在空间，再由冻结解码器生成平滑、物理可行的轨迹。</li><li>解决现有方法中因动作离散化引入的量化误差、双系统架构的语义-执行脱节以及扩散模型推理延迟高等问题。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>LaPla</strong>，将自动驾驶统一为潜在对齐的序列建模任务，实现多模态上下文到高精度轨迹生成的端到端集成。</li><li>首创 <strong>隐式潜在对齐规划机制</strong>，利用冻结的残差 VQ-VAE 解码器作为运动学梯度预处理器，消除量化瓶颈，引导输出向运动学可行的流形对齐。</li><li>设计 <strong>非对称动作表示</strong>：历史动作采用离散量化以结构化上下文，未来轨迹预测连续潜在向量以避免精度损失，实现高效并行预填充解码。</li><li>在 <strong>nuScenes</strong> 开环评测中取得有竞争力的性能，长时域 L2 误差较先进 VLA 方法降低 15.52%；在 <strong>AlpaSim</strong> 闭环仿真中成功率提升 33.34 个百分点，推理延迟显著降低。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>两阶段训练</strong>：首先在大规模轨迹数据上预训练一个残差 VQ-VAE，学习动作的潜在流形，并冻结其解码器作为物理先验；然后基于该先验训练 VLA 模型。</li><li><strong>多模态序列构建</strong>：将多视图图像 token、历史动作的量化潜在向量、导航指令文本以及可学习的未来动作查询拼接为单一序列，通过因果 Transformer 处理。</li><li><strong>潜在对齐动作生成</strong>：利用可学习的未来查询并行提取隐藏状态，经 MLP 投影到连续潜在空间，再通过冻结的 VQ-VAE 解码器直接生成未来位移和朝向，通过累积求和得到绝对轨迹。</li><li><strong>多模态轨迹候选</strong>：通过可学习的扰动基向量和缩放因子生成多条轨迹候选，以 Best-of-N 的 Smooth L1 损失训练，增强多模态覆盖。</li><li><strong>辅助 VQA 任务</strong>：在序列尾部追加多轮视觉问答，提升语义理解与规划推理的协同，训练时仅更新 LoRA 适配器、动作查询、投影头等少量参数。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：<strong>nuScenes</strong>（约 30K 帧，用于开环训练与评测）；<strong>AlpaSim</strong>（20K 帧用于微调，60 个场景用于闭环测试）；VQA 标注来自 OmniDrive 等。</li><li>模型规模：基于 <strong>Emu3-8B</strong> 视觉语言模型，通过 LoRA 微调；可训练参数量较少。</li><li>训练资源：<strong>华为 Ascend 910B3 NPU</strong>（64G VRAM）分布式训练；闭环推理时 AlpaSim 运行在四块 <strong>RTX-4090 GPU</strong>（24G VRAM），通过 gRPC 与 NPU 端通信。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>开环评估（nuScenes）：</li></ul>
+<p> - 指标：<strong>L2 距离</strong>（↓）和 <strong>碰撞率</strong>（↓），分 ST-P3 和 UniAD 两种度量。</p>
+<p> - 结果：LaPla 在 UniAD 平均 L2 误差为 0.60 m，优于 OpenDriveVLA-7B（0.66 m）和 AutoVLA（0.70 m）；3 秒长时域 L2 误差为 0.98 m，相比 AutoVLA 的 1.16 m 降低 15.52%。</p>
+<ul><li>闭环评估（AlpaSim）：</li></ul>
+<p> - 指标：<strong>故障碰撞</strong>（↓）、<strong>驶离道路</strong>（↓）、<strong>路径完成率</strong>（↑）、<strong>成功率</strong>（↑）和 <strong>FPS</strong>（↑）。</p>
+<p> - 结果：成功率提升 33.34 个百分点，推理延迟显著低于自回归方法和扩散模型，实现平滑、稳定的驾驶。</p>
+<ul><li>消融实验：验证了冻结解码器、潜在动作预测和 VQA 辅助任务对性能的显著提升；对比了不同量化方法对轨迹重构精度的影响。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.04193/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.03927/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Toward Unified Robot Learning: Bridging Representation, Vision-Language-Action, and World Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

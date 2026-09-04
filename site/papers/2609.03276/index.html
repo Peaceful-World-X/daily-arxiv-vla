@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="传统机器人操作策略评估依赖二元成功率指标，存在人工成本高、结果不稳定、无法捕捉执行质量差异的问题，本文提出R2S-Eval评估管道，结合真实-模拟校准与视觉语言模型（VLM）偏好评估，推动评估向自动化、统计稳定、质量感知方向发展。 该管道通过校准仿真高效生成与真实场景一致的rollout视频，由VLM对视频执行质量进行 pairwise 偏好判断，最终聚合为策略排名，同时配套多轴验证协议确保结论可靠性。 研究目标是…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.03276">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.03276.webp" alt="R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">传统机器人操作策略评估依赖二元成功率指标，存在人工成本高、结果不稳定、无法捕捉执行质量差异的问题，本文提出R2S-Eval评估管道，结合真实-…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models</h1>
+            <div class="detail-meta">2026-09-03 · <a href="http://arxiv.org/abs/2609.03276" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.03276" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.03276</span></div>
+            <p class="detail-summary">传统机器人操作策略评估依赖二元成功率指标，存在人工成本高、结果不稳定、无法捕捉执行质量差异的问题，本文提出R2S-Eval评估管道，结合真实-模拟校准与视觉语言模型（VLM）偏好评估，推动评估向自动化、统计稳定、质量感知方向发展。 该管道通过校准仿真高效生成与真实场景一致的rollout视频，由VLM对视频执行质量进行 pairwise 偏好判断，最终聚合为策略排名，同时配套多轴验证协议确保结论可靠性。 研究目标是…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Sharpa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.03276/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">传统机器人操作策略评估依赖二元成功率指标，存在人工成本高、结果不稳定、无法捕捉执行质量差异的问题，本文提出R2S-Eval评估管道，结合真实-…</p>
+  <ul class="reading-intro-points"><li>传统机器人操作策略评估依赖二元成功率指标，存在人工成本高、结果不稳定、无法捕捉执行质量差异的问题，本文提出R2S-Eval评估管道，结合真实-…</li><li>该管道通过校准仿真高效生成与真实场景一致的rollout视频，由VLM对视频执行质量进行 pairwise 偏好判断，最终聚合为策略排名，同时…</li><li>研究目标是在降低硬件重复操作成本的同时，获得稳定、符合人类判断、能反映策略真实能力的操作策略排名。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Sharpa</strong></li><li><strong>南京大学</strong>（Nanjing University）</li><li><strong>同济大学</strong>（Tongji University）</li><li><strong>清华大学</strong>（Tsinghua University）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>传统机器人操作策略评估依赖二元成功率指标，存在人工成本高、结果不稳定、无法捕捉执行质量差异的问题，本文提出<strong>R2S-Eval</strong>评估管道，结合真实-模拟校准与视觉语言模型（VLM）偏好评估，推动评估向自动化、统计稳定、质量感知方向发展。</li><li>该管道通过校准仿真高效生成与真实场景一致的rollout视频，由VLM对视频执行质量进行 pairwise 偏好判断，最终聚合为策略排名，同时配套多轴验证协议确保结论可靠性。</li><li>研究目标是在降低硬件重复操作成本的同时，获得稳定、符合人类判断、能反映策略真实能力的操作策略排名。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>将操作策略评估形式化为rollout行为的偏好估计问题，输出反映执行质量的策略排名，替代仅依赖二元成功计数的传统评估方式。</li><li>提出R2S-Eval评估管道，通过真实-模拟校准高效获取行为视频，利用VLM生成的 pairwise 偏好聚合为策略排名，解决传统评估人工成本高、结果不稳定的痛点。</li><li>设计多轴验证协议，从排名可靠性、稳定性、人类一致性、硬件人工成本、行为信息量五个维度全面评估评估管道的有效性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>问题公式化</strong>：将策略评估从排序任务成功率转为基于rollout视频 pairwise 偏好的排名推理，通过统计偏好模型拟合策略潜在质量得分，最终输出策略排名。</li><li><strong>真实-模拟校准</strong>：在<strong>NVIDIA Isaac Sim</strong>中构建与真实场景匹配的仿真环境，对齐机器人的几何、运动学、控制接口、任务定义、物体位姿与相机视角；针对动作回放对物体初始位姿敏感的问题，采用自动重试机制，失败时重采样位姿扰动后重新执行，直到回放成功或达到重试上限；对候选策略进行仿真域自适应训练，避免残差域差异导致的行为失真；通过闭环仿真部署高效收集各策略的rollout视频。</li><li><strong>VLM偏好评估</strong>： pairwise 采样时保证每个任务贡献相同数量的比较，且两个匿名视频随机分配比较位置，消除位置偏差；首先对每个rollout视频，VLM生成覆盖运动平滑度、任务进展、接触控制等维度的结构化行为描述；随后对策略 pair 的视频对进行比较，输出偏好结果；最后采用<strong>Bradley-Terry</strong>模型聚合所有偏好，拟合策略得分并得到最终排名。</li><li><strong>验证协议</strong>：从可靠性、稳定性、人类一致性、人工成本、行为信息量五个维度验证评估结论的有效性，确保排名反映真实策略能力、随证据积累收敛、与人类判断一致、人工成本低、能捕捉超越成功标签的行为差异。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>任务集：7个桌面操作任务，包括Cover Ball with Cup、Pick Ball Place in Box、Pick Ball Place in Cup、Pick Cup Place on Plate、Stack Blocks、Take Block out Box、Upright Fallen Cup，真实与仿真场景的任务定义、物体初始化范围、成功条件完全一致；仿真评估额外采用<strong>LIBERO</strong>基准。</li><li>数据规模：共收集3525条真实世界轨迹，3445条仿真轨迹，真实轨迹通过外骨骼、手套与VR头盔组成的遥操作系统收集，仿真动作回放成功率平均达97.8%。</li><li>机器人平台：<strong>SharpaNorth</strong>双臂人形操作平台，拥有63个主动自由度，配备头部双目RGB相机与腕部鱼眼相机用于观测。</li><li>候选策略模型：共6款VLA策略，涵盖从轻量级到7B规模的不同架构，包括<strong>π₀</strong>（流匹配VLA）、<strong>π₀.₅</strong>（π₀开源通用变体）、<strong>OpenVLA</strong>（7B开源VLA）、<strong>NORA-Long</strong>（基于Qwen2.5-VL-3B的长动作VLA）、<strong>SmolVLA</strong>（轻量VLA）、<strong>X-VLA</strong>（跨embodiment VLA）。</li><li>评估用VLM：共8款，规模从4B到32B不等，包括<strong>Qwen3-VL</strong>（4B/8B/32B）、<strong>LLaVA-OV-1.5</strong>（4B/8B）、<strong>Gemma 3</strong>（4B/12B/27B）。</li><li>训练资源：原文未明确披露具体GPU/TPU等计算资源配置。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真场景采用LIBERO基准，真实场景基于SharpaNorth平台部署的7个桌面操作任务；真实世界每任务跑20次试次，仿真每任务跑200次试次。</li><li>主要评估指标：<strong>Spearman ρ</strong>（排名与参考排名的一致性）、<strong>Pearson r</strong>（策略得分与参考性能的相关性）、<strong>MMRV</strong>（最大排名违反均值）、<strong>BT CI</strong>（Bradley-Terry模型95%置信区间宽度）、人类一致性率（VLM偏好与人类标注的一致性）、重复硬件操作耗时。</li><li>关键实验结果：</li></ul>
+<p> - 真实-仿真一致性：真实与仿真的策略排名完全一致，任务级成功率平均绝对差仅2.13个百分点，最大差7.0个百分点，二者失败模式也高度相似，证明校准仿真可保留策略比较结论。</p>
+<p> - VLM偏好评估有效性：在LIBERO仿真中，平均Spearman ρ达0.823，Pearson r达0.924，MMRV仅0.018，人类一致性率为82.9%；在真实-仿真场景中，平均Spearman ρ达0.957，Pearson r达0.978，MMRV仅0.005，人类一致性率达91.9%，且不同架构、不同规模的VLM表现稳定，说明评估管道泛化性良好。此外，反转视频比较的A/B顺序后，91.5%的比较结果保持不变，仅接近平局的视频对存在轻微位置偏差，随机分配位置后可有效消除该影响。</p>
+<p> - 硬件成本降低：R2S-Eval无需额外真实硬件操作，传统评估的硬件操作耗时随任务/试次数量线性增长，R2S-Eval完全消除重复人工成本。</p>
+<p> - 行为信息量提升：VLM可区分二元成功标签相同的rollout的执行质量差异，例如成功轨迹是否一次抓取完成、失败轨迹是否取得进展，捕捉到传统成功率指标忽略的行为细节。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.03483/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Air-Ground Collaborative Vision-and-Language Navigation via Shared Bird&#x27;s-Eye Maps</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.03142/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Sensing Which Modality Matters: Evidence-Gated Regularization for Robust VLA Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
