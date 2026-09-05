@@ -56619,5 +56619,83 @@
     "inside_figure": true,
     "width": 800,
     "height": 302
+  },
+  "2505.12656": {
+    "title": "SPKLIP: Aligning Spike Video Streams with Natural Language",
+    "abs_url": "https://arxiv.org/abs/2505.12656",
+    "html_url": "https://arxiv.org/html/2505.12656v1",
+    "path": "assets/paper-images/2505.12656.webp",
+    "image_url": "https://arxiv.org/html/2505.12656v1",
+    "source": "playwright:figure",
+    "score": 60,
+    "content_type": "image/png",
+    "inside_figure": true,
+    "width": 800,
+    "height": 544
+  },
+  "2603.18532": {
+    "title": "Scaling Sim-to-Real Reinforcement Learning for Robot VLAs with Generative 3D Worlds",
+    "abs_url": "https://arxiv.org/abs/2603.18532",
+    "html_url": "https://arxiv.org/html/2603.18532v2",
+    "path": "assets/paper-images/2603.18532.webp",
+    "image_url": "https://arxiv.org/html/2603.18532v2",
+    "source": "playwright:figure",
+    "score": 60,
+    "content_type": "image/png",
+    "inside_figure": true,
+    "width": 800,
+    "height": 597
+  },
+  "2603.15620": {
+    "title": "Towards Generalizable Robotic Manipulation in Dynamic Environments",
+    "abs_url": "https://arxiv.org/abs/2603.15620",
+    "html_url": "https://arxiv.org/html/2603.15620v3",
+    "path": "assets/paper-images/2603.15620.webp",
+    "image_url": "https://arxiv.org/html/2603.15620v3",
+    "source": "playwright:figure",
+    "score": 60,
+    "content_type": "image/png",
+    "inside_figure": true,
+    "width": 800,
+    "height": 567
+  },
+  "2603.12553": {
+    "title": "Beyond Dense Futures: World Models as Structured Planners for Robotic Manipulation",
+    "abs_url": "https://arxiv.org/abs/2603.12553",
+    "html_url": "https://arxiv.org/html/2603.12553v1",
+    "path": "assets/paper-images/2603.12553.webp",
+    "image_url": "https://arxiv.org/html/2603.12553v1",
+    "source": "playwright:figure",
+    "score": 60,
+    "content_type": "image/png",
+    "inside_figure": true,
+    "width": 800,
+    "height": 563
+  },
+  "2603.09482": {
+    "title": "StyleVLA: Driving Style-Aware Vision Language Action Model for Autonomous Driving",
+    "abs_url": "https://arxiv.org/abs/2603.09482",
+    "html_url": "https://arxiv.org/html/2603.09482v1",
+    "path": "assets/paper-images/2603.09482.webp",
+    "image_url": "https://arxiv.org/html/2603.09482v1",
+    "source": "playwright:figure",
+    "score": 60,
+    "content_type": "image/png",
+    "inside_figure": true,
+    "width": 800,
+    "height": 490
+  },
+  "2603.08519": {
+    "title": "AtomVLA: Scalable Post-Training for Robotic Manipulation via Predictive Latent World Models",
+    "abs_url": "https://arxiv.org/abs/2603.08519",
+    "html_url": "https://arxiv.org/html/2603.08519v1",
+    "path": "assets/paper-images/2603.08519.webp",
+    "image_url": "https://arxiv.org/html/2603.08519v1",
+    "source": "playwright:figure",
+    "score": 60,
+    "content_type": "image/png",
+    "inside_figure": true,
+    "width": 800,
+    "height": 192
   }
 }
