@@ -1,5 +1,227 @@
 [
   {
+    "date": "2026-09-04",
+    "title": "What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies",
+    "link": "http://arxiv.org/abs/2609.05376",
+    "arxiv_id": "2609.05376",
+    "detail_path": "papers/2609.05376/",
+    "cover_path": "covers/2609.05376/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.05376.webp",
+    "preview_text": "研究视觉运动模仿策略在面对视觉相似干扰物时失败的问题，将这种现象定义为 条件性视觉接地 问题：当前操作阶段或任务状态决定了哪个视觉实体是关键的。 基于 Action Chunking with Transformers (ACT) 和预训练视觉-语言-动作模型（VLA）进行系统性诊断，定位失败发生的具体阶段和视觉线索。 目标是通过诊断结果指导设计干预措施，以提高策略在视觉干扰下的鲁棒性，并验证该方法在不同学习范式下…",
+    "research_unit": "Fraunhofer Institute for Production Systems and Des…",
+    "hook_text": "研究视觉运动模仿策略在面对视觉相似干扰物时失败的问题，将这种现象定义为 条件性视觉接地 问题：当前操作阶段或任务状态决定了哪个视觉实体是关键的。",
+    "key_points": [
+      "研究视觉运动模仿策略在面对视觉相似干扰物时失败的问题，将这种现象定义为 条件性视觉接地 问题：当前操作阶段或任务状态决定了哪个视觉实体是关键的。",
+      "基于 Action Chunking with Transformers (ACT) 和预训练视觉-语言-动作模型（VLA）进行系统性诊断，定…",
+      "目标是通过诊断结果指导设计干预措施，以提高策略在视觉干扰下的鲁棒性，并验证该方法在不同学习范式下的有效性。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Towards Neuro-Symbolic Procedural Reasoning for Long-Horizon Vision-Language-Action Manipulation",
+    "link": "http://arxiv.org/abs/2609.05369",
+    "arxiv_id": "2609.05369",
+    "detail_path": "papers/2609.05369/",
+    "cover_path": "covers/2609.05369/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.05369.webp",
+    "preview_text": "论文提出一种神经符号框架，旨在解决当前视觉-语言-动作（VLA）模型在长序列操作任务中表现脆弱的问题，这些任务需要持久的状态跟踪、依赖关系推理和可靠的空间定位。 核心思想是将VLA 模型与显式的任务图和记忆相结合，用于指导动作选择、目标定位和状态验证，从而提升长序列任务的可靠性。 论文还探索了利用稀疏程序显著性（源自演示过程中的伪注视点）来引导策略学习，以改善空间定位能力。",
+    "research_unit": "Fraunhofer IPK, Berlin, Germany",
+    "hook_text": "论文提出一种神经符号框架，旨在解决当前视觉-语言-动作（VLA）模型在长序列操作任务中表现脆弱的问题，这些任务需要持久的状态跟踪、依赖关系推理…",
+    "key_points": [
+      "论文提出一种神经符号框架，旨在解决当前视觉-语言-动作（VLA）模型在长序列操作任务中表现脆弱的问题，这些任务需要持久的状态跟踪、依赖关系推理…",
+      "核心思想是将VLA 模型与显式的任务图和记忆相结合，用于指导动作选择、目标定位和状态验证，从而提升长序列任务的可靠性。",
+      "论文还探索了利用稀疏程序显著性（源自演示过程中的伪注视点）来引导策略学习，以改善空间定位能力。"
+    ],
+    "reading_minutes": 4,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-04",
+    "title": "RoboSPA: Can VLA Models Go Beyond Simple Scenes and Short-Horizon Tasks?",
+    "link": "http://arxiv.org/abs/2609.05324",
+    "arxiv_id": "2609.05324",
+    "detail_path": "papers/2609.05324/",
+    "cover_path": "covers/2609.05324/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Temporal Tactile Encoding and Compliance for Intent-Aware Robot-to-Human Bimanual Handover",
+    "link": "http://arxiv.org/abs/2609.05282",
+    "arxiv_id": "2609.05282",
+    "detail_path": "papers/2609.05282/",
+    "cover_path": "covers/2609.05282/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.05282.webp",
+    "preview_text": "研究机器人向人类进行双手递送物体（handover）时的可靠释放问题，即机器人需要准确推断人类“接收意图”并在合适的时机安全、舒适地释放物体。 指出仅靠视觉难以区分真实的抓取意图与意外接触、错误方向力或短暂交互，因此将递送任务视为一个内在的多模态问题。 提出结合视觉-语言-动作模型（VLA）与柔顺控制的方法，并利用时间编码的触觉反馈来提升递送动作的可靠性和舒适性。",
+    "research_unit": "Istituto Italiano di Tecnologia (IIT)，意大利热那亚 (Human…",
+    "hook_text": "研究机器人向人类进行双手递送物体（handover）时的可靠释放问题，即机器人需要准确推断人类“接收意图”并在合适的时机安全、舒适地释放物体。",
+    "key_points": [
+      "研究机器人向人类进行双手递送物体（handover）时的可靠释放问题，即机器人需要准确推断人类“接收意图”并在合适的时机安全、舒适地释放物体。",
+      "指出仅靠视觉难以区分真实的抓取意图与意外接触、错误方向力或短暂交互，因此将递送任务视为一个内在的多模态问题。",
+      "提出结合视觉-语言-动作模型（VLA）与柔顺控制的方法，并利用时间编码的触觉反馈来提升递送动作的可靠性和舒适性。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-04",
+    "title": "LIBERO-RECOVER: Beyond Task Success Towards Failure Recovery in Robotic Manipulation Models",
+    "link": "http://arxiv.org/abs/2609.05178",
+    "arxiv_id": "2609.05178",
+    "detail_path": "papers/2609.05178/",
+    "cover_path": "covers/2609.05178/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.05178.webp",
+    "preview_text": "提出 LIBERO-Recover 基准，用于评估机器人操作模型在任务执行失败后的恢复能力 解决现有基准仅评估理想条件下的单次任务成功，而忽略真实世界中不可避免的失败与恢复需求的问题 通过收集具身模型真实执行中自然发生的失败，构建了 1000+ 个恢复场景，推动评估从“能否成功”转向“能否从失败中恢复”",
+    "research_unit": "大连理工大学 信息与通信工程学院",
+    "hook_text": "提出 LIBERO-Recover 基准，用于评估机器人操作模型在任务执行失败后的恢复能力",
+    "key_points": [
+      "提出 LIBERO-Recover 基准，用于评估机器人操作模型在任务执行失败后的恢复能力",
+      "解决现有基准仅评估理想条件下的单次任务成功，而忽略真实世界中不可避免的失败与恢复需求的问题",
+      "通过收集具身模型真实执行中自然发生的失败，构建了 1000+ 个恢复场景，推动评估从“能否成功”转向“能否从失败中恢复”"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-04",
+    "title": "Reasoning Without Inference Cost: Latent Semantic Scaffolding for Robot VLA Policies",
+    "link": "http://arxiv.org/abs/2609.04893",
+    "arxiv_id": "2609.04893",
+    "detail_path": "papers/2609.04893/",
+    "cover_path": "covers/2609.04893/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.04893.webp",
+    "preview_text": "针对机器人 VLA 模型，提出一种在训练时注入物理推理、推理时零额外成本的方法，解决现有推理增强方法（如思维链、世界模型）在推理时产生巨大计算开销的问题 核心思想是使用辅助损失将动作 token 表示与推理文本嵌入对齐，并在部署前丢弃对齐模块，使推理优点“内化”到模型权重中 重点研究对齐粒度的影响：发现按操作阶段逐 token 对齐（密集）比整个 episode 池化对齐更能提升迁移泛化能力",
+    "research_unit": "所有作者均来自 香港中文大学（The Chinese University of Hong Kong）…",
+    "hook_text": "针对机器人 VLA 模型，提出一种在训练时注入物理推理、推理时零额外成本的方法，解决现有推理增强方法（如思维链、世界模型）在推理时产生巨大计算…",
+    "key_points": [
+      "针对机器人 VLA 模型，提出一种在训练时注入物理推理、推理时零额外成本的方法，解决现有推理增强方法（如思维链、世界模型）在推理时产生巨大计算…",
+      "核心思想是使用辅助损失将动作 token 表示与推理文本嵌入对齐，并在部署前丢弃对齐模块，使推理优点“内化”到模型权重中",
+      "重点研究对齐粒度的影响：发现按操作阶段逐 token 对齐（密集）比整个 episode 池化对齐更能提升迁移泛化能力"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-03",
+    "title": "VLA-Precision: Asymmetric Co-Bootstrapping for Efficient Real-World Online RL of Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2609.04355",
+    "arxiv_id": "2609.04355",
+    "detail_path": "papers/2609.04355/",
+    "cover_path": "covers/2609.04355/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.04355.webp",
+    "preview_text": "提出 VLA-Precision 框架，用于对预训练 视觉-语言-动作 (VLA) 模型进行高效的真实世界在线强化学习 (RL) 后训练 解决真实世界 RL 在 VLA 后训练中的两个关键瓶颈：不可靠的价值估计导致策略漂移，以及大型 VLA 的计算开销限制训练吞吐量和样本效率 通过 非对称共同引导 (ACoB) 算法和 ACoB-Stream 系统架构，实现精准、稳定且高效的机器人操作",
+    "research_unit": "中国科学技术大学 (University of Science and Technology of C…",
+    "hook_text": "提出 VLA-Precision 框架，用于对预训练 视觉-语言-动作 (VLA) 模型进行高效的真实世界在线强化学习 (RL) 后训练",
+    "key_points": [
+      "提出 VLA-Precision 框架，用于对预训练 视觉-语言-动作 (VLA) 模型进行高效的真实世界在线强化学习 (RL) 后训练",
+      "解决真实世界 RL 在 VLA 后训练中的两个关键瓶颈：不可靠的价值估计导致策略漂移，以及大型 VLA 的计算开销限制训练吞吐量和样本效率",
+      "通过 非对称共同引导 (ACoB) 算法和 ACoB-Stream 系统架构，实现精准、稳定且高效的机器人操作"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-03",
+    "title": "FailureSpot: Label-Efficient Timestamp-Level Failure Detection for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2609.04277",
+    "arxiv_id": "2609.04277",
+    "detail_path": "papers/2609.04277/",
+    "cover_path": "covers/2609.04277/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.04277.webp",
+    "preview_text": "针对Vision-Language-Action (VLA) 策略长程执行中不可预测的失败问题，现有失败检测方法要么为反应式（需错误动作执行后才可检测），要么用轨迹级标签监督时间戳级检测，存在标签噪声问题 本文研究细粒度时间戳级VLA失败检测，解决密集时间戳标注成本高的问题，提出FailureSpot标签高效框架 该框架结合动作衍生弱监督与主动学习，在多个VLA策略上同时提升时间戳级和轨迹级失败检测性能",
+    "research_unit": "论文作者来自Wayne State University，联系方式为jie.ma@wayne.edu…",
+    "hook_text": "针对Vision-Language-Action (VLA) 策略长程执行中不可预测的失败问题，现有失败检测方法要么为反应式（需错误动作执行后…",
+    "key_points": [
+      "针对Vision-Language-Action (VLA) 策略长程执行中不可预测的失败问题，现有失败检测方法要么为反应式（需错误动作执行后…",
+      "本文研究细粒度时间戳级VLA失败检测，解决密集时间戳标注成本高的问题，提出FailureSpot标签高效框架",
+      "该框架结合动作衍生弱监督与主动学习，在多个VLA策略上同时提升时间戳级和轨迹级失败检测性能"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
     "date": "2026-09-03",
     "title": "GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation",
     "link": "http://arxiv.org/abs/2609.04193",

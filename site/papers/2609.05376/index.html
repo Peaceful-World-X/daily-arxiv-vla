@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="研究视觉运动模仿策略在面对视觉相似干扰物时失败的问题，将这种现象定义为 条件性视觉接地 问题：当前操作阶段或任务状态决定了哪个视觉实体是关键的。 基于 Action Chunking with Transformers (ACT) 和预训练视觉-语言-动作模型（VLA）进行系统性诊断，定位失败发生的具体阶段和视觉线索。 目标是通过诊断结果指导设计干预措施，以提高策略在视觉干扰下的鲁棒性，并验证该方法在不同学习范式下…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.05376">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.05376.webp" alt="What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">研究视觉运动模仿策略在面对视觉相似干扰物时失败的问题，将这种现象定义为 条件性视觉接地 问题：当前操作阶段或任务状态决定了哪个视觉实体是关键的。</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies</h1>
+            <div class="detail-meta">2026-09-04 · <a href="http://arxiv.org/abs/2609.05376" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.05376" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.05376</span></div>
+            <p class="detail-summary">研究视觉运动模仿策略在面对视觉相似干扰物时失败的问题，将这种现象定义为 条件性视觉接地 问题：当前操作阶段或任务状态决定了哪个视觉实体是关键的。 基于 Action Chunking with Transformers (ACT) 和预训练视觉-语言-动作模型（VLA）进行系统性诊断，定位失败发生的具体阶段和视觉线索。 目标是通过诊断结果指导设计干预措施，以提高策略在视觉干扰下的鲁棒性，并验证该方法在不同学习范式下…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Fraunhofer Institute for Production Systems and Des…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.05376/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">研究视觉运动模仿策略在面对视觉相似干扰物时失败的问题，将这种现象定义为 条件性视觉接地 问题：当前操作阶段或任务状态决定了哪个视觉实体是关键的。</p>
+  <ul class="reading-intro-points"><li>研究视觉运动模仿策略在面对视觉相似干扰物时失败的问题，将这种现象定义为 条件性视觉接地 问题：当前操作阶段或任务状态决定了哪个视觉实体是关键的。</li><li>基于 Action Chunking with Transformers (ACT) 和预训练视觉-语言-动作模型（VLA）进行系统性诊断，定…</li><li>目标是通过诊断结果指导设计干预措施，以提高策略在视觉干扰下的鲁棒性，并验证该方法在不同学习范式下的有效性。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Fraunhofer Institute for Production Systems and Design Technology IPK</strong></li><li><strong>Technische Universität Berlin</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>研究视觉运动模仿策略在面对视觉相似干扰物时失败的问题，将这种现象定义为 <strong>条件性视觉接地</strong> 问题：当前操作阶段或任务状态决定了哪个视觉实体是关键的。</li><li>基于 <strong>Action Chunking with Transformers (ACT)</strong> 和预训练视觉-语言-动作模型（VLA）进行系统性诊断，定位失败发生的具体阶段和视觉线索。</li><li>目标是通过诊断结果指导设计干预措施，以提高策略在视觉干扰下的鲁棒性，并验证该方法在不同学习范式下的有效性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了 <strong>条件性视觉接地</strong> 框架，用于系统性地诊断视觉运动策略中因视觉干扰导致的失败，能够区分“做不到”和“做错对象”。</li><li>对 <strong>ACT</strong> 进行了受控实验，揭示其失败是<strong>线索特定</strong>和<strong>阶段特定</strong>的：对象选择对颜色敏感，容器选择对形状敏感，且错误集中在抓取和放置阶段。</li><li>设计并评估了三种互补的干预措施：<strong>干扰物数据增强</strong>、<strong>阶段依赖的注意力正则化</strong>和<strong>基于外观的视觉提示</strong>，显著提升了模拟和真实机器人上的鲁棒性。</li><li>通过表征分析发现，鲁棒性不仅需要<strong>对干扰物的不变性</strong>，还需要<strong>保留任务相关的空间几何结构</strong>，解释了为何仅靠不变性不足以实现鲁棒行为。</li><li>在预训练VLA模型 <strong>π₀.₅</strong> 上进行了案例研究，初步验证了条件性视觉接地框架在状态条件任务中的跨范式适用性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>受控诊断</strong>：在模拟的拾取-放置任务中，系统性地引入颜色、形状或两者均匹配的干扰物，并通过测量各子阶段（拾取、举起、放置）的条件成功率来定位失败点。</li><li><strong>诊断驱动的干预措施</strong>：</li></ul>
+<p> - <strong>图像空间复制粘贴增强</strong>：在训练数据的干净背景中插入合成干扰物，以减少对虚假外观相关性的依赖。</p>
+<p> - <strong>阶段依赖的注意力正则化</strong>：监督一个解码器交叉注意力头，使其关注当前阶段相关的任务对象/容器，并远离干扰物。</p>
+<p> - <strong>基于外观的视觉提示</strong>：提供目标对象和容器的无位置信息裁剪图，并由一个联合训练的<strong>阶段预测器</strong>在执行时选择正确的提示。</p>
+<ul><li><strong>VLA案例研究</strong>：在 <strong>π₀.₅</strong> 模型上微调一个状态条件的器械处理任务，其中正确的目的地取决于观察到的器械状态，通过对比有无视觉提示的性能来验证诊断-干预原则。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>模拟任务</strong>：两个自定义的拾取-放置任务（Task 1: 固定容器; Task 2: 随机位置容器），使用脚本生成的100个演示进行训练。</li><li><strong>真实机器人</strong>：<strong>UR3e</strong> 机器人，通过遥操作收集演示，并使用 <strong>SAM 2</strong> 进行视觉提示分割。</li><li><strong>VLA任务</strong>：一个包含231个遥操作回合的七步器械处理流程，使用固定基座和腕部摄像头。</li><li><strong>模型架构</strong>：基于 <strong>ACT</strong> 的Transformer策略，使用 <strong>ResNet</strong> 作为视觉编码器。</li><li><strong>训练资源</strong>：未明确提及，但通常为单个GPU。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估指标</strong>：端到端成功率，以及分解后的子阶段条件成功率，如 P(pick)、P(lift\|pick)、P(place\|pick, lift)。</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - <strong>标准ACT</strong> 在干净环境中成功率高达98.5%以上，但在完全混合干扰下，Task 1降至39.5%，Task 2降至14.0%。</p>
+<p> - <strong>仅数据增强</strong> 即可将Task 1成功率恢复至100%，Task 2恢复至64.0%。</p>
+<p> - <strong>ACT-Modified</strong>（结合所有干预）在模拟中将Task 1和Task 2的成功率分别提升至94.5%和88.5%，在真实UR3e机器人上，从标准ACT的完全失败（0%）恢复至60%以上。</p>
+<p> - <strong>表征分析</strong>：仅增强的模型具有最强的干扰物不变性，但保留了较弱的容器位置几何结构，其条件放置成功率为66.3%；而ACT-Modified保留了最强的任务几何结构，条件放置成功率恢复至100%。</p>
+<p> - <strong>VLA案例</strong>：在模糊路由子任务中，移除视觉提示导致成功率从100%降至50%，而整个流程的其他子任务不受影响，精确验证了失败在于状态依赖的视觉接地。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2609.05369/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Towards Neuro-Symbolic Procedural Reasoning for Long-Horizon Vision-Language-Action Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
