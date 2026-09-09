@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ICI-VLA: In-Context Imitation with Spatiotemporally Aligned Demonstrations for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有视觉-语言-动作（VLA）模型适配新操作任务需要额外梯度更新、部署成本高的问题，提出ICI-VLA框架，将VLA适配转化为少样本测试时上下文学习，无需测试时更新模型参数即可快速适配新任务 通过构建时空对齐的子任务级微演示库、训练相位感知检索器、引入目标动作掩码训练目标，让固定策略通过检索到的对齐演示生成动作，避免直接复制上下文轨迹导致的错误 在LIBERO、RoboTwin 2.0仿真基准及物理双机械臂基准…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.07581">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.07581.webp" alt="ICI-VLA: In-Context Imitation with Spatiotemporally Aligned Demonstrations for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有视觉-语言-动作（VLA）模型适配新操作任务需要额外梯度更新、部署成本高的问题，提出ICI-VLA框架，将VLA适配转化为少样本测试时…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ICI-VLA: In-Context Imitation with Spatiotemporally Aligned Demonstrations for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-09-07 · <a href="http://arxiv.org/abs/2609.07581" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.07581" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.07581</span></div>
+            <p class="detail-summary">针对现有视觉-语言-动作（VLA）模型适配新操作任务需要额外梯度更新、部署成本高的问题，提出ICI-VLA框架，将VLA适配转化为少样本测试时上下文学习，无需测试时更新模型参数即可快速适配新任务 通过构建时空对齐的子任务级微演示库、训练相位感知检索器、引入目标动作掩码训练目标，让固定策略通过检索到的对齐演示生成动作，避免直接复制上下文轨迹导致的错误 在LIBERO、RoboTwin 2.0仿真基准及物理双机械臂基准…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">武汉大学（Wuhan University, Wuhan, China）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.07581/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有视觉-语言-动作（VLA）模型适配新操作任务需要额外梯度更新、部署成本高的问题，提出ICI-VLA框架，将VLA适配转化为少样本测试时…</p>
+  <ul class="reading-intro-points"><li>针对现有视觉-语言-动作（VLA）模型适配新操作任务需要额外梯度更新、部署成本高的问题，提出ICI-VLA框架，将VLA适配转化为少样本测试时…</li><li>通过构建时空对齐的子任务级微演示库、训练相位感知检索器、引入目标动作掩码训练目标，让固定策略通过检索到的对齐演示生成动作，避免直接复制上下文轨…</li><li>在LIBERO、RoboTwin 2.0仿真基准及物理双机械臂基准上验证框架有效性，证明固定VLA策略可通过时空对齐的测试时演示上下文实现高效…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>武汉大学</strong>（Wuhan University, Wuhan, China）</li><li><strong>武汉大学技术科学研究院</strong>（Institute of Technological Sciences, Wuhan University, Wuhan, China）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有<strong>视觉-语言-动作（VLA）</strong>模型适配新操作任务需要额外梯度更新、部署成本高的问题，提出<strong>ICI-VLA</strong>框架，将VLA适配转化为少样本测试时上下文学习，无需测试时更新模型参数即可快速适配新任务</li><li>通过构建时空对齐的子任务级微演示库、训练相位感知检索器、引入目标动作掩码训练目标，让固定策略通过检索到的对齐演示生成动作，避免直接复制上下文轨迹导致的错误</li><li>在LIBERO、RoboTwin 2.0仿真基准及物理双机械臂基准上验证框架有效性，证明固定VLA策略可通过时空对齐的测试时演示上下文实现高效操作适配</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>将VLA模型的任务适配形式化为少样本测试时条件生成，明确区分离线训练与测试时推理阶段，无需测试时梯度更新即可实现任务适配</li><li>构建子任务级微演示库，结合语义硬过滤与<strong>动态时间规整（DTW）</strong>轨迹挖掘监督，训练RD-Encoder实现语义与相位感知的检索对齐，解决长轨迹与短动作块的时序错位、语义-动态不匹配问题</li><li>提出<strong>目标动作掩码（Target Action Masking）</strong>作为上下文损坏训练目标，减少策略对上下文动作的直接复制，提升策略对当前观测和检索上下文的依赖，并在仿真和物理部署中验证其有效性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用<strong>VLA-0</strong>提出的零修改纯视觉-语言模型（VLM）架构，不添加任何动作特定预测头或模块，将连续动作和本体感觉表示为文本字符串，保留原生文本生成接口，最大化保留预训练模型的推理和泛化能力</li><li>包含三个核心阶段：① 演示库构建：将约11200条长时序操作轨迹分解为带语义标签的子任务级微演示，共构建约139659个微演示样本；② 时空检索对齐：使用<strong>Qwen3-VL-Embedding-2B</strong>作为RD-Encoder，结合语义硬过滤与DTW几何排序进行迭代对比学习训练，实现相位感知的检索；③ 策略微调：基于<strong>Qwen3-VL-4B</strong>微调策略，引入目标动作掩码损坏训练时的动作目标，减少对上下文动作前缀的直接延续</li><li>核心创新点在于：将长轨迹分解为短时序微演示解决时序错位问题，用DTW挖掘轨迹级监督解决语义-动态不匹配问题，通过目标动作掩码避免策略直接复制上下文动作，实现真正的测试时上下文模仿</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：仿真数据集为<strong>LIBERO</strong>（包含空间、物体、目标、长时序四类操作任务）、<strong>RoboTwin 2.0</strong>（高保真双臂长时序操作基准）；物理数据集为约1000条<strong>Aloha</strong>双机械臂的遥操作演示，涵盖抓取、放置、抽屉操作、分拣任务，总训练数据约11200条长时序轨迹，构建的演示库包含约139659个微演示样本</li><li>模型规模：策略骨干为<strong>Qwen3-VL-4B</strong>，检索编码器（RD-Encoder）为<strong>Qwen3-VL-Embedding-2B</strong></li><li>训练资源：Ubuntu 22.04系统服务器，配备8块80GB显存的<strong>NVIDIA A100 GPU</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境包含LIBERO四类任务、RoboTwin 2.0简单/困难两类任务；物理环境为双机械臂Aloha系统，包含单臂抓取、双臂抓取、抽屉放置、物体分拣四个任务</li><li>主要评估指标：任务成功率（Success Rate, SR），仿真任务每个场景评估10次随机初始化rollout，物理任务每个场景评估250次rollout，采用95% Wilson置信区间评估结果稳定性</li><li>关键实验结果：① 仿真场景下，<strong>LIBERO</strong>平均成功率达97.7%，<strong>RoboTwin 2.0</strong>平均成功率达60.4%，较最高报道基线平均高19.3个百分点；② 物理场景下，四个任务平均成功率达83.2%，较π₀高16.8个百分点，较VLA-0高20.2个百分点；③ 检索器独立评估显示，完整训练的RD-Encoder的Recall@1达70.8%，较基础嵌入模型提升43.0个百分点；④ 消融实验验证目标动作掩码、DTW排序、语义过滤均能带来显著性能提升，其中移除目标动作掩码后RoboTwin 2.0成功率从60.4%骤降至10.7%</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.07838/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ComVLA: Communication-Aware Split Inference for VLA Models in 6G-Connected Robotics</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.07470/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Measuring Language Transfer in Robot Policies: Adding Greek to a Cosmos3 Vision-Language-Action Policy</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

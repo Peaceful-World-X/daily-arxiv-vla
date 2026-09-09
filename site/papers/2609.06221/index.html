@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RefGuard: Identity-Aware Language-Guided Robot Manipulation via Joint Target-Anchor-Frame Grounding - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文解决语言引导机器人操作中的 identity switch 问题：在杂乱场景中，机器人可能对语义兼容但物理上不正确的对象执行几何上有效的动作 指称对象由三个耦合的潜在变量共同决定：target（目标）、anchor（锚点）和 reference frame（参考帧） RefGuard 通过维护这三个变量的联合后验来延迟承诺，构建 frame-conditioned object-centric scene gr…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.06221">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.06221.webp" alt="RefGuard: Identity-Aware Language-Guided Robot Manipulation via Joint Target-Anchor-Frame Grounding" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文解决语言引导机器人操作中的 identity switch 问题：在杂乱场景中，机器人可能对语义兼容但物理上不正确的对象执行几何上有效的动作</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RefGuard: Identity-Aware Language-Guided Robot Manipulation via Joint Target-Anchor-Frame Grounding</h1>
+            <div class="detail-meta">2026-09-05 · <a href="http://arxiv.org/abs/2609.06221" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.06221" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.06221</span></div>
+            <p class="detail-summary">论文解决语言引导机器人操作中的 identity switch 问题：在杂乱场景中，机器人可能对语义兼容但物理上不正确的对象执行几何上有效的动作 指称对象由三个耦合的潜在变量共同决定：target（目标）、anchor（锚点）和 reference frame（参考帧） RefGuard 通过维护这三个变量的联合后验来延迟承诺，构建 frame-conditioned object-centric scene gr…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Lan Wei, Kangyi Lu, Yongchen Wang, Chenmeng Bi, Qi…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.06221/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文解决语言引导机器人操作中的 identity switch 问题：在杂乱场景中，机器人可能对语义兼容但物理上不正确的对象执行几何上有效的动作</p>
+  <ul class="reading-intro-points"><li>论文解决语言引导机器人操作中的 identity switch 问题：在杂乱场景中，机器人可能对语义兼容但物理上不正确的对象执行几何上有效的动作</li><li>指称对象由三个耦合的潜在变量共同决定：target（目标）、anchor（锚点）和 reference frame（参考帧）</li><li>RefGuard 通过维护这三个变量的联合后验来延迟承诺，构建 frame-conditioned object-centric scene…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>Lan Wei, Kangyi Lu, Yongchen Wang, Chenmeng Bi, Qi Chen, Dandan Zhang 隶属于 <strong>Imperial College London, UK</strong></li><li>Hanlin Niu 隶属于 <strong>RACE, United Kingdom Atomic Energy Authority, UK</strong> 和 <strong>Oxford Robotics Institute, University of Oxford, UK</strong></li><li>Yip Fun Yeung 隶属于 <strong>Avant Intelligence Ltd, London, UK</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文解决语言引导机器人操作中的 <strong>identity switch</strong> 问题：在杂乱场景中，机器人可能对语义兼容但物理上不正确的对象执行几何上有效的动作</li><li>指称对象由三个耦合的潜在变量共同决定：<strong>target</strong>（目标）、<strong>anchor</strong>（锚点）和 <strong>reference frame</strong>（参考帧）</li><li>RefGuard 通过维护这三个变量的联合后验来延迟承诺，构建 frame-conditioned object-centric scene graph，并通过决策策略执行、澄清、重新观察或中止</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>将 identity switches 表征为语言引导机器人操作中的一种故障模式，将其形式化为对三个耦合变量（target instance、anchor instance、reference frame）的联合推理</li><li>引入 RefGuard，一个基于两层场景图的 grounding 框架，将 frame-independent geometry 与 directional relations 分离，结合联合 target-anchor-frame 后验推理</li><li>在 UF850 真实机器人平台上和 3,200 集程序化套件上进行评估，显示 RefGuard 在无 identity switch 的情况下正确执行 90% 的模糊试验</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>使用 <strong>SAM 3</strong> 进行感知，构建 <strong>frame-conditioned two-layer scene graph</strong>（分离 frame-independent geometry 的 E_pos 层和 frame-dependent directional relations 的 E_dir^f 层）</li><li>语言解析使用 <strong>OpenAI GPT-4o</strong> 将指令分解为 primitive queries</li><li>维护 <strong>Joint Hypothesis Table</strong> 对 target-anchor-frame 进行联合推理，每行 h=(i, j_1, ..., j_m, f, s_h, w_h) 代表一个完整解释</li><li>决策策略：根据后验集中度决定 execute / clarify / reobserve / abort</li><li>后验感知规划和验证：执行前检查目标/锚点是否可见、姿态是否匹配、空间约束是否仍成立</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>真实机器人平台：<strong>UF850 arm</strong></li><li>感知硬件：两个 <strong>Intel RealSense D435i RGB-D cameras</strong></li><li>语言模型：<strong>OpenAI GPT-4o</strong></li><li>基准测试：<strong>3,200 episodes</strong> 的程序化 LIBERO-style 套件，涵盖 <strong>20 object categories</strong>，每场景 <strong>5-20 objects</strong></li><li>与 <strong>GR00T</strong> 和 <strong>π_0.5</strong> 两个 VLA 基线进行比较</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：真实 <strong>UF850</strong> 机器人平台（6 个设置的身份切换压力套件）和程序化 <strong>LIBERO-style</strong> 套件（3,200 episodes）</li><li>主要评估指标：<strong>Task Success (TS)</strong>、<strong>Identity-Switch Rate (ISR)</strong>、<strong>Correct Execution (CE)</strong>、<strong>Execution Coverage (Cov)</strong>、<strong>Deferral Rate (DR</strong></li><li>S1（干净场景）：RefGuard 达到 <strong>93.3%</strong> 任务成功率（28/30）</li><li>S2-S4（身份感知 grounding）：在 90 个模糊试验中 <strong>0 次 identity switch</strong>，正确执行 <strong>90.0%</strong>（81/90），而 GR00T 和 π_0.5 的 ISR 分别为 52.0%/40.0% 和 42.3%/36.0%</li><li>S5（扰动恢复）：RefGuard 达到 <strong>86.7%</strong> 恢复率（26/30）</li><li>S6（硬否定）：RefGuard 达到 <strong>100%</strong> 正确 defer 率（30/30）</li><li>程序化套件（3,200 episodes）：RefGuard 将可解指令的正确执行率从 56.6% 提高到 <strong>80.5%</strong>，同时 deferral rate 更低（19.5% vs 43.4%）</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.06251/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">MobileVLA-R1 2.0: RL-Enhanced Reasoning for Mobile Robot Control</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.06114/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Where Success Breaks: Failure-Boundary Learning for Robust Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

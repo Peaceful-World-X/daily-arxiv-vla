@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3DWay: Generalizing Robot Manipulation via 3D Consistent Waypoints - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有机器人操作中间表示的缺陷：2D轨迹存在深度歧义，2.5D路标点存在自由空间歧义，且视觉语言模型（VLM）与机器人动作模态存在固有gap，本文提出3DWay（3D一致路标点）这一新型中间表示，用于提升机器人操作的泛化能力 核心研究目标是通过多视图空间一致性约束生成3D路标点，在保留预训练VLM强先验的同时，实现显式的3D运动规约，为机器人操作提供可执行的、通用的中间表示 论文同时探索了3DWay的两种应用方式…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.08224">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.08224.webp" alt="3DWay: Generalizing Robot Manipulation via 3D Consistent Waypoints" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有机器人操作中间表示的缺陷：2D轨迹存在深度歧义，2.5D路标点存在自由空间歧义，且视觉语言模型（VLM）与机器人动作模态存在固有gap…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">3DWay: Generalizing Robot Manipulation via 3D Consistent Waypoints</h1>
+            <div class="detail-meta">2026-09-08 · <a href="http://arxiv.org/abs/2609.08224" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.08224" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.08224</span></div>
+            <p class="detail-summary">针对现有机器人操作中间表示的缺陷：2D轨迹存在深度歧义，2.5D路标点存在自由空间歧义，且视觉语言模型（VLM）与机器人动作模态存在固有gap，本文提出3DWay（3D一致路标点）这一新型中间表示，用于提升机器人操作的泛化能力 核心研究目标是通过多视图空间一致性约束生成3D路标点，在保留预训练VLM强先验的同时，实现显式的3D运动规约，为机器人操作提供可执行的、通用的中间表示 论文同时探索了3DWay的两种应用方式…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Tsinghua University（Ziqin Huang, Yingyue Li, Ruida…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.08224/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有机器人操作中间表示的缺陷：2D轨迹存在深度歧义，2.5D路标点存在自由空间歧义，且视觉语言模型（VLM）与机器人动作模态存在固有gap…</p>
+  <ul class="reading-intro-points"><li>针对现有机器人操作中间表示的缺陷：2D轨迹存在深度歧义，2.5D路标点存在自由空间歧义，且视觉语言模型（VLM）与机器人动作模态存在固有gap…</li><li>核心研究目标是通过多视图空间一致性约束生成3D路标点，在保留预训练VLM强先验的同时，实现显式的3D运动规约，为机器人操作提供可执行的、通用的…</li><li>论文同时探索了3DWay的两种应用方式：直接执行零样本简单任务，以及作为中间表示增强基础VLA（视觉语言动作模型）的泛化性</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Tsinghua University</strong>（Ziqin Huang, Yingyue Li, Ruida Zhang, Gu Wang, Xingyu Liu, Xiangyang Ji所属）</li><li><strong>ETH Zürich</strong>（Chenyangguang Zhang所属）</li><li><strong>University of California, Berkeley</strong>（Yuxin Chen, Masayoshi Tomizuka所属）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有机器人操作中间表示的缺陷：2D轨迹存在深度歧义，2.5D路标点存在自由空间歧义，且视觉语言模型（VLM）与机器人动作模态存在固有gap，本文提出<strong>3DWay（3D一致路标点）</strong>这一新型中间表示，用于提升机器人操作的泛化能力</li><li>核心研究目标是通过多视图空间一致性约束生成3D路标点，在保留预训练VLM强先验的同时，实现显式的3D运动规约，为机器人操作提供可执行的、通用的中间表示</li><li>论文同时探索了3DWay的两种应用方式：直接执行零样本简单任务，以及作为中间表示增强基础VLA（视觉语言动作模型）的泛化性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>3DWay（3D一致路标点）</strong>表示，通过多视图空间一致性约束生成3D轨迹，可有效捕捉任务执行的运动线索与显式空间关联，解决现有2D/2.5D路标点的歧义问题</li><li>设计基于预训练VLM的3DWay生成方案，通过定制化微调实现多视图一致2D路标点预测，在保留VLM视觉语言先验的同时完成3D路标重建</li><li>提出自适应路标引导集成策略，可将3DWay无缝嵌入基础VLA的微调流程，在不修改架构的前提下提升VLA的空间推理与泛化能力</li><li>通过仿真与真实环境的广泛实验，验证了3DWay作为通用中间表示的可执行性、泛化潜力与跨硬件灵活性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>将直接预测3D路标的高难度任务重构为<strong>多视图一致2D路标点（2D-MCW）预测</strong>，后续通过相机内外参的三角测量算子重建3D路标，规避跨模态预测难度，同时保留预训练VLM的先验能力</li><li>基于<strong>NVILA系列VLM</strong>（2B/8B/15B三种规模）设计3DWay生成器，采用全参数微调策略：训练数据处理环节使用Ramer-Douglas-Peucker（RDP）算法简化原始机器人TCP轨迹，通过透视投影得到多视图一致的2D路标监督，同时引入自动评分机制过滤低质量轨迹</li><li>采用语言建模目标进行训练，将2D路标点以文本格式表示，通过交叉熵损失直接监督像素坐标预测，无需设计复杂的回归损失或专用动作头，更好保留VLM的视觉语言推理能力</li><li>支持两种策略执行方式：一是直接执行：采用顶向旋转固定策略+路标引导运动规划，实现零样本简单任务执行；二是自适应集成：将3DWay以局部时间窗口形式嵌入基础VLA（如π₀）的输入，动态匹配机器人当前执行阶段，提升少样本下的泛化能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>训练数据集：预训练阶段使用<strong>RoboPoint</strong>数据集；3DWay生成器微调阶段使用<strong>RLBench</strong>（仿真）、<strong>DROID</strong>（真实世界）、<strong>RH20T</strong>（真实世界）三个数据集，总覆盖约290个任务、13.4万条机器人操作轨迹</li><li>模型规模：基于<strong>NVILA系列VLM</strong>设计，提供2B、8B、15B三种参数规模可选，默认采用15B参数的版本</li><li>训练资源：使用8张A100 GPU完成训练，最大规模模型（15B）的完整训练时间不足2天；训练采用两阶段策略，先在RoboPoint上训练1轮，再在 processed 数据集上训练10轮，batch size为256，学习率为1e-5，使用AdamW优化器与余弦衰减学习率调度</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境采用<strong>RLBench</strong>、<strong>VLABench</strong>；真实世界环境采用AgileX PIPER、KUKA iiwa14两种机器人形态，搭配不同相机配置</li><li>评估指标：以<strong>任务成功率</strong>作为核心评估指标，不同实验设置下分别报告平均成功率、标准差等统计量</li><li>关键实验结果：</li></ul>
+<p> - 仿真环境下，3DWay直接执行版本（3DWay-TD）在RLBench seen任务设置下平均成功率达<strong>84.8%</strong>，unseen设置下达<strong>64.0%</strong>，远超π₀（39.6%/12.0%）、π₀.5（61.5%/18.8%）等基础VLA baseline；在VLABench五维度评估中平均成功率达<strong>37.7%</strong>，比最优baseline π₀.5高6.4%</p>
+<p> - 3DWay与π₀集成的少样本微调实验中，仅用10条演示/任务的标准微调π₀成功率仅17.6%，而3DWay增强的零样本版本达38.1%，少样本版本达<strong>46.1%</strong>，仅用20%的训练数据即可达到标准微调全量数据的性能水平</p>
+<p> - 真实世界实验中，3DWay增强的π₀在基础任务上的平均成功率从21.7%提升至<strong>65.8%</strong>；在新物体、抽象语义指令的扩展任务中，标准微调π₀成功率仅6.7%和2.5%，3DWay增强版本均超过50%</p>
+<p> - 消融实验验证：多视图一致监督是核心，独立视图监督下成功率从64%暴跌至22%；NVILA-8B、2B小模型也能生成可泛化的3DWay，性能仅 moderate 下降；方法对相机位姿扰动、不同机器人形态与相机配置均保持稳定，验证了跨硬件与场景的鲁棒性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.09119/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">DeCAL: Towards Physically-Grounded Dexterous Vision-Language-Action Models via Contact-Aware Latent Co-Imagination</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.08209/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Monkey See, Can Monkey Do? A Benchmark for Evaluating Robot Skill Learning by Observation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

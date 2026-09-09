@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GIFT: Goal-Injected Fine-Tuning for Efficient Manipulation Policy Adaptation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有目标条件Vision-Language-Action（VLA）模型存在的高训练成本、泛化性差的问题，提出轻量高效的GIFT（Goal-Injected Fine-Tuning）框架，解决现有方法要么不利用预训练VLA backbone导致泛化能力不足、要么需要大量联合重训练导致效率低下的痛点 核心目标是在完全不破坏预训练操控策略稳定性的前提下，将生成的目标图像条件无缝整合到主流预训练VLA模型中，提升模型的…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.07006">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.07006.webp" alt="GIFT: Goal-Injected Fine-Tuning for Efficient Manipulation Policy Adaptation" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有目标条件Vision-Language-Action（VLA）模型存在的高训练成本、泛化性差的问题，提出轻量高效的GIFT（Goal-…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">GIFT: Goal-Injected Fine-Tuning for Efficient Manipulation Policy Adaptation</h1>
+            <div class="detail-meta">2026-09-07 · <a href="http://arxiv.org/abs/2609.07006" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.07006" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.07006</span></div>
+            <p class="detail-summary">针对现有目标条件Vision-Language-Action（VLA）模型存在的高训练成本、泛化性差的问题，提出轻量高效的GIFT（Goal-Injected Fine-Tuning）框架，解决现有方法要么不利用预训练VLA backbone导致泛化能力不足、要么需要大量联合重训练导致效率低下的痛点 核心目标是在完全不破坏预训练操控策略稳定性的前提下，将生成的目标图像条件无缝整合到主流预训练VLA模型中，提升模型的…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者隶属于南京航空航天大学人工智能学院、机器人与智能技术教育部重点实验室（中国南京）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.07006/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有目标条件Vision-Language-Action（VLA）模型存在的高训练成本、泛化性差的问题，提出轻量高效的GIFT（Goal-…</p>
+  <ul class="reading-intro-points"><li>针对现有目标条件Vision-Language-Action（VLA）模型存在的高训练成本、泛化性差的问题，提出轻量高效的GIFT（Goal-…</li><li>核心目标是在完全不破坏预训练操控策略稳定性的前提下，将生成的目标图像条件无缝整合到主流预训练VLA模型中，提升模型的目标理解能力与操控鲁棒性</li><li>仅需单轮epoch微调即可实现显著的性能提升，可适配多种主流VLA基线和真实机器人操控场景</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者隶属于<strong>南京航空航天大学人工智能学院</strong>、<strong>机器人与智能技术教育部重点实验室</strong>（中国南京）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有目标条件Vision-Language-Action（VLA）模型存在的高训练成本、泛化性差的问题，提出轻量高效的<strong>GIFT（Goal-Injected Fine-Tuning）</strong>框架，解决现有方法要么不利用预训练VLA backbone导致泛化能力不足、要么需要大量联合重训练导致效率低下的痛点</li><li>核心目标是在完全不破坏预训练操控策略稳定性的前提下，将生成的目标图像条件无缝整合到主流预训练VLA模型中，提升模型的目标理解能力与操控鲁棒性</li><li>仅需单轮epoch微调即可实现显著的性能提升，可适配多种主流VLA基线和真实机器人操控场景</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出GIFT轻量微调框架，通过零初始化卷积（ZeroConv）将目标图像特征注入VLA观测特征，利用零卷积的零初始化设计保证训练初期不干扰预训练策略，训练过程中逐步更新参数融入目标信号，实现稳定高效的目标条件适配</li><li>提出针对机器人任务的 refined 图像编辑方法，通过上下文编辑提示和观测结构注入机制，生成与任务指令语义对齐、与初始观测场景视觉一致的高质量目标图像</li><li>实验验证框架的通用性与有效性：在SIMPLER两个设置下分别提升6.0%和13.4%，在LIBERO基准下提升4.7%，真实机器人场景下分布内与分布外任务成功率均实现显著提升</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用两阶段流水线设计：第一阶段使用微调后的图像编辑模型，以初始观测和任务指令为输入生成目标图像；第二阶段使用注入目标条件的微调后VLA模型，以当前观测、任务指令、生成的目标图像为输入预测机器人动作</li><li>核心微调创新：使用共享预训练图像编码器分别提取目标图像和当前观测的特征，计算二者的语义差作为目标条件，通过零初始化卷积层将目标条件注入观测特征，零卷积的零初始化设计保证训练初期不破坏预训练策略，训练过程中参数逐步更新实现目标信号的渐进式融入</li><li>微调时仅更新三个轻量组件：目标图像投影层（参数初始化为观测投影层）、零卷积层、动作预测头，冻结预训练VLA绝大部分参数，大幅降低训练成本</li><li>图像编辑模块基于<strong>FLUX.1-Fill-dev</strong>微调，通过潜空间反转将初始观测转为潜表示，与随机噪声拼接后输入文本到图像扩散Transformer（T2I DiT）去噪生成目标图像，同时在早期去噪阶段引入观测结构注入机制，通过加权融合观测与目标的潜特征保持生成图像与原始场景的结构一致性，提示词采用上下文编辑格式融入任务指令保证语义对齐</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>BridgeDataset V2</strong>、<strong>Fractal dataset</strong>、<strong>LIBERO数据集</strong>；真实世界数据集为自采集的 teleoperation 操控数据，包含“抓取<物体>”“将<物体>放入篮子”两个任务，每个任务30条轨迹，采样频率30Hz</li><li>模型规模：基线模型采用<strong>OpenVLA</strong>、<strong>CogACT</strong>、<strong>SpatialVLA</strong>，真实世界实验基线采用<strong>π₀.₅</strong>（含300M参数的动作专家模块）；图像编辑模型基于<strong>FLUX.1-Fill-dev</strong>微调</li><li>训练资源：仿真实验训练使用4张<strong>NVIDIA L20 GPU</strong>，真实世界策略微调使用1张NVIDIA L20 GPU，图像编辑模型微调使用4张NVIDIA L20 GPU</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境采用<strong>SIMPLER基准</strong>（包含Visual Matching、Variant Aggregation两个设置，对应WidowX、Google Robot两款机器人平台）、<strong>LIBERO基准</strong>（对应Franka Emika Panda机器人，包含Spatial、Object、Goal、Long四个任务套件）；真实机器人采用<strong>Synria Alicia-D</strong>6自由度机械臂，配备Intel RealSense D405相机采集腕部视角和第三视角图像，评估场景分为域内（ID）和分布外（OOD，弱光条件）</li><li>评估指标：任务成功率（Success Rate, SR）</li><li>关键实验结果：</li></ul>
+<p> - SIMPLER基准上，CogACT+GIFT在Visual Matching设置下平均成功率达80.5%，较基线CogACT提升6.0%；在Variant Aggregation设置下平均成功率达74.7%，提升13.4%；WidowX平台下CogACT+GIFT平均成功率较基线提升16.4%，达到67.7%</p>
+<p> - LIBERO基准上，OpenVLA+GIFT平均成功率达81.2%，较基线OpenVLA提升4.7%，在Spatial、Goal任务上分别达89.5%、88.6%，长时序Long任务达56.0%</p>
+<p> - 真实机器人场景下，域内任务成功率从基线的56.7%、36.7%提升至71.7%、43.3%；分布外弱光场景下提升更显著，从33.3%、23.3%提升至51.7%、36.7%</p>
+<p> - 消融实验验证：语义对比机制、零卷积注入、观测结构注入、高质量图像编辑均为关键组件，缺一不可；GIFT仅增强基线已具备的操控能力，不会创造基线完全不支持的新能力</p>
+<p> - 训练效率高，仅需单epoch微调，在低资源设置下优于同训练时长的CoT-VLA等方法，且适配Prismatic、PaLI-Gemma2等不同架构的VLM backbone，通用性优异</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.07047/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">MEMOBench: A Process Level Memory Benchmark for Robotic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.06852/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">ContextFlow: In-Context Flow Matching for Robot Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

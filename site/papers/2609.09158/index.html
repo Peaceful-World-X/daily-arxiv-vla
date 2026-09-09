@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出了TANGO，首个面向杂乱室内环境的全身体视觉-语言-导航（VLA）框架，解决传统导航方法仅建模2D路径规划、无法处理人形机器人全身几何适配与动态避障的核心问题 研究目标是让机器人根据自然语言指令与第一人称RGB观测，直接预测29-DoF关节空间动作，实现语言引导的全身可控杂乱环境穿越 核心要解决现有方法无法联合推理导航意图与全身运动可行性的gap，实现从仿真到真实世界的零样本迁移" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.09158">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.09158.webp" alt="TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出了TANGO，首个面向杂乱室内环境的全身体视觉-语言-导航（VLA）框架，解决传统导航方法仅建模2D路径规划、无法处理人形机器人全身几…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model</h1>
+            <div class="detail-meta">2026-09-08 · <a href="http://arxiv.org/abs/2609.09158" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.09158" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.09158</span></div>
+            <p class="detail-summary">论文提出了TANGO，首个面向杂乱室内环境的全身体视觉-语言-导航（VLA）框架，解决传统导航方法仅建模2D路径规划、无法处理人形机器人全身几何适配与动态避障的核心问题 研究目标是让机器人根据自然语言指令与第一人称RGB观测，直接预测29-DoF关节空间动作，实现语言引导的全身可控杂乱环境穿越 核心要解决现有方法无法联合推理导航意图与全身运动可行性的gap，实现从仿真到真实世界的零样本迁移</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">University of California, Berkeley</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.09158/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出了TANGO，首个面向杂乱室内环境的全身体视觉-语言-导航（VLA）框架，解决传统导航方法仅建模2D路径规划、无法处理人形机器人全身几…</p>
+  <ul class="reading-intro-points"><li>论文提出了TANGO，首个面向杂乱室内环境的全身体视觉-语言-导航（VLA）框架，解决传统导航方法仅建模2D路径规划、无法处理人形机器人全身几…</li><li>研究目标是让机器人根据自然语言指令与第一人称RGB观测，直接预测29-DoF关节空间动作，实现语言引导的全身可控杂乱环境穿越</li><li>核心要解决现有方法无法联合推理导航意图与全身运动可行性的gap，实现从仿真到真实世界的零样本迁移</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>University of California, Berkeley</li><li>Peking University</li><li>Tsinghua University</li><li>The University of Hong Kong</li><li>Princeton University</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出了<strong>TANGO</strong>，首个面向杂乱室内环境的全身体视觉-语言-导航（VLA）框架，解决传统导航方法仅建模2D路径规划、无法处理人形机器人全身几何适配与动态避障的核心问题</li><li>研究目标是让机器人根据自然语言指令与第一人称RGB观测，直接预测29-DoF关节空间动作，实现语言引导的全身可控杂乱环境穿越</li><li>核心要解决现有方法无法联合推理导航意图与全身运动可行性的gap，实现从仿真到真实世界的零样本迁移</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>TANGO</strong>全身体VLA导航框架，直接输出29-DoF全身关节动作，避免分离导航模块与控制模块的设计，首次实现语言条件的人形杂乱环境全身导航</li><li>设计可扩展的<strong>Plan-Edit-Track（PET）</strong>仿真数据生成管线，通过场景增强、运动规划、障碍感知运动编辑与可行性验证，自动合成64,633条无碰撞全身运动轨迹，为模型训练提供带物理先验的大规模监督数据</li><li>采用三系统架构设计：视觉语言感知系统（System-2）负责语义理解与上下文编码，基于flow matching的多模态扩散Transformer动作专家（System-1）负责连续动作生成，预训练低层运动追踪器（System-0）负责高频动作执行，结合训练时实时动作块（RTC）保障运动连续性</li><li>在仿真VLN任务、杂乱环境穿越任务与真实世界人形机器人部署中均验证有效性，在VLN任务上达到SOTA性能，杂乱环境穿越性能优于强模块化基线，且无需真实世界训练即可零样本迁移到<strong>Unitree G1</strong>人形机器人</li><li>承诺开源全流程相关资源（数据管线、生成数据集、VLA框架、模型checkpoint、部署系统），保障研究可复现性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体采用三系统级联架构：System-2基于<strong>Qwen2.5VL-7B</strong>搭建视觉语言感知backbone，通过Budget-Aware Token Sampling（BATS）处理长时序视觉历史，输出融合语言指令与视觉上下文的latent特征；System-1是基于flow matching训练的MM-DiT动作专家，输入当前本体感知与latent特征，输出未来时间步的全身上下动作块，训练时采用随机前缀动作块的RTC策略对齐离线训练与在线流式执行；System-0采用预训练的<strong>SONIC</strong>运动追踪器，将动作块转换为高频关节控制指令，保障物理可执行性</li><li>仿真数据生成采用PET管线：首先对<strong>VLNVerse</strong>与<strong>SAGE-3D</strong>的578个源场景进行障碍物增强，引入侧向、地面、overhead三类障碍物构建复杂穿越场景；其次通过A*算法规划无碰撞平面路径，结合SONIC生成基础行走运动，再通过SoftMimic风格的伪力编辑与步态适配模块，生成带抬腿跨障、侧身避障、弯腰避障等全身避障行为的参考运动；最后通过SONIC追踪器验证运动可行性，丢弃碰撞或执行失败的轨迹，保留无碰撞参考运动作为训练监督信号</li><li>关键创新点包括：端到端直接预测全身动作而非分离导航与控制模块、PET管线自动生成带物理先验的大规模训练数据、三系统设计兼顾高层语义理解与低层物理执行、RTC策略保障在线部署的运动连续性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：源场景来自<strong>VLNVerse</strong>（205个高质量场景）与<strong>SAGE-3D</strong>（373个高质量场景），经PET管线生成总共64,633条杂乱环境穿越轨迹，训练集为3,963条VLNVerse训练轨迹</li><li>模型规模：视觉语言backbone为<strong>Qwen2.5VL-7B</strong>，动作专家为多模态扩散Transformer（MM-DiT），整体为7B参数规模的VLA模型</li><li>训练资源：PET管线运动生成与仿真渲染共消耗211个<strong>RTX PRO 6000</strong> GPU小时（其中运动生成86小时，渲染125小时）</li><li>部署资源：VLA模块（System-2与System-1）部署在搭载RTX PRO 6000的服务器端，低层运动追踪器（System-0）部署在机器人载的<strong>Jetson Orin NX</strong>上，采用云边协同架构，通信延迟约20ms</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真环境采用IsaacSim与MuJoCo构建的数字孪生场景，评估基准为<strong>VLNVerse</strong>（seen/unseen分割）、增强后的杂乱VLNVerse-unseen场景；真实世界评估在<strong>Unitree G1</strong>人形机器人上开展，包含短/长程2D导航、杂乱3D导航三类场景</li><li>主要评估指标：导航误差（NE，越低越好）、成功率（SR，越高越好）、路径长度加权成功率（SPL，越高越好）、碰撞率（CR，越低越好）、真实世界单次试验平均碰撞次数</li><li>关键实验结果：</li></ul>
+<p> - VLN任务性能：在VLNVerse的seen与unseen分割上均取得最高SR（54.69%、52.89%）与最低NE（3.90、3.72），OSR与SPL与最强RDP基线相当，是唯一配备低层物理控制的VLN方法</p>
+<p> - 杂乱环境穿越性能：在增强的杂乱场景中，SR比最强基线InternVLA-N1+HumanoidPF高1.87个百分点，碰撞率从15.81%降至9.90%，SPL也有明显提升，且仅依赖RGB观测，无需LiDAR输入</p>
+<p> - 真实世界部署性能：在短/长程2D导航与杂乱3D导航三类场景中，SR均高于InternVLA-N1+Unitree WBC基线，平均碰撞次数更低，验证了零样本sim-to-real迁移能力</p>
+<p> - 消融实验验证：去掉训练时RTC会导致SR下降32.81个百分点，碰撞率上升4.7个百分点；去掉运动编辑会导致碰撞率上升10.7个百分点，验证了各核心设计的有效性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2609.09119/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">DeCAL: Towards Physically-Grounded Dexterous Vision-Language-Action Models via Contact-Aware Latent Co-Imagination</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

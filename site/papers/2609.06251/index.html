@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MobileVLA-R1 2.0: RL-Enhanced Reasoning for Mobile Robot Control - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="和 ... 格式 数据集与资源： 源数据集：R2R（50K）、RxR（58K）、QUARD（262K） 构建的 MobileVLA-CoT： MobileVLA-CoT-Episode: 18K MobileVLA-CoT-Step: 78K MobileVLA-CoT-Nav: 38K 总计 134K 推理标注样本 模型架构：LLaVA 风格，NaVILA 初始化 推理 backbone：多模态编码器 + VLA…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.06251">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.06251.webp" alt="MobileVLA-R1 2.0: RL-Enhanced Reasoning for Mobile Robot Control" loading="lazy" />
+  <figcaption class="paper-figure-caption">源数据集：R2R（50K）、RxR（58K）、QUARD（262K）</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">MobileVLA-R1 2.0: RL-Enhanced Reasoning for Mobile Robot Control</h1>
+            <div class="detail-meta">2026-09-05 · <a href="http://arxiv.org/abs/2609.06251" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.06251" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.06251</span></div>
+            <p class="detail-summary">和 ... 格式 数据集与资源： 源数据集：R2R（50K）、RxR（58K）、QUARD（262K） 构建的 MobileVLA-CoT： MobileVLA-CoT-Episode: 18K MobileVLA-CoT-Step: 78K MobileVLA-CoT-Nav: 38K 总计 134K 推理标注样本 模型架构：LLaVA 风格，NaVILA 初始化 推理 backbone：多模态编码器 + VLA…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">18 分钟读完</span>
+              <span class="meta-pill">7 张阅读卡</span>
+              <span class="meta-pill">Ting Huang、Zeyu Zhang、Hao Tang 隶属于北京大学计算机科学学院（Pekin…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.06251/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">源数据集：R2R（50K）、RxR（58K）、QUARD（262K）</p>
+  <ul class="reading-intro-points"><li>源数据集：R2R（50K）、RxR（58K）、QUARD（262K）</li><li>构建的 MobileVLA-CoT：</li><li>MobileVLA-CoT-Episode: 18K</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><p>和 <answer>...</answer> 格式</p>
+
+<p><strong>数据集与资源：</strong></p>
+<ul><li>源数据集：R2R（50K）、RxR（58K）、QUARD（262K）</li><li>构建的 MobileVLA-CoT：</li></ul>
+<p> - MobileVLA-CoT-Episode: 18K</p>
+<p> - MobileVLA-CoT-Step: 78K</p>
+<p> - MobileVLA-CoT-Nav: 38K</p>
+<p> - 总计 134K 推理标注样本</p>
+<ul><li>模型架构：LLaVA 风格，NaVILA 初始化</li><li>推理 backbone：多模态编码器 + VLA backbone</li><li>训练资源：未明确提及具体 GPU/TPU 数量，但提到使用 LoRA 参数优化</li></ul>
+
+<p><strong>评估与结果：</strong></p>
+<ul><li>评估环境：</li></ul>
+<p> - VLN-CE（R2R-CE, RxR-CE）仿真导航</p>
+<p> - QUARD 四足机器人控制</p>
+<p> - Unitree Go2 真实世界部署</p>
+<p> - Unitree G1 人形机器人移动操作（无 G1 特定训练数据）</p>
+<ul><li>主要指标：</li></ul>
+<p> - VLN-CE：NE（Navigation Error，越低越好）、OS（Oracle Success）、SR（Success Rate）、SPL（Success weighted by Path Length）、nDTW</p>
+<p> - QUARD 和真实机器人：任务成功率</p>
+<ul><li>关键结果：</li></ul>
+<p> - VLN-CE Val-Unseen：相比 MobileVLA-R1，SR 平均提升 1.6 分（R2R-CE: 68.3% -> ?, RxR-CE: 71.5% -> ?）*注：表格中显示 MobileVLA-R1 2.0 的 NE 更低（3.86 vs 4.05），OS/SR/SPL 更高*</p>
+<p> - 真实世界 G1 移动操作：相比 MobileVLA-R1 全任务成功率提升 10.0 分</p>
+<p> - 在 Go2 上也展示了鲁棒性</p>
+<p> - 长视野指令跟随和闭环执行能力</p>
+
+<p>注意：HTML 中表格 MobileVLA-R1 2.0 的结果只显示了部分（3.86 NE），其他指标被截断了，但我可以根据文本描述知道它优于 MobileVLA-R1。</p>
+
+<p>现在整理成要求的格式。确保每个部分都是二级标题，列表项简洁。</p>
+
+<p>检查是否有遗漏：</p>
+<ul><li>研究单位：北京大学、华南理工大学、新加坡国立大学</li><li>论文概述：核心内容和目标</li><li>核心贡献：3个要点</li><li>方法描述：技术方法、创新点</li><li>数据集与资源：数据集名称、模型规模、训练资源</li><li>评估与结果：环境、指标、结果</li></ul>
+
+<p>确保没有使用代码块，使用 <strong>粗体</strong>，使用无序列表。</p>
+
+<p>关于模型规模：HTML 中没有明确提及参数量（如 7B、13B 等），只提到 LLaVA 风格和 NaVILA 初始化，以及使用 LoRA。我应该如实写"未明确指定具体参数量"或"基于 LLaVA/NaVILA 架构"。</p>
+
+<p>关于训练资源：HTML 中没有明确提及 GPU/TPU 数量和类型。</p>
+
+<p>让我重新检查 HTML 中的具体数据：</p>
+
+<p><strong>研究单位：</strong></p>
+<ul><li>Ting Huang, Zeyu Zhang, Hao Tang: School of Computer Science, Peking University</li><li>Yue Huang: South China University of Technology</li><li>Shuicheng Yan: School of Computing, National University of Singapore</li></ul>
+
+<p><strong>论文概述：</strong></p>
+<ul><li>解决 VLA 系统中高层语义推理与低层运动/操控控制之间的差距</li><li>提出 MobileVLA-R1 2.0，RL 增强的 VLA 框架，显式耦合结构化 embodied reasoning 与可执行移动机器人控制</li><li>通过多粒度推理（episode/step/navigation 级别）和监督 CoT 对齐 + RL，改进 reasoning-to-action 一致性</li><li>引入 reasoning-conditioned action decoder 支持移动操作</li><li>在 VLN-CE、QUARD、Unitree Go2/G1 真实部署上评估</li></ul>
+
+<p><strong>核心贡献：</strong></p>
+<ol><li>提出 MobileVLA-R1 2.0，RL 增强的 VLA 框架，通过多粒度 embodied reasoning、CoT 对齐和强化学习建立显式 reasoning-to-action 接口</li><li>引入 reasoning-conditioned action decoder，将多模态观察和推理表示映射到任务级运动和行为预测，解耦高层动作生成与机器人特定低层执行</li><li>全面评估显示有效迁移至人形机器人移动操作，在 VLN-CE SR 上提升 1.6 分，G1 全任务成功率上提升 10.0 分</li></ol>
+
+<p><strong>方法描述：</strong></p>
+<ul><li>采用 System-2-to-System-1-to-System-0 推理-执行范式</li><li>多模态推理 backbone：LLaVA 风格架构（NaVILA 初始化），处理 RGB、深度、点云和语言指令</li><li>Reasoning-conditioned action decoder：使用 cross-attention 和可学习查询，将观察和推理表示映射到连续运动（Vx, Vy, ω）和离散行为原语（α）</li><li>训练流程：监督 SFT（CoT 对齐）-> GRPO 强化学习优化</li><li>使用</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Ting Huang</strong>、<strong>Zeyu Zhang</strong>、<strong>Hao Tang</strong> 隶属于北京大学计算机科学学院（Peking University, School of Computer Science）</li><li><strong>Yue Huang</strong> 隶属于华南理工大学（South China University of Technology）</li><li><strong>Shuicheng Yan</strong> 隶属于新加坡国立大学计算学院（National University of Singapore, School of Computing）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>解决 Vision-Language-Action (VLA) 系统中高层语义推理与低层运动/操作控制之间的核心差距，特别是移动机器人在部分可观测环境下的长视野决策与精确控制问题</li><li>提出 <strong>MobileVLA-R1 2.0</strong>，一个强化学习增强的 VLA 框架，显式耦合结构化 Embodied Reasoning 与可执行移动机器人控制，采用 System-2-to-System-1-to-System-0 的推理-执行范式</li><li>通过多粒度推理监督（Episode/Step/Navigation 级别）和 GRPO 强化学习优化 Reasoning-to-Action 一致性，并引入 Reasoning-Conditioned Action Decoder 统一支持导航、四足控制和人形移动操作</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>MobileVLA-R1 2.0</strong> 框架，通过整合多粒度 Embodied Reasoning、监督 Chain-of-Thought (CoT) 对齐和 GRPO 强化学习，在 VLA 策略中建立显式的 Reasoning-to-Action 接口</li><li>设计 <strong>Reasoning-Conditioned Action Decoder</strong>，利用 Cross-Attention 将多模态观察与推理表示映射到任务级运动指令（$V_x, V_y, \omega$）和离散行为原语（$\alpha$），实现高层语义决策与机器人特定低层执行的解耦</li><li>在 <strong>VLN-CE</strong>、<strong>QUARD</strong> 以及 <strong>Unitree Go2</strong> 和 <strong>G1</strong> 真实机器人上验证框架有效性，其中 G1 人形机器人移动操作任务无需任何 G1 特定训练数据，相比 <strong>MobileVLA-R1</strong> 在 VLN-CE 上平均 SR 提升 <strong>1.6 分</strong>，在 G1 全任务成功率上提升 <strong>10.0 分</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用 <strong>System-2-to-System-1-to-System-0</strong> 分层推理-执行架构：首先通过多模态 VLA Backbone 生成结构化 Reasoning（<code><think></code>），随后通过 Reasoning-Conditioned Action Decoder 生成任务级动作（<code><answer></code>），最终由机器人特定 Low-level Controller 执行</li><li><strong>多模态推理骨干网络</strong>：基于 <strong>NaVILA</strong> 初始化的 LLaVA 风格架构，输入包括 RGB 图像、深度图、点云和语言指令，通过 Modality-specific Encoders 和 Projection Layers 映射至统一隐空间，并由 backbone 自回归生成结构化推理序列</li><li><strong>Reasoning-Conditioned Action Decoder</strong>：引入可学习的 Locomotion 和 Behavior 查询，通过 Cross-Attention 聚合观察与推理上下文，分别预测连续运动指令（$V_x, V_y, \omega$）和离散行为原语 $\alpha \in \mathcal{A}_{\text{beh}}$，实现可学习的推理到物理动作映射</li><li><strong>两阶段训练流程</strong>：第一阶段通过监督 Fine-tuning（SFT）在 <strong>MobileVLA-CoT</strong> 上进行 CoT 对齐与动作预测对齐；第二阶段采用 <strong>GRPO（Group Relative Policy Optimization）</strong> 强化学习，基于运动奖励、行为奖励和格式奖励优化推理-动作一致性，同时通过 KL 正则化约束与冻结参考策略的偏离</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>源数据集</strong>：<strong>R2R</strong>（50K 样本，Matterport3D 室内导航）、<strong>RxR</strong>（58K 样本，多语言丰富指令导航）、<strong>QUARD</strong>（262K 样本，四足机器人 locomotion 与交互）</li><li><strong>构建数据集</strong>：<strong>MobileVLA-CoT</strong>（总计 134K 样本），包含三个互补子集：</li></ul>
+<p> - <strong>MobileVLA-CoT-Episode</strong>（18K）：轨迹级任务进展与执行策略总结</p>
+<p> - <strong>MobileVLA-CoT-Step</strong>（78K）：局部推理与可执行动作的即时关联</p>
+<p> - <strong>MobileVLA-CoT-Nav</strong>（38K）：全局语言指令与连续空间决策的关联</p>
+<ul><li><strong>模型架构</strong>：基于 <strong>NaVILA</strong> 初始化的 LLaVA 风格多模态模型；训练时冻结 Modality Encoders，优化 Projection Layers、LoRA 参数及 Action Decoder</li><li><strong>训练资源</strong>：HTML 中未明确指定具体 GPU/TPU 型号与数量；数据引擎使用 <strong>Gemini-2.5-Flash</strong> 进行推理标注生成</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 07</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境与基准</strong>：</li></ul>
+<p> - 仿真导航：<strong>VLN-CE</strong> 协议下的 R2R-CE 与 RxR-CE Val-Unseen 分割</p>
+<p> - 四足控制：<strong>QUARD</strong> 基准</p>
+<p> - 真实世界部署：<strong>Unitree Go2</strong> 四足机器人（导航与交互）和 <strong>Unitree G1</strong> 人形机器人（移动操作，包括物体搜索、导航、接近、抓取、搬运、放置等长视野任务）</p>
+<ul><li><strong>主要评估指标</strong>：</li></ul>
+<p> - VLN-CE：NE（Navigation Error，越低越好）、OS（Oracle Success）、SR（Success Rate）、SPL（Success weighted by Path Length）、nDTW</p>
+<p> - 机器人控制：全任务成功率（Full-task Success）、端到端延迟、故障模式分解</p>
+<ul><li><strong>关键实验结果</strong>：</li></ul>
+<p> - <strong>VLN-CE</strong>：相比 <strong>MobileVLA-R1</strong>，NE 从 4.05 降至 <strong>3.86</strong>，OS、SR、SPL 均显著提升，平均 SR 提升 <strong>1.6 分</strong>；在 RxR-CE 上也验证了优势</p>
+<p> - <strong>真实世界 G1</strong>：相比 MobileVLA-R1，全任务成功率提升 <strong>10.0 分</strong>，且无需 G1 特定轨迹或任务标注即可实现跨平台迁移</p>
+<p> - <strong>Unitree Go2</strong>：验证了框架在四足机器人导航与交互中的鲁棒性，并提供了端到端延迟与故障诊断分析（包括定位、导航、抓取、操控执行和低层控制错误分解）</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.06256/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">GloVLA: Let Geometry Move and Local VLA Interact for Robust Object-Centric Manipulation in Unstructured Environments</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.06221/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">RefGuard: Identity-Aware Language-Guided Robot Manipulation via Joint Target-Anchor-Frame Grounding</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
