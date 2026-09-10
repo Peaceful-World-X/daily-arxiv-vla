@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="通用机器人视觉-语言-动作（VLA）策略在复杂长时序操作任务中成功率有限，现有在线强化学习（RL）训练依赖高成本的真实机器人交互，样本效率低且存在硬件损坏、安全风险；基于世界模型的RL可提供低成本合成体验，但长时序rollout易出现预测幻觉，产生偏置状态转移误导策略学习 论文提出HaWMPO（Hallucination-Aware World Model-based Policy Optimization），一种…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.09941">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.09941.webp" alt="HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy" loading="lazy" />
+  <figcaption class="paper-figure-caption">通用机器人视觉-语言-动作（VLA）策略在复杂长时序操作任务中成功率有限，现有在线强化学习（RL）训练依赖高成本的真实机器人交互，样本效率低且…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy</h1>
+            <div class="detail-meta">2026-09-09 · <a href="http://arxiv.org/abs/2609.09941" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.09941" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.09941</span></div>
+            <p class="detail-summary">通用机器人视觉-语言-动作（VLA）策略在复杂长时序操作任务中成功率有限，现有在线强化学习（RL）训练依赖高成本的真实机器人交互，样本效率低且存在硬件损坏、安全风险；基于世界模型的RL可提供低成本合成体验，但长时序rollout易出现预测幻觉，产生偏置状态转移误导策略学习 论文提出HaWMPO（Hallucination-Aware World Model-based Policy Optimization），一种…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者Zengjue Chen所属机构：Joy Future Academy, JD、吉林大学人工智能学院</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.09941/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">通用机器人视觉-语言-动作（VLA）策略在复杂长时序操作任务中成功率有限，现有在线强化学习（RL）训练依赖高成本的真实机器人交互，样本效率低且…</p>
+  <ul class="reading-intro-points"><li>通用机器人视觉-语言-动作（VLA）策略在复杂长时序操作任务中成功率有限，现有在线强化学习（RL）训练依赖高成本的真实机器人交互，样本效率低且…</li><li>论文提出HaWMPO（Hallucination-Aware World Model-based Policy Optimization），一…</li><li>研究目标是在减少真实机器人交互成本的同时，缓解世界模型幻觉对VLA策略学习的负面影响，提升通用机器人策略在操作任务中的成功率</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者Zengjue Chen所属机构：<strong>Joy Future Academy, JD</strong>、<strong>吉林大学人工智能学院</strong></li><li>作者Peidong Liu、Jiawei Li所属机构：<strong>Joy Future Academy, JD</strong></li><li>作者Qi Wang所属机构：<strong>吉林大学人工智能学院</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>通用机器人视觉-语言-动作（VLA）策略在复杂长时序操作任务中成功率有限，现有在线强化学习（RL）训练依赖高成本的真实机器人交互，样本效率低且存在硬件损坏、安全风险；基于世界模型的RL可提供低成本合成体验，但长时序rollout易出现预测幻觉，产生偏置状态转移误导策略学习</li><li>论文提出<strong>HaWMPO（Hallucination-Aware World Model-based Policy Optimization）</strong>，一种面向VLA策略后训练的闭环RL流水线，通过建模世界模型rollout的幻觉程度并调制奖励，提升策略优化稳定性与性能</li><li>研究目标是在减少真实机器人交互成本的同时，缓解世界模型幻觉对VLA策略学习的负面影响，提升通用机器人策略在操作任务中的成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>建立集成了世界模型、幻觉感知模型、奖励模型的闭环VLA强化学习流水线，支持无需频繁真实机器人交互的在线式策略优化</li><li>设计动作条件的<strong>幻觉感知模型（HAM）</strong>，量化世界模型在给定动作输入下生成图像序列的可靠性，输出可直接用于强化学习的连续幻觉分数</li><li>提出<strong>Reward-Soft机制</strong>，将幻觉分数整合到GRPO优化流程中，对高幻觉的动作段进行惩罚，缓解世界模型偏差对策略更新的负面影响</li><li>在LIBERO仿真基准和G1机器人真实操作任务上验证了方法的有效性，显著提升了VLA策略的任务成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体采用闭环RL框架，包含四个核心组件：动作条件的世界模型、幻觉感知模型（HAM）、奖励模型、基于GRPO的策略优化器</li><li>动作条件的世界模型基于<strong>Wan2.2-TI2V-5B</strong>构建，输入当前观测帧、初始锚帧、VLA输出的动作块，生成后续8帧预测图像，作为虚拟交互环境</li><li>幻觉感知模型HAM采用冻结的DINOv3编码器提取视觉特征，通过上下文投影器、动作投影器和四层融合Transformer融合输入（预测视频块、条件动作、当前观测、初始锚帧），输出块级连续幻觉分数，训练时采用DINOv3相似度、深度一致性、光流轨迹一致性、MUSIQ图像质量四个指标构造复合监督标签</li><li>提出Reward-Soft机制，通过公式$\hat{R}=(1-\alpha \cdot H) \cdot R$调制原始奖励，其中$H$为动作块的平均幻觉分数，$\alpha$为可调超参数，抑制高幻觉动作块带来的偏置奖励信号</li><li>训练过程采用8个并行世界模型构建的想象环境，通过GRPO算法进行端到端策略优化，利用组归一化优势降低训练方差</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真评估数据集：<strong>LIBERO基准</strong>，包含Spatial、Goal、Object三个任务套件</li><li>真实世界实验平台：<strong>G1机器人</strong>，部署Tissue-to-Box、Headphone-on-Stand两个操作任务</li><li>模型规模：世界模型采用<strong>Wan2.2-TI2V-5B</strong>（50亿参数），基础VLA策略为<strong>OpenVLA-OFT</strong>，HAM为小型Transformer回归模型</li><li>训练资源：所有实验基于8块<strong>NVIDIA H200 GPU</strong>开展</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真场景为LIBERO三个任务套件，真实世界场景为G1机器人的两类操作任务，基线方法包括 vanilla OpenVLA-OFT、WMPO、WoVR*</li><li>评估指标：任务成功率（success rate），HAM额外采用AUROC、平均精度（AP）、MAE、RMSE、Spearman相关系数评估幻觉检测性能</li><li>关键实验结果：仿真场景下HaWMPO平均成功率达<strong>63.7%</strong>，相比基础OpenVLA-OFT提升15.0个百分点，相比最强基线WoVR*提升2.8个百分点，在Spatial、Object任务上取得最优性能；真实世界场景下平均成功率达<strong>80.0%</strong>，相比基础VLA策略提升12.5个百分点，相比WoVR提升7.5个百分点</li><li>消融实验表明，移除HAM及Reward-Soft机制后，Spatial任务成功率下降8.0~11.6个百分点，验证了幻觉感知模块的有效性；HAM的幻觉检测AUROC达0.9375，优于单一指标基线</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.10021/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">RoboDrop: Curating VLA Post-Training Data via Local Gradient Compatibility</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.09925/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Time-Frequency Geometric Cross-Attention for Chunked Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

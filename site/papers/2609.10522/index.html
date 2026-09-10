@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Show-Harness: Just a VLM Agent Can Play Robots - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出 Show-Harness，一个模型无关的具身 harness，使基础视觉-语言模型（VLM）能够通过紧凑的语义动作接口直接“操控”机器人，解决 VLM 智能难以转化为鲁棒物理控制的问题 核心创新在于设计了一个既具语义可解释性又足够精细的动作空间，让 VLM 负责高层决策，而通过 embodiment-specific interpreter 确定性落地为物理动作 同时提出 GUMI（GUI-based M…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.10522">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.10522.webp" alt="Show-Harness: Just a VLM Agent Can Play Robots" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出 Show-Harness，一个模型无关的具身 harness，使基础视觉-语言模型（VLM）能够通过紧凑的语义动作接口直接“操控”机…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Show-Harness: Just a VLM Agent Can Play Robots</h1>
+            <div class="detail-meta">2026-09-09 · <a href="http://arxiv.org/abs/2609.10522" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.10522" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.10522</span></div>
+            <p class="detail-summary">论文提出 Show-Harness，一个模型无关的具身 harness，使基础视觉-语言模型（VLM）能够通过紧凑的语义动作接口直接“操控”机器人，解决 VLM 智能难以转化为鲁棒物理控制的问题 核心创新在于设计了一个既具语义可解释性又足够精细的动作空间，让 VLM 负责高层决策，而通过 embodiment-specific interpreter 确定性落地为物理动作 同时提出 GUMI（GUI-based M…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">13 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者包括 Yanzhe Chen, Zechen Bai, Zhijun Cao, Wenzheng…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.10522/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出 Show-Harness，一个模型无关的具身 harness，使基础视觉-语言模型（VLM）能够通过紧凑的语义动作接口直接“操控”机…</p>
+  <ul class="reading-intro-points"><li>论文提出 Show-Harness，一个模型无关的具身 harness，使基础视觉-语言模型（VLM）能够通过紧凑的语义动作接口直接“操控”机…</li><li>核心创新在于设计了一个既具语义可解释性又足够精细的动作空间，让 VLM 负责高层决策，而通过 embodiment-specific inte…</li><li>同时提出 GUMI（GUI-based Manipulation Interface），将同一语义动作空间暴露为图形界面，使人类、Agent…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者包括 Yanzhe Chen, Zechen Bai, Zhijun Cao, Wenzheng Zeng, Kevin Qinghong Lin, Yiqi Lin, Guoqiang Liang, Kevin Yuchen Ma, Qiming Huang, 以及 Mike Zheng Shou（通讯作者，标记 †）</li><li>提供的 HTML 片段中未显示具体机构名称（仅显示作者姓名及贡献标记 * 和 †）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出 <strong>Show-Harness</strong>，一个模型无关的具身 harness，使基础视觉-语言模型（VLM）能够通过紧凑的语义动作接口直接“操控”机器人，解决 VLM 智能难以转化为鲁棒物理控制的问题</li><li>核心创新在于设计了一个既具语义可解释性又足够精细的动作空间，让 VLM 负责高层决策，而通过 embodiment-specific interpreter 确定性落地为物理动作</li><li>同时提出 <strong>GUMI</strong>（GUI-based Manipulation Interface），将同一语义动作空间暴露为图形界面，使人类、Agent 和人类-Agent 协作均能无专用硬件地收集机器人演示数据</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>Show-Harness</strong> 具身 Harness 架构，通过物理 grounded 的语义动作接口连接基础 VLM 与机器人，保持语义可解释性的同时实现精细闭环控制</li><li>证明闭源 frontier VLM（如 <strong>Gemini-3.1 Pro</strong>）可直接通过 harness 实现 zero-shot 机器人控制，无需任何微调</li><li>证明小型开源 VLM（如 <strong>Qwen3.5-2B</strong>）仅需几小时 GPU 微调（LoRA rank-64，更新约 3% 参数）即可达到 comparable 性能，并在 sim-to-real 迁移上优于传统 VLA 范式</li><li>提出 <strong>GUMI</strong> 图形化操控界面，统一人类键盘控制、Agent 自动控制和混合数据收集流程，天然支持跨 embodiment 复用</li><li>在任务、环境、embodiment 三个层面展现出强泛化能力，包括跨物体、跨场景、sim-to-real 以及 Franka 与 AgileX 双臂之间的跨机器人迁移</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>物理 Grounded 语义动作接口</strong>：定义离散语义动作单元 $\mathcal{A}$，包括平移动作（MV_FWD, MV_BACK, MV_LEFT, MV_RIGHT, MV_UP, MV_DOWN）、旋转动作（ROTATE_CW, ROTATE_CCW，配合 x/y/z 轴）、夹爪动作（GRASP, RELEASE）及完成信号（DONE），每个单元对应一步小范围物理变化</li><li><strong>Embodiment-specific 解释器</strong> ($g_E$)：将语义动作 $a_t$ 确定性 grounding 为 6-DoF Cartesian 位姿更新 $s_{t+1} = \Pi_E(\mathbf{x}_t + \sigma_t R_E d_a, \exp(\theta_t [R_E r_a]_\times) Q_t)$，其中 $R_E$ 将语义方向映射到机器人本体坐标系，$\Pi_E$ 强制执行 workspace 和步长限制，夹爪动作则直接映射为开闭指令</li><li><strong>感知-推理-动作循环</strong>：由可配置插件组成</li></ul>
+<p> - 感知：<strong>Multi-View Guidance</strong>（指导 VLM 使用不同相机视角）、<strong>Proprioception</strong>（将机器人状态、接触、夹爪状态转化为文本反馈）</p>
+<p> - 推理：<strong>Subtask Planning</strong>（分解任务为有序子任务）、<strong>Situated Planning</strong>（延迟不确定决策并按需重规划）、<strong>Action Chunking</strong>（自适应动作分块）、<strong>Adaptive Step</strong>（动态调整步长）、<strong>Visual Prompt</strong>（将模糊语言目标转化为视觉标记）</p>
+<p> - 动作：<strong>Action History</strong>（携带近期动作避免振荡）、<strong>Failure Recovery</strong>（检测抓取失败并回滚恢复）</p>
+<ul><li><strong>双模式支持</strong>：</li></ul>
+<p> - <strong>ZS 模式</strong>：直接调用 frontier VLM 作为 zero-shot 智能体，无需训练</p>
+<p> - <strong>FT 模式</strong>：对小规模 VLM 进行 token-level cross-entropy 微调，最小化目标语义单元预测损失 $\mathcal{L}(\theta) = -\sum \log \pi_\theta(a \mid \Phi_{\mathcal{P}_{\min}}(\ell, o, h))$</p></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>硬件平台</strong>：7-DoF <strong>Franka Research 3</strong> 机械臂（配备 Intel RealSense D435 外部视角和 D405 腕部视角）和 <strong>AgileX</strong> 双臂机器人（配备 Orbbec Dabai DC1 摄像头，含共享第一视角及左右腕视角）</li><li><strong>真实数据集</strong>：164 个真实机器人 episode（7.8K 决策步），涵盖 10 个 pick-and-place 任务（5 种物体：block, banana, tennis ball, teddy bear, chess piece × 2 种目标容器：plate, bowl），其中 teddy bear 和 chess piece 用于分布外（OOD）评估</li><li><strong>仿真数据集</strong>：230 个仿真 episode（13.5K 步），来自 <strong>ManiSkill</strong>（100 episodes, Panda hand）和 <strong>RoboLab</strong>（130 episodes, 12 tasks），用于 sim-to-real 实验</li><li><strong>模型规模</strong>：微调使用 <strong>Qwen3.5-2B</strong>（约 2B 参数），仅对语言模型线性层应用 LoRA（rank-64），冻结视觉编码器和多模态投影器，更新参数约 3%</li><li><strong>计算资源</strong>：本地模型部署在单张 <strong>RTX 5090 GPU</strong> 上；frontier 模型通过其 API 远程调用</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境与基准</strong>：三种泛化层级——跨任务（Cross-task，10 种物体-容器组合）、跨环境（Cross-environment，包括背景/光照/视角/干扰物/distractor 及 sim-to-real 偏移）、跨机器人（Cross-embodiment，Franka ↔ AgileX）</li><li><strong>主要指标</strong>：成功率（Success Rate）和每回合平均步数（Average Steps per Episode），每任务 10 次随机放置试验，episode 上限 50 步，超时计为失败</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - Show-Harness 的 ZS（Gemini-3.1 Pro, medium thinking effort）和 FT（Qwen3.5-2B）模式在全部三个泛化层级上均显著优于代表性 baseline</p>
+<p> - 优于 VLA 基线（$\pi_{0.5}$, <strong>GR00T</strong>）、VLA-centric agents（<strong>Harness VLA</strong>, <strong>Goal-VLA</strong>）和 Code-as-policy agents（<strong>CaP-X</strong>, <strong>RATS</strong>）</p>
+<p> - FT 模式在 sim-to-real 迁移中表现优异（仅使用仿真演示训练），而可训练 VLA 基线在该设置下失败</p>
+<ul><li><strong>物理适应性分析</strong>：</li></ul>
+<p> - 仅将 interpreter 步长从 2cm 调整为 1cm，即可将精细操作（block stacking, peg insertion）成功率从 60%→82%（ZS）和 40%→65%（FT），而 $\pi_{0.5}$ 需额外微调才能 comparable</p>
+<p> - 支持动作组合（正交平移组合为对角位移）和旋转外推（未见过的 90° carrot 抓取，FT 达 70%，$\pi_{0.5}$ 仅 20%）</p>
+<p> - 对 workspace 扩展（核心区域 25%→90%）表现出鲁棒性，而 $\pi_{0.5}$ 性能急剧下降</p>
+<p> - 双臂 <strong>AgileX</strong> 上联合策略优于独立单臂策略，实现无碰撞协调</p>
+<ul><li><strong>语义适应性分析</strong>：在推理密集型任务（如隐藏物体定位、字母拼写 "SHOW"）中，ZS 结合 Situated Planning 达到 85% 成功率， demonstrating in-context 学习能力</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2609.10405/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Frequency-Conditioned Flow Matching for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

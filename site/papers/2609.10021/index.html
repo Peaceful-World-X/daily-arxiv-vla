@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RoboDrop: Curating VLA Post-Training Data via Local Gradient Compatibility - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="VLA模型的大规模预训练虽能实现广泛泛化，但针对新任务和机器人硬体的后训练（post-training）仍需收集特定任务演示数据；真实场景中采集的机器人数据集常包含执行错误、传感器漂移和时间戳错位等局部不可靠监督，会损害后训练效果 现有数据清洗方法通常针对特定类型的 corruption，且手动检查成本高昂，无法识别整体成功轨迹中的局部错误状态 本文提出RoboDrop框架，通过测量训练轨迹上的局部梯度兼容性（lo…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.10021">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.10021.webp" alt="RoboDrop: Curating VLA Post-Training Data via Local Gradient Compatibility" loading="lazy" />
+  <figcaption class="paper-figure-caption">VLA模型的大规模预训练虽能实现广泛泛化，但针对新任务和机器人硬体的后训练（post-training）仍需收集特定任务演示数据；真实场景中采…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RoboDrop: Curating VLA Post-Training Data via Local Gradient Compatibility</h1>
+            <div class="detail-meta">2026-09-09 · <a href="http://arxiv.org/abs/2609.10021" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.10021" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.10021</span></div>
+            <p class="detail-summary">VLA模型的大规模预训练虽能实现广泛泛化，但针对新任务和机器人硬体的后训练（post-training）仍需收集特定任务演示数据；真实场景中采集的机器人数据集常包含执行错误、传感器漂移和时间戳错位等局部不可靠监督，会损害后训练效果 现有数据清洗方法通常针对特定类型的 corruption，且手动检查成本高昂，无法识别整体成功轨迹中的局部错误状态 本文提出RoboDrop框架，通过测量训练轨迹上的局部梯度兼容性（lo…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Tsinghua University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.10021/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">VLA模型的大规模预训练虽能实现广泛泛化，但针对新任务和机器人硬体的后训练（post-training）仍需收集特定任务演示数据；真实场景中采…</p>
+  <ul class="reading-intro-points"><li>VLA模型的大规模预训练虽能实现广泛泛化，但针对新任务和机器人硬体的后训练（post-training）仍需收集特定任务演示数据；真实场景中采…</li><li>现有数据清洗方法通常针对特定类型的 corruption，且手动检查成本高昂，无法识别整体成功轨迹中的局部错误状态</li><li>本文提出RoboDrop框架，通过测量训练轨迹上的局部梯度兼容性（local gradient compatibility）来审计监督质量，实…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Tsinghua University</strong></li><li><strong>Striding AI</strong></li><li>Cuijie Xu, Shuang Dai, Yining Li, Yu Wang, Jincheng Yu（单位信息未在提供文本中明确标注）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>VLA模型的大规模预训练虽能实现广泛泛化，但针对新任务和机器人硬体的后训练（post-training）仍需收集特定任务演示数据；真实场景中采集的机器人数据集常包含执行错误、传感器漂移和时间戳错位等局部不可靠监督，会损害后训练效果</li><li>现有数据清洗方法通常针对特定类型的 corruption，且手动检查成本高昂，无法识别整体成功轨迹中的局部错误状态</li><li>本文提出<strong>RoboDrop</strong>框架，通过测量训练轨迹上的<strong>局部梯度兼容性（local gradient compatibility）</strong>来审计监督质量，实现在单轮热身训练中自动区分不可靠演示，无需预先知道污染率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>引入<strong>context-conditioned local gradient reference</strong>，利用任务语义（T5嵌入）和视觉上下文（DINO特征）匹配的干净验证样本构建候选特定参考，评估每个样本是否诱导期望的策略更新</li><li>开发<strong>training-trajectory-aware online scoring procedure</strong>，在热身训练过程中随策略演化在线评估候选样本，捕捉优化过程中的动态梯度兼容性变化，而非在固定检查点静态评估</li><li>提出基于<strong>BIC的自动过滤程序</strong>，可在不知道污染率的情况下，通过比较单高斯与双高斯混合模型自适应确定过滤预算</li><li>在控制 corruptions、自然次优模拟演示和真实机器人非专家采集错误上验证了方法的有效性，并在多种VLA骨干网络上验证了架构无关的泛化性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>进行单轮热身训练（one-epoch warm-up run），在优化过程中在线对每个候选样本评分，每个样本在进入小批量时获得一个梯度兼容性分数</li><li>使用<strong>T5指令嵌入</strong>进行任务语义过滤，使用<strong>DINO特征</strong>余弦相似度检索视觉最相似的<strong>K_vis=10</strong>个验证样本，构建局部梯度参考</li><li>计算候选样本梯度与局部验证参考梯度的<strong>余弦相似度</strong>作为兼容性分数，并使用<strong>CountSketch</strong>将梯度压缩至4096维以降低计算和内存开销</li><li>验证梯度参考每<strong>M=200</strong>步刷新一次，样本级分数在 episode 内通过平均聚合为剧集级分数</li><li>可选BIC自动过滤：对剧集分数拟合单/双高斯混合模型，若选择双组分模型则将低均值组分识别为不可靠监督并以置信度阈值q=0.8过滤</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>LIBERO</strong>：四个任务套件，通过时间错位（temporal corruption）和动作 corruption 在10%的 episode 中引入合成错误，用于控制实验</li><li><strong>Robomimic-MH</strong>：四个模拟操作任务，每任务300个人工遥操作 episode（含100个专家级优质演示和200个次优演示）</li><li><strong>Real-World Dataset</strong>：四个真实机器人操作任务，每任务100个 episode（含80个专家级和20个非专家采集的错误演示）</li><li>使用<strong>π0.5-Base</strong>、<strong>GR00T</strong>和<strong>X-VLA</strong>（含Florence初始化弱变体）三种VLA骨干网络进行验证</li><li>梯度计算仅针对动作专家参数，使用CountSketch压缩至4096维；具体GPU/TPU硬件型号未在提供文本中明确说明</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：LIBERO仿真、Robomimic-MH仿真、真实机器人平台；评估指标包括AUROC、最佳平衡准确率（Best balanced accuracy）和下游策略rollout成功率</li><li>LIBERO-10上平均AUROC达<strong>97.4%</strong>（时间错位96.1%，动作corruption 98.7%），显著优于基线，策过滤后平均成功率<strong>91.8%</strong></li><li>Robomimic-MH上平均AUROC达<strong>88.33%</strong>，最佳平衡准确率<strong>81.83%</strong>，超过最强基线（QoQ 83.67% AUROC）4.25个百分点</li><li>真实机器人数据上平均AUROC达<strong>98.38%</strong>，最佳平衡准确率<strong>95.63%</strong>，成功识别非专家演示</li><li>下游策略成功率从未过滤的<strong>35.0%</strong>提升至RoboDrop自动过滤后的<strong>67.5%</strong>，固定20%预算下达<strong>63.75%</strong>，超过最强基线Behavior Retrieval（58.75%）</li><li>在三种VLA骨干网络上均保持>85%的AUROC（π0.5-Base 88.33%，GR00T 85.87%，X-VLA 85.35%），验证了方法的架构无关性和泛化能力</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.10243/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">FolDeX: A Physical-World Benchmark for Long-Horizon Robotic Manipulation of Deformable Objects</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.09941/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

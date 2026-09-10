@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Time-Frequency Geometric Cross-Attention for Chunked Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对分块式视觉-语言-动作（VLA）模型将动作块（1-2秒的协调运动轨迹）表示为通用隐藏token、忽略多尺度频率结构与跨阶段几何关系的问题，提出时间-频率几何交叉注意力（TFGCA）模块，修复VLA对动作块结构的建模盲点 研究目标是提升VLA的动作预测性能，尤其是分布外（OOD）场景下的泛化能力，同时保证模块可即插即用到预训练VLA上，不破坏原有性能 核心解决的问题是：传统点积注意力仅对向量相似性敏感，无法直接捕…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.09925">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.09925.webp" alt="Time-Frequency Geometric Cross-Attention for Chunked Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对分块式视觉-语言-动作（VLA）模型将动作块（1-2秒的协调运动轨迹）表示为通用隐藏token、忽略多尺度频率结构与跨阶段几何关系的问题…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Time-Frequency Geometric Cross-Attention for Chunked Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-09-09 · <a href="http://arxiv.org/abs/2609.09925" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.09925" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.09925</span></div>
+            <p class="detail-summary">针对分块式视觉-语言-动作（VLA）模型将动作块（1-2秒的协调运动轨迹）表示为通用隐藏token、忽略多尺度频率结构与跨阶段几何关系的问题，提出时间-频率几何交叉注意力（TFGCA）模块，修复VLA对动作块结构的建模盲点 研究目标是提升VLA的动作预测性能，尤其是分布外（OOD）场景下的泛化能力，同时保证模块可即插即用到预训练VLA上，不破坏原有性能 核心解决的问题是：传统点积注意力仅对向量相似性敏感，无法直接捕…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">截取的HTML原文未披露作者所属研究机构，论文作者为：Shengye Dong、Haochen Niu…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.09925/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对分块式视觉-语言-动作（VLA）模型将动作块（1-2秒的协调运动轨迹）表示为通用隐藏token、忽略多尺度频率结构与跨阶段几何关系的问题…</p>
+  <ul class="reading-intro-points"><li>针对分块式视觉-语言-动作（VLA）模型将动作块（1-2秒的协调运动轨迹）表示为通用隐藏token、忽略多尺度频率结构与跨阶段几何关系的问题…</li><li>研究目标是提升VLA的动作预测性能，尤其是分布外（OOD）场景下的泛化能力，同时保证模块可即插即用到预训练VLA上，不破坏原有性能</li><li>核心解决的问题是：传统点积注意力仅对向量相似性敏感，无法直接捕获动作块内不同操作阶段（如抓取、接触、调整）之间近正交的跨阶段几何关系，且未显式…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>截取的HTML原文未披露作者所属研究机构，论文作者为：Shengye Dong、Haochen Niu、Hao Liu、Peiwen Lin、Chuang Wang、Shanmin Pang</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对分块式视觉-语言-动作（VLA）模型将动作块（1-2秒的协调运动轨迹）表示为通用隐藏token、忽略多尺度频率结构与跨阶段几何关系的问题，提出<strong>时间-频率几何交叉注意力（TFGCA）</strong>模块，修复VLA对动作块结构的建模盲点</li><li>研究目标是提升VLA的动作预测性能，尤其是分布外（OOD）场景下的泛化能力，同时保证模块可即插即用到预训练VLA上，不破坏原有性能</li><li>核心解决的问题是：传统点积注意力仅对向量相似性敏感，无法直接捕获动作块内不同操作阶段（如抓取、接触、调整）之间近正交的跨阶段几何关系，且未显式建模动作的多时间尺度频率结构；而动作块内的跨阶段运动存在<strong>时序正交分工（TO-DoL）</strong>特性——不同操作阶段的运动沿时间轴依次分布在近正交的子空间中，传统建模方式需要额外容量迂回编码这种关系</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>TFGCA</strong>即插即用模块，首次同时为VLA动作预测补充多尺度频率内容与块内近正交的跨阶段几何关系建模能力</li><li>设计<strong>逐维度可学习平稳小波变换（SWT）分词</strong>组件，将每个控制维度的动作序列分解为长度保持的多分辨率频率带，显式分离平滑全局趋势与精细修正运动等不同时间尺度的频率成分</li><li>设计<strong>点积+楔积混合交叉注意力</strong>，以楔积幅度作为对近正交性敏感的额外评分通道，与点积相似性评分通过可学习权重融合，让时间token能直接检索跨阶段的几何关联</li><li>采用零初始化残差构造，模块插入预训练VLA时初始化阶段完全复现基线行为，仅增加约4.23M参数（约占π₀.₅骨干的0.10%），微调时可联合训练不破坏预训练权重</li><li>在仿真与真实机器人场景的广泛实验中验证有效性，尤其在OOD场景下提升显著，近饱和in-distribution场景也有稳定增益</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>TFGCA插入在VLA transformer输出与动作头之间，分为三个核心阶段：首先是<strong>动作空间投影</strong>，将抽象隐藏动作token投影到与控制维度动作参数化对应的控制空间，加入辅助对齐损失将投影结果监督向停止梯度的真实动作块，强化物理语义；其次是<strong>逐维度可学习SWT分词</strong>，对每个控制维度的时间序列使用可学习Daubechies-2滤波器的平稳小波变换分解为多分辨率频率带，经DC移除、可选导数预处理后，将每个时间-频带位置的多维动作向量嵌入为模型宽度的频率token，最终展平为频率token序列；最后是<strong>点积+楔积交叉注意力</strong>，以原始时间token为查询、频率token为键/值，分别计算点积注意力分数（捕获相似性）和楔积幅度分数（捕获近正交性），经独立softmax后通过可学习标量混合，输出经残差写回原始时间token</li><li>创新点包括：首次将楔积引入VLA注意力机制，显式建模跨阶段近正交几何关系；使用不降采样的平稳小波变换保持时间对齐，使频率带可直接作为注意力键；零初始化构造实现即插即用，无需重新预训练骨干</li><li>关键技术：可学习逐维度小波滤波器、点积-楔积双通道注意力混合、零初始化残差连接、动作空间投影对齐损失</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集包括：<strong>LIBERO</strong>（4套件单臂操作任务，用于in-distribution性能评估）、<strong>LIBERO-Plus</strong>（对LIBERO任务施加7类OOD扰动：相机视角、机器人初始化、语言重述、光照、背景、传感器噪声、物体布局，用于OOD泛化评估）、<strong>RoboTwin 2.0</strong>（双臂操作数据集，含清洁与域随机化场景，用于单任务零样本泛化评估）、<strong>AgiBot A2</strong>真实机器人数据集（3项操作任务，用于真实场景验证）</li><li>模型规模：基于<strong>π₀.₅</strong> VLA骨干，TFGCA仅增加约4.23M参数，约占π₀.₅骨干总参数的0.10%</li><li>训练资源：原文截断部分未完全披露具体硬件信息，附录G包含训练硬件类型、时钟时间等详细资源使用说明</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境（LIBERO、LIBERO-Plus、RoboTwin 2.0）、真实环境（<strong>AgiBot A2</strong>双臂机器人）</li><li>评估基准：与同源基线<strong>π₀.₅</strong>对比，设置三类消融实验（移除SWT分支、移除几何通道、移除对齐损失），部分基准与外部方法（DP、OpenVLA、ACT等）的对比详见附录</li><li>主要评估指标：任务成功率（SR%）</li><li>关键实验结果：</li></ul>
+<p> - 近饱和in-distribution场景LIBERO：TFGCA将四套件平均成功率从基线的96.7%提升至98.2%（+1.5%）， hardest的Long套件从94.6%提升至97.0%</p>
+<p> - OOD基准LIBERO-Plus：TFGCA在7类扰动中的6类上优于基线，总成功率从66.7%提升至73.0%（+6.3%），噪声、机器人初始化、相机视角等 hardest扰动类别提升最显著</p>
+<p> - RoboTwin 2.0单任务场景：清洁场景平均成功率较基线提升3.7%；未见过域随机化的零样本泛化场景平均成功率大幅提升28.5%，其中click_bell、stack_bowls_three任务在随机化场景下成功率从基线的约6%分别提升至86%和59%</p>
+<p> - 真实机器人AgiBot A2：3项任务的总成功率较π₀.₅基线提升11.67个百分点</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.09941/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.09808/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">GTA-2: A Multi-VLM Framework for Synthesizing Robot Manipulation Skills via Grounded Task Axes</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

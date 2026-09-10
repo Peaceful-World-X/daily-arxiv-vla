@@ -1,5 +1,229 @@
 [
   {
+    "date": "2026-09-09",
+    "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+    "link": "http://arxiv.org/abs/2609.10522",
+    "arxiv_id": "2609.10522",
+    "detail_path": "papers/2609.10522/",
+    "cover_path": "covers/2609.10522/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.10522.webp",
+    "preview_text": "论文提出 Show-Harness，一个模型无关的具身 harness，使基础视觉-语言模型（VLM）能够通过紧凑的语义动作接口直接“操控”机器人，解决 VLM 智能难以转化为鲁棒物理控制的问题 核心创新在于设计了一个既具语义可解释性又足够精细的动作空间，让 VLM 负责高层决策，而通过 embodiment-specific interpreter 确定性落地为物理动作 同时提出 GUMI（GUI-based M…",
+    "research_unit": "作者包括 Yanzhe Chen, Zechen Bai, Zhijun Cao, Wenzheng…",
+    "hook_text": "论文提出 Show-Harness，一个模型无关的具身 harness，使基础视觉-语言模型（VLM）能够通过紧凑的语义动作接口直接“操控”机…",
+    "key_points": [
+      "论文提出 Show-Harness，一个模型无关的具身 harness，使基础视觉-语言模型（VLM）能够通过紧凑的语义动作接口直接“操控”机…",
+      "核心创新在于设计了一个既具语义可解释性又足够精细的动作空间，让 VLM 负责高层决策，而通过 embodiment-specific inte…",
+      "同时提出 GUMI（GUI-based Manipulation Interface），将同一语义动作空间暴露为图形界面，使人类、Agent…"
+    ],
+    "reading_minutes": 13,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Frequency-Conditioned Flow Matching for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2609.10405",
+    "arxiv_id": "2609.10405",
+    "detail_path": "papers/2609.10405/",
+    "cover_path": "covers/2609.10405/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.10405.webp",
+    "preview_text": "现有基于Flow Matching的视觉-语言-动作（VLA）模型在时序坐标下生成机器人动作，未显式建模动作轨迹的频率异构性：机器人动作的频率分量能量分布极不均匀，真实机器人30步长动作数据中99.9%的能量集中在最低3个频率bin，跨频率能量差达7个数量级，现有方法无法有效利用该特性，导致生成性能受限 本文提出FreqFM，一种面向VLA模型的频率条件Flow Matching框架，将动作频率从隐式轨迹属性提升为…",
+    "research_unit": "论文作者所属研究机构：AGIBOT、西安交通大学（Xi'an Jiaotong University）…",
+    "hook_text": "现有基于Flow Matching的视觉-语言-动作（VLA）模型在时序坐标下生成机器人动作，未显式建模动作轨迹的频率异构性：机器人动作的频率…",
+    "key_points": [
+      "现有基于Flow Matching的视觉-语言-动作（VLA）模型在时序坐标下生成机器人动作，未显式建模动作轨迹的频率异构性：机器人动作的频率…",
+      "本文提出FreqFM，一种面向VLA模型的频率条件Flow Matching框架，将动作频率从隐式轨迹属性提升为贯穿整个生成流程的显式条件维度…",
+      "FreqFM可直接集成到现有Flow Matching动作专家中，无需修改VLA骨干网络，在多个仿真基准和真实机器人任务上均验证了有效性"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-09",
+    "title": "FolDeX: A Physical-World Benchmark for Long-Horizon Robotic Manipulation of Deformable Objects",
+    "link": "http://arxiv.org/abs/2609.10243",
+    "arxiv_id": "2609.10243",
+    "detail_path": "papers/2609.10243/",
+    "cover_path": "covers/2609.10243/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.10243.webp",
+    "preview_text": "论文提出FolDeX，首个专注于长期可变形物体操作的物理世界真实机器人基准，以衣物折叠为核心任务，配套FoldChallenge标准化真实机器人评估平台 解决现有真实机器人基准侧重短期刚性物体操作、缺乏长期可变形任务覆盖的问题，同时填补仿真到真实、刚性到可变形操作gap下的统一评估协议空白 核心目标是研究如何高效复用异构真实机器人数据（包括干预恢复数据、跨任务/场景/机器人的经验），为物理具身智能提供可靠的测试床",
+    "research_unit": "复旦大学",
+    "hook_text": "论文提出FolDeX，首个专注于长期可变形物体操作的物理世界真实机器人基准，以衣物折叠为核心任务，配套FoldChallenge标准化真实机器…",
+    "key_points": [
+      "论文提出FolDeX，首个专注于长期可变形物体操作的物理世界真实机器人基准，以衣物折叠为核心任务，配套FoldChallenge标准化真实机器…",
+      "解决现有真实机器人基准侧重短期刚性物体操作、缺乏长期可变形任务覆盖的问题，同时填补仿真到真实、刚性到可变形操作gap下的统一评估协议空白",
+      "核心目标是研究如何高效复用异构真实机器人数据（包括干预恢复数据、跨任务/场景/机器人的经验），为物理具身智能提供可靠的测试床"
+    ],
+    "reading_minutes": 5,
+    "section_count": 5,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-09",
+    "title": "RoboDrop: Curating VLA Post-Training Data via Local Gradient Compatibility",
+    "link": "http://arxiv.org/abs/2609.10021",
+    "arxiv_id": "2609.10021",
+    "detail_path": "papers/2609.10021/",
+    "cover_path": "covers/2609.10021/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.10021.webp",
+    "preview_text": "VLA模型的大规模预训练虽能实现广泛泛化，但针对新任务和机器人硬体的后训练（post-training）仍需收集特定任务演示数据；真实场景中采集的机器人数据集常包含执行错误、传感器漂移和时间戳错位等局部不可靠监督，会损害后训练效果 现有数据清洗方法通常针对特定类型的 corruption，且手动检查成本高昂，无法识别整体成功轨迹中的局部错误状态 本文提出RoboDrop框架，通过测量训练轨迹上的局部梯度兼容性（lo…",
+    "research_unit": "Tsinghua University",
+    "hook_text": "VLA模型的大规模预训练虽能实现广泛泛化，但针对新任务和机器人硬体的后训练（post-training）仍需收集特定任务演示数据；真实场景中采…",
+    "key_points": [
+      "VLA模型的大规模预训练虽能实现广泛泛化，但针对新任务和机器人硬体的后训练（post-training）仍需收集特定任务演示数据；真实场景中采…",
+      "现有数据清洗方法通常针对特定类型的 corruption，且手动检查成本高昂，无法识别整体成功轨迹中的局部错误状态",
+      "本文提出RoboDrop框架，通过测量训练轨迹上的局部梯度兼容性（local gradient compatibility）来审计监督质量，实…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-09",
+    "title": "HaWMPO: Hallucination-Aware World Model-based Policy Optimization for Generalist Robot Policy",
+    "link": "http://arxiv.org/abs/2609.09941",
+    "arxiv_id": "2609.09941",
+    "detail_path": "papers/2609.09941/",
+    "cover_path": "covers/2609.09941/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.09941.webp",
+    "preview_text": "通用机器人视觉-语言-动作（VLA）策略在复杂长时序操作任务中成功率有限，现有在线强化学习（RL）训练依赖高成本的真实机器人交互，样本效率低且存在硬件损坏、安全风险；基于世界模型的RL可提供低成本合成体验，但长时序rollout易出现预测幻觉，产生偏置状态转移误导策略学习 论文提出HaWMPO（Hallucination-Aware World Model-based Policy Optimization），一种…",
+    "research_unit": "作者Zengjue Chen所属机构：Joy Future Academy, JD、吉林大学人工智能学院",
+    "hook_text": "通用机器人视觉-语言-动作（VLA）策略在复杂长时序操作任务中成功率有限，现有在线强化学习（RL）训练依赖高成本的真实机器人交互，样本效率低且…",
+    "key_points": [
+      "通用机器人视觉-语言-动作（VLA）策略在复杂长时序操作任务中成功率有限，现有在线强化学习（RL）训练依赖高成本的真实机器人交互，样本效率低且…",
+      "论文提出HaWMPO（Hallucination-Aware World Model-based Policy Optimization），一…",
+      "研究目标是在减少真实机器人交互成本的同时，缓解世界模型幻觉对VLA策略学习的负面影响，提升通用机器人策略在操作任务中的成功率"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-09",
+    "title": "Time-Frequency Geometric Cross-Attention for Chunked Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2609.09925",
+    "arxiv_id": "2609.09925",
+    "detail_path": "papers/2609.09925/",
+    "cover_path": "covers/2609.09925/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.09925.webp",
+    "preview_text": "针对分块式视觉-语言-动作（VLA）模型将动作块（1-2秒的协调运动轨迹）表示为通用隐藏token、忽略多尺度频率结构与跨阶段几何关系的问题，提出时间-频率几何交叉注意力（TFGCA）模块，修复VLA对动作块结构的建模盲点 研究目标是提升VLA的动作预测性能，尤其是分布外（OOD）场景下的泛化能力，同时保证模块可即插即用到预训练VLA上，不破坏原有性能 核心解决的问题是：传统点积注意力仅对向量相似性敏感，无法直接捕…",
+    "research_unit": "截取的HTML原文未披露作者所属研究机构，论文作者为：Shengye Dong、Haochen Niu…",
+    "hook_text": "针对分块式视觉-语言-动作（VLA）模型将动作块（1-2秒的协调运动轨迹）表示为通用隐藏token、忽略多尺度频率结构与跨阶段几何关系的问题…",
+    "key_points": [
+      "针对分块式视觉-语言-动作（VLA）模型将动作块（1-2秒的协调运动轨迹）表示为通用隐藏token、忽略多尺度频率结构与跨阶段几何关系的问题…",
+      "研究目标是提升VLA的动作预测性能，尤其是分布外（OOD）场景下的泛化能力，同时保证模块可即插即用到预训练VLA上，不破坏原有性能",
+      "核心解决的问题是：传统点积注意力仅对向量相似性敏感，无法直接捕获动作块内不同操作阶段（如抓取、接触、调整）之间近正交的跨阶段几何关系，且未显式…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-09",
+    "title": "GTA-2: A Multi-VLM Framework for Synthesizing Robot Manipulation Skills via Grounded Task Axes",
+    "link": "http://arxiv.org/abs/2609.09808",
+    "arxiv_id": "2609.09808",
+    "detail_path": "papers/2609.09808/",
+    "cover_path": "covers/2609.09808/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.09808.webp",
+    "preview_text": "GTA-2是Grounded Task Axes（GTA）的升级版本，是一个模块化多VLM框架，旨在从自然语言任务指令和RGB-D场景观测中，自动合成可执行的、任务定制的机器人操作技能，无需任务特定演示、策略训练或模型微调。 解决的核心问题是：现有机器人操作技能表示要么过于粗粒度，无法暴露执行所需的几何、控制和场景相关决策；要么端到端VLA策略内部推理黑箱、难解释难适配；要么Code-as-Policies依赖预定…",
+    "research_unit": "卡内基梅隆大学机器人研究所（The Robotics Institute, Carnegie Mell…",
+    "hook_text": "GTA-2是Grounded Task Axes（GTA）的升级版本，是一个模块化多VLM框架，旨在从自然语言任务指令和RGB-D场景观测中…",
+    "key_points": [
+      "GTA-2是Grounded Task Axes（GTA）的升级版本，是一个模块化多VLM框架，旨在从自然语言任务指令和RGB-D场景观测中…",
+      "解决的核心问题是：现有机器人操作技能表示要么过于粗粒度，无法暴露执行所需的几何、控制和场景相关决策；要么端到端VLA策略内部推理黑箱、难解释难…",
+      "框架通过将抽象技能合成与场景特定落地分离，实现技能跨场景复用，同时支持人类定向反馈对错误阶段进行细化，保留正确组件，无需重新训练模型。"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-08",
+    "title": "No Free Checker: A Survey of Verifiers for Robot Policies",
+    "link": "http://arxiv.org/abs/2609.09250",
+    "arxiv_id": "2609.09250",
+    "detail_path": "papers/2609.09250/",
+    "cover_path": "covers/2609.09250/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.09250.webp",
+    "preview_text": "本论文是机器人策略验证器领域的系统性综述，覆盖约150项2020年至2026年上半年的相关研究，核心提出no free checker的核心观察：验证器的可用性与可信度存在固有权衡，不存在同时具备高可用性与高可信性的免费验证方案。 研究目标是系统梳理现有验证器的分类体系、核心特性与适用场景，分析验证器本身的验证方法，解决当前机器人策略验证领域方法分散、缺乏统一评估框架的问题。 机器人策略验证面临物理世界任务成功判定…",
+    "research_unit": "论文作者所属研究机构未在提供的截图中明确展示",
+    "hook_text": "本论文是机器人策略验证器领域的系统性综述，覆盖约150项2020年至2026年上半年的相关研究，核心提出no free checker的核心观…",
+    "key_points": [
+      "本论文是机器人策略验证器领域的系统性综述，覆盖约150项2020年至2026年上半年的相关研究，核心提出no free checker的核心观…",
+      "研究目标是系统梳理现有验证器的分类体系、核心特性与适用场景，分析验证器本身的验证方法，解决当前机器人策略验证领域方法分散、缺乏统一评估框架的问…",
+      "机器人策略验证面临物理世界任务成功判定成本高、真实机器人rollout评估代价大、验证需提前于任务完成、任务性能连续非二元等多重挑战，本综述为…"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-09-08",
     "title": "TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model",
     "link": "http://arxiv.org/abs/2609.09158",
@@ -566,7 +790,7 @@
     "arxiv_id": "2609.05892",
     "detail_path": "papers/2609.05892/",
     "cover_path": "covers/2609.05892/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2609.05892.webp",
     "preview_text": "传统可供性表示（2D掩码、3D区域、接触点等）仅能说明交互的“位置”，无法描述交互几何的动态演化过程，也无法直接用于跨人机 embodiment 的控制知识迁移 本文提出动作导向的4D可供性（action-oriented 4D affordances），定义为语言条件的交互相关3D点的未来轨迹，用于描述交互几何如何随时间展开，提供可迁移的操作先验 研究目标是构建大规模4D可供性数据集，设计A4A跨embodime…",
     "research_unit": "上海交通大学",
     "hook_text": "传统可供性表示（2D掩码、3D区域、接触点等）仅能说明交互的“位置”，无法描述交互几何的动态演化过程，也无法直接用于跨人机 embodimen…",
@@ -594,7 +818,7 @@
     "arxiv_id": "2609.05832",
     "detail_path": "papers/2609.05832/",
     "cover_path": "covers/2609.05832/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2609.05832.webp",
     "preview_text": "针对现有Vision-Language-Action（VLA）模型在接触丰富机器人操作中存在的力跟踪精度低、动作块执行延迟大、无法快速调整交互力的问题，论文提出控制感知柔顺VLA（CC-VLA，对应标题CR-VLA-Force）框架，解决因交互力过大导致的任务失败与安全风险问题。 研究目标是将力感知能力与柔顺控制机制深度融合到VLA模型中，实现接触丰富任务的高成功率、高精度力-位置跟踪与强鲁棒性，同时保障人机交互安…",
     "research_unit": "华为技术有限公司（Huawei Technologies Co., Ltd.）",
     "hook_text": "针对现有Vision-Language-Action（VLA）模型在接触丰富机器人操作中存在的力跟踪精度低、动作块执行延迟大、无法快速调整交互…",
@@ -622,7 +846,7 @@
     "arxiv_id": "2609.05533",
     "detail_path": "papers/2609.05533/",
     "cover_path": "covers/2609.05533/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2609.05533.webp",
     "preview_text": "核心内容：本文提出SimpleMemVLA，一种无专用记忆模块的视觉-语言-动作（VLA）模型，针对长时序机器人操作任务的部分可观测性问题（当前决策所需信息可能出现在几分钟前的观测中），利用预训练VLM骨干的原生视频处理能力直接处理带时间戳的历史观测序列作为记忆，替代传统检索、压缩、循环状态等专用记忆机制。 研究目标：验证“无需专用记忆模块，直接使用预训练VLM的原生视频上下文作为记忆”的可行性，同时保证模型在记忆…",
     "research_unit": "论文作者所属机构包括：华中科技大学（HUST）机械科学与工程学院先进电子制造研究中心、中关村 acad…",
     "hook_text": "核心内容：本文提出SimpleMemVLA，一种无专用记忆模块的视觉-语言-动作（VLA）模型，针对长时序机器人操作任务的部分可观测性问题（当…",

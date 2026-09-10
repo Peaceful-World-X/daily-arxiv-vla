@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frequency-Conditioned Flow Matching for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有基于Flow Matching的视觉-语言-动作（VLA）模型在时序坐标下生成机器人动作，未显式建模动作轨迹的频率异构性：机器人动作的频率分量能量分布极不均匀，真实机器人30步长动作数据中99.9%的能量集中在最低3个频率bin，跨频率能量差达7个数量级，现有方法无法有效利用该特性，导致生成性能受限 本文提出FreqFM，一种面向VLA模型的频率条件Flow Matching框架，将动作频率从隐式轨迹属性提升为…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.10405">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.10405.webp" alt="Frequency-Conditioned Flow Matching for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有基于Flow Matching的视觉-语言-动作（VLA）模型在时序坐标下生成机器人动作，未显式建模动作轨迹的频率异构性：机器人动作的频率…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Frequency-Conditioned Flow Matching for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-09-09 · <a href="http://arxiv.org/abs/2609.10405" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.10405" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.10405</span></div>
+            <p class="detail-summary">现有基于Flow Matching的视觉-语言-动作（VLA）模型在时序坐标下生成机器人动作，未显式建模动作轨迹的频率异构性：机器人动作的频率分量能量分布极不均匀，真实机器人30步长动作数据中99.9%的能量集中在最低3个频率bin，跨频率能量差达7个数量级，现有方法无法有效利用该特性，导致生成性能受限 本文提出FreqFM，一种面向VLA模型的频率条件Flow Matching框架，将动作频率从隐式轨迹属性提升为…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属研究机构：AGIBOT、西安交通大学（Xi&#x27;an Jiaotong University）…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.10405/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有基于Flow Matching的视觉-语言-动作（VLA）模型在时序坐标下生成机器人动作，未显式建模动作轨迹的频率异构性：机器人动作的频率…</p>
+  <ul class="reading-intro-points"><li>现有基于Flow Matching的视觉-语言-动作（VLA）模型在时序坐标下生成机器人动作，未显式建模动作轨迹的频率异构性：机器人动作的频率…</li><li>本文提出FreqFM，一种面向VLA模型的频率条件Flow Matching框架，将动作频率从隐式轨迹属性提升为贯穿整个生成流程的显式条件维度…</li><li>FreqFM可直接集成到现有Flow Matching动作专家中，无需修改VLA骨干网络，在多个仿真基准和真实机器人任务上均验证了有效性</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属研究机构：<strong>AGIBOT</strong>、<strong>西安交通大学（Xi'an Jiaotong University）</strong>，其中西安交通大学为通讯作者单位</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有基于Flow Matching的视觉-语言-动作（VLA）模型在时序坐标下生成机器人动作，未显式建模动作轨迹的频率异构性：机器人动作的频率分量能量分布极不均匀，真实机器人30步长动作数据中99.9%的能量集中在最低3个频率bin，跨频率能量差达7个数量级，现有方法无法有效利用该特性，导致生成性能受限</li><li>本文提出<strong>FreqFM</strong>，一种面向VLA模型的频率条件Flow Matching框架，将动作频率从隐式轨迹属性提升为贯穿整个生成流程的显式条件维度，覆盖源分布构建、训练目标优化、推理引导全流程</li><li>FreqFM可直接集成到现有Flow Matching动作专家中，无需修改VLA骨干网络，在多个仿真基准和真实机器人任务上均验证了有效性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次提出将动作频率作为显式条件维度贯穿Flow Matching全流程的框架FreqFM，实现源分布、训练目标、推理引导三个环节的全面频率条件化</li><li>设计频谱匹配源分布：基于训练动作的功率谱密度（PSD）对DCT频率坐标下的高斯源做逐频率缩放，使源分布与目标轨迹共享频谱结构，降低源-目标协方差失配，同时定义逐频率参考传输尺度作为后续设计的基准单位</li><li>提出PSD归一化自适应训练目标：对频率域回归损失做功率谱归一化（归一化指数ρ=0.25），消除低频率项因能量高而主导损失和梯度的问题，再通过基于似然的多任务权重学习自适应平衡各频率分量的贡献</li><li>设计频谱传输预算分类器自由引导（STB-CFG）：以参考传输尺度为单位对CFG残差做逐频率径向裁剪，解决单一引导系数导致的频率尺度不一致问题，避免过度引导损伤生成质量</li><li>在LIBERO、LIBERO-Plus、VLA-Arena三个仿真基准及6个真实机器人任务上验证有效性，LIBERO-Plus基准上相对时序Flow Matching基线最高提升9.3个百分点</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>核心技术：采用正交的<strong>DCT-II</strong>将动作序列的时序轴转换到频率坐标，对平滑动作维度在频率域进行建模，整个Flow Matching流程的三个环节均基于动作频率统计定制化设计：</li></ul>
+<p> 1. 源分布阶段：估计训练动作的逐频率、逐自由度功率谱，用其标准差缩放标准高斯源，得到与目标轨迹频谱结构匹配的源分布，保证沿传输路径的相对频谱结构不变</p>
+<p> 2. 训练目标阶段：对频率域的回归损失做PSD归一化，再采用多任务似然权重框架学习逐频率的缩放权重，避免低频率项主导优化过程</p>
+<p> 3. 推理引导阶段：定义基于参考传输尺度的逐频率度量，将CFG的额外残差投影到对应频率的传输预算球内，实现频率自适应的引导强度控制</p>
+<ul><li>创新点：首次将频率作为显式条件贯穿Flow Matching全流程；针对动作频谱的高度不均匀性，在源分布、训练目标、推理引导三个环节做定制化的频率自适应设计；完全无需修改原有VLA骨干网络，可即插即用集成到现有Flow Matching动作专家中</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：</li></ul>
+<p> - 仿真基准：<strong>LIBERO</strong>（4组共40个操作任务，每组任务评估50轮）、<strong>LIBERO-Plus</strong>（对LIBERO施加7类扰动，生成超1万个扰动任务实例，每个实例评估1轮，采用零样本评估方式，复用LIBERO训练的检查点及频率统计信息）、<strong>VLA-Arena</strong>（11个任务分4类，难度L0-L2，每个难度5个实例（长时序任务提供10个L0实例），每个实例评估10轮）</p>
+<p> - 真实场景：6个真实机器人操作任务</p>
+<ul><li>模型规模：基于<strong>π₀</strong>和<strong>π₀.5</strong>两个VLA骨干实现，采用LeRobot代码库开发，每个FreqFM模型及对应时序Flow Matching基线均训练20k步，全局batch size为64</li><li>训练资源：2块<strong>NVIDIA A800 GPU</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真环境覆盖LIBERO、LIBERO-Plus、VLA-Arena三个主流VLA基准，真实场景覆盖6个机器人操作任务；基线为与FreqFM采用相同架构、数据、优化器、训练预算的时序Flow Matching版本（标记为π₀†和π₀.5†）</li><li>主要评估指标：<strong>任务成功率（Success Rate, SR）</strong>，VLA-Arena基准上先平均同难度内的实例得分，再平均三个难度，最终平均11个任务得到Total得分</li><li>关键实验结果：</li></ul>
+<p> - LIBERO基准：FreqFM(π₀)平均成功率96.1%，较基线π₀†（95.4%）提升0.7个百分点；FreqFM(π₀.5)平均97.9%，较基线π₀.5†（96.7%）提升1.2个百分点，在Long任务集上提升最显著</p>
+<p> - LIBERO-Plus扰动基准：FreqFM(π₀)平均成功率68.2%，较基线（62.7%）提升5.5个百分点；FreqFM(π₀.5)平均75.8%，较基线（66.5%）提升9.3个百分点，在Camera、Robot等扰动类型上提升最高达17.1个百分点</p>
+<p> - VLA-Arena基准：FreqFM(π₀.5)在多个任务类别上取得最优性能，整体表现显著优于基线</p>
+<p> - 6个真实机器人任务上同样验证了FreqFM的有效性</p>
+<p> - 消融实验证实了频率表示设计和全流程频率条件设计的贡献</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.10522/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Show-Harness: Just a VLM Agent Can Play Robots</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.10243/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">FolDeX: A Physical-World Benchmark for Long-Horizon Robotic Manipulation of Deformable Objects</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
