@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FARM: Reading Failure Signals from the Internal Predictive States of a Frozen Robotic World Model - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出了 FARM (Failure-Aware Readout from World Models) 方法，从冻结的预训练机器人世界模型的内部预测状态中直接解码故障信号 核心问题是研究预训练世界模型的内部状态是否已经包含可被直接解码的任务失败信息，无需对模型骨干进行故障相关的适配 该方法仅训练一个轻量级监督读出器（33,985个参数）来从预测状态中提取逐步故障分数和因果轨迹风险" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.11445">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.11445.webp" alt="FARM: Reading Failure Signals from the Internal Predictive States of a Frozen Robotic World Model" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出了 FARM (Failure-Aware Readout from World Models) 方法，从冻结的预训练机器人世界模型的…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">FARM: Reading Failure Signals from the Internal Predictive States of a Frozen Robotic World Model</h1>
+            <div class="detail-meta">2026-09-10 · <a href="http://arxiv.org/abs/2609.11445" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.11445" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.11445</span></div>
+            <p class="detail-summary">论文提出了 FARM (Failure-Aware Readout from World Models) 方法，从冻结的预训练机器人世界模型的内部预测状态中直接解码故障信号 核心问题是研究预训练世界模型的内部状态是否已经包含可被直接解码的任务失败信息，无需对模型骨干进行故障相关的适配 该方法仅训练一个轻量级监督读出器（33,985个参数）来从预测状态中提取逐步故障分数和因果轨迹风险</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">中国科学院自动化研究所（Institute of Automation, Chinese Academ…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.11445/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出了 FARM (Failure-Aware Readout from World Models) 方法，从冻结的预训练机器人世界模型的…</p>
+  <ul class="reading-intro-points"><li>论文提出了 FARM (Failure-Aware Readout from World Models) 方法，从冻结的预训练机器人世界模型的…</li><li>核心问题是研究预训练世界模型的内部状态是否已经包含可被直接解码的任务失败信息，无需对模型骨干进行故障相关的适配</li><li>该方法仅训练一个轻量级监督读出器（33,985个参数）来从预测状态中提取逐步故障分数和因果轨迹风险</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>中国科学院自动化研究所（<strong>Institute of Automation, Chinese Academy of Sciences</strong>）</li><li>哈尔滨工业大学（<strong>Harbin Institute of Technology</strong>）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出了 <strong>FARM (Failure-Aware Readout from World Models)</strong> 方法，从冻结的预训练机器人世界模型的内部预测状态中直接解码故障信号</li><li>核心问题是研究预训练世界模型的内部状态是否已经包含可被直接解码的任务失败信息，无需对模型骨干进行故障相关的适配</li><li>该方法仅训练一个轻量级监督读出器（33,985个参数）来从预测状态中提取逐步故障分数和因果轨迹风险</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>将机器人故障监控问题形式化为从冻结的世界模型状态中读取的问题，验证了故障信息是否已经存在于预训练世界模型的内部表示中</li><li>提出了 <strong>FARM</strong>，一个33,985参数的轻量级读出器，在保持预测骨干网络固定的同时，将预测令牌转换为逐步故障分数和因果轨迹风险</li><li>在10项任务的模拟基准和四个真实机器人设置（跨三个平台）上进行了全面评估，覆盖了基线比较、固定读出器迁移、仅读出器适配和因果部分历史判别</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>从冻结的 <strong>VLA-JEPA</strong> 世界模型的第12个预测块中提取预归一化的预测状态（<strong>WM state</strong>），移除动作条件令牌，保留768×1024的预测令牌</li><li>读出器采用共享令牌投影、注意力池化和轻量级MLP，生成32维的故障感知表示，最终输出逐步故障分数</li><li>采用任务平衡的二元交叉熵损失进行监督训练，只更新读出器参数</li><li>通过递归最大化逐步分数（<strong>因果轨迹风险</strong>）实现因果执行监控，仅使用到当前步的历史信息</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用 <strong>LIBERO</strong> 基准的10个操作任务（7个源任务/Seen任务和3个严格未见任务），共500条轨迹</li><li>在真实机器人评估中使用了 <strong>PIPER X</strong>、<strong>SO-101</strong> 和 <strong>Franka</strong> 三个平台，涉及多种执行策略</li><li>模型规模：读出器仅包含 <strong>33,985</strong> 个可训练参数，冻结的世界模型基于 V-JEPA2 编码器和 VLA-JEPA 预测器</li><li>训练使用 AdamW 优化器，学习率 10⁻³，权重衰减 10⁻⁴，批量大小为4条轨迹，最多80个训练周期</li><li>延迟测量使用 <strong>NVIDIA RTX 5090</strong> GPU</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>在模拟基准的7个源任务上，五折交叉验证的AUROC/AUPRC达到 <strong>85.68/88.59</strong>（池化）和 <strong>85.30/88.38</strong>（宏平均）</li><li>在10项任务的检测器比较中，<strong>FARM 在 Seen 任务上优于所有15个匹配基线</strong>，相比 SAFE-MLP 提升了5.42/4.88宏平均AUROC/AUPRC</li><li>在真实机器人跨策略和跨平台零样本迁移中，FARM-Expanded 在所有四个设置下均表现出良好的检测能力</li><li>仅读出器适配能有效吸收目标域的残余偏移，在 Franka 平台上的AUROC/AUPRC达到 <strong>75.78/74.31</strong></li><li>因果部分历史监测显示，在观察到75%执行时域时，池化AUROC/AUPRC已达到 <strong>81.63/85.53</strong>，接近完整历史性能</li><li>检测器端平均 CUDA 延迟仅为 <strong>0.2256 毫秒</strong>，吞吐量达到 <strong>4,432.8 步/秒</strong></li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.11697/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ActSafeGuard: Differentiable and Training-Aligned Constraint Enforcement for Flow-Matching Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.11310/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Your Model Already Knows Don&#x27;t Teach It, Learn to Ask It: Soft Prompting for Few-Shot Adaptation of Vision-Language Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

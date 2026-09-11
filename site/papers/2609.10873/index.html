@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>When Validation Stops Learning: Auditing Update Admission for Continual Embodied Agents - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对持续具身智能体的策略更新准入问题，指出传统独立验证机制在拦截有害策略更新的同时可能阻碍有效持续学习，主张准入评估需同时兼顾误差控制与保留的学习机会，并在给定交互预算下完成度量 揭示现有基于范围的置信门控的核心缺陷：即使在较大交互预算下，也无法在有限样本内证明旧任务行为未发生改变，会错误拒绝大量有效更新，导致学习过程停滞 提出配套的准入审计协议，包含针对低分歧场景的改进准入规则、历史参考策略提升机制、轮次级错失机…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.10873">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.10873.webp" alt="When Validation Stops Learning: Auditing Update Admission for Continual Embodied Agents" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对持续具身智能体的策略更新准入问题，指出传统独立验证机制在拦截有害策略更新的同时可能阻碍有效持续学习，主张准入评估需同时兼顾误差控制与保留的…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">When Validation Stops Learning: Auditing Update Admission for Continual Embodied Agents</h1>
+            <div class="detail-meta">2026-09-09 · <a href="http://arxiv.org/abs/2609.10873" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.10873" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.10873</span></div>
+            <p class="detail-summary">针对持续具身智能体的策略更新准入问题，指出传统独立验证机制在拦截有害策略更新的同时可能阻碍有效持续学习，主张准入评估需同时兼顾误差控制与保留的学习机会，并在给定交互预算下完成度量 揭示现有基于范围的置信门控的核心缺陷：即使在较大交互预算下，也无法在有限样本内证明旧任务行为未发生改变，会错误拒绝大量有效更新，导致学习过程停滞 提出配套的准入审计协议，包含针对低分歧场景的改进准入规则、历史参考策略提升机制、轮次级错失机…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Qinzhen Ma 所属机构为 Rice University（莱斯大学）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.10873/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对持续具身智能体的策略更新准入问题，指出传统独立验证机制在拦截有害策略更新的同时可能阻碍有效持续学习，主张准入评估需同时兼顾误差控制与保留的…</p>
+  <ul class="reading-intro-points"><li>针对持续具身智能体的策略更新准入问题，指出传统独立验证机制在拦截有害策略更新的同时可能阻碍有效持续学习，主张准入评估需同时兼顾误差控制与保留的…</li><li>揭示现有基于范围的置信门控的核心缺陷：即使在较大交互预算下，也无法在有限样本内证明旧任务行为未发生改变，会错误拒绝大量有效更新，导致学习过程停滞</li><li>提出配套的准入审计协议，包含针对低分歧场景的改进准入规则、历史参考策略提升机制、轮次级错失机会度量方法，用于量化准入流程的实际学习成本与效果</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Qinzhen Ma</strong> 所属机构为 <strong>Rice University（莱斯大学）</strong></li><li><strong>Ruihai Wu</strong> 所属机构为 <strong>University of California, Berkeley（加州大学伯克利分校）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对持续具身智能体的策略更新准入问题，指出传统独立验证机制在拦截有害策略更新的同时可能阻碍有效持续学习，主张准入评估需同时兼顾误差控制与保留的学习机会，并在给定交互预算下完成度量</li><li>揭示现有基于范围的置信门控的核心缺陷：即使在较大交互预算下，也无法在有限样本内证明旧任务行为未发生改变，会错误拒绝大量有效更新，导致学习过程停滞</li><li>提出配套的准入审计协议，包含针对低分歧场景的改进准入规则、历史参考策略提升机制、轮次级错失机会度量方法，用于量化准入流程的实际学习成本与效果</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出持续具身智能体准入审计的新范式：主张评估需同时覆盖准入误差控制与学习机会保留，而非仅拦截有害更新</li><li>揭示传统基于范围的置信门控在有限预算下的根本缺陷：理论证明其即使面对旧任务零分歧的场景，也需要数千次交互才能通过行为保持性验证，会完全拒绝有效更新</li><li>提出利用配对分歧的改进准入规则：基于配对二项分布构造置信区间，将零分歧场景的验证样本需求降低一个数量级，在相同预算下可接纳大量有效更新</li><li>设计可保障性能的历史参考策略提升机制与轮次级错失机会度量指标，完善准入审计的评估与长期学习保障体系</li><li>通过构造的诊断任务与代理反馈压力测试，验证了准入规则的有效性，并证明新鲜代理反馈无法替代真实环境的独立验证，无法消除选择乐观偏差</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于持续策略学习框架设计准入流程：策略参数跨任务批次保留，结合有界演示回放与历史参考策略，支持跨任务的持续适配同时避免灾难性遗忘</li><li>准入合同设计：针对每个待验证任务，预定义新策略与当前 incumbent 策略、历史参考策略的成功率差异阈值，固定样本量、误差分配与任务集合后开展验证</li><li>核心准入规则：采用<strong>配对二项式置信区间（Clopper-Pearson）</strong>计算新旧策略成功率差异的上下界，通过三路决策规则判定：所有差异下界高于对应阈值则接受更新，任一差异上界低于阈值则拒绝更新，否则推迟准入</li><li>关键技术1：利用新旧策略的配对分歧信息替代传统仅依赖单策略输出范围的验证方式，在旧任务零分歧时将所需验证样本从Hoeffding的4229对降至117对（3任务、首次尝试、δ=ε=0.05场景）</li><li>关键技术2：历史参考策略提升规则：仅当参考策略与当前策略的性能差异置信下界非负时，才将当前策略提升为新参考，确保参考序列性能非降，未来被接受的策略始终优于当前参考</li><li>关键技术3：轮次级错失机会度量：以存在至少满足合同要求的候选的轮次为单位统计错失比例，避免候选级别统计的误导，准确反映准入流程的实际学习成本</li><li>额外提供方差感知的经验伯恩斯坦置信门控作为对比基线，适配通用有界分数场景的验证需求</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的环境为<strong>构造的一步推动模拟器</strong>：包含10个连续到达的移动任务，任务身份已知，无接触几何、感知或多步规划的复杂因素，未进行物理机器人或视觉-语言-动作（VLA）模型的真实验证</li><li>模型规模：策略为简单线性参数化模型，无大规模预训练模型，世界模型为线性动力学代理，参数量极小</li><li>训练资源：全程仅使用CPU，无GPU/TPU等加速设备，完整评估（包含穷举审计）总耗时50.9秒</li><li>数据规模：每个任务的审计种群包含4096次独立重置，开发集为64次重置，专家演示数据为32次动作，动力学预训练探针为320次，所有数据均为合成生成</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：构造的一步推动诊断任务（包含256次更新尝试，32个独立随机种子），以及单独的线性动力学代理反馈压力测试环境</li><li>主要评估指标：<strong>准入覆盖率（Adopt）</strong>、<strong>合同违规率（Violate）</strong>、<strong>错失机会率（Miss）</strong>、最终任务成功率（Final success）、遗忘率（Forget），以及资源成本（检查用episodes、代理预测次数、候选审计次数）</li><li>关键实验结果：</li></ul>
+<p> - 在B=2000的交互预算下，配对准入规则接纳了37.1%的有效更新，而传统Hoeffding门控和伯恩斯坦门控的接纳率为0%，完全错失所有学习机会；直接微调的违规率高达99.6%，遗忘率达79.9个百分点，无准入保护的重放更新无遗忘但存在5.9%的最低增益违规</p>
+<p> - 配对规则在整个测试中未观察到任何合同违规，证明其在低分歧场景下的可靠性</p>
+<p> - 代理反馈压力测试证明：即使使用新鲜的代理反馈，选择过程仍存在显著乐观偏差（在c=0.35的动力学偏差下，自适应搜索的代理-真实性能差距达40.9个百分点），新鲜代理反馈无法替代真实环境的独立验证</p>
+<p> - 移除代理筛选的配对规则性能与带代理的版本几乎无差异，说明多智能体编排或代理预筛选并非准入流程的必要组件</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.10915/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">IMLE-VLA: Fast Single-Step Action Generation for Vision-Language-Action Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.10706/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">HuRo: Robotizing Human Videos for Scalable VLA Pretraining</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

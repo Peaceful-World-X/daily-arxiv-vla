@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有长期机器人操作系统中任务记忆归属模糊、多工具系统性能归因困难、语言接口不精确导致动作模型能力被低估的问题，提出2AM框架，通过 deliberately constrained 的设计（更少的工具宽度、更高的接口带宽）隔离上述变量 框架将持久任务记忆完全保留在多模态Agent侧，仅使用单一RGB输入、无 episode 状态的动作模型执行所有任务相关运动，明确两者的职责边界 设计组合式 steer 接口，将…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.11308">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.11308.webp" alt="2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有长期机器人操作系统中任务记忆归属模糊、多工具系统性能归因困难、语言接口不精确导致动作模型能力被低估的问题，提出2AM框架，通过 del…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation</h1>
+            <div class="detail-meta">2026-09-10 · <a href="http://arxiv.org/abs/2609.11308" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.11308" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.11308</span></div>
+            <p class="detail-summary">针对现有长期机器人操作系统中任务记忆归属模糊、多工具系统性能归因困难、语言接口不精确导致动作模型能力被低估的问题，提出2AM框架，通过 deliberately constrained 的设计（更少的工具宽度、更高的接口带宽）隔离上述变量 框架将持久任务记忆完全保留在多模态Agent侧，仅使用单一RGB输入、无 episode 状态的动作模型执行所有任务相关运动，明确两者的职责边界 设计组合式 steer 接口，将…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">KU Leuven：机械工程系机器人、自动化与机电一体化研究中心；电气工程系语音与图像处理研究中心；F…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.11308/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有长期机器人操作系统中任务记忆归属模糊、多工具系统性能归因困难、语言接口不精确导致动作模型能力被低估的问题，提出2AM框架，通过 del…</p>
+  <ul class="reading-intro-points"><li>针对现有长期机器人操作系统中任务记忆归属模糊、多工具系统性能归因困难、语言接口不精确导致动作模型能力被低估的问题，提出2AM框架，通过 del…</li><li>框架将持久任务记忆完全保留在多模态Agent侧，仅使用单一RGB输入、无 episode 状态的动作模型执行所有任务相关运动，明确两者的职责边界</li><li>设计组合式 steer 接口，将Agent记忆中的物理意图转化为子任务语言配合可选的2D抓取、放置、移动提示，在不传递完整交互历史的前提下指导…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>KU Leuven</strong>：机械工程系机器人、自动化与机电一体化研究中心；电气工程系语音与图像处理研究中心；Flanders Make@KU Leuven</li><li><strong>Meituan Inc.</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有长期机器人操作系统中任务记忆归属模糊、多工具系统性能归因困难、语言接口不精确导致动作模型能力被低估的问题，提出2AM框架，通过 deliberately constrained 的设计（更少的工具宽度、更高的接口带宽）隔离上述变量</li><li>框架将持久任务记忆完全保留在多模态Agent侧，仅使用单一RGB输入、无 episode 状态的动作模型执行所有任务相关运动，明确两者的职责边界</li><li>设计组合式 steer 接口，将Agent记忆中的物理意图转化为子任务语言配合可选的2D抓取、放置、移动提示，在不传递完整交互历史的前提下指导动作模型完成长期操作任务</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出仅RGB输入的智能体系统设定，将任务记忆完全保留在Agent侧，所有任务相关运动由单一无 episode 状态的动作模型执行，实现记忆与控制的清晰边界隔离</li><li>设计组合式 steer 接口，将Agent的记忆意图转化为带2D grounding的抓取、放置、移动提示，分别绑定不同时间尺度的物理参数，支持字段的独立缺失而不影响整体指令有效性</li><li>提出无需教师模型的演示监督恢复方法，通过结构化提示丢弃、空间噪声、时间抖动对动作模型进行训练，使其能容忍Agent输出的遗漏、定位误差和时间偏差</li><li>在LIBERO-Mem基准上验证了该设计的有效性，证明任务记忆可以完全保留在Agent侧，通过精确的 steer 接口即可驱动动作模型完成长期操作</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用双模型分解架构：Agent模型整合交互历史H_k、当前任务指令g和 agent 视角RGB，输出组合式 steer 指令c_k；动作模型仅接收当前 agent 视角RGB、手腕RGB、机器人状态和c_k，预测16步绝对末端执行器动作，无任务历史输入，实现 episode 级无状态</li><li>训练阶段从演示数据中自动恢复监督标签，无需额外教师模型：通过演示的阶段标签、物体框/掩码、接触点、物体运动和投影机器人轨迹，生成子任务语言、抓取/放置目标的归一化2D坐标、移动目标的10-20步未来窗口坐标</li><li>引入三类训练增强提升接口鲁棒性：约束式提示丢弃（保证至少保留一个指令字段，各字段可独立缺失）、坐标高斯噪声、移动提示的未来时间窗口采样，使用流匹配目标训练基于<strong>Qwen3-VL-4B</strong>骨干的动作模型</li><li>推理阶段采用闭环执行：每执行完一个动作块，Agent观察新的RGB更新交互历史，重新生成 steer 指令，无需额外的 benchmark 状态或完成判断模块</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：<strong>LIBERO-Mem</strong>长期机器人操作基准，包含10个任务，覆盖物体运动（M）、序列（S）、关系（R）、遮挡（O）四类挑战，任务从单次举放、重复放置到碗排序、基于篮子 Occupancy 的条件放置等</li><li>模型规模：动作模型骨干为<strong>Qwen3-VL-4B</strong>，Agent模型为<strong>Qwen3.8-27B</strong></li><li>训练资源：论文未明确说明具体使用的GPU/TPU等硬件资源</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：<strong>LIBERO-Mem</strong>模拟基准，对比基线包括已发布的π₀、SlotVLA、SlotSSM，以及自研对齐复现的π₀（同骨干、同输入、同16步动作块长度，无 steer 接口），同时设置仅保留子任务语言的语言-only消融实验</li><li>评估指标：严格成功率（Strict SR，要求完整按顺序完成任务且无多余重复）、宽松成功率（Relaxed SR，忽略任务超出的重复）、子目标完成率（Completion，衡量有序子目标的完成比例）</li><li>关键实验结果：2AM平均完成率达76.3%，比最强已报告基线SlotSSM的14.8%提升61.5个百分点；比对齐复现的π₀（70.79%完成率）提升5.5个百分点，宽松成功率提升25.58个百分点（37.42%→63.0%），严格成功率与复现π₀接近（11.83% vs 12.25%）；语言-only消融的完成率仅为53.72%，证明组合式2D提示的显著增益；在涉及关系和遮挡的T7-T10任务上2AM表现优于复现π₀，简单序列任务T1-T6的严格成功率略低于复现π₀</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.11310/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Your Model Already Knows Don&#x27;t Teach It, Learn to Ask It: Soft Prompting for Few-Shot Adaptation of Vision-Language Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.10915/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">IMLE-VLA: Fast Single-Step Action Generation for Vision-Language-Action Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
