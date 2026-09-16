@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 FluxVLA Engine 这一开源、配置驱动的具身智能工程平台，并非提出新的策略模型，旨在解决将现有视觉-语言-动作（VLA）模型、世界-动作模型（WAM）、离线强化学习算法转化为可靠机器人系统时的工程碎片化问题 平台覆盖数据预处理、模型构建、分布式训练、仿真评估、推理优化、轨迹后处理、真实机器人部署的全生命周期，解决不同算法实现间数据集格式、训练栈、评估协议、推理运行时、本体接口不统一导致的复现难、迭代…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.17210">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.17210.webp" alt="FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 FluxVLA Engine 这一开源、配置驱动的具身智能工程平台，并非提出新的策略模型，旨在解决将现有视觉-语言-动作（VLA）模型、…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence</h1>
+            <div class="detail-meta">2026-09-15 · <a href="http://arxiv.org/abs/2609.17210" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.17210" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.17210</span></div>
+            <p class="detail-summary">提出 FluxVLA Engine 这一开源、配置驱动的具身智能工程平台，并非提出新的策略模型，旨在解决将现有视觉-语言-动作（VLA）模型、世界-动作模型（WAM）、离线强化学习算法转化为可靠机器人系统时的工程碎片化问题 平台覆盖数据预处理、模型构建、分布式训练、仿真评估、推理优化、轨迹后处理、真实机器人部署的全生命周期，解决不同算法实现间数据集格式、训练栈、评估协议、推理运行时、本体接口不统一导致的复现难、迭代…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">LimX Dynamics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.17210/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 FluxVLA Engine 这一开源、配置驱动的具身智能工程平台，并非提出新的策略模型，旨在解决将现有视觉-语言-动作（VLA）模型、…</p>
+  <ul class="reading-intro-points"><li>提出 FluxVLA Engine 这一开源、配置驱动的具身智能工程平台，并非提出新的策略模型，旨在解决将现有视觉-语言-动作（VLA）模型、…</li><li>平台覆盖数据预处理、模型构建、分布式训练、仿真评估、推理优化、轨迹后处理、真实机器人部署的全生命周期，解决不同算法实现间数据集格式、训练栈、评…</li><li>目标是搭建连接离线学习、仿真验证、在线修正和真机执行的闭环工程循环，让具身智能研究算法可以稳定复现、标准化评估并迭代式部署到物理机器人</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>LimX Dynamics</li><li>南开大学（Nankai University）</li><li>香港大学（The University of Hong Kong）</li><li>电子科技大学（University of Electronic Science and Technology of China）</li><li>北京理工大学（Beijing Institute of Technology）</li><li>西安电子科技大学（Xidian University）</li><li>浙江大学（Zhejiang University）</li><li>西安交通大学（Xi’an Jiaotong University）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>FluxVLA Engine</strong> 这一开源、配置驱动的具身智能工程平台，并非提出新的策略模型，旨在解决将现有视觉-语言-动作（VLA）模型、世界-动作模型（WAM）、离线强化学习算法转化为可靠机器人系统时的工程碎片化问题</li><li>平台覆盖数据预处理、模型构建、分布式训练、仿真评估、推理优化、轨迹后处理、真实机器人部署的全生命周期，解决不同算法实现间数据集格式、训练栈、评估协议、推理运行时、本体接口不统一导致的复现难、迭代慢、部署难的核心痛点</li><li>目标是搭建连接离线学习、仿真验证、在线修正和真机执行的闭环工程循环，让具身智能研究算法可以稳定复现、标准化评估并迭代式部署到物理机器人</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>统一的配置驱动具身策略工作流：单个配置即可连接数据处理、模型构建、优化、评估、部署全流程，原生支持VLA、WAM和离线策略类算法</li><li>模块化可扩展的系统架构：基于类型注册表的接口解耦数据、模型、执行、服务、机器人操作层组件，新方法可复用共享工作流，无需重复搭建全流程代码</li><li>面向部署的优化执行栈：统一运行时兼容仿真与真机执行、本地与远程推理，集成GPU推理加速、实时分块（RTC）、轨迹后处理能力，实现跨本体的高效连续控制</li><li>可复现的实验流水线：通过标准化实验产物、可恢复训练、确定性控制、结构化评估机制，提升跨模型、基准和部署环境的实验结果复现性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体采用<strong>配置驱动+注册表</strong>的设计范式，将系统拆分为数据层、模型层、执行层、服务层、操作层五个独立模块，通过显式契约隔离不同组件的实现差异，避免模型特定逻辑 propagated 到全栈</li><li>数据管道：兼容<strong>LeRobot</strong> v2.1/v3格式的Parquet存储，内置ALOHA等多源数据集的转换工具，支持Episode感知的时间采样、统一规范样本表示、多源数据混合采样与批处理，保证训练与闭环推理的预处理语义一致</li><li>模型架构：提供可配置的模型图接口，支持分解式VLM、集成VLM、动作专家、时序/世界动作模型等多种异构策略架构的原生保留，同时统一训练、预测、分布式包装的契约，不强制统一不同算法的内部结构</li><li>仿真评估：采用注册式评估器重建训练实验的闭环环境，支持<strong>LIBERO</strong>、<strong>RoboCasa</strong>等基准的分布式执行，保留任务级、试验级、回放级可审计产物，隔离基准特定逻辑与通用模型接口</li><li>真机推理：定义四阶段runner契约（观测预处理、动作预测、后处理、轨迹执行），分离策略侧推理逻辑与硬件侧操作逻辑，支持本地GPU推理和基于ZeroMQ的远程GPU推理，内置观测时间戳同步、本体感知动作转换、安全边界机制</li><li>推理加速：允许通过配置选择推理专用模块替换训练模块，在保持训练权重不变的前提下，结合Triton算子融合、定制CUDA算子、CUDA Graph重放等技术降低推理延迟，不改变策略的外部行为</li><li>实时分块（RTC）：同时支持训练时RTC（训练阶段模拟推理延迟，推理时基于已知动作前缀预测）和测试时RTC（推理阶段通过向量-雅可比积引导或低代价直接近似保证分块连续性），解决异步推理时动作分块边界不连续问题</li><li>轨迹后处理：采用关节空间有限时域优化、加加速度限幅滤波、跨分块拼接等技术，对预测动作做执行侧适配，保证动作满足本体运动约束</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>存储与数据集：兼容<strong>LeRobot</strong> v2.1/v3格式的Parquet数据存储，内置ALOHA等数据集的转换工具，支持多源异构机器人轨迹的统一 ingest</li><li>模型支持：原生支持多种主流VLA、WAM模型，包括<strong>OpenVLA</strong>、<strong>π₀</strong>、<strong>π₀.₅</strong>、<strong>GR00T N1</strong>、<strong>SmolVLA</strong>、<strong>DreamZero</strong>、<strong>DiT4DiT</strong>、<strong>FastWAM</strong>等，无统一固定参数量，适配异构模型结构</li><li>训练与推理资源：分布式训练支持FSDP并行策略；推理端支持CUDA加速、Triton算子融合、CUDA Graph重放，支持本地GPU部署和远程GPU服务（基于ZeroMQ通信），可适配多GPU训练与推理场景</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真评估采用<strong>LIBERO</strong>和<strong>RoboCasa GR-1 Tabletop</strong>两个主流具身操作基准，真机评估支持Tron2、Franka等多款机器人的操作器集成</li><li>主要评估指标：仿真侧核心指标为闭环任务成功率，同时评估端到端控制频率、单步推理延迟、动作空间误差、轨迹平滑度等；真机侧评估部署可行性与执行稳定性</li><li>关键实验结果：</li></ul>
+<p> - 在LIBERO和RoboCasa GR-1基准上完成了8种不同策略的闭环评估，取得了有竞争力的任务成功率</p>
+<p> - 推理加速技术在保持动作空间误差与轨迹行为一致的前提下，显著降低了单步推理延迟，支持高频控制场景</p>
+<p> - 实时分块（RTC）机制有效缓解了异步推理场景下的动作分块边界不连续问题，保证动作执行的平滑性</p>
+<p> - 轨迹后处理技术在不大幅降低任务成功率的前提下，满足执行侧的加加速度等运动约束</p>
+<p> - 验证了平台从离线训练、仿真评估到真机部署的完整闭环可行性，实现了具身策略从算法研究到工程落地的标准化路径</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2609.17115/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Intrinsic Robot Rewarding: Reusing VLA Representations for Autonomous Evaluation and Policy Improvement</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
