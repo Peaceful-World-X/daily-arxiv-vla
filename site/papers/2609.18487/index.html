@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ActionPiece: Rethinking Action Tokenization for Autoregressive Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="聚焦自回归视觉-语言-动作（VLA）模型的核心组件动作分词器，现有分词器仅通过点重建指标（如MSE）评估 fidelity，忽略了压缩后动作块间相对物理关系的保持，导致不同场景下的动作调整被扭曲、衰减甚至反转，影响机器人执行精度 提出物理排序一致性（PRC）评估指标，衡量分词器重建后局部物理距离排序的保持程度，补充传统点重建评估的不足 提出ActionPiece动作分词器，通过联合监督表征学习与量化过程，在重建精度…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.18487">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.18487.webp" alt="ActionPiece: Rethinking Action Tokenization for Autoregressive Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">聚焦自回归视觉-语言-动作（VLA）模型的核心组件动作分词器，现有分词器仅通过点重建指标（如MSE）评估 fidelity，忽略了压缩后动作块…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ActionPiece: Rethinking Action Tokenization for Autoregressive Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-09-16 · <a href="http://arxiv.org/abs/2609.18487" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.18487" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.18487</span></div>
+            <p class="detail-summary">聚焦自回归视觉-语言-动作（VLA）模型的核心组件动作分词器，现有分词器仅通过点重建指标（如MSE）评估 fidelity，忽略了压缩后动作块间相对物理关系的保持，导致不同场景下的动作调整被扭曲、衰减甚至反转，影响机器人执行精度 提出物理排序一致性（PRC）评估指标，衡量分词器重建后局部物理距离排序的保持程度，补充传统点重建评估的不足 提出ActionPiece动作分词器，通过联合监督表征学习与量化过程，在重建精度…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">华中科技大学</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.18487/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">聚焦自回归视觉-语言-动作（VLA）模型的核心组件动作分词器，现有分词器仅通过点重建指标（如MSE）评估 fidelity，忽略了压缩后动作块…</p>
+  <ul class="reading-intro-points"><li>聚焦自回归视觉-语言-动作（VLA）模型的核心组件动作分词器，现有分词器仅通过点重建指标（如MSE）评估 fidelity，忽略了压缩后动作块…</li><li>提出物理排序一致性（PRC）评估指标，衡量分词器重建后局部物理距离排序的保持程度，补充传统点重建评估的不足</li><li>提出ActionPiece动作分词器，通过联合监督表征学习与量化过程，在重建精度的同时保持动作间的物理关系，提升下游VLA策略的执行性能</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>华中科技大学</li><li>中关村学院</li><li>DeepCybo</li><li>哈尔滨工业大学</li><li>北京航空航天大学</li><li>香港科技大学（广州）</li><li>郑州大学</li><li>中关村人工智能研究院</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>聚焦自回归视觉-语言-动作（VLA）模型的核心组件<strong>动作分词器</strong>，现有分词器仅通过点重建指标（如MSE）评估 fidelity，忽略了压缩后动作块间相对物理关系的保持，导致不同场景下的动作调整被扭曲、衰减甚至反转，影响机器人执行精度</li><li>提出<strong>物理排序一致性（PRC）</strong>评估指标，衡量分词器重建后局部物理距离排序的保持程度，补充传统点重建评估的不足</li><li>提出<strong>ActionPiece</strong>动作分词器，通过联合监督表征学习与量化过程，在重建精度的同时保持动作间的物理关系，提升下游VLA策略的执行性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>引入PRC指标，用于衡量动作分词器对局部物理距离排序的保持能力，可与点重建精度互补，支持跨分词器、跨解码器架构的公平比较</li><li>开发ActionPiece分词器，通过<strong>物理排序保持（PRP）</strong>和<strong>量化正则化（QR）</strong>两个目标，将物理顺序监督分别作用于编码器特征距离与码字分配分布，为自回归VLA策略构建高质量离散动作表示</li><li>在LIBERO、LIBERO-Plus、SimplerEnv、VLA-Arena四个基准上开展系统性评估，结合控制对比与组件消融，验证物理关系监督对动作表示质量与机器人执行效果的正向作用</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>ActionPiece基于浅层Transformer编解码器与<strong>残差向量量化（RVQ）</strong>构建，每个8步的动作块被压缩为16个离散token，可通过冻结的解码器完整重建为可执行动作块</li><li>定义<strong>物理动作距离</strong>，结合平移误差、SO(3)上的最短测地旋转角度、夹爪状态差异，加权计算动作块间的物理距离，作为近-远排序的监督依据</li><li>核心训练目标包括四项：重建MSE损失、码字承诺损失、物理排序保持（PRP）损失（对齐编码器特征与量化特征的物理距离排序）、量化正则化（QR）损失（对齐码字分配分布的Jensen-Shannon散度排序），四项损失加权联合优化</li><li>训练完成后冻结分词器，将离散token索引加入VLM词表，通过标准下一token预测训练VLA策略，解码预测的token序列即可生成可执行动作</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>分词器训练数据集：<strong>LIBERO</strong>仿真人类遥操作动作数据、<strong>VLA-Arena</strong>仿真键盘遥操作L0动作数据、<strong>BridgeData V2</strong>真实WidowX机器人动作数据，不同数据集对应采样频率为20Hz、10Hz、5Hz</li><li>模型规模：下游VLA策略采用<strong>Qwen3-VL-4B</strong>作为视觉-语言 backbone，ActionPiece分词器为轻量Transformer结构，输出长度为16个离散token对应8步动作块</li><li>训练资源：分词器训练采用AdamW优化器，学习率1×10⁻⁴，batch size 128，训练100K步；策略训练使用8块<strong>NVIDIA RTX PRO 6000 GPU</strong>，AdamW优化器初始学习率1×10⁻⁵，余弦退火调度，搭配DeepSpeed ZeRO-2、梯度裁剪（最大范数1.0），无梯度累积</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：涵盖同分布仿真基准<strong>LIBERO</strong>、分布外仿真基准<strong>LIBERO-Plus</strong>（7种未见扰动）、真实到仿真迁移基准<strong>SimplerEnv</strong>、难度递增仿真基准<strong>VLA-Arena</strong>（L0-L2）</li><li>主要评估指标：分词器层面为重建MSE、<strong>PRC@32</strong>（物理排序一致性）；策略层面为任务成功率（SR）、累积成本（CC，越低越好）</li><li>关键实验结果：</li></ul>
+<p> - 在LIBERO上达到94.8%的策略成功率，超过最强基线1.1个百分点；在LIBERO-Plus上达到68.8%的成功率，超过最强基线4.5个百分点，在7种扰动类别中的6种领先</p>
+<p> - 在SimplerEnv真实到仿真迁移任务中达到71.9%的平均成功率，为所有评估方法最高，在需要精确放置的积木堆叠任务上表现突出</p>
+<p> - 在VLA-Arena L0-L2难度下达到51.5%的平均成功率，累积成本低于多数基线</p>
+<p> - 相关性分析显示PRC与策略成功率的Spearman相关系数为0.681，高于重建MSE的0.544，证明物理关系保持对下游策略性能的正向作用更强</p>
+<p> - 组件消融实验验证PRP和QR两个物理监督目标可共同提升PRC指标与下游策略成功率</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.18497/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">TAO-Force: Unifying Force-Aware Perception and Fast-Slow Control for Contact-Rich Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.18435/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">WetRobo: A Reproducible Robot Kit for Coding Agents in Biological Laboratories</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

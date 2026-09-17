@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DistAL: Distance-based Advantage Learning for VLA Fine-Tuning - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文提出DistAL（基于距离的优势学习）方法，作为视觉-语言-动作模型（VLA）微调 pipeline 的即插即用替代方案，通过基于SigLIP特征空间k近邻距离的密集奖励，替换现有优势条件方法使用的稀疏成功/失败奖励 解决的核心问题是：现有优势条件VLA微调方法仅使用低信息量的二值奖励，导致训练的价值函数只能区分任务进度，无法识别不同质量的中间状态，信用分配噪声大，限制了微调后的任务成功率 研究目标是不引入额外…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.18392">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.18392.webp" alt="DistAL: Distance-based Advantage Learning for VLA Fine-Tuning" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文提出DistAL（基于距离的优势学习）方法，作为视觉-语言-动作模型（VLA）微调 pipeline 的即插即用替代方案，通过基于SigL…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">DistAL: Distance-based Advantage Learning for VLA Fine-Tuning</h1>
+            <div class="detail-meta">2026-09-16 · <a href="http://arxiv.org/abs/2609.18392" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.18392" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.18392</span></div>
+            <p class="detail-summary">本文提出DistAL（基于距离的优势学习）方法，作为视觉-语言-动作模型（VLA）微调 pipeline 的即插即用替代方案，通过基于SigLIP特征空间k近邻距离的密集奖励，替换现有优势条件方法使用的稀疏成功/失败奖励 解决的核心问题是：现有优势条件VLA微调方法仅使用低信息量的二值奖励，导致训练的价值函数只能区分任务进度，无法识别不同质量的中间状态，信用分配噪声大，限制了微调后的任务成功率 研究目标是不引入额外…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">牛津大学机器人研究所（Oxford Robotics Institute, University of…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.18392/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文提出DistAL（基于距离的优势学习）方法，作为视觉-语言-动作模型（VLA）微调 pipeline 的即插即用替代方案，通过基于SigL…</p>
+  <ul class="reading-intro-points"><li>本文提出DistAL（基于距离的优势学习）方法，作为视觉-语言-动作模型（VLA）微调 pipeline 的即插即用替代方案，通过基于SigL…</li><li>解决的核心问题是：现有优势条件VLA微调方法仅使用低信息量的二值奖励，导致训练的价值函数只能区分任务进度，无法识别不同质量的中间状态，信用分配…</li><li>研究目标是不引入额外人工干预、不设计任务特定奖励的前提下，提升VLA在仿真和真实操作任务中的泛化与成功率</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>牛津大学机器人研究所（Oxford Robotics Institute, University of Oxford, UK）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文提出<strong>DistAL（基于距离的优势学习）</strong>方法，作为视觉-语言-动作模型（VLA）微调 pipeline 的即插即用替代方案，通过基于SigLIP特征空间k近邻距离的密集奖励，替换现有优势条件方法使用的稀疏成功/失败奖励</li><li>解决的核心问题是：现有优势条件VLA微调方法仅使用低信息量的二值奖励，导致训练的价值函数只能区分任务进度，无法识别不同质量的中间状态，信用分配噪声大，限制了微调后的任务成功率</li><li>研究目标是不引入额外人工干预、不设计任务特定奖励的前提下，提升VLA在仿真和真实操作任务中的泛化与成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>系统对比了5种分布外（OOD）检测方法作为VLA任务失败预测器的效果，在轨迹级和单时间步层面均验证了基座VLA的SigLIP特征空间k近邻距离是最优的失败预测信号</li><li>开展受控实验将kNN特征距离作为密集奖励用于优势条件学习，固定其余pipeline不变以隔离奖励设计的影响，同时明确了方法仅在失败模式与成功模式视觉可区分时生效的假设边界</li><li>在<strong>LIBERO</strong>、<strong>LIBERO-plus</strong>仿真基准以及真实双机械臂灵巧操作任务上验证了方法的有效性，成功率优于基座策略和现有二值奖励的优势条件基线</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>技术实现：完全复用现有优势条件VLA微调流程，仅替换奖励信号：使用冻结的基座VLA微调后的<strong>SigLIP</strong>视觉编码器提取观测图像特征，计算每个观测到VLA训练集特征索引的k近邻（k=10）欧氏距离，取负值并归一化到[-1,0]作为每步密集奖励，同时保留原有任务失败的终端惩罚</li><li>创新点：首次将OOD检测领域的kNN特征距离信号作为密集奖励用于VLA优势条件微调，无需人工设计任务特定奖励，也无需额外的人工干预数据，可直接接入现有pipeline</li><li>关键实现细节：价值函数由270M参数的<strong>Gemma3</strong>语言模型、400M参数的SigLIP视觉编码器和2层MLP头组成，预测离散化回报分类分布；VLA仅微调300M参数的光滑匹配动作专家，冻结<strong>PaliGemma</strong>主干；优势标签通过向语言输入追加"Advantage: positive/negative"文本注入，推理时采用分类器自由引导提升性能</li><li>训练流程分为三步：首先用kNN距离为所有部署观测打分并生成每步奖励；然后基于蒙特卡洛回报拟合价值函数，计算优势后生成二值优势标签；最后用分类器自由引导微调VLA，推理时以高权重引导策略输出高优势动作</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO-10</strong>（10个长时序操作任务）、<strong>LIBERO-plus</strong>（含布局、相机、光照、初始化、噪声、语言、纹理7类扰动的鲁棒性基准）</li><li>真实硬件数据集：双Piper机械臂的2个接触丰富灵巧操作任务（remove pen lid、remove ethernet cable），每个任务包含50条人工演示轨迹（用于基座微调）和50条自主部署轨迹（用于优势条件训练）</li><li>模型规模：基座VLA为<strong>π₀.₅</strong>，包含3B参数的PaliGemma VLM和300M参数的光滑匹配动作专家；价值函数总参数量约670M</li><li>训练资源：原文未明确说明具体GPU/TPU等训练硬件配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：LIBERO-10、LIBERO-plus仿真环境，双Piper机械臂真实硬件平台</li><li>评估指标：轨迹级/单时间步级AUROC（评估失败预测能力）、任务成功率</li><li>关键实验结果：</li></ul>
+<p> - 失败预测任务中，kNN SigLIP特征距离的轨迹级AUROC均值为0.82，单时间步级均值为0.67，优于VAE似然、马氏距离、LM后图像token距离、动作块方差等对比方法</p>
+<p> - 仿真任务中，DistAL在LIBERO-10上成功率达96.2%，LIBERO-plus平均成功率78.4%，比基座π₀.₅高3.3%，比二值奖励RECAP基线高1.2%；在Camera、Texture等视觉偏移大的扰动类型上提升最显著，最高达100%成功率</p>
+<p> - 仅用成功轨迹微调的SFT基线与基座π₀.₅性能无显著差异（平均成功率75.1% vs 74.8%），说明优势条件方法的增益来自价值函数的学习，而非数据筛选</p>
+<p> - 真实硬件任务中，拔以太网线任务DistAL成功率87%，远高于基座的46%和二值奖励的72%；拔笔盖任务成功率52%，高于基座的42%，与二值奖励基线无统计显著差异；整体平均成功率69.5%，优于基座的44%和二值奖励的60%</p>
+<p> - 方法性能与失败模式的视觉可区分性正相关：视觉可区分的失败模式（如以太网线未拔掉）提升明显，触觉类失败（如笔盖打滑）或视觉无变化的失败模式下无明显增益</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.18435/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">WetRobo: A Reproducible Robot Kit for Coding Agents in Biological Laboratories</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.18374/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Decoupling Vision, Language, and Action for Efficient Multi-Task Robot Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,5 +1,491 @@
 [
   {
+    "date": "2026-09-16",
+    "title": "rMuscle: Robotic Muscle Memory for Efficient Vision-Language-Action Model Inference",
+    "link": "http://arxiv.org/abs/2609.19104",
+    "arxiv_id": "2609.19104",
+    "detail_path": "papers/2609.19104/",
+    "cover_path": "covers/2609.19104/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.19104.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）模型推理框架未充分利用具身工作负载特征，也未考虑VLA推理不同阶段的异构瓶颈，导致推理延迟高，影响机器人的响应速度与运动平滑度。 提出rMuscle实时VLA推理框架，模仿人体肌肉记忆机制，利用具身任务重复执行时的跨执行相似性（包括观测、动作轨迹及内部模型状态）加速推理。 核心目标是在不损失任务成功率的前提下，显著降低VLA推理延迟，适配工厂等具身场景的实时性需求。",
+    "research_unit": "上海交通大学并行与分布式系统研究所（Institute of Parallel and Distrib…",
+    "hook_text": "现有视觉-语言-动作（VLA）模型推理框架未充分利用具身工作负载特征，也未考虑VLA推理不同阶段的异构瓶颈，导致推理延迟高，影响机器人的响应速…",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）模型推理框架未充分利用具身工作负载特征，也未考虑VLA推理不同阶段的异构瓶颈，导致推理延迟高，影响机器人的响应速…",
+      "提出rMuscle实时VLA推理框架，模仿人体肌肉记忆机制，利用具身任务重复执行时的跨执行相似性（包括观测、动作轨迹及内部模型状态）加速推理。",
+      "核心目标是在不损失任务成功率的前提下，显著降低VLA推理延迟，适配工厂等具身场景的实时性需求。"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "VLA-ULAP: Interleaving Cloud VLA Calls with Ultra-Lightweight Local Action Prediction at the Edge",
+    "link": "http://arxiv.org/abs/2609.18663",
+    "arxiv_id": "2609.18663",
+    "detail_path": "papers/2609.18663/",
+    "cover_path": "covers/2609.18663/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18663.webp",
+    "preview_text": "针对十亿参数级视觉-语言-动作（VLA）策略在边缘设备部署时的高能耗、远程推理延迟大的核心问题，提出VLA-ULAP混合推理框架 框架交替执行远程云VLA调用与边缘设备的超轻量本地动作预测，无需修改基础VLA模型，实现低功耗、低延迟与高任务成功率的平衡 同时验证框架在仿真与真实机器人场景的有效性，并探索风险感知调度机制进一步提升动态场景下的任务表现",
+    "research_unit": "论文作者所属机构为 The University of Tokyo 和 Institute of Sc…",
+    "hook_text": "针对十亿参数级视觉-语言-动作（VLA）策略在边缘设备部署时的高能耗、远程推理延迟大的核心问题，提出VLA-ULAP混合推理框架",
+    "key_points": [
+      "针对十亿参数级视觉-语言-动作（VLA）策略在边缘设备部署时的高能耗、远程推理延迟大的核心问题，提出VLA-ULAP混合推理框架",
+      "框架交替执行远程云VLA调用与边缘设备的超轻量本地动作预测，无需修改基础VLA模型，实现低功耗、低延迟与高任务成功率的平衡",
+      "同时验证框架在仿真与真实机器人场景的有效性，并探索风险感知调度机制进一步提升动态场景下的任务表现"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "FIVE-VLA: Fast and EffectIVE Autonomous Driving with Recurrent Action Memory",
+    "link": "http://arxiv.org/abs/2609.18623",
+    "arxiv_id": "2609.18623",
+    "detail_path": "papers/2609.18623/",
+    "cover_path": "covers/2609.18623/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18623.webp",
+    "preview_text": "针对现有自动驾驶视觉语言动作模型（VLA）存在的参数量过大、高分辨率图像处理效率低、缺乏时序记忆三大核心问题，提出高效且高性能的FIVE-VLA模型 通过轻量级高效视觉编码器与循环动作记忆（RAM）模块，在保持甚至提升驾驶性能的前提下，大幅降低推理延迟，适配车载边缘设备部署需求 解决现有VLA无法有效处理需要时序推理的安全关键驾驶场景（如紧急刹车、超车、让行）的局限性，避免依赖历史专家轨迹导致的泛化能力不足问题",
+    "research_unit": "Robert Bosch GmbH, Germany（ADAS Systems, Software &…",
+    "hook_text": "针对现有自动驾驶视觉语言动作模型（VLA）存在的参数量过大、高分辨率图像处理效率低、缺乏时序记忆三大核心问题，提出高效且高性能的FIVE-VL…",
+    "key_points": [
+      "针对现有自动驾驶视觉语言动作模型（VLA）存在的参数量过大、高分辨率图像处理效率低、缺乏时序记忆三大核心问题，提出高效且高性能的FIVE-VL…",
+      "通过轻量级高效视觉编码器与循环动作记忆（RAM）模块，在保持甚至提升驾驶性能的前提下，大幅降低推理延迟，适配车载边缘设备部署需求",
+      "解决现有VLA无法有效处理需要时序推理的安全关键驾驶场景（如紧急刹车、超车、让行）的局限性，避免依赖历史专家轨迹导致的泛化能力不足问题"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "ActiveScale: Scaling Active Perception for Robots across Model, Data, and Hardware",
+    "link": "http://arxiv.org/abs/2609.18514",
+    "arxiv_id": "2609.18514",
+    "detail_path": "papers/2609.18514/",
+    "cover_path": "covers/2609.18514/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18514.webp",
+    "preview_text": "针对机器人操作中固定视角下任务相关信息被遮挡或缺失的问题，现有视觉-语言-动作（VLA）模型无法跨动态视角推理并主动获取有效观测，本文提出ActiveScale框架，从模型、数据、硬件三个维度系统推进机器人主动感知能力 论文需要解决三个核心挑战：现有VLA缺乏相机姿态推理与运动预测能力、未有效利用人类第一视角数据中的相机运动信号、现有主动感知方法多面向静态环境，与真实移动操作场景存在差距，且缺乏统一的研究基础设施…",
+    "research_unit": "卡内基梅隆大学机器人研究所（Carnegie Mellon University Robotics I…",
+    "hook_text": "针对机器人操作中固定视角下任务相关信息被遮挡或缺失的问题，现有视觉-语言-动作（VLA）模型无法跨动态视角推理并主动获取有效观测，本文提出Ac…",
+    "key_points": [
+      "针对机器人操作中固定视角下任务相关信息被遮挡或缺失的问题，现有视觉-语言-动作（VLA）模型无法跨动态视角推理并主动获取有效观测，本文提出Ac…",
+      "论文需要解决三个核心挑战：现有VLA缺乏相机姿态推理与运动预测能力、未有效利用人类第一视角数据中的相机运动信号、现有主动感知方法多面向静态环境…",
+      "ActiveScale通过位姿感知时序VLA、大规模人机协同训练方案、主动感知移动操作平台三部分设计，实现主动感知与移动操作的协同"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "TAO-Force: Unifying Force-Aware Perception and Fast-Slow Control for Contact-Rich Manipulation",
+    "link": "http://arxiv.org/abs/2609.18497",
+    "arxiv_id": "2609.18497",
+    "detail_path": "papers/2609.18497/",
+    "cover_path": "covers/2609.18497/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18497.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）模型以视觉感知和位置控制为核心，在接触丰富操作中难以捕捉接触发生、交互强度等关键物理交互信息，且位置控制策略无法快速响应动态变化的接触过程，存在感知与控制双重gap 针对上述问题，论文提出TAO-Force力条件VLA框架，通过力感知策略学习与接触调节执行的双重设计，桥接触感知和控制gap，适配接触丰富的机器人操作场景 论文通过离线分析与真实世界多任务评估，验证TAO-Force在力感…",
+    "research_unit": "论文作者所属机构为中国移动（杭州）信息技术有限公司，核心作者包括Bohan Gan、Xuanzhang…",
+    "hook_text": "现有视觉-语言-动作（VLA）模型以视觉感知和位置控制为核心，在接触丰富操作中难以捕捉接触发生、交互强度等关键物理交互信息，且位置控制策略无法…",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）模型以视觉感知和位置控制为核心，在接触丰富操作中难以捕捉接触发生、交互强度等关键物理交互信息，且位置控制策略无法…",
+      "针对上述问题，论文提出TAO-Force力条件VLA框架，通过力感知策略学习与接触调节执行的双重设计，桥接触感知和控制gap，适配接触丰富的机…",
+      "论文通过离线分析与真实世界多任务评估，验证TAO-Force在力感知建模和接触操作任务上的有效性与跨场景鲁棒性"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "ActionPiece: Rethinking Action Tokenization for Autoregressive Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2609.18487",
+    "arxiv_id": "2609.18487",
+    "detail_path": "papers/2609.18487/",
+    "cover_path": "covers/2609.18487/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18487.webp",
+    "preview_text": "聚焦自回归视觉-语言-动作（VLA）模型的核心组件动作分词器，现有分词器仅通过点重建指标（如MSE）评估 fidelity，忽略了压缩后动作块间相对物理关系的保持，导致不同场景下的动作调整被扭曲、衰减甚至反转，影响机器人执行精度 提出物理排序一致性（PRC）评估指标，衡量分词器重建后局部物理距离排序的保持程度，补充传统点重建评估的不足 提出ActionPiece动作分词器，通过联合监督表征学习与量化过程，在重建精度…",
+    "research_unit": "华中科技大学",
+    "hook_text": "聚焦自回归视觉-语言-动作（VLA）模型的核心组件动作分词器，现有分词器仅通过点重建指标（如MSE）评估 fidelity，忽略了压缩后动作块…",
+    "key_points": [
+      "聚焦自回归视觉-语言-动作（VLA）模型的核心组件动作分词器，现有分词器仅通过点重建指标（如MSE）评估 fidelity，忽略了压缩后动作块…",
+      "提出物理排序一致性（PRC）评估指标，衡量分词器重建后局部物理距离排序的保持程度，补充传统点重建评估的不足",
+      "提出ActionPiece动作分词器，通过联合监督表征学习与量化过程，在重建精度的同时保持动作间的物理关系，提升下游VLA策略的执行性能"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "WetRobo: A Reproducible Robot Kit for Coding Agents in Biological Laboratories",
+    "link": "http://arxiv.org/abs/2609.18435",
+    "arxiv_id": "2609.18435",
+    "detail_path": "papers/2609.18435/",
+    "cover_path": "covers/2609.18435/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18435.webp",
+    "preview_text": "针对生物实验室自动化中，现有视觉-语言-动作（VLA）模型对环境变化鲁棒性差、部署需针对每个实验室收集遥操作数据并训练专属策略的问题，提出可跨实验室转移的机器人套件WetRobo 该套件结合代码策略（code-as-policy）的coding agent，让生物实验人员仅需提供自然语言任务描述，无需自行收集本地遥操作数据或训练神经网络，即可完成实验室机器人操作 研究在真实实验室的三个基础湿实验任务（培养皿盖提起、…",
+    "research_unit": "论文作者所属机构包括：东京大学计算生物学与医学科学系、日本RIKEN前沿研究所、美国纽约大学、美国谷歌…",
+    "hook_text": "针对生物实验室自动化中，现有视觉-语言-动作（VLA）模型对环境变化鲁棒性差、部署需针对每个实验室收集遥操作数据并训练专属策略的问题，提出可跨…",
+    "key_points": [
+      "针对生物实验室自动化中，现有视觉-语言-动作（VLA）模型对环境变化鲁棒性差、部署需针对每个实验室收集遥操作数据并训练专属策略的问题，提出可跨…",
+      "该套件结合代码策略（code-as-policy）的coding agent，让生物实验人员仅需提供自然语言任务描述，无需自行收集本地遥操作数…",
+      "研究在真实实验室的三个基础湿实验任务（培养皿盖提起、试剂瓶盖移除、培养箱门开启）上验证方案有效性，证明其跨实验室迁移性能优于传统VLA方案"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "DistAL: Distance-based Advantage Learning for VLA Fine-Tuning",
+    "link": "http://arxiv.org/abs/2609.18392",
+    "arxiv_id": "2609.18392",
+    "detail_path": "papers/2609.18392/",
+    "cover_path": "covers/2609.18392/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18392.webp",
+    "preview_text": "本文提出DistAL（基于距离的优势学习）方法，作为视觉-语言-动作模型（VLA）微调 pipeline 的即插即用替代方案，通过基于SigLIP特征空间k近邻距离的密集奖励，替换现有优势条件方法使用的稀疏成功/失败奖励 解决的核心问题是：现有优势条件VLA微调方法仅使用低信息量的二值奖励，导致训练的价值函数只能区分任务进度，无法识别不同质量的中间状态，信用分配噪声大，限制了微调后的任务成功率 研究目标是不引入额外…",
+    "research_unit": "牛津大学机器人研究所（Oxford Robotics Institute, University of…",
+    "hook_text": "本文提出DistAL（基于距离的优势学习）方法，作为视觉-语言-动作模型（VLA）微调 pipeline 的即插即用替代方案，通过基于SigL…",
+    "key_points": [
+      "本文提出DistAL（基于距离的优势学习）方法，作为视觉-语言-动作模型（VLA）微调 pipeline 的即插即用替代方案，通过基于SigL…",
+      "解决的核心问题是：现有优势条件VLA微调方法仅使用低信息量的二值奖励，导致训练的价值函数只能区分任务进度，无法识别不同质量的中间状态，信用分配…",
+      "研究目标是不引入额外人工干预、不设计任务特定奖励的前提下，提升VLA在仿真和真实操作任务中的泛化与成功率"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Decoupling Vision, Language, and Action for Efficient Multi-Task Robot Policies",
+    "link": "http://arxiv.org/abs/2609.18374",
+    "arxiv_id": "2609.18374",
+    "detail_path": "papers/2609.18374/",
+    "cover_path": "covers/2609.18374/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18374.webp",
+    "preview_text": "当前主流Vision-Language-Action (VLA) 模型均以数十亿参数的大规模视觉语言模型（VLM）作为共享backbone，每次控制步都需要承担其推理成本，存在推理延迟高、能耗大的问题，难以满足低层机器人操作策略对高响应频率、低能耗的需求 本文通过严格控制的对比实验，研究独立预训练的视觉编码器、语言编码器搭配专用动作头的解耦架构，是否能在多任务操作任务上达到与VLM-backbone策略相当的成功率…",
+    "research_unit": "耶鲁大学计算机科学系（Yale University, Department of Computer…",
+    "hook_text": "当前主流Vision-Language-Action (VLA) 模型均以数十亿参数的大规模视觉语言模型（VLM）作为共享backbone，每…",
+    "key_points": [
+      "当前主流Vision-Language-Action (VLA) 模型均以数十亿参数的大规模视觉语言模型（VLM）作为共享backbone，每…",
+      "本文通过严格控制的对比实验，研究独立预训练的视觉编码器、语言编码器搭配专用动作头的解耦架构，是否能在多任务操作任务上达到与VLM-backbo…",
+      "最终提出的Decoupled Embodiment Model (DEM) 实现了与SOTA VLM-backbone策略相当的成功率，同时推…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "${M}^2$Tok: Multi-head Multi-codebook Discrete Action Tokenization for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2609.18259",
+    "arxiv_id": "2609.18259",
+    "detail_path": "papers/2609.18259/",
+    "cover_path": "covers/2609.18259/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18259.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Acting in Meters: Learning Metric Interactions for Precise Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2609.18243",
+    "arxiv_id": "2609.18243",
+    "detail_path": "papers/2609.18243/",
+    "cover_path": "covers/2609.18243/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18243.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "ForceDelta-VLA: Distilling Force-Conditioned ActionCorrections for Contact-Rich Manipulation",
+    "link": "http://arxiv.org/abs/2609.18242",
+    "arxiv_id": "2609.18242",
+    "detail_path": "papers/2609.18242/",
+    "cover_path": "covers/2609.18242/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18242.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "UMI-Bridge: Action-Anchored Latent Alignment across Human and Robot Manipulation Data",
+    "link": "http://arxiv.org/abs/2609.18232",
+    "arxiv_id": "2609.18232",
+    "detail_path": "papers/2609.18232/",
+    "cover_path": "covers/2609.18232/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18232.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Reinforcement Learning for Real-Time Vision-Language-Action Policies",
+    "link": "http://arxiv.org/abs/2609.18207",
+    "arxiv_id": "2609.18207",
+    "detail_path": "papers/2609.18207/",
+    "cover_path": "covers/2609.18207/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18207.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "A Comprehensive Review of Generative Physical Artificial Intelligence",
+    "link": "http://arxiv.org/abs/2609.18111",
+    "arxiv_id": "2609.18111",
+    "detail_path": "papers/2609.18111/",
+    "cover_path": "covers/2609.18111/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18111.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Technical Report: One-Step Drifting Action Heads for GR00T N1.7",
+    "link": "http://arxiv.org/abs/2609.18108",
+    "arxiv_id": "2609.18108",
+    "detail_path": "papers/2609.18108/",
+    "cover_path": "covers/2609.18108/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18108.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "Not All Layers Need Tuning: Diagnosing and Directing Adaptation in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2609.18084",
+    "arxiv_id": "2609.18084",
+    "detail_path": "papers/2609.18084/",
+    "cover_path": "covers/2609.18084/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.18084.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-15",
+    "title": "RAF-VLA: Representation Alignment with the Future for End-to-End Autonomous Driving",
+    "link": "http://arxiv.org/abs/2609.17728",
+    "arxiv_id": "2609.17728",
+    "detail_path": "papers/2609.17728/",
+    "cover_path": "covers/2609.17728/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.17728.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-09-15",
     "title": "FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence",
     "link": "http://arxiv.org/abs/2609.17210",
@@ -534,7 +1020,7 @@
     "arxiv_id": "2609.13695",
     "detail_path": "papers/2609.13695/",
     "cover_path": "covers/2609.13695/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2609.13695.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -560,7 +1046,7 @@
     "arxiv_id": "2609.13679",
     "detail_path": "papers/2609.13679/",
     "cover_path": "covers/2609.13679/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2609.13679.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",

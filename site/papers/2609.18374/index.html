@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Decoupling Vision, Language, and Action for Efficient Multi-Task Robot Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="当前主流Vision-Language-Action (VLA) 模型均以数十亿参数的大规模视觉语言模型（VLM）作为共享backbone，每次控制步都需要承担其推理成本，存在推理延迟高、能耗大的问题，难以满足低层机器人操作策略对高响应频率、低能耗的需求 本文通过严格控制的对比实验，研究独立预训练的视觉编码器、语言编码器搭配专用动作头的解耦架构，是否能在多任务操作任务上达到与VLM-backbone策略相当的成功率…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.18374">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.18374.webp" alt="Decoupling Vision, Language, and Action for Efficient Multi-Task Robot Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">当前主流Vision-Language-Action (VLA) 模型均以数十亿参数的大规模视觉语言模型（VLM）作为共享backbone，每…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Decoupling Vision, Language, and Action for Efficient Multi-Task Robot Policies</h1>
+            <div class="detail-meta">2026-09-16 · <a href="http://arxiv.org/abs/2609.18374" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.18374" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.18374</span></div>
+            <p class="detail-summary">当前主流Vision-Language-Action (VLA) 模型均以数十亿参数的大规模视觉语言模型（VLM）作为共享backbone，每次控制步都需要承担其推理成本，存在推理延迟高、能耗大的问题，难以满足低层机器人操作策略对高响应频率、低能耗的需求 本文通过严格控制的对比实验，研究独立预训练的视觉编码器、语言编码器搭配专用动作头的解耦架构，是否能在多任务操作任务上达到与VLM-backbone策略相当的成功率…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">耶鲁大学计算机科学系（Yale University, Department of Computer…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.18374/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">当前主流Vision-Language-Action (VLA) 模型均以数十亿参数的大规模视觉语言模型（VLM）作为共享backbone，每…</p>
+  <ul class="reading-intro-points"><li>当前主流Vision-Language-Action (VLA) 模型均以数十亿参数的大规模视觉语言模型（VLM）作为共享backbone，每…</li><li>本文通过严格控制的对比实验，研究独立预训练的视觉编码器、语言编码器搭配专用动作头的解耦架构，是否能在多任务操作任务上达到与VLM-backbo…</li><li>最终提出的Decoupled Embodiment Model (DEM) 实现了与SOTA VLM-backbone策略相当的成功率，同时推…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>耶鲁大学计算机科学系（Yale University, Department of Computer Science）</li><li>北京大学（Peking University）</li><li>Digients（新加坡）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>当前主流Vision-Language-Action (VLA) 模型均以数十亿参数的大规模视觉语言模型（VLM）作为共享backbone，每次控制步都需要承担其推理成本，存在推理延迟高、能耗大的问题，难以满足低层机器人操作策略对高响应频率、低能耗的需求</li><li>本文通过严格控制的对比实验，研究独立预训练的视觉编码器、语言编码器搭配专用动作头的解耦架构，是否能在多任务操作任务上达到与VLM-backbone策略相当的成功率，同时获得更优的效率表现</li><li>最终提出的<strong>Decoupled Embodiment Model (DEM)</strong> 实现了与SOTA VLM-backbone策略相当的成功率，同时推理速度提升8-17倍，能耗降低6-15倍，验证了解耦架构在高效多任务机器人策略上的优势</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首个在统一实验协议下开展的解耦策略模块对比研究：固定演示数据、训练预算、任务集和测试平台，系统对比视觉编码器、语言编码器、动作头三个模块的选型，以及7个同期VLA基线的表现</li><li>证明在当前测试的多任务操作任务范围内，现代独立预训练编码器搭配高效动作头可达成与VLM-backbone策略相当的成功率，同时获得8-17倍的推理频率提升和6-15倍的能耗降低，实现更优的成功率-延迟-能耗权衡</li><li>开源DEM的代码、预训练模型与实验配置，为高效多任务机器人策略研究提供可复现的基础</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>DEM采用完全解耦的无共享backbone架构，视觉编码器、语言编码器、动作头三个模块独立运行，仅在动作头内部通过交叉注意力实现多模态信息融合，无跨模块的参数共享</li><li>视觉编码器选用<strong>DINOv3 ConvNeXt-B</strong>，对每个相机帧提取16×16的512维特征网格，输出512个视觉token，采用微调模式适配机器人操作任务</li><li>语言编码器选用<strong>NeoBERT</strong>（222M参数），采用指令缓存机制：仅当用户指令发生变化时才重新编码，否则复用历史token，编码器全程保持冻结，降低重复计算开销</li><li>动作头采用<strong>MeanFlow</strong>流匹配模型，单次前向传播即可生成整个动作块（chunk），替代传统迭代式扩散/流匹配头的多步推理，是DEM实现高推理频率的核心技术创新</li><li>三个模块的输出通过可学习的模态嵌入投影后拼接为上下文token，输入动作头的交叉注意力层，最终输出预测的动作块</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>模拟数据集：使用<strong>RoboCasa厨房场景</strong>的18个原子操作任务，演示数据来自NVIDIA PhysicalAI-Robotics-Manipulation-Kitchen-Demos数据集，每个任务500条演示；训练时使用Claude Opus 4.8生成50条指令复述避免单指令过拟合，评估时使用10条训练时未出现的复述，场景与目标物布局完全随机化</li><li>真实世界数据集：使用<strong>FurnitureBench</strong>的3个家具组装任务（抽屉、台灯、柜子），每个任务200条遥操作演示</li><li>模型规模：DEM总参数量417M，每步推理仅需激活195M参数；对比的VLM-backbone基线（如GR00T N1.7、π0.5）参数量约30亿，是DEM的7倍以上</li><li>计算资源：训练使用8张H100 GPU；评估和延迟、能耗测试使用搭载RTX PRO 6000 GPU、AMD Ryzen Threadripper PRO 9965WX CPU、128GB内存的工作站</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：模拟环境为18个带held-out语言复述和随机场景的RoboCasa任务，真实环境为搭载xArm 7的线性导轨8自由度机器人系统，执行3个FurnitureBench组装任务；对比基线包括OpenVLA、Octo、SmolVLA、π0.5、GR00T N1.7、TurboVLA、ReactVLA共7个主流VLA策略</li><li>评估指标：任务成功率、单步推理延迟、推理频率、单步GPU能耗</li><li>关键实验结果：</li></ul>
+<p> - 模拟任务平均成功率达55.6%，与最强的VLM-backbone策略GR00T N1.7（56.9%）和π0.5（54.6%）无统计显著差异，远高于其他解耦基线（TurboVLA 46.3%、ReactVLA 41.9%、Octo 25.6%）</p>
+<p> - 单步推理延迟仅6.1ms，推理频率达163Hz，是GR00T N1.7的8.5倍、π0.5的17倍；单步能耗仅2.07J，是GR00T N1.7的1/6.6、π0.5的1/15.3</p>
+<p> - 真实任务平均成功率达66.0%，与GR00T N1.7（68.0%）无统计显著差异，优于π0.5（63.3%）和TurboVLA（53.3%），策略排序与模拟实验结果完全一致</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.18392/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">DistAL: Distance-based Advantage Learning for VLA Fine-Tuning</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.18259/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">${M}^2$Tok: Multi-head Multi-codebook Discrete Action Tokenization for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>rMuscle: Robotic Muscle Memory for Efficient Vision-Language-Action Model Inference - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有视觉-语言-动作（VLA）模型推理框架未充分利用具身工作负载特征，也未考虑VLA推理不同阶段的异构瓶颈，导致推理延迟高，影响机器人的响应速度与运动平滑度。 提出rMuscle实时VLA推理框架，模仿人体肌肉记忆机制，利用具身任务重复执行时的跨执行相似性（包括观测、动作轨迹及内部模型状态）加速推理。 核心目标是在不损失任务成功率的前提下，显著降低VLA推理延迟，适配工厂等具身场景的实时性需求。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.19104">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.19104.webp" alt="rMuscle: Robotic Muscle Memory for Efficient Vision-Language-Action Model Inference" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有视觉-语言-动作（VLA）模型推理框架未充分利用具身工作负载特征，也未考虑VLA推理不同阶段的异构瓶颈，导致推理延迟高，影响机器人的响应速…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">rMuscle: Robotic Muscle Memory for Efficient Vision-Language-Action Model Inference</h1>
+            <div class="detail-meta">2026-09-16 · <a href="http://arxiv.org/abs/2609.19104" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.19104" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.19104</span></div>
+            <p class="detail-summary">现有视觉-语言-动作（VLA）模型推理框架未充分利用具身工作负载特征，也未考虑VLA推理不同阶段的异构瓶颈，导致推理延迟高，影响机器人的响应速度与运动平滑度。 提出rMuscle实时VLA推理框架，模仿人体肌肉记忆机制，利用具身任务重复执行时的跨执行相似性（包括观测、动作轨迹及内部模型状态）加速推理。 核心目标是在不损失任务成功率的前提下，显著降低VLA推理延迟，适配工厂等具身场景的实时性需求。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">上海交通大学并行与分布式系统研究所（Institute of Parallel and Distrib…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.19104/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有视觉-语言-动作（VLA）模型推理框架未充分利用具身工作负载特征，也未考虑VLA推理不同阶段的异构瓶颈，导致推理延迟高，影响机器人的响应速…</p>
+  <ul class="reading-intro-points"><li>现有视觉-语言-动作（VLA）模型推理框架未充分利用具身工作负载特征，也未考虑VLA推理不同阶段的异构瓶颈，导致推理延迟高，影响机器人的响应速…</li><li>提出rMuscle实时VLA推理框架，模仿人体肌肉记忆机制，利用具身任务重复执行时的跨执行相似性（包括观测、动作轨迹及内部模型状态）加速推理。</li><li>核心目标是在不损失任务成功率的前提下，显著降低VLA推理延迟，适配工厂等具身场景的实时性需求。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>上海交通大学并行与分布式系统研究所（Institute of Parallel and Distributed Systems, Shanghai Jiao Tong University）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有视觉-语言-动作（VLA）模型推理框架未充分利用具身工作负载特征，也未考虑VLA推理不同阶段的异构瓶颈，导致推理延迟高，影响机器人的响应速度与运动平滑度。</li><li>提出rMuscle实时VLA推理框架，模仿人体肌肉记忆机制，利用具身任务重复执行时的跨执行相似性（包括观测、动作轨迹及内部模型状态）加速推理。</li><li>核心目标是在不损失任务成功率的前提下，显著降低VLA推理延迟，适配工厂等具身场景的实时性需求。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>发现具身任务重复执行时存在跨执行的广泛相似性：除观测与动作轨迹外，VLM的FFN输入/输出、动作去噪阶段的神经元激活模式也存在高度重叠，为计算复用提供了理论依据。</li><li>设计端到端双缓存VLA推理系统rMuscle：包含针对计算密集型VLM预填充阶段的<strong>上下文缓存（Context Cache）</strong>，以及针对内存密集型动作去噪阶段的<strong>动作缓存（Action Cache）</strong>，分别匹配两个阶段的性能瓶颈。</li><li>提出低开销缓存管理机制：通过异步在线重建、滑动窗口预取、连续去噪步骤组共享神经元掩码等技术，降低缓存的内存占用与访问开销，适配实时推理需求。</li><li>多平台多任务验证框架有效性：在3种VLA模型、2个仿真基准、92个任务上测试，在RTX 4090和Jetson Thor上分别最高达到1.29x和1.42x的端到端加速，同时保持原始策略的任务成功率。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>双阶段缓存核心逻辑：上下文缓存通过计算视觉token的输入漂移分数（RMS归一化的当前输入与参考输入的差异），选择需要重计算的token，仅对变化大的token重新执行FFN计算，其余复用参考执行的FFN输出，减少VLM预填充阶段的计算量；动作缓存利用参考执行的重要神经元掩码，选择需要更新的神经元，结合当前策略调用的密集锚点（去噪组首个步骤的密集计算结果）近似完整输出，仅加载和计算重要神经元的权重，减少动作去噪阶段的内存访问。</li><li>缓存管理优化：采用异步在线重建机制，在机器人执行动作的间隙异步重建缓存的完整FFN状态，避免重建计算占用推理关键路径；利用具身任务的时间局部性维护滑动GPU工作集，仅保留近期可能用到的缓存条目，降低GPU驻留开销；将连续去噪步骤分组，组内共享重要神经元掩码，减少掩码加载与权重收集的开销。</li><li>参考检索机制：结合视觉相似度（VLM中间ViT特征的余弦相似度）和机器人状态历史（关节角度的运动距离）检索最相关的历史执行参考，优先选择任务进度匹配的条目，保证复用的准确性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>评估数据集与基准：仿真场景采用<strong>LIBERO基准</strong>（40个任务）和<strong>RoboTwin基准</strong>（50个任务），物理场景包含ALOHA双臂协作拣放任务、DOBOT与Franka单臂装配线打包任务，共覆盖92个具身操作任务。</li><li>模型规模：评估覆盖3种主流VLA模型，包括<strong>π₀.₅</strong>、<strong>GR00T N1.6</strong>、<strong>X-VLA</strong>，以及4种不同规模的π₀.₅变体（VLM与去噪器规模分别为2B/0.3B、2B/2B、7B/2B、7B/7B）。</li><li>训练与推理资源：桌面端采用<strong>RTX 4090</strong>（24GB显存），搭载Intel Core i7-11700处理器与32GB内存，运行PyTorch 2.6.0/CUDA 12.4；边缘端采用<strong>Jetson Thor</strong>（128GB统一内存），运行PyTorch 2.8.0/CUDA 13.0；所有模型采用BF16/FP16精度，无量化操作。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基线：对比基线包括torch.compile、vla.cpp、<strong>FlashRT</strong>（当前SOTA VLA推理引擎）、NIRVANA、DP-Cache等，仿真评估在LIBERO和RoboTwin基准上开展，物理评估在ALOHA和装配线打包真实机器人任务上开展。</li><li>主要评估指标：推理延迟（从输入就绪到返回动作块的总耗时，包含在线检索与权重收集，经20次预热后测量）、任务成功率（SR，%）、额外内存开销。</li><li>关键实验结果：</li></ul>
+<p> - 推理加速效果：在RTX 4090上，rMuscle对π₀.₅、GR00T N1.6、X-VLA的加速分别达1.29x、1.20x、1.50x；在Jetson Thor上分别达1.42x、1.23x、1.43x，均超过各模型对应的SOTA推理引擎基线。</p>
+<p> - 规模扩展性：随着VLA模型规模增大，加速比持续提升，RTX 4090上从1.3x提升至1.6x，Jetson Thor上从1.4x提升至1.9x，说明双阶段缓存在大模型上具有更高的收益潜力。</p>
+<p> - 策略质量保持：在LIBERO和RoboTwin仿真任务上，rMuscle的任务成功率与原始密集执行、DP-Cache持平，高于NIRVANA；在真实机器人任务上也匹配原始策略的成功率，证明加速过程未损失任务性能。</p>
+<p> - 内存开销可控：通过滑动窗口、异步重建等机制，缓存的额外内存占用与访问开销均处于较低水平，不会造成过大的硬件负担。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2609.18663/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">VLA-ULAP: Interleaving Cloud VLA Calls with Ultra-Lightweight Local Action Prediction at the Edge</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
