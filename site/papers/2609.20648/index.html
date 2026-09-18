@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SkipVLA: Skipping VLA Steps with Classical Planning for Fast Robot Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对Vision-Language-Action（VLA）模型推理延迟高、长时序任务中频繁查询导致执行效率低、边缘能耗高的问题，提出混合策略框架SkipVLA 核心思路是将机器人操作任务自然分解为接触丰富的操作技能（抓取、放置、重定向等）和自由空间 transit 两类，用经典运动规划器处理无碰撞的自由空间运动，仅对接触操作查询预训练VLA，在不降低任务成功率的前提下提升执行速度、降低能耗 解决现有VLA加速方案（…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.20648">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.20648.webp" alt="SkipVLA: Skipping VLA Steps with Classical Planning for Fast Robot Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对Vision-Language-Action（VLA）模型推理延迟高、长时序任务中频繁查询导致执行效率低、边缘能耗高的问题，提出混合策略框…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">SkipVLA: Skipping VLA Steps with Classical Planning for Fast Robot Manipulation</h1>
+            <div class="detail-meta">2026-09-17 · <a href="http://arxiv.org/abs/2609.20648" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.20648" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.20648</span></div>
+            <p class="detail-summary">针对Vision-Language-Action（VLA）模型推理延迟高、长时序任务中频繁查询导致执行效率低、边缘能耗高的问题，提出混合策略框架SkipVLA 核心思路是将机器人操作任务自然分解为接触丰富的操作技能（抓取、放置、重定向等）和自由空间 transit 两类，用经典运动规划器处理无碰撞的自由空间运动，仅对接触操作查询预训练VLA，在不降低任务成功率的前提下提升执行速度、降低能耗 解决现有VLA加速方案（…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">普渡大学（Purdue University）计算机科学系，作者联系邮箱为{agraw201, rah…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.20648/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对Vision-Language-Action（VLA）模型推理延迟高、长时序任务中频繁查询导致执行效率低、边缘能耗高的问题，提出混合策略框…</p>
+  <ul class="reading-intro-points"><li>针对Vision-Language-Action（VLA）模型推理延迟高、长时序任务中频繁查询导致执行效率低、边缘能耗高的问题，提出混合策略框…</li><li>核心思路是将机器人操作任务自然分解为接触丰富的操作技能（抓取、放置、重定向等）和自由空间 transit 两类，用经典运动规划器处理无碰撞的自…</li><li>解决现有VLA加速方案（模型蒸馏、异步动作块、分层策略）存在的性能下降、动作陈旧、需重新训练专属策略等缺陷</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>普渡大学（Purdue University）计算机科学系，作者联系邮箱为{agraw201, rahman79, rayyeh, zkingston}@purdue.edu</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对Vision-Language-Action（VLA）模型推理延迟高、长时序任务中频繁查询导致执行效率低、边缘能耗高的问题，提出混合策略框架SkipVLA</li><li>核心思路是将机器人操作任务自然分解为接触丰富的操作技能（抓取、放置、重定向等）和自由空间 transit 两类，用经典运动规划器处理无碰撞的自由空间运动，仅对接触操作查询预训练VLA，在不降低任务成功率的前提下提升执行速度、降低能耗</li><li>解决现有VLA加速方案（模型蒸馏、异步动作块、分层策略）存在的性能下降、动作陈旧、需重新训练专属策略等缺陷</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出即插即用的SkipVLA框架，将自由空间 transit 路由到经典运动规划器，仅将预训练VLA用于接触丰富的技能，实现操作执行加速</li><li>开发轻量级目标位姿预测器，复用VLA冻结的视觉-语言特征预测3D目标悬停位姿，仅需现有模仿学习数据集即可训练，无需额外人工标注或调整基座VLA架构</li><li>在仿真<strong>LIBERO</strong>基准13个任务、物理6-DoF <strong>YAM机械臂</strong>3个抓取放置任务上完成评估，适配<strong>π₀.₅</strong>、<strong>SmolVLA</strong>、<strong>MolmoAct2</strong>三类VLA backbone，以及<strong>VAMP</strong>、<strong>cuRoboV2</strong>两类经典运动规划器</li><li>实现最高2.5倍 wall-clock 加速（59.6%推理延迟降低），在<strong>NVIDIA Jetson Thor</strong>上算力能耗降低超52%，同时保持与基座VLA一致的任务成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>混合架构设计：通过指示模块I动态切换执行策略，自由空间 transit 阶段调用轻量级经典运动规划器π^fast，接触操作阶段调用预训练VLA π^vla，实现两类策略的交替执行</li><li>快速控制模块π^fast由两部分组成：① 目标位姿预测器f_tgt：用VLA冻结的视觉-语言token，通过交叉注意力为场景中的候选3D物体边界框打分，选择得分最高的物体上方的无碰撞悬停位姿作为目标；② 低层运动规划器P：采用VAMP或cuRoboV2等经典规划器，根据当前状态、目标位姿和场景观测生成无碰撞运动轨迹</li><li>指示模块I采用轻量启发式规则：初始状态为自由空间 transit 模式（I=1），当机械臂末端到达目标位姿后切换为VLA执行接触操作（I=0），检测到夹爪状态变化（抓取/释放完成）后切换回规划器模式，无需额外训练</li><li>训练优化：冻结预训练VLA的全部参数，仅训练目标预测器的位置嵌入、交叉注意力投影层和MLP打分头，从现有专家演示轨迹的夹爪事件中自动提取监督信号（夹爪事件时距离末端最近的物体边界框作为正样本），通过交叉熵损失训练，无需人工标注</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：采用<strong>LIBERO</strong>桌面操作基准的13个任务，包含<strong>LIBERO-Object</strong>（10个短时序单物体操作任务）和<strong>LIBERO-10</strong>（3个长时序多物体操作任务），总共有650条人类遥操作专家演示（每个任务50条）</li><li>模型规模：基座VLA包括3.5B参数的<strong>π₀.₅</strong>、0.5B参数的<strong>SmolVLA</strong>，以及<strong>MolmoAct2</strong>；目标预测器为轻量级多头交叉注意力结构，参数量远小于VLA backbone</li><li>部署与训练资源：仿真实验基于MuJoCo物理引擎；物理实验部署在6-DoF YAM机械臂上，边缘部署测试使用<strong>NVIDIA Jetson Thor</strong>平台</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境为MuJoCo，物理实验环境为真实YAM机械臂桌面操作场景；每个任务重复50次试验，超时限制为600个环境步</li><li>评估指标：任务成功率（SR）、总成功次数、wall-clock执行时间、VLA查询次数、边缘平台算力能耗</li><li>关键实验结果：</li></ul>
+<p> - 仿真LIBERO-Object任务中，SkipVLA+VAMP相比基座π₀.₅，wall-clock时间降低40%，VLA查询次数从17次降至10.6次，成功率保持99%不变</p>
+<p> - 仿真LIBERO-10任务中，SkipVLA+VAMP相比基座π₀.₅，wall-clock时间降低27%，VLA查询次数降低28%，成功率保持94.7%不变</p>
+<p> - 物理YAM机械臂实验中，SkipVLA实现最高2.5倍执行加速，推理延迟降低59.6%，NVIDIA Jetson Thor上能耗降低超52%，任务成功率与基座VLA持平</p>
+<p> - 消融实验表明框架对运动规划器选择、指示器启发式规则不敏感，具备良好的模块化鲁棒性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.20659/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">HIL-UMI: Bringing Human-in-the-Loop Post-Training of Vision-Language-Action Models to Universal Manipulation Interface</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.20646/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">TraceFlow: Guiding Frozen Flow-Matching Robot Policies with Success and Failure Traces</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

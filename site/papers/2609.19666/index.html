@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Towards High-DoF Dexterous Manipulation through VLA Post-Training - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对预训练视觉-语言-动作（VLA）基础模型在真实高自由度（High-DoF）灵巧操作任务部署时的三大核心障碍：无原生高DoF手部动作接口、DAgger交互校正时的手势不匹配导致数据污染、原始关节空间强化学习样本效率极低，研究如何将通用VLA适配为可靠的真实灵巧操作策略 提出四阶段后训练流水线，通过共享的灵巧手动作表征串联监督微调、交互校正和强化学习，逐步提升策略在真实任务上的成功率 聚焦可在大约30秒内完成的原子…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.19666">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.19666.webp" alt="Towards High-DoF Dexterous Manipulation through VLA Post-Training" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对预训练视觉-语言-动作（VLA）基础模型在真实高自由度（High-DoF）灵巧操作任务部署时的三大核心障碍：无原生高DoF手部动作接口、D…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Towards High-DoF Dexterous Manipulation through VLA Post-Training</h1>
+            <div class="detail-meta">2026-09-17 · <a href="http://arxiv.org/abs/2609.19666" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.19666" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.19666</span></div>
+            <p class="detail-summary">针对预训练视觉-语言-动作（VLA）基础模型在真实高自由度（High-DoF）灵巧操作任务部署时的三大核心障碍：无原生高DoF手部动作接口、DAgger交互校正时的手势不匹配导致数据污染、原始关节空间强化学习样本效率极低，研究如何将通用VLA适配为可靠的真实灵巧操作策略 提出四阶段后训练流水线，通过共享的灵巧手动作表征串联监督微调、交互校正和强化学习，逐步提升策略在真实任务上的成功率 聚焦可在大约30秒内完成的原子…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Wuji Technology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.19666/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对预训练视觉-语言-动作（VLA）基础模型在真实高自由度（High-DoF）灵巧操作任务部署时的三大核心障碍：无原生高DoF手部动作接口、D…</p>
+  <ul class="reading-intro-points"><li>针对预训练视觉-语言-动作（VLA）基础模型在真实高自由度（High-DoF）灵巧操作任务部署时的三大核心障碍：无原生高DoF手部动作接口、D…</li><li>提出四阶段后训练流水线，通过共享的灵巧手动作表征串联监督微调、交互校正和强化学习，逐步提升策略在真实任务上的成功率</li><li>聚焦可在大约30秒内完成的原子灵巧操作任务，目标实现无需复杂仿真、仅用有限真实交互即可完成高成功率部署</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Wuji Technology</strong></li><li>上海科技大学信息科学与技术学院（School of Information Science and Technology, ShanghaiTech University, China）</li><li>通讯作者：Yide Liu（Wuji Technology）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对预训练视觉-语言-动作（VLA）基础模型在真实高自由度（High-DoF）灵巧操作任务部署时的三大核心障碍：无原生高DoF手部动作接口、DAgger交互校正时的手势不匹配导致数据污染、原始关节空间强化学习样本效率极低，研究如何将通用VLA适配为可靠的真实灵巧操作策略</li><li>提出四阶段后训练流水线，通过共享的灵巧手动作表征串联监督微调、交互校正和强化学习，逐步提升策略在真实任务上的成功率</li><li>聚焦可在大约30秒内完成的原子灵巧操作任务，目标实现无需复杂仿真、仅用有限真实交互即可完成高成功率部署</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出端到端的四步后训练流水线，整合监督微调（SFT）、DAgger交互校正和潜在残差强化学习，通过共享的灵巧手动作编解码器作为统一接口，实现真实世界灵巧技能的高效适配</li><li>在绝对手部指令接口约束下形式化了DAgger移交问题，识别出手势不匹配的两个耦合负面效应：执行命令的不连续性和姿态对齐运动对校正监督的污染，并给出对应的解决方案</li><li>提出潜在残差强化学习方法，在编解码器学习的协调手部动作低维空间中对冻结VLA的输出进行修正，避免直接在原始高维关节空间探索，大幅提升样本效率</li><li>开展大规模真实机器人实验，完整验证流水线的有效性，量化各后训练阶段的性能增益，对比了DAgger校正与额外演示的效果差异，以及潜在空间与原始关节空间残差学习在相同预算下的性能差距</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>第一步：训练时序灵巧手动作编解码器</strong>：采用分块级变分自编码器（VAE），将每只20维灵巧手的动作时间块（长度H=32）压缩至9维潜在空间，编解码器均为小时序Transformer结构，训练时采用加权Huber损失（保留关节位置、帧间运动及运动变化信息）加KL散度正则化，训练完成后冻结编解码器作为后续所有阶段的共享动作接口，将54维全身动作（双臂7DoF×2 + 双手20DoF×2）统一压缩为32维潜在动作块</li><li><strong>第二步：监督微调（SFT）</strong>：基于开源的<strong>π0.5流匹配VLA模型</strong>进行微调，让模型直接预测32维潜在动作块而非原始54维关节动作；损失函数同时包含流匹配损失和经编解码器解码后的手部关节空间监督损失，解决潜在空间误差与关节空间误差不一致的问题，微调完成后冻结策略参数</li><li><strong>第三步：DAgger交互校正</strong>：针对绝对手部指令下手势不匹配导致的命令跳变问题，采用缓冲回滚（将机器人回退到接管前的预失败状态）、操作前姿态对齐、2秒命令平滑混合的机制，确保校正轨迹连续且仅包含任务恢复动作而非姿态对齐动作，避免污染校正数据集</li><li><strong>第四步：真实世界残差强化学习</strong>：冻结SFT后的策略，引入可学习的RL token从预训练VLA的骨干特征中读取环境信息，训练小型的TD3风格演员-评论家网络，在潜在动作空间输出有界的残差修正项，将探索范围限制在编解码器学习的协调手部动作流形上，大幅提升样本效率</li><li>关键技术创新：共享编解码器统一了各阶段的动作语义，解决了高DoF动作空间适配问题；DAgger的平滑机制在不改变绝对指令接口的前提下解决了手势不匹配问题；潜在残差RL将探索约束在低维协调动作空间，解决了高维关节空间RL样本效率低的问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>训练数据集：编解码器训练采用遥操作演示数据、任务演示数据和重定向的人类视频数据；SFT阶段每个任务采用200条人工演示；DAgger阶段收集人工接管后的校正轨迹；RL阶段为真实机器人在线交互采集的轨迹数据</li><li>模型规模：基础VLA采用开源<strong>π0.5流匹配视觉-语言-动作模型</strong>；手部编解码器为小时序Transformer，每只手单独训练；RL模块的RL token维度为2048，演员评论家为小型网络</li><li>训练与部署硬件：采用<strong>双臂7DoF + 双手20DoF的灵巧操作平台</strong>，搭配3个RGB相机作为视觉输入；RL阶段为真实世界在线交互，未明确披露具体离线训练的GPU/TPU配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：5个真实世界标记物操作任务，涵盖抓取、双手传递、手中旋转、物体分离、书写，覆盖不同灵巧操作能力需求，每个任务进行20次独立试验</li><li>评估指标：任务成功率</li><li>关键实验结果：在报告的后训练预算内，最终策略在所有5个测试任务上均达到<strong>100%成功率</strong>（20次试验全部成功）；各后训练阶段逐步提升任务成功率，验证了流水线各模块的增益；对比实验表明，在相同数据量下DAgger校正的效果优于额外的人工演示，潜在残差RL的性能显著优于原始关节空间残差RL</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.19669/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Beyond Patch Removal: Persistent Adversarial Effects in Vision-Language-Action Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.19600/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">WorldContact: A Contact-Centric World Model for Scalable Robot Learning</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

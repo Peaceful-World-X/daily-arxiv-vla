@@ -1,5 +1,369 @@
 [
   {
+    "date": "2026-09-17",
+    "title": "GeoAAC: Geometry-Based Adaptive Action Chunking from Denoising Trajectories in VLA Policies",
+    "link": "http://arxiv.org/abs/2609.20776",
+    "arxiv_id": "2609.20776",
+    "detail_path": "papers/2609.20776/",
+    "cover_path": "covers/2609.20776/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.20776.webp",
+    "preview_text": "提出 GeoAAC，一种基于几何的自适应动作分块方法，用于基于 Flow Matching 的视觉-语言-动作（VLA）策略，根据不同任务阶段的控制需求动态调整动作执行长度（action horizon）。 针对现有固定动作水平无法适应任务内不同阶段对动作连续性、控制精度和闭环反馈需求的差异问题，通过分析 Flow Matching 去噪轨迹的前缀级几何特征来估计当前动作预测的可靠性。 无需额外训练，从单次 Flo…",
+    "research_unit": "Tongji University (Xin Chen, Sen Chen, Jian Liu, We…",
+    "hook_text": "提出 GeoAAC，一种基于几何的自适应动作分块方法，用于基于 Flow Matching 的视觉-语言-动作（VLA）策略，根据不同任务阶段…",
+    "key_points": [
+      "提出 GeoAAC，一种基于几何的自适应动作分块方法，用于基于 Flow Matching 的视觉-语言-动作（VLA）策略，根据不同任务阶段…",
+      "针对现有固定动作水平无法适应任务内不同阶段对动作连续性、控制精度和闭环反馈需求的差异问题，通过分析 Flow Matching 去噪轨迹的前缀…",
+      "无需额外训练，从单次 Flow Matching 生成过程中提取几何信息，构建水平方向的几何剖面，并据此自适应确定动作执行边界，以提升整体任务…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "title": "HIL-UMI: Bringing Human-in-the-Loop Post-Training of Vision-Language-Action Models to Universal Manipulation Interface",
+    "link": "http://arxiv.org/abs/2609.20659",
+    "arxiv_id": "2609.20659",
+    "detail_path": "papers/2609.20659/",
+    "cover_path": "covers/2609.20659/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.20659.webp",
+    "preview_text": "提出 HIL-UMI，一个基于通用操作接口（UMI）的人机协同后训练框架，可在不部署机器人的情况下迭代提升视觉-语言-动作（VLA）模型。 解决传统 SFT 静态演示覆盖不足、不区分数据效用，以及交互式后训练依赖物理机器人执行导致成本高、难以并行化的问题。 通过策略引导的数据选择和优势条件行为克隆，实现高效、可扩展的 VLA 后训练。",
+    "research_unit": "Xi’an Jiaotong University, China",
+    "hook_text": "提出 HIL-UMI，一个基于通用操作接口（UMI）的人机协同后训练框架，可在不部署机器人的情况下迭代提升视觉-语言-动作（VLA）模型。",
+    "key_points": [
+      "提出 HIL-UMI，一个基于通用操作接口（UMI）的人机协同后训练框架，可在不部署机器人的情况下迭代提升视觉-语言-动作（VLA）模型。",
+      "解决传统 SFT 静态演示覆盖不足、不区分数据效用，以及交互式后训练依赖物理机器人执行导致成本高、难以并行化的问题。",
+      "通过策略引导的数据选择和优势条件行为克隆，实现高效、可扩展的 VLA 后训练。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "title": "SkipVLA: Skipping VLA Steps with Classical Planning for Fast Robot Manipulation",
+    "link": "http://arxiv.org/abs/2609.20648",
+    "arxiv_id": "2609.20648",
+    "detail_path": "papers/2609.20648/",
+    "cover_path": "covers/2609.20648/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.20648.webp",
+    "preview_text": "针对Vision-Language-Action（VLA）模型推理延迟高、长时序任务中频繁查询导致执行效率低、边缘能耗高的问题，提出混合策略框架SkipVLA 核心思路是将机器人操作任务自然分解为接触丰富的操作技能（抓取、放置、重定向等）和自由空间 transit 两类，用经典运动规划器处理无碰撞的自由空间运动，仅对接触操作查询预训练VLA，在不降低任务成功率的前提下提升执行速度、降低能耗 解决现有VLA加速方案（…",
+    "research_unit": "普渡大学（Purdue University）计算机科学系，作者联系邮箱为{agraw201, rah…",
+    "hook_text": "针对Vision-Language-Action（VLA）模型推理延迟高、长时序任务中频繁查询导致执行效率低、边缘能耗高的问题，提出混合策略框…",
+    "key_points": [
+      "针对Vision-Language-Action（VLA）模型推理延迟高、长时序任务中频繁查询导致执行效率低、边缘能耗高的问题，提出混合策略框…",
+      "核心思路是将机器人操作任务自然分解为接触丰富的操作技能（抓取、放置、重定向等）和自由空间 transit 两类，用经典运动规划器处理无碰撞的自…",
+      "解决现有VLA加速方案（模型蒸馏、异步动作块、分层策略）存在的性能下降、动作陈旧、需重新训练专属策略等缺陷"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "title": "TraceFlow: Guiding Frozen Flow-Matching Robot Policies with Success and Failure Traces",
+    "link": "http://arxiv.org/abs/2609.20646",
+    "arxiv_id": "2609.20646",
+    "detail_path": "papers/2609.20646/",
+    "cover_path": "covers/2609.20646/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.20646.webp",
+    "preview_text": "提出 TraceFlow，一种为冻结的 flow-matching 机器人策略提供引导的方法，利用成功与失败轨迹（traces）的终端结果（单一二元标签）生成引导场 解决冻结策略无法利用早期 rollout 结果调整当前生成动作的问题，无需训练 critic、verifier、dynamics model 或更新策略权重 在真实机器人有序操作任务和模拟长期操纵基准上验证，TraceBank 可随部署轮次持续积累机器…",
+    "research_unit": "香港大学信息具身人工智能实验室（HKU InfoBodied AI Lab）",
+    "hook_text": "提出 TraceFlow，一种为冻结的 flow-matching 机器人策略提供引导的方法，利用成功与失败轨迹（traces）的终端结果（单…",
+    "key_points": [
+      "提出 TraceFlow，一种为冻结的 flow-matching 机器人策略提供引导的方法，利用成功与失败轨迹（traces）的终端结果（单…",
+      "解决冻结策略无法利用早期 rollout 结果调整当前生成动作的问题，无需训练 critic、verifier、dynamics model…",
+      "在真实机器人有序操作任务和模拟长期操纵基准上验证，TraceBank 可随部署轮次持续积累机器人自身的二元标签轨迹"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "title": "Compliance for Free: Learning Identifiable Impedance via Bilateral Teleoperation",
+    "link": "http://arxiv.org/abs/2609.19976",
+    "arxiv_id": "2609.19976",
+    "detail_path": "papers/2609.19976/",
+    "cover_path": "covers/2609.19976/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.19976.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）模型仅能输出位姿目标，无法输出顺应性（刚度/阻尼），而擦拭、精密插入等接触丰富任务需要机器人调节推力，顺应性是和一阶动作同等重要的输出维度 传统示教接口（VR控制器、SpaceMouse、单边遥操作臂等）仅记录机器人的实际位姿，存在严格的可识别性问题：操作者的指令平衡位置与刚度耦合，仅靠实际位姿和测量力无法区分两种等效的力产生原因，因此永远无法获得真实的顺应性监督信号 本文提出基于四通…",
+    "research_unit": "论文作者所属机构：Institut de Robòtica i Informàtica Industr…",
+    "hook_text": "现有视觉-语言-动作（VLA）模型仅能输出位姿目标，无法输出顺应性（刚度/阻尼），而擦拭、精密插入等接触丰富任务需要机器人调节推力，顺应性是和…",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）模型仅能输出位姿目标，无法输出顺应性（刚度/阻尼），而擦拭、精密插入等接触丰富任务需要机器人调节推力，顺应性是和…",
+      "传统示教接口（VR控制器、SpaceMouse、单边遥操作臂等）仅记录机器人的实际位姿，存在严格的可识别性问题：操作者的指令平衡位置与刚度耦合…",
+      "本文提出基于四通道双向遥操作的解决方案，利用leader臂轨迹作为操作者指令平衡位置的独立测量，解决可识别性瓶颈，仅用机械臂原生关节扭矩传感器…"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "title": "Co-VLA: Consensus-based Federated Training for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2609.19923",
+    "arxiv_id": "2609.19923",
+    "detail_path": "papers/2609.19923/",
+    "cover_path": "covers/2609.19923/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.19923.webp",
+    "preview_text": "针对机器人数据天然分散于不同客户端（机器人、任务、位置），集中训练成本高、不实际的痛点，提出 Co-VLA 联邦视觉-语言-动作（VLA）训练框架，无需共享原始数据即可协作训练共享模型 基于 ADMM 共识优化解决异构 non-i.i.d. 客户端数据下的本地训练漂移问题，避免简单参数平均导致的全局模型性能下降 统一支持全模型训练、LoRA 微调、自适应秩 SoRA 微调三种场景，实现联邦训练性能接近集中式训练水平",
+    "research_unit": "Haolong Li 与 Joerg Stueckler 隶属于德国奥格斯堡大学智能技术感知研究所（I…",
+    "hook_text": "针对机器人数据天然分散于不同客户端（机器人、任务、位置），集中训练成本高、不实际的痛点，提出 Co-VLA 联邦视觉-语言-动作（VLA）训练…",
+    "key_points": [
+      "针对机器人数据天然分散于不同客户端（机器人、任务、位置），集中训练成本高、不实际的痛点，提出 Co-VLA 联邦视觉-语言-动作（VLA）训练…",
+      "基于 ADMM 共识优化解决异构 non-i.i.d. 客户端数据下的本地训练漂移问题，避免简单参数平均导致的全局模型性能下降",
+      "统一支持全模型训练、LoRA 微调、自适应秩 SoRA 微调三种场景，实现联邦训练性能接近集中式训练水平"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "title": "Uni-LaDiR: Latent Diffusion Unifies Multimodal Reasoning",
+    "link": "http://arxiv.org/abs/2609.19878",
+    "arxiv_id": "2609.19878",
+    "detail_path": "papers/2609.19878/",
+    "cover_path": "covers/2609.19878/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.19878.webp",
+    "preview_text": "指出现有多模态推理方法将不同模态的思维token独立编码，推理过程中需反复执行跨模态表示转换，导致跨模态转换逻辑与推理动态相互纠缠，降低推理效率与效果 提出Uni-LaDiR（Unified Latent Diffusion Reasoner）统一潜在扩散推理框架，旨在构建共享潜在推理空间，将不同模态的中间推理步骤统一映射为共享思维token，实现跨模态推理的表示解耦 研究目标是通过共享潜在空间、扩散模型预测思维t…",
+    "research_unit": "加州大学圣地亚哥分校（UC San Diego）",
+    "hook_text": "指出现有多模态推理方法将不同模态的思维token独立编码，推理过程中需反复执行跨模态表示转换，导致跨模态转换逻辑与推理动态相互纠缠，降低推理效…",
+    "key_points": [
+      "指出现有多模态推理方法将不同模态的思维token独立编码，推理过程中需反复执行跨模态表示转换，导致跨模态转换逻辑与推理动态相互纠缠，降低推理效…",
+      "提出Uni-LaDiR（Unified Latent Diffusion Reasoner）统一潜在扩散推理框架，旨在构建共享潜在推理空间，将…",
+      "研究目标是通过共享潜在空间、扩散模型预测思维token、编码器与推理器联合训练的方式，同时提升视觉-语言模型（VLM）的推理性能和视觉-语言-…"
+    ],
+    "reading_minutes": 9,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "title": "Beyond Patch Removal: Persistent Adversarial Effects in Vision-Language-Action Policies",
+    "link": "http://arxiv.org/abs/2609.19669",
+    "arxiv_id": "2609.19669",
+    "detail_path": "papers/2609.19669/",
+    "cover_path": "covers/2609.19669/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.19669.webp",
+    "preview_text": "核心研究 Vision-Language-Action (VLA) 策略 上对抗补丁的移除后持续性效应，现有对抗评估仅关注持续攻击下的任务表现，未分离补丁移除后的恢复能力 研究目标是引入精确的状态恢复协议，测量补丁移除后的恢复率，区分对抗特有效应与视觉遮挡、动作误差幅度等替代解释 同时评估 proof-of-concept 恢复适配器的效果，分析干预延迟对恢复能力的影响",
+    "research_unit": "UNSW Sydney、UNSW Canberra、National University of Si…",
+    "hook_text": "核心研究 Vision-Language-Action (VLA) 策略 上对抗补丁的移除后持续性效应，现有对抗评估仅关注持续攻击下的任务表现…",
+    "key_points": [
+      "核心研究 Vision-Language-Action (VLA) 策略 上对抗补丁的移除后持续性效应，现有对抗评估仅关注持续攻击下的任务表现…",
+      "研究目标是引入精确的状态恢复协议，测量补丁移除后的恢复率，区分对抗特有效应与视觉遮挡、动作误差幅度等替代解释",
+      "同时评估 proof-of-concept 恢复适配器的效果，分析干预延迟对恢复能力的影响"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "title": "Towards High-DoF Dexterous Manipulation through VLA Post-Training",
+    "link": "http://arxiv.org/abs/2609.19666",
+    "arxiv_id": "2609.19666",
+    "detail_path": "papers/2609.19666/",
+    "cover_path": "covers/2609.19666/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.19666.webp",
+    "preview_text": "针对预训练视觉-语言-动作（VLA）基础模型在真实高自由度（High-DoF）灵巧操作任务部署时的三大核心障碍：无原生高DoF手部动作接口、DAgger交互校正时的手势不匹配导致数据污染、原始关节空间强化学习样本效率极低，研究如何将通用VLA适配为可靠的真实灵巧操作策略 提出四阶段后训练流水线，通过共享的灵巧手动作表征串联监督微调、交互校正和强化学习，逐步提升策略在真实任务上的成功率 聚焦可在大约30秒内完成的原子…",
+    "research_unit": "Wuji Technology",
+    "hook_text": "针对预训练视觉-语言-动作（VLA）基础模型在真实高自由度（High-DoF）灵巧操作任务部署时的三大核心障碍：无原生高DoF手部动作接口、D…",
+    "key_points": [
+      "针对预训练视觉-语言-动作（VLA）基础模型在真实高自由度（High-DoF）灵巧操作任务部署时的三大核心障碍：无原生高DoF手部动作接口、D…",
+      "提出四阶段后训练流水线，通过共享的灵巧手动作表征串联监督微调、交互校正和强化学习，逐步提升策略在真实任务上的成功率",
+      "聚焦可在大约30秒内完成的原子灵巧操作任务，目标实现无需复杂仿真、仅用有限真实交互即可完成高成功率部署"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "title": "WorldContact: A Contact-Centric World Model for Scalable Robot Learning",
+    "link": "http://arxiv.org/abs/2609.19600",
+    "arxiv_id": "2609.19600",
+    "detail_path": "papers/2609.19600/",
+    "cover_path": "covers/2609.19600/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.19600.webp",
+    "preview_text": "提出WorldContact这一接触中心世界模型，面向可变形物体操作的机器人学习场景，旨在从少量高质量交互轨迹中高效生成大规模训练数据，解决传统数值物理模拟需极小时间步、数据生成效率低、难以支持机器人策略适配的问题 模型采用比源模拟器大20倍的时间步直接预测状态变化，结合GPU高效推理，实现状态rollout的高速生成 在16个购物袋操作任务上验证模型有效性，并将生成数据用于视觉语言动作（VLA）策略微调，实现真实…",
+    "research_unit": "不列颠哥伦比亚大学（University of British Columbia）：多数作者所属机构",
+    "hook_text": "提出WorldContact这一接触中心世界模型，面向可变形物体操作的机器人学习场景，旨在从少量高质量交互轨迹中高效生成大规模训练数据，解决传…",
+    "key_points": [
+      "提出WorldContact这一接触中心世界模型，面向可变形物体操作的机器人学习场景，旨在从少量高质量交互轨迹中高效生成大规模训练数据，解决传…",
+      "模型采用比源模拟器大20倍的时间步直接预测状态变化，结合GPU高效推理，实现状态rollout的高速生成",
+      "在16个购物袋操作任务上验证模型有效性，并将生成数据用于视觉语言动作（VLA）策略微调，实现真实机器人的直接部署"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-17",
+    "title": "Recovering Aggressively Pruned Vision-Language-Action Models with Offline Hidden-State Distillation",
+    "link": "http://arxiv.org/abs/2609.19579",
+    "arxiv_id": "2609.19579",
+    "detail_path": "papers/2609.19579/",
+    "cover_path": "covers/2609.19579/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.19579.webp",
+    "preview_text": "针对视觉语言动作（VLA）模型的语言骨干网络参数量过大、难以在机器人端侧部署的问题，研究激进结构化剪枝后模型的低成本恢复方案 解决现有恢复方法（如RLRC）需要在线强化学习、仿真/机器人交互、数百GPU小时算力的问题，提出无需环境交互、无需奖励的全离线恢复框架 系统探究宽度/深度剪枝的 trade-off、隐藏状态蒸馏的作用区间，并在真实6-DoF机械臂上验证压缩后模型的部署效果",
+    "research_unit": "韩国中央大学（Chung-Ang University, Seoul, Republic of Kor…",
+    "hook_text": "针对视觉语言动作（VLA）模型的语言骨干网络参数量过大、难以在机器人端侧部署的问题，研究激进结构化剪枝后模型的低成本恢复方案",
+    "key_points": [
+      "针对视觉语言动作（VLA）模型的语言骨干网络参数量过大、难以在机器人端侧部署的问题，研究激进结构化剪枝后模型的低成本恢复方案",
+      "解决现有恢复方法（如RLRC）需要在线强化学习、仿真/机器人交互、数百GPU小时算力的问题，提出无需环境交互、无需奖励的全离线恢复框架",
+      "系统探究宽度/深度剪枝的 trade-off、隐藏状态蒸馏的作用区间，并在真实6-DoF机械臂上验证压缩后模型的部署效果"
+    ],
+    "reading_minutes": 8,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "FASA: Feedback-Aware Sampling Adaptation for Efficient Diffusion-Based VLA Models",
+    "link": "http://arxiv.org/abs/2609.19475",
+    "arxiv_id": "2609.19475",
+    "detail_path": "papers/2609.19475/",
+    "cover_path": "covers/2609.19475/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.19475.webp",
+    "preview_text": "针对扩散模型-based 视觉-语言-动作（VLA）模型迭代采样算力开销高、无法在边缘平台实时部署的问题，现有加速方法要么需要 costly 重训练、要么静态调度忽略机器人交互的动态负载差异，无法匹配不同执行阶段的精度需求 提出 FASA（Feedback-Aware Sampling Adaptation），一个无需训练的即插即用运行时框架，将实时多模态反馈作为降噪 pipeline 的控制信号，动态分配降噪步数…",
+    "research_unit": "华南理工大学（South China University of Technology）",
+    "hook_text": "针对扩散模型-based 视觉-语言-动作（VLA）模型迭代采样算力开销高、无法在边缘平台实时部署的问题，现有加速方法要么需要 costly…",
+    "key_points": [
+      "针对扩散模型-based 视觉-语言-动作（VLA）模型迭代采样算力开销高、无法在边缘平台实时部署的问题，现有加速方法要么需要 costly…",
+      "提出 FASA（Feedback-Aware Sampling Adaptation），一个无需训练的即插即用运行时框架，将实时多模态反馈作为…",
+      "该框架适配多种主流扩散VLA策略，为资源受限平台部署生成式具身AI workload 提供了新的动态运行时架构范式"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-16",
+    "title": "ULOHA: An Underwater Bimanual Robot System for Robot Learning",
+    "link": "http://arxiv.org/abs/2609.19200",
+    "arxiv_id": "2609.19200",
+    "detail_path": "papers/2609.19200/",
+    "cover_path": "covers/2609.19200/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.19200.webp",
+    "preview_text": "针对水下双手操作机器人学习领域现有研究主要集中在单机械臂或空中双臂操作的空白，提出了 ULOHA 这一水下双臂机器人学习平台 平台整合了自定义的主-从臂硬件（干式leader控制水下follower）与基于 LeRobot 的软件扩展，支持遥操作采集、多视角感知、策略训练与自主部署全流程 在真实水环境中评估了 ACT、Diffusion Policy 和 SmolVLA 等现有学习方法，研究了气泡扰动、浮力驱动、动…",
+    "research_unit": "大阪大学（The University of Osaka）",
+    "hook_text": "针对水下双手操作机器人学习领域现有研究主要集中在单机械臂或空中双臂操作的空白，提出了 ULOHA 这一水下双臂机器人学习平台",
+    "key_points": [
+      "针对水下双手操作机器人学习领域现有研究主要集中在单机械臂或空中双臂操作的空白，提出了 ULOHA 这一水下双臂机器人学习平台",
+      "平台整合了自定义的主-从臂硬件（干式leader控制水下follower）与基于 LeRobot 的软件扩展，支持遥操作采集、多视角感知、策略…",
+      "在真实水环境中评估了 ACT、Diffusion Policy 和 SmolVLA 等现有学习方法，研究了气泡扰动、浮力驱动、动作执行时序及实…"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-09-16",
     "title": "rMuscle: Robotic Muscle Memory for Efficient Vision-Language-Action Model Inference",
     "link": "http://arxiv.org/abs/2609.19104",
@@ -259,14 +623,16 @@
     "detail_path": "papers/2609.18259/",
     "cover_path": "covers/2609.18259/",
     "paper_image_path": "assets/paper-images/thumbs/2609.18259.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "现有 Vision-Language-Action（VLA）模型的离散动作分词器存在离散化瓶颈，高重建损失丢失细粒度控制信息，同时存在语义纠缠、表达力不足的问题，显著限制下游VLA的性能上限 提出 M²Tok，一种多头多码本离散动作分词器，通过子空间分解和组合量化机制最小化重建误差，提升下游VLA的策略性能 在多个模拟和零样本真实世界操作任务上验证方法有效性，证明高重建保真度可直接转化为复杂操作任务的更高成功率",
+    "research_unit": "The Hong Kong Polytechnic University（香港理工大学）",
+    "hook_text": "现有 Vision-Language-Action（VLA）模型的离散动作分词器存在离散化瓶颈，高重建损失丢失细粒度控制信息，同时存在语义纠缠…",
     "key_points": [
-      "待生成"
+      "现有 Vision-Language-Action（VLA）模型的离散动作分词器存在离散化瓶颈，高重建损失丢失细粒度控制信息，同时存在语义纠缠…",
+      "提出 M²Tok，一种多头多码本离散动作分词器，通过子空间分解和组合量化机制最小化重建误差，提升下游VLA的策略性能",
+      "在多个模拟和零样本真实世界操作任务上验证方法有效性，证明高重建保真度可直接转化为复杂操作任务的更高成功率"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
@@ -285,14 +651,16 @@
     "detail_path": "papers/2609.18243/",
     "cover_path": "covers/2609.18243/",
     "paper_image_path": "assets/paper-images/thumbs/2609.18243.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "现有视觉-语言-动作（VLA）模型与世界动作模型（WAM）隐式学习动作、物体与场景的度量关系，缺乏显式的、统一尺度下的交互建模，难以支撑高精度机器人操作 本文提出度量交互框架，在物体级和场景级两个层面显式建模笛卡尔空间下的物理交互，提升操作精度与泛化能力 框架可适配多种VLA与WAM基线，仅需少量额外参数与训练步骤即可实现性能提升",
+    "research_unit": "浙江大学：Lijie Wang, Kenghou Hoi, Bowen Hu, Fei Gao",
+    "hook_text": "现有视觉-语言-动作（VLA）模型与世界动作模型（WAM）隐式学习动作、物体与场景的度量关系，缺乏显式的、统一尺度下的交互建模，难以支撑高精度…",
     "key_points": [
-      "待生成"
+      "现有视觉-语言-动作（VLA）模型与世界动作模型（WAM）隐式学习动作、物体与场景的度量关系，缺乏显式的、统一尺度下的交互建模，难以支撑高精度…",
+      "本文提出度量交互框架，在物体级和场景级两个层面显式建模笛卡尔空间下的物理交互，提升操作精度与泛化能力",
+      "框架可适配多种VLA与WAM基线，仅需少量额外参数与训练步骤即可实现性能提升"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 6,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -311,14 +679,16 @@
     "detail_path": "papers/2609.18242/",
     "cover_path": "covers/2609.18242/",
     "paper_image_path": "assets/paper-images/thumbs/2609.18242.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "提出ForceDelta-VLA，一个校正蒸馏框架，用于接触丰富的机器人操作任务 解决力感知VLA策略将任务级运动和接触依赖调整合并为单一动作预测的问题 将动作分解为可重用的参考动作和基于力历史的快速校正，无需等待完整的动作块生成即可响应接触变化",
+    "research_unit": "TAMS (Technical Aspects of Multimodal Systems), Dep…",
+    "hook_text": "提出ForceDelta-VLA，一个校正蒸馏框架，用于接触丰富的机器人操作任务",
     "key_points": [
-      "待生成"
+      "提出ForceDelta-VLA，一个校正蒸馏框架，用于接触丰富的机器人操作任务",
+      "解决力感知VLA策略将任务级运动和接触依赖调整合并为单一动作预测的问题",
+      "将动作分解为可重用的参考动作和基于力历史的快速校正，无需等待完整的动作块生成即可响应接触变化"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 6,
+    "section_count": 6,
     "cover_theme": {
       "from": "#177e89",
       "to": "#5ec2a8",
@@ -337,14 +707,16 @@
     "detail_path": "papers/2609.18232/",
     "cover_path": "covers/2609.18232/",
     "paper_image_path": "assets/paper-images/thumbs/2609.18232.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对机器人操作演示数据稀缺、人类操作数据（第一人称视频、UMI手持演示）与机器人数据存在视角、具身、动作监督差异的问题，提出UMI-Bridge框架，以UMI为中间域，基于动作等价而非像素相似实现跨源表征对齐 框架采用两阶段设计：第一阶段仅用人类操作数据（第一人称视频+UMI演示）训练双视角潜动作模型（LAM），无需机器人数据；第二阶段冻结第一阶段训练好的LAM，在UMI和机器人数据上对VLA模型π₀.₅进行后训练…",
+    "research_unit": "论文作者隶属于清华大学和Simple AI",
+    "hook_text": "针对机器人操作演示数据稀缺、人类操作数据（第一人称视频、UMI手持演示）与机器人数据存在视角、具身、动作监督差异的问题，提出UMI-Bridg…",
     "key_points": [
-      "待生成"
+      "针对机器人操作演示数据稀缺、人类操作数据（第一人称视频、UMI手持演示）与机器人数据存在视角、具身、动作监督差异的问题，提出UMI-Bridg…",
+      "框架采用两阶段设计：第一阶段仅用人类操作数据（第一人称视频+UMI演示）训练双视角潜动作模型（LAM），无需机器人数据；第二阶段冻结第一阶段训…",
+      "研究目标是提升机器人操作策略的任务成功率、降低对机器人演示数据的依赖，并实现UMI演示到真实机器人的无任务特定数据的迁移"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 9,
+    "section_count": 6,
     "cover_theme": {
       "from": "#d84f61",
       "to": "#f29c6b",
@@ -363,14 +735,16 @@
     "detail_path": "papers/2609.18207/",
     "cover_path": "covers/2609.18207/",
     "paper_image_path": "assets/paper-images/thumbs/2609.18207.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对大型预训练视觉-语言-动作（VLA）模型高推理延迟导致的实时操控观测滞后、分布偏移问题，以及现有异步策略方法多基于模仿学习、无法超越训练分布的局限，提出Real-Time EXPO-FT框架，通过强化学习微调VLA实现高可靠性的实时策略。 核心思路是解耦慢速高表达性的VLA动作生成与快速响应式动作编辑，在不牺牲VLA强行为先验的前提下，解决推理延迟导致的非Markov问题，同时获得强化学习的可靠性增益。 研究目…",
+    "research_unit": "论文作者均隶属于斯坦福大学（Stanford University）",
+    "hook_text": "针对大型预训练视觉-语言-动作（VLA）模型高推理延迟导致的实时操控观测滞后、分布偏移问题，以及现有异步策略方法多基于模仿学习、无法超越训练分…",
     "key_points": [
-      "待生成"
+      "针对大型预训练视觉-语言-动作（VLA）模型高推理延迟导致的实时操控观测滞后、分布偏移问题，以及现有异步策略方法多基于模仿学习、无法超越训练分…",
+      "核心思路是解耦慢速高表达性的VLA动作生成与快速响应式动作编辑，在不牺牲VLA强行为先验的前提下，解决推理延迟导致的非Markov问题，同时获…",
+      "研究目标是在动态模拟和真实机器人任务上验证框架的有效性，同时满足实时控制的高频响应要求和强化学习的高可靠性需求。"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -389,14 +763,16 @@
     "detail_path": "papers/2609.18111/",
     "cover_path": "covers/2609.18111/",
     "paper_image_path": "assets/paper-images/thumbs/2609.18111.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "本文是首个关于生成式物理人工智能（GPAI）的系统性综述，核心目标是整合当前碎片化的GPAI研究方向，搭建覆盖架构、应用、挑战和未来的完整知识体系 针对现有研究分散在机器人操作、物理感知、基础模型等子领域、缺乏统一视角的问题，本文提出整合五类GPAI范式的分类法，梳理其全流程互补作用 研究覆盖GPAI从感知、认知到执行的全闭环组件，同时分析多领域落地现状、核心挑战和未来可行方向",
+    "research_unit": "Qualcomm Research（美国圣地亚哥）、University of the Cumberl…",
+    "hook_text": "本文是首个关于生成式物理人工智能（GPAI）的系统性综述，核心目标是整合当前碎片化的GPAI研究方向，搭建覆盖架构、应用、挑战和未来的完整知识…",
     "key_points": [
-      "待生成"
+      "本文是首个关于生成式物理人工智能（GPAI）的系统性综述，核心目标是整合当前碎片化的GPAI研究方向，搭建覆盖架构、应用、挑战和未来的完整知识…",
+      "针对现有研究分散在机器人操作、物理感知、基础模型等子领域、缺乏统一视角的问题，本文提出整合五类GPAI范式的分类法，梳理其全流程互补作用",
+      "研究覆盖GPAI从感知、认知到执行的全闭环组件，同时分析多领域落地现状、核心挑战和未来可行方向"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 6,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -415,14 +791,16 @@
     "detail_path": "papers/2609.18108/",
     "cover_path": "covers/2609.18108/",
     "paper_image_path": "assets/paper-images/thumbs/2609.18108.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "该技术报告研究将 GR00T N1.7 的迭代扩散-Transformer动作头替换为一步漂移动作头的可行性，同时提出重叠条件扩展（DrifOv）解决异步动作预取场景下新预测与已提交控制器命令不匹配的问题 核心目标是探索一步动作生成在降低 视觉-语言-动作（VLA） 策略推理成本的同时，对闭环机器人操作任务成功率的影响 研究解决两大核心问题：一是迭代扩散/流匹配动作头的多步推理导致的高延迟问题，二是异步生成动作块时…",
+    "research_unit": "论文第一作者所属研究机构为 ZJU-UIUC Institute, Zhejiang Universi…",
+    "hook_text": "该技术报告研究将 GR00T N1.7 的迭代扩散-Transformer动作头替换为一步漂移动作头的可行性，同时提出重叠条件扩展（DrifO…",
     "key_points": [
-      "待生成"
+      "该技术报告研究将 GR00T N1.7 的迭代扩散-Transformer动作头替换为一步漂移动作头的可行性，同时提出重叠条件扩展（DrifO…",
+      "核心目标是探索一步动作生成在降低 视觉-语言-动作（VLA） 策略推理成本的同时，对闭环机器人操作任务成功率的影响",
+      "研究解决两大核心问题：一是迭代扩散/流匹配动作头的多步推理导致的高延迟问题，二是异步生成动作块时未考虑已执行前缀导致的动作不一致问题"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -441,14 +819,16 @@
     "detail_path": "papers/2609.18084/",
     "cover_path": "covers/2609.18084/",
     "paper_image_path": "assets/paper-images/thumbs/2609.18084.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对Vision-Language-Action（VLA）模型在新部署环境微调成本高、现有参数高效微调方法统一分配适配器容量忽略网络区域差异的问题，研究VLA各功能区域的适配成本分布规律 提出包含观察、诊断、分配、适配四阶段的 pipeline，仅需10个无标签目标观测即可在微调前估计各区域适配成本，分配可变秩LoRA适配器，降低微调参数预算 在5种架构各异的VLA、2个仿真基准和物理xArm-7机械臂上验证方法有…",
+    "research_unit": "Robotics Institute, Carnegie Mellon University, Pit…",
+    "hook_text": "针对Vision-Language-Action（VLA）模型在新部署环境微调成本高、现有参数高效微调方法统一分配适配器容量忽略网络区域差异的…",
     "key_points": [
-      "待生成"
+      "针对Vision-Language-Action（VLA）模型在新部署环境微调成本高、现有参数高效微调方法统一分配适配器容量忽略网络区域差异的…",
+      "提出包含观察、诊断、分配、适配四阶段的 pipeline，仅需10个无标签目标观测即可在微调前估计各区域适配成本，分配可变秩LoRA适配器，降…",
+      "在5种架构各异的VLA、2个仿真基准和物理xArm-7机械臂上验证方法有效性，实现低参数预算下的高任务成功率"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#ef6c3f",
       "to": "#f6b13d",
@@ -467,14 +847,16 @@
     "detail_path": "papers/2609.17728/",
     "cover_path": "covers/2609.17728/",
     "paper_image_path": "assets/paper-images/thumbs/2609.17728.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对现有基于世界建模的视觉-语言-动作（VLA）自动驾驶模型需要显式生成未来场景，带来额外训练负担和推理延迟的问题，提出RAF-VLA框架 核心思路是在表示层面利用未来场景监督，直接引导驾驶策略学习规划相关的内部表示，无需显式生成未来帧 研究目标是在NAVSIM基准上实现有竞争力的闭环规划性能，同时大幅降低训练开销与推理延迟",
+    "research_unit": "韩国科学技术院（Korea Advanced Institute of Science & Techn…",
+    "hook_text": "针对现有基于世界建模的视觉-语言-动作（VLA）自动驾驶模型需要显式生成未来场景，带来额外训练负担和推理延迟的问题，提出RAF-VLA框架",
     "key_points": [
-      "待生成"
+      "针对现有基于世界建模的视觉-语言-动作（VLA）自动驾驶模型需要显式生成未来场景，带来额外训练负担和推理延迟的问题，提出RAF-VLA框架",
+      "核心思路是在表示层面利用未来场景监督，直接引导驾驶策略学习规划相关的内部表示，无需显式生成未来帧",
+      "研究目标是在NAVSIM基准上实现有竞争力的闭环规划性能，同时大幅降低训练开销与推理延迟"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
@@ -605,14 +987,16 @@
     "detail_path": "papers/2609.16864/",
     "cover_path": "covers/2609.16864/",
     "paper_image_path": "assets/paper-images/thumbs/2609.16864.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对现有视觉语言动作（VLA）模型在动态机器人操作任务中因依赖单帧观测、缺少时序上下文，出现运动模糊（无法感知物体运动趋势）和状态混淆（无法区分任务不同阶段的相似观测）两大表征失败问题，提出即插即用的TEMPO框架，为预训练VLA补充时序信号以提升动态任务性能 论文核心目标是证明动态操作的瓶颈是表征缺失而非模型容量或推理延迟，通过最小化改动的方案解决上述两大失败模式 研究同时发布动态操作评估基准TEMPO-Benc…",
+    "research_unit": "论文作者均来自University of California, Irvine",
+    "hook_text": "针对现有视觉语言动作（VLA）模型在动态机器人操作任务中因依赖单帧观测、缺少时序上下文，出现运动模糊（无法感知物体运动趋势）和状态混淆（无法区…",
     "key_points": [
-      "待生成"
+      "针对现有视觉语言动作（VLA）模型在动态机器人操作任务中因依赖单帧观测、缺少时序上下文，出现运动模糊（无法感知物体运动趋势）和状态混淆（无法区…",
+      "论文核心目标是证明动态操作的瓶颈是表征缺失而非模型容量或推理延迟，通过最小化改动的方案解决上述两大失败模式",
+      "研究同时发布动态操作评估基准TEMPO-Bench，用于量化VLA/视觉语言模型（VLM）的运动理解能力"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
@@ -631,14 +1015,16 @@
     "detail_path": "papers/2609.16705/",
     "cover_path": "covers/2609.16705/",
     "paper_image_path": "assets/paper-images/thumbs/2609.16705.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "论文提出 Robot Data Factory (RDF)，一个任务驱动的闭环训练框架，旨在将机器人经验（robot experience）提升为 Physical AI 的核心科学资源，而非被动收集的原始数据 针对现有机器人数据集和基准的局限性（单平台收集、任务特定协议、有限外部真值、静态评估），RDF 通过持续生成、验证和重用经过验证的机器人经验，支持跨 embodiment 学习、世界建模和视觉-语言-动作策…",
+    "research_unit": "Mohamed Bin Zayed University of Artificial Intellig…",
+    "hook_text": "论文提出 Robot Data Factory (RDF)，一个任务驱动的闭环训练框架，旨在将机器人经验（robot experience）提…",
     "key_points": [
-      "待生成"
+      "论文提出 Robot Data Factory (RDF)，一个任务驱动的闭环训练框架，旨在将机器人经验（robot experience）提…",
+      "针对现有机器人数据集和基准的局限性（单平台收集、任务特定协议、有限外部真值、静态评估），RDF 通过持续生成、验证和重用经过验证的机器人经验…",
+      "框架组织为特定环境的训练场地网络（家庭、环境、能源），通过代理机器人网络、任务控制仪表板和无处不在的数据管道，实现从基础运动到精细操作的能力渐…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 6,
+    "section_count": 6,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
@@ -657,14 +1043,16 @@
     "detail_path": "papers/2609.16641/",
     "cover_path": "covers/2609.16641/",
     "paper_image_path": "assets/paper-images/thumbs/2609.16641.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "标准Vision-Language-Action (VLA) 模型缺乏旋转等变的架构先验，仅能泛化到训练演示覆盖的场景姿态范围，对场景旋转、视角变化敏感，操作策略的鲁棒性和数据效率不足 本文提出SAVLA，一种端到端的对称感知VLA，通过冻结预训练VLM骨干、结合等变flow-matching动作头与可学习的canonicalization模块，实现鲁棒且数据高效的语言条件机器人操作策略学习 核心目标是解决标准VL…",
+    "research_unit": "School of Informatics, University of Edinburgh（作者Ju…",
+    "hook_text": "标准Vision-Language-Action (VLA) 模型缺乏旋转等变的架构先验，仅能泛化到训练演示覆盖的场景姿态范围，对场景旋转、视…",
     "key_points": [
-      "待生成"
+      "标准Vision-Language-Action (VLA) 模型缺乏旋转等变的架构先验，仅能泛化到训练演示覆盖的场景姿态范围，对场景旋转、视…",
+      "本文提出SAVLA，一种端到端的对称感知VLA，通过冻结预训练VLM骨干、结合等变flow-matching动作头与可学习的canonical…",
+      "核心目标是解决标准VLA的泛化性瓶颈，在不修改预训练骨干的前提下，引入对称性先验，提升模型对场景旋转的鲁棒性，同时降低对演示数据量的需求"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 9,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -683,14 +1071,16 @@
     "detail_path": "papers/2609.16503/",
     "cover_path": "covers/2609.16503/",
     "paper_image_path": "assets/paper-images/thumbs/2609.16503.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对 Vision-Language-Action（VLA）机器人策略参数规模持续增长、难以部署到资源受限机器人平台的问题，本文核心目标是减少部署策略中保留的LLM侧参数数量，同时保持下游操作任务性能 提出 AdaDE 框架，通过将VLA中选定的密集前馈（FFN）块转换为混合专家（MoE）结构，再基于路由器统计实现自适应专家停用，在不改变预训练策略功能的前提下压缩模型规模 解决现有密集结构化剪枝方法会破坏预训练网络…",
+    "research_unit": "上海交通大学",
+    "hook_text": "针对 Vision-Language-Action（VLA）机器人策略参数规模持续增长、难以部署到资源受限机器人平台的问题，本文核心目标是减少…",
     "key_points": [
-      "待生成"
+      "针对 Vision-Language-Action（VLA）机器人策略参数规模持续增长、难以部署到资源受限机器人平台的问题，本文核心目标是减少…",
+      "提出 AdaDE 框架，通过将VLA中选定的密集前馈（FFN）块转换为混合专家（MoE）结构，再基于路由器统计实现自适应专家停用，在不改变预训…",
+      "解决现有密集结构化剪枝方法会破坏预训练网络功能、需要额外微调恢复性能，以及不同VLA层对压缩的容忍度不同、固定稀疏率不适用的问题"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#ef6c3f",
       "to": "#f6b13d",
@@ -709,14 +1099,16 @@
     "detail_path": "papers/2609.16437/",
     "cover_path": "covers/2609.16437/",
     "paper_image_path": "assets/paper-images/thumbs/2609.16437.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对现有遥操作数据采集方案缺乏高频稳定触觉反馈、难以实现接触丰富操作中稳定精确力控制的问题，提出 XRoboToolKit-T（XRT-T） 触觉辅助遥操作系统，用于接触丰富操作场景的高质量演示数据采集 系统集成触觉感知、触觉力稳定与VLA动作精调三类模块，可适配两指夹爪与灵巧手两类末端执行器，覆盖可变形物体抓取、精密插入等多种接触丰富任务 通过医用注射器插入、橡胶移液管液体转移、水瓶/纸杯抓取等挑战性任务验证系统…",
+    "research_unit": "Xiwen Dengxiong、Xueting Wang、Rui Li 所属机构为 Rochester…",
+    "hook_text": "针对现有遥操作数据采集方案缺乏高频稳定触觉反馈、难以实现接触丰富操作中稳定精确力控制的问题，提出 XRoboToolKit-T（XRT-T）…",
     "key_points": [
-      "待生成"
+      "针对现有遥操作数据采集方案缺乏高频稳定触觉反馈、难以实现接触丰富操作中稳定精确力控制的问题，提出 XRoboToolKit-T（XRT-T）…",
+      "系统集成触觉感知、触觉力稳定与VLA动作精调三类模块，可适配两指夹爪与灵巧手两类末端执行器，覆盖可变形物体抓取、精密插入等多种接触丰富任务",
+      "通过医用注射器插入、橡胶移液管液体转移、水瓶/纸杯抓取等挑战性任务验证系统有效性，证明其相比无触觉辅助的SOTA遥操作系统数据采集效率与操作稳…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#ef6c3f",
       "to": "#f6b13d",
@@ -735,14 +1127,16 @@
     "detail_path": "papers/2609.15940/",
     "cover_path": "covers/2609.15940/",
     "paper_image_path": "assets/paper-images/thumbs/2609.15940.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对当前视觉-语言-动作（VLA）策略仅开展单轴扰动鲁棒性评估、无法反映实际部署中多扰动同时发生场景的问题，研究复合鲁棒性是否可以从单轴评估结果推断 提出LIBERO-CTRL配对评估基准，对同一初始状态同时开展单轴扰动和全扰动同时施加的评估，且匹配各轴的扰动值 核心发现：单轴聚合成功率无法捕捉两种方向相反的结果转换，二者会相互抵消，掩盖大量匹配实例的结果变化，因此无法仅通过单轴评估表征复合鲁棒性",
+    "research_unit": "论文作者均来自Sony Computer Science Laboratory（日本东京）",
+    "hook_text": "针对当前视觉-语言-动作（VLA）策略仅开展单轴扰动鲁棒性评估、无法反映实际部署中多扰动同时发生场景的问题，研究复合鲁棒性是否可以从单轴评估结…",
     "key_points": [
-      "待生成"
+      "针对当前视觉-语言-动作（VLA）策略仅开展单轴扰动鲁棒性评估、无法反映实际部署中多扰动同时发生场景的问题，研究复合鲁棒性是否可以从单轴评估结…",
+      "提出LIBERO-CTRL配对评估基准，对同一初始状态同时开展单轴扰动和全扰动同时施加的评估，且匹配各轴的扰动值",
+      "核心发现：单轴聚合成功率无法捕捉两种方向相反的结果转换，二者会相互抵消，掩盖大量匹配实例的结果变化，因此无法仅通过单轴评估表征复合鲁棒性"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
@@ -761,14 +1155,16 @@
     "detail_path": "papers/2609.15169/",
     "cover_path": "covers/2609.15169/",
     "paper_image_path": "assets/paper-images/thumbs/2609.15169.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对现有驾驶视觉-语言-动作（VLA）模型存在的两个核心缺陷：一是语言推理与物理场景证据脱节（grounding gap），二是推理过程与动作生成模块分离（reasoning-to-action fragmentation gap），提出GRAVA框架 核心目标是将场景grounding、推理和动作生成整合到单一自回归流中，保持物理证据从推理到可执行动作的连续性，提升自动驾驶系统尤其是长尾场景的表现",
+    "research_unit": "论文作者所属机构包括：北京理工大学国家新能源汽车工程研究中心、北京理工大学深圳汽车研究院、深圳极光智捷…",
+    "hook_text": "针对现有驾驶视觉-语言-动作（VLA）模型存在的两个核心缺陷：一是语言推理与物理场景证据脱节（grounding gap），二是推理过程与动作…",
     "key_points": [
-      "待生成"
+      "针对现有驾驶视觉-语言-动作（VLA）模型存在的两个核心缺陷：一是语言推理与物理场景证据脱节（grounding gap），二是推理过程与动作…",
+      "核心目标是将场景grounding、推理和动作生成整合到单一自回归流中，保持物理证据从推理到可执行动作的连续性，提升自动驾驶系统尤其是长尾场景…",
+      "提出Grounded Reasoning-to-Action（GRA）表示：将动作相关的语言引用绑定到2D视觉区域和自车中心物理状态，通过轨迹…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#d84f61",
       "to": "#f29c6b",
@@ -787,14 +1183,16 @@
     "detail_path": "papers/2609.15012/",
     "cover_path": "covers/2609.15012/",
     "paper_image_path": "assets/paper-images/thumbs/2609.15012.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "现有 vision-language-action (VLA) 策略的语言指令可控性不足，视觉驱动的运动先验往往主导预测，语言仅作为隐式条件无具名运动含义，难以通过更换语言指令直接调整末端执行器运动方向 本文提出 Atomic Motion Coordinate (AMC)，一种几何基础的坐标表示，用于实现可语言 steerable、可力响应的双臂操作，解决语言对运动的弱控制问题 论文评估三个分离的能力：几何方向原…",
+    "research_unit": "Hangzhou DEEP Robotics Technology Co., Ltd. (DEEP R…",
+    "hook_text": "现有 vision-language-action (VLA) 策略的语言指令可控性不足，视觉驱动的运动先验往往主导预测，语言仅作为隐式条件无…",
     "key_points": [
-      "待生成"
+      "现有 vision-language-action (VLA) 策略的语言指令可控性不足，视觉驱动的运动先验往往主导预测，语言仅作为隐式条件无…",
+      "本文提出 Atomic Motion Coordinate (AMC)，一种几何基础的坐标表示，用于实现可语言 steerable、可力响应的…",
+      "论文评估三个分离的能力：几何方向原子干预、闭环子任务语言 steer、接触 rich 任务的力适应，验证AMC在不损失闭环操作能力的前提下提升…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 11,
+    "section_count": 6,
     "cover_theme": {
       "from": "#ef6c3f",
       "to": "#f6b13d",
@@ -813,14 +1211,16 @@
     "detail_path": "papers/2609.15005/",
     "cover_path": "covers/2609.15005/",
     "paper_image_path": "assets/paper-images/thumbs/2609.15005.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对Vision-Language-Action（VLA）策略的可解释性问题，现有归因方法仅能测量局部敏感性或时间聚合重要性，无法捕捉闭循环执行中阶段依赖的多模态贡献、跨阶段依赖及干预传播效应，也无法区分行为恢复与功能恢复 本文提出IMPACT-VLA方法，通过构建行为阶段、定义阶段-模态块、闭循环反事实重执行，量化每个多模态输入块对最终任务成功的贡献，分析跨阶段交互、轨迹传播与恢复机制 该方法旨在回答“多模态输入…",
+    "research_unit": "论文作者均隶属于汉阳大学（Hanyang University）工业数据工程系",
+    "hook_text": "针对Vision-Language-Action（VLA）策略的可解释性问题，现有归因方法仅能测量局部敏感性或时间聚合重要性，无法捕捉闭循环执…",
     "key_points": [
-      "待生成"
+      "针对Vision-Language-Action（VLA）策略的可解释性问题，现有归因方法仅能测量局部敏感性或时间聚合重要性，无法捕捉闭循环执…",
+      "本文提出IMPACT-VLA方法，通过构建行为阶段、定义阶段-模态块、闭循环反事实重执行，量化每个多模态输入块对最终任务成功的贡献，分析跨阶段…",
+      "该方法旨在回答“多模态输入在闭循环执行的哪些阶段支持任务成功”以及“不同阶段的贡献如何随执行过程条件耦合”两个核心问题"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#177e89",
       "to": "#5ec2a8",
@@ -839,14 +1239,16 @@
     "detail_path": "papers/2609.16074/",
     "cover_path": "covers/2609.16074/",
     "paper_image_path": "assets/paper-images/thumbs/2609.16074.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "本文是一篇面向机器人学习与控制领域的World-Action Models（WAMs，世界动作模型）综述，核心目标是澄清WAMs的概念范围，梳理现有方法的设计分类，总结跨领域应用、评估标准与开放挑战，为具身机器人智能的发展提供技术基础。 论文要解决的核心问题是：现有WAMs相关研究分散在视频生成、具身基础模型、VLA策略、基于模型的强化学习等子领域，缺乏统一的分类框架、设计选择对比与评估标准；且传统VLA策略为反应…",
+    "research_unit": "MBZUAI（穆罕默德·本·扎耶德人工智能大学，多数作者所属机构）",
+    "hook_text": "本文是一篇面向机器人学习与控制领域的World-Action Models（WAMs，世界动作模型）综述，核心目标是澄清WAMs的概念范围，梳…",
     "key_points": [
-      "待生成"
+      "本文是一篇面向机器人学习与控制领域的World-Action Models（WAMs，世界动作模型）综述，核心目标是澄清WAMs的概念范围，梳…",
+      "论文要解决的核心问题是：现有WAMs相关研究分散在视频生成、具身基础模型、VLA策略、基于模型的强化学习等子领域，缺乏统一的分类框架、设计选择…",
+      "研究目标是建立预测性世界建模与动作生成耦合的标准化技术视图，推动可靠、可部署的具身机器人智能发展。"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 6,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -865,14 +1267,16 @@
     "detail_path": "papers/2609.14219/",
     "cover_path": "covers/2609.14219/",
     "paper_image_path": "assets/paper-images/thumbs/2609.14219.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对高混低批量（HMLV）制造场景，现有检测系统无法自适应变化的零件、规范与工作指令，需重复任务特定编程，且现有自动化检测要么预设固定传感序列，要么通用机器人智能体优化任务完成而非计量证据的完整性与有效性 论文形式化任务指定的主动计量检测问题，提出分层框架FRAME（From Requirements to Admissible Metrological Evidence），将自然语言检测指令与结构化规范转化为可追…",
+    "research_unit": "作者Zhiling Chen, Jingzhan Ge, Ruimin Chen, Farhad Im…",
+    "hook_text": "针对高混低批量（HMLV）制造场景，现有检测系统无法自适应变化的零件、规范与工作指令，需重复任务特定编程，且现有自动化检测要么预设固定传感序列…",
     "key_points": [
-      "待生成"
+      "针对高混低批量（HMLV）制造场景，现有检测系统无法自适应变化的零件、规范与工作指令，需重复任务特定编程，且现有自动化检测要么预设固定传感序列…",
+      "论文形式化任务指定的主动计量检测问题，提出分层框架FRAME（From Requirements to Admissible Metrolog…",
+      "研究目标是在保证计量证据有效性的前提下，实现更高的端到端检测可靠性、更少的错误接受（false accept）以及更短的任务完成时间"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 9,
+    "section_count": 6,
     "cover_theme": {
       "from": "#177e89",
       "to": "#5ec2a8",
@@ -891,14 +1295,16 @@
     "detail_path": "papers/2609.14156/",
     "cover_path": "covers/2609.14156/",
     "paper_image_path": "assets/paper-images/thumbs/2609.14156.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "解决现代 visuomotor policy（包括预训练的 VLA 模型）缺乏接触感知的问题：现有方法需要专门的触觉硬件、额外的编码器或非图像策略架构，与现代基于预训练 2D 视觉表示的图像条件策略不兼容 提出 Visible Touch：将接触信息直接渲染为策略 RGB 输入的图像空间叠加层（overlay），作为任何图像条件策略的即插即用增强，无需架构更改或力校准 配套开源低成本的磁性接触传感器和参数化 CAD…",
+    "research_unit": "University of California, Los Angeles (UCLA) 计算机科学系",
+    "hook_text": "解决现代 visuomotor policy（包括预训练的 VLA 模型）缺乏接触感知的问题：现有方法需要专门的触觉硬件、额外的编码器或非图像…",
     "key_points": [
-      "待生成"
+      "解决现代 visuomotor policy（包括预训练的 VLA 模型）缺乏接触感知的问题：现有方法需要专门的触觉硬件、额外的编码器或非图像…",
+      "提出 Visible Touch：将接触信息直接渲染为策略 RGB 输入的图像空间叠加层（overlay），作为任何图像条件策略的即插即用增强…",
+      "配套开源低成本的磁性接触传感器和参数化 CAD-to-mold 制造管道，在 LIBERO 仿真基准和四个真实世界接触丰富操作任务上验证有效性"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 9,
+    "section_count": 6,
     "cover_theme": {
       "from": "#177e89",
       "to": "#5ec2a8",
@@ -917,14 +1323,16 @@
     "detail_path": "papers/2609.14146/",
     "cover_path": "covers/2609.14146/",
     "paper_image_path": "assets/paper-images/thumbs/2609.14146.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "核心研究视觉-语言-动作模型（VLA）部署过程中推理延迟降低与闭环任务行为保留的权衡问题，聚焦SmolVLA模型在PyTorch与ONNX两种部署方案下的性能对比 针对更快的VLA部署是否会导致闭环任务成功率下降、部署精度标志真实性、静态接口约束对任务表现的影响等实际工程问题开展系统性评估 研究目标是证明VLA部署评估不能仅关注推理延迟或开环数值一致性，需要联合报告闭环成功率、导出图检查、接口约束等多维度指标",
+    "research_unit": "论文作者为独立研究员（Independent Researcher），无其他机构 affiliation",
+    "hook_text": "核心研究视觉-语言-动作模型（VLA）部署过程中推理延迟降低与闭环任务行为保留的权衡问题，聚焦SmolVLA模型在PyTorch与ONNX两种…",
     "key_points": [
-      "待生成"
+      "核心研究视觉-语言-动作模型（VLA）部署过程中推理延迟降低与闭环任务行为保留的权衡问题，聚焦SmolVLA模型在PyTorch与ONNX两种…",
+      "针对更快的VLA部署是否会导致闭环任务成功率下降、部署精度标志真实性、静态接口约束对任务表现的影响等实际工程问题开展系统性评估",
+      "研究目标是证明VLA部署评估不能仅关注推理延迟或开环数值一致性，需要联合报告闭环成功率、导出图检查、接口约束等多维度指标"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 8,
+    "section_count": 6,
     "cover_theme": {
       "from": "#d84f61",
       "to": "#f29c6b",
@@ -943,14 +1351,16 @@
     "detail_path": "papers/2609.13984/",
     "cover_path": "covers/2609.13984/",
     "paper_image_path": "assets/paper-images/thumbs/2609.13984.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "本文是针对模块化Vision-Language-Action（VLA）模型的受控设计空间研究，固定骨干网络家族（SigLIP2、Qwen2.5）和训练流程，隔离动作头设计的4个独立轴与模块规模的3个轴，同时配对测量实际推理延迟，旨在明确各设计选择对VLA性能和效率的独立贡献，构建高效VLA的设计规则。 论文解决的核心问题是：现有VLA的设计改进缺乏受控隔离的对比验证，且几乎不报告推理延迟，无法判断设计选择是否真的带…",
+    "research_unit": "中国科学院自动化研究所",
+    "hook_text": "本文是针对模块化Vision-Language-Action（VLA）模型的受控设计空间研究，固定骨干网络家族（SigLIP2、Qwen2.5…",
     "key_points": [
-      "待生成"
+      "本文是针对模块化Vision-Language-Action（VLA）模型的受控设计空间研究，固定骨干网络家族（SigLIP2、Qwen2.5…",
+      "论文解决的核心问题是：现有VLA的设计改进缺乏受控隔离的对比验证，且几乎不报告推理延迟，无法判断设计选择是否真的带来性能和效率的双重收益。",
+      "开展了首个受控的、延迟配对的VLA设计空间研究，隔离了动作头的4个设计轴（解码器类型、损失函数、初始化方式、推理步数）和3个模块规模轴，每个配…"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 9,
+    "section_count": 6,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
@@ -969,14 +1379,16 @@
     "detail_path": "papers/2609.13851/",
     "cover_path": "covers/2609.13851/",
     "paper_image_path": "assets/paper-images/thumbs/2609.13851.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "本文提出ReWeight框架，针对直接将大规模自我中心人类演示与机器人数据混合用于VLA（视觉-语言-动作模型）后训练时，因跨具身差异导致性能下降甚至退化的问题，提供解决方案 核心思路是分两层利用人类数据：先通过演示级检索筛选与目标机器人任务高度相关的人类演示，再对检索到的人类样本按跨具身相关性分配差异化权重，避免低相关人类数据的负面影响 研究目标是将丰富的人类操作经验转化为高监督价值的训练数据，显著提升VLA在特…",
+    "research_unit": "香港大学机械工程系（Chenwei Wang, Dianye Huang, Match W.L. Ko…",
+    "hook_text": "本文提出ReWeight框架，针对直接将大规模自我中心人类演示与机器人数据混合用于VLA（视觉-语言-动作模型）后训练时，因跨具身差异导致性能…",
     "key_points": [
-      "待生成"
+      "本文提出ReWeight框架，针对直接将大规模自我中心人类演示与机器人数据混合用于VLA（视觉-语言-动作模型）后训练时，因跨具身差异导致性能…",
+      "核心思路是分两层利用人类数据：先通过演示级检索筛选与目标机器人任务高度相关的人类演示，再对检索到的人类样本按跨具身相关性分配差异化权重，避免低…",
+      "研究目标是将丰富的人类操作经验转化为高监督价值的训练数据，显著提升VLA在特定机器人和任务上的后训练泛化性能"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 7,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -1072,7 +1484,7 @@
     "arxiv_id": "2609.13053",
     "detail_path": "papers/2609.13053/",
     "cover_path": "covers/2609.13053/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2609.13053.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -1098,7 +1510,7 @@
     "arxiv_id": "2609.12641",
     "detail_path": "papers/2609.12641/",
     "cover_path": "covers/2609.12641/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2609.12641.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -1124,7 +1536,7 @@
     "arxiv_id": "2609.12371",
     "detail_path": "papers/2609.12371/",
     "cover_path": "covers/2609.12371/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2609.12371.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -1150,7 +1562,7 @@
     "arxiv_id": "2609.12316",
     "detail_path": "papers/2609.12316/",
     "cover_path": "covers/2609.12316/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2609.12316.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",

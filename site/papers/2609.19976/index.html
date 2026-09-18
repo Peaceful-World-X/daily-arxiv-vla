@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Compliance for Free: Learning Identifiable Impedance via Bilateral Teleoperation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有视觉-语言-动作（VLA）模型仅能输出位姿目标，无法输出顺应性（刚度/阻尼），而擦拭、精密插入等接触丰富任务需要机器人调节推力，顺应性是和一阶动作同等重要的输出维度 传统示教接口（VR控制器、SpaceMouse、单边遥操作臂等）仅记录机器人的实际位姿，存在严格的可识别性问题：操作者的指令平衡位置与刚度耦合，仅靠实际位姿和测量力无法区分两种等效的力产生原因，因此永远无法获得真实的顺应性监督信号 本文提出基于四通…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.19976">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.19976.webp" alt="Compliance for Free: Learning Identifiable Impedance via Bilateral Teleoperation" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有视觉-语言-动作（VLA）模型仅能输出位姿目标，无法输出顺应性（刚度/阻尼），而擦拭、精密插入等接触丰富任务需要机器人调节推力，顺应性是和…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Compliance for Free: Learning Identifiable Impedance via Bilateral Teleoperation</h1>
+            <div class="detail-meta">2026-09-17 · <a href="http://arxiv.org/abs/2609.19976" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.19976" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.19976</span></div>
+            <p class="detail-summary">现有视觉-语言-动作（VLA）模型仅能输出位姿目标，无法输出顺应性（刚度/阻尼），而擦拭、精密插入等接触丰富任务需要机器人调节推力，顺应性是和一阶动作同等重要的输出维度 传统示教接口（VR控制器、SpaceMouse、单边遥操作臂等）仅记录机器人的实际位姿，存在严格的可识别性问题：操作者的指令平衡位置与刚度耦合，仅靠实际位姿和测量力无法区分两种等效的力产生原因，因此永远无法获得真实的顺应性监督信号 本文提出基于四通…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构：Institut de Robòtica i Informàtica Industr…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.19976/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有视觉-语言-动作（VLA）模型仅能输出位姿目标，无法输出顺应性（刚度/阻尼），而擦拭、精密插入等接触丰富任务需要机器人调节推力，顺应性是和…</p>
+  <ul class="reading-intro-points"><li>现有视觉-语言-动作（VLA）模型仅能输出位姿目标，无法输出顺应性（刚度/阻尼），而擦拭、精密插入等接触丰富任务需要机器人调节推力，顺应性是和…</li><li>传统示教接口（VR控制器、SpaceMouse、单边遥操作臂等）仅记录机器人的实际位姿，存在严格的可识别性问题：操作者的指令平衡位置与刚度耦合…</li><li>本文提出基于四通道双向遥操作的解决方案，利用leader臂轨迹作为操作者指令平衡位置的独立测量，解决可识别性瓶颈，仅用机械臂原生关节扭矩传感器…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构：<strong>Institut de Robòtica i Informàtica Industrial, CSIC-UPC</strong>（西班牙巴塞罗那）</li><li>作者：Harsha Guda, Adrià Colomé, Carme Torras</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有视觉-语言-动作（VLA）模型仅能输出位姿目标，无法输出顺应性（刚度/阻尼），而擦拭、精密插入等接触丰富任务需要机器人调节推力，顺应性是和一阶动作同等重要的输出维度</li><li>传统示教接口（VR控制器、SpaceMouse、单边遥操作臂等）仅记录机器人的实际位姿，存在严格的可识别性问题：操作者的指令平衡位置与刚度耦合，仅靠实际位姿和测量力无法区分两种等效的力产生原因，因此永远无法获得真实的顺应性监督信号</li><li>本文提出基于四通道双向遥操作的解决方案，利用leader臂轨迹作为操作者指令平衡位置的独立测量，解决可识别性瓶颈，仅用机械臂原生关节扭矩传感器即可提取顺应性标签，用于微调VLA输出刚度，最终在擦白板任务上验证策略能根据语言指令（正常/用力擦拭）调节接触力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出无传感器的顺应性标签提取流程：通过四通道双向遥操作解决位姿-only示教的可识别性歧义，仅利用机械臂原生关节扭矩传感器，即可得到每时间步、各向异性的真实世界顺应性标签</li><li>构建离线基准验证标签有效性：训练好的刚度预测器在所有平移轴上的表现均优于每轴常数预测器，整体误差降低1.25倍，证明提取的标签包含可学习的信号</li><li>提出基于提取标签训练的顺应性输出VLA策略：该策略可安全追踪分块阻抗目标，是5个对比策略中唯一能根据语言指令（firmly/normally）调节接触力的策略，正常擦拭RMS力为6.4N，用力擦拭为9.1N，效应量Cohen's d=0.89，p=0.023</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>可识别性问题的解决</strong>：传统示教仅记录实际位姿，操作者的平衡位置与刚度耦合，无法通过回归恢复；四通道双向遥操作中leader臂轨迹作为独立的平衡位置测量，位移可直接观测，刚度和阻尼可通过回归位移、位移导数、接触力得到</li><li><strong>顺应性标签提取流程</strong>：</li></ul>
+<p> - 接触帧定义：对接触阶段的follower位姿做SVD，最小奇异向量对应表面法向，奇异值比衡量运动平面性，拒绝平面性>0.15的无效拟合</p>
+<p> - 滑动窗口回归：300ms滑动窗口内，通过带约束的非线性最小二乘求解每轴的刚度和阻尼，阻尼采用临界阻尼公式，回归过程在log空间进行以避免数值不稳定</p>
+<p> - 可识别性掩码：每时间步每轴生成二值掩码，仅当回归矩阵条件数小于阈值、位移大于噪声阈值、力大于轴噪声阈值、且处于接触状态时保留标签，排除无效拟合结果</p>
+<ul><li><strong>无传感器力矩估计</strong>：先通过15个静态位姿的最小二乘估计末端工具的质量与质心，修正重力模型偏差；再采用512维随机傅里叶特征的岭回归，学习自由空间运动中的力矩偏差，得到每轴的力噪声下限</li><li><strong>顺应性输出VLA策略</strong>：基于<strong>SmolVLA</strong>（总参数量约450M），冻结预训练视觉-语言模型，仅微调动作专家；输入包括两个224×224的RGB流（场景+腕部相机）、语言指令、500ms的6自由度力矩历史；输出为时间长度32的动作块，每个时间步包含6自由度的绝对平衡位姿和6自由度的log刚度；损失仅对可识别时间步计算，平衡位姿用流匹配L1损失，log刚度用Huber损失</li><li><strong>低层控制</strong>：采用1kHz笛卡尔阻抗控制器跟踪分块目标，策略10Hz重规划，通过指数衰减加权的时间集成平滑块边界，log刚度更新率限制为3 s⁻¹，刚度增加过程采用能量罐保证无源性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：自行采集的四通道双向遥操作擦白板数据集，白板倾斜约45°，末端安装橡皮擦，指令为2×2网格（擦左/右标记 正常/用力擦拭），共96个演示episode</li><li><strong>模型规模</strong>：基于<strong>SmolVLA</strong>，总参数量约450M，其中可训练参数99.9M</li><li><strong>训练资源</strong>：单张<strong>NVIDIA L40S</strong> GPU</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：基于<strong>Franka Research 3</strong>机械臂的擦白板任务，2×2指令网格，每个指令组合8次rollout，3个训练种子，共24次rollout每策略，每次rollout持续约43.5s，所有对比策略共享演示数据、低层控制器、种子和重规划设置</li><li><strong>评估指标</strong>：</li></ul>
+<p> - 成功率：自动通过场景相机像素差判断，墨水去除≥50%为成功，擦错标记判为失败</p>
+<p> - 墨水去除率：连续的去除百分比</p>
+<p> - 接触力：估计力矩的峰值和RMS值</p>
+<p> - 保护停止次数：估计接触力超过40N安全阈值的次数作为安全代理指标</p>
+<ul><li><strong>关键实验结果</strong>：</li></ul>
+<p> - 标签有效性：离线基准中学习到的刚度预测器在所有平移轴上的RMSE均低于每轴常数预测器，整体误差降低1.25倍，证明提取的标签包含可学习信号</p>
+<p> - 指令条件顺应性：仅本文提出的Ours策略的接触力会随指令发生显著变化，normal模式RMS接触力为6.4N，firm模式为9.1N，Cohen's d=0.89，p=0.023，统计显著</p>
+<p> - 任务性能：Ours策略的成功率、墨水去除率与其余4个对比策略（Fixed-K、Fitted-K、Force-In、Hybrid）相当，无额外保护停止触发</p>
+<p> - 消融验证：同样输出位姿+log K的Hybrid策略（ForceVLA2）无法学习到指令相关的顺应性变化，证明本文的标签提取流程与共享解码设计的有效性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.20646/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">TraceFlow: Guiding Frozen Flow-Matching Robot Policies with Success and Failure Traces</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.19923/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Co-VLA: Consensus-based Federated Training for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Technical Report: One-Step Drifting Action Heads for GR00T N1.7 - VLA / Vision-Language-Action 每日论文卡</title>
-    <meta name="description" content="待生成" />
+    <meta name="description" content="该技术报告研究将 GR00T N1.7 的迭代扩散-Transformer动作头替换为一步漂移动作头的可行性，同时提出重叠条件扩展（DrifOv）解决异步动作预取场景下新预测与已提交控制器命令不匹配的问题 核心目标是探索一步动作生成在降低 视觉-语言-动作（VLA） 策略推理成本的同时，对闭环机器人操作任务成功率的影响 研究解决两大核心问题：一是迭代扩散/流匹配动作头的多步推理导致的高延迟问题，二是异步生成动作块时…" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,17 +26,17 @@
         <div class="detail-hero-grid">
           <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
   <img class="paper-figure-image" src="../../assets/paper-images/2609.18108.webp" alt="Technical Report: One-Step Drifting Action Heads for GR00T N1.7" loading="lazy" />
-  <figcaption class="paper-figure-caption">待生成</figcaption>
+  <figcaption class="paper-figure-caption">该技术报告研究将 GR00T N1.7 的迭代扩散-Transformer动作头替换为一步漂移动作头的可行性，同时提出重叠条件扩展（DrifO…</figcaption>
 </figure></div>
           <div class="detail-hero-copy">
             <p class="eyebrow">论文详情</p>
             <h1 class="detail-page-title">Technical Report: One-Step Drifting Action Heads for GR00T N1.7</h1>
             <div class="detail-meta">2026-09-16 · <a href="http://arxiv.org/abs/2609.18108" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.18108" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.18108</span></div>
-            <p class="detail-summary">待生成</p>
+            <p class="detail-summary">该技术报告研究将 GR00T N1.7 的迭代扩散-Transformer动作头替换为一步漂移动作头的可行性，同时提出重叠条件扩展（DrifOv）解决异步动作预取场景下新预测与已提交控制器命令不匹配的问题 核心目标是探索一步动作生成在降低 视觉-语言-动作（VLA） 策略推理成本的同时，对闭环机器人操作任务成功率的影响 研究解决两大核心问题：一是迭代扩散/流匹配动作头的多步推理导致的高延迟问题，二是异步生成动作块时…</p>
             <div class="detail-micro-meta">
-              <span class="meta-pill">1 分钟读完</span>
-              <span class="meta-pill">1 张阅读卡</span>
-              
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文第一作者所属研究机构为 ZJU-UIUC Institute, Zhejiang Universi…</span>
             </div>
           </div>
         </div>
@@ -50,16 +50,60 @@
     <span class="reading-badge">一眼看懂</span>
     <a class="cover-preview-link" href="../../covers/2609.18108/">封面预览</a>
   </div>
-  <p class="reading-intro-hook">待生成</p>
-  <ul class="reading-intro-points"><li>待生成</li></ul>
+  <p class="reading-intro-hook">该技术报告研究将 GR00T N1.7 的迭代扩散-Transformer动作头替换为一步漂移动作头的可行性，同时提出重叠条件扩展（DrifO…</p>
+  <ul class="reading-intro-points"><li>该技术报告研究将 GR00T N1.7 的迭代扩散-Transformer动作头替换为一步漂移动作头的可行性，同时提出重叠条件扩展（DrifO…</li><li>核心目标是探索一步动作生成在降低 视觉-语言-动作（VLA） 策略推理成本的同时，对闭环机器人操作任务成功率的影响</li><li>研究解决两大核心问题：一是迭代扩散/流匹配动作头的多步推理导致的高延迟问题，二是异步生成动作块时未考虑已执行前缀导致的动作不一致问题</li></ul>
 </section>
 <section class="reading-card reading-card-section">
   <div class="reading-card-topline">
     <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文第一作者所属研究机构为 <strong>ZJU-UIUC Institute, Zhejiang University</strong>（浙江大学ZJU-UIUC联合学院），同时为 <strong>LimX Dynamics, Shenzhen</strong>（深圳逐际动力）实习生</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
     <span class="reading-step-note">论文概述</span>
   </div>
   <h2>论文概述</h2>
-  <div class="reading-card-content"><p>待生成</p></div>
+  <div class="reading-card-content"><ul><li>该技术报告研究将 <strong>GR00T N1.7</strong> 的迭代扩散-Transformer动作头替换为一步漂移动作头的可行性，同时提出重叠条件扩展（DrifOv）解决异步动作预取场景下新预测与已提交控制器命令不匹配的问题</li><li>核心目标是探索一步动作生成在降低 <strong>视觉-语言-动作（VLA）</strong> 策略推理成本的同时，对闭环机器人操作任务成功率的影响</li><li>研究解决两大核心问题：一是迭代扩散/流匹配动作头的多步推理导致的高延迟问题，二是异步生成动作块时未考虑已执行前缀导致的动作不一致问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>实现并公开了 <strong>GR00T N1.7</strong> 的一步漂移动作头方案，包括继承的 <strong>Implicit Drifting Policy (IDP)</strong> 训练目标、模型架构细节及单次评估推理路径</li><li>提出 <strong>DrifOv</strong> 重叠条件扩展机制，支持输入已提交动作前缀、前缀有效性掩码、重叠长度和执行偏移，推理时精确保留有效前缀坐标，仅生成未知后缀</li><li>完成多种子（1、42、1000）的 <strong>LIBERO</strong> 基准实验，所有漂移模型均在双NVIDIA A800 GPU的统一训练配置下训练，分别报告延迟与成功率，未合并缺失测量的套件结果</li><li>识别了观察到的速度-成功率权衡的多个潜在原因（如确定性一步模式平均、批量依赖的几何估计、长开环块执行、未测试异步重叠路径），明确了后续需要开展的隔离实验</li><li>记录了 <strong>LimX Tron2</strong> 真实机器人上的初步部署与数据收集经验，覆盖玩具放置、工业配件包装、布料折叠三类操作场景</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础技术路线：保留 <strong>GR00T N1.7</strong> 的Cosmos-Reason2/Qwen3视觉-语言骨干网络和预处理栈，将原有迭代流匹配动作生成器替换为基于IDP训练目标的确定性条件Transformer，单次前向推理即可输出完整动作块</li><li>关键创新点1：继承<strong>Implicit Drifting Policy (IDP)</strong>的几何加权训练目标，通过邻域样本的条件方差构建对角几何矩阵，对动作预测潜在场进行加权惩罚，提升动作预测的几何一致性</li><li>关键创新点2：一步确定性推理机制，推理时输入零动作种子，单次评估输出完整动作块，无需多步迭代生成，大幅降低动作头延迟</li><li>关键创新点3：提出<strong>DrifOv</strong>重叠条件生成机制，训练时随机采样重叠长度、带边界截断的高斯扰动的专家动作前缀，推理时可输入已提交的动作前缀，仅生成未知后缀，保证已提交动作不会被模型修改</li><li>关键创新点4：重叠感知训练策略，通过前缀掩码、重叠长度嵌入、执行偏移嵌入引导模型学习前缀条件的一步生成，仅对后缀坐标计算生成损失，同时添加边界连续性正则项保证前缀与后缀的平滑过渡</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：<strong>lerobot/libero</strong>（LIBERO机器人操作基准的LeRobot格式数据集）</li><li>模型规模：动作头为12层Transformer，模型维度1024，16个注意力头，前馈网络维度4096，Dropout率0.1；默认动作块长度H=40，最大状态与动作维度均为132</li><li>训练资源：2块 <strong>NVIDIA A800</strong> GPU，bfloat16精度，每GPU批次大小32（有效批次64），共20k优化步</li><li>部署硬件：<strong>RTX 4090 + Intel 14900KF</strong> 工作站，搭载于 <strong>LimX Tron2</strong> 机器人</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真环境使用 <strong>LIBERO</strong> 基准的Spatial、Goal、Long、Object四个套件，每个子任务10轮rollout，每套件共100轮；真实机器人端在LimX Tron2上开展初步部署实验</li><li>主要评估指标：动作头前向延迟、骨干+动作头总前向延迟、任务成功率</li><li>关键实验结果：</li></ul>
+<p> 1. 延迟加速显著：所有套件下动作头加速约9倍（从45.3ms降至5.0ms），总模型前向延迟加速2.2-2.4倍（从70.0ms降至30.6ms），但VLM骨干仍占总延迟的主要部分</p>
+<p> 2. 任务成功率系统性下降：漂移模型在Spatial套件成功率为64.0±4.0%（对比GR00T N1.7的82.3±6.8%）、Goal套件为52.0±1.0%（对比82.3±4.0%）、Long套件为26.0±2.6%（对比74.5±10.6%），三个种子的成功率方差极小，说明性能下降是系统性的而非初始化随机性导致</p>
+<p> 3. Object套件的漂移模型未完成成功率测试，仅报告了延迟结果</p>
+<p> 4. 真实机器人端完成了三类操作场景的数据收集与系统集成，其中工业配件包装场景收集了2562条标注rollout轨迹，但未开展受控的成功率对比实验</p></div>
 </section></article>
         <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
           <p class="detail-toc-title">阅读目录</p>
