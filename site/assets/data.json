@@ -1407,14 +1407,16 @@
     "detail_path": "papers/2609.13812/",
     "cover_path": "covers/2609.13812/",
     "paper_image_path": "assets/paper-images/thumbs/2609.13812.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "提出 GeomVLA，一个将语义感知、潜在未来运动推理和机器人动作生成统一在共享机器人中心 3D 坐标框架 中的视觉-语言-动作模型。 解决现有 VLA 模型主要依赖 2D 图像表征与机器人操控所需的精确 3D 几何、接触和运动推理之间存在错配的问题。 通过引入 3D 场景轨迹去噪器 预测场景未来运动，并将其作为中间推理信号传递给动作生成模块，实现从感知到控制的几何一致性。",
+    "research_unit": "Carnegie Mellon University",
+    "hook_text": "提出 GeomVLA，一个将语义感知、潜在未来运动推理和机器人动作生成统一在共享机器人中心 3D 坐标框架 中的视觉-语言-动作模型。",
     "key_points": [
-      "待生成"
+      "提出 GeomVLA，一个将语义感知、潜在未来运动推理和机器人动作生成统一在共享机器人中心 3D 坐标框架 中的视觉-语言-动作模型。",
+      "解决现有 VLA 模型主要依赖 2D 图像表征与机器人操控所需的精确 3D 几何、接触和运动推理之间存在错配的问题。",
+      "通过引入 3D 场景轨迹去噪器 预测场景未来运动，并将其作为中间推理信号传递给动作生成模块，实现从感知到控制的几何一致性。"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 6,
+    "section_count": 6,
     "cover_theme": {
       "from": "#ef6c3f",
       "to": "#f6b13d",
@@ -1433,14 +1435,16 @@
     "detail_path": "papers/2609.13695/",
     "cover_path": "covers/2609.13695/",
     "paper_image_path": "assets/paper-images/thumbs/2609.13695.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对视觉-语言-动作（VLA）模型在分块执行时产生的加加速度（jerk）问题，本文提出了一种名为GROOVE的在线后处理调节器，旨在减少端到端执行过程中的抖动和不稳定运动 现有方法多需重新训练模型或修改推理过程，而GROOVE无需重训练或额外VLA推理，仅通过几何引导的搜索来优化动作块的平滑度 主要目标是在保持任务成功率的同时，显著降低平移和旋转方向的加加速度",
+    "research_unit": "POSTECH（浦项科技大学），计算机科学与工程系",
+    "hook_text": "针对视觉-语言-动作（VLA）模型在分块执行时产生的加加速度（jerk）问题，本文提出了一种名为GROOVE的在线后处理调节器，旨在减少端到端…",
     "key_points": [
-      "待生成"
+      "针对视觉-语言-动作（VLA）模型在分块执行时产生的加加速度（jerk）问题，本文提出了一种名为GROOVE的在线后处理调节器，旨在减少端到端…",
+      "现有方法多需重新训练模型或修改推理过程，而GROOVE无需重训练或额外VLA推理，仅通过几何引导的搜索来优化动作块的平滑度",
+      "主要目标是在保持任务成功率的同时，显著降低平移和旋转方向的加加速度"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 6,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -1459,14 +1463,16 @@
     "detail_path": "papers/2609.13679/",
     "cover_path": "covers/2609.13679/",
     "paper_image_path": "assets/paper-images/thumbs/2609.13679.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "总结 ICRA 2026 首届 REAL-I（Real-world Embodied AI Learning）挑战赛的成果与经验 探讨在固定演示数据集下，如何更有效地训练视觉语言动作（VLA）机器人策略 对比不同团队的数据处理、策略适应、动作空间设计与评估方法，总结出提升离线到真实世界部署成功率的实用经验",
+    "research_unit": "National University of Singapore (NUS-CLEAR 团队)",
+    "hook_text": "总结 ICRA 2026 首届 REAL-I（Real-world Embodied AI Learning）挑战赛的成果与经验",
     "key_points": [
-      "待生成"
+      "总结 ICRA 2026 首届 REAL-I（Real-world Embodied AI Learning）挑战赛的成果与经验",
+      "探讨在固定演示数据集下，如何更有效地训练视觉语言动作（VLA）机器人策略",
+      "对比不同团队的数据处理、策略适应、动作空间设计与评估方法，总结出提升离线到真实世界部署成功率的实用经验"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 5,
+    "section_count": 6,
     "cover_theme": {
       "from": "#316b57",
       "to": "#8bb174",
@@ -1485,14 +1491,16 @@
     "detail_path": "papers/2609.13053/",
     "cover_path": "covers/2609.13053/",
     "paper_image_path": "assets/paper-images/thumbs/2609.13053.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "提出了 Dynin-Robotics，一个基于 Dynin-Omni 多模态掩码扩散主干的统一视觉-语言-动作（VLA）基础模型 将语言指令、视觉观察、目标状态和机器人动作表示为共享轨迹序列中的离散令牌，通过同一个模型支持策略、世界建模、目标预测和任务理解等多项任务 通过目标引导、联合动作-状态去噪和候选重排序等推理组合，提升语言条件操作任务的性能和指令泛化能力",
+    "research_unit": "AIDAS Lab, Seoul National University",
+    "hook_text": "提出了 Dynin-Robotics，一个基于 Dynin-Omni 多模态掩码扩散主干的统一视觉-语言-动作（VLA）基础模型",
     "key_points": [
-      "待生成"
+      "提出了 Dynin-Robotics，一个基于 Dynin-Omni 多模态掩码扩散主干的统一视觉-语言-动作（VLA）基础模型",
+      "将语言指令、视觉观察、目标状态和机器人动作表示为共享轨迹序列中的离散令牌，通过同一个模型支持策略、世界建模、目标预测和任务理解等多项任务",
+      "通过目标引导、联合动作-状态去噪和候选重排序等推理组合，提升语言条件操作任务的性能和指令泛化能力"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 6,
+    "section_count": 6,
     "cover_theme": {
       "from": "#3f6ee8",
       "to": "#6fa7ff",
@@ -1511,14 +1519,16 @@
     "detail_path": "papers/2609.12641/",
     "cover_path": "covers/2609.12641/",
     "paper_image_path": "assets/paper-images/thumbs/2609.12641.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对机器人基础模型在视觉分布偏移下因存在视觉-动作捷径而导致泛化性能下降的问题，提出 Latent Interface Training (LIT) 框架。 LIT 是一种模型无关的两阶段训练策略，旨在通过约束视觉信息的使用方式，同时保留任务相关空间信息，从而提升模型泛化能力。 该框架首先在没有图像输入的情况下建立空间目标条件的动作先验，然后通过姿态监督的潜在接口引入视觉条件。",
+    "research_unit": "华南理工大学 未来技术学院（Jianman Lin）",
+    "hook_text": "针对机器人基础模型在视觉分布偏移下因存在视觉-动作捷径而导致泛化性能下降的问题，提出 Latent Interface Training (L…",
     "key_points": [
-      "待生成"
+      "针对机器人基础模型在视觉分布偏移下因存在视觉-动作捷径而导致泛化性能下降的问题，提出 Latent Interface Training (L…",
+      "LIT 是一种模型无关的两阶段训练策略，旨在通过约束视觉信息的使用方式，同时保留任务相关空间信息，从而提升模型泛化能力。",
+      "该框架首先在没有图像输入的情况下建立空间目标条件的动作先验，然后通过姿态监督的潜在接口引入视觉条件。"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 6,
+    "section_count": 6,
     "cover_theme": {
       "from": "#316b57",
       "to": "#8bb174",
@@ -1537,14 +1547,16 @@
     "detail_path": "papers/2609.12371/",
     "cover_path": "covers/2609.12371/",
     "paper_image_path": "assets/paper-images/thumbs/2609.12371.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "提出 READ 框架，旨在学习一种显式的、与规划对齐的空间风险表示，用于端到端自动驾驶 解决现有学习型规划器中环境因素与候选行动安全性的关系通常隐式存在于潜在特征中，难以检查、诊断或优化的问题 通过结合互补的几何约束和行为约束，将场景风险建模为连续时空场，使预测轨迹与低风险区域对齐",
+    "research_unit": "作者均来自 清华大学 车辆与运载学院 (School of Vehicle and Mobility…",
+    "hook_text": "提出 READ 框架，旨在学习一种显式的、与规划对齐的空间风险表示，用于端到端自动驾驶",
     "key_points": [
-      "待生成"
+      "提出 READ 框架，旨在学习一种显式的、与规划对齐的空间风险表示，用于端到端自动驾驶",
+      "解决现有学习型规划器中环境因素与候选行动安全性的关系通常隐式存在于潜在特征中，难以检查、诊断或优化的问题",
+      "通过结合互补的几何约束和行为约束，将场景风险建模为连续时空场，使预测轨迹与低风险区域对齐"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 5,
+    "section_count": 6,
     "cover_theme": {
       "from": "#316b57",
       "to": "#8bb174",
@@ -1563,14 +1575,16 @@
     "detail_path": "papers/2609.12316/",
     "cover_path": "covers/2609.12316/",
     "paper_image_path": "assets/paper-images/thumbs/2609.12316.webp",
-    "preview_text": "待生成",
-    "research_unit": "",
-    "hook_text": "待生成",
+    "preview_text": "针对预训练视觉-语言-动作模型（VLA）在特定任务上表现不佳的问题，探索利用任务与运动规划（TAMP）生成演示数据进行微调 发现原始TAMP生成的轨迹与VLA预训练数据之间存在行为分布不匹配，导致微调效果极差（成功率仅从1.7%提升至8.3%） 提出DATAFARM，一种分布对齐的TAMP方法，通过将预训练分布融入规划过程，生成与VLA预训练数据行为一致的演示，从而有效微调VLA",
+    "research_unit": "Stanford University (Samrat Sahoo)",
+    "hook_text": "针对预训练视觉-语言-动作模型（VLA）在特定任务上表现不佳的问题，探索利用任务与运动规划（TAMP）生成演示数据进行微调",
     "key_points": [
-      "待生成"
+      "针对预训练视觉-语言-动作模型（VLA）在特定任务上表现不佳的问题，探索利用任务与运动规划（TAMP）生成演示数据进行微调",
+      "发现原始TAMP生成的轨迹与VLA预训练数据之间存在行为分布不匹配，导致微调效果极差（成功率仅从1.7%提升至8.3%）",
+      "提出DATAFARM，一种分布对齐的TAMP方法，通过将预训练分布融入规划过程，生成与VLA预训练数据行为一致的演示，从而有效微调VLA"
     ],
-    "reading_minutes": 1,
-    "section_count": 1,
+    "reading_minutes": 5,
+    "section_count": 6,
     "cover_theme": {
       "from": "#6f4cc9",
       "to": "#c57be8",
