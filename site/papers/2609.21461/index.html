@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AtomEgo: Exploring Ego-Robot Integration for Embodied Foundation Model Pretraining - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对具身基础模型预训练中机器人演示数据规模小、多样性不足的核心瓶颈，探索如何将大规模第一人称（ego）人类交互数据有效整合到ego-机器人协同预训练中，解决人类与机器人之间存在显著具身差异、动作空间不匹配导致的ego数据利用效率低的问题 构建了约3033小时（经质量控制后保留2659小时）的ego-机器人预训练语料库，以及可扩展的数据处理与质量控制流程，为系统性研究提供数据支撑 系统对比三种不同技术路线的ego-机…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.21461">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.21461.webp" alt="AtomEgo: Exploring Ego-Robot Integration for Embodied Foundation Model Pretraining" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对具身基础模型预训练中机器人演示数据规模小、多样性不足的核心瓶颈，探索如何将大规模第一人称（ego）人类交互数据有效整合到ego-机器人协同…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">AtomEgo: Exploring Ego-Robot Integration for Embodied Foundation Model Pretraining</h1>
+            <div class="detail-meta">2026-09-18 · <a href="http://arxiv.org/abs/2609.21461" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.21461" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.21461</span></div>
+            <p class="detail-summary">针对具身基础模型预训练中机器人演示数据规模小、多样性不足的核心瓶颈，探索如何将大规模第一人称（ego）人类交互数据有效整合到ego-机器人协同预训练中，解决人类与机器人之间存在显著具身差异、动作空间不匹配导致的ego数据利用效率低的问题 构建了约3033小时（经质量控制后保留2659小时）的ego-机器人预训练语料库，以及可扩展的数据处理与质量控制流程，为系统性研究提供数据支撑 系统对比三种不同技术路线的ego-机…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属研究机构包括：INFIFORCE、Lionrock Artificial Intellig…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.21461/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对具身基础模型预训练中机器人演示数据规模小、多样性不足的核心瓶颈，探索如何将大规模第一人称（ego）人类交互数据有效整合到ego-机器人协同…</p>
+  <ul class="reading-intro-points"><li>针对具身基础模型预训练中机器人演示数据规模小、多样性不足的核心瓶颈，探索如何将大规模第一人称（ego）人类交互数据有效整合到ego-机器人协同…</li><li>构建了约3033小时（经质量控制后保留2659小时）的ego-机器人预训练语料库，以及可扩展的数据处理与质量控制流程，为系统性研究提供数据支撑</li><li>系统对比三种不同技术路线的ego-机器人协同预训练范式，验证其在真实机器人任务上的泛化效果，总结可落地的预训练实用准则</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属研究机构包括：<strong>INFIFORCE</strong>、<strong>Lionrock Artificial Intelligence Laboratory</strong>、<strong>香港大学（HKU）</strong>、<strong>同济大学</strong>、<strong>华中科技大学</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对具身基础模型预训练中机器人演示数据规模小、多样性不足的核心瓶颈，探索如何将大规模第一人称（ego）人类交互数据有效整合到ego-机器人协同预训练中，解决人类与机器人之间存在显著具身差异、动作空间不匹配导致的ego数据利用效率低的问题</li><li>构建了约3033小时（经质量控制后保留2659小时）的ego-机器人预训练语料库，以及可扩展的数据处理与质量控制流程，为系统性研究提供数据支撑</li><li>系统对比三种不同技术路线的ego-机器人协同预训练范式，验证其在真实机器人任务上的泛化效果，总结可落地的预训练实用准则</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>构建了包含开源机器人数据、开源第一人称数据、任务对齐in-house人-机器人数据的 curated 预训练语料库，总规模约3033小时，并配套设计了可扩展的数据处理与质量控制流程</li><li>提出并实现了三种ego数据整合到具身基础模型预训练的互补范式：带领域特定动作头的联合预训练（<strong>Atom-DH</strong>）、通过具身对齐的渐进式ego到机器人迁移（<strong>Atom-CL</strong>）、联合世界-动作建模（<strong>Atom-WAM</strong>），覆盖领域隔离、显式对齐、联合建模三种技术路线</li><li>在统一的数据与实验框架下开展受控预训练和全面评估，实现不同ego-robot协同预训练策略的公平系统性对比</li><li>提出实用预训练原则：<strong>数据规模 × 对齐质量 → 能力增益</strong>，揭示ego数据的价值不仅取决于规模，更取决于对齐与利用的有效性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>数据预处理层面：设计了包含突然变化检测、状态-动作趋势对齐、极值过滤三步的质量控制流程，将异构来源的数据统一映射到80维语义化状态-动作空间，并采用数据集特定的归一化策略保证跨具身联合训练的数值稳定性</li><li>三种预训练范式技术细节：① <strong>Atom-DH</strong>：共享感知、语言与动作表征 backbone，分别设置ego专属和机器人专属的动作头，隔离领域特定的控制输出，避免不同领域的监督信号冲突；② <strong>Atom-CL</strong>：采用三阶段渐进式课程预训练，第一阶段在ego数据上学习通用交互先验，第二阶段在任务对齐的人-机器人数据集上通过统一的末端执行器相对位姿表示完成具身对齐，第三阶段在机器人数据上完成预训练，逐步迁移人类交互知识到机器人策略；③ <strong>Atom-WAM</strong>：基于<strong>Fast-WAM</strong>架构，联合优化动作预测损失与未来视频预测损失，利用共享的视觉动态目标作为跨具身迁移的通道，无需人类与机器人的动作空间完全一致</li><li>创新点：首次在同一统一框架下系统性对比了领域隔离、显式对齐、联合世界建模三种不同思路的ego-机器人协同预训练策略；提出渐进式具身对齐的课程学习策略，降低人类-机器人embodiment gap的负面影响；探索了视觉动态共享信号作为跨具身迁移通道的可行性，为WAM类模型的ego数据利用提供了新思路</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>预训练数据集：① 机器人数据集：开源集（<strong>AgiBot World Beta</strong>、<strong>DROID</strong>、<strong>RoboCOIN</strong>、<strong>RoboMIND</strong>）+ in-house <strong>Piper</strong>双臂机器人数据，共约1560小时；② 第一人称数据集：<strong>EgoVerse</strong>，约1079.5小时；③ 对齐数据集：in-house收集的任务匹配人-机器人演示数据，约20小时，共1296个episode；总原始数据约3033小时，经质量控制后保留2659小时，共334054个训练episode</li><li>模型规模：VLA范式基于<strong>π₀.₅</strong>架构，初始化自<strong>PaliGemma</strong> VLM权重；WAM范式采用<strong>Fast-WAM</strong>架构，包含视频Diffusion Transformer（DiT）与Action DiT模块</li><li>训练资源：所有预训练实验统一使用3×8张<strong>NVIDIA B200 GPU</strong>，单次完整预训练耗时约4天</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：真实双臂机器人平台上的7项操作任务（<strong>Cook Bread</strong>、<strong>Hang Cup</strong>、<strong>Place Fruits</strong>、<strong>Place Plate</strong>、<strong>Place Pot</strong>、<strong>Press Button</strong>、<strong>Push Box</strong>），设置分布内（ID）与分布外（OOD）两种评估条件，每个任务10次试验，单模型共140次真实机器人试验；另设置语言条件的跨具身表示评估基准，包含62个人类ego视频与62个机器人视频，覆盖7项任务</li><li>主要评估指标：真实机器人任务成功率（ID成功率、OOD成功率、综合成功率）；跨具身表示的任务匹配相似度（越高越好）、不同任务归一化相似度（越低越好，反映任务区分度）</li><li>关键实验结果：① VLA路线中，<strong>Atom-CL</strong>综合成功率达53.57%，比VLA基线提升20.71个百分点，ID与OOD成功率分别达64.29%、42.86%，均为所有方法最优；<strong>Atom-DH</strong>综合成功率43.57%，OOD成功率41.43%，也显著优于基线。② 仅通过领域专属动作头隔离的简单混合策略（Atom-DH）提升有限，显式渐进式具身对齐策略（Atom-CL）效果最优，说明有效对齐需要结构化机制而非简单数据混合。③ <strong>Atom-WAM</strong>表现弱于WAM基线，综合成功率从28.57%降至20.71%，说明仅靠共享未来视频预测目标无法弥合embodiment gap，需要更强的对齐机制。④ 跨具身表示评估显示，有效的跨具身对齐需要保留动作相关的任务结构，而非仅仅拉近人类与机器人的表示分布</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.21650/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">SynthDemo-RL: Breaking the Zero-Reward Barrier in VLA Adaptation with LLM-Guided Synthetic Demonstrations</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.21358/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">FAN: Foresight Action Normalization for Continual Adaptation of Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

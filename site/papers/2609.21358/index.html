@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FAN: Foresight Action Normalization for Continual Adaptation of Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="聚焦Vision-Language-Action（VLA）模型的持续适应场景，指出现有持续VLA学习工作普遍忽略动作归一化这一基础机制，而该机制定义了策略感知和执行物理动作的底层坐标系，对持续适应效果有决定性影响 通过系统评估5种归一化策略在4个真实机器人任务流上的表现，揭示现有协议存在任务间坐标漂移、运动覆盖不足、训练-测试坐标不匹配等严重失败模式 提出基于先验校准的Foresight Action Normal…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.21358">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.21358.webp" alt="FAN: Foresight Action Normalization for Continual Adaptation of Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">聚焦Vision-Language-Action（VLA）模型的持续适应场景，指出现有持续VLA学习工作普遍忽略动作归一化这一基础机制，而该机…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">FAN: Foresight Action Normalization for Continual Adaptation of Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-09-18 · <a href="http://arxiv.org/abs/2609.21358" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.21358" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.21358</span></div>
+            <p class="detail-summary">聚焦Vision-Language-Action（VLA）模型的持续适应场景，指出现有持续VLA学习工作普遍忽略动作归一化这一基础机制，而该机制定义了策略感知和执行物理动作的底层坐标系，对持续适应效果有决定性影响 通过系统评估5种归一化策略在4个真实机器人任务流上的表现，揭示现有协议存在任务间坐标漂移、运动覆盖不足、训练-测试坐标不匹配等严重失败模式 提出基于先验校准的Foresight Action Normal…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">香港大学（HKU）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.21358/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">聚焦Vision-Language-Action（VLA）模型的持续适应场景，指出现有持续VLA学习工作普遍忽略动作归一化这一基础机制，而该机…</p>
+  <ul class="reading-intro-points"><li>聚焦Vision-Language-Action（VLA）模型的持续适应场景，指出现有持续VLA学习工作普遍忽略动作归一化这一基础机制，而该机…</li><li>通过系统评估5种归一化策略在4个真实机器人任务流上的表现，揭示现有协议存在任务间坐标漂移、运动覆盖不足、训练-测试坐标不匹配等严重失败模式</li><li>提出基于先验校准的Foresight Action Normalization（FAN）方法，旨在为持续VLA适应提供稳定、通用的动作坐标系统…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>香港大学（HKU）</li><li>南方科技大学（SUSTech）</li><li>宁波东方理工大学（EIT, Ningbo）</li><li>华中科技大学（HUST）</li><li>INFIFORCE</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>聚焦<strong>Vision-Language-Action（VLA）模型</strong>的持续适应场景，指出现有持续VLA学习工作普遍忽略<strong>动作归一化</strong>这一基础机制，而该机制定义了策略感知和执行物理动作的底层坐标系，对持续适应效果有决定性影响</li><li>通过系统评估5种归一化策略在4个真实机器人任务流上的表现，揭示现有协议存在任务间坐标漂移、运动覆盖不足、训练-测试坐标不匹配等严重失败模式</li><li>提出基于先验校准的<strong>Foresight Action Normalization（FAN）</strong>方法，旨在为持续VLA适应提供稳定、通用的动作坐标系统，解决新技能获取与旧技能保留的平衡问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次识别动作归一化是持续VLA适应中关键但被忽视的因素，系统表征了4种代表性归一化协议的失败模式</li><li>提出<strong>Consistency, Coverage, and Causality（3C）</strong>作为持续VLA适应中动作归一化的三大核心设计原则</li><li>提出FAN方法，这是一种一次性校准的归一化策略，在覆盖单臂和双臂操作的4类操纵任务流上验证了其有效性和鲁棒性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于3C设计原则构建FAN方法：一致性要求跨阶段归一化数值含义固定，避免任务间坐标漂移；覆盖性要求归一化范围匹配预期部署的机器人embodiment级运动需求，避免过度压缩或覆盖不足；因果性要求归一化统计量无需依赖未来任务数据，在持续适应前即可获得</li><li>FAN的实现流程：首先仅基于预期的部署场景和目标机器人的能力，抽象运动基元（如reach、grasp、push、pick、place、rotate等）和可复用的运动范围；其次收集小规模（实验中为8条）任务无关的校准轨迹，不包含下游任务指令、任务特定物体或基准任务演示；最后一次性估计校准集的1%和99%分位数统计量，并在后续所有持续微调、回放和推理阶段冻结使用，保证动作坐标系统全程稳定，无需修改现有持续学习pipeline的其他部分</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：自建真实机器人操作持续学习数据集，包含2个单臂任务流（各5个任务）、2个双臂任务流（各5个任务），共10个覆盖刚体操作、接触丰富交互、长程执行、可变形物体操作、双臂协调类别的任务，以及8条用于校准的通用机器人操作轨迹</li><li>模型规模：基于预训练<strong>Vision-Language-Action模型$\pi_{0.5}$</strong>进行持续微调，预测14维混合动作（每只手臂6维关节增量命令+1维绝对夹爪目标，单臂任务时左侧7维动作截断为0）</li><li>训练资源：计算资源由INFIFORCE提供；机器人平台为双<strong>PiPER-X 6-DoF机械臂</strong>，搭载4个<strong>RealSense D435相机</strong>（前视、头部、左右腕各一个），提供480×640分辨率的RGB观测</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：在真实双机械臂平台上开展4个持续操作任务流的真实机器人实验，对比5种动作归一化策略（ANS-I、ANS-II、ANS-III、ANS-IV、FAN），所有方法均采用经验回放（ER）作为持续学习流程</li><li>主要评估指标：平均得分（AS，越高越好，衡量最终所有任务的综合性能）、反向迁移（BWT，越高越好，衡量旧任务保留能力，负值代表遗忘）、正向迁移（FWT，越高越好，衡量新任务获取是否受旧任务促进）</li><li>关键实验结果：</li></ul>
+<p> - FAN的平均AS达到95.3，显著高于最高基线ANS-II的77.0，且在4个任务流上的得分分布在92.7到98.4之间，跨流鲁棒性最强</p>
+<p> - FAN在所有4个任务流上均取得正向FWT，平均FWT为9.1，显著高于所有基线；平均BWT接近0（0.1），说明几乎无旧任务遗忘，在新任务获取和旧任务保留之间取得最佳平衡</p>
+<p> - 任务顺序敏感性实验中，FAN的匹配任务平均绝对得分差仅为4.2分，远低于基线的17.5-48.5分，对任务顺序的鲁棒性最优</p>
+<p> - 归一化范围消融实验表明，过窄（仅用首个任务的统计量）或过宽（扩大2.5倍校准集范围）的固定统计量都会导致性能下降，验证了覆盖性设计的必要性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.21461/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">AtomEgo: Exploring Ego-Robot Integration for Embodied Foundation Model Pretraining</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.21246/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">VLA-Scope: Shift-Aware Failure Prediction for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

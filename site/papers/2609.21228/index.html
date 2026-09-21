@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FOCAL-VLA: Subtask-Guided Geometry Distillation and Implicit World Modeling for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出FOCAL-VLA框架，基于π₀.₅视觉-语言-动作模型，通过子任务引导的几何蒸馏与隐式世界建模，解决传统VLA模型空间与时序理解不足、现有增强方法引入无关场景信息的问题，提升精确与长时序机器人操作性能 现有几何增强、未来预测类VLA方法通常对全场景进行监督，包含与当前操作无关的区域，且未随子任务切换调整监督对象，会干扰模型学习当前交互所需的几何与动态信息 核心目标是让VLA模型聚焦当前子任务相关的空间结构…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.21228">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.21228.webp" alt="FOCAL-VLA: Subtask-Guided Geometry Distillation and Implicit World Modeling for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出FOCAL-VLA框架，基于π₀.₅视觉-语言-动作模型，通过子任务引导的几何蒸馏与隐式世界建模，解决传统VLA模型空间与时序理解不足…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">FOCAL-VLA: Subtask-Guided Geometry Distillation and Implicit World Modeling for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-09-18 · <a href="http://arxiv.org/abs/2609.21228" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.21228" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.21228</span></div>
+            <p class="detail-summary">论文提出FOCAL-VLA框架，基于π₀.₅视觉-语言-动作模型，通过子任务引导的几何蒸馏与隐式世界建模，解决传统VLA模型空间与时序理解不足、现有增强方法引入无关场景信息的问题，提升精确与长时序机器人操作性能 现有几何增强、未来预测类VLA方法通常对全场景进行监督，包含与当前操作无关的区域，且未随子任务切换调整监督对象，会干扰模型学习当前交互所需的几何与动态信息 核心目标是让VLA模型聚焦当前子任务相关的空间结构…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">University of Bremen, Germany</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.21228/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出FOCAL-VLA框架，基于π₀.₅视觉-语言-动作模型，通过子任务引导的几何蒸馏与隐式世界建模，解决传统VLA模型空间与时序理解不足…</p>
+  <ul class="reading-intro-points"><li>论文提出FOCAL-VLA框架，基于π₀.₅视觉-语言-动作模型，通过子任务引导的几何蒸馏与隐式世界建模，解决传统VLA模型空间与时序理解不足…</li><li>现有几何增强、未来预测类VLA方法通常对全场景进行监督，包含与当前操作无关的区域，且未随子任务切换调整监督对象，会干扰模型学习当前交互所需的几…</li><li>核心目标是让VLA模型聚焦当前子任务相关的空间结构与未来交互动态，无需增加推理时开销即可提升操作成功率</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>University of Bremen, Germany</strong></li><li><strong>Karlsruhe Institute of Technology (KIT), Germany</strong></li><li><strong>Robotics Institute Germany (RIG)</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出<strong>FOCAL-VLA</strong>框架，基于<strong>π₀.₅</strong>视觉-语言-动作模型，通过子任务引导的几何蒸馏与隐式世界建模，解决传统VLA模型空间与时序理解不足、现有增强方法引入无关场景信息的问题，提升精确与长时序机器人操作性能</li><li>现有几何增强、未来预测类VLA方法通常对全场景进行监督，包含与当前操作无关的区域，且未随子任务切换调整监督对象，会干扰模型学习当前交互所需的几何与动态信息</li><li>核心目标是让VLA模型聚焦当前子任务相关的空间结构与未来交互动态，无需增加推理时开销即可提升操作成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出子任务引导的几何蒸馏方法，将冻结<strong>VGGT</strong>的几何知识蒸馏到VLA模型，仅对齐当前子任务涉及实体对应的图像区域特征，且随子任务切换的交互实体动态调整监督区域</li><li>提出隐式世界建模方法，通过未来运动隐变量实现，利用冻结<strong>Track4World</strong>提取当前与未来演示帧的特征，仅聚合当前子任务相关区域的特征作为监督目标，建模当前交互的未来3D演化</li><li>设计的几何隐变量与未来运动隐变量可联合为动作专家提供条件，推理时无需运行教师模型、使用未来帧或子任务标注</li><li>在<strong>LIBERO</strong>、<strong>RoboCasa</strong>仿真基准与4项真实世界机器人操作任务上验证方法有效性，消融实验证明了各组件与设计选择的优势</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基座采用<strong>π₀.₅</strong>VLA模型，在原有<strong>PaliGemma</strong>视觉-语言骨干的输入中新增两组各8个可学习查询：几何查询组$Q_g$与未来运动查询组$Q_m$，其输出隐状态分别形成几何隐变量$Z_g$与未来运动隐变量$Z_m$</li><li>子任务引导几何蒸馏：冻结<strong>VGGT</strong>处理当前多视角观测，通过离线标注的子任务相关实体掩码，聚合对应区域的VGGT特征作为几何监督目标，通过掩码均方误差对齐$Z_g$与目标</li><li>隐式世界建模：冻结<strong>Track4World</strong>处理当前帧与未来动作 horizon 内的演示帧，提取含时序上下文的三维流特征，通过当前子任务掩码聚合对应区域的特征作为运动监督目标，通过平滑L1损失对齐$Z_m$与目标</li><li>动作生成与训练：几何、未来运动查询组独立 attend 上下文 tokens，动作专家同时接收上下文、$Z_g$、$Z_m$作为条件生成动作；额外增加原生语言建模分支，通过预测子任务文本提供语义引导，整体损失结合动作损失、几何蒸馏损失、语义损失与运动蒸馏损失</li><li>核心创新点在于将几何与未来运动的监督范围限制在当前子任务相关的实体区域，避免无关场景信息的干扰，且两种表示互补覆盖当前空间配置与未来交互演化</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO</strong>（包含Spatial、Object、Goal、Long四个套件，每个套件10项操作任务，采用机械臂与腕部双视角观测）、<strong>RoboCasa</strong>（Atomic-24任务集，Human-50设置下每任务50条演示，采用左腕、左/右机械臂三视角观测）</li><li>真实世界数据集：Franka Emika Panda机器人平台，包含双水果重排、抽屉打开、抽屉存储、关闭微波炉4项操作任务，共350条10Hz采集的640×480 RGB演示，每任务50-150条成功演示</li><li>模型规模：基座为<strong>π₀.₅</strong>，基于<strong>PaliGemma</strong>视觉-语言骨干，新增2组各8个可学习查询，几何监督目标维度为2048，运动监督目标维度为256</li><li>训练资源：8张<strong>NVIDIA A100 80GB</strong> GPU，AdamW优化器；LIBERO训练30,000步、batch size 256；RoboCasa训练30,000步、batch size 128；真实世界任务训练16,000步、batch size 256</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真环境下评估<strong>LIBERO</strong>与<strong>RoboCasa</strong>基准，真实环境下评估Franka Panda平台的4项操作任务，对比基线包括OpenVLA、π₀、<strong>π₀.₅</strong>、OpenVLA-OFT、GR00T N1.7、SpatialVLA、DreamVLA、GeoPredict、Track4Action等</li><li>主要评估指标：任务成功率（%），LIBERO报告各套件成功率与无权重平均值，RoboCasa报告任务平均成功率，真实世界报告每任务与整体成功率</li><li>关键实验结果：LIBERO上平均成功率达97.9%，较<strong>π₀.₅</strong>提升1个百分点，Spatial任务达到100%成功率；RoboCasa上平均成功率达63.4%，较<strong>π₀.₅</strong>提升8.2个百分点，优于所有对比基线；真实世界任务整体成功率从<strong>π₀.₅</strong>的47.5%提升至63.8%，4项任务均有提升，其中双水果重排任务提升幅度最大（从25%到50%）</li><li>消融实验验证：单独移除几何或未来运动分支均会降低性能；子任务级区域监督优于任务级实体监督与全图像监督；将学习到的隐变量直接条件化动作专家，比仅作为训练辅助信号的效果高4.9个百分点</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.21246/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">VLA-Scope: Shift-Aware Failure Prediction for Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.21223/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">SafeStage: Evaluating Safety Before, During, and After Vision-Language-Conditioned Robot Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

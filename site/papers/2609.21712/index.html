@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZYT-World: A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出了 ZYT-World，一个面向闭环自动驾驶仿真的实时可控世界模型，原生支持混合鱼眼-针孔相机阵列的七视图生成。 解决了三大耦合问题：异构传感器原生建模、从双向多步扩散到因果单步生成、以及跨轨迹重访时的场景身份保持（生成与重建矛盾）。 目标是在生产级传感器配置下实现可交互、长时域稳定且可实时部署的驾驶场景生成。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.21712">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.21712.webp" alt="ZYT-World: A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出了 ZYT-World，一个面向闭环自动驾驶仿真的实时可控世界模型，原生支持混合鱼眼-针孔相机阵列的七视图生成。</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ZYT-World: A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation</h1>
+            <div class="detail-meta">2026-09-18 · <a href="http://arxiv.org/abs/2609.21712" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.21712" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.21712</span></div>
+            <p class="detail-summary">提出了 ZYT-World，一个面向闭环自动驾驶仿真的实时可控世界模型，原生支持混合鱼眼-针孔相机阵列的七视图生成。 解决了三大耦合问题：异构传感器原生建模、从双向多步扩散到因果单步生成、以及跨轨迹重访时的场景身份保持（生成与重建矛盾）。 目标是在生产级传感器配置下实现可交互、长时域稳定且可实时部署的驾驶场景生成。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">ZYT AI Team</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.21712/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出了 ZYT-World，一个面向闭环自动驾驶仿真的实时可控世界模型，原生支持混合鱼眼-针孔相机阵列的七视图生成。</p>
+  <ul class="reading-intro-points"><li>提出了 ZYT-World，一个面向闭环自动驾驶仿真的实时可控世界模型，原生支持混合鱼眼-针孔相机阵列的七视图生成。</li><li>解决了三大耦合问题：异构传感器原生建模、从双向多步扩散到因果单步生成、以及跨轨迹重访时的场景身份保持（生成与重建矛盾）。</li><li>目标是在生产级传感器配置下实现可交互、长时域稳定且可实时部署的驾驶场景生成。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>ZYT AI Team</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出了 <strong>ZYT-World</strong>，一个面向闭环自动驾驶仿真的实时可控世界模型，原生支持混合鱼眼-针孔相机阵列的七视图生成。</li><li>解决了三大耦合问题：<strong>异构传感器原生建模</strong>、<strong>从双向多步扩散到因果单步生成</strong>、以及<strong>跨轨迹重访时的场景身份保持</strong>（生成与重建矛盾）。</li><li>目标是在生产级传感器配置下实现可交互、长时域稳定且可实时部署的驾驶场景生成。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>原生异构多相机建模</strong>：单一架构原生生成四路鱼眼（视场角>180°）和三路针孔视图，通过投影特定的 Plücker 适配器和像素对齐的布局条件实现，无需统一投影或分辨率。</li><li><strong>因果单步后训练流程</strong>：结合 <strong>教师强制 (TF)</strong>、<strong>因果一致性蒸馏 (CD)</strong>、<strong>自回归分布匹配蒸馏 (DMD)</strong> 和 <strong>RigCritic</strong>，将40步双向教师模型转化为每步仅需一次推理的因果流式生成器。</li><li><strong>插件式隐式记忆模块</strong>：利用基于真实场景的 <strong>4D 高斯泼溅 (4DGS)</strong> 构建跨轨迹训练对，训练零初始化的残差路径以保持地点特定的几何和布局一致性。</li><li><strong>高感知质量轻量级解码</strong>：设计 <strong>19M</strong> 参数的 <strong>TinyVAE</strong> 解码器，以像素、感知和语义损失联合训练，实现比 <strong>Wan</strong> 解码器快 <strong>59.8 倍</strong> 的解码和低 <strong>26.8 倍</strong> 的模型显存，生成质量持平。</li><li><strong>训练-推理协同设计</strong>：通过多维并行和显存优化使七视图高清训练从显存不足到可训练，并结合 <strong>W8A8</strong> 量化和自定义推理引擎降低推理成本，达到 <strong>4 FPS</strong> 的七视图实时闭环推理。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>统一条件注入接口</strong>：通过不同的下采样策略，将相机光线条件（投影感知的 Plücker 坐标）和场景布局条件（可编辑的 3D 框和交通灯线框）嵌入到共享的 Token 网格。</li><li><strong>跨视图注意力与稀疏掩码</strong>：在每两层 DiT 块后插入跨视图注意力，仅允许物理上有重叠的视图对进行信息交互，并使用语义槽区分不同相机。</li><li><strong>因果化与自回归生成</strong>：通过将干净历史噪声与当前噪声拼接的双流注意力掩码实现因果化；利用一致性蒸馏将教师模型的 ODE 轨迹蒸馏至学生模型，再通过自回归 DMD 优化学生模型在自生成历史下的分布，最终用 <strong>RigCritic</strong>（跨视图对抗判别器）进行精细化。</li><li><strong>推理加速</strong>：采用 <strong>TinyVAE</strong> 进行高效解码，通过 <strong>W8A8</strong> 整型量化加速 Transformer 计算，并设计推理引擎复用 <strong>KV-cache</strong> 以低成本实现无限长时域生成。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：内部百万级多视图视频片段，覆盖多车型平台，包含白天/夜晚、晴/雨/雾/雪等多种天气，经过时长筛选、分布重平衡和锐度过滤。</li><li><strong>模型规模</strong>：核心扩散 Transformer (DiT) 约 <strong>5B</strong> 参数，TinyVAE 解码器 <strong>19M</strong> 参数。</li><li><strong>训练资源</strong>：七视图高清训练使用 <strong>4 块 NVIDIA H100 GPU</strong>；推理部署使用 <strong>2 块 GPU</strong>。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：内部多视图测试集，评估指标包括 <strong>PSNR</strong>、<strong>SSIM</strong>、<strong>FID</strong>、<strong>FVD</strong> 和 <strong>LPIPS</strong>。</li><li><strong>速度与质量</strong>：一步自回归生成器达到教师模型 PSNR/SSIM 的 <strong>>90%</strong>，FID 等指标退化在 <strong>11%</strong> 以内；生成速度是教师模型的 <strong>107.7 倍</strong>。</li><li><strong>解码效率</strong>：TinyVAE 解码器相比 Wan 解码器，解码速度提升 <strong>59.8 倍</strong>，模型体积降低 <strong>26.8 倍</strong>。</li><li><strong>长时域与记忆性能</strong>：成功实现 <strong>30 秒</strong> 长时域 Rollout 和跨轨迹场景重访，验证了长时域稳定性和记忆模块的有效性。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.21753/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">PSR: Predictive Sensorimotor Representation Learning for Contact-Rich Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.21659/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Outcome-Conditioned End-Effector Geometry Across Vision-Language-Action Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

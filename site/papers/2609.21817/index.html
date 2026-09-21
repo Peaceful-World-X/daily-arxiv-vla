@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Sim-to-Real Integration Pipeline for Training and Deployment of Chunk-Based VLA Manipulation Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文提出了一个开源的仿真到现实（sim-to-real）实验框架，用于解决VLA（Vision-Language-Action）模型训练中真实世界数据收集成本高且难以扩展的瓶颈问题 通过将仿真中生成的专家轨迹在真实机器人上开环回放，自动收集带有高质量动作标签的真实世界训练数据，免去了昂贵的人工遥操作过程 该框架不仅能大规模收集训练数据，还提供了一种策略无关的仿真到现实差距量化方法，可直接测量仿真与真实轨迹之间的偏差" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.21817">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.21817.webp" alt="A Sim-to-Real Integration Pipeline for Training and Deployment of Chunk-Based VLA Manipulation Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文提出了一个开源的仿真到现实（sim-to-real）实验框架，用于解决VLA（Vision-Language-Action）模型训练中真实…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">A Sim-to-Real Integration Pipeline for Training and Deployment of Chunk-Based VLA Manipulation Policies</h1>
+            <div class="detail-meta">2026-09-18 · <a href="http://arxiv.org/abs/2609.21817" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.21817" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.21817</span></div>
+            <p class="detail-summary">本文提出了一个开源的仿真到现实（sim-to-real）实验框架，用于解决VLA（Vision-Language-Action）模型训练中真实世界数据收集成本高且难以扩展的瓶颈问题 通过将仿真中生成的专家轨迹在真实机器人上开环回放，自动收集带有高质量动作标签的真实世界训练数据，免去了昂贵的人工遥操作过程 该框架不仅能大规模收集训练数据，还提供了一种策略无关的仿真到现实差距量化方法，可直接测量仿真与真实轨迹之间的偏差</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">所有作者均来自 Institute of Intelligent Systems and Roboti…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.21817/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文提出了一个开源的仿真到现实（sim-to-real）实验框架，用于解决VLA（Vision-Language-Action）模型训练中真实…</p>
+  <ul class="reading-intro-points"><li>本文提出了一个开源的仿真到现实（sim-to-real）实验框架，用于解决VLA（Vision-Language-Action）模型训练中真实…</li><li>通过将仿真中生成的专家轨迹在真实机器人上开环回放，自动收集带有高质量动作标签的真实世界训练数据，免去了昂贵的人工遥操作过程</li><li>该框架不仅能大规模收集训练数据，还提供了一种策略无关的仿真到现实差距量化方法，可直接测量仿真与真实轨迹之间的偏差</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>所有作者均来自 <strong>Institute of Intelligent Systems and Robotics (ISIR), CNRS, Sorbonne University, Paris, France</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文提出了一个<strong>开源的仿真到现实（sim-to-real）实验框架</strong>，用于解决VLA（Vision-Language-Action）模型训练中真实世界数据收集成本高且难以扩展的瓶颈问题</li><li>通过将<strong>仿真中生成的专家轨迹</strong>在真实机器人上开环回放，自动收集带有高质量动作标签的真实世界训练数据，免去了昂贵的人工遥操作过程</li><li>该框架不仅能大规模收集训练数据，还提供了一种<strong>策略无关的仿真到现实差距量化方法</strong>，可直接测量仿真与真实轨迹之间的偏差</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>一个<strong>开源的sim-to-real管道</strong>，支持基于chunk的VLA策略从仿真到现实的完整流程：包括开环专家回放收集训练数据，以及闭环执行用于策略评估</li><li>在<strong>Hugging Face</strong>上公开发布的<strong>200条成对的仿真-真实方块推动轨迹数据集</strong>，所有代码也已开源</li><li>一种<strong>策略无关的仿真到现实差距量化方法</strong>，利用离散Fréchet距离和平均路径偏差，从轨迹层面对齐并直接测量物理现实与仿真之间的不匹配</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>在<strong>PyBullet</strong>中搭建与真实场景（<strong>Franka FR3</strong>机械臂、Orbec Femto Bolt相机）镜像的仿真环境，并设定相同的世界坐标系原点，实现两种环境下的位姿直接对比</li><li>将仿真专家策略生成的<strong>动作块（action chunk，固定大小k=8）</strong>，通过累积计算转换为真实机器人基座坐标系下的<strong>末端执行器目标姿态序列</strong></li><li>设计基于<strong>ROS 2</strong>的模块化架构，包含两个核心组件：<strong>推理动作服务器</strong>（负责调用VLA模型生成动作块）和<strong>指令动作服务器</strong>（负责将动作块实时部署到真实机器人）</li><li>利用机器人本身作为<strong>笛卡尔指针</strong>进行物体初始位置校准，将物体放置误差控制在平均3.4厘米左右</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>生成并记录了一个多任务数据集，包含 <strong>200 条</strong>专家轨迹</li><li>覆盖了2种任务（<strong>推左、推右</strong>）和2个目标物体（<strong>红色立方体、蓝色立方体</strong>）的组合，共计4个任务，每个任务50条轨迹</li><li>动作块大小设置为 <strong>k=8</strong>，每条轨迹包含 <strong>m=8</strong> 个动作块，即 <strong>64</strong> 个动作</li><li>硬件平台为 <strong>Franka FR3</strong> 机械臂，使用 <strong>Orbec Femto Bolt RGB</strong> 相机（1000×1000分辨率）采集视觉观测</li><li>数据格式兼容 <strong>LeRobot</strong> 等常用的VLA训练框架</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>通过200条仿真专家轨迹的真实世界回放，在开环数据收集阶段获得了 <strong>100%</strong> 的任务成功率</li><li><strong>平均末端执行器路径偏差</strong>仅为 <strong>0.93 厘米</strong>，最大偏差（Fréchet距离）为 <strong>3.30 厘米</strong></li><li>阶段分析显示，平均偏差在<strong>接近阶段</strong>（0.90 cm）与<strong>接触阶段</strong>（0.96 cm）相近，表明控制器跟踪良好；但最大偏差主要出现在<strong>接触阶段</strong>（3.30 cm），揭示了仿真与现实的差距主要来源于<strong>未建模的物理交互</strong>（如物体质量、桌面摩擦）</li><li>在闭环策略评估中，使用收集的数据从头训练<strong>ORCHID</strong>模型，在20次测试中成功 <strong>6次</strong>（30%），结果受限于每任务演示较少及未受控的视觉条件变化</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.21908/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">CommitFlow: Semantic Commitment Verification and Local Correction for Long-Horizon Robot Manipulation VLA Execution</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.21753/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">PSR: Predictive Sensorimotor Representation Learning for Contact-Rich Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

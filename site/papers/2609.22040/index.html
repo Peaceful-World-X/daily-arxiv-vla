@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PRIME: Perception Feedback with Situational Memory Embeddings in VLA Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对当前自动驾驶视觉‑语言‑动作（VLA）模型中感知‑推理‑规划层次仅以前馈方式执行，早期感知无法获知下游推理与导航目标的问题 提出PRIME，一种基于情境记忆嵌入的感知反馈机制，将过去感知、推理、导航目标和预测行为的高层状态反馈给感知前端 在闭环比对中实现意图驱动的感知注意力，显著提升驾驶决策性能" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.22040">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.22040.webp" alt="PRIME: Perception Feedback with Situational Memory Embeddings in VLA Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对当前自动驾驶视觉‑语言‑动作（VLA）模型中感知‑推理‑规划层次仅以前馈方式执行，早期感知无法获知下游推理与导航目标的问题</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">PRIME: Perception Feedback with Situational Memory Embeddings in VLA Models</h1>
+            <div class="detail-meta">2026-09-18 · <a href="http://arxiv.org/abs/2609.22040" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.22040" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.22040</span></div>
+            <p class="detail-summary">针对当前自动驾驶视觉‑语言‑动作（VLA）模型中感知‑推理‑规划层次仅以前馈方式执行，早期感知无法获知下游推理与导航目标的问题 提出PRIME，一种基于情境记忆嵌入的感知反馈机制，将过去感知、推理、导航目标和预测行为的高层状态反馈给感知前端 在闭环比对中实现意图驱动的感知注意力，显著提升驾驶决策性能</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">RWTH Aachen University, 德国亚琛工业大学（电气工程与信息技术系、雷达系统工程教…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.22040/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对当前自动驾驶视觉‑语言‑动作（VLA）模型中感知‑推理‑规划层次仅以前馈方式执行，早期感知无法获知下游推理与导航目标的问题</p>
+  <ul class="reading-intro-points"><li>针对当前自动驾驶视觉‑语言‑动作（VLA）模型中感知‑推理‑规划层次仅以前馈方式执行，早期感知无法获知下游推理与导航目标的问题</li><li>提出PRIME，一种基于情境记忆嵌入的感知反馈机制，将过去感知、推理、导航目标和预测行为的高层状态反馈给感知前端</li><li>在闭环比对中实现意图驱动的感知注意力，显著提升驾驶决策性能</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>RWTH Aachen University</strong>, 德国亚琛工业大学（电气工程与信息技术系、雷达系统工程教席）</li><li><strong>Robert Bosch GmbH</strong>, 德国雷宁根企业研究中心</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对当前自动驾驶视觉‑语言‑动作（VLA）模型中感知‑推理‑规划层次仅以前馈方式执行，早期感知无法获知下游推理与导航目标的问题</li><li>提出<strong>PRIME</strong>，一种基于情境记忆嵌入的感知反馈机制，将过去感知、推理、导航目标和预测行为的高层状态反馈给感知前端</li><li>在闭环比对中实现意图驱动的感知注意力，显著提升驾驶决策性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>情境记忆（Situational Memory）</strong> 模块，在 L 步窗口内聚合六个跨越场景感知、推理、导航目标和行为预测的潜在反馈源</li><li>设计两种轻量级集成模块（<strong>FiLMXAttn</strong> 和 <strong>Attention Pooling</strong>），以极低参数开销（0.41%）实现跨阶段反馈</li><li>系统性实证研究了跨阶段反馈对VLA驾驶模型的影响，揭示推理状态反馈对闭坏驾驶的关键作用</li><li>在 <strong>Bench2Drive</strong> 闭环比对上将 ORION 的 Driving Score 提升 <strong>+4.73</strong>，Success Rate 提升 <strong>+5.38 个百分点</strong>，在 Think2Drive 训练模型中取得最高 Driving Score</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>扩展 ORION 架构，在 QT‑Former 感知编码器前插入<strong>情境记忆</strong>，存储并回送六类脱钩的中间表示（Q、M、R、P、S、T）</li><li>对紧凑反馈源（R、P、T）使用 <strong>FiLMXAttn</strong>：通过源特定的交叉注意力检索记忆，并利用 FiLM 仿射调制当前查询</li><li>对高基数反馈源（Q、M、S）使用 <strong>Attention Pooling</strong>：通过可学习提取查询压缩记忆为紧凑表示</li><li>所有反馈表示注入<strong>共享反馈集成模块</strong>，经交叉注意力和门控残差连接融合到 QT‑Former 解码器查询，实现任务感知的感知编码</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用 <strong>Bench2Drive</strong> 闭环比对基准，基于 CARLA 模拟器</li><li>训练数据由 <strong>Think2Drive</strong> (T2D) 专家生成</li><li>基础模型为 <strong>ORION</strong>，总参数量约 <strong>7.3B</strong></li><li>PRIME 新增参数最多 <strong>29.7M</strong>，占总参数 <strong>0.41%</strong></li><li>训练采用三阶段策略：Adapter 8 epoch、Alignment 4 epoch、End‑to‑End 6 epoch（E2E 阶段使用 LoRA 微调 LLM）</li><li>未明确披露训练硬件（GPU/TPU）细节</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>主要评估指标为 <strong>Driving Score (DS)</strong> 和 <strong>Success Rate (SR)</strong>，同时报告 NDS 和 mL2</li><li><strong>PRIME‑Full</strong> 达到 DS <strong>82.47</strong>，SR <strong>60.00%</strong>，显著优于基线 ORION（DS 77.74，SR 54.62%）</li><li>在 Think2Drive 训练的 VLA 方法中取得<strong>最高 Driving Score</strong>，SR 与 GeRo（60.10%）相当</li><li>消融实验表明：仅推理状态（R）反馈即可提升闭坏性能；而纯感知记忆（SA1）会降低驾驶性能，凸显跨阶段语义信息的重要性</li><li>场景细分中，PRIME 在<strong>并道（Merging）</strong> 场景表现最优（Success Rate 47.50%）</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2609.21948/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">GALA: Geometry-Aware Latent Action Modeling for Vision-Language-Action Model Pretraining across Embodiments</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
