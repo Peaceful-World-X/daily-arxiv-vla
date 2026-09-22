@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opt2VLA: Force-Aware Vision-Language-Action for Contact-Rich Humanoid Whole-Body Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出Opt2VLA，一种面向人形机器人全身接触丰富操作的力感知视觉-语言-动作（VLA）框架，核心解决现有VLA模型仅通过几何运动目标表征动作、缺乏显式接触力规划与调控能力的局限性 研究目标是在VLA高层规划与低层全身控制之间建立显式的运动-力接口，实现基于自然语言指令的、可精准调节接触力的人形机器人全身操作 框架在仿真和真实人形机器人上验证，证明显式力条件输入与物理 grounded 的力矩监督可提升接触力调…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.23968">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.23968.webp" alt="Opt2VLA: Force-Aware Vision-Language-Action for Contact-Rich Humanoid Whole-Body Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出Opt2VLA，一种面向人形机器人全身接触丰富操作的力感知视觉-语言-动作（VLA）框架，核心解决现有VLA模型仅通过几何运动目标表征…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Opt2VLA: Force-Aware Vision-Language-Action for Contact-Rich Humanoid Whole-Body Manipulation</h1>
+            <div class="detail-meta">2026-09-21 · <a href="http://arxiv.org/abs/2609.23968" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.23968" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.23968</span></div>
+            <p class="detail-summary">论文提出Opt2VLA，一种面向人形机器人全身接触丰富操作的力感知视觉-语言-动作（VLA）框架，核心解决现有VLA模型仅通过几何运动目标表征动作、缺乏显式接触力规划与调控能力的局限性 研究目标是在VLA高层规划与低层全身控制之间建立显式的运动-力接口，实现基于自然语言指令的、可精准调节接触力的人形机器人全身操作 框架在仿真和真实人形机器人上验证，证明显式力条件输入与物理 grounded 的力矩监督可提升接触力调…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构为Georgia Institute of Technology（佐治亚理工学院）的机…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.23968/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出Opt2VLA，一种面向人形机器人全身接触丰富操作的力感知视觉-语言-动作（VLA）框架，核心解决现有VLA模型仅通过几何运动目标表征…</p>
+  <ul class="reading-intro-points"><li>论文提出Opt2VLA，一种面向人形机器人全身接触丰富操作的力感知视觉-语言-动作（VLA）框架，核心解决现有VLA模型仅通过几何运动目标表征…</li><li>研究目标是在VLA高层规划与低层全身控制之间建立显式的运动-力接口，实现基于自然语言指令的、可精准调节接触力的人形机器人全身操作</li><li>框架在仿真和真实人形机器人上验证，证明显式力条件输入与物理 grounded 的力矩监督可提升接触力调控的精度与稳定性</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构为<strong>Georgia Institute of Technology</strong>（佐治亚理工学院）的机器人与智能机器研究所（Institute for Robotics and Intelligent Machines）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出<strong>Opt2VLA</strong>，一种面向人形机器人全身接触丰富操作的力感知视觉-语言-动作（VLA）框架，核心解决现有VLA模型仅通过几何运动目标表征动作、缺乏显式接触力规划与调控能力的局限性</li><li>研究目标是在VLA高层规划与低层全身控制之间建立显式的运动-力接口，实现基于自然语言指令的、可精准调节接触力的人形机器人全身操作</li><li>框架在仿真和真实人形机器人上验证，证明显式力条件输入与物理 grounded 的力矩监督可提升接触力调控的精度与稳定性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次为人形机器人VLA系统设计了显式运动与接触力命令的接口，将任务层面的接触力需求与关节层面的力实现解耦，支持高层策略直接指定交互力需求</li><li>提出分层 Opt2VLA 框架：上层微调预训练VLA联合预测几何运动目标与接触力参考，下层采用基于强化学习（RL）的全身控制器执行命令，通过全身体轨迹优化（TO）生成的物理一致参考提供控制器训练监督与VLA微调数据，无需大规模遥操作数据采集</li><li>在三个接触丰富的人形机器人操作任务上验证框架有效性，证明显式力条件输入与TO-derived 力矩监督可显著提升力跟踪精度，同时通过硬件实验验证了 sim-to-real 迁移能力，相关数据集将公开</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>框架采用分层架构：高层VLA策略基于预训练的<strong>GR00T-N1.7</strong>模型微调，输入为自然语言指令、视觉观测、机器人状态历史与关节力矩历史，联合预测序列化的四肢末端3D运动目标与对应接触力参考</li><li>低层采用<strong>力条件控制器with力矩监督（FCT）</strong>，基于非对称actor-critic RL架构，接收运动-力参考后输出关节位置偏移，经内置PD控制器转换为关节力矩执行；训练奖励包含运动跟踪、力跟踪、TO参考力矩跟踪与运动正则项，训练时加入TO生成的参考力矩作为物理 grounded 监督，部署时无需TO参考</li><li>创新点包括：显式运动-力接口设计、利用TO生成动态可行且接触一致的多模态训练数据、引入关节力矩历史编码与辅助未来力矩预测损失提升VLA的力感知能力，以及域随机化策略提升 sim-to-real 迁移鲁棒性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的物理机器人为<strong>Agility Robotics</strong>研发的全尺寸人形机器人<strong>Digit</strong>，体重约48kg，共30自由度，其中20个为主动关节</li><li>数据集包括两部分：一是通过TO生成动态可行的运动、接触力与关节力矩参考，用于训练FCT控制器；二是通过FCT控制器在仿真与少量真实硬件上的rollout收集的多模态数据，包含第一视角RGB观测、机器人本体感知状态、实测关节力矩、几何运动目标、连续目标力标签及对应的自然语言指令</li><li>训练资源：仿真环境基于PyBullet搭建，硬件实验在真实Digit机器人上开展，论文未公开具体GPU/TPU等计算训练资源细节</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境包含仿真与真实硬件（Digit人形机器人），评估任务为三个接触丰富的全身操作任务：表面擦拭、货架-箱子推动、不同重量箱子抓取；对比基线为运动-only控制器（MO）、无力矩监督的力条件控制器（FC）以及所提FCT控制器</li><li>主要评估指标：低层控制为接触力跟踪平均绝对误差（MAE）、任务完成率；高层VLA为任务完成率、提示带力匹配率、平均力匹配率、联合成功率</li><li>关键实验结果：① 低层控制上，FCT的力跟踪精度显著优于基线，如表面擦拭任务FCT平均力误差1.7N，优于FC的2.4N；货架推动任务FCT平均误差4.2N，远优于FC的11.2N；箱子抓取任务FCT平均误差0.9N，优于FC的2.3N；② 高层VLA评估中，最优配置C7（Opt2VLA默认配置）在三个任务上的联合成功率达82.2%，远高于基线运动输入配置C0的40.0%；③ 硬件实验验证了框架的sim-to-real迁移能力，真实机器人上的力跟踪MAE分别为表面擦拭7.0N、货架推动3.9N、箱子抓取1.7N，证明语言条件的力调节能力可迁移到真实硬件</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.24033/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Imagine-RL: Residual-Confidence-Guided Cross-Attention for World-Model-Augmented VLA Reinforcement Learning</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.23944/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Topology-Informed Visual Prompting For Vision Language Action Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CompVLA: A Variable Compliance Vision-Language-Action Model for Contact-rich Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有视觉-语言-动作（VLA）模型仅输出运动学指令，无法调节接触过程中的力，导致在接触丰富任务（如擦白板、pivot、杯分配）中因过度刚性或失去接触而性能下降。 CompVLA 提出一种统一框架，从 RGB 图像与语言指令联合预测运动、时变刚度矩阵与虚拟位移，通过几何阻抗控制（GIC）实现可控的物理交互。 核心目标是赋予机器人方向性柔顺性（沿接触方向让步、正交方向保持刚性）与力调制能力（主动施加目标接触力），从而安…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.23614">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.23614.webp" alt="CompVLA: A Variable Compliance Vision-Language-Action Model for Contact-rich Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有视觉-语言-动作（VLA）模型仅输出运动学指令，无法调节接触过程中的力，导致在接触丰富任务（如擦白板、pivot、杯分配）中因过度刚性或失…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">CompVLA: A Variable Compliance Vision-Language-Action Model for Contact-rich Manipulation</h1>
+            <div class="detail-meta">2026-09-20 · <a href="http://arxiv.org/abs/2609.23614" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.23614" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.23614</span></div>
+            <p class="detail-summary">现有视觉-语言-动作（VLA）模型仅输出运动学指令，无法调节接触过程中的力，导致在接触丰富任务（如擦白板、pivot、杯分配）中因过度刚性或失去接触而性能下降。 CompVLA 提出一种统一框架，从 RGB 图像与语言指令联合预测运动、时变刚度矩阵与虚拟位移，通过几何阻抗控制（GIC）实现可控的物理交互。 核心目标是赋予机器人方向性柔顺性（沿接触方向让步、正交方向保持刚性）与力调制能力（主动施加目标接触力），从而安…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Seoul National University：Jongmin Kim, Junsu Ha, Ch…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.23614/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有视觉-语言-动作（VLA）模型仅输出运动学指令，无法调节接触过程中的力，导致在接触丰富任务（如擦白板、pivot、杯分配）中因过度刚性或失…</p>
+  <ul class="reading-intro-points"><li>现有视觉-语言-动作（VLA）模型仅输出运动学指令，无法调节接触过程中的力，导致在接触丰富任务（如擦白板、pivot、杯分配）中因过度刚性或失…</li><li>CompVLA 提出一种统一框架，从 RGB 图像与语言指令联合预测运动、时变刚度矩阵与虚拟位移，通过几何阻抗控制（GIC）实现可控的物理交互。</li><li>核心目标是赋予机器人方向性柔顺性（沿接触方向让步、正交方向保持刚性）与力调制能力（主动施加目标接触力），从而安全、鲁棒地完成接触丰富操作。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Seoul National University</strong>：Jongmin Kim, Junsu Ha, Che-Sang Park, Minchang Song, Hyeokju Jeong, Himchan Hwang, Frank C. Park</li><li><strong>Microsoft Research Asia</strong>：Jianlong Fu</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有视觉-语言-动作（VLA）模型仅输出运动学指令，无法调节接触过程中的力，导致在接触丰富任务（如擦白板、pivot、杯分配）中因过度刚性或失去接触而性能下降。</li><li>CompVLA 提出一种统一框架，从 RGB 图像与语言指令联合预测运动、时变刚度矩阵与虚拟位移，通过<strong>几何阻抗控制（GIC）</strong>实现可控的物理交互。</li><li>核心目标是赋予机器人<strong>方向性柔顺性</strong>（沿接触方向让步、正交方向保持刚性）与<strong>力调制</strong>能力（主动施加目标接触力），从而安全、鲁棒地完成接触丰富操作。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>CompVLA</strong>，首个将变刚度柔顺控制与现代 VLA 相结合的统一架构，通过双专家结构同时输出运动轨迹、刚度矩阵与虚拟位移。</li><li>设计<strong>柔顺性专家（Compliance Expert）</strong>，以动作专家预测的参考轨迹为条件，输出时变对角刚度与虚拟位移，实现方向性柔顺与力调制。</li><li>在 <strong>SE(3)</strong> 流形上实现<strong>几何阻抗控制（GIC）</strong>，利用虚拟位移构建虚拟目标位姿，使柔顺框架与运动方向自动对齐，避免传统混合力/位控制的离散模式切换与不稳定问题。</li><li>在擦白板、Pivot、杯分配等接触丰富任务上取得最优平均成功率（67.1%），超越 ForceVLA 和 TA-VLA 等基线，同时保持标准操作任务的性能。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于 <strong>π₀（pi_0）</strong> 架构，采用双专家设计：<strong>动作专家</strong>预测参考 TCP Twist 与夹爪指令，<strong>柔顺性专家</strong>预测对角刚度 k_t 与虚拟位移 d_t。</li><li>柔顺性专家以 VLM 嵌入和动作专家预测的参考轨迹为条件，通过流匹配训练，输出未来 T=25 步的运动块（motion chunk）。</li><li>将虚拟位移 d_t 用于偏移参考轨迹形成虚拟目标位姿，既通过阻抗弹簧项实现力调制，又通过 d_t 方向确定主柔顺轴实现方向性柔顺。</li><li>将预测的对角刚度映射到 TCP 坐标系构建任务空间刚度矩阵 K_t，与虚拟目标位姿一同输入几何阻抗控制器计算关节扭矩，实现高频交互控制。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用自行采集并公开的<strong>接触丰富操作演示数据集</strong>，基于两个 7-DoF <strong>Franka Research 3 (FR3)</strong> 机械臂搭建的主从遥操作系统收集，包含三个 Intel RealSense D435i 相机视角、关节状态及 ATI Axia 力/扭矩传感器数据。</li><li>模型基于 <strong>π₀</strong> 架构，使用 <strong>PaliGemma</strong> 作为 VLM 主干，动作专家与柔顺性专家均采用 Gemma 模型，运动块预测时域 T=25。</li><li>训练采用流匹配（flow matching）损失联合优化两个专家，推理时去噪步数为 10 步；训练与评估均在真实机器人平台上进行，未明确提及 GPU/TPU 规格。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估在真实 Franka 机器人平台上进行，每个任务进行 <strong>20 个回合</strong>评估，重复 <strong>3 次</strong>取均值；接触丰富任务以成功率为主要指标，擦白板任务 additionally 报告成功擦除的字母比例。</li><li>基线包括 <strong>π₀</strong>、<strong>ForceVLA</strong> 和 <strong>TA-VLA</strong>，其中 ForceVLA 被修改为适配三相机输入。</li><li>CompVLA 在接触丰富任务上平均成功率为 <strong>67.1%</strong>，显著高于 ForceVLA（54.4%）、TA-VLA（26.5%）和 π₀（29.2%）；擦白板任务达 <strong>92.9%</strong>，Pivot 任务达 <strong>73.3%</strong>。</li><li>在标准抓取放置任务上达到 <strong>76.7%</strong>，与 π₀（80.0%）相当，证明其在不需柔顺的任务上仍具竞争力。</li><li>消融实验验证必要性：移除虚拟位移后擦白板成功率从 96% 降至 7%，完全移除柔顺性专家后降至 15.3%；固定刚度矩阵将 Pivot 成功率从 70% 降至 40%。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.23650/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Beyond Appearance Shifts: Task-Semantic Action Calibration for VLA Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.23580/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">TaskAnchor: Grounding Task State in Reactive VLAs for Long-Horizon Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

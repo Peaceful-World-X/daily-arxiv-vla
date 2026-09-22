@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>H-VLA: Hierarchical Vision-Language-Action Model with Key-Action Reasoning and Motion Planning in a Unified Action Space - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有视觉-语言-动作（VLA）模型多直接将语言和视觉观测映射到稠密动作，削弱了预训练视觉-语言模型（VLM）的语义推理能力，且在物体位置、场景布局、机器人具身、相机视角变化下鲁棒性不足 本文提出H-VLA分层VLA框架，核心目标是显式解耦高层关键动作推理与低层运动生成，提升跨具身、跨数据集的泛化能力 框架通过结构化中间表示、统一动作空间和两阶段训练策略，弥合语义理解与机器人控制之间的gap" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.22895">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><article class="note-cover note-cover-title-only" style="--cover-from: #316b57; --cover-to: #8bb174; --cover-spot: #d9e7c7; --cover-ink: #fbfff6; --cover-muted: rgba(251, 255, 246, 0.82); --cover-chip: rgba(251, 255, 246, 0.16); --cover-stroke: rgba(251, 255, 246, 0.24)">
+  <div class="note-cover-mesh"></div>
+  <div class="note-cover-title-shell">
+    <h1 class="note-cover-title">H-VLA: Hierarchical Vision-Language-Action Model with Key-Action Reasoning and Motion Planning in a Unified Action Space</h1>
+  </div>
+</article></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">H-VLA: Hierarchical Vision-Language-Action Model with Key-Action Reasoning and Motion Planning in a Unified Action Space</h1>
+            <div class="detail-meta">2026-09-19 · <a href="http://arxiv.org/abs/2609.22895" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.22895" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.22895</span></div>
+            <p class="detail-summary">现有视觉-语言-动作（VLA）模型多直接将语言和视觉观测映射到稠密动作，削弱了预训练视觉-语言模型（VLM）的语义推理能力，且在物体位置、场景布局、机器人具身、相机视角变化下鲁棒性不足 本文提出H-VLA分层VLA框架，核心目标是显式解耦高层关键动作推理与低层运动生成，提升跨具身、跨数据集的泛化能力 框架通过结构化中间表示、统一动作空间和两阶段训练策略，弥合语义理解与机器人控制之间的gap</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Advanced Research Lab, Samsung R&amp;D Institute China-…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.22895/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有视觉-语言-动作（VLA）模型多直接将语言和视觉观测映射到稠密动作，削弱了预训练视觉-语言模型（VLM）的语义推理能力，且在物体位置、场景…</p>
+  <ul class="reading-intro-points"><li>现有视觉-语言-动作（VLA）模型多直接将语言和视觉观测映射到稠密动作，削弱了预训练视觉-语言模型（VLM）的语义推理能力，且在物体位置、场景…</li><li>本文提出H-VLA分层VLA框架，核心目标是显式解耦高层关键动作推理与低层运动生成，提升跨具身、跨数据集的泛化能力</li><li>框架通过结构化中间表示、统一动作空间和两阶段训练策略，弥合语义理解与机器人控制之间的gap</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>Advanced Research Lab, Samsung R&D Institute China-Beijing (SRCB), China</li><li>Samsung AI Center, DS Division, South Korea</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有视觉-语言-动作（VLA）模型多直接将语言和视觉观测映射到稠密动作，削弱了预训练视觉-语言模型（VLM）的语义推理能力，且在物体位置、场景布局、机器人具身、相机视角变化下鲁棒性不足</li><li>本文提出<strong>H-VLA</strong>分层VLA框架，核心目标是显式解耦高层关键动作推理与低层运动生成，提升跨具身、跨数据集的泛化能力</li><li>框架通过结构化中间表示、统一动作空间和两阶段训练策略，弥合语义理解与机器人控制之间的gap</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出分层VLA框架<strong>H-VLA</strong>及配套两阶段训练策略，显式分离高层关键动作推理与低层运动生成两个阶段</li><li>设计<strong>Key-Action Model</strong>、<strong>Motion Planning Model</strong>和<strong>Unified Camera-Centric Action Space</strong>，分别负责中间子目标预测、稠密动作生成和跨数据集/具身/视角的表示对齐</li><li>在仿真和真实机器人基准上取得领先性能，SimplerEnv上Google Robot视觉匹配（VM）达91%、变体聚合（VA）达84%、WidowX VM达81%</li><li>真实Agilex双臂机器人实验中，相对最强基线在分布内（ID）、分布外位置（OOD Position）、分布外场景/物体（OOD Scene/Object）设置下任务成功率分别提升10、47、16个百分点</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>技术架构：基于预训练<strong>Prismatic-7B</strong>视觉-语言模型提取多模态特征，包含两个基于扩散模型的Transformer模块：Key-Action Model预测表示下一个操作子目标的结构化关键动作（6-DoF位姿+夹爪状态），Motion Planning Model基于预测的关键动作生成未来固定时域内的稠密动作序列；支持第三方视角和可选腕部视角输入，通过腕部相机掩码处理缺失的腕部观测</li><li>关键动作标注：通过演示轨迹中的夹爪开合状态变化自动构造关键动作标签，夹爪状态变化后的下一帧以及轨迹终点被定义为关键动作，作为高层推理的监督信号</li><li>创新点：1. 引入关键动作作为中间表示，显式解耦高层语义推理和低层控制，避免预训练VLM直接输出稠密动作的能力不匹配问题；2. 统一以第三方相机为中心的动作空间，将不同数据集、机器人具身的动作和状态转换到相机坐标系，消除表示不一致性；3. 两阶段训练策略，第一阶段以关键动作损失为主预训练（损失权重λₖ=10, λₐ=1），学习通用的操作推理能力，第二阶段均衡关键动作和稠密动作损失，适配下游任务</li><li>关键技术：扩散模型条件生成范式、腕部视角特征的条件注入、相机坐标系下的动作空间统一转换</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>预训练混合数据集：约183K机器人轨迹，包含单臂数据集<strong>DROID</strong>、<strong>FractalData</strong>、<strong>BridgeDataV2</strong>，双臂数据集<strong>RoboCOIN Cobot Magic</strong></li><li>下游数据集：仿真微调使用FractalData和BridgeDataV2；真实机器人数据集为自收集的Agilex双臂机器人150条演示，涵盖PickBottles、HandOver、LiftPot三个任务，每个任务50条演示</li><li>模型规模：以<strong>Prismatic-7B</strong>作为VLM backbone，Key-Action Model和Motion Planning Model为扩散Transformer模块，单臂动作/状态表示为7维（3维位置+3维欧拉角+1维夹爪状态），双臂扩展为14维</li><li>训练资源：预训练阶段使用8张NVIDIA H100 GPU，训练约3天1轮；BridgeDataV2微调用8张H100约3天6轮，FractalData微调用8张H100约3天4轮，Agilex真实机器人微调用4张H100约1天100轮；预训练使用常数学习率2×10⁻⁵，批次大小256</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境为<strong>SimplerEnv</strong>基准（包含Google Robot和WidowX两个硬件平台的任务集），真实机器人环境为<strong>Agilex</strong>双臂操作平台</li><li>评估指标：任务成功率（%），覆盖分布内（ID，训练时见过的物体位置和场景）、分布外位置（OOD Position，物体位置变化但场景不变）、分布外场景/物体（OOD Scene/Object，背景和物体均变化）三种设置</li><li>关键实验结果：</li></ul>
+<p> 1. 仿真SimplerEnv上，H-VLA平均性能超过所有对比基线，Google Robot VM达<strong>91%</strong>、VA达<strong>84%</strong>，WidowX VM达<strong>81%</strong>，在需要多步顺序推理的任务（如Drawer+Apple）上优势尤为明显（98% vs DAM-VLA的78%）</p>
+<p> 2. 真实Agilex机器人上，H-VLA在ID设置下平均成功率达<strong>93%</strong>，OOD Position下达<strong>83%</strong>，OOD Scene/Object下达<strong>66%</strong>；相对最强基线π₀.₅在ID、OOD Position、OOD Scene/Object设置下分别提升11、52、16个百分点，相对CogACT分别提升43、59、66个百分点</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.22973/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">An Empirical Study and Open Testbed for Federated Fine-Tuning of Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.22888/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Stable and Efficient Real-World Online VLA Post-Training via Asynchronous Replay-Anchored Policy Improvement</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

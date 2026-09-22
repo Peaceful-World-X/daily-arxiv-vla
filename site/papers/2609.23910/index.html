@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ReVeal: A Reconstruction-Aware Real-to-Sim Framework for VLA Policy Evaluation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对当前VLA（视觉-语言-动作）策略仿真评估中，重建环境误差导致仿真性能与真实性能偏差的问题，提出ReVeal实时到仿真评估框架，整合工作空间重建、重建质量评估与匹配闭环策略评估全流程 针对多视图视觉线索不足的低纹理、反光平面区域重建几何退化问题，提出深度引导的重建pipeline PGSR-D，引入单目深度先验提升重建质量 研究目标是通过量化重建保真度与仿真-真实策略性能一致性的关联，为基于仿真的VLA策略评估…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.23910">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.23910.webp" alt="ReVeal: A Reconstruction-Aware Real-to-Sim Framework for VLA Policy Evaluation" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对当前VLA（视觉-语言-动作）策略仿真评估中，重建环境误差导致仿真性能与真实性能偏差的问题，提出ReVeal实时到仿真评估框架，整合工作空…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ReVeal: A Reconstruction-Aware Real-to-Sim Framework for VLA Policy Evaluation</h1>
+            <div class="detail-meta">2026-09-20 · <a href="http://arxiv.org/abs/2609.23910" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.23910" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.23910</span></div>
+            <p class="detail-summary">针对当前VLA（视觉-语言-动作）策略仿真评估中，重建环境误差导致仿真性能与真实性能偏差的问题，提出ReVeal实时到仿真评估框架，整合工作空间重建、重建质量评估与匹配闭环策略评估全流程 针对多视图视觉线索不足的低纹理、反光平面区域重建几何退化问题，提出深度引导的重建pipeline PGSR-D，引入单目深度先验提升重建质量 研究目标是通过量化重建保真度与仿真-真实策略性能一致性的关联，为基于仿真的VLA策略评估…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构包括Purdue University和Samsung SDS Research Am…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.23910/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对当前VLA（视觉-语言-动作）策略仿真评估中，重建环境误差导致仿真性能与真实性能偏差的问题，提出ReVeal实时到仿真评估框架，整合工作空…</p>
+  <ul class="reading-intro-points"><li>针对当前VLA（视觉-语言-动作）策略仿真评估中，重建环境误差导致仿真性能与真实性能偏差的问题，提出ReVeal实时到仿真评估框架，整合工作空…</li><li>针对多视图视觉线索不足的低纹理、反光平面区域重建几何退化问题，提出深度引导的重建pipeline PGSR-D，引入单目深度先验提升重建质量</li><li>研究目标是通过量化重建保真度与仿真-真实策略性能一致性的关联，为基于仿真的VLA策略评估提供可靠性保障</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构包括<strong>Purdue University</strong>和<strong>Samsung SDS Research America</strong></li><li>Xinyi Wang、Anna Enyu Li、Dizhi Ma、Karthik Ramani隶属于<strong>Purdue University</strong></li><li>Heng Hao、Wenjun Hu、Hankyu Moon、Yeong-Dae Kwon隶属于<strong>Samsung SDS Research America</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对当前VLA（视觉-语言-动作）策略仿真评估中，重建环境误差导致仿真性能与真实性能偏差的问题，提出<strong>ReVeal</strong>实时到仿真评估框架，整合工作空间重建、重建质量评估与匹配闭环策略评估全流程</li><li>针对多视图视觉线索不足的低纹理、反光平面区域重建几何退化问题，提出深度引导的重建pipeline <strong>PGSR-D</strong>，引入单目深度先验提升重建质量</li><li>研究目标是通过量化重建保真度与仿真-真实策略性能一致性的关联，为基于仿真的VLA策略评估提供可靠性保障</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>ReVeal</strong>实时到仿真评估框架，同时支持重建级的观测/几何保真度评估与策略级的仿真-真实性能一致性评估</li><li>开发<strong>PGSR-D</strong>重建pipeline，通过引入对齐后的单目深度监督，改善低视觉线索区域的几何重建质量</li><li>在8个真实世界工作空间、3个VLA策略、8个人形机器人操作任务上的大规模实验证明，重建保真度排序与仿真-真实策略性能一致性排序完全匹配，且更高重建保真度对应更强的一致性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>ReVeal框架全流程</strong>：首先通过手机拍摄的真实工作空间多视角RGB视频，用COLMAP估计相机参数，分别采用2DGS、PGSR、PGSR-D三个pipeline重建工作空间背景，用TRELLIS和SAM 3D重建前景任务物体，通过ArUco标记对齐真实与仿真环境的空间配置；之后通过重建级评估指标量化环境保真度，最后在真实与仿真环境中对同策略做匹配闭环评估，量化性能一致性</li><li><strong>重建质量评估指标</strong>：提出<strong>新颖视角网格保真度（NVMF）</strong>，将重建网格渲染为保留的评估视角图像，与真实图像对比，通过PSNR、SSIM、LPIPS、DINOv2余弦相似度、SigLIP余弦相似度5个指标量化观测保真度；提出<strong>标注平面几何保真度（APGF）</strong>，对任务相关平面区域拟合参考平面，通过平面度、完整性、连通性、局部粗糙度4个属性量化几何保真度</li><li><strong>PGSR-D重建方法创新</strong>：在PGSR重建的预热阶段结束后，引入Depth Anything V2生成的单目深度图，通过线性尺度-偏移变换对齐到PGSR当前渲染的深度空间，添加深度一致性损失作为额外几何监督，解决低纹理、反光等区域多视图视觉约束不足的重建退化问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>输入数据：用于重建的1-3分钟手持手机拍摄的真实工作空间多视角RGB视频，8个评估场景涵盖厨房、家庭、办公室、食堂四类场景，标注了42个任务相关平面区域用于APGF评估</li><li>模型规模：评估使用的VLA策略包括<strong>SmolVLA（450M参数）</strong>、<strong>GR00T N1.7（3B参数）</strong>、<strong>π₀.₅（3B参数）</strong></li><li>训练与仿真资源：VLA策略训练使用4块<strong>NVIDIA A100 GPU</strong>，仿真环境评估使用<strong>NVIDIA RTX 5090 GPU</strong>，仿真平台为Genesis World，机器人平台为Dexmate Vega</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估设置：机器人平台为Dexmate Vega，仿真平台为Genesis World，覆盖8个多样化的操作任务（包含单臂/双臂、短/长时程、视觉-only/物理交互类型），每个任务-策略-pipeline组合评估50个episode，策略训练使用200-300个人机遥操作演示episodes</li><li>核心评估指标：重建级包括NVMF的5个指标（PSNR↑、SSIM↑、LPIPS↓、DINOv2相似度↑、SigLIP相似度↑）、APGF的4个指标（平面度↓、孔洞率↓、连通性↑、局部粗糙度↓）；策略级采用Pearson相关系数r↑、平均最大排序违反（MMRV）↓、平均绝对误差（MAE）↓量化仿真-真实性能一致性</li><li>关键实验结果：1. 重建质量区分性：NVMF和APGF可稳定区分三个重建pipeline的保真度，排序始终为<strong>PGSR-D > PGSR > 2DGS</strong>，PGSR-D在所有NVMF指标上均达到最优；2. 策略一致性关联：仿真-真实策略性能一致性的排序与重建保真度排序完全一致，PGSR-D的Pearson r达0.960，MMRV为0.102，MAE为0.050，显著优于另外两个pipeline；3. 保真度-一致性关联：DINOv2（r=0.795）、SigLIP（r=0.726）等观测级指标，以及APGF的完整性（r=0.759）、局部粗糙度（r=0.731）等几何级指标与仿真-真实一致性呈强正相关，证明更高重建保真度对应更强的评估可靠性</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.23944/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Topology-Informed Visual Prompting For Vision Language Action Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.23863/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Grounded Action Model: 3D Grounding as a Foundation for Robotics</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

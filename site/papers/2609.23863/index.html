@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grounded Action Model: 3D Grounding as a Foundation for Robotics - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出Grounded Action Model（GAM），开创了以3D grounding作为机器人动作学习基础的新范式，解决当前机器人基础模型（视觉-语言-动作模型VLA、世界动作模型WAM）未显式学习任务物体的度量空间定位与几何，导致场景扰动下泛化能力差的核心问题 核心目标是通过预训练的3D grounding backbone显式提供任务相关物体的位置、外观与几何信息，让动作策略只需学习如何操作这些已接地的物…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.23863">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.23863.webp" alt="Grounded Action Model: 3D Grounding as a Foundation for Robotics" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出Grounded Action Model（GAM），开创了以3D grounding作为机器人动作学习基础的新范式，解决当前机器人基础模…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Grounded Action Model: 3D Grounding as a Foundation for Robotics</h1>
+            <div class="detail-meta">2026-09-20 · <a href="http://arxiv.org/abs/2609.23863" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.23863" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.23863</span></div>
+            <p class="detail-summary">提出Grounded Action Model（GAM），开创了以3D grounding作为机器人动作学习基础的新范式，解决当前机器人基础模型（视觉-语言-动作模型VLA、世界动作模型WAM）未显式学习任务物体的度量空间定位与几何，导致场景扰动下泛化能力差的核心问题 核心目标是通过预训练的3D grounding backbone显式提供任务相关物体的位置、外观与几何信息，让动作策略只需学习如何操作这些已接地的物…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Northwestern University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.23863/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出Grounded Action Model（GAM），开创了以3D grounding作为机器人动作学习基础的新范式，解决当前机器人基础模…</p>
+  <ul class="reading-intro-points"><li>提出Grounded Action Model（GAM），开创了以3D grounding作为机器人动作学习基础的新范式，解决当前机器人基础模…</li><li>核心目标是通过预训练的3D grounding backbone显式提供任务相关物体的位置、外观与几何信息，让动作策略只需学习如何操作这些已接…</li><li>同时支持人类直接指定目标和VLM高层规划器驱动的长时序、依赖记忆的复杂操作任务</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Northwestern University</strong></li><li><strong>University of Washington</strong></li><li><strong>National University of Singapore</strong></li><li><strong>Microsoft</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>Grounded Action Model（GAM）</strong>，开创了以3D grounding作为机器人动作学习基础的新范式，解决当前机器人基础模型（视觉-语言-动作模型VLA、世界动作模型WAM）未显式学习任务物体的度量空间定位与几何，导致场景扰动下泛化能力差的核心问题</li><li>核心目标是通过预训练的3D grounding backbone显式提供任务相关物体的位置、外观与几何信息，让动作策略只需学习如何操作这些已接地的物体，提升操作鲁棒性与跨场景泛化能力</li><li>同时支持人类直接指定目标和VLM高层规划器驱动的长时序、依赖记忆的复杂操作任务</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次提出将可提示的3D grounding模型作为机器人动作学习的基础，替代传统基于语言生成或视频生成的预训练backbone，显式暴露任务相关物体的度量3D空间信息</li><li>设计了完整的GAM架构：包含冻结的3D grounding backbone与可训练的多流动作头，支持语言、2D点、2D框三种统一的任务输入模态，构建目标为中心的图像与检测双token表示，通过多流Transformer（MM-DiT）预测动作块</li><li>在多个仿真与真实机器人 benchmark 上验证了方法的优越性，尤其在场景随机化、目标位置迁移、新目标指定等扰动场景下，成功率远超现有VLA、世界动作模型等基线</li><li>证明了方法的组合能力：可通过点接口对接VLM高层规划器，在不修改动作策略的前提下支持长时序、依赖记忆的复杂操作任务</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础组件为冻结的可提示3D grounding backbone <strong>WildDet3D</strong>，输入RGB图像与任务提示（语言/2D点/2D框），输出每个任务物体的2D检测框、度量3D框、稠密深度图与骨干网络视觉特征；语言输入会先通过预训练的Flan-T5编码器提取任务相关物体短语作为grounding查询</li><li>观测构建部分生成两类token：<strong>图像token</strong>仅保留任务物体与机器人臂所在区域的视觉特征，抑制其他无关场景内容；<strong>检测token</strong>编码每个物体的采样点云、3D中心（含傅里叶位置编码）、尺寸、6D旋转等度量几何信息，同时加入机器人关节状态历史token，经过模态嵌入与共享自注意力融合后构成条件序列</li><li>动作预测部分采用12层多流Transformer（<strong>MM-DiT</strong>），同时处理图像、检测、状态历史三类条件token与加噪的动作块token，语言条件通过自适应层归一化注入，采用流匹配（flow matching）训练策略预测去噪后的动作速度，推理时通过K步欧拉积分生成动作块</li><li>核心创新点包括：1）首次以3D grounding作为机器人动作学习的基础，实现感知与动作的解耦训练；2）统一的多模态任务接口，支持人类直接指定目标与规划器自动驱动；3）目标为中心的观测过滤机制，大幅降低无关场景扰动对策略的影响</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>RoboTwin 2.0</strong>（包含50个双臂操作任务，分干净场景Easy设置与场景随机化Hard设置，每个任务提供100条干净场景演示）、<strong>LIBERO-PRO</strong>（LIBERO基准的扰动版本，包含4类共16种测试扰动：物体外观尺寸改变、位置改变、指令表述改变、新目标/任务指定）</li><li>真实机器人平台：双臂<strong>YAM</strong>机器人、单臂<strong>Franka</strong>机械臂</li><li>模型规模：动作头包含图像适配器、检测适配器、点云编码器、条件融合层、语言投影层与12层MM-DiT；每个任务物体对应8个检测token，图像token为16×16网格，条件序列总长度为256+8N+1（N为任务物体数量）</li><li>训练资源：原文未明确说明具体GPU/TPU等训练硬件配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真遵循RoboTwin 2.0官方单任务训练协议、LIBERO-PRO官方单策略多任务协议；真实机器人评估包含双臂YAM的视觉偏移测试、单臂Franka的长时序与记忆依赖任务分布内/外测试</li><li>主要评估指标：任务成功率（RoboTwin 2.0、YAM平台）、步完成率（Franka平台长时序任务）</li><li>关键实验结果：</li></ul>
+<p> - RoboTwin 2.0上平均成功率为55.3%，超过所有对比基线，其中Hard随机化场景下成功率达47.6%，比次优基线Abot-M0（30.4%）高17.2个百分点，且仅用干净场景演示训练即可实现该性能</p>
+<p> - LIBERO-PRO上平均成功率为61%，比次优基线π₀.₅（53%）高8个百分点，在目标位置改变（Pos）与新目标指定（Task）场景下提升最为显著：Spatial-Pos场景下达0.60，是基线的2~3倍；Spatial-Task场景下达0.88，所有基线均低于0.11</p>
+<p> - 双臂YAM上分布内成功率19/20，视觉偏移下仍保持17/20，保留89%的分布内性能；而基线π₀.₅在视觉偏移下成功率从19/20降至4/20，仅保留21%</p>
+<p> - 单臂Franka上结合Molmo2规划器，分布内步完成率达64.7%，分布外为49.8%，保留77%的分布内性能，远高于π₀.₅（分布外24.0%，保留57%）与MolmoAct2（分布外17.1%，保留48%）</p>
+<p> - 消融实验验证了目标为中心观测设计的有效性：移除图像掩码后平均成功率从46.8%降至22.3%，移除点云裁剪后降至12.8%，同时移除则降至10.3%；图像token与检测token互补，单独使用任一类都会导致成功率大幅下降</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.23910/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ReVeal: A Reconstruction-Aware Real-to-Sim Framework for VLA Policy Evaluation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.23650/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Beyond Appearance Shifts: Task-Semantic Action Calibration for VLA Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

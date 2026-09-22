@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>vla.simd: Efficient CPU Inference for Language-Conditioned Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出了 vla.simd，一个用于语言条件操作策略的高效 CPU 推理引擎，通过共享 SIMD 微内核、可重用计算和目标特定优化实现快速推理 针对无专用 GPU 的机器人部署场景，解决了 CPU 上视觉-语言-动作（VLA）模型的推理延迟与动作供给速率之间的平衡问题 引入了 IMPACT（Instruction-Modulated Perception and Action Chunking with Transf…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.24274">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.24274.webp" alt="vla.simd: Efficient CPU Inference for Language-Conditioned Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出了 vla.simd，一个用于语言条件操作策略的高效 CPU 推理引擎，通过共享 SIMD 微内核、可重用计算和目标特定优化实现快速推理</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">vla.simd: Efficient CPU Inference for Language-Conditioned Manipulation</h1>
+            <div class="detail-meta">2026-09-21 · <a href="http://arxiv.org/abs/2609.24274" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.24274" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.24274</span></div>
+            <p class="detail-summary">提出了 vla.simd，一个用于语言条件操作策略的高效 CPU 推理引擎，通过共享 SIMD 微内核、可重用计算和目标特定优化实现快速推理 针对无专用 GPU 的机器人部署场景，解决了 CPU 上视觉-语言-动作（VLA）模型的推理延迟与动作供给速率之间的平衡问题 引入了 IMPACT（Instruction-Modulated Perception and Action Chunking with Transf…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">5 张阅读卡</span>
+              <span class="meta-pill">VinRobotics, Vietnam（Khanh D. Nguyen, Hoang M. Truo…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.24274/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出了 vla.simd，一个用于语言条件操作策略的高效 CPU 推理引擎，通过共享 SIMD 微内核、可重用计算和目标特定优化实现快速推理</p>
+  <ul class="reading-intro-points"><li>提出了 vla.simd，一个用于语言条件操作策略的高效 CPU 推理引擎，通过共享 SIMD 微内核、可重用计算和目标特定优化实现快速推理</li><li>针对无专用 GPU 的机器人部署场景，解决了 CPU 上视觉-语言-动作（VLA）模型的推理延迟与动作供给速率之间的平衡问题</li><li>引入了 IMPACT（Instruction-Modulated Perception and Action Chunking with Tr…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>VinRobotics</strong>, Vietnam（Khanh D. Nguyen, Hoang M. Truong, An T. Le）</li><li><strong>Center for AI Research, VinUniversity</strong>, Vietnam（An T. Le）</li><li><strong>Intelligent Autonomous Systems, TU Darmstadt</strong>, Germany（An T. Le）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出了 <strong>vla.simd</strong>，一个用于语言条件操作策略的高效 CPU 推理引擎，通过共享 SIMD 微内核、可重用计算和目标特定优化实现快速推理</li><li>针对无专用 GPU 的机器人部署场景，解决了 CPU 上视觉-语言-动作（VLA）模型的推理延迟与动作供给速率之间的平衡问题</li><li>引入了 <strong>IMPACT</strong>（Instruction-Modulated Perception and Action Chunking with Transformers），一种基于 ACT 的语言条件动作分块策略，在 Raspberry Pi 5 上实现了超过 30 actions/s 的供给速率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>vla.simd 引擎</strong>：采用共享 SIMD 微内核（SMK）统一处理线性层、卷积和注意力投影，结合目标特定的寄存器分块选择和量化支持</li><li><strong>IMPACT 策略</strong>：通过缓存文本表示、指令令牌和视觉调制机制，将语言条件的计算开销降低到每次查询的约 2.6%，在 LIBERO 和真实机器人上验证了任务选择能力</li><li><strong>系统性评估</strong>：在 4 种 CPU（Apple M4、Intel i9-14900HX、AMD Ryzen 5 5500、Raspberry Pi 5）和 2 种机器人本体（SO-101、UR10e）上评估了 6 种策略，分析了热效应、数值保真度和动作供给预算</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>SIMD 微内核设计</strong>：采用 packed-panel 微内核，将权重预打包为面板，通过 im2col 将卷积转化为矩阵乘法，注意力机制使用独立的 QKᵀ 和 SV 内核</li><li><strong>寄存器分块选择</strong>：基于 GotoBLAS/BLIS 框架，通过算法 1 离线选择最优的 mᵣ×nᵣ 分块大小，约束条件包括寄存器数量、FMA 延迟隐藏和负载吞吐量</li><li><strong>计算生命周期分离</strong>：权重按进程打包、指令相关张量按 episode 缓存、观测相关特征按查询计算</li><li><strong>量化支持</strong>：W8A8 对称量化，使用 Arm dotprod 或 x86 AVX-VNNI 指令，权重按输出通道缩放，激活按 token 动态缩放</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：<strong>LIBERO</strong>（仿真操作套件）、<strong>SO-101</strong> 真实机器人操作数据集、<strong>UR10e</strong> 真实机器人数据集</li><li><strong>模型规模</strong>：</li></ul>
+<p> - ACT：34M 参数</p>
+<p> - Diffusion Policy：278M 参数</p>
+<p> - Octo-Small：27M + T5</p>
+<p> - TurboVLA：0.2B 参数</p>
+<p> - SmolVLA：450M 参数</p>
+<p> - IMPACT：60M + T5-small（35.3M 冻结文本编码器）</p>
+<ul><li><strong>硬件平台</strong>：Apple M4（NEON）、Intel i9-14900HX（AVX2）、AMD Ryzen 5 5500（AVX2）、<strong>Raspberry Pi 5</strong>（Cortex-A76 NEON）</li><li><strong>性能指标</strong>：相比编译后的 PyTorch 参考实现达到约 <strong>1.4×</strong> 中位数加速，保持 fp32 数值精度；IMPACT 在 Pi 5 上 fp32 达到 33.5 actions/s，int8 达到 81.2 actions/s</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.24350/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">LIBERO-VPro: Benchmarking Closed-Loop Visual Robustness of Robotic Foundation Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.24187/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">StenoVLA-3D: 3D-Aware Reasoning VLA for Navigation Through Gastrointestinal Stenoses</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

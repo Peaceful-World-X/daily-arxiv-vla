@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出AR-WAM，一种面向机器人操作的视觉条件、智能体兼容的世界动作模型（World Action Model），针对现有视觉-语言-动作（VLA）模型和世界动作模型依赖自然语言指令作为任务条件的缺陷，解决文本作为智能体控制接口时存在的指代模糊、空间不精确、与智能体语言能力冗余、意图与执行黑箱纠缠等问题 AR-WAM以两种互补条件完全替代自然语言输入：视觉定位提示（目标 bounding box） 用于无歧义指…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.23578">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.23578.webp" alt="AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出AR-WAM，一种面向机器人操作的视觉条件、智能体兼容的世界动作模型（World Action Model），针对现有视觉-语言-动作…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation</h1>
+            <div class="detail-meta">2026-09-20 · <a href="http://arxiv.org/abs/2609.23578" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.23578" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.23578</span></div>
+            <p class="detail-summary">论文提出AR-WAM，一种面向机器人操作的视觉条件、智能体兼容的世界动作模型（World Action Model），针对现有视觉-语言-动作（VLA）模型和世界动作模型依赖自然语言指令作为任务条件的缺陷，解决文本作为智能体控制接口时存在的指代模糊、空间不精确、与智能体语言能力冗余、意图与执行黑箱纠缠等问题 AR-WAM以两种互补条件完全替代自然语言输入：视觉定位提示（目标 bounding box） 用于无歧义指…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">5 张阅读卡</span>
+              <span class="meta-pill">香港科技大学（The Hong Kong University of Science and Tech…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.23578/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出AR-WAM，一种面向机器人操作的视觉条件、智能体兼容的世界动作模型（World Action Model），针对现有视觉-语言-动作…</p>
+  <ul class="reading-intro-points"><li>论文提出AR-WAM，一种面向机器人操作的视觉条件、智能体兼容的世界动作模型（World Action Model），针对现有视觉-语言-动作…</li><li>AR-WAM以两种互补条件完全替代自然语言输入：视觉定位提示（目标 bounding box） 用于无歧义指定交互对象与空间位置，可学习的原子…</li><li>论文在仿真基准RoboTwin 2.0、RMBench以及真实Astribot S1双臂平台上验证模型性能，证明视觉条件优于文本条件，且兼容不…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>香港科技大学（The Hong Kong University of Science and Technology）</li><li>深圳先进技术研究院（Shenzhen University of Advanced Technology）</li><li>深信服科技（Sangfor Technologies Inc.）</li><li>明略科技（Mininglamp Technology）</li><li>香港中文大学MMLab（MMLab, The Chinese University of Hong Kong）</li><li>不列颠哥伦比亚大学（The University of British Columbia）</li><li>Astribot公司（Astribot）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出<strong>AR-WAM</strong>，一种面向机器人操作的<strong>视觉条件、智能体兼容的世界动作模型（World Action Model）</strong>，针对现有视觉-语言-动作（VLA）模型和世界动作模型依赖自然语言指令作为任务条件的缺陷，解决文本作为智能体控制接口时存在的指代模糊、空间不精确、与智能体语言能力冗余、意图与执行黑箱纠缠等问题</li><li>AR-WAM以两种互补条件完全替代自然语言输入：<strong>视觉定位提示（目标 bounding box）</strong> 用于无歧义指定交互对象与空间位置，<strong>可学习的原子操作token</strong> 用于指定要执行的原子技能，将“在哪里操作”和“如何操作”解耦，由智能体负责语言理解、规划、记忆与错误恢复，策略仅专注于动作生成</li><li>论文在仿真基准RoboTwin 2.0、RMBench以及真实Astribot S1双臂平台上验证模型性能，证明视觉条件优于文本条件，且兼容不同类型的智能体完成长程记忆依赖任务</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次提出以视觉定位提示和可学习原子操作token完全替代自然语言作为机器人操作策略的输入条件，从接口层面解决文本作为智能体-策略交互媒介的固有缺陷</li><li>设计轻量级0.5B参数的AR-WAM架构，包含共享Transformer的推理专家与世界动作专家，搭配冻结预训练DINOv3视觉编码器，无独立语言编码器，在紧凑潜变量中联合预测场景演化与动作输出</li><li>提出双级前瞻对齐训练机制，通过视觉前瞻与语义前瞻两个监督信号，让动作预测与未来场景演化对齐，同时用可监督的推理信号暴露策略意图，便于故障诊断</li><li>提供模型无关的智能体兼容层，封装detect、execute、query三个原语，支持本地部署VLM或在线API智能体直接驱动策略，无需了解策略内部逻辑</li><li>实验验证AR-WAM在标准操作任务上平均成功率达87.2%，与最强基线持平；在记忆依赖长程任务上成功率比基线高5.9%，真实机器人任务上高36.7%，同时保持最低14.1ms的推理延迟</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>任务条件与调制</strong>：将操作任务分解为pick、place、handover等原子技能集合，每个技能对应独立可学习的嵌入向量；视觉定位提示为归一化坐标的bounding box，额外支持指定执行手臂（参与者）和交互方式（风格）的可学习嵌入，所有条件通过AdaLN条件调制注入策略网络，避免跨注意力机制带来的属性依赖偏移</li><li><strong>双专家共享架构</strong>：整体由0.2B共享Transformer和0.3B冻结DINOv3视觉编码器组成，Transformer同时服务于推理专家与世界动作专家：推理专家通过可学习的推理查询token提取当前任务理解，输出目标mask、双臂终端位姿、任务抽象三个可监督信号；世界动作专家基于流匹配框架进行多步去噪，联合预测动作块、视觉前瞻、语义前瞻三个模态</li><li><strong>双级前瞻对齐</strong>：离线预训练前瞻要点提取器，从演示序列的起止帧提取压缩的未来演化表征作为训练目标；世界动作专家的视觉前瞻对齐离线提取的前瞻要点，语义前瞻对齐推理专家从未来观测得到的推理token，通过stop-gradient避免反向传播污染观测编码路径</li><li><strong>智能体交互与容错</strong>：封装detect（智能体侧完成视觉 grounding 得到定位框）、execute（ rollout 策略直到触发事件）、query（返回执行反馈）三个模型无关原语；智能体调用由位移阈值、夹爪闭合/张开、固定时间间隔四个事件触发，长程任务记忆完全由智能体侧历史承载，策略为无内部状态的马尔可夫过程；执行失败时智能体重新生成视觉提示并重试，可区分是意图错误还是执行错误</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真训练与测试数据集：<strong>RoboTwin 2.0</strong>（包含10个双臂长程操作任务，每个任务提供50条干净演示与500条随机演示）、<strong>RMBench</strong>（包含记忆依赖的长程操作任务，每个任务提供50条演示，使用Qwen3.8-27B与Kimi-K3生成任务指令）</li><li>真实机器人测试平台：<strong>Astribot S1</strong> 双臂操作平台</li><li>模型规模：总参数量0.5B，其中共享Transformer 0.2B，冻结预训练DINOv3视觉编码器0.3B，无独立语言编码器</li><li>训练配置：联合使用RoboTwin 2.0与RMBench的演示数据训练，训练时对视觉定位提示进行随机坐标抖动增强，提升对不精确定位框的容忍度；相邻操作之间插入homing归位动作，避免操作过程遮挡目标对象</li><li>推理效率：单步推理延迟最低达14.1ms</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.23580/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">TaskAnchor: Grounding Task State in Reactive VLAs for Long-Horizon Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.23565/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">MaskVLA: Visual Masking Against Trajectory Overfitting of Vision-Language-Action Model</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

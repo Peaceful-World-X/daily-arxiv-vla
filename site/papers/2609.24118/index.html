@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CARE: Experience-Guided Atomic Corrective Execution for Vision-Language-Action Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对视觉-语言-动作（VLA）策略在执行偏离标称轨迹时易发生脆性失败的痛点，提出CARE框架，利用执行失败的经验生成纠正监督数据，实现闭环恢复 解决现有恢复方法将失败视为异常而非改进资源、且未建模分阶段失败偏差的问题，同时解决纠正行为的触发时机问题 提出专门评估中间失败状态恢复能力的FSR-Bench基准，弥补现有操作基准仅评估标称初始状态下任务成功的不足" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.24118">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.24118.webp" alt="CARE: Experience-Guided Atomic Corrective Execution for Vision-Language-Action Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对视觉-语言-动作（VLA）策略在执行偏离标称轨迹时易发生脆性失败的痛点，提出CARE框架，利用执行失败的经验生成纠正监督数据，实现闭环恢复</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">CARE: Experience-Guided Atomic Corrective Execution for Vision-Language-Action Policies</h1>
+            <div class="detail-meta">2026-09-21 · <a href="http://arxiv.org/abs/2609.24118" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.24118" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.24118</span></div>
+            <p class="detail-summary">针对视觉-语言-动作（VLA）策略在执行偏离标称轨迹时易发生脆性失败的痛点，提出CARE框架，利用执行失败的经验生成纠正监督数据，实现闭环恢复 解决现有恢复方法将失败视为异常而非改进资源、且未建模分阶段失败偏差的问题，同时解决纠正行为的触发时机问题 提出专门评估中间失败状态恢复能力的FSR-Bench基准，弥补现有操作基准仅评估标称初始状态下任务成功的不足</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">所有作者均隶属于大连理工大学（Dalian University of Technology, Dal…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.24118/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对视觉-语言-动作（VLA）策略在执行偏离标称轨迹时易发生脆性失败的痛点，提出CARE框架，利用执行失败的经验生成纠正监督数据，实现闭环恢复</p>
+  <ul class="reading-intro-points"><li>针对视觉-语言-动作（VLA）策略在执行偏离标称轨迹时易发生脆性失败的痛点，提出CARE框架，利用执行失败的经验生成纠正监督数据，实现闭环恢复</li><li>解决现有恢复方法将失败视为异常而非改进资源、且未建模分阶段失败偏差的问题，同时解决纠正行为的触发时机问题</li><li>提出专门评估中间失败状态恢复能力的FSR-Bench基准，弥补现有操作基准仅评估标称初始状态下任务成功的不足</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>所有作者均隶属于<strong>大连理工大学</strong>（Dalian University of Technology, Dalian, China）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对视觉-语言-动作（VLA）策略在执行偏离标称轨迹时易发生脆性失败的痛点，提出CARE框架，利用执行失败的经验生成纠正监督数据，实现闭环恢复</li><li>解决现有恢复方法将失败视为异常而非改进资源、且未建模分阶段失败偏差的问题，同时解决纠正行为的触发时机问题</li><li>提出专门评估中间失败状态恢复能力的<strong>FSR-Bench</strong>基准，弥补现有操作基准仅评估标称初始状态下任务成功的不足</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出经验引导的纠正数据合成方法，通过建模分阶段的条件失败几何偏差分布，生成符合实际执行场景的失败状态与纠正演示，替代手动设计或随机扰动的纠正数据生成方式</li><li>提出原子级纠正执行框架，将长程操作分解为原子阶段，结合VLM规划器与物理grounded的3D几何监控，在线决定执行标称动作、执行中调整或执行后重操作，无需切换独立的恢复策略</li><li>提出<strong>失败状态恢复基准（FSR-Bench）</strong>，包含局部偏差与结构异常两类共36个恢复场景，独立评估策略从中间失败状态恢复的能力</li><li>在多种VLA骨干、仿真与真实双机械臂任务上验证有效性，仿真任务平均成功率提升14.5分，真实场景提升15.9分，FSR-Bench上恢复成功率平均提升7.5分</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>CARE分为两大核心模块：<strong>经验引导的纠正数据合成</strong>与<strong>原子纠正执行框架</strong></li><li>经验引导的纠正数据合成：首先收集100次初步执行的失败rollout，对每个原子阶段的失败偏差（平移、旋转偏移）独立拟合最优概率分布，采样偏差生成新的物理失败状态，通过仿真运动规划或真实遥操作收集纠正演示</li><li>原子纠正执行框架：离线用GPT-4.1将任务分解为原子阶段，为每个阶段生成标称指令、终止谓词与纠正指令集；在线通过3D几何监控（基于SAM3和Depth Anything3提取点云计算几何状态）判断是否触发纠正，统一由VLA执行器处理所有指令</li><li>创新点：首次利用实际执行失败的经验建模偏差分布生成纠正数据；采用物理grounded的3D监控决定纠正触发时机，避免VLM判断的幻觉问题；统一执行器处理标称与纠正动作，无需额外恢复策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>RoboTwin 2.0</strong>（7个双机械臂硬任务）、<strong>RoboFactory</strong>（3个多机械臂协作任务）、自研<strong>FSR-Bench</strong>（5个任务共36个恢复场景，分简单/困难两类 regime）</li><li>真实世界数据集：LeRobot SO-101双机械臂平台的4个长程双机械臂操作任务</li><li>模型规模：未公开具体参数量，覆盖$\pi_0$（连续动作VLA）、$\pi_0$-FAST（tokenized动作VLA）两类骨干，对比基线包括ACT、RDT-1B、DP、DP3，规划与感知模块分别使用GPT-4.1、SAM3、Depth Anything3</li><li>训练资源：仿真训练使用2张<strong>NVIDIA A800 SXM4 80GB GPU</strong>，标准任务训练40k步（batch size 32，动作horizon 50），FSR-Bench训练20k步；真实世界每任务收集50次标称演示与每种错误类型20次纠正演示，用100次初步执行估计失败分布</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真涵盖RoboTwin 2.0、RoboFactory、FSR-Bench，真实世界在LeRobot SO-101双机械臂平台测试，对比基线包括ACT、RDT-1B、DP、DP3、FailSafe等</li><li>主要评估指标：任务成功率（Task Success Rate）、恢复成功率（Recovery Success Rate, RSR）</li><li>关键实验结果：</li></ul>
+<p> - RoboTwin 2.0双机械臂任务上，$\pi_0$平均成功率从39.6%提升至60.7%（+21.1分），$\pi_0$-FAST从17.4%提升至33.1%（+15.7分）</p>
+<p> - RoboFactory多臂协作任务上，$\pi_0$平均提升12.0分，$\pi_0$-FAST平均提升9.3分</p>
+<p> - FSR-Bench恢复评估中，$\pi_0$在简单/困难场景恢复成功率分别从38.8%/15.8%提升至57.2%/21.2%，$\pi_0$-FAST从24.4%/4.6%提升至32.6%/10.8%</p>
+<p> - 真实世界双机械臂任务上，$\pi_0$成功率从30.8%提升至50.0%（+19.2分），$\pi_0$-FAST从18.8%提升至31.3%（+12.5分），超过专用恢复方法FailSafe 13.7和7.3分</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.24124/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ActiveArena: Benchmarking and Understanding Active Perception in Robotic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.24033/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Imagine-RL: Residual-Confidence-Guided Cross-Attention for World-Model-Augmented VLA Reinforcement Learning</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MaskVLA: Visual Masking Against Trajectory Overfitting of Vision-Language-Action Model - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有Vision-Language-Action（VLA）模型在有限数据集上微调时会出现严重的轨迹过拟合问题，过度依赖主相机视角的局部纹理特征，忽略腕部相机的细粒度操作信息，导致泛化能力差、执行行为 brittle 本文提出MaskVLA，一种基于随机掩码的VLA微调策略，通过训练时随机掩码部分主相机输入，引导模型学习更均衡、鲁棒的多视角视觉特征，提升复杂操作任务的泛化性能 该方法在仿真和真实机器人平台上均验证了有…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.23565">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.23565.webp" alt="MaskVLA: Visual Masking Against Trajectory Overfitting of Vision-Language-Action Model" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有Vision-Language-Action（VLA）模型在有限数据集上微调时会出现严重的轨迹过拟合问题，过度依赖主相机视角的局部纹理特征…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">MaskVLA: Visual Masking Against Trajectory Overfitting of Vision-Language-Action Model</h1>
+            <div class="detail-meta">2026-09-20 · <a href="http://arxiv.org/abs/2609.23565" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.23565" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.23565</span></div>
+            <p class="detail-summary">现有Vision-Language-Action（VLA）模型在有限数据集上微调时会出现严重的轨迹过拟合问题，过度依赖主相机视角的局部纹理特征，忽略腕部相机的细粒度操作信息，导致泛化能力差、执行行为 brittle 本文提出MaskVLA，一种基于随机掩码的VLA微调策略，通过训练时随机掩码部分主相机输入，引导模型学习更均衡、鲁棒的多视角视觉特征，提升复杂操作任务的泛化性能 该方法在仿真和真实机器人平台上均验证了有…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">FNii-Shenzhen, The Chinese University of Hong Kong…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.23565/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有Vision-Language-Action（VLA）模型在有限数据集上微调时会出现严重的轨迹过拟合问题，过度依赖主相机视角的局部纹理特征…</p>
+  <ul class="reading-intro-points"><li>现有Vision-Language-Action（VLA）模型在有限数据集上微调时会出现严重的轨迹过拟合问题，过度依赖主相机视角的局部纹理特征…</li><li>本文提出MaskVLA，一种基于随机掩码的VLA微调策略，通过训练时随机掩码部分主相机输入，引导模型学习更均衡、鲁棒的多视角视觉特征，提升复杂…</li><li>该方法在仿真和真实机器人平台上均验证了有效性，解决了VLA微调阶段多视角信息利用不足、过拟合的核心问题</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>FNii-Shenzhen, The Chinese University of Hong Kong, Shenzhen, China</li><li>School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen, China</li><li>Ising AI</li><li>University of Glasgow</li><li>School of Automation, Southeast University</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有Vision-Language-Action（VLA）模型在有限数据集上微调时会出现严重的轨迹过拟合问题，过度依赖主相机视角的局部纹理特征，忽略腕部相机的细粒度操作信息，导致泛化能力差、执行行为 brittle</li><li>本文提出<strong>MaskVLA</strong>，一种基于随机掩码的VLA微调策略，通过训练时随机掩码部分主相机输入，引导模型学习更均衡、鲁棒的多视角视觉特征，提升复杂操作任务的泛化性能</li><li>该方法在仿真和真实机器人平台上均验证了有效性，解决了VLA微调阶段多视角信息利用不足、过拟合的核心问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>识别了当前SOTA VLA微调方法存在的严重过拟合问题，并通过Grad-CAM可视化手段验证了模型过度依赖主相机局部特征、忽略多视角信息的现象</li><li>提出<strong>MaskVLA</strong>微调框架，通过针对性设计的随机掩码策略，引导模型有效利用多视角视觉线索，实现更鲁棒的表征学习和更精确的动作生成</li><li>在仿真和真实机器人平台上开展大量实验，验证了该方法能够有效缓解VLA的轨迹过拟合问题，显著提升操作任务的成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于<strong>OpenVLA-OFT</strong>框架设计即插即用的微调模块，无需修改模型主干架构，可直接应用于多视角VLA模型的微调流程</li><li>训练阶段以预设概率ρ（本文最优设置为10%）随机将主相机（头顶视角）的完整输入像素置零（掩码），推理阶段使用完整的多视角图像输入，不影响推理效率</li><li>通过强制模型在训练时无法依赖主相机信息，引导其主动学习整合腕部相机的细粒度操作特征，缓解单视角预训练与多视角微调带来的域gap</li><li>创新点是将大语言模型（LLM）和视觉语言模型（VLM）领域的掩码机制引入VLA微调场景，针对多视角VLA的主相机过拟合问题设计轻量、高效的优化策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>RoboTwin 2.0</strong> 双臂操作仿真基准，包含easy（demo_clean，白背景无杂乱干扰，测试任务执行上限）和hard（demo_randomized，随机桌面/背景纹理、随机光照，模拟真实环境分布偏移）两种评估模式，每任务使用50条演示轨迹微调，评估时每任务测试100次 trial</li><li>真实实验平台：<strong>ALOHA</strong> 双臂 teleoperation 机器人，搭载1个主相机、2个腕部相机，以及14维关节角度 proprioceptive 传感器，每任务使用50条演示轨迹微调，评估时每任务测试20次 trial</li><li>基础模型：基于开源预训练的<strong>OpenVLA-OFT</strong> VLA模型进行微调</li><li>训练资源：2块NVIDIA A100 GPU（单卡batch size为4），每任务训练30000步（约12小时）；评估使用RTX 3090 GPU，推理使用A100 GPU</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真场景覆盖4类双臂操作任务（Adjust bottle、Open laptop、Put object cabinet、Stack bowls three），真实场景覆盖4类操作任务（Feed carrot、Adjust cups、Place orange、Stack bowls）</li><li>评估指标：任务成功率（success rate）</li><li>关键实验结果：</li></ul>
+<p> - 仿真hard模式下，<strong>MaskVLA</strong>平均成功率达75.0%，超过基线<strong>OpenVLA-OFT</strong> 20.0%，超过<strong>π₀</strong> 16.8%；easy模式下平均成功率达84.5%，超过OpenVLA-OFT 7.0%</p>
+<p> - 在8个easy+hard子任务中，MaskVLA在6个子任务中取得最优性能，剩余2个子任务取得第二优性能</p>
+<p> - 真实世界实验中，MaskVLA在所有4个任务上均优于OpenVLA-OFT，其中Feed carrot和Place orange任务成功率达85.0%，显著提升了复杂长程操作任务的表现</p>
+<p> - 消融实验表明，10%概率的完整主相机掩码策略效果最优，优于patch级掩码和随机相机视角掩码策略，验证了设计的合理性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.23578/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.23431/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">HOIBlender: Blending Lightweight Detection with Vision-Language Priors for Efficient Human-Object Interaction Detection</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

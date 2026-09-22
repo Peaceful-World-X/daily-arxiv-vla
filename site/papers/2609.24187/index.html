@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StenoVLA-3D: 3D-Aware Reasoning VLA for Navigation Through Gastrointestinal Stenoses - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对胃肠道狭窄场景的自主内镜导航需求，解决现有视觉-语言-动作（VLA）模型依赖外观特征、缺乏3D几何感知、无法保留视野外病变证据、难以生成episode级临床报告的核心问题 提出StenoVLA-3D 3D感知推理型VLA框架，融合点图几何特征、双时序记忆机制，可同时完成狭窄导航、开口形状估计、结构化推理与episode级病变报告生成任务 配套构建EndoCausal 标注数据集，包含400个胃肠道phantom…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.24187">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.24187.webp" alt="StenoVLA-3D: 3D-Aware Reasoning VLA for Navigation Through Gastrointestinal Stenoses" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对胃肠道狭窄场景的自主内镜导航需求，解决现有视觉-语言-动作（VLA）模型依赖外观特征、缺乏3D几何感知、无法保留视野外病变证据、难以生成e…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">StenoVLA-3D: 3D-Aware Reasoning VLA for Navigation Through Gastrointestinal Stenoses</h1>
+            <div class="detail-meta">2026-09-21 · <a href="http://arxiv.org/abs/2609.24187" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.24187" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.24187</span></div>
+            <p class="detail-summary">针对胃肠道狭窄场景的自主内镜导航需求，解决现有视觉-语言-动作（VLA）模型依赖外观特征、缺乏3D几何感知、无法保留视野外病变证据、难以生成episode级临床报告的核心问题 提出StenoVLA-3D 3D感知推理型VLA框架，融合点图几何特征、双时序记忆机制，可同时完成狭窄导航、开口形状估计、结构化推理与episode级病变报告生成任务 配套构建EndoCausal 标注数据集，包含400个胃肠道phantom…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文原文未明确标注作者所属研究机构</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.24187/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对胃肠道狭窄场景的自主内镜导航需求，解决现有视觉-语言-动作（VLA）模型依赖外观特征、缺乏3D几何感知、无法保留视野外病变证据、难以生成e…</p>
+  <ul class="reading-intro-points"><li>针对胃肠道狭窄场景的自主内镜导航需求，解决现有视觉-语言-动作（VLA）模型依赖外观特征、缺乏3D几何感知、无法保留视野外病变证据、难以生成e…</li><li>提出StenoVLA-3D 3D感知推理型VLA框架，融合点图几何特征、双时序记忆机制，可同时完成狭窄导航、开口形状估计、结构化推理与epis…</li><li>配套构建EndoCausal 标注数据集，包含400个胃肠道phantom导航序列，为模型训练与评估提供数据支撑</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文原文未明确标注作者所属研究机构</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对胃肠道狭窄场景的自主内镜导航需求，解决现有视觉-语言-动作（VLA）模型依赖外观特征、缺乏3D几何感知、无法保留视野外病变证据、难以生成episode级临床报告的核心问题</li><li>提出<strong>StenoVLA-3D</strong> 3D感知推理型VLA框架，融合点图几何特征、双时序记忆机制，可同时完成狭窄导航、开口形状估计、结构化推理与episode级病变报告生成任务</li><li>配套构建<strong>EndoCausal</strong> 标注数据集，包含400个胃肠道phantom导航序列，为模型训练与评估提供数据支撑</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首个整合3D几何感知、双时序记忆的推理型VLA框架<strong>StenoVLA-3D</strong>，实现狭窄导航、形状估计、报告生成的端到端预测</li><li>构建领域标注数据集<strong>EndoCausal</strong>，包含内镜观测、病变标注、离散导航动作、重建控制标签、时序 grounded 推理标签，填补该研究领域的数据空白</li><li>通过系统性消融与跨域实验验证3D几何与记忆模块的必要性，模型在食管和结肠phantom上的闭环任务成功率分别达88.9%和77.8%，大幅优于现有baseline</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于冻结的<strong>Cosmos-Reason2-2B</strong> 作为VLA主干，仅通过rank=16的LoRA适配器微调，降低训练成本</li><li>3D感知几何编码：采用冻结的<strong>DA3-Base</strong> 模型估计多视角点图，通过3D卷积编码器提取256维几何嵌入，采用几何门控的残差融合方式将几何特征注入主干最后一层token表示，训练时以50%概率随机丢弃几何特征做数据增强</li><li>双时序记忆模块：时序记忆通过GRU编码当前帧与视觉历史的特征，建模导航进度；持久病变记忆通过息肉、溃疡、狭窄三类病变的类槽位机制留存视野外的病变证据，用于episode级报告生成</li><li>共享推理-动作头与专用头：共享头同时输出结构化推理、导航状态、离散动作、重建控制信号；专用头分别预测狭窄开口形状、生成episode级病变报告</li><li>异步重建控制：根据预测的导航状态异步开关DA3重建，仅在进入狭窄前后激活重建，平衡几何估计精度与推理效率</li><li>训练采用两阶段策略：Stage1使用步长为4的样本优化多任务损失；Stage2加入重建转换帧，同时加权运动动作、重建激活/停用token，优化重建控制精度</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用自定义数据集<strong>EndoCausal</strong>，包含400个约80万帧的胃肠道phantom导航序列，20fps采集，分为320训练、40验证、40测试集，通过亮度、对比度、翻转、旋转等增强得到约2200个额外训练序列</li><li>模型基于2B参数的<strong>Cosmos-Reason2-2B</strong> 主干，仅训练LoRA适配器（rank=16）、几何投影模块、门控模块、记忆投影器、GRU、持久记忆模块及专用头，总可训练参数量远小于主干规模</li><li>训练采用<strong>NVIDIA RTX A6000 GPU</strong>，两阶段训练：Stage1训练3轮，Stage2训练1轮，优化器为AdamW，LoRA学习率为5e-6，其他模块学习率为5e-5</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：40个held-out记录的测试序列做开环评估，物理3-DoF内镜在食管、结肠phantom上做闭环测试，每个术式各36次独立试验</li><li>主要评估指标：语义准确率（推理内容、开口形状、episode报告的精确匹配率）、动作准确率（离散导航动作的精确匹配率）、手术任务成功率（需同时满足病变检测、狭窄识别、避免接触、正确报告等条件）</li><li>关键实验结果：开环测试下达到<strong>95.2%</strong> 语义准确率、<strong>83.4%</strong> 动作准确率；闭环测试下食管phantom任务成功率为<strong>88.9%</strong>，结肠phantom为<strong>77.8%</strong>，平均86.3%，分别比EndoVLA baseline高15.0、16.1、38.9、22.2个百分点；消融实验显示移除推理、时序记忆、持久记忆、几何融合均会大幅降低性能，其中移除持久记忆或几何融合后闭环任务成功率降至0%；零样本跨域测试中，视角偏移场景表现最优，形变场景性能下降最明显</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.24274/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">vla.simd: Efficient CPU Inference for Language-Conditioned Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.24124/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">ActiveArena: Benchmarking and Understanding Active Perception in Robotic Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

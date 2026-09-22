@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Think Like a World Model, Act Like a VLA: Distilling World-Model Representations into Compact Robot Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有视觉-语言-动作（VLA）模型未建模世界动态响应、鲁棒性高度依赖训练数据覆盖的问题，以及世界模型虽具有物理感知能力但推理成本过高无法部署的矛盾，提出零额外推理成本的世界模型表征蒸馏方法 核心思路是将大世界模型的物理感知表征迁移到紧凑型VLA策略中，无需在部署时运行世界模型即可获得更强的环境 grounding 能力 验证所提方法在多个仿真基准和真实机器人平台上的有效性，实现小规模策略匹敌数倍规模模型的效果" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.24682">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.24682.webp" alt="Think Like a World Model, Act Like a VLA: Distilling World-Model Representations into Compact Robot Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有视觉-语言-动作（VLA）模型未建模世界动态响应、鲁棒性高度依赖训练数据覆盖的问题，以及世界模型虽具有物理感知能力但推理成本过高无法部…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Think Like a World Model, Act Like a VLA: Distilling World-Model Representations into Compact Robot Policies</h1>
+            <div class="detail-meta">2026-09-21 · <a href="http://arxiv.org/abs/2609.24682" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.24682" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.24682</span></div>
+            <p class="detail-summary">针对现有视觉-语言-动作（VLA）模型未建模世界动态响应、鲁棒性高度依赖训练数据覆盖的问题，以及世界模型虽具有物理感知能力但推理成本过高无法部署的矛盾，提出零额外推理成本的世界模型表征蒸馏方法 核心思路是将大世界模型的物理感知表征迁移到紧凑型VLA策略中，无需在部署时运行世界模型即可获得更强的环境 grounding 能力 验证所提方法在多个仿真基准和真实机器人平台上的有效性，实现小规模策略匹敌数倍规模模型的效果</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">威斯康星大学麦迪逊分校（University of Wisconsin–Madison, USA）：T…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.24682/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有视觉-语言-动作（VLA）模型未建模世界动态响应、鲁棒性高度依赖训练数据覆盖的问题，以及世界模型虽具有物理感知能力但推理成本过高无法部…</p>
+  <ul class="reading-intro-points"><li>针对现有视觉-语言-动作（VLA）模型未建模世界动态响应、鲁棒性高度依赖训练数据覆盖的问题，以及世界模型虽具有物理感知能力但推理成本过高无法部…</li><li>核心思路是将大世界模型的物理感知表征迁移到紧凑型VLA策略中，无需在部署时运行世界模型即可获得更强的环境 grounding 能力</li><li>验证所提方法在多个仿真基准和真实机器人平台上的有效性，实现小规模策略匹敌数倍规模模型的效果</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>威斯康星大学麦迪逊分校（University of Wisconsin–Madison, USA）：Trung Dao, Jaden Park, Yong Jae Lee</li><li>伊利诺伊大学厄巴纳-香槟分校（University of Illinois Urbana-Champaign, USA）：Sankalp Yamsani, Joohyung Kim</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有视觉-语言-动作（VLA）模型未建模世界动态响应、鲁棒性高度依赖训练数据覆盖的问题，以及世界模型虽具有物理感知能力但推理成本过高无法部署的矛盾，提出零额外推理成本的世界模型表征蒸馏方法</li><li>核心思路是将大世界模型的物理感知表征迁移到紧凑型VLA策略中，无需在部署时运行世界模型即可获得更强的环境 grounding 能力</li><li>验证所提方法在多个仿真基准和真实机器人平台上的有效性，实现小规模策略匹敌数倍规模模型的效果</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出零推理成本的世界模型表征蒸馏方案：仅需添加一个余弦对齐损失项，训练时无需加载冻结的世界模型教师，部署策略与原始未蒸馏基线架构完全一致，无额外计算开销</li><li>实现0.8B参数的紧凑策略匹敌更大规模模型：在LIBERO仿真基准上达到97.9%的平均成功率，在RoboCasa-GR1人形机器人操作基准和单/双臂真实机器人平台上均取得显著性能提升</li><li>通过消融实验证明方法鲁棒性强：性能提升不随学生模型规模、视觉骨架、对齐层位置、教师模型家族的变化而消失，验证了迁移的是通用的物理表征先验而非特定网络间的脆弱对齐</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>学生模型采用<strong>QwenGR00T</strong>架构：基于<strong>Qwen3.5-VL</strong>视觉-语言骨架，搭配流匹配（flow-matching）动作头，输入多视角相机图像、语言指令和本体感知状态，直接预测未来动作序列</li><li>教师模型采用冻结的<strong>Cosmos3-Nano</strong>理解塔，提前对训练集所有帧提取图像token特征并缓存为内存映射文件，训练时直接读取无需重新计算</li><li>对齐损失设计：对学生模型最后一层图像token特征做均值池化，通过两层MLP投影到教师特征维度后，与缓存的教师对应视角特征计算余弦相似度损失，与原始动作预测损失联合训练</li><li>关键创新：仅对齐特征方向而非精确匹配特征值，无需师生特征空间一致；训练结束后丢弃投影头，部署策略与基线完全一致，推理延迟和基线相同（32ms，1.86GB，可在消费级RTX 5090上运行）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：</li></ul>
+<p> - <strong>LIBERO</strong>：包含4个任务suite，共约27.3万演示步，双相机视角，每任务50轮评估，共500轮/suite，报告四suite平均成功率</p>
+<p> - <strong>RoboCasa-GR1</strong>：包含24个GR1人形机器人双手机械操作任务环境，共约6.02M演示步，单ego相机视角，每环境20轮评估，报告24环境平均成功率</p>
+<ul><li>真实机器人平台：<strong>AgileX Nero</strong>单臂7自由度机械臂、<strong>TRIP-Bag</strong>双臂7自由度平台，分别收集约30分钟、1小时的遥操作演示数据，每策略每任务评估30轮</li><li>模型规模：学生为0.8B参数的QwenGR00T，主教师为Cosmos3-Nano的8B理解塔（总参数量16B），消融实验使用Fast-WAM（5B）、V-JEPA2-AC（1B+0.3B）作为替代教师</li><li>训练资源：4张A100-80GB GPU，采用DeepSpeed ZeRO-2并行策略，有效批次大小为256，余弦学习率调度</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：覆盖LIBERO四suite、RoboCasa-GR1 24环境、两类真实机器人共3个操作任务，与同规模及更大规模的VLA、世界模型策略对比</li><li>评估指标：任务成功率（Success Rate, SR），为消除模拟随机性和硬件差异的影响，每个结果均运行4次（2个评估种子×2种GPU：A100-80GB和RTX 5090），报告均值与标准差</li><li>关键实验结果：</li></ul>
+<p> - LIBERO基准：蒸馏后0.8B策略平均成功率为97.9%，较未蒸馏基线提升2.6个百分点，超过所有参数量小于4B的公开VLA和世界模型策略</p>
+<p> - RoboCasa-GR1基准：蒸馏后成功率从48.2%提升至50.5%，接近4B同架构策略的54.8%水平，仅差4.3个百分点</p>
+<p> - 真实机器人任务：单臂水果抓取任务成功率93.3%（28/30），匹敌4B π风格策略，较未蒸馏基线提升3个成功 trial；鸡蛋抓取任务从46.7%提升至60.0%，双臂水果传递任务从40.0%提升至46.7%，均显著缩小与4B大规模策略的差距</p>
+<p> - 消融实验：不同学生规模（0.8B/1B/4B）、不同视觉骨架（Qwen3.5-VL/InternVL/Qwen3-VL）、不同对齐层位置、不同教师模型（Cosmos3-Nano/Fast-WAM/V-JEPA2-AC）均能带来性能提升，验证方法的通用性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2609.24525/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Bridge3D: Enabling Vision-Language-Action Models to See and Act in 3D</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
