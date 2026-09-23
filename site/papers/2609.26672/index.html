@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Imperfection for Precision: Upcycling Imperfect Data for High-Precision Robotic Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出了一种名为 ε4P (Imperfection for Precision) 的新方法，旨在将两种常见但通常被丢弃的不完美数据源（低精度目标任务数据和与任务不匹配的高精度数据）“升级再造”用于高精度机器人操作。 核心解决的问题是如何在不损伤操作精度的前提下，利用这些不完美的数据来减少对成本高昂且难以扩展的、特定任务的高质量数据（如遥操作数据）的依赖。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.26672">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.26672.webp" alt="Imperfection for Precision: Upcycling Imperfect Data for High-Precision Robotic Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出了一种名为 ε4P (Imperfection for Precision) 的新方法，旨在将两种常见但通常被丢弃的不完美数据源（低精…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Imperfection for Precision: Upcycling Imperfect Data for High-Precision Robotic Manipulation</h1>
+            <div class="detail-meta">2026-09-22 · <a href="http://arxiv.org/abs/2609.26672" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.26672" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.26672</span></div>
+            <p class="detail-summary">论文提出了一种名为 ε4P (Imperfection for Precision) 的新方法，旨在将两种常见但通常被丢弃的不完美数据源（低精度目标任务数据和与任务不匹配的高精度数据）“升级再造”用于高精度机器人操作。 核心解决的问题是如何在不损伤操作精度的前提下，利用这些不完美的数据来减少对成本高昂且难以扩展的、特定任务的高质量数据（如遥操作数据）的依赖。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Samsung Robotics eXperience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.26672/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出了一种名为 ε4P (Imperfection for Precision) 的新方法，旨在将两种常见但通常被丢弃的不完美数据源（低精…</p>
+  <ul class="reading-intro-points"><li>论文提出了一种名为 ε4P (Imperfection for Precision) 的新方法，旨在将两种常见但通常被丢弃的不完美数据源（低精…</li><li>核心解决的问题是如何在不损伤操作精度的前提下，利用这些不完美的数据来减少对成本高昂且难以扩展的、特定任务的高质量数据（如遥操作数据）的依赖。</li><li>提出了一种新颖的不完美数据升级再造方法，通过将异质的不完美数据路由到流匹配轨迹上源依赖的“准入区域”，避免了朴素混合训练引入的冲突监督。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Samsung Robotics eXperience</strong></li><li><strong>National University of Singapore</strong> (部分作者的第二单位)</li><li><strong>University of Illinois Urbana-Champaign</strong> (部分作者的第二单位)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出了一种名为 <strong>ε4P</strong> (Imperfection for Precision) 的新方法，旨在将两种常见但通常被丢弃的不完美数据源（低精度目标任务数据和与任务不匹配的高精度数据）“升级再造”用于高精度机器人操作。</li><li>核心解决的问题是如何在不损伤操作精度的前提下，利用这些不完美的数据来减少对成本高昂且难以扩展的、特定任务的高质量数据（如遥操作数据）的依赖。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了一种新颖的<strong>不完美数据升级再造方法</strong>，通过将异质的不完美数据路由到流匹配轨迹上源依赖的“准入区域”，避免了朴素混合训练引入的冲突监督。</li><li>为两种不完美数据源分别设计了<strong>互补的离线准入边界确定机制</strong>：对于低精度数据，利用动作可分离性诊断；对于任务不匹配数据，利用策略的动作-上下文依赖分析。</li><li>在<strong>三组精度要求不同的真实机器人操作任务上（包括亚毫米级高精度任务）进行了验证</strong>，证明了该方法能有效利用额外的不完美数据提升政策性能，最高提升31.7个百分点。</li><li>证明了该方法可以用适当准入的不完美数据<strong>替换等量的高质量数据</strong>，而平均性能仅下降4.2个百分点，显著减少了对昂贵数据的依赖。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>核心思想是观察到在流匹配策略中，<strong>对噪声动作输入的依赖和对任务上下文的依赖会随流时间发生变化</strong>：低流时间点动作依赖占主导，高流时间点上下文依赖占主导。</li><li>基于此，为两种不完美数据确定不同的准入流时间区域：</li></ul>
+<p> - 对于<strong>任务匹配但精度不匹配的数据</strong>，训练一个流时间条件分类器，寻找其噪声动作与高质量数据在统计学上变得不可区分的流时间边界，并只在高流时间区域使用，以提供任务上下文。</p>
+<p> - 对于<strong>任务不匹配但精度匹配的数据</strong>，利用动作-上下文依赖分析找到两者依赖相等的交叉点，并只在低流时间区域使用，以提供精确的动作监督。</p>
+<ul><li>该方法仅需在训练时控制不同源的流时间采样范围，<strong>无需修改模型架构或流匹配目标函数</strong>，边界在离线阶段一次性计算得出。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：</li></ul>
+<p> - <strong>D_pt</strong>: 特定任务的高质量遥操作数据</p>
+<p> - <strong>D_pm</strong>: 特定任务的低精度UMI (Universal Manipulation Interface) 数据</p>
+<p> - <strong>D_tm</strong>: 任务不匹配的高质量遥操作数据（三插头插入任务）</p>
+<p> - <strong>D_pt⁺</strong>: 用于对照实验的额外出色数据</p>
+<ul><li><strong>模型基础</strong>: 使用预训练的流匹配VLA模型 <strong>π0.5</strong> 作为基础策略。</li><li><strong>机器人平台</strong>: <strong>Rainbow Robotics RB-Y1</strong> 机器人。</li><li><strong>视觉传感器</strong>: 两个 <strong>Intel RealSense D405</strong> 相机。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：在 <strong>ATX 24针接头插入、两阶段电缆插接、螺栓-螺母分拣</strong> 三个不同精度要求的真实机器人任务上进行评估，每个任务进行60次试验。</li><li>主要评估指标：<strong>二值成功率</strong>。</li><li>关键实验结果：</li></ul>
+<p> - <strong>朴素协同训练有害</strong>：直接将不完美数据与高质量数据在全流时间范围内混合训练会导致性能显著下降，尤其是在高精度任务上（平均下降34.2个百分点）。</p>
+<p> - <strong>ε4P 有效提升性能</strong>：与朴素协同训练相比，ε4P 在ATX任务上将使用低精度数据时的成功率从33.3%提升至<strong>73.3%</strong>，将使用不匹配任务数据时的成功率从43.3%提升至<strong>71.7%</strong>。同时使用两种数据源时，成功率达到<strong>80.0%</strong>。</p>
+<p> - <strong>可替换高质量数据</strong>：用ε4P 接入等量的不完美数据，可以达到与使用额外高质量数据接近的性能，平均成功率差距仅为<strong>4.2个百分点</strong>。</p>
+<p> - <strong>优于全局损失重加权</strong>：对比单纯降低不完美数据损失权重的基线方法，ε4P 效果更好，表明控制“在何处”贡献比控制“贡献多少”更为关键。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2609.26520/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">MATE: Multi-Agent Virtual Teleoperation Platform for Humanoid Collaboration Data Collection</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

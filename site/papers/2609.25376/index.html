@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VLAQuantBench: Closed-Loop Evaluation of Post-Training Quantization for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 VLAQuantBench，一个用于系统性评估视觉-语言-动作（VLA）模型后训练量化（PTQ）的闭环基准框架。 探究量化配置（位宽、数值格式、校准、层范围）如何影响机器人在仿真环境中的任务成功率，揭示权重与激活精度的非直观交互作用。 解决在资源受限部署下选择合适量化策略时，缺乏可控、可复现评估方案的问题。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.25376">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.25376.webp" alt="VLAQuantBench: Closed-Loop Evaluation of Post-Training Quantization for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 VLAQuantBench，一个用于系统性评估视觉-语言-动作（VLA）模型后训练量化（PTQ）的闭环基准框架。</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">VLAQuantBench: Closed-Loop Evaluation of Post-Training Quantization for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-09-21 · <a href="http://arxiv.org/abs/2609.25376" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.25376" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.25376</span></div>
+            <p class="detail-summary">提出 VLAQuantBench，一个用于系统性评估视觉-语言-动作（VLA）模型后训练量化（PTQ）的闭环基准框架。 探究量化配置（位宽、数值格式、校准、层范围）如何影响机器人在仿真环境中的任务成功率，揭示权重与激活精度的非直观交互作用。 解决在资源受限部署下选择合适量化策略时，缺乏可控、可复现评估方案的问题。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Colorado School of Mines</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.25376/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 VLAQuantBench，一个用于系统性评估视觉-语言-动作（VLA）模型后训练量化（PTQ）的闭环基准框架。</p>
+  <ul class="reading-intro-points"><li>提出 VLAQuantBench，一个用于系统性评估视觉-语言-动作（VLA）模型后训练量化（PTQ）的闭环基准框架。</li><li>探究量化配置（位宽、数值格式、校准、层范围）如何影响机器人在仿真环境中的任务成功率，揭示权重与激活精度的非直观交互作用。</li><li>解决在资源受限部署下选择合适量化策略时，缺乏可控、可复现评估方案的问题。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Colorado School of Mines</strong></li><li><strong>Independent Researcher</strong></li><li><strong>University of Central Florida</strong></li><li><strong>USC Institute for Creative Technologies</strong></li><li><strong>Microsoft AI</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>VLAQuantBench</strong>，一个用于系统性评估视觉-语言-动作（<strong>VLA</strong>）模型后训练量化（<strong>PTQ</strong>）的闭环基准框架。</li><li>探究量化配置（位宽、数值格式、校准、层范围）如何影响机器人在仿真环境中的任务成功率，揭示<strong>权重与激活精度</strong>的非直观交互作用。</li><li>解决在资源受限部署下选择合适量化策略时，缺乏可控、可复现评估方案的问题。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>发布了一个开源的评估框架，包含模型适配器、量化范围定义、基准评估脚本和记录，支持对<strong>新策略</strong>和<strong>新量化方法</strong>的扩展。</li><li>发现<strong>非单调和非加性的任务敏感性</strong>：在<strong>π0.5</strong>模型的动作头中，量化更多层（从126层扩展到167层）使成功率从7.0%提升至70.5%，且该恢复效应在输出数值上得到验证，揭示了隔离测试会低估联合失效风险。</li><li>提出了一个针对性的<strong>W3/W8A8失败修复方法</strong>：仅保护<strong>OpenVLA-OFT</strong>动作头中一个仅含<strong>28,672个参数</strong>的输出投影层（<strong>fc2</strong>），即可在LIBERO-Long上将W3量化成功率从8.0%恢复到93.5%，并在所有四个LIBERO套件上解决八位激活失效问题。</li><li>提供了<strong>实用的精度选择控制实验</strong>：涵盖三种模型的校准对比、按任务聚类的置信区间、实际内核测量和真实机器人执行，表明配方（如平滑系数、校准样本）决定配置性能。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>以<strong>回合最近量化（RTN）</strong>作为锚定量化器，对比不同数值格式（<strong>W3、W4、W8、W4A4、W4A8、W8A8</strong>）和层范围（整模型、组件级、层群组）对闭环任务成功的影响。</li><li>将模型划分为<strong>视觉编码器、多模态投影器、语言骨干、动作头</strong>等组件，通过明确的模块列表和排除规则定义量化范围，并记录配置参数数量。</li><li>引入多种校准控制：使用<strong>SmoothQuant</strong>风格的平滑与裁剪（从两个机器人演示片段校准），以及<strong>AWQ、NF4、LLM.int8()</strong>等替代量化器进行对比。</li><li>采用<strong>固定观测轨迹回放</strong>分离数值误差与环境交互，诊断动作偏差和激活统计量，并测量实际GPU<strong>内核计时</strong>与<strong>内存占用</strong>。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>模型：<strong>OpenVLA-OFT</strong>（~7.44B参数）、<strong>π0</strong>、<strong>π0.5</strong>、<strong>X-VLA</strong>（~304M参数）。</li><li>仿真基准：<strong>LIBERO</strong>（Spatial、Object、Goal、Long套件，每配置200集）、<strong>SIMPLER</strong>（864集/配置）、<strong>CALVIN</strong>（1000条链任务）、<strong>VLABench</strong>（每任务10-50集）。</li><li>训练资源：<strong>RTX 4090</strong> 和 <strong>RTX 5080 Laptop GPU</strong>，所有实验均在单GPU上运行。</li><li>校准数据：使用2个无相关任务的机器人演示片段进行平滑/裁剪校准，或使用512个文本样本进行文本校准。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>主要评估指标：<strong>任务成功率（百分比）</strong>，附95% Wilson置信区间，并采用按任务聚类的bootstrap进行不确定性估计。</li><li>关键结果：</li></ul>
+<p> - 在<strong>π0.5</strong>、<strong>OpenVLA-OFT</strong>和<strong>X-VLA</strong>上，<strong>W4A4</strong>未校准RTN导致<strong>灾难性失效</strong>（成功率接近0%），但<strong>W4A8</strong>保持接近基线。</p>
+<p> - 在<strong>π0.5</strong>的动作头中，量化从<strong>126层扩展到167层</strong>使成功率剧增（+63.5pp），且该恢复效应在<strong>数值回放</strong>中得到验证。</p>
+<p> - 保护OpenVLA-OFT的<strong>fc2输出投影</strong>可在W3和W8A8配置下恢复接近基线的性能（最高达99.0%成功率）。</p>
+<p> - 校准（如平滑+裁剪）能<strong>大幅减轻</strong>W4A4的失效（如联合组成功率从1.5%恢复至97.5%），但<strong>配方不具跨模型通用性</strong>。</p>
+<p> - <strong>内存减少不一定降低延迟</strong>：实际内核测量显示，某些低比特格式（如W4A4）在控制调用推理时间上并未明显优于高比特格式。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.25558/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">HABILIS Brain 0: Geometry-Change Supervision for Vision-Language-Action and Residual Flow Recovery</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.25369/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Capability-Aware Arbitration for Semantic Intent-Based Shared Control</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 RouteRLT，一个控制器路由框架，用于在视觉-语言-动作（VLA）通用策略与多个RL专项策略（RL specialists）之间动态切换控制权 解决工业接触密集型任务（如精密插入、线缆管理）中，通用VLA在精度关键阶段表现不足，而现有方法需特权信号（如人类操作员） 来指定何时使用专项策略的问题 通过从VLA内部潜空间学习预测何时以及使用哪个专项策略，无需部署时访问任何外部监督或任务阶段信息" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.26467">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.26467.webp" alt="RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 RouteRLT，一个控制器路由框架，用于在视觉-语言-动作（VLA）通用策略与多个RL专项策略（RL specialists）之间动态…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy</h1>
+            <div class="detail-meta">2026-09-22 · <a href="http://arxiv.org/abs/2609.26467" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.26467" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.26467</span></div>
+            <p class="detail-summary">提出 RouteRLT，一个控制器路由框架，用于在视觉-语言-动作（VLA）通用策略与多个RL专项策略（RL specialists）之间动态切换控制权 解决工业接触密集型任务（如精密插入、线缆管理）中，通用VLA在精度关键阶段表现不足，而现有方法需特权信号（如人类操作员） 来指定何时使用专项策略的问题 通过从VLA内部潜空间学习预测何时以及使用哪个专项策略，无需部署时访问任何外部监督或任务阶段信息</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">所有作者均来自 University of Toronto，Department of Mechani…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.26467/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 RouteRLT，一个控制器路由框架，用于在视觉-语言-动作（VLA）通用策略与多个RL专项策略（RL specialists）之间动态…</p>
+  <ul class="reading-intro-points"><li>提出 RouteRLT，一个控制器路由框架，用于在视觉-语言-动作（VLA）通用策略与多个RL专项策略（RL specialists）之间动态…</li><li>解决工业接触密集型任务（如精密插入、线缆管理）中，通用VLA在精度关键阶段表现不足，而现有方法需特权信号（如人类操作员） 来指定何时使用专项策…</li><li>通过从VLA内部潜空间学习预测何时以及使用哪个专项策略，无需部署时访问任何外部监督或任务阶段信息</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>所有作者均来自 <strong>University of Toronto</strong>，<strong>Department of Mechanical and Industrial Engineering</strong>，Toronto, ON, Canada</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>RouteRLT</strong>，一个控制器路由框架，用于在视觉-语言-动作（VLA）通用策略与多个<strong>RL专项策略</strong>（RL specialists）之间动态切换控制权</li><li>解决工业接触密集型任务（如精密插入、线缆管理）中，通用VLA在精度关键阶段表现不足，而现有方法需<strong>特权信号（如人类操作员）</strong> 来指定何时使用专项策略的问题</li><li>通过从VLA内部潜空间<strong>学习预测</strong>何时以及使用哪个专项策略，无需部署时访问任何外部监督或任务阶段信息</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>引入 <strong>RouteRLT</strong> 框架，包含三个组件：<strong>阶段选择器</strong>（从VLA潜空间预测控制器所有权）、<strong>路由器稳定器</strong>（抑制瞬态切换）、<strong>动作边界管理器</strong>（处理动作块切换时的边界无效化）</li><li>将通用-专项控制框架从二元切换<strong>扩展到多对象任务和多精度阶段</strong>的 bank of RL specialists</li><li>在 <strong>LIBERO 仿真</strong>多物体拾放任务和<strong>真实机器人线缆拾取-插入任务</strong>上验证，将仿真成功率从 85.00% 提升至 <strong>92.22%</strong>，硬件插入成功率从 6.7% 提升至 <strong>35.0%</strong></li><li>证明<strong>学习得到的路由</strong>能够恢复<strong>特权边界路由</strong>的性能，并保持通用 VLA 的长程行为（包括从失败中恢复）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>使用冻结的 <strong>SmolVLA</strong> 作为通用策略，并为每个精度关键阶段训练轻量 RL specialist（actor-critic），输入包括压缩潜状态 \(z_t\)、本体感受及 VLA 参考动作块</li><li><strong>阶段选择器</strong>仅以VLA内部表示 \(z_t\) 的因果窗口为输入，预测当前应使用哪个控制器（VLA或某一specialist）；采用绑权投影和二元/多类分类器</li><li><strong>稳定器</strong>使用带滞回和驻留计数器的状态机（引入 \(\mathsf{PRE}, \mathsf{ACTIVE}, \mathsf{POST}\) 三态），非对称地抑制进出切换</li><li><strong>动作边界管理器</strong>在控制器切换时立即丢弃未执行的动作块后缀，查询新控制器生成动作，实现即时交接</li><li>训练协议分四阶段：微调 VLA、训练表示编码器（用于生成 \(z_t\)）、RL specialist 离线到在线训练、在特权路由下收集数据并训练路由器</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>LIBERO Object</strong> 仿真环境中的三对象拾放任务（tomato sauce, butter, chocolate pudding）</li><li><strong>Trossen Stationary AI</strong> 真实机器人平台上的线缆拾取和1 mm间隙端口插入任务</li><li>通用策略使用 <strong>SmolVLA</strong>，RL specialist 为轻量级 actor-critic 网络，参数量小；路由器仅包含线性投影和分类头</li><li>训练资源未明确列出，但强调SmolVLA本身为紧凑骨干，专项策略训练保持在适当计算预算内</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真评估</strong>：在60个保留测试集上，RouteRLT 全任务成功率达 <strong>92.22%</strong>（vs. SmolVLA@10基线 85.00%），匹配特权边界路由的91.11%；每千步成功次数最高，交互效率提升 <strong>14.3%</strong></li><li><strong>路由分析</strong>：路由器以<strong>零步中位延迟</strong>和100%召回进入所有关键拾取区间，平均每集控制器切换 <strong>2.12 次</strong>，接近理想切换序列</li><li><strong>消融研究</strong>：仅使用图像输入的 \(z_t\) 变体全任务成功率降至90.56%，证明语言令牌对物体识别有益；全轨迹单一RL specialist性能低于带路由的版本（88.89% vs. 92.22%），验证了阶段特化控制的重要性</li><li><strong>真实机器人评估</strong>：在操作员对齐的交接协议下，RouteRLT 自动路由至拾取和插入两个专项策略，全轨迹插入成功率从基线 <strong>6.7%</strong> 提升至 <strong>35.0%</strong>；专项策略各自在其阶段表现出显著能力提升</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.26520/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">MATE: Multi-Agent Virtual Teleoperation Platform for Humanoid Collaboration Data Collection</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.26313/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">SafeLoop: Risk-Aware Rollback for Vision-Language-Action Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

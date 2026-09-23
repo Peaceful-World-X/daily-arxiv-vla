@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HABILIS Brain 0: Geometry-Change Supervision for Vision-Language-Action and Residual Flow Recovery - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 GC-VLA（Geometry-Change VLA）模型，学习预测多视角未来-当前几何变化 token，并以其作为视觉表征监督信号，替代传统的静态深度监督。 设计四阶段训练流程，依次进行几何变化预训练、解耦动作对齐、耦合 VLA 适应和基于几何条件的残差流后训练，使模型无需在推理阶段执行离线目标编码器。 在 LIBERO 基准上，GC-VLA 达到 95.20% 成功率；结合 GCRF 残差流恢复后，达到…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.25558">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.25558.webp" alt="HABILIS Brain 0: Geometry-Change Supervision for Vision-Language-Action and Residual Flow Recovery" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 GC-VLA（Geometry-Change VLA）模型，学习预测多视角未来-当前几何变化 token，并以其作为视觉表征监督信号，替…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">HABILIS Brain 0: Geometry-Change Supervision for Vision-Language-Action and Residual Flow Recovery</h1>
+            <div class="detail-meta">2026-09-22 · <a href="http://arxiv.org/abs/2609.25558" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.25558" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.25558</span></div>
+            <p class="detail-summary">提出 GC-VLA（Geometry-Change VLA）模型，学习预测多视角未来-当前几何变化 token，并以其作为视觉表征监督信号，替代传统的静态深度监督。 设计四阶段训练流程，依次进行几何变化预训练、解耦动作对齐、耦合 VLA 适应和基于几何条件的残差流后训练，使模型无需在推理阶段执行离线目标编码器。 在 LIBERO 基准上，GC-VLA 达到 95.20% 成功率；结合 GCRF 残差流恢复后，达到…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Tommoro Robotics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.25558/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 GC-VLA（Geometry-Change VLA）模型，学习预测多视角未来-当前几何变化 token，并以其作为视觉表征监督信号，替…</p>
+  <ul class="reading-intro-points"><li>提出 GC-VLA（Geometry-Change VLA）模型，学习预测多视角未来-当前几何变化 token，并以其作为视觉表征监督信号，替…</li><li>设计四阶段训练流程，依次进行几何变化预训练、解耦动作对齐、耦合 VLA 适应和基于几何条件的残差流后训练，使模型无需在推理阶段执行离线目标编码…</li><li>在 LIBERO 基准上，GC-VLA 达到 95.20% 成功率；结合 GCRF 残差流恢复后，达到 99.55% 的成功率。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Tommoro Robotics</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>GC-VLA</strong>（Geometry-Change VLA）模型，学习预测多视角未来-当前几何变化 token，并以其作为视觉表征监督信号，替代传统的静态深度监督。</li><li>设计四阶段训练流程，依次进行几何变化预训练、解耦动作对齐、耦合 VLA 适应和基于几何条件的残差流后训练，使模型无需在推理阶段执行离线目标编码器。</li><li>在 <strong>LIBERO</strong> 基准上，GC-VLA 达到 95.20% 成功率；结合 <strong>GCRF</strong> 残差流恢复后，达到 99.55% 的成功率。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出将未来-当前几何变化作为 VLA 政策的监督目标，利用 <strong>Depth Anything v3</strong> 和 <strong>DINOv2</strong> 离线构建几何变化标签，推理时仅依赖当前观测。</li><li>设计 <strong>GC-VLA 四阶段训练管线</strong>：Stage1 无动作的几何变化预训练、Stage2 解耦动作对齐、Stage3 耦合适应、Stage4 冻结后残差流后训练，实现异构数据（包括人类视频和机器人示范）的渐进式学习。</li><li>引入 <strong>Geometry-Change Reader</strong>，将几何变化表征通过交叉注意力注入 ActionExpert，且以零初始化保持初始性能。</li><li>提出 <strong>Geometry-Conditioned Residual Flow (GCRF)</strong>，使用二元干预路由器和单一有界残差速度策略，在冻结基座策略上从闭环反馈中学习选择性修正，在动作流速度空间进行集成。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>使用冻结的 <strong>Depth Anything v3</strong> 和 <strong>DINOv2</strong> 离线提取当前与未来观测的紧凑空间表征，计算其差分作为几何变化目标，并量化为 10×10 网格离散 token。</li><li>基于 <strong>Molmo2-ER</strong> 扩展 12 个 transformer 块形成 GC-VLM，预测多视角几何变化 token。</li><li>ActionExpert 采用流匹配连续动作生成，接收 VLM 隐藏状态和 GC Reader 注入的几何变化信息。</li><li>四阶段渐进式训练：先无动作几何预训练；再引入 ActionExpert 但停止动作流梯度反向传播至 VLM 接口；然后启用梯度联合调整可训练 VLM 组件和 ActionExpert；最后冻结 GC-VLA，用 GCRF 在动作流速度空间进行有界残差修正。</li><li>统一双臂末端执行器增量表示（14 维，含平移、旋转和夹爪指令），通过源特定适配器转换不同数据来源的动作格式。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>预训练几何变化模型：DA3-BASE（0.12B 参数）用于伪深度估计，DINOv2-small（21M 参数）用于提取特征，两者仅在离线标签生成时使用。</li><li>基础 VLM：Molmo2-ER，36 层 + 额外 12 层几何扩展模块。</li><li>训练数据源：<strong>HoloAssist</strong>、<strong>Hy-Embodied</strong>、<strong>HABIT</strong>、<strong>MolmoAct</strong>、<strong>Bimanual YAM</strong>、<strong>FMB/DROID100</strong>、<strong>ALOHA</strong>、<strong>Austin Sailor/Berkeley UR5</strong>、<strong>Berkeley Fanuc</strong> 等用于不同阶段的几何与动作监督；<strong>LIBERO</strong> 专用于下游适应与评估。</li><li>训练硬件未明确列出，但流程涉及多阶段大规模训练。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估基准：<strong>LIBERO</strong> 四个标准套件（Spatial、Object、Goal、Long），每任务 50 个固定初始状态，共 2000 条 rollout。</li><li>主要指标：动作块预测的 MSE 和 R²，闭环成功率。</li><li>几何变化表示探测：相较于当前深度特征，几何变化表示在动作块预测上 MSE 降低 23.1%，在冻结表示探测中操作阶段准确率提升 3.7 个百分点（90.6% vs 86.9%）。</li><li>直接训练消融：仅将当前深度监督替换为几何变化目标，成功率从 82.1% 提升至 86.1%（+4.0 pp）。</li><li>完整 GC-VLA 达 95.20% 成功率，加入 GCRF 后达 99.55%；在与其他方法的参考比较中，各套件成功率均接近或达到最优水平。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.25562/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.25376/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">VLAQuantBench: Closed-Loop Evaluation of Post-Training Quantization for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

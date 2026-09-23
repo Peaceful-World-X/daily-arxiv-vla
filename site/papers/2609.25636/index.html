@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="指出现代具身智能体在基准测试中取得高成功率，但其实际指令遵循能力被严重高估，因为许多标准测试中视觉场景本身已暗示了唯一可行的任务，语言指令成为冗余。 引入 RoboFollow 诊断基准，旨在揭示并评估具身智能体是否真正利用语言来选择和执行预期行为，而非依赖视觉捷径。 核心问题是解决在视觉场景存在多义性时，当前视觉-语言-动作模型（VLA）和世界动作模型（WAM）在指令理解和泛化上的关键瓶颈。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.25636">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.25636.webp" alt="RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents" loading="lazy" />
+  <figcaption class="paper-figure-caption">指出现代具身智能体在基准测试中取得高成功率，但其实际指令遵循能力被严重高估，因为许多标准测试中视觉场景本身已暗示了唯一可行的任务，语言指令成为…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents</h1>
+            <div class="detail-meta">2026-09-22 · <a href="http://arxiv.org/abs/2609.25636" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.25636" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.25636</span></div>
+            <p class="detail-summary">指出现代具身智能体在基准测试中取得高成功率，但其实际指令遵循能力被严重高估，因为许多标准测试中视觉场景本身已暗示了唯一可行的任务，语言指令成为冗余。 引入 RoboFollow 诊断基准，旨在揭示并评估具身智能体是否真正利用语言来选择和执行预期行为，而非依赖视觉捷径。 核心问题是解决在视觉场景存在多义性时，当前视觉-语言-动作模型（VLA）和世界动作模型（WAM）在指令理解和泛化上的关键瓶颈。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">上海交通大学 人工智能学院 AutoLab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.25636/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">指出现代具身智能体在基准测试中取得高成功率，但其实际指令遵循能力被严重高估，因为许多标准测试中视觉场景本身已暗示了唯一可行的任务，语言指令成为…</p>
+  <ul class="reading-intro-points"><li>指出现代具身智能体在基准测试中取得高成功率，但其实际指令遵循能力被严重高估，因为许多标准测试中视觉场景本身已暗示了唯一可行的任务，语言指令成为…</li><li>引入 RoboFollow 诊断基准，旨在揭示并评估具身智能体是否真正利用语言来选择和执行预期行为，而非依赖视觉捷径。</li><li>核心问题是解决在视觉场景存在多义性时，当前视觉-语言-动作模型（VLA）和世界动作模型（WAM）在指令理解和泛化上的关键瓶颈。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>上海交通大学</strong> 人工智能学院 AutoLab</li><li><strong>Anyverse Dynamics</strong> 研究实验室</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>指出现代具身智能体在基准测试中取得高成功率，但其实际指令遵循能力被严重高估，因为许多标准测试中视觉场景本身已暗示了唯一可行的任务，语言指令成为冗余。</li><li>引入 <strong>RoboFollow</strong> 诊断基准，旨在揭示并评估具身智能体是否真正利用语言来选择和执行预期行为，而非依赖视觉捷径。</li><li>核心问题是解决在视觉场景存在多义性时，当前视觉-语言-动作模型（VLA）和世界动作模型（WAM）在指令理解和泛化上的关键瓶颈。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了一个 <strong>语言必需的诊断基准 RoboFollow</strong>，通过构建高<strong>场景熵</strong>（同一视觉配置对应多个任务分支）迫使模型依赖语言，并简化对象与动作以控制执行层面的混淆因素。</li><li>设计了一套 <strong>四级分层诊断协议（L0-L3）</strong>，通过逐步扰动视觉布局和语义组合，系统性地测试模型在分布内、视觉接地、语义组合以及混合扰动下的指令遵循能力。</li><li>引入了 <strong>分阶段的意图分和执行力分</strong>（Intent and Execution Scores），将语义理解错误与运动执行失败分离，实现更精准的故障诊断。</li><li>对 9 种代表性 VLA 和 WAM 模型进行了 <strong>系统性评估与分析</strong>，证明即使在微调后，模型在需要语言指令进行泛化的层级（L1-L3）性能急剧下降，且当前主流优化策略（如更强VLM骨干、QA联合训练等）均无法有效弥补这一差距。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>高场景熵设计</strong>：通过设计初始视觉观察相同但语言指令指向不同有效行为的场景，量化“场景熵”，确保语言成为区分任务的必要条件。</li><li><strong>四级评估协议</strong>：L0（分布内测试）、L1（视觉接地：交换物体位置）、L2（语义组合：重组训练见到的语义属性）、L3（视觉-语义混合扰动），以隔离不同的泛化维度。</li><li><strong>分阶段评分体系</strong>：每个任务被分解为多个顺序子阶段，分别计算“意图分”（衡量是否选对了语义目标，如物体、关系、约束）和“执行力分”（衡量选对目标后是否物理完成），以此分离理解错误和执行失败。</li><li><strong>四类诊断场景</strong>：构建了覆盖<strong>外在空间关系、内在对象属性与动作选择、精细轨迹与定向约束、基础逻辑接地</strong>的场景，全面评估不同类型的指令遵循能力。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用名为 <strong>RoboFollow</strong> 的自建模拟基准数据集。</li><li>数据集包含 <strong>4个诊断场景家族，75个训练任务标签</strong>，这些任务被分组到 <strong>6个任务无关的初始场景配置</strong> 中。</li><li>数据集具有高场景熵（<strong>3.782 bits</strong>），而对比基准 LIBERO 为 0.880 bits。</li><li>代码和数据集在 GitHub 和 Hugging Face 上公开可用。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：在模拟环境中进行，并包含一项真实机器人初步验证。</li><li><strong>评估模型</strong>：评估了 <strong>PI05、PI0、GROOT N1.6、OpenVLA-OFT、XVLA、ACoT-VLA、Lingbot-VLA、MOTUS</strong> 等 9 个 VLA 和 WAM 模型。</li><li><strong>主要指标</strong>：<strong>意图分 (IS)、执行力分 (ES) 和完成率 (CR)</strong>。</li><li><strong>关键结果</strong>：</li></ul>
+<p> - 所有模型在 L0（分布内）级别表现尚可，但多数模型的意图分在 L1-L3 级别出现大幅下降。</p>
+<p> - 最强的平均意图分仅为 <strong>55.7</strong>（PI05），显示出显著的<strong>理解-执行差距</strong>。</p>
+<p> - <strong>空语言对照组</strong>（PI05 empty language）在全部分数接近随机水平，验证了高场景熵设计成功迫使模型依赖语言。</p>
+<p> - 尝试使用更强 VLM 骨干、QA联合训练、LangForce、无分类器引导等缓解策略，<strong>均未能有效提升模型在 L1-L3 级别的指令遵循能力</strong>，表明该问题仍是当前模型的根本性瓶颈。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.25750/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Fisheye-VLA: Decoupling Coverage and Acuity for Manipulation with a Single Fisheye Camera</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.25627/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">MachEmbodied-U0: Unified Understanding and Generation Model for Embodied Intelligence</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

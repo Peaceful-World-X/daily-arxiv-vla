@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beyond Reconstruction Error: Analytical and Data-Driven Action Tokenization for Autoregressive Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文系统研究了用于自回归视觉-语言-动作（VLA）模型的离散动作标记化方法，对比了固定分析型、数据驱动线性型和非线性神经型三种动作表征方式 核心问题是探讨动作表征的哪些属性（如几何重建精度、序列可预测性、解码器稳定性）对闭箱机器人控制性能真正重要，而非仅依赖重建误差这一指标 研究发现重建误差最低的表征不一定带来最优的控制策略，揭示了重建-控制失配现象" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.25820">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.25820.webp" alt="Beyond Reconstruction Error: Analytical and Data-Driven Action Tokenization for Autoregressive Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文系统研究了用于自回归视觉-语言-动作（VLA）模型的离散动作标记化方法，对比了固定分析型、数据驱动线性型和非线性神经型三种动作表征方式</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Beyond Reconstruction Error: Analytical and Data-Driven Action Tokenization for Autoregressive Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-09-22 · <a href="http://arxiv.org/abs/2609.25820" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.25820" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.25820</span></div>
+            <p class="detail-summary">论文系统研究了用于自回归视觉-语言-动作（VLA）模型的离散动作标记化方法，对比了固定分析型、数据驱动线性型和非线性神经型三种动作表征方式 核心问题是探讨动作表征的哪些属性（如几何重建精度、序列可预测性、解码器稳定性）对闭箱机器人控制性能真正重要，而非仅依赖重建误差这一指标 研究发现重建误差最低的表征不一定带来最优的控制策略，揭示了重建-控制失配现象</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">西南大学 人工智能学院</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.25820/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文系统研究了用于自回归视觉-语言-动作（VLA）模型的离散动作标记化方法，对比了固定分析型、数据驱动线性型和非线性神经型三种动作表征方式</p>
+  <ul class="reading-intro-points"><li>论文系统研究了用于自回归视觉-语言-动作（VLA）模型的离散动作标记化方法，对比了固定分析型、数据驱动线性型和非线性神经型三种动作表征方式</li><li>核心问题是探讨动作表征的哪些属性（如几何重建精度、序列可预测性、解码器稳定性）对闭箱机器人控制性能真正重要，而非仅依赖重建误差这一指标</li><li>研究发现重建误差最低的表征不一定带来最优的控制策略，揭示了重建-控制失配现象</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>西南大学</strong> 人工智能学院</li><li><strong>浙江大学</strong> 海洋学院</li><li><strong>天风证券股份有限公司</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文系统研究了用于自回归视觉-语言-动作（<strong>VLA</strong>）模型的离散动作标记化方法，对比了固定分析型、数据驱动线性型和非线性神经型三种动作表征方式</li><li>核心问题是探讨动作表征的哪些属性（如几何重建精度、序列可预测性、解码器稳定性）对闭箱机器人控制性能真正重要，而非仅依赖重建误差这一指标</li><li>研究发现重建误差最低的表征不一定带来最优的控制策略，揭示了<strong>重建-控制失配</strong>现象</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>在统一的标记化接口下，对比了<strong>Temporal-DCT</strong>（固定谐波基）、<strong>PCA</strong>（数据驱动正交基）和<strong>MLP自编码器</strong>（非线性表征）三种代表性动作表征方法</li><li>通过率失真分析、序列建模诊断和<strong>3500次LIBERO场景rollout</strong>，系统揭示了表征排序随评估指标变化的现象</li><li>发现PCA虽在名义重建误差上优于DCT（降低8.3%），但DCT产生的离散序列更易预测（困惑度降低12.5-20.7%），且在三种子平均成功率上高出<strong>3.0个百分点</strong></li><li>明确了<strong>几何保真度、序列可预测性和解码器稳定性</strong>应分开评估，重建误差不能作为自回归VLA动作表征选择的唯一依据</li><li>提出<strong>扰动增益</strong>（Perturbation Gain）作为衡量解码器稳定性的诊断指标</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>构建统一的<strong>基动作标记化流水线</strong>，将连续动作轨迹分割为时间窗口（T=16），经坐标缩放和标准化后，分别用三种方法投影到K=14维潜在空间</li><li><strong>Temporal-DCT</strong>：对各执行器通道独立施加1D离散余弦变换，按频率优先原则选取基向量，保留通道谐波结构</li><li><strong>PCA</strong>：基于训练轨迹的协方差矩阵进行奇异值分解，选取最大特征值对应的主成分作为数据自适应基，可捕获跨轴运动学相关性</li><li><strong>MLP自编码器</strong>：采用对称瓶颈架构（112→64→14→64→112），通过GELU激活进行非线性压缩，作为重建优化的基线</li><li>所有方法通过<strong>对称均匀量化</strong>转换为离散令牌（16进制、词汇量256），严格控制归一化、量化参数和令牌预算以隔离表征效应</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>主要数据集：<strong>LIBERO</strong>（Spatial子集用于主实验，Object和Goal子集用于跨分布测试）</li><li>任务设置：9个已见任务（Tasks 0-8）用于训练和拟合，1个未见任务（Task 9）用于泛化评估</li><li>模型架构：基于<strong>Qwen3-VL-4B</strong>的视觉-语言骨干网络，使用<strong>LoRA</strong>微调（秩r=64, α=128）</li><li>训练资源：<strong>H800 GPU</strong> 集群，总耗时113.6 GPU小时</li><li>评估规模：3500次闭箱rollout（50个初始状态/任务/种子 × 9个任务 × 3个种子 × 7次运行配对评估）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：<strong>LIBERO-Spatial</strong> 模拟器，配对控制初始状态，20,000次配对bootstrap估计不确定性</li><li>主要指标：任务成功率（已见/未见）、重建均方误差（MSE）、令牌熵与n-gram困惑度、扰动增益</li><li><strong>率失真特性</strong>：PCA在20个配置中的14个获更低MSE（8-bit名义设置下MSE 0.00834 vs. DCT 0.00909，降低8.3%），但2-bit极端量化下DCT始终更优</li><li><strong>序列可预测性</strong>：Temporal-DCT令牌熵比PCA低0.746 bits，2-gram困惑度低16.7%，教师强制策略损失更低（3.419 vs. 3.513 nats/token）</li><li><strong>策略控制性能</strong>：三种子各450次已见任务rollout均值，DCT成功率86.2% vs. PCA 83.2%，领先3.0个百分点，特别在Task 3和8上DCT高出18个百分点；两种子中DCT显著领先，一种子中PCA略优但95% CI包含零</li><li><strong>重建-控制失配</strong>：自编码器重建MSE最低（0.00528，较PCA降低36.7%），但成功率82.7%不及DCT（86.2%），且扰动增益最高（0.0431 vs. 0.0336），表明解码器稳定性差</li><li>泛化方面：所有标记器在未见Task 9上得分均为0/50，反映普遍的性能基限</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.26292/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">RoboTwin-Phys: Do WAMs and VLAs Understand the Physical World?</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.25785/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">VisForce: Visual Grounding of Current and Desired Forces for Goal-Conditioned Dexterous Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

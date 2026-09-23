@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>X-Planner: Event-Structured Task Planning for Embodied Intelligence - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 X-Planner，一个用于具身智能的任务规划前端模型，旨在解决长程任务中高级指令与低级控制之间的规划问题 针对现有 VLA 系统存在的三个核心差距：数据差距（缺乏细粒度事件标注）、粒度差距（规划粒度单一）、延迟差距（自回归解码导致串行延迟） 通过事件结构化规划数据、混合离散与潜变量规划形式、以及阶梯式并行解码来统一解决上述问题" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.25187">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.25187.webp" alt="X-Planner: Event-Structured Task Planning for Embodied Intelligence" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 X-Planner，一个用于具身智能的任务规划前端模型，旨在解决长程任务中高级指令与低级控制之间的规划问题</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">X-Planner: Event-Structured Task Planning for Embodied Intelligence</h1>
+            <div class="detail-meta">2026-09-21 · <a href="http://arxiv.org/abs/2609.25187" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.25187" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.25187</span></div>
+            <p class="detail-summary">提出 X-Planner，一个用于具身智能的任务规划前端模型，旨在解决长程任务中高级指令与低级控制之间的规划问题 针对现有 VLA 系统存在的三个核心差距：数据差距（缺乏细粒度事件标注）、粒度差距（规划粒度单一）、延迟差距（自回归解码导致串行延迟） 通过事件结构化规划数据、混合离散与潜变量规划形式、以及阶梯式并行解码来统一解决上述问题</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">X Square Robot（论文作者团队）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.25187/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 X-Planner，一个用于具身智能的任务规划前端模型，旨在解决长程任务中高级指令与低级控制之间的规划问题</p>
+  <ul class="reading-intro-points"><li>提出 X-Planner，一个用于具身智能的任务规划前端模型，旨在解决长程任务中高级指令与低级控制之间的规划问题</li><li>针对现有 VLA 系统存在的三个核心差距：数据差距（缺乏细粒度事件标注）、粒度差距（规划粒度单一）、延迟差距（自回归解码导致串行延迟）</li><li>通过事件结构化规划数据、混合离散与潜变量规划形式、以及阶梯式并行解码来统一解决上述问题</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>X Square Robot</strong>（论文作者团队）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>X-Planner</strong>，一个用于具身智能的任务规划前端模型，旨在解决长程任务中高级指令与低级控制之间的规划问题</li><li>针对现有 VLA 系统存在的三个核心差距：<strong>数据差距</strong>（缺乏细粒度事件标注）、<strong>粒度差距</strong>（规划粒度单一）、<strong>延迟差距</strong>（自回归解码导致串行延迟）</li><li>通过事件结构化规划数据、混合离散与潜变量规划形式、以及阶梯式并行解码来统一解决上述问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>构建了<strong>多源、分层规划监督数据集</strong>：融合 Ego、UMI 和遥操作三种数据源，采用 L3 Task/L2 Subtask/L1 Action/L0 Segment 四层标注体系，并引入接管时间标注和人造错误数据来监督运行中的错误识别</li><li>提出<strong>阶梯解码（Staircase Decoding）</strong>机制：共享 VLM 骨干网络同时暴露两种规划形式——可解释的<strong>离散事件状态</strong>和避免逐 token 串行化的<strong>潜变量状态序列</strong>，潜变量状态通过跨层交错传递实现并行推理</li><li>设计了<strong>冻结潜变量-文本重建目标</strong>：用轻量级冻结语言模型从潜变量序列重建文本思维链，为连续表征提供语义锚点，兼顾紧凑计算与可解释性</li><li>在<strong>离线规划评估和真实机器人实验</strong>中验证效果：离线文本评估排在对比模型第二位，真实机器人任务进度（Task Progress）在推理操控和泛化测试集上均取得最高平均值</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>事件结构规划数据</strong>：从 Ego、UMI 和遥操作数据中构建分层标注，其中遥操作数据包含完整 L0–L3 标注，Ego 和 UMI 保留 L1–L3；接管时间标注监督运行中错误，人造失败演示补充策略收集的失败数据</li><li><strong>共享 VLM 骨干的双接口设计</strong>：基于 <strong>Qwen</strong> 系列 VLM，离散接口输出结构化事件状态（初始计划、当前/下一事件、进度、错误识别），潜变量接口通过阶梯解码生成连续思维链状态</li><li><strong>阶梯解码架构</strong>：将 Transformer 按中继深度 N_r 分区，下层编码共享视觉-语言上下文，上层各推理步骤并行更新，降低串行计算路径</li><li><strong>文本条件化接口</strong>：VLM 隐藏状态经可学习投影和下游骨干的文本 MLP，进入世界-动作模型的交叉注意力层，实现与下游固定模型的文本特征空间对齐（L_align）</li><li><strong>冻结潜变量重建</strong>：前缀投影器将潜变量序列映射为冻结语言模型的软前缀，仅更新阶梯分支和投影器，维持潜变量表示的事件语义</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>训练数据：<strong>Ego、UMI 和遥操作</strong> 三种数据源，采用分层标注，其中 1500 集分析子集涵盖 167 个数据集、30 个命名任务类别、41 种原子动作标签</li><li>模型基础：<strong>Qwen 系列视觉语言模型</strong>（文中引用 Qwen2.5 和 Qwen3.5）</li><li>训练资源：未明确说明使用的 GPU/TPU 数量和具体规模</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>离线评估</strong>：使用 <strong>BERTScore-F1</strong>（语义相似度）和 <strong>Doubao Judge Overall</strong>（整体计划质量）两项指标，<strong>X-Planner</strong> 在四款对比模型中排名第二（BERTScore-F1: 0.9011，Overall: 1.411），优于 Qwen 和 Doubao，低于 kimi3</li><li><strong>真实机器人实验</strong>：在桌面双臂平台上使用多视角同步观测，评估 <strong>推理操控</strong>（5 项任务，如类项排序、形状分类、按序按键等）和 <strong>泛化</strong>（杂乱场景下的指令条件泛化）两个测试集</li></ul>
+<p> - 推理操控集：X-Planner 平均任务进度 <strong>71.60</strong>，优于 U-Scratch（59.50）、π_0.5（56.40）、DreamZero（32.70）和 LingBot-VA（31.60）</p>
+<p> - 泛化集：X-Planner 平均任务进度 <strong>53.75</strong>，比最强基线 DreamZero（28.50）高出 25.25 个百分点</p>
+<ul><li>说明：真实机器人实验评估的是<strong>完整事件模式系统</strong>，未分离各组件贡献；未评估端到端延迟优势</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.25369/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Capability-Aware Arbitration for Semantic Intent-Based Shared Control</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.25146/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Brain-Inspired Hierarchical Modularity for General Continual Learning</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
