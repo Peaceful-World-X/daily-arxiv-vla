@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Low-Rank Structure of VLA Reinforcement Learning - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文系统性地研究了强化学习 (RL) 在视觉-语言-动作 (VLA) 模型后训练中的参数更新结构，发现 RL 诱导的参数更新呈现低秩特性 研究揭示了 RL 学习信号如何重塑 VLA 策略，特别是集中在动作专家的 时间步模块 (Timestep Modules) 这一先前被忽视的小型组件上 旨在填补对 VLA 强化学习参数空间理解的空间，为更高效和可解释的 VLA 后训练方法提供基础" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.34599">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.34599.webp" alt="The Low-Rank Structure of VLA Reinforcement Learning" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文系统性地研究了强化学习 (RL) 在视觉-语言-动作 (VLA) 模型后训练中的参数更新结构，发现 RL 诱导的参数更新呈现低秩特性</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">The Low-Rank Structure of VLA Reinforcement Learning</h1>
+            <div class="detail-meta">2026-09-28 · <a href="http://arxiv.org/abs/2609.34599" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.34599" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.34599</span></div>
+            <p class="detail-summary">本文系统性地研究了强化学习 (RL) 在视觉-语言-动作 (VLA) 模型后训练中的参数更新结构，发现 RL 诱导的参数更新呈现低秩特性 研究揭示了 RL 学习信号如何重塑 VLA 策略，特别是集中在动作专家的 时间步模块 (Timestep Modules) 这一先前被忽视的小型组件上 旨在填补对 VLA 强化学习参数空间理解的空间，为更高效和可解释的 VLA 后训练方法提供基础</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构为 首尔大学数据科学研究生院 (Graduate School of Data Sci…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.34599/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文系统性地研究了强化学习 (RL) 在视觉-语言-动作 (VLA) 模型后训练中的参数更新结构，发现 RL 诱导的参数更新呈现低秩特性</p>
+  <ul class="reading-intro-points"><li>本文系统性地研究了强化学习 (RL) 在视觉-语言-动作 (VLA) 模型后训练中的参数更新结构，发现 RL 诱导的参数更新呈现低秩特性</li><li>研究揭示了 RL 学习信号如何重塑 VLA 策略，特别是集中在动作专家的 时间步模块 (Timestep Modules) 这一先前被忽视的小…</li><li>旨在填补对 VLA 强化学习参数空间理解的空间，为更高效和可解释的 VLA 后训练方法提供基础</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构为 <strong>首尔大学数据科学研究生院</strong> (Graduate School of Data Science, Seoul National University)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文系统性地研究了强化学习 (RL) 在视觉-语言-动作 (VLA) 模型后训练中的参数更新结构，发现 RL 诱导的参数更新呈现低秩特性</li><li>研究揭示了 RL 学习信号如何重塑 VLA 策略，特别是集中在动作专家的 <strong>时间步模块 (Timestep Modules)</strong> 这一先前被忽视的小型组件上</li><li>旨在填补对 VLA 强化学习参数空间理解的空间，为更高效和可解释的 VLA 后训练方法提供基础</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>发现 RL 在多种流匹配 VLA 模型（如 <strong>π₀.₅</strong>、<strong>GR00T N1.5/N1.6</strong>）和基准（如 <strong>LIBERO</strong>, <strong>ManiSkill</strong>, <strong>MetaWorld</strong>, <strong>CALVIN</strong>）上一致地产生低秩的参数更新，且这些更新高度集中于动作专家的 <strong>时间步模块</strong></li><li>通过模块替换实验证明，时间步模块参数更新承载了 RL 性能增益中的绝大部分，即使这些模块只占总参数的一小部分</li><li>揭示 RL 将时间步模块专门化到 rollout 时使用的离散去噪时间步，这种离散时间步训练是导致低秩更新的原因</li><li>发现时间步模块产出的 <strong>位移向量 (shift vector)</strong> 在 RL 中变化最显著，并证明其更新方向能高度预测任务成功（ROC-AUC 最高达 <strong>99.6%</strong>），且其几何结构反映了任务间的关系</li><li>通过在位移更新方向上进行引导 (steering)，成功在不额外训练的情况下进一步提升了 RL 训练后策略的性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>分析 RL 参数更新的密度和有效秩，并通过 SVD 提取更新矩阵的主要奇异方向</li><li>对 RL 训练后的检查点进行<strong>受控模块替换实验</strong>，比较仅保留时间步模块更新与仅保留其他模块更新的效果</li><li>研究时间步模块对离散去噪时间步的<strong>专门化模式</strong>，分析其输入奇异方向与不同时间步调节向量的余弦相似度</li><li>对时间步模块产出的<strong>尺度 (scale)、位移 (shift) 和门控 (gate) 向量</strong>进行解耦分析，量化 RL 带来的方向性变化</li><li>使用<strong>线性探测 (linear probing)</strong> 方法，将位移更新方向作为分类方向，预测情节的成功/失败结局</li><li>实施<strong>自适应激活引导 (adaptive activation steering)</strong> 技术，在推理时沿位移更新方向调整隐藏层表示，以提升策略性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的验证基准包括 <strong>LIBERO</strong> (Spatial, Object, Goal)、<strong>ManiSkill</strong>、<strong>MetaWorld</strong> 和 <strong>CALVIN</strong></li><li>分析了多个公开及内部训练的 VLA 模型，包括 <strong>π₀.₅</strong>、<strong>GR00T N1.5</strong>、<strong>GR00T N1.6</strong> 和 <strong>SmolVLA</strong></li><li>模型规模方面，时间步模块在 π₀.₅ 动作专家中占总参数的 <strong>27.58%</strong>，其中 <strong>AdaRMS</strong> 占了绝大部分 (<strong>98.23%</strong>)</li><li>训练算法使用近端策略优化 (<strong>PPO</strong>)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境为上述的多个机器人操作模拟基准环境</li><li>主要评估指标包括：<strong>更新密度</strong>、<strong>有效更新秩</strong>、<strong>任务成功率</strong>、线性探测的 <strong>F1 分数</strong>和 <strong>ROC-AUC</strong>，以及任务向量的<strong>余弦相似度</strong>和<strong>斯皮尔曼相关系数</strong></li><li>关键实验结果：</li></ul>
+<p> - RL 对时间步模块的更新紧凑（有效秩低至 <strong>6–30</strong>，而行为克隆为 250–650），且模块替换实验中 “仅保留时间步模块更新” 的平均成功率为 <strong>80.9%</strong>，远高于 “仅保留其他模块” 的 <strong>66.6%</strong></p>
+<p> - 对位移更新方向的线性探测能高度预测任务成功，ROC-AUC 在 LIBERO-Spatial 上达到 <strong>99.6%</strong></p>
+<p> - 位移更新的配对余弦相似度与跨任务迁移模式的斯皮尔曼相关系数高达 <strong>0.794</strong>，表明其几何结构编码了任务关系</p>
+<p> - 通过沿位移方向进行引导，RL 训练后策略的成功率得到进一步提升（在 LIBERO-Goal 上从 <strong>90.7%</strong> 提升至 <strong>94.7%</strong>）</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.34684/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Natural State-Prediction Accuracy can Hide Weak Controlled Responsiveness in VLA Readouts</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.34561/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Brain-Conditioned Action Policies for Neural Motor Decoding</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

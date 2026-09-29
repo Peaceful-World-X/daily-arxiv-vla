@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有视觉语言模型（VLM）参与机器人操作时仅能间接决策（如生成控制程序、预测空间约束）、未提供可交互的“世界”行动空间的问题，提出World Action Agent（WAA） 多智能体框架，让通用VLM通过基础工具直接操控机器人 WAA核心设计为视觉动作工作空间，解决了三类现有方法的共性缺失：交互观察未聚焦局部关系、动作无法提前演练验证、感知与动作空间不统一 研究目标是通过该框架让VLM完成全流程操作决策，同…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.29964">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><article class="note-cover note-cover-title-only" style="--cover-from: #3f6ee8; --cover-to: #6fa7ff; --cover-spot: #d5e6ff; --cover-ink: #f7fbff; --cover-muted: rgba(247, 251, 255, 0.82); --cover-chip: rgba(247, 251, 255, 0.16); --cover-stroke: rgba(247, 251, 255, 0.24)">
+  <div class="note-cover-mesh"></div>
+  <div class="note-cover-title-shell">
+    <h1 class="note-cover-title">World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal</h1>
+  </div>
+</article></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal</h1>
+            <div class="detail-meta">2026-09-24 · <a href="http://arxiv.org/abs/2609.29964" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.29964" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.29964</span></div>
+            <p class="detail-summary">针对现有视觉语言模型（VLM）参与机器人操作时仅能间接决策（如生成控制程序、预测空间约束）、未提供可交互的“世界”行动空间的问题，提出World Action Agent（WAA） 多智能体框架，让通用VLM通过基础工具直接操控机器人 WAA核心设计为视觉动作工作空间，解决了三类现有方法的共性缺失：交互观察未聚焦局部关系、动作无法提前演练验证、感知与动作空间不统一 研究目标是通过该框架让VLM完成全流程操作决策，同…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">HKUST(GZ)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.29964/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有视觉语言模型（VLM）参与机器人操作时仅能间接决策（如生成控制程序、预测空间约束）、未提供可交互的“世界”行动空间的问题，提出Worl…</p>
+  <ul class="reading-intro-points"><li>针对现有视觉语言模型（VLM）参与机器人操作时仅能间接决策（如生成控制程序、预测空间约束）、未提供可交互的“世界”行动空间的问题，提出Worl…</li><li>WAA核心设计为视觉动作工作空间，解决了三类现有方法的共性缺失：交互观察未聚焦局部关系、动作无法提前演练验证、感知与动作空间不统一</li><li>研究目标是通过该框架让VLM完成全流程操作决策，同时支持 embodied procedural 知识学习与小模型蒸馏，降低部署成本</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>HKUST(GZ)</li><li>CUHK</li><li>Knowin AI</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有视觉语言模型（VLM）参与机器人操作时仅能间接决策（如生成控制程序、预测空间约束）、未提供可交互的“世界”行动空间的问题，提出<strong>World Action Agent（WAA）</strong> 多智能体框架，让通用VLM通过基础工具直接操控机器人</li><li>WAA核心设计为<strong>视觉动作工作空间</strong>，解决了三类现有方法的共性缺失：交互观察未聚焦局部关系、动作无法提前演练验证、感知与动作空间不统一</li><li>研究目标是通过该框架让VLM完成全流程操作决策，同时支持 embodied procedural 知识学习与小模型蒸馏，降低部署成本</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>World Action Agent（WAA）</strong> 多智能体操控框架，通用VLM可通过基础工具在统一的视觉动作工作空间内完成观察、动作排练与执行纠正，直接操控机器人完成复杂操作任务</li><li>验证同一工作空间支持双路径知识获取：非参数化地从专家视频与人类教学中演化可迁移的多模态技能库，参数化地将交互轨迹蒸馏为小体积VLM操控器，无需修改接口即可部署</li><li>在LIBERO-Pro上取得<strong>75.6%</strong>的SOTA平均成功率，演化技能可零样本迁移到robosuite，9B小模型微调后跨域成功率从1.7%提升至43.3%</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>WAA是多智能体框架，核心为<strong>视觉动作工作空间</strong>，包含三个关键设计：</li></ul>
+<p> - <strong>交互为中心Contact视图</strong>：根据当前交互区域、场景点云与机械手几何，自动优化相机参数选择两个正交的局部视图，最大化交互区域与机械手的可见性，同时保证取景紧凑、视角稳定，让VLM聚焦毫米到厘米级的局部交互关系</p>
+<p> - <strong>动作排练机制</strong>：将动作定义为可编辑的提案而非一次性输出，VLM提出目标姿态后，harness通过逆运动学与cuRobo运动规划器生成可行轨迹，叠加半透明机械手预览可行性，支持VLM或专门的Imagination Agent迭代修改提案，仅可行提案才会被执行</p>
+<p> - <strong>视内闭环纠正</strong>：观察、排练、底层执行共享同一套校准视图，VLM可在观察到误差的Contact视图中直接拖拽参考点到目标位置，harness自动将图像空间意图转换为末端执行器的位移，两个正交视图支持互补方向的误差修正</p>
+<ul><li>技能学习模块：通过Learner、Editor、Reviewer三个角色，从专家演示与人类教学中提取带视觉参考的多模态技能，技能以关系性指导（而非固定参数）存储，支持跨场景迁移；交互轨迹通过最大似然训练仅微调主策略，子智能体与接口保持不变，让小模型学会使用同一套工作空间</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>评估数据集：<strong>LIBERO-Pro</strong>（包含Object、Goal、Spatial三类任务split，每类分初始位置交换、任务扰动两个版本，共60个任务）、<strong>robosuite</strong>（包含cube lifting、stacking、restacking三类操作任务）</li><li>技能演化源数据集：<strong>LIBERO-90</strong>（用于提取专家演示生成多模态技能）</li><li>模型规模：主智能体骨干为<strong>Gemini 3.7 Flash</strong>，蒸馏小模型为<strong>Qwen3.5-9B</strong>，微调采用LoRA（秩8，训练10轮，学习率5×10⁻⁵）</li><li>训练资源：论文未明确披露具体GPU/TPU配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：LIBERO-Pro共6个split，每split测试60回合（每任务6回合）；robosuite测试三类操作任务；对比基线包括端到端VLA（OpenVLA、π₀.₅）、代码类策略（CaP-Agent0、RATs、ASPIRE）、同骨干视觉接口方法Show-Harness</li><li>主要评估指标：任务成功率（%）</li><li>关键实验结果：</li></ul>
+<p> - WAA使用演化技能后在LIBERO-Pro上达到<strong>75.6%</strong>平均成功率，超过SOTA基线ASPIRE（72.0%），在依赖厘米级放置关系的Spatial split上优势更明显，达到80.0%与73.3%</p>
+<p> - 零样本WAA（无技能）平均成功率达28.9%，显著高于同骨干Show-Harness（6.7%）、π₀.₅（12.8%）与CaP-Agent0系列，验证视觉动作工作空间的优势</p>
+<p> - 代码类策略因开环几何 grounding 限制，在Spatial split上最高仅51.0%~60.0%，远低于WAA的表现</p>
+<p> - 从LIBERO-90学到的冻结技能可零样本迁移到robosuite，将restack任务成功率从60.0%提升至100.0%，平均成功率100.0%，超过CaP-Agent0+RATs的63.3%</p>
+<p> - WAA对场景点云来源不敏感，使用RGB-D融合点云或VGGT重建点云时，平均成功率仅分别降至71.1%与68.9%，仍超过所有基线的Spatial split表现</p>
+<p> - 效率上WAA平均每回合仅需31次模型调用、150秒，远低于Show-Harness的120次调用、874秒</p>
+<p> - 蒸馏后的Qwen3.5-9B在域内任务成功率从0.0%提升至55.0%，跨域任务从1.7%提升至43.3%，验证了小模型学习操控harness的可行性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.30092/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Self-Adaptive VLA for Robust Robot Deployment</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.29389/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

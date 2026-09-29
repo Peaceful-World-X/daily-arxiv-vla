@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>F4R: Failure-Driven Recognition, Reconstruction, Refinement, and Redeployment for Continual Robot Self-Improvement - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 F4R（Failure for Rising），一个由失败驱动的真实→仿真→真实闭环学习框架，将机器人部署中遇到的真实世界失败转化为定向的策略改进机会。 解决当前视觉-语言-动作模型在真实部署中因分布外条件（如新物体配置、相机视角变化、视觉干扰）而容易失败，且传统方法需昂贵人工收集示教的问题。 实现从失败诊断、场景重建、失败导向的策略精炼到闭环再部署的自动化流程，无需额外收集真实世界纠错示教。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.35575">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.35575.webp" alt="F4R: Failure-Driven Recognition, Reconstruction, Refinement, and Redeployment for Continual Robot Self-Improvement" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 F4R（Failure for Rising），一个由失败驱动的真实→仿真→真实闭环学习框架，将机器人部署中遇到的真实世界失败转化为定向…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">F4R: Failure-Driven Recognition, Reconstruction, Refinement, and Redeployment for Continual Robot Self-Improvement</h1>
+            <div class="detail-meta">2026-09-28 · <a href="http://arxiv.org/abs/2609.35575" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.35575" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.35575</span></div>
+            <p class="detail-summary">提出 F4R（Failure for Rising），一个由失败驱动的真实→仿真→真实闭环学习框架，将机器人部署中遇到的真实世界失败转化为定向的策略改进机会。 解决当前视觉-语言-动作模型在真实部署中因分布外条件（如新物体配置、相机视角变化、视觉干扰）而容易失败，且传统方法需昂贵人工收集示教的问题。 实现从失败诊断、场景重建、失败导向的策略精炼到闭环再部署的自动化流程，无需额外收集真实世界纠错示教。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Nanyang Technological University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.35575/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 F4R（Failure for Rising），一个由失败驱动的真实→仿真→真实闭环学习框架，将机器人部署中遇到的真实世界失败转化为定向…</p>
+  <ul class="reading-intro-points"><li>提出 F4R（Failure for Rising），一个由失败驱动的真实→仿真→真实闭环学习框架，将机器人部署中遇到的真实世界失败转化为定向…</li><li>解决当前视觉-语言-动作模型在真实部署中因分布外条件（如新物体配置、相机视角变化、视觉干扰）而容易失败，且传统方法需昂贵人工收集示教的问题。</li><li>实现从失败诊断、场景重建、失败导向的策略精炼到闭环再部署的自动化流程，无需额外收集真实世界纠错示教。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>Nanyang Technological University</li><li>Xi’an Jiaotong University</li><li>Dexmal</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>F4R</strong>（Failure for Rising），一个由失败驱动的真实→仿真→真实闭环学习框架，将机器人部署中遇到的真实世界失败转化为定向的策略改进机会。</li><li>解决当前视觉-语言-动作模型在真实部署中因分布外条件（如新物体配置、相机视角变化、视觉干扰）而容易失败，且传统方法需昂贵人工收集示教的问题。</li><li>实现从失败诊断、场景重建、失败导向的策略精炼到闭环再部署的自动化流程，无需额外收集真实世界纠错示教。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>开发了基于失败诊断的建管，将真实世界失败转化为几何一致、照片级真实且可交互的仿真环境。</li><li>提出两阶段精炼策略：失败条件下的仿真-真实联合训练（co-training）与定向强化学习（RL），使新出现的失败能够驱动后续的精炼循环。</li><li>将上述组件集成为 <strong>F4R</strong> 框架，将真实失败迭代地转化为可复用的训练资产，并在实验中验证其对策略改进的有效性，超越了等资源量的目标行为克隆基线。</li><li>展示了无需额外真实世界纠错示教即可提升分布外（OOD）成功率的显著优势（比基线高 18.75 个百分点）。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>失败识别与诊断</strong>：使用基于 VLM 的诊断代理，从失败回放视频中自动识别最早失败的子任务及其关联的场景因素，输出结构化的失败记录。</li><li><strong>失败案例重建</strong>：通过一次性场景高斯重建和任务相关物体的多视角 RGB-D 采集，利用 TSDF 融合、形状补全、纹理合成与高斯表示，构建出含物理交互和照片级渲染的仿真环境。</li><li><strong>失败导向的策略精炼</strong>：在重建场景周围进行失败感知的域随机化，生成失败相关的多样化训练环境；采用 MimicGen 从成功示教中产生仿真正确演示，并执行仿真-真实联合训练；随后在相同分布上通过 PPO 进行定向强化学习，同时用真实数据监督防止遗忘。</li><li><strong>闭环再部署</strong>：将精炼后的策略重新部署，新出现的失败被反馈至下一轮重建与训练，形成持续自我改进的闭环。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用自收集的真实世界操作示教数据（每任务 10、30、50 条不等），无公开基准数据集。</li><li>基础策略模型为 <strong>π0.5</strong>（vision-language-action 模型），微调采用 LoRA 适配器。</li><li>监督微调使用 <strong>4 块 NVIDIA H20 GPU</strong>（FSDP，每卡 32 样本）；强化学习阶段使用 <strong>2 块 NVIDIA RTX 4090 GPU</strong> 运行 Isaac Lab 并在 256 个并行环境中采集数据，H20 GPU 负责推理与优化，通过 Ray 集群通信。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：8 个桌面操作任务（4 个重点任务用于真实世界精炼实验），覆盖抓取、放置、堆叠、开关抽屉等，分别在分布内（ID）和部署失败分布（OOD）条件下测试，真实世界每设置 20 次试验。</li><li><strong>主要评估指标</strong>：二元成功率和平均成功率。</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - F4R 在 4 个任务上达到 <strong>ID 平均 93.75%、OOD 平均 90.0%</strong> 的成功率，显著优于等预算的目标行为克隆（71.25%）和 RLinf-Co（77.5%）。</p>
+<p> - 失败诊断正确率首个尝试 <strong>86.25%</strong>，两次尝试后提升至 <strong>92.5%</strong>。</p>
+<p> - 仿真-真实行为一致性：Pearson 相关系数 <strong>0.7625</strong>（p < 1.49e-5），验证了重建环境作为行为代理的有效性。</p>
+<p> - 多轮闭环精炼在困难任务上逐步改进（如 Stack Bowls 从 30% 提升至 95%）。</p>
+<p> - 消融实验证明失败感知随机化与真实数据监督对保持 OOD 性能至关重要，联合训练是主要增益来源，RL 进一步优化闭环行为。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.35709/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Humanoid Loco-Manipulation With Discrete VLA Model</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.35469/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Rethinking Causal Action Tokenization with Conditional Annealing in Flow Matching</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

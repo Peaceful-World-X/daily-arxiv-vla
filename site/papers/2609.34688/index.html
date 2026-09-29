@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unified Trajectory Matching Policy Optimization: Diverse T2I Generation and VLA Generalization - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出一个名为 Unified Trajectory Matching Policy Optimization (Uni-TMPO) 的统一强化学习后训练框架，旨在解决扩散和流策略的模式坍塌问题。 该框架同时应用于 文本到图像生成 (T2I) 和 视觉-语言-动作模型 (VLA)，通过匹配轨迹群体内的奖励分布与策略分布，替代传统的奖励最大化目标。 目标是保留生成多样性（T2I中多样的图像模式）和促进泛化（VLA中保留…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.34688">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.34688.webp" alt="Unified Trajectory Matching Policy Optimization: Diverse T2I Generation and VLA Generalization" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出一个名为 Unified Trajectory Matching Policy Optimization (Uni-TMPO) 的统一强化…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Unified Trajectory Matching Policy Optimization: Diverse T2I Generation and VLA Generalization</h1>
+            <div class="detail-meta">2026-09-28 · <a href="http://arxiv.org/abs/2609.34688" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.34688" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.34688</span></div>
+            <p class="detail-summary">提出一个名为 Unified Trajectory Matching Policy Optimization (Uni-TMPO) 的统一强化学习后训练框架，旨在解决扩散和流策略的模式坍塌问题。 该框架同时应用于 文本到图像生成 (T2I) 和 视觉-语言-动作模型 (VLA)，通过匹配轨迹群体内的奖励分布与策略分布，替代传统的奖励最大化目标。 目标是保留生成多样性（T2I中多样的图像模式）和促进泛化（VLA中保留…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">华中科技大学 (Huazhong University of Science and Technolo…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.34688/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出一个名为 Unified Trajectory Matching Policy Optimization (Uni-TMPO) 的统一强化…</p>
+  <ul class="reading-intro-points"><li>提出一个名为 Unified Trajectory Matching Policy Optimization (Uni-TMPO) 的统一强化…</li><li>该框架同时应用于 文本到图像生成 (T2I) 和 视觉-语言-动作模型 (VLA)，通过匹配轨迹群体内的奖励分布与策略分布，替代传统的奖励最大…</li><li>目标是保留生成多样性（T2I中多样的图像模式）和促进泛化（VLA中保留多种成功策略以应对分布外任务和场景）。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>华中科技大学</strong> (Huazhong University of Science and Technology) 计算机科学与技术学院、软件工程学院</li><li><strong>中国科学院信息工程研究所</strong> (Institute of Information Engineering, Chinese Academy of Sciences)</li><li><strong>上海交通大学</strong> (Shanghai Jiao Tong University) 计算机科学与技术学院</li><li><strong>Frontis.AI</strong></li><li><strong>清华大学</strong> (Tsinghua University) 电子工程系</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出一个名为 <strong>Unified Trajectory Matching Policy Optimization (Uni-TMPO)</strong> 的统一强化学习后训练框架，旨在解决扩散和流策略的模式坍塌问题。</li><li>该框架同时应用于 <strong>文本到图像生成 (T2I)</strong> 和 <strong>视觉-语言-动作模型 (VLA)</strong>，通过匹配轨迹群体内的奖励分布与策略分布，替代传统的奖励最大化目标。</li><li>目标是保留生成多样性（T2I中多样的图像模式）和促进泛化（VLA中保留多种成功策略以应对分布外任务和场景）。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了 <strong>Uni-TMPO</strong>，一个统一的轨迹匹配RL后训练框架，同时适用于随机扩散和流策略的T2I生成与VLA控制。</li><li>设计了 <strong>progress-conditioned coarse-to-fine 采样器</strong>用于T2I，在早期训练阶段探索全局结构，后期细化局部细节，提升了奖励、多样性和效率。</li><li>设计了 <strong>feedback-conditioned action-chunk 采样过程</strong>用于VLA，将多个动作块生成步骤的转移对数概率聚合为轨迹得分，适用于统一框架。</li><li>通过大量实验证明，在T2I任务上，Uni-TMPO 在奖励-多样性-效率权衡上取得最佳效果；在VLA任务上，它在分布内外任务成功率和场景泛化方面均优于最强基线。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>统一框架</strong>：将奖励标准化的群体Boltzmann分布作为目标分布，将轨迹对数概率的Softmax作为策略分布，通过 <strong>前向KL散度</strong> 最小化两者差异来更新策略。</li><li><strong>T2I采样</strong>：采用 <strong>progress-conditioned coarse-to-fine 采样</strong>，通过共享前缀的分支树结构构建图像去噪轨迹组。分支位置随训练进度从早期步骤（探索全局结构）转移到后期步骤（细化局部细节）。</li><li><strong>VLA采样</strong>：采用 <strong>feedback-conditioned action-chunk 采样</strong>，根据语言指令和共享的初始状态，策略在每个查询步生成动作块并执行前缀，不断接收新观测并重新规划，构成完整轨迹。</li><li><strong>轨迹得分</strong>：T2I得分是去噪轨迹中所有随机转移对数密度的总和；VLA得分是轨迹中所有有效动作块生成的对数密度的平均值。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>T2I实验</strong>：基于 <strong>FLUX.1-dev</strong> 模型进行后训练。</li><li><strong>VLA实验</strong>：基于预训练的 <strong>VLA模型</strong> (如 π_RL 形式) 进行后训练，冻结视觉-语言骨干网络，仅训练动作专家模块。</li><li>论文未明确说明训练所用的具体GPU/TPU资源规模。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>T2I评估</strong>：在 <strong>组合图像生成 (GenEval)</strong>、<strong>视觉文本渲染 (OCR)</strong> 和 <strong>人类偏好对齐 (PickScore/HPS)</strong> 三个任务上评估。使用标准奖励指标、<strong>LGMD</strong> (忠诚度-生成模式距离) 和 <strong>Cos.Div</strong> (多样性) 指标。Uni-TMPO 在获得最高奖励的同时，实现了最佳奖励-多样性-效率权衡，LGMD 最高提升 <strong>28.4%</strong>，迭代时间减少 <strong>10.2%</strong>。</li><li><strong>VLA评估</strong>：在 <strong>MetaWorld</strong> 和 <strong>CALVIN</strong> 等环境中评估分布内和分布外（OOD）任务成功率及场景泛化能力。Uni-TMPO 在分布内成功率最高，并在任务OOD和场景OOD上分别平均超出最强基线 <strong>8.0</strong> 和 <strong>4.8</strong> 个百分点。真实机器人评估展示了保留多种行动策略的价值。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.34792/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">D$^2$-VLA: Dual-Memory Dual-Frequency Vision-Language-Action Model For Long Dynamic Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.34684/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Natural State-Prediction Accuracy can Hide Weak Controlled Responsiveness in VLA Readouts</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

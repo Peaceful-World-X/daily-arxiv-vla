@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WorldGuide: Learning Success-Failure Boundaries in Latent World Models for Vision-Language-Action Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 WorldGuide 框架，用于在潜在世界模型中学习成功与失败的决策边界，以提升视觉-语言-动作（VLA）策略的可靠性 解决现有世界模型因仅用成功演示训练而导致的“成功偏见”问题，使其难以区分视觉上相似的成功与失败交互 通过引入失败数据、对比学习和可微分奖励，使策略能够识别并远离失败状态，且世界模型在部署时被丢弃，无额外推理开销" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.34206">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><article class="note-cover note-cover-title-only" style="--cover-from: #ef6c3f; --cover-to: #f6b13d; --cover-spot: #ffd59c; --cover-ink: #fff8ef; --cover-muted: rgba(255, 248, 239, 0.82); --cover-chip: rgba(255, 248, 239, 0.16); --cover-stroke: rgba(255, 248, 239, 0.26)">
+  <div class="note-cover-mesh"></div>
+  <div class="note-cover-title-shell">
+    <h1 class="note-cover-title">WorldGuide: Learning Success-Failure Boundaries in Latent World Models for Vision-Language-Action Policies</h1>
+  </div>
+</article></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">WorldGuide: Learning Success-Failure Boundaries in Latent World Models for Vision-Language-Action Policies</h1>
+            <div class="detail-meta">2026-09-28 · <a href="http://arxiv.org/abs/2609.34206" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.34206" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.34206</span></div>
+            <p class="detail-summary">提出 WorldGuide 框架，用于在潜在世界模型中学习成功与失败的决策边界，以提升视觉-语言-动作（VLA）策略的可靠性 解决现有世界模型因仅用成功演示训练而导致的“成功偏见”问题，使其难以区分视觉上相似的成功与失败交互 通过引入失败数据、对比学习和可微分奖励，使策略能够识别并远离失败状态，且世界模型在部署时被丢弃，无额外推理开销</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">大连理工大学 信息与通信工程学院</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.34206/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 WorldGuide 框架，用于在潜在世界模型中学习成功与失败的决策边界，以提升视觉-语言-动作（VLA）策略的可靠性</p>
+  <ul class="reading-intro-points"><li>提出 WorldGuide 框架，用于在潜在世界模型中学习成功与失败的决策边界，以提升视觉-语言-动作（VLA）策略的可靠性</li><li>解决现有世界模型因仅用成功演示训练而导致的“成功偏见”问题，使其难以区分视觉上相似的成功与失败交互</li><li>通过引入失败数据、对比学习和可微分奖励，使策略能够识别并远离失败状态，且世界模型在部署时被丢弃，无额外推理开销</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>大连理工大学</strong> 信息与通信工程学院</li><li><strong>Beta Infinity</strong></li><li><strong>南洋理工大学</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>WorldGuide</strong> 框架，用于在潜在世界模型中学习成功与失败的决策边界，以提升视觉-语言-动作（VLA）策略的可靠性</li><li>解决现有世界模型因仅用成功演示训练而导致的“成功偏见”问题，使其难以区分视觉上相似的成功与失败交互</li><li>通过引入失败数据、对比学习和可微分奖励，使策略能够识别并远离失败状态，且世界模型在部署时被丢弃，无额外推理开销</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>系统研究了仅用成功演示训练潜在预测反馈的局限性，并分析了失败数据和匹配的成功-失败监督对结果判别的影影响</li><li>提出了 <strong>WorldGuide</strong> 三阶段训练方法：失败丰富的预测预训练、匹配交互的对比微调、以及可微分奖励引导的策略训练</li><li>在仿真和真实世界实验中，WorldGuide 取得当前最优性能，在 LIBERO-100 上达到 <strong>96.8%</strong>，SimplerEnv 上达到 <strong>72.0%</strong>，并且推理延迟降低 <strong>2.2× 至 19.9×</strong>，无世界模型部署开销</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>分为三个训练阶段：</li></ul>
+<p> - <strong>阶段 1：失败丰富的预训练</strong>：混合专家演示与多样化的失败轨迹，预训练视觉编码器和潜在世界模型，以捕获完整的物理动态</p>
+<p> - <strong>阶段 2：边界感知对比微调</strong>：在相同任务中，将视觉上匹配的成功与失败轨迹配对，引入基于预测注意力和通道掩码的加权对比损失，强制模型在特征空间中分离成功与失败状态</p>
+<p> - <strong>阶段 3：端到端优化与可微分奖励</strong>：冻结世界模型，利用其对失败状态的预测误差作为可微分奖励，直接反向传播梯度来优化动作头和视觉编码器，部署时丢弃世界模型</p>
+<ul><li>创新点：在预测性世界模型中结合成功-失败对比学习，构建出对失败敏感的奖励信号，用于端到端策略优化，且部署时零开销</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：<strong>LIBERO</strong>（100个任务）、<strong>RoboTwin</strong>、<strong>SimplerEnv</strong>（Google Robot 和 WidowX 机器人仿真环境）</li><li>模型规模：世界模型基于 <strong>OpenVLA-OFT</strong> 或 <strong>GR00T</strong> 基线，整体规模约 <strong>4B 参数</strong>（含 0.5B 训练参数）</li><li>训练资源：所有实验使用 <strong>8 块 NVIDIA H20 GPU</strong></li><li>真实世界数据：在 <strong>ARX LIFT2</strong> 平台收集 300 条人类演示，下达 3 种精密抓放任务</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：<strong>LIBERO</strong>、<strong>SimplerEnv</strong>、<strong>RoboTwin</strong> 仿真基准，以及 <strong>ARX LIFT2</strong> 真实机械臂平台</li><li>主要评估指标：任务成功率（%）</li><li>关键实验结果：</li></ul>
+<p> - <strong>LIBERO-100</strong>：WorldGuide 达到 <strong>96.8%</strong>，超越 OpenVLA-OFT 的 97.1% 和 GR00T-N1.6 的 97.0%，创 VLA 新记录</p>
+<p> - <strong>SimplerEnv</strong>：平均成功率 <strong>64.8%</strong>，比最接近的 VLA-JEPA 高出 <strong>+6.8%</strong>（Google Robot）和 <strong>+7.5%</strong>（WidowX Robot）</p>
+<p> - <strong>RoboTwin</strong>：在双机械臂操作中取得最优平均成功率，优于 GR00T-N1.5</p>
+<p> - <strong>真实世界</strong>：WorldGuide 将抓放任务的平均成功率提升至 <strong>18.3%</strong>，相对基线（π₀ 和 π₀.₅ 均为 11.7%）提高 <strong>+57%</strong></p>
+<p> - 消融实验证明，世界模型的对比微调阶段能显著提升成功与失败在特征空间的可分离性（AUC 从 0.81 提升至 0.87）</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.34220/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">mmHRI: Towards Privacy-Preserving Human-Robot Interaction with Millimeter-Wave Radar</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.34175/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">FailPatch: Failure Residual Patching for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

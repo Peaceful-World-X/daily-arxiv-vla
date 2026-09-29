@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Are Vision-Language-Action Models Robust to One-Step Observation Perturbations? - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="研究了视觉-语言-动作（VLA）模型对单步观测扰动（one-step perturbations）的鲁棒性，揭示了 momentarily observation corruption（短暂观测损坏）这一被忽视的安全威胁 通过系统实验发现，单步扰动在关键时间步施加时会导致现有VLA模型性能严重下降，且影响程度取决于动作块执行长度（action execution length） 提出了 CARE（Consisten…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.32550">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><article class="note-cover note-cover-title-only" style="--cover-from: #ef6c3f; --cover-to: #f6b13d; --cover-spot: #ffd59c; --cover-ink: #fff8ef; --cover-muted: rgba(255, 248, 239, 0.82); --cover-chip: rgba(255, 248, 239, 0.16); --cover-stroke: rgba(255, 248, 239, 0.26)">
+  <div class="note-cover-mesh"></div>
+  <div class="note-cover-title-shell">
+    <h1 class="note-cover-title">Are Vision-Language-Action Models Robust to One-Step Observation Perturbations?</h1>
+  </div>
+</article></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Are Vision-Language-Action Models Robust to One-Step Observation Perturbations?</h1>
+            <div class="detail-meta">2026-09-26 · <a href="http://arxiv.org/abs/2609.32550" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.32550" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.32550</span></div>
+            <p class="detail-summary">研究了视觉-语言-动作（VLA）模型对单步观测扰动（one-step perturbations）的鲁棒性，揭示了 momentarily observation corruption（短暂观测损坏）这一被忽视的安全威胁 通过系统实验发现，单步扰动在关键时间步施加时会导致现有VLA模型性能严重下降，且影响程度取决于动作块执行长度（action execution length） 提出了 CARE（Consisten…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Science Tokyo（东京科学大学）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.32550/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">研究了视觉-语言-动作（VLA）模型对单步观测扰动（one-step perturbations）的鲁棒性，揭示了 momentarily o…</p>
+  <ul class="reading-intro-points"><li>研究了视觉-语言-动作（VLA）模型对单步观测扰动（one-step perturbations）的鲁棒性，揭示了 momentarily o…</li><li>通过系统实验发现，单步扰动在关键时间步施加时会导致现有VLA模型性能严重下降，且影响程度取决于动作块执行长度（action execution…</li><li>提出了 CARE（Consistency-Aware Robust Execution length selection）方法，通过动态调整执…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Science Tokyo</strong>（东京科学大学）</li><li><strong>RIKEN</strong>（日本理化学研究所）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>研究了<strong>视觉-语言-动作（VLA）模型</strong>对<strong>单步观测扰动</strong>（one-step perturbations）的鲁棒性，揭示了 momentarily observation corruption（短暂观测损坏）这一被忽视的安全威胁</li><li>通过系统实验发现，单步扰动在关键时间步施加时会导致现有VLA模型性能严重下降，且影响程度取决于<strong>动作块执行长度</strong>（action execution length）</li><li>提出了 <strong>CARE</strong>（Consistency-Aware Robust Execution length selection）方法，通过动态调整执行长度来平衡鲁棒性与任务性能，无需额外训练或推理成本</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次对VLA模型在单步扰动下的鲁棒性进行了系统性研究，揭示了多种VLA模型在临界时刻遭受严重性能下降的问题</li><li>分析发现<strong>更长的动作块执行长度会放大单步扰动的影响</strong>，因为一次错误的预测会导致连续多步执行错误动作</li><li>提出CARE方法，基于当前动作块与前一预测未执行部分的一致性来<strong>动态选择执行长度</strong>，在检测到不稳定时自动缩短执行长度</li><li>该方法<strong>无需额外训练、无需额外策略推理、无需修改模型架构</strong>，具有广泛适用性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>一致性检测框架</strong>：在每一步推理时，将当前预测的动作块 $\mathbf{A}_t^{1:H}$ 与前一动作块的未执行部分 $\mathbf{A}_{t-H_{\text{prev}}}^{H_{\text{prev}}+1:H_{\text{prev}}+H}$ 进行比较</li><li><strong>差异函数设计</strong>：使用<strong>归一化欧氏距离</strong>计算每步动作差异 $r_i$，并通过<strong>折扣累积和</strong> $D(\mathbf{A}_t^{1:H}, \hat{\mathbf{A}}^{1:H}) = \sum_{i=0}^{H-1} \gamma^i r_i$ 衡量整体差异，其中折扣因子 $\gamma=0.85$</li><li><strong>自适应执行长度选择</strong>：当差异超过阈值 $\tau$ 时选择较短的执行长度，否则选择最大允许长度 $H_{\text{max}} = \lfloor K/2 \rfloor$，从而在清洁观测下保持高性能，在扰动下限制错误传播</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>基准数据集</strong>：<strong>LIBERO</strong>（40个任务，涵盖四个任务套件）和 <strong>Meta-World</strong> 基准</li><li><strong>评估模型</strong>：<strong>$\pi_0$</strong>、<strong>$\pi_0$-FAST</strong>、<strong>$\pi_{0.5}$</strong>、<strong>SmolVLA</strong>、<strong>X-VLA</strong> 五种VLA模型</li><li><strong>扰动类型</strong>：8种单步扰动，分为三类：</li></ul>
+<p> - 图像输入扰动：过曝（Overexposure）、黑屏（Blackout）、运动模糊（Motion blur）、丢包（Packet loss）</p>
+<p> - 状态输入扰动：零填充（Zero fill）、状态尖峰（State spike）、随机状态（Random state）</p>
+<p> - 图像+状态扰动：数据丢失（Data loss）</p></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估指标</strong>：采用 <strong>Bottom10%-SR</strong>（最低10%干预步骤的平均成功率）来评估最脆弱时刻的性能，以及清洁环境下的任务成功率</li><li><strong>关键发现</strong>：</li></ul>
+<p> - 每个评估模型在至少一种扰动下，Bottom10%-SR 相比清洁成功率下降超过 <strong>50个百分点</strong></p>
+<p> - $\pi_0$-FAST 和 SmolVLA 对图像扰动特别敏感，而 $\pi_0$ 和 X-VLA 对状态扰动尤其脆弱</p>
+<p> - 执行长度 $H$ 越大，清洁性能与扰动下性能的差距越明显，验证了执行长度放大扰动效应的假设</p>
+<ul><li><strong>CARE效果</strong>：在LIBERO基准上，CARE显著提升了所有模型在扰动下的Bottom10%-SR（如$\pi_0$在Data loss下从7.4%提升至53.5%），同时基本保持了清洁任务性能，且计算开销极低</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.32634/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">PF-RL: Progress Field Reinforcement Learning via Goal-Conditioned Value Geometry for Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.32253/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">DS-VLA: A Dendritic-inspired Vision-Language-Action Model for Robust Action Control</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

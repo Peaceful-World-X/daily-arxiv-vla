@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Where Memory Belongs: Ledger, an Object Ledger for Memory-Augmented VLAs - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="解决长期、部分可观察的机器人操作记忆问题，提出记忆类型决定存储位置：短期感知记忆（如重复、时序）应放在策略内部，长期对象记忆（如空间状态、事件历史）应作为显式记录放在策略外部。 设计了一种名为 Ledger 的框架，通过组合内部帧采样记忆和外部时空对象分类账，使单一微调的 π₀.₅ 策略能够处理多种记忆需求。 在 RoboMME 基准上达到 64.3% 的平均成功率（此前最强方法为 45.9%），尤其在对象参考和对…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.34554">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><article class="note-cover note-cover-title-only" style="--cover-from: #ef6c3f; --cover-to: #f6b13d; --cover-spot: #ffd59c; --cover-ink: #fff8ef; --cover-muted: rgba(255, 248, 239, 0.82); --cover-chip: rgba(255, 248, 239, 0.16); --cover-stroke: rgba(255, 248, 239, 0.26)">
+  <div class="note-cover-mesh"></div>
+  <div class="note-cover-title-shell">
+    <h1 class="note-cover-title">Where Memory Belongs: Ledger, an Object Ledger for Memory-Augmented VLAs</h1>
+  </div>
+</article></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Where Memory Belongs: Ledger, an Object Ledger for Memory-Augmented VLAs</h1>
+            <div class="detail-meta">2026-09-28 · <a href="http://arxiv.org/abs/2609.34554" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.34554" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.34554</span></div>
+            <p class="detail-summary">解决长期、部分可观察的机器人操作记忆问题，提出记忆类型决定存储位置：短期感知记忆（如重复、时序）应放在策略内部，长期对象记忆（如空间状态、事件历史）应作为显式记录放在策略外部。 设计了一种名为 Ledger 的框架，通过组合内部帧采样记忆和外部时空对象分类账，使单一微调的 π₀.₅ 策略能够处理多种记忆需求。 在 RoboMME 基准上达到 64.3% 的平均成功率（此前最强方法为 45.9%），尤其在对象参考和对…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Harvard University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.34554/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">解决长期、部分可观察的机器人操作记忆问题，提出记忆类型决定存储位置：短期感知记忆（如重复、时序）应放在策略内部，长期对象记忆（如空间状态、事件…</p>
+  <ul class="reading-intro-points"><li>解决长期、部分可观察的机器人操作记忆问题，提出记忆类型决定存储位置：短期感知记忆（如重复、时序）应放在策略内部，长期对象记忆（如空间状态、事件…</li><li>设计了一种名为 Ledger 的框架，通过组合内部帧采样记忆和外部时空对象分类账，使单一微调的 π₀.₅ 策略能够处理多种记忆需求。</li><li>在 RoboMME 基准上达到 64.3% 的平均成功率（此前最强方法为 45.9%），尤其在对象参考和对象持久性任务上提升显著。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Harvard University</strong></li><li><strong>ETH Zürich</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>解决长期、部分可观察的机器人操作记忆问题，提出记忆类型决定存储位置：短期感知记忆（如重复、时序）应放在策略内部，长期对象记忆（如空间状态、事件历史）应作为显式记录放在策略外部。</li><li>设计了一种名为 <strong>Ledger</strong> 的框架，通过组合内部帧采样记忆和外部时空对象分类账，使单一微调的 <strong>π₀.₅</strong> 策略能够处理多种记忆需求。</li><li>在 <strong>RoboMME</strong> 基准上达到 <strong>64.3%</strong> 的平均成功率（此前最强方法为 <strong>45.9%</strong>），尤其在对象参考和对象持久性任务上提升显著。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>记忆归属原则</strong>：明确区分记忆类型，将世界状态长期记忆置于策略外部，将感知短期记忆保留在策略内部。</li><li><strong>Ledger 框架</strong>：通过 <strong>SAM3</strong> 对象跟踪器、<strong>VLM</strong> 描述演示、<strong>LLM</strong> 在步骤边界决策，实现显式的外部对象为中心的时空记忆。</li><li><strong>统一策略与运行时路由</strong>：单一策略权重通过任务条件子目标丢弃课程训练，使其能同时处理来自分类账的接地目标或依赖自身帧记忆，无需任务级路由器。</li><li><strong>步骤边界决策</strong>：基于本体感知判断步骤完成，并由高阶策略（LLM）在离散步骤边界进行重规划，提高稳定性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>长期记忆（分类账）</strong>：使用 <strong>SAM3</strong> 跟踪每个对象轨迹，记录位置、静止区间、覆盖时间戳，并结合几何共位规则进行空间推理；当有演示视频时，用 <strong>Qwen3-VL-30B</strong> 生成动作描述文本；<strong>Claude Sonnet 5</strong> 作为高阶策略读取分类账并在步骤边界生成子目标。</li><li><strong>短期记忆（策略内部）</strong>：低阶控制策略基于 <strong>π₀.₅</strong>，通过均匀采样历史帧并使用跨注意力特征调制，记忆最近的观察和动作。</li><li><strong>统一训练与决策</strong>：采用任务条件子目标丢弃课程训练低阶策略，使其在有无接地子目标两种输入下均保持分布内；高阶策略可主动选择是否将控制权交给策略内部记忆。</li><li><strong>步骤完成检测</strong>：通过机器人本体感知（如夹爪开合状态）判断步骤结束，避免依赖视觉或VLM评估器，减少误触发和干扰。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：<strong>RoboMME</strong> 基准，包含 16 个任务，分为四个记忆测试套件（计数、持久性、参考、模仿），使用官方测试分割进行评估。</li><li><strong>模型规模与组件</strong>：</li></ul>
+<p> - 低阶策略基于 <strong>π₀.₅</strong> 进行微调。</p>
+<p> - 视觉跟踪使用 <strong>SAM3</strong>。</p>
+<p> - 视频描述使用 <strong>Qwen3-VL-30B</strong>。</p>
+<p> - 高阶规划使用 <strong>Claude Sonnet 5</strong>。</p>
+<ul><li><strong>训练资源</strong>：低阶策略微调至 <strong>80k</strong> 步。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估基准</strong>：<strong>RoboMME</strong> 测试集，每个任务 50 集，3 个随机种子，与基准方法（FrameSamp+Modul, MemER）和消融实验（Tracker-only）进行比较。</li><li><strong>主要指标</strong>：成功率和四套件平均成功率。</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - <strong>Ledger</strong> 四套件平均成功率为 <strong>64.3%</strong>，优于所有其他评估方法（FrameSamp+Modul 为 45.9%，MemER 为 43.3%）。</p>
+<p> - <strong>Ledger</strong> 在对象持久性上达 <strong>86.7%</strong>（对比 MemER 的 56.2%），在对象参考上达 <strong>60.7%</strong>（对比 MemER 的 40.3%）。</p>
+<p> - 在计数和模仿套件上，<strong>Ledger</strong> 性能接近于专为该套件优化的最强策略，验证了其统一策略的有效性。</p>
+<p> - 高阶策略在运行时能根据指令和分类账自主决定何时使用外部记忆或策略内部记忆，无需任务级路由器。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.34561/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Brain-Conditioned Action Policies for Neural Motor Decoding</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.34550/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Gaze Prompts: Temporally Dense Human Attention for Vision-Language-Action Fine-Tuning</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

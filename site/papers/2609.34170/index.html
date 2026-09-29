@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RAVEL: Asynchronous Rolling Inference for Flow-Based Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 RAVEL，一个面向流式视觉-语言-动作模型的异步滚动推理框架，旨在解决现有流式 VLA 模型中 VLM 编码 与 多步动作生成 带来的高延迟瓶颈 通过解耦昂贵的 VLM 编码与动作生成过程，并引入轻量级快速观察通路，实现对动态环境的低延迟、高频率响应 在保持甚至提升基础模型操作能力的同时，显著降低观察-指令响应延迟，并生成更平滑的运动轨迹" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.34170">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><article class="note-cover note-cover-title-only" style="--cover-from: #ef6c3f; --cover-to: #f6b13d; --cover-spot: #ffd59c; --cover-ink: #fff8ef; --cover-muted: rgba(255, 248, 239, 0.82); --cover-chip: rgba(255, 248, 239, 0.16); --cover-stroke: rgba(255, 248, 239, 0.26)">
+  <div class="note-cover-mesh"></div>
+  <div class="note-cover-title-shell">
+    <h1 class="note-cover-title">RAVEL: Asynchronous Rolling Inference for Flow-Based Vision-Language-Action Models</h1>
+  </div>
+</article></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RAVEL: Asynchronous Rolling Inference for Flow-Based Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-09-28 · <a href="http://arxiv.org/abs/2609.34170" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.34170" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.34170</span></div>
+            <p class="detail-summary">提出 RAVEL，一个面向流式视觉-语言-动作模型的异步滚动推理框架，旨在解决现有流式 VLA 模型中 VLM 编码 与 多步动作生成 带来的高延迟瓶颈 通过解耦昂贵的 VLM 编码与动作生成过程，并引入轻量级快速观察通路，实现对动态环境的低延迟、高频率响应 在保持甚至提升基础模型操作能力的同时，显著降低观察-指令响应延迟，并生成更平滑的运动轨迹</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Zhejiang University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.34170/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 RAVEL，一个面向流式视觉-语言-动作模型的异步滚动推理框架，旨在解决现有流式 VLA 模型中 VLM 编码 与 多步动作生成 带来的…</p>
+  <ul class="reading-intro-points"><li>提出 RAVEL，一个面向流式视觉-语言-动作模型的异步滚动推理框架，旨在解决现有流式 VLA 模型中 VLM 编码 与 多步动作生成 带来的…</li><li>通过解耦昂贵的 VLM 编码与动作生成过程，并引入轻量级快速观察通路，实现对动态环境的低延迟、高频率响应</li><li>在保持甚至提升基础模型操作能力的同时，显著降低观察-指令响应延迟，并生成更平滑的运动轨迹</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Zhejiang University</strong></li><li><strong>Nanyang Technological University</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>RAVEL</strong>，一个面向流式视觉-语言-动作模型的异步滚动推理框架，旨在解决现有流式 VLA 模型中 <strong>VLM 编码</strong> 与 <strong>多步动作生成</strong> 带来的高延迟瓶颈</li><li>通过解耦昂贵的 VLM 编码与动作生成过程，并引入轻量级快速观察通路，实现对动态环境的低延迟、高频率响应</li><li>在保持甚至提升基础模型操作能力的同时，显著降低观察-指令响应延迟，并生成更平滑的运动轨迹</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>RAVEL</strong> 异步推理框架，首次将 VLM 上下文编码与动作生成解耦，使动作专家可持续运行，无需等待 VLM 编码完成</li><li>设计 <strong>偏移感知的滚动流去噪机制</strong>，通过滚动动作缓冲和时间偏移条件化，让近期动作经一次去噪即可执行，并补偿推理延迟</li><li>引入 <strong>轻量级快速观察通路</strong>，将当前视觉与本体感受特征直接注入动作专家，使下一步动作能对最新观察做出及时响应</li><li>在仿真与真实世界实验中，证明 <strong>RAVEL</strong> 在静态、动态操作和球拍击球等任务中，大幅降低响应延迟，提升成功率与动作平滑度</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>维护一个 <strong>包含不同噪声水平的滚动动作缓冲</strong>，每一步将缓冲区整体去噪一步，释放第一个清洁动作，并追加新噪声动作，使得每个动作在执行前经过 K 步渐进细化</li><li><strong>异步上下文更新</strong>：VLM 编码慢于单步动作去噪，因此将其放在独立进程中异步更新，动作专家始终使用最新可用的 VLM 上下文；同时将上下文年龄编码为归一化时间偏移，作为动作专家的额外条件</li><li><strong>快速观察通路</strong>：通过轻量图像编码器和本体状态投影，生成当前时刻的特征，经门控交叉注意力注入动作专家层，使动作预测融合最新的视觉信息</li><li>训练阶段模拟推理时的偏移分布，使用与滚动缓冲一致的噪声调度和偏移条件进行流式对齐训练</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>LIBERO</strong>、<strong>RoboTwin 2.0</strong>、<strong>Dynamic Object Manipulation 基准</strong></li><li>基础模型：<strong>π₀.₅</strong> 和 <strong>X-VLA</strong>，保持视觉-语言骨干冻结，只微调动作专家及相关模块</li><li>缓冲区长度 K=10，总动作地平线 H=Kh</li><li>训练与推理资源：NVIDIA <strong>RTX 4090</strong> 和 <strong>RTX 5090</strong> GPU</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>同步仿真评测</strong>：在 LIBERO 和 RoboTwin 2.0 上，RAVEL 维持或轻微提升任务成功率；首个动作延迟降低 2.59–2.92 倍</li><li><strong>异步仿真评测</strong>：在动态对象操作基准上，RAVEL 任务成功率达 44.06%，添加 FOP 后提升至 46.94%，且任务完成时间最短</li><li><strong>真实世界评测</strong>：乒乓球回球任务成功率达 <strong>90%</strong>，观察年龄中位数仅 <strong>121.76 ms</strong>；网球抓取任务保持成功率的同时，高频轨迹振荡和加加速度明显低于所有基线</li><li><strong>消融分析</strong>：验证了滚动去噪、偏移条件化和 FOP 各自的重要性，以及时间偏移偏置对补偿真实机器人执行延迟的有效性</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.34175/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">FailPatch: Failure Residual Patching for Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.34061/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Quantile Head for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

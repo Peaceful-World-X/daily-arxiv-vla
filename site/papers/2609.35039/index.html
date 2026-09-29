@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Do Not Cut When Uncertain: Rejectable and Calibrated Decision Heads for VLA Policies in Robotic Harvesting - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 SeeReach-VLA，一种 符号感知 的边缘部署视觉-语言-动作（VLA）模型，专门针对 葡萄园藤架遮挡环境下的采摘 任务 解决现有 VLA 模型在遮挡场景中的结构性故障：将遮挡视为需过滤的噪声，并假设接近目标总是有益的 基于伴随论文的理论分析，揭示接近目标的效应存在 三种机制（改善/恶化/无遮挡），且存在不连续的关键距离 d*，需将其作为明确的离散分类任务来学习" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.35039">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.35039.webp" alt="Do Not Cut When Uncertain: Rejectable and Calibrated Decision Heads for VLA Policies in Robotic Harvesting" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 SeeReach-VLA，一种 符号感知 的边缘部署视觉-语言-动作（VLA）模型，专门针对 葡萄园藤架遮挡环境下的采摘 任务</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Do Not Cut When Uncertain: Rejectable and Calibrated Decision Heads for VLA Policies in Robotic Harvesting</h1>
+            <div class="detail-meta">2026-09-28 · <a href="http://arxiv.org/abs/2609.35039" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.35039" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.35039</span></div>
+            <p class="detail-summary">提出 SeeReach-VLA，一种 符号感知 的边缘部署视觉-语言-动作（VLA）模型，专门针对 葡萄园藤架遮挡环境下的采摘 任务 解决现有 VLA 模型在遮挡场景中的结构性故障：将遮挡视为需过滤的噪声，并假设接近目标总是有益的 基于伴随论文的理论分析，揭示接近目标的效应存在 三种机制（改善/恶化/无遮挡），且存在不连续的关键距离 d*，需将其作为明确的离散分类任务来学习</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者 Heng Zhang，论文中未明确列出所属机构</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.35039/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 SeeReach-VLA，一种 符号感知 的边缘部署视觉-语言-动作（VLA）模型，专门针对 葡萄园藤架遮挡环境下的采摘 任务</p>
+  <ul class="reading-intro-points"><li>提出 SeeReach-VLA，一种 符号感知 的边缘部署视觉-语言-动作（VLA）模型，专门针对 葡萄园藤架遮挡环境下的采摘 任务</li><li>解决现有 VLA 模型在遮挡场景中的结构性故障：将遮挡视为需过滤的噪声，并假设接近目标总是有益的</li><li>基于伴随论文的理论分析，揭示接近目标的效应存在 三种机制（改善/恶化/无遮挡），且存在不连续的关键距离 d*，需将其作为明确的离散分类任务来学习</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者 <strong>Heng Zhang</strong>，论文中未明确列出所属机构</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>SeeReach-VLA</strong>，一种 <strong>符号感知</strong> 的边缘部署视觉-语言-动作（VLA）模型，专门针对 <strong>葡萄园藤架遮挡环境下的采摘</strong> 任务</li><li>解决现有 VLA 模型在遮挡场景中的结构性故障：将遮挡视为需过滤的噪声，并假设接近目标总是有益的</li><li>基于伴随论文的理论分析，揭示接近目标的效应存在 <strong>三种机制</strong>（改善/恶化/无遮挡），且存在不连续的关键距离 <strong>d</strong>*，需将其作为明确的离散分类任务来学习</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>符号感知 VLA 架构</strong>：首次将接近效应的方向（符号）作为可学习的 <strong>离散分类任务</strong>，并通过门控机制耦合到动作生成中</li><li><strong>理论指导的数据采样</strong>：利用伴随论文的分析标准，识别 <strong>符号模糊带</strong>（围绕临界距离 d*），并集中采样训练数据，替代随机数据增强</li><li><strong>边缘部署系统</strong>：针对 <strong>Jetson 级别硬件</strong> 设计，采用 <strong>异步双分支架构</strong>（低频符号与意图分支 + 高频动作分支）</li><li><strong>Pareto 前沿评估</strong>：在 <strong>收获成功率与边缘推理延迟</strong> 的 Pareto 前沿上，与标准、主动视觉和指令感知 VLA 基线对比，并进行组件消融实验</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>问题背景</strong>：四足移动机械臂在藤架处进行采摘，需在有限的动作选项中选择（如稳定靠近、倾斜够取、重定位底座等），切割动作不可逆</li><li><strong>架构组成</strong>：</li></ul>
+<p> - <strong>视觉编码器</strong>：从 RGB-D 输入提取全局特征与空间令牌，适配 Jetson 级硬件</p>
+<p> - <strong>符号分类头</strong>：输出接近效应三分类（接近有益/接近有害/符号模糊），使用来自模拟或真实多视角重建的辅助标签进行训练</p>
+<p> - <strong>双流动作解码器</strong>：分别为四足和机械臂生成动作，由符号分类输出通过 <strong>门控机制</strong> 对动作分布进行调制</p>
+<ul><li><strong>关键技术创新</strong>：</li></ul>
+<p> - 将接近效应的符号作为 <strong>明确的离散分类</strong> 而非连续回归，以表示理论上的不连续性</p>
+<p> - <strong>符号门控动作生成</strong>：根据符号分类的信心度（有益概率 - 有害概率）来偏置动作选择，鼓励或抑制前进运动</p>
+<p> - <strong>边界聚焦采样</strong>：在训练时于符号模糊带（相机-目标距离在 d* 的 (1±ε) 倍内）进行过采样，提升边界区分的样本效率</p>
+<p> - <strong>边缘异步部署</strong>：低频分支（1-2 Hz）运行编码器和符号分类，高频分支（10-30 Hz）运行动作解码器，满足实时控制需求</p></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据来源</strong>：基于伴随论文的多视图真实数据（用于校准）和模拟环境（用于训练）</li><li><strong>模拟环境</strong>：包含四足机器人、6-DoF 机械臂、藤架、可控合成叶片与遮挡关系</li><li><strong>边缘硬件</strong>：<strong>Jetson Orin NX</strong></li><li>论文未明确说明模型参数量，但对比基线包括 <strong>TinyVLA (0.64B)</strong>、<strong>SwiftVLA (0.5B)</strong> 等轻量级模型</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：模拟藤架采摘环境，配合真实多视图数据校准的感知模型</li><li><strong>主要评估指标</strong>：<strong>采摘成功率</strong>、<strong>未损坏率</strong>、<strong>平均周期时间</strong>、<strong>边缘推理延迟</strong>（高/低频分支）、<strong>符号分类准确率</strong></li><li><strong>基线方法</strong>：<strong>SmolVLA</strong>、<strong>TinyVLA</strong>（标准 VLA）、<strong>ActiveVLA</strong>（主动视觉 VLA）、<strong>Mind-VLA</strong>（指令感知 VLA）及无门控、无符号头、均匀采样的消融变体</li><li><strong>关键实验设计</strong>：</li></ul>
+<p> - 验证符号分类头的准确率（<strong>E1</strong>）</p>
+<p> - 在符号模糊带（d* 附近）验证性能优势（<strong>E2</strong>）</p>
+<p> - 验证远离模糊带时性能不退化（<strong>E3</strong>）</p>
+<p> - 通过消融实验验证门控机制（<strong>E4</strong>）、符号头（<strong>E5</strong>）、边界采样策略（<strong>E7</strong>）的必要性</p>
+<p> - 对比离散分类与连续回归变体，证明离散建模的更优性（<strong>E6</strong>）</p>
+<p> - 验证异步双分支架构在 Jetson Orin NX 上的实时性约束（<strong>E8</strong>）</p>
+<p> - 硬件可行性测试与跨栽培品种迁移实验（<strong>E9</strong>, <strong>E10</strong>）</p>
+<ul><li><strong>预设假设</strong>：</li></ul>
+<p> - <strong>H1</strong>：符号分类准确率高于随机水平，且在符号模糊带附近准确率最低</p>
+<p> - <strong>H2</strong>：在 d* 附近成功率显著超越基线，在非边界区域持平</p>
+<p> - <strong>H3</strong>：连续回归变体的成功率低于离散分类方法</p>
+<p> - <strong>H4</strong>：边界聚焦采样比均匀采样具有更高的样本效率</p>
+<p> - <strong>H5</strong>：边缘部署满足实时性（高频分支 > 10 Hz，低频分支 > 1 Hz）</p>
+<p> - <strong>H6</strong>：跨栽培品种迁移无需重新训练，仅在模糊带性能有所退化</p>
+<ul><li>论文结尾注明，最终结果将在定稿版中报告</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.35078/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">RefineDrive: Reliable Failure-Guided Learning for Vision-Language-Action Driving</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.35003/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Learning to Act under Visual Interruptions with Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

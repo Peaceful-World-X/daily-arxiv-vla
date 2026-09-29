@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CrossSafe: Towards Cross-Embodiment Latent Safety Filters - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对跨不同形态机器人的操作任务，现有安全过滤方法无法实现跨具身泛化、同一动作在不同具身上安全性差异大的问题，提出跨具身潜在安全过滤器框架CrossSafe 基于跨具身学习的安全推理共性假设：障碍检测、避让决策等安全推理在不同机器人上高度共享，差异仅在于抽象安全动作的具体实现受机器人形态、运动学、动力学影响 研究目标是通过在潜在空间开展Hamilton-Jacobi（HJ）可达性分析，实现单个安全过滤器跨不同具身零样…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.28984">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><article class="note-cover note-cover-title-only" style="--cover-from: #6f4cc9; --cover-to: #c57be8; --cover-spot: #efd9ff; --cover-ink: #fdf7ff; --cover-muted: rgba(253, 247, 255, 0.82); --cover-chip: rgba(253, 247, 255, 0.16); --cover-stroke: rgba(253, 247, 255, 0.24)">
+  <div class="note-cover-mesh"></div>
+  <div class="note-cover-title-shell">
+    <h1 class="note-cover-title">CrossSafe: Towards Cross-Embodiment Latent Safety Filters</h1>
+  </div>
+</article></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">CrossSafe: Towards Cross-Embodiment Latent Safety Filters</h1>
+            <div class="detail-meta">2026-09-24 · <a href="http://arxiv.org/abs/2609.28984" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.28984" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.28984</span></div>
+            <p class="detail-summary">针对跨不同形态机器人的操作任务，现有安全过滤方法无法实现跨具身泛化、同一动作在不同具身上安全性差异大的问题，提出跨具身潜在安全过滤器框架CrossSafe 基于跨具身学习的安全推理共性假设：障碍检测、避让决策等安全推理在不同机器人上高度共享，差异仅在于抽象安全动作的具体实现受机器人形态、运动学、动力学影响 研究目标是通过在潜在空间开展Hamilton-Jacobi（HJ）可达性分析，实现单个安全过滤器跨不同具身零样…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者隶属于华盛顿大学圣路易斯分校计算机科学与工程系，联系邮箱为{i.k.tabbara, y.yu…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.28984/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对跨不同形态机器人的操作任务，现有安全过滤方法无法实现跨具身泛化、同一动作在不同具身上安全性差异大的问题，提出跨具身潜在安全过滤器框架Cro…</p>
+  <ul class="reading-intro-points"><li>针对跨不同形态机器人的操作任务，现有安全过滤方法无法实现跨具身泛化、同一动作在不同具身上安全性差异大的问题，提出跨具身潜在安全过滤器框架Cro…</li><li>基于跨具身学习的安全推理共性假设：障碍检测、避让决策等安全推理在不同机器人上高度共享，差异仅在于抽象安全动作的具体实现受机器人形态、运动学、动…</li><li>研究目标是通过在潜在空间开展Hamilton-Jacobi（HJ）可达性分析，实现单个安全过滤器跨不同具身零样本泛化，同时显式适配每个机器人的…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者隶属于<strong>华盛顿大学圣路易斯分校计算机科学与工程系</strong>，联系邮箱为{i.k.tabbara, y.yuxuan, sibai}@wustl.edu</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对跨不同形态机器人的操作任务，现有安全过滤方法无法实现跨具身泛化、同一动作在不同具身上安全性差异大的问题，提出跨具身潜在安全过滤器框架<strong>CrossSafe</strong></li><li>基于跨具身学习的安全推理共性假设：障碍检测、避让决策等安全推理在不同机器人上高度共享，差异仅在于抽象安全动作的具体实现受机器人形态、运动学、动力学影响</li><li>研究目标是通过在潜在空间开展Hamilton-Jacobi（HJ）可达性分析，实现单个安全过滤器跨不同具身零样本泛化，同时显式适配每个机器人的形态与运动学特征</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次提出跨具身联合训练的潜在安全过滤框架，包含共享的HJ可达性安全评论家与安全策略，支持不同自由度的双臂机器人具身泛化</li><li>设计形态感知的潜在状态表示方案，包含三个关键模块：冻结的预训练<strong>HoloBrain-0</strong>编码器、安全相关特征增强、几何感知操纵器-场景交叉注意力，实现安全概念的跨具身共享与具身特定安全信息的保留</li><li>在<strong>RoboTwin 2.0</strong>仿真环境的5种双臂具身、5种操作任务上验证，证明单个联合训练的过滤器可零样本泛化到训练时未出现的具身，显著降低标称控制器的碰撞率</li><li>消融实验验证安全特征增强和几何感知注意力是提升跨具身泛化性能的核心组件，两者结合时性能最优</li><li>对比实验证明CrossSafe在碰撞率、任务成功率、干预率、接触力等核心指标上均优于同类型跨具身安全过滤基线<strong>X-VLA-Safe</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体采用基于Hamilton-Jacobi（HJ）可达性的安全过滤范式，包含共享的HJ安全评论家$Q_\theta$和安全策略$\pi_\phi^{\text{safe}}$，两者均作用于形态感知的潜在状态输入</li><li>基础编码模块采用冻结的预训练HoloBrain-0，从多视角RGB-D图像、关节角度、夹爪状态等观测中提取场景令牌（编码环境信息）和每链接机器人令牌（编码机器人运动学结构）</li><li>安全特征增强：为每个链接令牌补充16维安全相关特征，包括链接线/角速度、归一化运动树深度、臂身份、归一化夹爪开度等，通过两层MLP与原始HoloBrain-0令牌融合，解决HoloBrain-0未显式编码运动学速度的问题</li><li>几何感知交叉注意力：在标准交叉注意力得分中加入链接到场景块的3D距离与方向的可学习偏置，让链接令牌能同时融合场景语义特征和空间几何关系，通过3层包含交叉注意力、自注意力、前馈网络的Transformer块输出最终潜在状态</li><li>跨具身适配的评论家与策略：评论家通过额外2个Transformer块融合候选关节角位移对链接位姿的影响，输出每个链接的安全得分后经软最小聚合得到整体安全值；策略直接输出关节角位移（而非末端执行器位姿增量），通过各关节速度限制缩放动作，适配不同自由度的具身</li><li>核心创新是通过潜在空间的HJ可达性分析与形态感知表示设计，实现安全推理的跨具身共享，同时保留具身特定的安全控制所需信息</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用仿真环境<strong>RoboTwin 2.0</strong>，包含5种双臂机器人具身：Piper、Franka-Panda、ARX-X5、UR5-WSG、Aloha-AgileX，其中Franka-Panda每臂7自由度，其余4种每臂6自由度</li><li>涵盖5种操作任务：放置面包到篮子、放置容器到盘子、堆叠两个方块、放置汉堡与薯条、堆叠两个碗，所有任务场景中统一添加静态障碍物</li><li>训练资源：每个模型在<strong>1块48GB显存的NVIDIA A40 GPU</strong>上训练2天，搭配8核CPU和48GB系统内存</li><li>推理效率：预训练的HoloBrain-0编码器单控制步推理耗时59.8±1.4ms，新增可训练模块耗时13.1±0.3ms，完整流水线总推理耗时73.0±1.9ms，满足25Hz实时控制频率要求</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估设置：采用5折留一具身出交叉验证，每个模型在4个具身上训练，在训练具身（分布内InD）和未训练的held-out具身（分布外OOD）上评估，每个任务-具身对测试50个episode，总计5000个InD episode和1250个OOD episode</li><li>对比基线：无安全过滤的标称控制器、3个CrossSafe消融版本（去掉安全特征增强、去掉几何感知注意力、两者均去掉）、基于X-VLA编码器的<strong>X-VLA-Safe</strong>跨具身安全过滤基线</li><li>核心评估指标：碰撞率（CR，越低越好）、任务成功率（SR，越高越好）、安全过滤器干预率（IR）、机器人/抓取物体与障碍物的接触力（Force，越低越好）</li><li>关键实验结果：</li></ul>
+<p> - 单个CrossSafe过滤器在4个具身上联合训练后，可零样本泛化到未见过的第5个具身，将标称控制器的OOD碰撞率从64.1%降低到49.8%，同时保持23.7%的OOD任务成功率</p>
+<p> - CrossSafe在所有指标上均优于X-VLA-Safe基线：OOD碰撞率低4.0%（53.8% vs 49.8%），OOD任务成功率高12.7%（16.7% vs 29.4%），接触力低144.1N（247.0N vs 102.9N）</p>
+<p> - 消融实验表明：同时保留安全特征增强和几何感知注意力的完整CrossSafe性能最优，移除任一组件都会导致OOD碰撞率上升、任务成功率下降</p>
+<p> - 用4个具身训练的通用模型比仅用1个具身训练的专业模型在OOD具身上的泛化性能更优，同时分布内（InD）性能无明显下降</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.29204/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.28955/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">ActGaze: Learning Action-Grounded Gaze through Counterfactual Visual Interventions for High-Precision Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
