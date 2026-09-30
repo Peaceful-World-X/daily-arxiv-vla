@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Speed in the Blind Spot: An Interpretability Analysis of Dynamic Perception in VLMs for Autonomous Driving - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="研究自动驾驶中视觉语言模型（VLMs）对动态状态（特别是速度）的感知与表征能力，通过控制性诊断任务分离编码、语言表达和时序推理三个层面的问题 指出即使模型能输出看似合理的规划结果，并不保证其真正恢复或可靠利用了底层的动态状态信息 通过周围车辆速度估计、当前自车速度检测和未来自车速度预测三个任务，系统揭示了 VLMs 在速度感知上的盲点与失败模式" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.37046">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.37046.webp" alt="Speed in the Blind Spot: An Interpretability Analysis of Dynamic Perception in VLMs for Autonomous Driving" loading="lazy" />
+  <figcaption class="paper-figure-caption">研究自动驾驶中视觉语言模型（VLMs）对动态状态（特别是速度）的感知与表征能力，通过控制性诊断任务分离编码、语言表达和时序推理三个层面的问题</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Speed in the Blind Spot: An Interpretability Analysis of Dynamic Perception in VLMs for Autonomous Driving</h1>
+            <div class="detail-meta">2026-09-29 · <a href="http://arxiv.org/abs/2609.37046" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.37046" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.37046</span></div>
+            <p class="detail-summary">研究自动驾驶中视觉语言模型（VLMs）对动态状态（特别是速度）的感知与表征能力，通过控制性诊断任务分离编码、语言表达和时序推理三个层面的问题 指出即使模型能输出看似合理的规划结果，并不保证其真正恢复或可靠利用了底层的动态状态信息 通过周围车辆速度估计、当前自车速度检测和未来自车速度预测三个任务，系统揭示了 VLMs 在速度感知上的盲点与失败模式</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者均来自 Munich University of Applied Sciences, Inte…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.37046/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">研究自动驾驶中视觉语言模型（VLMs）对动态状态（特别是速度）的感知与表征能力，通过控制性诊断任务分离编码、语言表达和时序推理三个层面的问题</p>
+  <ul class="reading-intro-points"><li>研究自动驾驶中视觉语言模型（VLMs）对动态状态（特别是速度）的感知与表征能力，通过控制性诊断任务分离编码、语言表达和时序推理三个层面的问题</li><li>指出即使模型能输出看似合理的规划结果，并不保证其真正恢复或可靠利用了底层的动态状态信息</li><li>通过周围车辆速度估计、当前自车速度检测和未来自车速度预测三个任务，系统揭示了 VLMs 在速度感知上的盲点与失败模式</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者均来自 <strong>Munich University of Applied Sciences, Intelligent Vehicles Lab (IVL)</strong>，德国慕尼黑</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>研究自动驾驶中视觉语言模型（VLMs）对动态状态（特别是速度）的感知与表征能力，通过控制性诊断任务分离编码、语言表达和时序推理三个层面的问题</li><li>指出即使模型能输出看似合理的规划结果，并不保证其真正恢复或可靠利用了底层的动态状态信息</li><li>通过周围车辆速度估计、当前自车速度检测和未来自车速度预测三个任务，系统揭示了 VLMs 在速度感知上的盲点与失败模式</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出一套受控评估协议，针对三个速度相关任务（T1 周围车辆速度、T2 当前自车速度、T3 未来自车速度），测试单帧、多帧、真假 ego 速度提示等多种输入条件，并提供基线比较</li><li>结合线性探针、查询条件解码和时序扰动，发现自车速度在隐藏层中比语言输出中明显更易解码（探针 MAE 4.7–5.8 km/h vs 语言输出 10.2–16.8 km/h），而周围车辆速度编码较弱；模型对帧顺序利用有限，多帧输入收益不一致</li><li>通过 QLoRA 任务特定微调，证明可改善自车速度的语言读取（如 Qwen3-VL 宏 F1 从 40.4% 提升至 90.1%），但未来速度预测的时序基础仍然有限，且驾驶专用模型 Alpamayo-1.5 同样存在表示-语言表达鸿沟</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>在 <strong>nuScenes</strong> 数据集上定义三个分类/回归任务，使用封闭式问答范式，变化视觉上下文（单帧/多帧）和是否提供 ego 速度提示，并引入反事实提示检验视觉验证能力</li><li>对多个开源 VLM（如 Cosmos-Reason、Qwen-VL、InternVL2.5 等）进行零样本评估，并通过确定性 JSON 解析和贪心解码保证可复现性</li><li>利用线性探针从各层隐藏状态解码速度类别，使用回归探针估计连续速度值，并通过时序打乱实验检验模型对帧顺序的敏感性</li><li>对 Qwen3-VL 进行 <strong>QLoRA</strong> 微调，研究任务特定适应对表示和语言输出的影响</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用 <strong>nuScenes</strong> 数据集官方训练/验证拆分，验证集约 5419 样本用于 T2，4429 样本用于 T1，4519 样本用于 T3；探针训练用 6000 样本，QLoRA 适应用完整训练集 20,275 样本</li><li>评估模型规模自 4B 至 10B 参数不等的 VLM，如 <strong>Cosmos-Reason2-8B</strong>、<strong>Qwen3-VL-8B</strong>、<strong>Alpamayo-1.5-10B</strong> 等</li><li>零样本推理和特征提取使用单块 <strong>NVIDIA A40 (48 GB)</strong> 或 <strong>A100-SXM4 (80 GB)</strong> GPU</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估指标包括宏 F1（分类）、MAE/RMSE/Spearman ρ（回归），并与随机基线、最优常数预测、以及当前状态持续性（T3 MAE 4.1 km/h）等比较</li><li>关键结果：零样本最佳 T2 多帧宏 F1 仅 44.9%（Qwen3-VL 40.9%），最优连续 MAE 10.2 km/h；T3 最佳 VLM MAE 10.6 km/h 远差于持续性基线；反事实 ego 提示使性能跌至随机水平以下；帧打乱后性能常与有序情况相当，表明模型更多依赖“帧袋”而非时序顺序</li><li>探针分析显示 T2/T3 的隐藏表示能显著优于语言输出，T2 探针宏 F1 可达 82.3%（Cosmos-R1 5F），T3 探针宏 F1 66.2%；QLoRA 微调后自车速度读取大幅提升，但连续周围车辆速度估计改善有限，多数未来速度增益在帧打乱下仍能保持，表明时序基础未明显增强</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.37150/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">CoRe-VLA: Preserving Cross-View Coordination in VLAs under Camera Shifts</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.36967/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Beyond Token Importance: Preserving Spatial Scaffolds for Efficient Vision-Language-Action Inference</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

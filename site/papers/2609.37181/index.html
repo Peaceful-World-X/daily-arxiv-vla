@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EgoHumanoid-V2: Human-to-Humanoid Transfer of Coordinated Whole-Body Skills for Loco-Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出EgoHumanoid-V2，首个基于自我视角的人类至人形机器人技能迁移框架，专注协调的全身运动操作（loco-manipulation） 解决从人类演示直接向人形机器人迁移全身协调技能的挑战，克服形态差异与视觉差异 通过粗到细的动作对齐和视觉适应，仅利用人类数据实现零样本真实世界任务迁移" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.37181">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.37181.webp" alt="EgoHumanoid-V2: Human-to-Humanoid Transfer of Coordinated Whole-Body Skills for Loco-Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出EgoHumanoid-V2，首个基于自我视角的人类至人形机器人技能迁移框架，专注协调的全身运动操作（loco-manipulation）</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">EgoHumanoid-V2: Human-to-Humanoid Transfer of Coordinated Whole-Body Skills for Loco-Manipulation</h1>
+            <div class="detail-meta">2026-09-29 · <a href="http://arxiv.org/abs/2609.37181" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.37181" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.37181</span></div>
+            <p class="detail-summary">提出EgoHumanoid-V2，首个基于自我视角的人类至人形机器人技能迁移框架，专注协调的全身运动操作（loco-manipulation） 解决从人类演示直接向人形机器人迁移全身协调技能的挑战，克服形态差异与视觉差异 通过粗到细的动作对齐和视觉适应，仅利用人类数据实现零样本真实世界任务迁移</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">OpenDriveLab, The University of Hong Kong</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.37181/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出EgoHumanoid-V2，首个基于自我视角的人类至人形机器人技能迁移框架，专注协调的全身运动操作（loco-manipulation）</p>
+  <ul class="reading-intro-points"><li>提出EgoHumanoid-V2，首个基于自我视角的人类至人形机器人技能迁移框架，专注协调的全身运动操作（loco-manipulation）</li><li>解决从人类演示直接向人形机器人迁移全身协调技能的挑战，克服形态差异与视觉差异</li><li>通过粗到细的动作对齐和视觉适应，仅利用人类数据实现零样本真实世界任务迁移</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>OpenDriveLab, The University of Hong Kong</strong></li><li><strong>Alibaba Group</strong></li><li><strong>Shanghai Innovation Institute</strong></li><li><strong>Fudan University</strong></li><li><strong>Beihang University</strong></li><li><strong>Sichuan University</strong></li><li><strong>Archon Robotics</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>EgoHumanoid-V2</strong>，首个基于自我视角的<strong>人类至人形机器人</strong>技能迁移框架，专注<strong>协调的全身运动操作（loco-manipulation）</strong></li><li>解决从人类演示直接向人形机器人迁移全身协调技能的挑战，克服<strong>形态差异</strong>与<strong>视觉差异</strong></li><li>通过粗到细的<strong>动作对齐</strong>和<strong>视觉适应</strong>，仅利用人类数据实现零样本真实世界任务迁移</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次构建<strong>自我视角人-人形机器人全身协调技能迁移框架</strong>，覆盖手臂、躯干、腿部的协调动作</li><li>提出<strong>粗到细动作对齐</strong>：<strong>运动学参考校正（K）</strong> 与<strong>动力学感知细化（D）</strong> 结合，提升交互精度并保持全身协调</li><li>证明在<strong>四个真实世界任务</strong>上的零样本技能迁移，平均任务得分51.67%，人机数据对比显示人类采集<strong>劳动力减少76.36%</strong></li><li>引入<strong>机器人手臂渲染</strong>与<strong>训练时图像增强</strong>，有效缩减视觉领域差距</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>人类演示采集</strong>：穿戴式系统（GoPro + PICO）同步获取自我视角图像、全身运动与手部姿态，无需机器人硬件</li><li><strong>动作对齐流水线</strong>：</li></ul>
+<p> - <strong>运动初始化</strong>：通过<strong>SONIC</strong>运动跟踪控制器回放人类运动生成初始机器人轨迹</p>
+<p> - <strong>粗阶段（K）</strong>：离线逆运动学校正参考运动，减小几何失配</p>
+<p> - <strong>细阶段（D）</strong>：利用<strong>MLP响应模型</strong>预测执行偏差，迭代优化运动令牌，提高末端执行器跟踪精度</p>
+<ul><li><strong>视觉对齐</strong>：移除人类前臂并渲染<strong>Unitree G1</strong>机器人手臂，结合<strong>随机裁剪、旋转与光度抖动</strong>进行训练增强</li><li><strong>策略学习</strong>：将对齐后的图像-动作对用于微调视觉-语言-动作模型 <strong>π₀.₅</strong>，预测<strong>SONIC运动令牌</strong>与灵巧手指令</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：自行采集的<strong>人类演示</strong>，每任务200条，共四个任务（Close Laptop, Open Fridge, Pull Curtain, Close Drawer）；对比使用机器人遥操作数据（6-50条）</li><li>机器人平台：<strong>Unitree G1</strong> 人形机器人，配备<strong>BrainCo Revo2</strong> 双手</li><li>模型与规模：每任务独立训练一个<strong>π₀.₅</strong> VLA模型，训练3万步，批次大小256</li><li>训练资源：未明确说明GPU类型，运动对齐在仿真中运行（SONIC回放）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：真实世界四个全身操作任务，每个策略评估<strong>20次试验</strong>，任务得分按子任务平均计算</li><li>主要指标：<strong>任务得分</strong>（成功率）、末端执行器<strong>位置误差(cm)和姿态误差(°)</strong>、劳动成本（人秒/条）、运动质量（骨盆下降、倾斜、关节步长等）</li><li>关键结果：</li></ul>
+<p> - 使用200条人类演示，四任务平均得分<strong>51.67%</strong>，其中Close Drawer最高<strong>61.67%</strong></p>
+<p> - 人类演示相比机器人遥操作，采集每条约<strong>降低76.36%</strong> 劳动量</p>
+<p> - 完整动作对齐（H+K+Dₛ）将末端位置误差从11.21cm降至<strong>3.41cm</strong>，姿态误差从21.22°降至<strong>6.71°</strong></p>
+<p> - 视觉对齐消融：机器人臂渲染与增强组合达到最优平均得分<strong>48.33%</strong>（三臂任务），优于仅用原始人类图像（33.33%）</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.37250/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.37165/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Disentangling Spurious Correlations in Vision-Language-Action Models via Predicting Domain-Invariant Latent Lookahead</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

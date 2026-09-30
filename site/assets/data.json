@@ -1,5 +1,795 @@
 [
   {
+    "date": "2026-09-29",
+    "title": "Rho: A Foundation for Efficiently Adaptable VLA Models",
+    "link": "http://arxiv.org/abs/2609.38164",
+    "arxiv_id": "2609.38164",
+    "detail_path": "papers/2609.38164/",
+    "cover_path": "covers/2609.38164/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.38164.webp",
+    "preview_text": "提出 Rho，一个面向高效可适应视觉-语言-动作（VLA）模型的开放权重家族，专注于双臂机器人操作任务 旨在解决现有 VLA 模型在适应新任务和环境时数据需求高、零样本成功率低的问题，通过显式地分离实施例适应与任务适应，实现数据高效的下游迁移 模型覆盖三种代表性双臂机器人平台（YAM Box、UR AI Trainer、FR3 Duo），并提供基础版本及对应的实施例特化检查点",
+    "research_unit": "Microsoft Research",
+    "hook_text": "提出 Rho，一个面向高效可适应视觉-语言-动作（VLA）模型的开放权重家族，专注于双臂机器人操作任务",
+    "key_points": [
+      "提出 Rho，一个面向高效可适应视觉-语言-动作（VLA）模型的开放权重家族，专注于双臂机器人操作任务",
+      "旨在解决现有 VLA 模型在适应新任务和环境时数据需求高、零样本成功率低的问题，通过显式地分离实施例适应与任务适应，实现数据高效的下游迁移",
+      "模型覆盖三种代表性双臂机器人平台（YAM Box、UR AI Trainer、FR3 Duo），并提供基础版本及对应的实施例特化检查点"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation",
+    "link": "http://arxiv.org/abs/2609.38078",
+    "arxiv_id": "2609.38078",
+    "detail_path": "papers/2609.38078/",
+    "cover_path": "covers/2609.38078/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.38078.webp",
+    "preview_text": "探讨如何直接使用通用视觉语言模型（VLM）作为机器人操控的决策核心，实现零样本任务执行，而无需任务特定训练或依赖外部模型。 提出 MotorMind 框架，将 VLM 的语义推理能力与中间层动作表示及异步执行机制结合，使机器人能通过观察、执行和反馈闭环来完成操作任务。 解决的问题：现有视觉-语言-动作（VLA）模型在新环境/任务上零样本泛化能力有限，且无法直接受益于通用基础模型的快速进步；同时，代理机器人系统往往依…",
+    "research_unit": "University of Illinois Urbana-Champaign",
+    "hook_text": "探讨如何直接使用通用视觉语言模型（VLM）作为机器人操控的决策核心，实现零样本任务执行，而无需任务特定训练或依赖外部模型。",
+    "key_points": [
+      "探讨如何直接使用通用视觉语言模型（VLM）作为机器人操控的决策核心，实现零样本任务执行，而无需任务特定训练或依赖外部模型。",
+      "提出 MotorMind 框架，将 VLM 的语义推理能力与中间层动作表示及异步执行机制结合，使机器人能通过观察、执行和反馈闭环来完成操作任务。",
+      "解决的问题：现有视觉-语言-动作（VLA）模型在新环境/任务上零样本泛化能力有限，且无法直接受益于通用基础模型的快速进步；同时，代理机器人系统…"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "EgoAlign: Bridging the Human-Humanoid Gap for Long-Range Loco-Manipulation",
+    "link": "http://arxiv.org/abs/2609.38046",
+    "arxiv_id": "2609.38046",
+    "detail_path": "papers/2609.38046/",
+    "cover_path": "covers/2609.38046/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.38046.webp",
+    "preview_text": "提出了 EgoAlign 框架，旨在将以自我为中心的人类演示转化为与目标人形机器人运动接口兼容的动作与状态监督信号 解决了因人体与机器人之间的身体尺度、控制器响应差异以及缺失的机器人状态，导致人类演示无法直接作为人形机器人策略学习监督的问题 目标是为长距离移动操作（结合远距离导航与持续交互）构建高质量的训练数据，无需采集物理机器人演示",
+    "research_unit": "Beihang University",
+    "hook_text": "提出了 EgoAlign 框架，旨在将以自我为中心的人类演示转化为与目标人形机器人运动接口兼容的动作与状态监督信号",
+    "key_points": [
+      "提出了 EgoAlign 框架，旨在将以自我为中心的人类演示转化为与目标人形机器人运动接口兼容的动作与状态监督信号",
+      "解决了因人体与机器人之间的身体尺度、控制器响应差异以及缺失的机器人状态，导致人类演示无法直接作为人形机器人策略学习监督的问题",
+      "目标是为长距离移动操作（结合远距离导航与持续交互）构建高质量的训练数据，无需采集物理机器人演示"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "WayFinder: Hierarchical Visual-Language-Action for Zero-Shot Waypoint Generation and Low-Level Kinematic Control",
+    "link": "http://arxiv.org/abs/2609.37922",
+    "arxiv_id": "2609.37922",
+    "detail_path": "papers/2609.37922/",
+    "cover_path": "covers/2609.37922/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37922.webp",
+    "preview_text": "论文提出了 WayFinder，一种端到端、闭环的分层视觉-语言-动作（VLA）框架，旨在实现未知环境中的可靠自主导航 该框架解决了传统 VLA 模型在实际部署中的两大瓶颈：高昂的计算开销和对特定机器人进行微调的成本 通过将高层任务推理与低层运动学控制解耦，WayFinder 实现了使用零样本多模态大语言模型（MLLM）生成航路点，并仅由低层策略进行高频控制",
+    "research_unit": "Timothy K Johnsen 所属机构为 San Diego State University…",
+    "hook_text": "论文提出了 WayFinder，一种端到端、闭环的分层视觉-语言-动作（VLA）框架，旨在实现未知环境中的可靠自主导航",
+    "key_points": [
+      "论文提出了 WayFinder，一种端到端、闭环的分层视觉-语言-动作（VLA）框架，旨在实现未知环境中的可靠自主导航",
+      "该框架解决了传统 VLA 模型在实际部署中的两大瓶颈：高昂的计算开销和对特定机器人进行微调的成本",
+      "通过将高层任务推理与低层运动学控制解耦，WayFinder 实现了使用零样本多模态大语言模型（MLLM）生成航路点，并仅由低层策略进行高频控制"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents",
+    "link": "http://arxiv.org/abs/2609.37810",
+    "arxiv_id": "2609.37810",
+    "detail_path": "papers/2609.37810/",
+    "cover_path": "covers/2609.37810/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37810.webp",
+    "preview_text": "提出了 RoboSkill 框架，一个通过 “探索、执行、进化” (Explore, Execute, Evolve) 循环将技能获取与重用相连接的具身智能体系统。 旨在解决通用多模态智能体在机器人任务中每次执行都需从零开始推理和探索物理世界，导致执行成本高昂的问题。 通过将成功的执行记录转化为可复用的技能，引导后续任务的探索和执行，从而提升任务完成的成功率和效率。",
+    "research_unit": "复旦大学可信具身智能研究所 (Institute of Trustworthy Embodied AI…",
+    "hook_text": "提出了 RoboSkill 框架，一个通过 “探索、执行、进化” (Explore, Execute, Evolve) 循环将技能获取与重用相…",
+    "key_points": [
+      "提出了 RoboSkill 框架，一个通过 “探索、执行、进化” (Explore, Execute, Evolve) 循环将技能获取与重用相…",
+      "旨在解决通用多模态智能体在机器人任务中每次执行都需从零开始推理和探索物理世界，导致执行成本高昂的问题。",
+      "通过将成功的执行记录转化为可复用的技能，引导后续任务的探索和执行，从而提升任务完成的成功率和效率。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Urgent Actions Go First: Urgency-Aware Denoising for Real-Time VLA Control",
+    "link": "http://arxiv.org/abs/2609.37772",
+    "arxiv_id": "2609.37772",
+    "detail_path": "papers/2609.37772/",
+    "cover_path": "covers/2609.37772/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37772.webp",
+    "preview_text": "提出一种名为 Urgency-Aware Denoising (UAD) 的推理时框架，用于加速流匹配（flow-matching）视觉-语言-动作（VLA）策略的实时控制。 核心观察：动作块被联合生成却顺序消费，导致不同动作的执行紧急性天然不同。现有方法将动作块视为统一计算单元，忽略了这一非对称性。 旨在解决扩散/流匹配 VLA 策略因迭代去噪导致的推理延迟瓶颈，通过按紧迫性分配去噪计算来减少动作可用等待时间，同…",
+    "research_unit": "Pengcheng Laboratory",
+    "hook_text": "提出一种名为 Urgency-Aware Denoising (UAD) 的推理时框架，用于加速流匹配（flow-matching）视觉-语言…",
+    "key_points": [
+      "提出一种名为 Urgency-Aware Denoising (UAD) 的推理时框架，用于加速流匹配（flow-matching）视觉-语言…",
+      "核心观察：动作块被联合生成却顺序消费，导致不同动作的执行紧急性天然不同。现有方法将动作块视为统一计算单元，忽略了这一非对称性。",
+      "旨在解决扩散/流匹配 VLA 策略因迭代去噪导致的推理延迟瓶颈，通过按紧迫性分配去噪计算来减少动作可用等待时间，同时保持任务成功率。"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Faster and Better? Benchmark Bugs and Design Limitations Distort the Evaluation of Vision-Language-Action Acceleration",
+    "link": "http://arxiv.org/abs/2609.37771",
+    "arxiv_id": "2609.37771",
+    "detail_path": "papers/2609.37771/",
+    "cover_path": "covers/2609.37771/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37771.webp",
+    "preview_text": "研究训练无关的视觉-语言-动作（VLA）加速方法在标准模拟操作基准测试中，出现成功率高于未经加速的基线模型这一异常现象的根本原因。 揭示基准测试中存在的实现错误（Bugs）和设计局限性（Design Limitations）两类缺陷，这些缺陷会扭曲对加速方法性能的评估，导致虚假的性能增益。 通过系统审计七个主流 VLA 基准测试，识别并修正基准缺陷，重新评估加速方法的真实效果，为 VLA 加速研究提供更可信的评估标…",
+    "research_unit": "上海交通大学 (Shanghai Jiao Tong University)",
+    "hook_text": "研究训练无关的视觉-语言-动作（VLA）加速方法在标准模拟操作基准测试中，出现成功率高于未经加速的基线模型这一异常现象的根本原因。",
+    "key_points": [
+      "研究训练无关的视觉-语言-动作（VLA）加速方法在标准模拟操作基准测试中，出现成功率高于未经加速的基线模型这一异常现象的根本原因。",
+      "揭示基准测试中存在的实现错误（Bugs）和设计局限性（Design Limitations）两类缺陷，这些缺陷会扭曲对加速方法性能的评估，导致…",
+      "通过系统审计七个主流 VLA 基准测试，识别并修正基准缺陷，重新评估加速方法的真实效果，为 VLA 加速研究提供更可信的评估标准。"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "RawVLA: Embodied Neural Image Signal Processor For Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2609.37530",
+    "arxiv_id": "2609.37530",
+    "detail_path": "papers/2609.37530/",
+    "cover_path": "covers/2609.37530/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37530.webp",
+    "preview_text": "系统地研究了相机图像信号处理器 (ISP) 对视觉-语言-动作 (VLA) 模型性能的影响，发现 ISP 的五个维度对机器人操作任务有显著影响 提出 RawVLA，一种自适应神经 ISP，能够根据任务需求动态渲染 RAW 图像数据，替代传统的固定 ISP 旨在通过优化 RAW 到 RGB 的转换过程，提高 VLA 模型在不利成像条件下的鲁棒性和任务成功率",
+    "research_unit": "UTokyo (东京大学)",
+    "hook_text": "系统地研究了相机图像信号处理器 (ISP) 对视觉-语言-动作 (VLA) 模型性能的影响，发现 ISP 的五个维度对机器人操作任务有显著影响",
+    "key_points": [
+      "系统地研究了相机图像信号处理器 (ISP) 对视觉-语言-动作 (VLA) 模型性能的影响，发现 ISP 的五个维度对机器人操作任务有显著影响",
+      "提出 RawVLA，一种自适应神经 ISP，能够根据任务需求动态渲染 RAW 图像数据，替代传统的固定 ISP",
+      "旨在通过优化 RAW 到 RGB 的转换过程，提高 VLA 模型在不利成像条件下的鲁棒性和任务成功率"
+    ],
+    "reading_minutes": 4,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Taming VLAs under Robot Execution Errors: Self-Compensation and Stress Testing",
+    "link": "http://arxiv.org/abs/2609.37334",
+    "arxiv_id": "2609.37334",
+    "detail_path": "papers/2609.37334/",
+    "cover_path": "covers/2609.37334/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37334.webp",
+    "preview_text": "研究视觉-语言-动作（VLA）策略在机器人执行错误下的鲁棒性问题，这些错误源于机器人机构磨损、负载变化等实际部署条件 提出自补偿 VLA（self-compensating VLA），一种部署时在线适应方法，使策略能够预补偿执行错误，无需任务奖励或标签 引入RoboStress基准测试，通过组合四种关节级噪声模型（摩擦、齿隙、柔顺、重力补偿误差）构建七种部署场景，系统性压力测试 VLA 的鲁棒性",
+    "research_unit": "POSTECH (Pohang University of Science and Technolog…",
+    "hook_text": "研究视觉-语言-动作（VLA）策略在机器人执行错误下的鲁棒性问题，这些错误源于机器人机构磨损、负载变化等实际部署条件",
+    "key_points": [
+      "研究视觉-语言-动作（VLA）策略在机器人执行错误下的鲁棒性问题，这些错误源于机器人机构磨损、负载变化等实际部署条件",
+      "提出自补偿 VLA（self-compensating VLA），一种部署时在线适应方法，使策略能够预补偿执行错误，无需任务奖励或标签",
+      "引入RoboStress基准测试，通过组合四种关节级噪声模型（摩擦、齿隙、柔顺、重力补偿误差）构建七种部署场景，系统性压力测试 VLA 的鲁棒性"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Remember What You Did: Action-History Memory with Dual-Expert Denoising for Long-Horizon Vision-Language-Action Policies",
+    "link": "http://arxiv.org/abs/2609.37307",
+    "arxiv_id": "2609.37307",
+    "detail_path": "papers/2609.37307/",
+    "cover_path": "covers/2609.37307/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37307.webp",
+    "preview_text": "针对现有视觉-语言-动作 (VLA) 模型在长周期任务中因缺少交互历史，面对相似观测时产生感知混叠 (Perceptual Aliasing) 和动作歧义的问题 提出 ActMem-VLA，一种双专家交接架构，通过可训练的轻量级记忆插件为冻结的 VLA 模型赋予动作历史感知能力 目标是以参数高效的方式解决长周期机器人操作中的任务进度追踪难题，无需重新训练基础策略模型",
+    "research_unit": "哈尔滨工业大学 (Harbin Institute of Technology)",
+    "hook_text": "针对现有视觉-语言-动作 (VLA) 模型在长周期任务中因缺少交互历史，面对相似观测时产生感知混叠 (Perceptual Aliasing)…",
+    "key_points": [
+      "针对现有视觉-语言-动作 (VLA) 模型在长周期任务中因缺少交互历史，面对相似观测时产生感知混叠 (Perceptual Aliasing)…",
+      "提出 ActMem-VLA，一种双专家交接架构，通过可训练的轻量级记忆插件为冻结的 VLA 模型赋予动作历史感知能力",
+      "目标是以参数高效的方式解决长周期机器人操作中的任务进度追踪难题，无需重新训练基础策略模型"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents",
+    "link": "http://arxiv.org/abs/2609.37250",
+    "arxiv_id": "2609.37250",
+    "detail_path": "papers/2609.37250/",
+    "cover_path": "covers/2609.37250/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37250.webp",
+    "preview_text": "论文探讨了构建世界-动作模型（WAMs）时，是否必须继承一个完整的预训练视觉生成模型，还是仅依靠大规模预训练的预测性视觉潜在空间就能提供足够的基础 为了解决这个问题，引入了 V-JEPA Policy 框架，该框架在冻结的 V-JEPA 2.1 编码器的潜在空间上构建 WAM，联合学习指令条件的未来潜在预测器和流匹配动作专家 表明预测性视觉潜在空间不仅可以作为直接学习 WAM 的基础，还能支持通过预测器预训练从野外…",
+    "research_unit": "Tsinghua University (清华大学)",
+    "hook_text": "论文探讨了构建世界-动作模型（WAMs）时，是否必须继承一个完整的预训练视觉生成模型，还是仅依靠大规模预训练的预测性视觉潜在空间就能提供足够的…",
+    "key_points": [
+      "论文探讨了构建世界-动作模型（WAMs）时，是否必须继承一个完整的预训练视觉生成模型，还是仅依靠大规模预训练的预测性视觉潜在空间就能提供足够的…",
+      "为了解决这个问题，引入了 V-JEPA Policy 框架，该框架在冻结的 V-JEPA 2.1 编码器的潜在空间上构建 WAM，联合学习指令…",
+      "表明预测性视觉潜在空间不仅可以作为直接学习 WAM 的基础，还能支持通过预测器预训练从野外视频中获取和迁移未来建模知识"
+    ],
+    "reading_minutes": 7,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "EgoHumanoid-V2: Human-to-Humanoid Transfer of Coordinated Whole-Body Skills for Loco-Manipulation",
+    "link": "http://arxiv.org/abs/2609.37181",
+    "arxiv_id": "2609.37181",
+    "detail_path": "papers/2609.37181/",
+    "cover_path": "covers/2609.37181/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37181.webp",
+    "preview_text": "提出EgoHumanoid-V2，首个基于自我视角的人类至人形机器人技能迁移框架，专注协调的全身运动操作（loco-manipulation） 解决从人类演示直接向人形机器人迁移全身协调技能的挑战，克服形态差异与视觉差异 通过粗到细的动作对齐和视觉适应，仅利用人类数据实现零样本真实世界任务迁移",
+    "research_unit": "OpenDriveLab, The University of Hong Kong",
+    "hook_text": "提出EgoHumanoid-V2，首个基于自我视角的人类至人形机器人技能迁移框架，专注协调的全身运动操作（loco-manipulation）",
+    "key_points": [
+      "提出EgoHumanoid-V2，首个基于自我视角的人类至人形机器人技能迁移框架，专注协调的全身运动操作（loco-manipulation）",
+      "解决从人类演示直接向人形机器人迁移全身协调技能的挑战，克服形态差异与视觉差异",
+      "通过粗到细的动作对齐和视觉适应，仅利用人类数据实现零样本真实世界任务迁移"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Disentangling Spurious Correlations in Vision-Language-Action Models via Predicting Domain-Invariant Latent Lookahead",
+    "link": "http://arxiv.org/abs/2609.37165",
+    "arxiv_id": "2609.37165",
+    "detail_path": "papers/2609.37165/",
+    "cover_path": "covers/2609.37165/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37165.webp",
+    "preview_text": "针对视觉-语言-动作（VLA）模型在视觉分布变化下依赖伪相关（shortcut）导致的脆弱性问题 提出 Domain-Invariant Latent Lookahead (DILL) 框架，通过预测域不变的未来潜在表示来缓解捷径学习 将未来预测与任务-域解耦结合，使策略聚焦于任务相关结构而非偶然视觉因素",
+    "research_unit": "OpenMind, San Francisco, CA, USA",
+    "hook_text": "针对视觉-语言-动作（VLA）模型在视觉分布变化下依赖伪相关（shortcut）导致的脆弱性问题",
+    "key_points": [
+      "针对视觉-语言-动作（VLA）模型在视觉分布变化下依赖伪相关（shortcut）导致的脆弱性问题",
+      "提出 Domain-Invariant Latent Lookahead (DILL) 框架，通过预测域不变的未来潜在表示来缓解捷径学习",
+      "将未来预测与任务-域解耦结合，使策略聚焦于任务相关结构而非偶然视觉因素"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "CoRe-VLA: Preserving Cross-View Coordination in VLAs under Camera Shifts",
+    "link": "http://arxiv.org/abs/2609.37150",
+    "arxiv_id": "2609.37150",
+    "detail_path": "papers/2609.37150/",
+    "cover_path": "covers/2609.37150/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37150.webp",
+    "preview_text": "论文指出视觉-语言-动作模型（VLA）在外部摄像头发生位置偏移时，任务成功率大幅下降，主要原因是跨视图协调崩溃（cross-view coordination breakdown） 针对这一问题，提出即插即用的框架 CoRe-VLA，无需额外的多视图数据采集或 VLA 微调，即可恢复 VLA 的跨视图协调能力 通过点云重建与重渲染恢复训练时的摄像头视角，配合图像修复和异步执行对齐策略，显著提升主流 VLA 在摄像头…",
+    "research_unit": "东南大学（Southeast University），南京，中国",
+    "hook_text": "论文指出视觉-语言-动作模型（VLA）在外部摄像头发生位置偏移时，任务成功率大幅下降，主要原因是跨视图协调崩溃（cross-view coor…",
+    "key_points": [
+      "论文指出视觉-语言-动作模型（VLA）在外部摄像头发生位置偏移时，任务成功率大幅下降，主要原因是跨视图协调崩溃（cross-view coor…",
+      "针对这一问题，提出即插即用的框架 CoRe-VLA，无需额外的多视图数据采集或 VLA 微调，即可恢复 VLA 的跨视图协调能力",
+      "通过点云重建与重渲染恢复训练时的摄像头视角，配合图像修复和异步执行对齐策略，显著提升主流 VLA 在摄像头偏移下的任务成功率"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Speed in the Blind Spot: An Interpretability Analysis of Dynamic Perception in VLMs for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2609.37046",
+    "arxiv_id": "2609.37046",
+    "detail_path": "papers/2609.37046/",
+    "cover_path": "covers/2609.37046/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.37046.webp",
+    "preview_text": "研究自动驾驶中视觉语言模型（VLMs）对动态状态（特别是速度）的感知与表征能力，通过控制性诊断任务分离编码、语言表达和时序推理三个层面的问题 指出即使模型能输出看似合理的规划结果，并不保证其真正恢复或可靠利用了底层的动态状态信息 通过周围车辆速度估计、当前自车速度检测和未来自车速度预测三个任务，系统揭示了 VLMs 在速度感知上的盲点与失败模式",
+    "research_unit": "论文作者均来自 Munich University of Applied Sciences, Inte…",
+    "hook_text": "研究自动驾驶中视觉语言模型（VLMs）对动态状态（特别是速度）的感知与表征能力，通过控制性诊断任务分离编码、语言表达和时序推理三个层面的问题",
+    "key_points": [
+      "研究自动驾驶中视觉语言模型（VLMs）对动态状态（特别是速度）的感知与表征能力，通过控制性诊断任务分离编码、语言表达和时序推理三个层面的问题",
+      "指出即使模型能输出看似合理的规划结果，并不保证其真正恢复或可靠利用了底层的动态状态信息",
+      "通过周围车辆速度估计、当前自车速度检测和未来自车速度预测三个任务，系统揭示了 VLMs 在速度感知上的盲点与失败模式"
+    ],
+    "reading_minutes": 6,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Beyond Token Importance: Preserving Spatial Scaffolds for Efficient Vision-Language-Action Inference",
+    "link": "http://arxiv.org/abs/2609.36967",
+    "arxiv_id": "2609.36967",
+    "detail_path": "papers/2609.36967/",
+    "cover_path": "covers/2609.36967/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.36967.webp",
+    "preview_text": "现有视觉-语言-动作（VLA）模型剪枝方法仅关注令牌的语义重要性，忽略了保留令牌的空间分布，导致在激进剪枝下任务成功率急剧下降 论文发现一种反直觉的“Stride-Random反转”现象：纯几何的均匀采样在特定剪枝率下能超越语义剪枝，但性能会因空间混叠而骤降 提出空间覆盖半径指标量化剪枝引起的空间盲区，并据此设计训练无关的视觉令牌剪枝方法 GeoScaffold，在保持高任务成功率的同时大幅加速推理",
+    "research_unit": "Fudan University（复旦大学）",
+    "hook_text": "现有视觉-语言-动作（VLA）模型剪枝方法仅关注令牌的语义重要性，忽略了保留令牌的空间分布，导致在激进剪枝下任务成功率急剧下降",
+    "key_points": [
+      "现有视觉-语言-动作（VLA）模型剪枝方法仅关注令牌的语义重要性，忽略了保留令牌的空间分布，导致在激进剪枝下任务成功率急剧下降",
+      "论文发现一种反直觉的“Stride-Random反转”现象：纯几何的均匀采样在特定剪枝率下能超越语义剪枝，但性能会因空间混叠而骤降",
+      "提出空间覆盖半径指标量化剪枝引起的空间盲区，并据此设计训练无关的视觉令牌剪枝方法 GeoScaffold，在保持高任务成功率的同时大幅加速推理"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "VLALight: A Vision-Language-Action Model for Traffic Signal Control",
+    "link": "http://arxiv.org/abs/2609.36934",
+    "arxiv_id": "2609.36934",
+    "detail_path": "papers/2609.36934/",
+    "cover_path": "covers/2609.36934/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.36934.webp",
+    "preview_text": "提出首个面向交通信号控制的视觉-语言-行动（VLA）模型 VLALight，直接从路口多视角视频生成协同信号控制指令 解决现有方法依赖手工特征或分离感知模块，无法实现端到端视觉控制的问题 通过多目标时空感知、拓扑感知协同推理和自适应快慢推理，实现网络级交通效率与推理成本的平衡",
+    "research_unit": "香港科技大学（广州）（The Hong Kong University of Science and…",
+    "hook_text": "提出首个面向交通信号控制的视觉-语言-行动（VLA）模型 VLALight，直接从路口多视角视频生成协同信号控制指令",
+    "key_points": [
+      "提出首个面向交通信号控制的视觉-语言-行动（VLA）模型 VLALight，直接从路口多视角视频生成协同信号控制指令",
+      "解决现有方法依赖手工特征或分离感知模块，无法实现端到端视觉控制的问题",
+      "通过多目标时空感知、拓扑感知协同推理和自适应快慢推理，实现网络级交通效率与推理成本的平衡"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "AeroManip-VLA: Scalable Vision-Language-Action Learning for Aerial Manipulation with RL-Generated Demonstrations",
+    "link": "http://arxiv.org/abs/2609.36915",
+    "arxiv_id": "2609.36915",
+    "detail_path": "papers/2609.36915/",
+    "cover_path": "covers/2609.36915/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.36915.webp",
+    "preview_text": "提出了 AeroManip-VLA，一个面向空中操作的可扩展视觉-语言-动作（VLA）基准测试，用于数据生成和策略评估 解决了空中操作领域缺乏大规模、多样化训练数据的问题，以及依赖人工遥操作收集示范成本高、难以扩展的挑战 实现了在仿真环境中自动生成多样化空中操作示范，无需人类遥操作，并支持系统的策略评估和失败模式分析",
+    "research_unit": "新加坡国立大学 (National University of Singapore)",
+    "hook_text": "提出了 AeroManip-VLA，一个面向空中操作的可扩展视觉-语言-动作（VLA）基准测试，用于数据生成和策略评估",
+    "key_points": [
+      "提出了 AeroManip-VLA，一个面向空中操作的可扩展视觉-语言-动作（VLA）基准测试，用于数据生成和策略评估",
+      "解决了空中操作领域缺乏大规模、多样化训练数据的问题，以及依赖人工遥操作收集示范成本高、难以扩展的挑战",
+      "实现了在仿真环境中自动生成多样化空中操作示范，无需人类遥操作，并支持系统的策略评估和失败模式分析"
+    ],
+    "reading_minutes": 5,
+    "section_count": 6,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "LexiconVLA: Learning Reusable Atomic Action Codebooks for Unseen Tasks",
+    "link": "http://arxiv.org/abs/2609.36774",
+    "arxiv_id": "2609.36774",
+    "detail_path": "papers/2609.36774/",
+    "cover_path": "covers/2609.36774/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.36774.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "T$^2$Mem: Learning Test-Time Memory for Robotics",
+    "link": "http://arxiv.org/abs/2609.36720",
+    "arxiv_id": "2609.36720",
+    "detail_path": "papers/2609.36720/",
+    "cover_path": "covers/2609.36720/",
+    "paper_image_path": "assets/paper-images/thumbs/2609.36720.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Where Predictive Supervision Goes Shapes What VLA Policies Learn",
+    "link": "http://arxiv.org/abs/2609.36645",
+    "arxiv_id": "2609.36645",
+    "detail_path": "papers/2609.36645/",
+    "cover_path": "covers/2609.36645/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Cooperative Multi-Agent Vision-Language-Action Models via Reinforced Fine Tuning",
+    "link": "http://arxiv.org/abs/2609.36588",
+    "arxiv_id": "2609.36588",
+    "detail_path": "papers/2609.36588/",
+    "cover_path": "covers/2609.36588/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Reactive Real-Time Flow Policies via Asynchronous Distribution Alignment",
+    "link": "http://arxiv.org/abs/2609.36540",
+    "arxiv_id": "2609.36540",
+    "detail_path": "papers/2609.36540/",
+    "cover_path": "covers/2609.36540/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "LIBERO-MAX: Do Robot Policies Adapt When the World Changes?",
+    "link": "http://arxiv.org/abs/2609.36518",
+    "arxiv_id": "2609.36518",
+    "detail_path": "papers/2609.36518/",
+    "cover_path": "covers/2609.36518/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "Staircase Policy: Streaming Inference for World-Action Models with Large Action Chunks",
+    "link": "http://arxiv.org/abs/2609.36471",
+    "arxiv_id": "2609.36471",
+    "detail_path": "papers/2609.36471/",
+    "cover_path": "covers/2609.36471/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "FineART: Fine-grained Annotated Robotic Trajectory Dataset and Vision-Language-Action Model for Bimanual Manipulation",
+    "link": "http://arxiv.org/abs/2609.36416",
+    "arxiv_id": "2609.36416",
+    "detail_path": "papers/2609.36416/",
+    "cover_path": "covers/2609.36416/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-29",
+    "title": "One from Infinity: Actualizing Futures from Pretrained World Models into Robot Actions",
+    "link": "http://arxiv.org/abs/2609.36413",
+    "arxiv_id": "2609.36413",
+    "detail_path": "papers/2609.36413/",
+    "cover_path": "covers/2609.36413/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-28",
+    "title": "StructRL: Online Structured Reinforcement Learning for Long-Horizon Vision-Language-Action Tasks",
+    "link": "http://arxiv.org/abs/2609.36352",
+    "arxiv_id": "2609.36352",
+    "detail_path": "papers/2609.36352/",
+    "cover_path": "covers/2609.36352/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-09-28",
+    "title": "The Layer Mystery of VLA: An Information-Theoretical Analysis of VLA Latent Interface",
+    "link": "http://arxiv.org/abs/2609.36118",
+    "arxiv_id": "2609.36118",
+    "detail_path": "papers/2609.36118/",
+    "cover_path": "covers/2609.36118/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-09-28",
     "title": "DexRoam: Learning Mobile Bimanual Dexterous Manipulation from Egocentric Whole-Body Human Demonstrations",
     "link": "http://arxiv.org/abs/2609.35761",

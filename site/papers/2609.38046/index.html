@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EgoAlign: Bridging the Human-Humanoid Gap for Long-Range Loco-Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出了 EgoAlign 框架，旨在将以自我为中心的人类演示转化为与目标人形机器人运动接口兼容的动作与状态监督信号 解决了因人体与机器人之间的身体尺度、控制器响应差异以及缺失的机器人状态，导致人类演示无法直接作为人形机器人策略学习监督的问题 目标是为长距离移动操作（结合远距离导航与持续交互）构建高质量的训练数据，无需采集物理机器人演示" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.38046">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.38046.webp" alt="EgoAlign: Bridging the Human-Humanoid Gap for Long-Range Loco-Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出了 EgoAlign 框架，旨在将以自我为中心的人类演示转化为与目标人形机器人运动接口兼容的动作与状态监督信号</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">EgoAlign: Bridging the Human-Humanoid Gap for Long-Range Loco-Manipulation</h1>
+            <div class="detail-meta">2026-09-29 · <a href="http://arxiv.org/abs/2609.38046" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.38046" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.38046</span></div>
+            <p class="detail-summary">提出了 EgoAlign 框架，旨在将以自我为中心的人类演示转化为与目标人形机器人运动接口兼容的动作与状态监督信号 解决了因人体与机器人之间的身体尺度、控制器响应差异以及缺失的机器人状态，导致人类演示无法直接作为人形机器人策略学习监督的问题 目标是为长距离移动操作（结合远距离导航与持续交互）构建高质量的训练数据，无需采集物理机器人演示</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Beihang University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.38046/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出了 EgoAlign 框架，旨在将以自我为中心的人类演示转化为与目标人形机器人运动接口兼容的动作与状态监督信号</p>
+  <ul class="reading-intro-points"><li>提出了 EgoAlign 框架，旨在将以自我为中心的人类演示转化为与目标人形机器人运动接口兼容的动作与状态监督信号</li><li>解决了因人体与机器人之间的身体尺度、控制器响应差异以及缺失的机器人状态，导致人类演示无法直接作为人形机器人策略学习监督的问题</li><li>目标是为长距离移动操作（结合远距离导航与持续交互）构建高质量的训练数据，无需采集物理机器人演示</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Beihang University</strong></li><li><strong>Alibaba Group</strong></li><li><strong>Shanghai Innovation Institute</strong></li><li><strong>Sichuan University</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出了 <strong>EgoAlign</strong> 框架，旨在将以自我为中心的人类演示转化为与目标人形机器人运动接口兼容的动作与状态监督信号</li><li>解决了因人体与机器人之间的身体尺度、控制器响应差异以及缺失的机器人状态，导致人类演示无法直接作为人形机器人策略学习监督的问题</li><li>目标是为长距离移动操作（结合远距离导航与持续交互）构建高质量的训练数据，无需采集物理机器人演示</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>引入 <strong>EgoAlign</strong>，一个无需物理机器人的数据构建框架，通过通用的连续全身控制接口（<strong>SONIC</strong>）为非人形机器人的视觉-语言-动作模型（VLA）学习构建机器人可用的动作与状态监督</li><li>开发了包含<strong>动力学引导的演示采集</strong>与<strong>上身尺度对齐</strong>的运动适应方法，并通过<strong>因果状态重构</strong>将调整后的动作与对应的机器人状态配对</li><li>通过仅在人类演示上训练 VLA 策略，并在物理人形机器人上实现零样本部署，验证了监督信号的有效性，成功完成了长距离物体重放置、导航至未见过目标位置以及足部交互等任务</li><li>验证了框架中的关键模块（尺度对齐、导航数据、水平视图、状态重构），并通过与遥操作的对比，证明了人类采集在效率上的优势</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>系统概述</strong>：以语言指令为输入，利用深度与水平双视角图像及人体运动数据，为目标机器人模型 <strong>SONIC</strong> 的连续全身控制接口构造监督信号，输出动作令牌与手部指令</li><li><strong>人类演示采集</strong>：使用可穿戴设备（<strong>PICO 4 Ultra</strong> 头显和多个追踪器）捕捉人体运动，并通过胸前的 <strong>GoPro</strong> 相机同步采集双视角图像</li><li><strong>运动适应</strong>：</li></ul>
+<p> - <strong>动力学引导采集</strong>：实时将人体运动通过 <strong>SONIC- MuJoCo</strong> 仿真回放，为演示者提供视觉反馈，以调整被控制器抑制的动作</p>
+<p> - <strong>尺度对齐</strong>：通过构建机器人尺度的 <strong>SMPL</strong> 代理模型，在保留下肢运动和全身位移的前提下，优化上臂关节角度使机器人末端执行器（手）的几何位置与人类参考目标对齐，并引入<strong>控制器闭环迭代优化</strong>以修正执行误差</p>
+<ul><li><strong>因果状态重构</strong>：通过在仿真环境中进行确定性回放，利用历史动作和机器人前向动力学重建过去时刻的机器人完整状态（如关节位置、速度），为 VLA 训练提供准确的“观测-状态”数据对</li><li><strong>VLA 微调与执行</strong>：基于预训练的 <strong>PaliGemma-3B-PT-224</strong>视觉-语言模型，使用 <strong>π₀.₅</strong> 架构在人类数据上进行微调，部署时由 SONIC 根据实时机器人状态历史解码预测的动作令牌</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>机器人平台</strong>：<strong>Unitree G1</strong> 人形机器人（参考高度 1.25 m），配备 <strong>SONIC</strong> 全身控制器和 <strong>MuJoCo</strong> 仿真环境</li><li><strong>采集硬件</strong>：<strong>PICO 4 Ultra</strong> 头显、5 个身体追踪器、两台 <strong>GoPro Hero 13</strong> 相机</li><li><strong>VLA 模型</strong>：基于 <strong>PaliGemma-3B-PT-224</strong> 初始化的 <strong>π₀.₅</strong> 架构，动作空间为 76 维（64 维运动令牌 + 12 维双手指令），预测 50 步动作块</li><li><strong>训练资源</strong>：在 8 块 <strong>NVIDIA A800 GPU</strong>上进行微调，全局批处理大小为 256，共训练 50,000 步</li><li><strong>任务数据量</strong>：包含 200 个完整物体重放置演示、200 个导航演示、200 个足部交互演示，以及额外的 100 个携带篮子导航演示</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>：评估任务为端到端长距离（约 10 米）物体重放置、远距离导航和独立足部交互（踩踏板），均采用零样本物理部署。测试地点分为训练分布内的<strong>直接目标</strong>、多个<strong>已见位置</strong>和多个<strong>未见位置</strong></li><li><strong>主要指标</strong>：任务完成阶段率（Score）、最终阶段成功率（Full Success）以及各子阶段（如 S1 接近、S2 抓取）的成功率</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - 完整方法<strong>EgoAlign</strong>在物体重放置任务中<strong>Direct</strong>协议下达到 <strong>65%</strong> 的最终成功率，在<strong>已见/未见</strong>位置达到 <strong>40%</strong></p>
+<p> - 在独立导航任务中，最终成功率在 <strong>65%-70%</strong> 之间；足部交互任务在已见/未见位置均达到 <strong>60%</strong> 成功率</p>
+<p> - <strong>消融实验</strong>表明：去除<strong>导航数据</strong>会降低多位置下的完全成功率；去除<strong>水平视图</strong>会显著降低多位置导航的成功率；去除<strong>状态重构</strong>或<strong>尺度对齐</strong>的原始变体在 Direct 协议下成功率为 <strong>0%</strong>，证明了核心模块的关键性</p>
+<p> - <strong>对齐精度</strong>：通过<strong>控制器在环优化</strong>，仿真中右手掌末端误差从<strong>14.27 厘米</strong>（未对齐）降至<strong>1.65 厘米</strong>（完整方法），物理抓取成功率由 <strong>0%</strong> 提升至 <strong>90%</strong></p>
+<p> - <strong>采集效率</strong>：人类自我演示方法每次演示总耗时 <strong>25 秒</strong>，是传统遥操作（<strong>130 秒</strong>）的 <strong>5.2倍</strong></p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.38078/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.37922/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">WayFinder: Hierarchical Visual-Language-Action for Zero-Shot Waypoint Generation and Low-Level Kinematic Control</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

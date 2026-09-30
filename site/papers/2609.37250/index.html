@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文探讨了构建世界-动作模型（WAMs）时，是否必须继承一个完整的预训练视觉生成模型，还是仅依靠大规模预训练的预测性视觉潜在空间就能提供足够的基础 为了解决这个问题，引入了 V-JEPA Policy 框架，该框架在冻结的 V-JEPA 2.1 编码器的潜在空间上构建 WAM，联合学习指令条件的未来潜在预测器和流匹配动作专家 表明预测性视觉潜在空间不仅可以作为直接学习 WAM 的基础，还能支持通过预测器预训练从野外…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.37250">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.37250.webp" alt="V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文探讨了构建世界-动作模型（WAMs）时，是否必须继承一个完整的预训练视觉生成模型，还是仅依靠大规模预训练的预测性视觉潜在空间就能提供足够的…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents</h1>
+            <div class="detail-meta">2026-09-29 · <a href="http://arxiv.org/abs/2609.37250" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.37250" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.37250</span></div>
+            <p class="detail-summary">论文探讨了构建世界-动作模型（WAMs）时，是否必须继承一个完整的预训练视觉生成模型，还是仅依靠大规模预训练的预测性视觉潜在空间就能提供足够的基础 为了解决这个问题，引入了 V-JEPA Policy 框架，该框架在冻结的 V-JEPA 2.1 编码器的潜在空间上构建 WAM，联合学习指令条件的未来潜在预测器和流匹配动作专家 表明预测性视觉潜在空间不仅可以作为直接学习 WAM 的基础，还能支持通过预测器预训练从野外…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Tsinghua University (清华大学)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.37250/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文探讨了构建世界-动作模型（WAMs）时，是否必须继承一个完整的预训练视觉生成模型，还是仅依靠大规模预训练的预测性视觉潜在空间就能提供足够的…</p>
+  <ul class="reading-intro-points"><li>论文探讨了构建世界-动作模型（WAMs）时，是否必须继承一个完整的预训练视觉生成模型，还是仅依靠大规模预训练的预测性视觉潜在空间就能提供足够的…</li><li>为了解决这个问题，引入了 V-JEPA Policy 框架，该框架在冻结的 V-JEPA 2.1 编码器的潜在空间上构建 WAM，联合学习指令…</li><li>表明预测性视觉潜在空间不仅可以作为直接学习 WAM 的基础，还能支持通过预测器预训练从野外视频中获取和迁移未来建模知识</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Tsinghua University</strong> (清华大学)</li><li><strong>Shanghai Jiao Tong University</strong> (上海交通大学)</li><li><strong>Fudan University</strong> (复旦大学)</li><li><strong>University of Science and Technology of China</strong> (中国科学技术大学)</li><li><strong>Washington University in St. Louis</strong> (圣路易斯华盛顿大学)</li><li><strong>The Institute of Artificial Intelligence, China Telecom (TeleAI)</strong> (中国电信人工智能研究院)</li><li><strong>γ-Robotics</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文探讨了构建世界-动作模型（WAMs）时，是否必须继承一个完整的预训练视觉生成模型，还是仅依靠大规模预训练的预测性视觉潜在空间就能提供足够的基础</li><li>为了解决这个问题，引入了 <strong>V-JEPA Policy</strong> 框架，该框架在冻结的 <strong>V-JEPA 2.1</strong> 编码器的潜在空间上构建 WAM，联合学习指令条件的未来潜在预测器和流匹配动作专家</li><li>表明预测性视觉潜在空间不仅可以作为直接学习 WAM 的基础，还能支持通过预测器预训练从野外视频中获取和迁移未来建模知识</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了 <strong>V-JEPA Policy</strong>，一种在冻结的预测性视觉潜在空间上构建的世界-动作模型，无需继承完整的预训练视觉生成器</li><li>通过受控视觉基础对比实验，证明 <strong>V-JEPA</strong> 的预测性潜在表征在分布外泛化任务上显著优于判别式、重构式和视频理解导向的视觉预训练模型</li><li>展示了仅对预测器进行无动作标签的 <strong>DROID</strong> 视频-指令预训练，就能有效迁移未来建模知识，大幅提升模型在下游控制和泛化上的性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>视觉潜在空间定义</strong>：使用冻结的 <strong>V-JEPA 2.1</strong> 编码器，为观测上下文和未来观测创建潜在表示，将未来管状块位置指定为掩码区域，并以其编码后的规范化特征作为预测目标</li><li><strong>未来潜在预测</strong>：采用类似 <strong>V-JEPA</strong> 预测器的架构，将上下文令牌与可学习的未来查询令牌拼接，通过双向自注意力进行联合处理，并使用3D旋转位置嵌入（RoPE）编码时空位置信息</li><li><strong>预测与动作耦合</strong>：采用混合专家（Mixture-of-Transformers）架构，将预测器深层孕育的未来信息上下文键值（key-value）状态作为条件，传递给基于流匹配的扩散Transformer动作专家，使未来建模直接指导动作生成</li><li><strong>联合训练与推理</strong>：联合优化未来潜在回归损失和动作流匹配损失，使预测器同时接受未来预测和动作生成的监督。推理时采用先“想象后行动”的模式，先单次前向传播构建未来信息上下文接口，再进行10步欧拉法去噪生成动作</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真数据集</strong>：<strong>LIBERO</strong>（多任务模仿学习）、<strong>LIBERO-Plus</strong>（分布外鲁棒性，包含视点、照明、纹理等7种偏移）、<strong>RoboCasa-GR1</strong>（24项人形机器人操作任务）</li><li><strong>真实世界平台</strong>：<strong>TianJi Marvin 双臂平台</strong>，执行多阶段协调任务</li><li><strong>预训练数据集</strong>：<strong>DROID</strong> 视频-指令对（用于预测器的无动作标签预训练）</li><li><strong>模型规模与参数</strong></li></ul>
+<p> - 总参数量：<strong>0.9B</strong>，其中可训练参数：<strong>0.6B</strong>（视觉编码器约0.3B、预测器约0.5B、动作专家约0.1B）</p>
+<p> - 视觉编码器：冻结的 <strong>V-JEPA 2.1 ViT-L</strong> 或 <strong>ViT-G</strong></p>
+<p> - 文本编码器：冻结的 <strong>T5-XXL</strong></p>
+<ul><li><strong>训练资源</strong>：正文未明确列出具体GPU数量，但提供了训练配置细节（如LIBERO上训练10个epoch，RoboCasa-GR1使用50k优化步与256的批大小）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估基准</strong>：<strong>LIBERO</strong> (4个套件）、<strong>LIBERO-Plus</strong>（7个分布偏移轴）、<strong>RoboCasa-GR1</strong> （24个桌面任务）、真实世界双臂操作任务</li><li><strong>主要评估指标</strong>：任务成功率（Success Rate %）</li><li><strong>关键实验结果</strong></li></ul>
+<p> - 在 <strong>LIBERO</strong> 上，从零开始训练的V-JEPA Policy达到 <strong>97.25%</strong> 的平均成功率，与更大的生成式WAM和基础视觉-语言-动作模型表现相当</p>
+<p> - 在 <strong>LIBERO-Plus</strong> 上，取得 <strong>79.25%</strong> 的成功率，显著优于生成式WAM（如FastWAM），表明其在分布外泛化上的强大能力</p>
+<p> - 在 <strong>RoboCasa-GR1</strong> 上，成功率达到了 <strong>50.92%</strong>，展现了在非7自由度机械臂场景下进行复杂控制的能力</p>
+<p> - 在真实世界双臂任务中，从零开始训练的模型达到 <strong>45%</strong> 的平均成功率；使用DROID视频预训练的预测器进行微调后，平均成功率大幅提升至 <strong>80%</strong></p>
+<p> - 视觉基础消融实验证明，<strong>V-JEPA 2.1</strong> 的预测性潜在空间在分布外泛化上显著优于 <strong>DINOv2</strong> 等判别式和 <strong>WAN2.2 VAE</strong> 等重构式视觉基础</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.37307/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Remember What You Did: Action-History Memory with Dual-Expert Denoising for Long-Horizon Vision-Language-Action Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.37181/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">EgoHumanoid-V2: Human-to-Humanoid Transfer of Coordinated Whole-Body Skills for Loco-Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

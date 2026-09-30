@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Remember What You Did: Action-History Memory with Dual-Expert Denoising for Long-Horizon Vision-Language-Action Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有视觉-语言-动作 (VLA) 模型在长周期任务中因缺少交互历史，面对相似观测时产生感知混叠 (Perceptual Aliasing) 和动作歧义的问题 提出 ActMem-VLA，一种双专家交接架构，通过可训练的轻量级记忆插件为冻结的 VLA 模型赋予动作历史感知能力 目标是以参数高效的方式解决长周期机器人操作中的任务进度追踪难题，无需重新训练基础策略模型" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.37307">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.37307.webp" alt="Remember What You Did: Action-History Memory with Dual-Expert Denoising for Long-Horizon Vision-Language-Action Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有视觉-语言-动作 (VLA) 模型在长周期任务中因缺少交互历史，面对相似观测时产生感知混叠 (Perceptual Aliasing)…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Remember What You Did: Action-History Memory with Dual-Expert Denoising for Long-Horizon Vision-Language-Action Policies</h1>
+            <div class="detail-meta">2026-09-29 · <a href="http://arxiv.org/abs/2609.37307" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.37307" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.37307</span></div>
+            <p class="detail-summary">针对现有视觉-语言-动作 (VLA) 模型在长周期任务中因缺少交互历史，面对相似观测时产生感知混叠 (Perceptual Aliasing) 和动作歧义的问题 提出 ActMem-VLA，一种双专家交接架构，通过可训练的轻量级记忆插件为冻结的 VLA 模型赋予动作历史感知能力 目标是以参数高效的方式解决长周期机器人操作中的任务进度追踪难题，无需重新训练基础策略模型</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">哈尔滨工业大学 (Harbin Institute of Technology)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.37307/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有视觉-语言-动作 (VLA) 模型在长周期任务中因缺少交互历史，面对相似观测时产生感知混叠 (Perceptual Aliasing)…</p>
+  <ul class="reading-intro-points"><li>针对现有视觉-语言-动作 (VLA) 模型在长周期任务中因缺少交互历史，面对相似观测时产生感知混叠 (Perceptual Aliasing)…</li><li>提出 ActMem-VLA，一种双专家交接架构，通过可训练的轻量级记忆插件为冻结的 VLA 模型赋予动作历史感知能力</li><li>目标是以参数高效的方式解决长周期机器人操作中的任务进度追踪难题，无需重新训练基础策略模型</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>哈尔滨工业大学 (Harbin Institute of Technology)</strong></li><li><strong>香港大学 (The University of Hong Kong)</strong> - 医学智能与机器人认知实验室 (MIRoC Lab)</li><li><strong>香港理工大学 (The Hong Kong Polytechnic University)</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有视觉-语言-动作 (VLA) 模型在长周期任务中因缺少交互历史，面对相似观测时产生<strong>感知混叠 (Perceptual Aliasing)</strong> 和动作歧义的问题</li><li>提出 <strong>ActMem-VLA</strong>，一种双专家交接架构，通过可训练的轻量级记忆插件为冻结的 VLA 模型赋予动作历史感知能力</li><li>目标是以参数高效的方式解决长周期机器人操作中的任务进度追踪难题，无需重新训练基础策略模型</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>执行动作记忆 (Executed-Action Memory)</strong> 机制，利用 Mamba 模型将已执行的动作历史编码为紧凑的任务进度上下文信息，避免冗余历史视觉观测</li><li>设计<strong>双专家去噪交接 (Dual-Expert Handover)</strong> 架构，使用记忆条件下的<strong>预动作专家 (PreAction Expert, PAE)</strong> 完成早期高噪声去噪，再将中间动作状态交给冻结的<strong>动作专家 (Action Expert, AE)</strong> 进行精细化调优</li><li>实现<strong>即插即用 (Plug-and-Play)</strong> 特性，基础 VLA、VLM 和 AE 完全冻结，仅训练 Mamba 模块和 PAE，新增参数量仅占基础模型的 <strong>3.45%</strong></li><li>在模拟和真实世界任务中显著提升长周期操作成功率，尤其在需要重复执行和阶段判断的任务上表现突出</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用 <strong>Mamba-2</strong> 循环状态空间模型编码已执行动作序列，生成记忆表征 <strong>m_t</strong></li><li><strong>PreAction Expert (PAE)</strong> 由 AE 部分 Transformer 层初始化，同时接收 Mamba 记忆的 KV 对和冻结 VLM 的 prefix KV 作为条件输入</li><li>在去噪过程中，PAE 负责前 <strong>r=0.4</strong> 的高噪声步骤 (τ ∈ [0, r))，然后将中间动作状态直接交接给冻结的 AE 完成剩余低噪声步骤 (τ ∈ [r, 1])</li><li>训练期间仅优化 PAE 和 Mamba 模块，使用流匹配损失 (Flow-matching Loss)，并通过预计算冻结 VLM 的 prefix KV 来加速训练</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用基准数据集：<strong>LIBERO-Mem</strong>（包含10个模拟记忆依赖操作任务）</li><li>真实世界数据：针对 4 个任务各收集 <strong>50</strong> 条人类遥操作演示</li><li>基座 VLA 模型：<strong>π_{0.5}</strong></li><li>可训练插件参数量：仅为基础模型的 <strong>3.45%</strong></li><li>训练资源：<strong>8 张 NVIDIA H100 GPU</strong>（仿真实验），<strong>NVIDIA RTX5090 GPU</strong>（真实世界推理）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真评估基准：LIBERO-Mem</strong>，在任务特化步数限制下（成功率 + 效率双重考量）</li><li><strong>真实世界评估</strong>：使用轻量型桌面机械臂，设置 4 项需要明确阶段判断的任务（称重、重复按压等）</li><li><strong>主要指标</strong>：任务成功率（Success Rate）</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - 仿真环境中，ActMem-VLA 平均成功率 <strong>80.8%</strong>，超越 π_{0.5} (65.2%) 和 MemoryVLA (49.5%)</p>
+<p> - 真实世界实验中，平均成功率从 35.0% 提升至 <strong>63.75%</strong>，提升幅度达 28.8 个百分点</p>
+<p> - 消融实验证实，执行记忆模块和 PAE 对于处理需要多次重复及阶段判断的任务至关重要</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.37334/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Taming VLAs under Robot Execution Errors: Self-Compensation and Stress Testing</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.37250/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">V-JEPA Policy: Building Effective World-Action Models on Predictive Visual Latents</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
