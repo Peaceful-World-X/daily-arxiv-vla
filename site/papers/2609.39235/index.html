@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Planning Limits of Latent World Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="核心研究基于冻结自监督视觉骨干的潜在地世界模型在机器人操作规划中的能力边界，回答“模型能可靠提供多远的前瞻规划信号，以及哪些因素限制或扩展这一距离”两个核心问题 提出可规划范围（plannable range）量化指标，定义为模型仍能可靠将专家动作排序高于随机动作的最远目标前瞻距离，用于区分预测准确率与规划决策质量 在Meta-World仿真任务集和BridgeData V2真实机器人离线数据上开展系统性评估，探索…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.39235">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.39235.webp" alt="The Planning Limits of Latent World Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">核心研究基于冻结自监督视觉骨干的潜在地世界模型在机器人操作规划中的能力边界，回答“模型能可靠提供多远的前瞻规划信号，以及哪些因素限制或扩展这一…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">The Planning Limits of Latent World Models</h1>
+            <div class="detail-meta">2026-09-30 · <a href="http://arxiv.org/abs/2609.39235" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.39235" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.39235</span></div>
+            <p class="detail-summary">核心研究基于冻结自监督视觉骨干的潜在地世界模型在机器人操作规划中的能力边界，回答“模型能可靠提供多远的前瞻规划信号，以及哪些因素限制或扩展这一距离”两个核心问题 提出可规划范围（plannable range）量化指标，定义为模型仍能可靠将专家动作排序高于随机动作的最远目标前瞻距离，用于区分预测准确率与规划决策质量 在Meta-World仿真任务集和BridgeData V2真实机器人离线数据上开展系统性评估，探索…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">The University of Melbourne, Australia（论文作者Ali J. A…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.39235/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">核心研究基于冻结自监督视觉骨干的潜在地世界模型在机器人操作规划中的能力边界，回答“模型能可靠提供多远的前瞻规划信号，以及哪些因素限制或扩展这一…</p>
+  <ul class="reading-intro-points"><li>核心研究基于冻结自监督视觉骨干的潜在地世界模型在机器人操作规划中的能力边界，回答“模型能可靠提供多远的前瞻规划信号，以及哪些因素限制或扩展这一…</li><li>提出可规划范围（plannable range）量化指标，定义为模型仍能可靠将专家动作排序高于随机动作的最远目标前瞻距离，用于区分预测准确率与…</li><li>在Meta-World仿真任务集和BridgeData V2真实机器人离线数据上开展系统性评估，探索预测器容量、递归训练、rollout长度、…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>The University of Melbourne, Australia（论文作者Ali J. Alrasheed、Basim Azam、Naveed Akhtar均隶属于该机构）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>核心研究基于冻结自监督视觉骨干的潜在地世界模型在机器人操作规划中的能力边界，回答“模型能可靠提供多远的前瞻规划信号，以及哪些因素限制或扩展这一距离”两个核心问题</li><li>提出<strong>可规划范围（plannable range）</strong>量化指标，定义为模型仍能可靠将专家动作排序高于随机动作的最远目标前瞻距离，用于区分预测准确率与规划决策质量</li><li>在<strong>Meta-World</strong>仿真任务集和<strong>BridgeData V2</strong>真实机器人离线数据上开展系统性评估，探索预测器容量、递归训练、rollout长度、视觉编码器等因素对规划边界的影响，并测试世界模型辅助视觉语言动作（VLA）策略的可行性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出“可规划范围”指标，为衡量潜在地世界模型的目标导向动作选择能力提供可复现的量化评估框架</li><li>实证发现5步rollout下，模型的可规划范围仅5-10个控制步，远低于任务完成所需的16-53步，且目标与rollout的相对位置比预测器容量、训练方式更影响规划效果</li><li>通过引入真实仿真器作为完美预测器对照，证明即使无预测误差，短rollout下远距离目标的规划成功率仍从92%骤降至41%，证实规划上限由目标是否覆盖于想象轨迹内决定</li><li>验证延长rollout至覆盖目标距离、使用附近专家子目标是提升长程规划效果的有效手段，纯想象与反馈重规划对短rollout下的长程任务提升有限</li><li>首次证明潜在地世界模型可有效辅助VLA策略：通过从VLA提出的动作候选中选择最优项，将16项任务的闭环成功率从65%提升至77%</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>所有世界模型采用<strong>冻结预训练视觉骨干+可训练动作条件预测器</strong>的架构，冻结5种不同预训练目标的ViT-L视觉骨干（<strong>V-JEPA 2</strong>、<strong>V-JEPA 2.1</strong>、<strong>VideoMAEv2</strong>、<strong>VideoPrism</strong>、<strong>DINOv2</strong>），仅训练动作条件预测器，预测器默认参数量为3,754,240</li><li>规划阶段使用交叉熵方法（CEM）搜索候选动作序列，通过潜空间中预测轨迹与目标观测的最小余弦距离对候选动作打分，选择最优序列执行首步动作</li><li>核心创新点包括：1. 区分预测任务与规划任务的评估逻辑，提出可规划范围指标；2. 用完美预测器对照分离预测误差与目标位置对规划的影响；3. 系统研究视觉表示、预测器设计、rollout长度对规划边界的独立影响</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>Meta-World</strong>多任务操作基准，包含16项任务（13个训练任务、3个 held-out 任务），涵盖不同物体、运动模式与接触需求，提供专家演示、成功标签与精确状态转移用于对照</li><li>真实机器人数据集：<strong>BridgeData V2</strong>，包含2958条WidowX机器人的离线交互episode，用于验证仿真结论在真实数据上的普适性</li><li>模型规模：视觉骨干均为ViT-L规格，默认动作条件预测器参数量为3,754,240，额外测试了81倍容量的更大预测器</li><li>训练资源：论文未明确披露具体GPU/TPU等训练硬件资源，训练使用AdamW优化器，有效批次大小为64，最大训练轮次为40轮，采用早停策略选择验证损失最低的checkpoint</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：Meta-World仿真器、BridgeData V2离线真实数据，对照基准包括真实仿真器（完美预测）、随机初始化预测器、 standalone 微调VLA策略（π₀）</li><li>主要评估指标：专家百分位（阈值10%为可靠排序）、任务闭环成功率、可规划范围</li><li>关键实验结果：</li></ul>
+<p> - 5步rollout下，<strong>V-JEPA 2.1</strong>的可规划范围达10个控制步，5种编码器的范围为5-10步，而任务完成需要16-53步，仅覆盖典型任务的约30%</p>
+<p> - 增大预测器容量81倍、延长递归训练至20步均无法扩展可规划范围；仅延长rollout至覆盖目标距离可将范围扩展至至少20步</p>
+<p> - BridgeData V2真实数据上观察到与仿真一致的规律，模型可规划范围为0-5个数据集步</p>
+<p> - 纯想象闭环规划成功率仅23%，添加反馈重规划（MPC）仅提升至30%，使用5步专家子目标可提升至76%，30步rollout朝向最终目标的成功率为47%</p>
+<p> - 世界模型辅助VLA动作选择，可将16项任务的成功率从65%提升至77%，在近域变体任务上从25%提升至49%，在新物体/运动模式任务上仍接近0</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.39324/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">MotionWeave: Learning Motion-Centered Future Dynamics for Vision-Language-Action Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.39198/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">DSDyn-VLA: A Dual-Stream Dynamic Manipulation Framework with Motion Perception, Future Awareness, and Realtime Correction</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

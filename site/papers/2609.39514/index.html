@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spike-driven Vision-Language-Action Model - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出首个支持端到端直接训练的Spike-driven VLA（脉冲驱动视觉-语言-动作）框架，面向机器人操作任务，解决传统VLA模型依赖大Transformer导致的高延迟、高能耗问题，以及现有脉冲VLA依赖ANN转SNN、无法端到端训练、存在时序开销的局限 核心目标是通过脉冲神经网络的稀疏事件驱动计算特性，在保持VLA多模态理解与动作生成性能的同时，大幅降低模型参数量与推理能耗，实现资源受限边缘平台的高效部署 研…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.39514">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.39514.webp" alt="Spike-driven Vision-Language-Action Model" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出首个支持端到端直接训练的Spike-driven VLA（脉冲驱动视觉-语言-动作）框架，面向机器人操作任务，解决传统VLA模型依赖大Tr…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Spike-driven Vision-Language-Action Model</h1>
+            <div class="detail-meta">2026-09-30 · <a href="http://arxiv.org/abs/2609.39514" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.39514" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.39514</span></div>
+            <p class="detail-summary">提出首个支持端到端直接训练的Spike-driven VLA（脉冲驱动视觉-语言-动作）框架，面向机器人操作任务，解决传统VLA模型依赖大Transformer导致的高延迟、高能耗问题，以及现有脉冲VLA依赖ANN转SNN、无法端到端训练、存在时序开销的局限 核心目标是通过脉冲神经网络的稀疏事件驱动计算特性，在保持VLA多模态理解与动作生成性能的同时，大幅降低模型参数量与推理能耗，实现资源受限边缘平台的高效部署 研…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者均隶属于电子科技大学（University of Electronic Science and…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.39514/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出首个支持端到端直接训练的Spike-driven VLA（脉冲驱动视觉-语言-动作）框架，面向机器人操作任务，解决传统VLA模型依赖大Tr…</p>
+  <ul class="reading-intro-points"><li>提出首个支持端到端直接训练的Spike-driven VLA（脉冲驱动视觉-语言-动作）框架，面向机器人操作任务，解决传统VLA模型依赖大Tr…</li><li>核心目标是通过脉冲神经网络的稀疏事件驱动计算特性，在保持VLA多模态理解与动作生成性能的同时，大幅降低模型参数量与推理能耗，实现资源受限边缘平…</li><li>研究聚焦于将脉冲计算范式无缝嵌入VLA全流程，覆盖多模态感知、跨模态融合与动作解码三个核心阶段</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者均隶属于<strong>电子科技大学（University of Electronic Science and Technology of China）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出首个支持端到端直接训练的<strong>Spike-driven VLA（脉冲驱动视觉-语言-动作）</strong>框架，面向机器人操作任务，解决传统VLA模型依赖大Transformer导致的高延迟、高能耗问题，以及现有脉冲VLA依赖ANN转SNN、无法端到端训练、存在时序开销的局限</li><li>核心目标是通过脉冲神经网络的稀疏事件驱动计算特性，在保持VLA多模态理解与动作生成性能的同时，大幅降低模型参数量与推理能耗，实现资源受限边缘平台的高效部署</li><li>研究聚焦于将脉冲计算范式无缝嵌入VLA全流程，覆盖多模态感知、跨模态融合与动作解码三个核心阶段</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>设计了<strong>脉冲视觉编码器（SVE）</strong>和基于BERT的<strong>脉冲指令编码器（SIE）</strong>，分别将主视角+腕部视角的视觉观察、语言指令编码为稀疏脉冲token表示，保留控制相关的感知与语义信息</li><li>提出了<strong>Multi-Winner Spike Fusion（MWSF，多赢家脉冲融合）</strong>模块，通过双向top-k赢者通吃（WTA）脉冲路由实现稀疏跨模态对应，抑制背景干扰，同时减少跨模态计算量</li><li>开发了<strong>Spike Action Chunking Transformer（SpikeACT，脉冲动作分块Transformer）</strong>，结合场景融合记忆与当前机器人状态，通过脉冲交叉注意力并行预测K步连续动作块，实现高效动作生成</li><li>验证了脉冲驱动VLA在<strong>LIBERO</strong>和<strong>Meta-World</strong>基准上的性能，仅用0.15B参数量即达到与大规模ANN-based VLA相当甚至更优的成功率，同时推理能耗和FLOPs大幅降低，为脉冲VLA建模建立了基础框架</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体架构分为三个核心阶段：多模态脉冲编码阶段、跨模态融合阶段、状态条件动作解码阶段，完全采用脉冲神经网络的稀疏事件驱动计算范式，替代传统ANN的密集乘加（MAC）运算</li><li>脉冲视觉编码器采用共享的脉冲视觉Transformer作为backbone，在ImageNet上预训练后微调，编码双视图视觉特征；脉冲指令编码器采用预训练的脉冲BERT，冻结权重提取语言上下文语义特征</li><li>MWSF模块通过双向top-k WTA路由替代传统softmax注意力，仅保留指令相关的视觉token和视觉相关的语言token，实现稀疏跨模态融合，避免背景噪声的累积干扰</li><li>SpikeACT模块引入K个可学习的动作token，通过脉冲交叉注意力关联融合记忆与机器人状态token，并行解码出K步连续动作块，通过时序聚合与投影输出最终控制指令</li><li>关键技术为端到端直接训练的脉冲神经网络，采用离散LIF神经元模型与代理梯度实现反向传播，所有计算均基于稀疏的脉冲累加（AC）操作，大幅降低计算能耗</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集包括：<strong>Meta-World MT50</strong>（包含2500条Sawyer机器人桌面操作演示，覆盖50个语言条件任务）、<strong>LIBERO</strong>（包含4个任务套件共40个语言条件操作任务）、<strong>LIBERO-Plus</strong>（包含10030个带7种分布偏移的扰动任务实例，用于零样本鲁棒性评估）</li><li>模型规模：总参数量仅<strong>0.15B</strong>，远小于对比的ANN-based VLA模型（如OpenVLA为7.5B，SmolVLA(2.25B)为2.25B）</li><li>训练资源：论文未明确标注具体GPU/TPU硬件型号；LIBERO训练共80K步（含10K预热步），有效批次大小为256；Meta-World采用SmolVLA发布的MT50数据集进行评估</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：在<strong>Meta-World MT50</strong>、<strong>LIBERO</strong>（4个套件）、<strong>LIBERO-Plus</strong>三个基准上评估，对比基线包括TinyVLA、π0、SmolVLA、OpenVLA、DreamVLA等主流ANN-based VLA模型</li><li>主要评估指标：任务成功率（%）、模型参数量（B）、计算量（FLOPs，G）、推理能耗（mJ）</li><li>关键实验结果：</li></ul>
+<p> - Meta-World上平均成功率为72.4%，在Medium、Hard任务上排名第一，超越SmolVLA(2.25B) 4.2个百分点，参数量仅为后者的1/15，FLOPs仅为1/404，推理能耗仅为1/840</p>
+<p> - LIBERO上平均成功率为92.4%，Spatial、Object、Goal任务成功率超95%， surpass OpenVLA 15.9个百分点，参数量仅为OpenVLA的1/50，FLOPs仅为OpenVLA的1/265</p>
+<p> - LIBERO-Plus零样本鲁棒性评估中整体成功率为53.2%，超越多数更大规模的ANN基线，验证了模型在分布偏移下的强鲁棒性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.39526/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Discrete Forcing: Infusing Discrete Guidance into Continuous Denoising for Few-Step Action Experts</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.39403/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">IronMind: Scaling Humanoid Dexterous Manipulation via Camera-Space Ego-Centric Pretraining</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

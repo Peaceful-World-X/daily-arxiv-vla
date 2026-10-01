@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>From Local Whole-Body VLA Behaviors to Scene-Scale Aerial Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文针对场景级空中操纵任务，提出统一的局部全身VLA行为合成与执行框架，解决三类核心问题：物理关节无人空中机械臂（UAM）收集任务条件示范成本高风险大、推理执行异步导致的动作-状态错位与命令不连续、关系型语言目标到可行全身交接状态的跨站点解析与转移 框架核心是将局部学习的全身VLA技能组合为跨站点的完整任务，无需依赖整体任务monolithic策略，同时显式处理物理实现与跨站点转移的运动学动力学约束 研究目标是在仿…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.39670">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.39670.webp" alt="From Local Whole-Body VLA Behaviors to Scene-Scale Aerial Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文针对场景级空中操纵任务，提出统一的局部全身VLA行为合成与执行框架，解决三类核心问题：物理关节无人空中机械臂（UAM）收集任务条件示范成本…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">From Local Whole-Body VLA Behaviors to Scene-Scale Aerial Manipulation</h1>
+            <div class="detail-meta">2026-09-30 · <a href="http://arxiv.org/abs/2609.39670" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.39670" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.39670</span></div>
+            <p class="detail-summary">论文针对场景级空中操纵任务，提出统一的局部全身VLA行为合成与执行框架，解决三类核心问题：物理关节无人空中机械臂（UAM）收集任务条件示范成本高风险大、推理执行异步导致的动作-状态错位与命令不连续、关系型语言目标到可行全身交接状态的跨站点解析与转移 框架核心是将局部学习的全身VLA技能组合为跨站点的完整任务，无需依赖整体任务monolithic策略，同时显式处理物理实现与跨站点转移的运动学动力学约束 研究目标是在仿…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">12 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构包括：南洋理工大学电气与电子工程学院（Weixiang Guo, Rui Jin, H…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.39670/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文针对场景级空中操纵任务，提出统一的局部全身VLA行为合成与执行框架，解决三类核心问题：物理关节无人空中机械臂（UAM）收集任务条件示范成本…</p>
+  <ul class="reading-intro-points"><li>论文针对场景级空中操纵任务，提出统一的局部全身VLA行为合成与执行框架，解决三类核心问题：物理关节无人空中机械臂（UAM）收集任务条件示范成本…</li><li>框架核心是将局部学习的全身VLA技能组合为跨站点的完整任务，无需依赖整体任务monolithic策略，同时显式处理物理实现与跨站点转移的运动学…</li><li>研究目标是在仿真和物理平台上验证框架的有效性，实现自然语言指令驱动的多站点空中操纵任务</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构包括：<strong>南洋理工大学电气与电子工程学院</strong>（Weixiang Guo, Rui Jin, Haotian Jin, Xinhang Xu, Ruiyang Liu, Haoran Zhao, Lihua Xie）、<strong>同济大学上海智能科学研究所电子信息工程学院</strong>（Yi Wang, Kun Cao）、<strong>北京航空航天大学航空科学与工程学院</strong>（Weiqi Gai）、<strong>VinUniversity</strong>（Lihua Xie）</li><li>通讯作者为Lihua Xie，联系邮箱为elhxie@ntu.edu.sg，Weixiang Guo与Rui Jin为共同第一作者</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文针对场景级空中操纵任务，提出统一的局部全身VLA行为合成与执行框架，解决三类核心问题：物理关节无人空中机械臂（UAM）收集任务条件示范成本高风险大、推理执行异步导致的动作-状态错位与命令不连续、关系型语言目标到可行全身交接状态的跨站点解析与转移</li><li>框架核心是将局部学习的全身VLA技能组合为跨站点的完整任务，无需依赖整体任务monolithic策略，同时显式处理物理实现与跨站点转移的运动学动力学约束</li><li>研究目标是在仿真和物理平台上验证框架的有效性，实现自然语言指令驱动的多站点空中操纵任务</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出场景可重构的全向VLA监督管线，结合运动学动力学可行的全身专家规划与同步多视角渲染，无需目标UAM平台的物理示范即可生成任务条件的训练数据</li><li>提出测量进度对齐的实现方法（MPAR），通过将异步返回的动作块与物理执行进度对齐、生成C²连续桥接轨迹、参数化MINCO轨迹优化，实现延迟和命令中断下的连续、约束感知的全身动作执行</li><li>提出基于关系场景图的组合接口，实现语言目标到对象实例的语义落地、技能条件交互区域生成、多面体拓扑引导的跨站点无碰撞转移与可行全身交接</li><li>完整系统在仿真和物理articulated UAM平台上验证，支持多站点自然语言空中操纵任务</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>监督合成模块</strong>：场景可重构管线对每个任务在几何和视觉层面重构，采样UAM初始状态、目标与干扰物的6DoF位姿，生成对象相关的交互目标，通过全身规划器生成满足运动、关节、连续性、碰撞约束的专家轨迹；采用3D高斯溅射（3DGS）分别建模静态环境与可动物体，在统一度量帧下注册，支持可动物体独立放置；在专家轨迹的每个时间点同步渲染基座与腕部相机的图像，结合全身状态与语言指令作为VLA输入，对应未来动作块作为监督标签</li><li><strong>VLA模型</strong>：微调预训练的<strong>π₀.₅ VLA模型</strong>，通过<strong>OpenPI</strong>框架实现，对PaliGemma语言模块和动作专家分别应用rank-16与rank-32的LoRA适配器；模型输入为224×224的基座/腕部图像、本体感知状态与语言指令，预测10步未来动作（0.25s间隔，2.5s时域），动作维度为8维，包含3DoF臂目标、基座速度、滚转/俯仰角、夹爪得分、基座位置与偏航偏移</li><li><strong>MPAR实现模块</strong>：将VLA预测的动作块解码为全身路径点，定义共享相位s联合索引基座、偏航与机械臂，保持行为协调性；当新动作块到达时，计算交接时间并估计交接时的物理状态，将估计状态投影到新VLA路径上得到进度对齐的相位，搜索可行交接相位后生成C²连续桥接轨迹连接当前命令状态与VLA路径的可行交接点，后续通过进度参数化的MINCO轨迹优化器联合优化轨迹段持续时间与顶点相位，满足平滑性、连续性、进度一致性、运动学动力学可行性约束</li><li><strong>场景图组合模块</strong>：基于USS-Nav的多面体空间连通性与语义区域层级构建关系场景图，组织对象实例在区域-多面体层级下并编码空间关系与自由空间连通性；外部LLM根据语言任务、场景图与可用VLA技能，将语言引用映射到图支持的对象类别与关系，解析隐式任务依赖，组合成有序的图落地任务计划；解析器仅当唯一匹配到对象实例时才执行对应步骤，对解析到的实例通过技能相关几何模板生成交互区域，与 clearance-eroded 可达多面体求交并强制执行全身可行性，得到候选交接集；拓扑搜索从当前多面体单元选择终端交接状态与连通路线，组装 aerial corridor 约束全身转移，仅当测量位姿与运动满足交互区域容差时才将控制交接给局部VLA</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>训练数据集：仿真策略采用<strong>MuJoCo收集的局部技能数据集</strong>，共39,200个动作窗口；物理平台策略采用<strong>3DGS渲染的同步多视角数据集</strong>，共39,200个动作窗口</li><li>模型规模：基于预训练<strong>π₀.₅ VLA模型</strong>微调，通过OpenPI框架注入LoRA适配器，语言模块LoRA rank为16，动作专家LoRA rank为32</li><li>训练资源：优化器为AdamW，训练30,000步，批次大小32，余弦学习率衰减，初始学习率2.5×10⁻⁵，1000步预热后降至2.5×10⁻⁶；VLA推理在<strong>NVIDIA RTX 5090</strong>上远程运行</li><li>物理平台硬件：关节无人空中机械臂（UAM）搭载四旋翼、3DoF机械臂、夹爪，板载<strong>NVIDIA Jetson Orin NX</strong>、<strong>Intel RealSense D450深度相机</strong>与单目RGB相机</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境与基准</strong>：在<strong>MuJoCo仿真环境</strong>与物理 articulated UAM 平台进行评估，配对评估严格控制相同模型、初始条件、任务配置与随机种子；测试覆盖四种异步执行条件：C0（无额外推理通信延迟）、C1（单块额外250ms延迟）、C2（单块额外500ms延迟）、C3（500ms延迟外加单次250ms命令更新暂停，模拟临时命令中断，物理与状态估计正常运行），逐步解耦名义时间与物理执行进度；对比基线包括<strong>Monolithic Whole-Task VLA</strong>（无组合模块的整体任务基线，用相同MPAR模块实现）、<strong>RTC-Direct</strong>（基于AirVLA RTC机制的直接执行基线，无约束轨迹实现）、<strong>Nominal-time ablation</strong>（仅保留MINCO轨迹优化、用名义时间选择交接的消融基线）</li><li><strong>主要评估指标</strong>：多站点任务成功率、局部交互任务成功率、交接相位误差（P50/P95）、路径跳过/重复长度、候选轨迹拒绝率、碰撞率</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - 跨站点任务：整体任务基线50次试验全部失败（19次碰撞、31次运行时规划/动作可行性终止），本文方法完成21/50次任务，成功率为42.0%（95% Wilson置信区间[29.4%, 55.8%]）；局部VLA技能在神谕目标与可行交接的理想条件下成功率为65.0%（39/60次），其中物体获取是主要瓶颈（14/30次成功），后获取步骤成功率为25/30次</p>
+<p> - 全身实现评估：MPAR在120次局部任务试验中成功78次（65.0%），优于名义时间对齐的71次（59.2%）与RTC-Direct的54次（45.0%）；在500ms延迟加命令中断的C3条件下，MPAR成功23/30次，显著高于名义时间的16/30次与RTC-Direct的12/30次</p>
+<p> - 机制层面：MPAR将交接相位P50误差平均降低0.212s（95%置信区间[0.163s, 0.262s]），P95误差降低0.315s（95%置信区间[0.234s, 0.393s]）；路径跳过长度减少7.44cm，重复长度减少1.89cm，候选轨迹拒绝率从17.42%降至12.81%；碰撞次数从RTC-Direct的22/120次、名义时间的4/120次降至MPAR的1/120次，无安全违规发布</p>
+<p> - 场景图消融实验：移除关系落地、拓扑引导路由、可行交接组件后任务成功率均显著下降，证明三类组件的必要性</p>
+<p> - 物理平台验证：在物理 articulated UAM 上完成了代表性的局部交互与多站点任务，验证了全栈系统的有效性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.39794/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Inline Memory Meets Reusable Skills: Memory-centric Framework for Vision-Language-Action Model</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.39601/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

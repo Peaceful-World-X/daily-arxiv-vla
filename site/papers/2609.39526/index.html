@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Discrete Forcing: Infusing Discrete Guidance into Continuous Denoising for Few-Step Action Experts - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有视觉-语言-动作（VLA）模型中动作生成的效率与精度权衡问题：离散动作表示结构紧凑但精度不足，连续动作表示精度高但通常需要多步迭代去噪，且未充分挖掘粗到精生成范式的潜力 提出Discrete Forcing框架，旨在通过离散到连续的联合去噪流程，同时实现动作高层结构的紧凑建模与低层动作的高精度生成，提升动作生成的推理效率与任务表现 解决的核心问题是如何在统一框架内兼顾动作的高层语义结构与操作精度，同时避免引…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.39526">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.39526.webp" alt="Discrete Forcing: Infusing Discrete Guidance into Continuous Denoising for Few-Step Action Experts" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有视觉-语言-动作（VLA）模型中动作生成的效率与精度权衡问题：离散动作表示结构紧凑但精度不足，连续动作表示精度高但通常需要多步迭代去噪…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Discrete Forcing: Infusing Discrete Guidance into Continuous Denoising for Few-Step Action Experts</h1>
+            <div class="detail-meta">2026-09-30 · <a href="http://arxiv.org/abs/2609.39526" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.39526" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.39526</span></div>
+            <p class="detail-summary">针对现有视觉-语言-动作（VLA）模型中动作生成的效率与精度权衡问题：离散动作表示结构紧凑但精度不足，连续动作表示精度高但通常需要多步迭代去噪，且未充分挖掘粗到精生成范式的潜力 提出Discrete Forcing框架，旨在通过离散到连续的联合去噪流程，同时实现动作高层结构的紧凑建模与低层动作的高精度生成，提升动作生成的推理效率与任务表现 解决的核心问题是如何在统一框架内兼顾动作的高层语义结构与操作精度，同时避免引…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">香港科技大学（广州）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.39526/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有视觉-语言-动作（VLA）模型中动作生成的效率与精度权衡问题：离散动作表示结构紧凑但精度不足，连续动作表示精度高但通常需要多步迭代去噪…</p>
+  <ul class="reading-intro-points"><li>针对现有视觉-语言-动作（VLA）模型中动作生成的效率与精度权衡问题：离散动作表示结构紧凑但精度不足，连续动作表示精度高但通常需要多步迭代去噪…</li><li>提出Discrete Forcing框架，旨在通过离散到连续的联合去噪流程，同时实现动作高层结构的紧凑建模与低层动作的高精度生成，提升动作生成…</li><li>解决的核心问题是如何在统一框架内兼顾动作的高层语义结构与操作精度，同时避免引入额外参数开销与推理延迟</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>香港科技大学（广州）</li><li>华南理工大学</li><li>中国科学技术大学</li><li>西湖大学</li><li>浙江大学</li><li>清华大学</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有视觉-语言-动作（VLA）模型中动作生成的效率与精度权衡问题：离散动作表示结构紧凑但精度不足，连续动作表示精度高但通常需要多步迭代去噪，且未充分挖掘粗到精生成范式的潜力</li><li>提出<strong>Discrete Forcing</strong>框架，旨在通过离散到连续的联合去噪流程，同时实现动作高层结构的紧凑建模与低层动作的高精度生成，提升动作生成的推理效率与任务表现</li><li>解决的核心问题是如何在统一框架内兼顾动作的高层语义结构与操作精度，同时避免引入额外参数开销与推理延迟</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出Discrete Forcing，一个基于flow-matching的框架，通过离散到连续的去噪流程实现从粗粒度动作结构到精细动作细节的分步生成</li><li>设计统一的双分支动作专家架构，采用部分共享Transformer层+专用分支的设计，在匹配常规单分支DiT参数总量的前提下，每个分支仅需一次前向传播即可完成生成，无额外模型规模开销</li><li>通过大量仿真与真实世界实验验证，该方法在相当参数量下优于常规连续动作专家，性能随模型容量提升保持稳定增长，同时在高精度操作与动态响应类任务上均有显著表现提升</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于flow-matching框架构建动作生成流程，采用<strong>部分共享层的双分支Action DiT</strong>架构：前Ls层Transformer层跨离散、连续分支共享参数学习通用动作特征，后续层与输出头独立参数化，分别负责离散动作预测与连续动作细化，参数总量与常规单分支DiT保持一致</li><li>设计离散与连续双路动作表示：离散表示将归一化动作块独立量化为255个动作bin，搭配[MASK]特殊token构成256维词表，通过可学习嵌入表映射为离散token；连续表示通过MLP编码器将归一化动作块投影为连续token，二者共享输入隐层维度</li><li>训练阶段采用配对扩散框架：离散分支执行掩码动作恢复任务，学习粗粒度动作结构；连续分支的源分布由真实量化动作与高斯噪声按α=0.3的比例混合构造，训练目标包含flow matching损失、一步重建损失与离散分支的交叉熵损失</li><li>关键创新在于显式建立离散到连续的粗到精生成范式，通过离散预测先获取全局动作结构，再引导连续分支完成精细化生成，同时通过一步重建损失实现连续分支的单步推理，大幅降低推理成本</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO</strong>（单臂操作 benchmark）、<strong>RoboTwin 2.0</strong>（双臂操作 benchmark，每任务仅50条演示）、<strong>RoboCasa-GR1</strong>（高维动作空间双臂操作 benchmark）</li><li>真实世界数据集：自采集的ARX LIFT2双臂机器人4类操作任务数据集，覆盖精密插入、动态目标跟踪两类场景</li><li>模型规模：总参数量分为1.0B、2.6B、5.5B三档，对应动作专家参数量为175M、400M、900M；LIBERO benchmark 上使用1.5B参数版本，RoboTwin 2.0与RoboCasa-GR1使用5.5B参数版本</li><li>训练资源：论文未明确披露具体训练硬件配置；评估阶段单模型峰值GPU内存占用为3.09 GiB</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真评估在LIBERO、RoboTwin 2.0、RoboCasa-GR1三个公开benchmark开展；真实世界评估在搭载3个Intel RealSense D405相机（头部1个、单臂各1个）的ARX LIFT2双臂机器人平台开展</li><li>评估基准：仿真实验以<strong>StarVLA</strong>为主要基线，同时对比DreamVLA、MemoryVLA、π₀.5、FlowerVLA、CF-VLA等prior方法；真实实验对比OpenVLA-OFT、π₀两类代表性连续动作策略</li><li>主要评估指标：仿真任务采用<strong>任务成功率（%）</strong>，真实任务采用<strong>任务完成进度（%）</strong>，推理效率指标包括函数评估次数（NFE）、动作生成延迟、端到端延迟</li><li>关键实验结果：</li></ul>
+<p> - 仿真LIBERO benchmark：1.5B参数、2 NFE条件下平均成功率达97.6%，超过所有NFE>2的迭代生成方法，同时比同参数基线StarVLA（2 NFE）提升2.5个百分点，成功率与10步StarVLA相当但速度快5倍</p>
+<p> - RoboTwin 2.0 benchmark：5.5B参数版本平均成功率达59.32%，较StarVLA提升9.52个百分点，无需机器人特定预训练，在每任务仅50条演示的少样本条件下表现优异</p>
+<p> - RoboCasa-GR1 benchmark：平均成功率达56.8%，较StarVLA提升12.9个百分点，在高维复杂动作空间下验证了方法的有效性</p>
+<p> - 模型扩展性：在1.0B、2.6B、5.5B三档参数规模下，性能随模型容量提升单调上升无饱和趋势；1.0B版本即可达到接近5.5B StarVLA的性能，同时速度快2.97倍，参数量少81.8%</p>
+<p> - 真实世界实验：4类操作任务上平均任务完成进度达74.9%，较π₀与OpenVLA-OFT基线提升16.4%，在动态跟踪、精密插入任务上增益尤为显著</p>
+<p> - 消融实验验证：离散到连续的生成顺序、离散引导的连续源初始化、一步重建损失、独立分支设计均为关键有效组件，替换为其他设计会导致性能下降1.6~4.8个百分点</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.39601/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.39514/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Spike-driven Vision-Language-Action Model</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

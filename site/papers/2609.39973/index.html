@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EWAM: Emergent Depth-Wise Specialization in a Unified Embodied Model -- From Semantic Understanding through Visual Foresight to Action - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文针对现有视觉-语言-动作（VLA）模型侧重语义理解、世界-动作模型（WAM）侧重视觉动态预测，且混合架构仍存在单一专家偏置的问题，提出了EWAM统一具身模型，探索当语义理解、视觉预测、动作生成三种能力真正统一时，模型是否能自发形成有序的计算分工，而非多模态信息在整个网络无序竞争 研究核心是识别并验证模型内部自发涌现的深度-wise专业化现象：即不同深度的动作查询会优先从不同模态获取信息，形成从语义理解到视觉预测…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.39973">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.39973.webp" alt="EWAM: Emergent Depth-Wise Specialization in a Unified Embodied Model -- From Semantic Understanding through Visual Foresight to Action" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文针对现有视觉-语言-动作（VLA）模型侧重语义理解、世界-动作模型（WAM）侧重视觉动态预测，且混合架构仍存在单一专家偏置的问题，提出了E…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">EWAM: Emergent Depth-Wise Specialization in a Unified Embodied Model -- From Semantic Understanding through Visual Foresight to Action</h1>
+            <div class="detail-meta">2026-09-30 · <a href="http://arxiv.org/abs/2609.39973" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.39973" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.39973</span></div>
+            <p class="detail-summary">论文针对现有视觉-语言-动作（VLA）模型侧重语义理解、世界-动作模型（WAM）侧重视觉动态预测，且混合架构仍存在单一专家偏置的问题，提出了EWAM统一具身模型，探索当语义理解、视觉预测、动作生成三种能力真正统一时，模型是否能自发形成有序的计算分工，而非多模态信息在整个网络无序竞争 研究核心是识别并验证模型内部自发涌现的深度-wise专业化现象：即不同深度的动作查询会优先从不同模态获取信息，形成从语义理解到视觉预测…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属研究机构为Yinwang Intelligent Technology Co. Ltd</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.39973/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文针对现有视觉-语言-动作（VLA）模型侧重语义理解、世界-动作模型（WAM）侧重视觉动态预测，且混合架构仍存在单一专家偏置的问题，提出了E…</p>
+  <ul class="reading-intro-points"><li>论文针对现有视觉-语言-动作（VLA）模型侧重语义理解、世界-动作模型（WAM）侧重视觉动态预测，且混合架构仍存在单一专家偏置的问题，提出了E…</li><li>研究核心是识别并验证模型内部自发涌现的深度-wise专业化现象：即不同深度的动作查询会优先从不同模态获取信息，形成从语义理解到视觉预测再到动作…</li><li>同时研究了人类第一视角视频预训练对机器人策略跨具身迁移、真实场景鲁棒性的提升作用，以及子任务阶段监督对长程任务完成率的增益</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属研究机构为<strong>Yinwang Intelligent Technology Co. Ltd</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文针对现有视觉-语言-动作（VLA）模型侧重语义理解、世界-动作模型（WAM）侧重视觉动态预测，且混合架构仍存在单一专家偏置的问题，提出了<strong>EWAM</strong>统一具身模型，探索当语义理解、视觉预测、动作生成三种能力真正统一时，模型是否能自发形成有序的计算分工，而非多模态信息在整个网络无序竞争</li><li>研究核心是识别并验证模型内部自发涌现的<strong>深度-wise专业化</strong>现象：即不同深度的动作查询会优先从不同模态获取信息，形成从语义理解到视觉预测再到动作生成的层次化信息交接机制</li><li>同时研究了人类第一视角视频预训练对机器人策略跨具身迁移、真实场景鲁棒性的提升作用，以及子任务阶段监督对长程任务完成率的增益</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>开发了以动作为核心的<strong>EWAM</strong>统一具身模型：通过非对称联合注意力机制，仅允许动作token在每一层读取视觉语言、预测未来视觉、动作三类信息，保留视觉和视觉语言感知专家的独立角色，避免跨模态信息竞争模糊预训练能力</li><li>识别并表征了自发的<strong>深度-wise专业化</strong>现象：验证了该现象在不同任务中可复现、在不同去噪步骤中稳定，通过检查点追踪、层定向训练干预、固定检查点深度干预、反事实未来特征注入等方法，证明了该现象是训练过程中学习到的且功能上具有实质性影响</li><li>验证了EWAM的多场景性能优势：在RoboTwin clean-to-random任务中达到72.1%成功率、域内评估平均92.9%成功率，LIBERO仿真任务达到98.8%成功率，且在3种真实机器人具身上表现一致；同时证明人类第一视角预训练可提升跨具身迁移和真实场景鲁棒性，子任务阶段监督可提升长程任务完成率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>架构设计：EWAM包含三个层对齐的专家模块，视觉语言专家初始化自<strong>Qwen3-VL-2B</strong>，负责编码语言指令和当前图像生成语义token；视频专家初始化自<strong>Wan2.2-TI2V-5B</strong>，负责处理当前帧潜变量和带噪未来视频潜变量生成预测视觉token；动作专家负责编码带噪动作块生成动作token，整体共30个统一Transformer块</li><li>非对称注意力机制：通过定制掩码仅允许动作query访问视觉语言、视频、动作三类key/value，视觉和视觉语言流仅能访问自身信息，保证动作流是唯一的跨模态信息整合站点，同时让动作查询的注意力分布成为可解释的模态分配度量</li><li>训练目标：采用<strong>联合视频-动作流匹配</strong>目标，视频和动作模态独立采样噪声水平，联合回归两类模态的流速度，让未来视频和动作在同一个前向过程中联合去噪，使动态演化的未来视觉特征可以直接参与动作计算</li><li>后训练优化：加入子任务感知后训练模块，将长程演示划分为语义子任务阶段，额外加入子任务文本预测损失和阶段进度索引回归损失，无需额外高层策略即可提升长程任务完成率</li><li>关键创新：无需人工预设模态分工，模型在训练过程中自发涌现出浅层关注语义、中间层关注预测未来视觉、深层关注动作自身的深度专业化模式，实现了多模态能力的有机整合</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>预训练数据集：跨具身机器人轨迹数据集、异构人类第一视角视频数据集（包含<strong>Ego4D</strong>、<strong>EPIC-Kitchens</strong>、<strong>Something-Something v2</strong>等公开具身视频数据源）</li><li>仿真评估数据集：<strong>RoboTwin 2.0</strong>仿真基准（包含跨场景clean-to-random评估、域内评估）、<strong>LIBERO</strong>仿真基准</li><li>真实世界评估场景：3种不同机器人具身、桌面场景变化任务、真实世界双篮分类长程任务</li><li>模型规模：视觉语言专家初始化自<strong>Qwen3-VL-2B</strong>（28层隐藏层），视频专家初始化自<strong>Wan2.2-TI2V-5B</strong>，整体模型包含30个统一Transformer块，视觉语言特征通过固定映射对齐到统一深度</li><li>训练资源：原文未明确标注具体GPU/TPU配置，开展了两阶段大尺度预训练（跨具身机器人轨迹预训练、人类第一视角视频预训练）和任务特定后训练</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：覆盖仿真和真实世界两类场景，仿真环境包含RoboTwin 2.0跨场景/域内评估、LIBERO基准，真实世界环境包含3种机器人具身、场景变化的桌面操作任务、长程双篮分类任务</li><li>主要评估指标：任务成功率（跨场景、域内、仿真、真实场景）、跨具身迁移成功率、真实场景鲁棒性、长程任务完成率、子任务阶段预测准确率</li><li>关键实验结果：</li></ul>
+<p> - 仿真性能：EWAM在RoboTwin clean-to-random跨场景评估中达到72.1%成功率，域内评估平均成功率92.9%，LIBERO仿真任务成功率98.8%</p>
+<p> - 跨具身与鲁棒性：人类第一视角预训练可将留出机器人具身的任务成功率从40.1%提升至66.9%；场景变化下的真实机器人任务成功率从10%提升至60%</p>
+<p> - 长程任务增益：子任务阶段监督可将仿真和真实世界的长程任务完成率进一步提升</p>
+<p> - 消融验证：层定向干预和反事实实验证明深度专业化是功能性的，破坏该分工会显著降低策略性能</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.40007/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Multi-Link Safety Filtering for VLA Policies Around Moving Hazards</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.39971/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">When Instructions Retrieve Trajectories: Diagnosing and Mitigating Generalization Failures in VLA Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

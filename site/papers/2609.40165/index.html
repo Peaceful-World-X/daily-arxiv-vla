@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PrefPI: Preference-Guided Steering into Out-of-Distribution Behaviors - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文提出PrefPI（偏好引导策略迭代）框架，旨在解决现有偏好学习方法仅能优化初始策略已覆盖的行为、无法引导策略生成分布外（OOD）新行为的核心局限 核心思路是将偏好学习转化为偏好条件生成建模问题，利用相对偏好选择得到的条件-非条件密度比作为隐式最优性信号，通过分类器自由引导（CFG）放大信号实现迭代式策略改进 论文在仿真和真实机器人场景的扩散策略、PI0.5流匹配VLA上验证了PrefPI的有效性，证明其仅用少量…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2609.40165">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2609.40165.webp" alt="PrefPI: Preference-Guided Steering into Out-of-Distribution Behaviors" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文提出PrefPI（偏好引导策略迭代）框架，旨在解决现有偏好学习方法仅能优化初始策略已覆盖的行为、无法引导策略生成分布外（OOD）新行为的核…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">PrefPI: Preference-Guided Steering into Out-of-Distribution Behaviors</h1>
+            <div class="detail-meta">2026-09-30 · <a href="http://arxiv.org/abs/2609.40165" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.40165" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.40165</span></div>
+            <p class="detail-summary">本文提出PrefPI（偏好引导策略迭代）框架，旨在解决现有偏好学习方法仅能优化初始策略已覆盖的行为、无法引导策略生成分布外（OOD）新行为的核心局限 核心思路是将偏好学习转化为偏好条件生成建模问题，利用相对偏好选择得到的条件-非条件密度比作为隐式最优性信号，通过分类器自由引导（CFG）放大信号实现迭代式策略改进 论文在仿真和真实机器人场景的扩散策略、PI0.5流匹配VLA上验证了PrefPI的有效性，证明其仅用少量…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Georgia Institute of Technology（佐治亚理工学院），论文所有作者均隶属于…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2609.40165/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文提出PrefPI（偏好引导策略迭代）框架，旨在解决现有偏好学习方法仅能优化初始策略已覆盖的行为、无法引导策略生成分布外（OOD）新行为的核…</p>
+  <ul class="reading-intro-points"><li>本文提出PrefPI（偏好引导策略迭代）框架，旨在解决现有偏好学习方法仅能优化初始策略已覆盖的行为、无法引导策略生成分布外（OOD）新行为的核…</li><li>核心思路是将偏好学习转化为偏好条件生成建模问题，利用相对偏好选择得到的条件-非条件密度比作为隐式最优性信号，通过分类器自由引导（CFG）放大信…</li><li>论文在仿真和真实机器人场景的扩散策略、PI0.5流匹配VLA上验证了PrefPI的有效性，证明其仅用少量偏好反馈即可实现大幅行为偏移，同时保持…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Georgia Institute of Technology</strong>（佐治亚理工学院），论文所有作者均隶属于该校交互计算学院</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文提出<strong>PrefPI（偏好引导策略迭代）</strong>框架，旨在解决现有偏好学习方法仅能优化初始策略已覆盖的行为、无法引导策略生成分布外（OOD）新行为的核心局限</li><li>核心思路是将偏好学习转化为偏好条件生成建模问题，利用相对偏好选择得到的条件-非条件密度比作为隐式最优性信号，通过分类器自由引导（CFG）放大信号实现迭代式策略改进</li><li>论文在仿真和真实机器人场景的扩散策略、PI0.5流匹配VLA上验证了PrefPI的有效性，证明其仅用少量偏好反馈即可实现大幅行为偏移，同时保持高任务成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了<strong>「超越初始有效支持的引导」</strong>这一挑战性偏好学习场景：目标行为在初始策略下极低概率出现，且无额外演示数据可供使用</li><li>提出PrefPI迭代式引导框架，通过偏好条件生成建模与CFG结合，逐步将策略引导至初始分布外的期望行为</li><li>证明相对Top-m选择可保持潜在效用排序，使CFG可作为仅依赖相对偏好反馈的策略改进算子</li><li>在仿真与真实机器人的扩散策略、PI0.5流匹配VLA上验证，PrefPI仅用有限偏好反馈即可实现大幅行为偏移，同时保持90%以上的任务成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>PrefPI为迭代式框架，每轮流程为：当前策略生成一批轨迹，用户选择Top-m偏好轨迹，分别训练偏好条件分支（使用偏好轨迹）和非条件分支（使用累积的成功轨迹），通过CFG结合两个分支得到下一轮策略，重复该循环实现逐步引导</li><li>创新点：将偏好学习转化为条件生成建模问题，无需显式奖励函数或额外演示；利用相对偏好选择得到的密度比作为隐式最优性信号，通过CFG放大实现策略改进；通过累积成功轨迹保留行为多样性，支持持续探索</li><li>关键技术：分类器自由引导（CFG）、迭代式生成-选择-引导-部署循环、基于Top-m选择的隐式最优性信号构造；实际实现中CFG应用于动作生成策略内部</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO基准</strong>（OpenDrawer、BowlToStove、PushPlate等任务）、<strong>RoboMimic数据集</strong>（CanDropPos、CanSpeed、LiftDetour任务）</li><li>真实任务：<strong>WidowX机械臂</strong>的CubePickAndPlace任务、物体投掷任务，初始策略通过100条任务演示微调得到（零shot PI0.5初始成功率为0%）</li><li>基础模型：<strong>PI0.5-LIBERO流匹配VLA</strong>、<strong>扩散策略（Diffusion Policy）</strong></li><li>训练资源：论文未明确披露具体GPU/TPU等训练硬件信息</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境（LIBERO、RoboMimic）、真实机器人环境（WidowX机械臂）</li><li>评估指标：仿真中为任务速度、绕障高度/水平位移、任务成功率；真实环境中为任务完成速度、物体运输高度、投掷距离、任务成功率</li><li>关键实验结果：</li></ul>
+<p> - 仿真场景中，PrefPI在10轮迭代内将BowlToStove任务的绕障高度提升65.1%，将PushPlate任务的水平位移提升106%，任务速度提升25%-38%，早期迭代成功率保持在90%以上</p>
+<p> - 真实场景中，仅用150条偏好标注轨迹（3轮迭代，每轮50条），PrefPI将物体运输高度从10.7cm提升至19.8cm，任务速度提升1.83倍，绕障高度提升1.9倍，投掷距离提升4.5倍，成功率保持在90%以上</p>
+<p> - 匹配反馈预算的对比实验中，PrefPI在OOD引导任务上整体优于<strong>IFBC（迭代式过滤行为克隆）</strong>、<strong>DPO（直接偏好优化）</strong>、<strong>FDPP</strong>、<strong>DSRL</strong>等基线，在分布内偏好优化任务上可达到最佳基线的同等效果</p>
+<p> - 初始策略的行为多样性越高，PrefPI的引导效果越好：高多样性先验下绕障高度可达24cm且成功率保持85%以上，低多样性先验下仅能达到20cm且成功率跌至50%</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2609.40306/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.40134/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Tactile Curiosity Drives Robot Interaction</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Staircase Policy: Streaming Inference for World-Action Models with Large Action Chunks - VLA / Vision-Language-Action 每日论文卡</title>
-    <meta name="description" content="待生成" />
+    <meta name="description" content="针对World-Action Models（WAMs）存在的未来预测增加推理开销、大动作块长执行 horizon 时后续动作依赖过时观测导致性能下降的问题，提出Staircase Policy流式推理与训练框架。 该方法将流匹配Vision-Language-Action（VLA）模型转换为JEPA风格的WAM（称为S-WAM），将大动作块划分为子块并在交错去噪阶段处理，实现近端动作即时执行、后续动作持续细化，无需…" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,11 +34,11 @@
             <p class="eyebrow">论文详情</p>
             <h1 class="detail-page-title">Staircase Policy: Streaming Inference for World-Action Models with Large Action Chunks</h1>
             <div class="detail-meta">2026-09-29 · <a href="http://arxiv.org/abs/2609.36471" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2609.36471" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2609.36471</span></div>
-            <p class="detail-summary">待生成</p>
+            <p class="detail-summary">针对World-Action Models（WAMs）存在的未来预测增加推理开销、大动作块长执行 horizon 时后续动作依赖过时观测导致性能下降的问题，提出Staircase Policy流式推理与训练框架。 该方法将流匹配Vision-Language-Action（VLA）模型转换为JEPA风格的WAM（称为S-WAM），将大动作块划分为子块并在交错去噪阶段处理，实现近端动作即时执行、后续动作持续细化，无需…</p>
             <div class="detail-micro-meta">
-              <span class="meta-pill">1 分钟读完</span>
-              <span class="meta-pill">1 张阅读卡</span>
-              
+              <span class="meta-pill">10 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Guoheng Sun：University of Maryland, College Park</span>
             </div>
           </div>
         </div>
@@ -52,16 +52,62 @@
     <span class="reading-badge">一眼看懂</span>
     <a class="cover-preview-link" href="../../covers/2609.36471/">封面预览</a>
   </div>
-  <p class="reading-intro-hook">待生成</p>
-  <ul class="reading-intro-points"><li>待生成</li></ul>
+  <p class="reading-intro-hook">针对World-Action Models（WAMs）存在的未来预测增加推理开销、大动作块长执行 horizon 时后续动作依赖过时观测导致性…</p>
+  <ul class="reading-intro-points"><li>针对World-Action Models（WAMs）存在的未来预测增加推理开销、大动作块长执行 horizon 时后续动作依赖过时观测导致性…</li><li>该方法将流匹配Vision-Language-Action（VLA）模型转换为JEPA风格的WAM（称为S-WAM），将大动作块划分为子块并在…</li><li>研究目标是在不损失甚至提升任务成功率的前提下，大幅提升WAM的动作吞吐量、降低首动作延迟，满足边缘设备等场景的实时控制需求。</li></ul>
 </section>
 <section class="reading-card reading-card-section">
   <div class="reading-card-topline">
     <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>Guoheng Sun：<strong>University of Maryland, College Park</strong></li><li>Chen Chen：Independent Researcher</li><li>Jin Wang：<strong>Oxford Robotics Institute, University of Oxford</strong></li><li>Ang Li：<strong>University of Maryland, College Park</strong></li><li>Teresa Lv（通讯作者）：Independent Researcher</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
     <span class="reading-step-note">论文概述</span>
   </div>
   <h2>论文概述</h2>
-  <div class="reading-card-content"><p>待生成</p></div>
+  <div class="reading-card-content"><ul><li>针对World-Action Models（WAMs）存在的未来预测增加推理开销、大动作块长执行 horizon 时后续动作依赖过时观测导致性能下降的问题，提出<strong>Staircase Policy</strong>流式推理与训练框架。</li><li>该方法将流匹配Vision-Language-Action（VLA）模型转换为JEPA风格的WAM（称为<strong>S-WAM</strong>），将大动作块划分为子块并在交错去噪阶段处理，实现近端动作即时执行、后续动作持续细化，无需重复调用完整策略即可支持长 horizon 执行。</li><li>研究目标是在不损失甚至提升任务成功率的前提下，大幅提升WAM的动作吞吐量、降低首动作延迟，满足边缘设备等场景的实时控制需求。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>Staircase Policy</strong>流式推理训练框架，将大动作块划分为子块并在交错去噪阶段处理，实现近端子块的即时执行与后续动作的持续生成，无需完整动作块生成完成即可启动执行。</li><li>引入观测条件细化机制，在子块边界处用最新观测重预测未来潜变量，持续更新所有未执行动作的条件，解决长执行 horizon 下动作 conditioning 过时的问题。</li><li>证明未来预测误差可作为自适应分块的实用信号，通过预测潜变量与实际观测潜变量的差异判断是否需要提前终止当前块并重新规划，实现数据依赖的动态执行 horizon。</li><li>在多个仿真基准、不同策略骨干和真实机器人任务上验证有效性，证明方法具有强鲁棒性、高可迁移性，同时大幅提升推理效率。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基础架构：在流匹配VLA基础上添加轻量未来预测器（由冻结视觉编码器和解码器组成，用于预测未来观测的潜变量表示），将普通VLA转换为JEPA风格的流式世界动作模型（S-WAM），仅需未来预测器可被单步欧拉调用、骨干网络上下文可缓存即可适配。</li><li>去噪阶梯机制：将长度为H的动作块划分为K个大小为G的子块（H=K*G），所有动作位置共享同一流时间τ，每轮查询对所有位置执行一步大小为1/K的欧拉去噪，第j个子块在第j+1次前向传播后通过外推速度估计到τ=1读出并立即执行，剩余子块继续去噪。</li><li>未来预测器刷新机制：在每个子块边界，用新到达的观测重新计算未来潜变量，更新所有未执行动作的条件，仅需运行轻量未来预测器，无需重复调用昂贵的多亿参数VLA骨干网络。</li><li>训练方案：采用与推理时一致的流式调度训练，使用自预测的未来潜变量而非真实后续观测潜变量作为条件，损失函数同时监督动作读出的精度和未来潜变量的预测精度，梯度通过未来潜变量反向传播优化未来预测器，训练收敛速度远快于常规分块训练。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO</strong>（4套任务，每套10个操作任务）、<strong>LIBERO-Plus</strong>（LIBERO的扰动扩展，包含7类扰动维度）、<strong>DOMINO</strong>（动态操作基准，执行过程中场景发生变化）。</li><li>真实机器人数据集：在<strong>UFACTORY xArm 850</strong>机器人上使用<strong>Meta Quest 3</strong>遥控操作收集，共9个任务（含静态/动态版本的基础操作任务、高精度多阶段操作任务），每个任务收集30条演示，每个任务评估40次试验。</li><li>模型规模：基础骨干为23亿参数的潜在世界动作模型（LaWAM），未来预测器为轻量附加模块。</li><li>部署硬件：真实机器人任务部署在<strong>NVIDIA Jetson Thor</strong>边缘设备上；训练资源未在提供的论文片段中明确说明。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境覆盖<strong>LIBERO</strong>、<strong>LIBERO-Plus</strong>、<strong>DOMINO</strong>三个基准；实机环境为<strong>UFACTORY xArm 850</strong>搭载<strong>NVIDIA Jetson Thor</strong>的 onboard 部署场景。</li><li>主要评估指标：任务成功率（Success Rate, SR）、每秒执行动作数（executed actions per second）、首动作延迟（Time-To-First-Action, TTFA）、训练收敛效率、总训练FLOPs。</li><li>关键实验结果：</li></ul>
+<p> - 效率指标：<strong>S-WAM</strong>在<strong>LIBERO</strong>上达到97.7%成功率的同时，实现292.7 actions/s的吞吐量，是同准确率下vanilla策略的3.62倍，TTFA从123.6ms降至73.3ms；加入CUDA Graph和图优化、提示缓存后，吞吐量可提升至642.9 actions/s。与14个公开策略对比，<strong>S-WAM</strong>在匹配最高成功率的同时，吞吐量是次快方法的1.8倍，实现速度-精度的最优平衡。</p>
+<p> - 鲁棒性指标：在<strong>LIBERO-Plus</strong>上平均成功率达87.9%，比vanilla H_exec=50策略高17.3个百分点，在机器人初始状态扰动维度达到76.0%的最高分，显著优于其他基线方法。</p>
+<p> - 实机表现：在<strong>UFACTORY xArm 850</strong>机器人的9个任务上，6个静态任务成功率72.5%，高于vanilla H_exec=20的67.5%和H_exec=50的57.1%；动态任务上成功率44.2%，远高于vanilla策略的10.8%（H_exec=20）和25.8%（H_exec=50）。</p>
+<p> - 训练效率：流式调度训练虽每步FLOPs为常规训练的1.87倍，但收敛速度更快，批量大小仅为4时，10k步即可达到72.5%成功率，远超常规训练32k步的32.2%，总训练FLOPs更少。</p>
+<p> - 迁移性：在<strong>LaWAM</strong>、<strong>π₀.₅</strong>、<strong>FLOWER</strong>三个不同策略骨干上均有效，成功率比对应vanilla H_exec=50策略分别高15.25、30.15、14.05个百分点，吞吐量提升2.74-3.62倍，TTFA降低37.9%-40.7%，且无需骨干预训练未来潜变量预测能力。</p>
+<p> - 自适应分块：未来预测误差作为分块信号时，可在固定分块的commit-4和commit-5之间获得新的平衡点，例如p80阈值下达到96.2%成功率，仅小幅降低吞吐量。</p></div>
 </section></article>
         <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
           <p class="detail-toc-title">阅读目录</p>
