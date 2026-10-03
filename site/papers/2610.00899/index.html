@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TOAST: Stochastic Robot Action Tokenization for Autoregressive Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出TOAST（动作序列随机分词，Tokenization of Action Sequences with Stochastic Sampling）方法，针对自回归视觉-语言-动作（VLA）模型中确定性动作分词导致的监督单一问题，训练时对同一量化动作序列采样多种等效分词表示，无需额外机器人演示即可提升监督多样性 核心研究目标是验证随机分词对VLA策略学习的增益，尤其聚焦演示数据有限的低资源场景，同时分析分词器设计…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.00899">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.00899.webp" alt="TOAST: Stochastic Robot Action Tokenization for Autoregressive Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出TOAST（动作序列随机分词，Tokenization of Action Sequences with Stochastic Sampl…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">TOAST: Stochastic Robot Action Tokenization for Autoregressive Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-10-01 · <a href="http://arxiv.org/abs/2610.00899" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.00899" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.00899</span></div>
+            <p class="detail-summary">提出TOAST（动作序列随机分词，Tokenization of Action Sequences with Stochastic Sampling）方法，针对自回归视觉-语言-动作（VLA）模型中确定性动作分词导致的监督单一问题，训练时对同一量化动作序列采样多种等效分词表示，无需额外机器人演示即可提升监督多样性 核心研究目标是验证随机分词对VLA策略学习的增益，尤其聚焦演示数据有限的低资源场景，同时分析分词器设计…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者均隶属于AIST（日本产业技术综合研究所）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.00899/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出TOAST（动作序列随机分词，Tokenization of Action Sequences with Stochastic Sampl…</p>
+  <ul class="reading-intro-points"><li>提出TOAST（动作序列随机分词，Tokenization of Action Sequences with Stochastic Sampl…</li><li>核心研究目标是验证随机分词对VLA策略学习的增益，尤其聚焦演示数据有限的低资源场景，同时分析分词器设计选择（flattening方向、采样参数…</li><li>要解决的核心问题是：传统频率类分词器（如FAST）采用确定性分词，同一动作序列仅对应唯一分词，导致策略易过拟合到特定分词模式，在演示数据稀缺时…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者均隶属于<strong>AIST（日本产业技术综合研究所）</strong></li><li>项目资助方：JST CREST项目、日本经济产业省（METI）与新能源・产业技术开发机构（NEDO）主导的FRONTia项目、日本学术振兴会（JSPS）KAKENHI（资助编号25K21274）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>TOAST（动作序列随机分词，Tokenization of Action Sequences with Stochastic Sampling）</strong>方法，针对自回归视觉-语言-动作（VLA）模型中确定性动作分词导致的监督单一问题，训练时对同一量化动作序列采样多种等效分词表示，无需额外机器人演示即可提升监督多样性</li><li>核心研究目标是验证随机分词对VLA策略学习的增益，尤其聚焦演示数据有限的低资源场景，同时分析分词器设计选择（flattening方向、采样参数、词表语料）对方法性能的影响</li><li>要解决的核心问题是：传统频率类分词器（如FAST）采用确定性分词，同一动作序列仅对应唯一分词，导致策略易过拟合到特定分词模式，在演示数据稀缺时策略学习效率低下</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次识别出确定性动作分词是自回归VLA过度依赖单一离散表示的核心问题，将随机分词形式化为自回归VLA的表示层正则化手段</li><li>提出TOAST随机分词框架，基于unigram语言模型实现动作序列的随机分词，训练时对同一动作采样不同等效分词，在不增加演示数据的前提下显著提升监督多样性</li><li>在LIBERO仿真基准和4种真实机器人操作任务上验证方法有效性：小数据场景下提升显著，仅用1/16训练数据时成功率较确定性版本提升6.8个百分点，真实机器人任务平均成功率提升15.8个百分点</li><li>消融实验表明TOAST对分词器设计选择鲁棒，且能显著降低策略对同一动作序列特定分词的敏感度</li><li>方法计算开销极低，训练时仅增加0.4%的时间成本，无需修改策略架构与训练目标</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>分词器构建：采用<strong>dimension-major flattening</strong>处理量化后的动作序列，基于候选子序列构造种子词表，通过标准unigram语言模型流程优化词表与token概率，剪枝至目标词表大小（默认512个动作token），使用SentencePiece工具实现</li><li>随机分词模块：对输入的量化动作序列，通过Forward-DP Backward-A*算法进行n-best搜索（默认n=64）得到候选分词集合，按带温度参数α的多项式分布采样候选分词：α越小采样越均匀，α越大越接近确定性分词，所有候选分词解码后均对应同一量化动作序列，不改变底层动作含义</li><li>策略训练流程：仅修改训练时的监督目标，采用标准下一token预测损失训练，不改变策略架构与推理流程；推理时采用确定性分词，策略自回归预测token序列后解码为连续动作执行</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO基准</strong>，包含4个任务套件（LIBERO-Spatial、LIBERO-Object、LIBERO-Goal、LIBERO-Long），使用Franka Emika Panda机器人，7维动作（6-DoF末端执行器姿态+绝对夹爪位置），控制频率10Hz</li><li>真实机器人任务：4种自定义操作任务（Table Bussing、Grocery Bagging、Breakfast Setup、Drawer Stowing），使用Franka Research 3机器人，8维动作（7-DoF关节角度+绝对夹爪位置），控制频率20Hz，配备RealSense D405腕部相机、2个RealSense D435场景相机、Robotiq 2F-85夹爪</li><li>分词器构建语料：外部<strong>DROID数据集</strong>的100万动作块，保持分词器跨训练数据规模固定</li><li>模型与训练资源：骨干模型为<strong>PaliGemma-3B</strong>，基于OpenPI pipeline实现，训练30,000步，batch size 32，AdamW优化器；推理采用单张<strong>RTX 4090</strong> GPU，生成1秒（20步）关节角度动作块耗时168ms</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基线：仿真环境为LIBERO基准，真实机器人环境为4种自定义Franka操作任务，基线方法包括Binning、FAST+、FAST (rebuilt)、VQ-VLA、BEAST</li><li>主要评估指标：任务成功率，采用分层bootstrap方法评估统计显著性（95%置信区间不包含0视为显著）</li><li>关键实验结果：</li></ul>
+<p> - 仿真实验中，TOAST在所有训练数据规模下均优于确定性版本，且数据越少提升越大：在1/16训练数据规模下，TOAST成功率为42.8%，较TOAST (deterministic)提升6.8个百分点，显著优于所有基线方法</p>
+<p> - 真实机器人任务中，TOAST平均成功率为50.8%，较确定性版本提升15.8个百分点，较FAST+提升20.0个百分点，除Grocery Bagging外所有任务均有显著提升</p>
+<p> - 消融实验显示：采样参数α在[0.05, 1.0]范围内性能稳定；词表越接近目标域，随机分词增益越大（纯LIBERO词表下1/16数据规模增益达11.9个百分点）；dimension-major flattening下增益高于timestep-major，但两种flattening方式下随机分词均有显著收益</p>
+<p> - 训练开销仅增加0.4%，n-best搜索的线性时间复杂度保证了方法的实用性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.00913/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">eRLT: Efficient VLA Reinforcement Learning via Action-Relevant Token Routing</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.00801/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">ECoMEM: Explicit Concept Memory for Memory-Dependent Robot Control</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

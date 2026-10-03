@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>eRLT: Efficient VLA Reinforcement Learning via Action-Relevant Token Routing - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="聚焦冻结预训练视觉-语言-动作（VLA）模型的轻量在线强化学习（RL）适配问题，核心痛点是现有方法构造的RL状态表示无法显式提取任务特定的动作相关VLA内部特征，严重限制了在线RL的样本效率。 提出方法eRLT，通过跨VLA多层与token的路由机制，自适应聚合任务特定的动作相关信息，构造高效的RL状态表示，用于actor-critic的动作细化与动作价值估计。 在仿真操作任务与真实世界精密插入任务上验证该方法可大…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.00913">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.00913.webp" alt="eRLT: Efficient VLA Reinforcement Learning via Action-Relevant Token Routing" loading="lazy" />
+  <figcaption class="paper-figure-caption">聚焦冻结预训练视觉-语言-动作（VLA）模型的轻量在线强化学习（RL）适配问题，核心痛点是现有方法构造的RL状态表示无法显式提取任务特定的动作…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">eRLT: Efficient VLA Reinforcement Learning via Action-Relevant Token Routing</h1>
+            <div class="detail-meta">2026-10-01 · <a href="http://arxiv.org/abs/2610.00913" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.00913" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.00913</span></div>
+            <p class="detail-summary">聚焦冻结预训练视觉-语言-动作（VLA）模型的轻量在线强化学习（RL）适配问题，核心痛点是现有方法构造的RL状态表示无法显式提取任务特定的动作相关VLA内部特征，严重限制了在线RL的样本效率。 提出方法eRLT，通过跨VLA多层与token的路由机制，自适应聚合任务特定的动作相关信息，构造高效的RL状态表示，用于actor-critic的动作细化与动作价值估计。 在仿真操作任务与真实世界精密插入任务上验证该方法可大…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">南方科技大学（中国深圳）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.00913/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">聚焦冻结预训练视觉-语言-动作（VLA）模型的轻量在线强化学习（RL）适配问题，核心痛点是现有方法构造的RL状态表示无法显式提取任务特定的动作…</p>
+  <ul class="reading-intro-points"><li>聚焦冻结预训练视觉-语言-动作（VLA）模型的轻量在线强化学习（RL）适配问题，核心痛点是现有方法构造的RL状态表示无法显式提取任务特定的动作…</li><li>提出方法eRLT，通过跨VLA多层与token的路由机制，自适应聚合任务特定的动作相关信息，构造高效的RL状态表示，用于actor-criti…</li><li>在仿真操作任务与真实世界精密插入任务上验证该方法可大幅降低在线交互成本，提升VLA模型的下游任务适配效率。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>南方科技大学（中国深圳）</li><li>北京中关村学院</li><li>三星机器人体验部门（Samsung Robotics eXperience）</li><li>武汉大学（中国武汉）</li><li>中山大学（中国广州）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>聚焦冻结预训练视觉-语言-动作（VLA）模型的轻量在线强化学习（RL）适配问题，核心痛点是现有方法构造的RL状态表示无法显式提取任务特定的动作相关VLA内部特征，严重限制了在线RL的样本效率。</li><li>提出方法eRLT，通过跨VLA多层与token的路由机制，自适应聚合任务特定的动作相关信息，构造高效的RL状态表示，用于actor-critic的动作细化与动作价值估计。</li><li>在仿真操作任务与真实世界精密插入任务上验证该方法可大幅降低在线交互成本，提升VLA模型的下游任务适配效率。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>通过受控实验证明，不同下游任务所需的VLA最优表征层与token子集存在明显差异，固定选择层和token的方法会丢失关键任务相关特征，限制样本效率。</li><li>提出eRLT轻量在线RL框架，设计任务特定动作相关多层token路由机制，通过可学习路由token聚合多层的视觉-语言特征，再由轻量层路由器融合为固定维度的RL token，全程冻结预训练VLA基座。</li><li>设计两阶段训练策略：离线阶段基于专家动作预测任务初始化路由参数，让RL token保留动作细化所需的信息；在线阶段通过critic的贝尔曼目标反向传播更新路由参数，逐步适配动作价值估计的需求。</li><li>在LIBERO、RoboTwin共7个仿真任务，以及USB连接器插入、主板排线插入2个真实世界精密操作任务上验证，eRLT的样本效率显著优于现有基线方法。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>核心技术为<strong>任务特定动作相关多层token路由</strong>，分为token-wise路由与layer-wise路由两部分：token-wise路由在选定的多个VLM层中，拼接可学习的路由token到输入的视觉-语言前缀嵌入上，提取路由token位置的隐藏状态并均值池化，得到每层的输入相关特征摘要；layer-wise路由通过可学习的层权重（经softmax归一化）加权融合多层的特征摘要，输出固定维度的RL token。</li><li>训练流程分为离线初始化与在线适配两个阶段：离线阶段训练轻量动作探测头，以RL token预测专家动作块，通过最小化预测损失初始化路由参数，筛选出对动作细化有用的VLA特征；在线阶段将critic的时序差分误差反向传播到路由参数，结合actor-critic的常规更新逐步适配动作价值估计所需的特征，预训练VLA全程保持冻结。</li><li>创新点：首次显式建模跨VLA多层和token的任务特定动作相关特征用于轻量在线RL；两阶段监督信号（动作预测+critic反馈）让RL token同时支撑动作细化与价值估计两个核心需求；路由模块参数量极小，仅需微调少量参数即可完成适配，无需全参数微调大模型VLA，计算开销极低。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO</strong>（包含Drawer Opening、Bowl-to-Plate、Cabinet-Bowl-to-Plate、Two-Moka-Pots 4个操作任务）、<strong>RoboTwin</strong>（包含Adjust Bottle、Move Can–Pot、Place Container Plate 3个操作任务），覆盖空间推理、物体转移、多阶段操作等多样化场景。</li><li>真实世界任务：USB连接器插入、主板排线插入，基于预训练VLA基座$\pi_{0.5}$，分别使用99条USB遥操作演示、800条排线遥操作演示完成任务级微调。</li><li>模型规模：预训练VLA全程冻结，仅训练轻量路由模块（路由token嵌入、层logits）、动作探测头与actor-critic，总参数量远小于VLA基座。</li><li>训练资源：原文未明确指定具体GPU/TPU硬件配置，仅需训练极轻量的附加模块，计算与存储开销远低于全参数微调VLA。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境覆盖LIBERO与RoboTwin共7个多样化操作任务，真实世界实验使用RB-Y1机器人的左臂，搭配两个腕部相机完成高精度插入任务。</li><li>主要评估指标：<strong>归一化学习曲线下面积（AUC）</strong>（通过梯形积分计算并归一化评估周期，衡量固定交互预算下的平均成功率），真实世界任务额外报告最后10轮轨迹的窗口成功率。</li><li>关键实验结果：仿真任务上，eRLT的平均归一化AUC相比RLT基线提升23.7%，相比DSRL基线提升7.1%，在全部7个仿真任务上优于RLT，在6个任务上优于DSRL；真实世界USB插入任务中，AUC相比RLT提升108.9%，最终窗口成功率从50%提升至90%；排线插入任务AUC相比RLT提升46.7%，最终窗口成功率均达到100%。</li><li>消融实验验证了token-wise路由、layer-wise路由、离线初始化、在线适配四个组件的互补作用，移除任一组件都会导致性能下降，其中移除token-wise路由的性能降幅最大，单路由token的设置综合性能最优。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.00981/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">NarrativeFlow: Flow-Based Vision-Language-Action Model Using Robot Velocity Fields</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.00899/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">TOAST: Stochastic Robot Action Tokenization for Autoregressive Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

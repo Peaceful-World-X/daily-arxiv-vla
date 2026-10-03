@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Divide-and-Remember: Recursive Action-Relevant Memory for Long-Horizon VLA Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对视觉-语言-动作（VLA）策略在长时序、依赖历史操作的任务中性能不足的问题，现有记忆方法存在启发式设计不稳定、隐式记忆丢失空间细节、参数记忆读写效率低等缺陷，无法统一解决记忆内容的优化问题。 论文从POMDP（部分可观察马尔可夫决策过程）的信息论角度，将记忆问题形式化为最大化动作与记忆的条件互信息I(a_t; m_t \|o_t)，即保留当前观测未包含但动作依赖的历史信息，为现有记忆方法提供统一优化目标。 提出…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.00982">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.00982.webp" alt="Divide-and-Remember: Recursive Action-Relevant Memory for Long-Horizon VLA Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对视觉-语言-动作（VLA）策略在长时序、依赖历史操作的任务中性能不足的问题，现有记忆方法存在启发式设计不稳定、隐式记忆丢失空间细节、参数记…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Divide-and-Remember: Recursive Action-Relevant Memory for Long-Horizon VLA Policies</h1>
+            <div class="detail-meta">2026-10-01 · <a href="http://arxiv.org/abs/2610.00982" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.00982" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.00982</span></div>
+            <p class="detail-summary">针对视觉-语言-动作（VLA）策略在长时序、依赖历史操作的任务中性能不足的问题，现有记忆方法存在启发式设计不稳定、隐式记忆丢失空间细节、参数记忆读写效率低等缺陷，无法统一解决记忆内容的优化问题。 论文从POMDP（部分可观察马尔可夫决策过程）的信息论角度，将记忆问题形式化为最大化动作与记忆的条件互信息I(a_t; m_t \|o_t)，即保留当前观测未包含但动作依赖的历史信息，为现有记忆方法提供统一优化目标。 提出…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">National University of Singapore（新加坡国立大学）：Xuehui Yu…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.00982/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对视觉-语言-动作（VLA）策略在长时序、依赖历史操作的任务中性能不足的问题，现有记忆方法存在启发式设计不稳定、隐式记忆丢失空间细节、参数记…</p>
+  <ul class="reading-intro-points"><li>针对视觉-语言-动作（VLA）策略在长时序、依赖历史操作的任务中性能不足的问题，现有记忆方法存在启发式设计不稳定、隐式记忆丢失空间细节、参数记…</li><li>论文从POMDP（部分可观察马尔可夫决策过程）的信息论角度，将记忆问题形式化为最大化动作与记忆的条件互信息I(a_t; m_t \|o_t)…</li><li>提出Divide-and-Remember（D&amp;R）递归记忆方法，在有限token预算下实现轻量、可扩展的长历史记忆，解决无记忆策略在部分可观…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>National University of Singapore</strong>（新加坡国立大学）：Xuehui Yu、Haozhe Du、Harold Soh</li><li><strong>Nanyang Technological University, Singapore</strong>（南洋理工大学，新加坡）：Eason Yu、Stefano V. Albrecht</li><li><strong>LISTENAI</strong>：Meiyi Wang</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对视觉-语言-动作（VLA）策略在长时序、依赖历史操作的任务中性能不足的问题，现有记忆方法存在启发式设计不稳定、隐式记忆丢失空间细节、参数记忆读写效率低等缺陷，无法统一解决记忆内容的优化问题。</li><li>论文从POMDP（部分可观察马尔可夫决策过程）的信息论角度，将记忆问题形式化为最大化<strong>动作与记忆的条件互信息I(a_t; m_t \|o_t)</strong>，即保留当前观测未包含但动作依赖的历史信息，为现有记忆方法提供统一优化目标。</li><li>提出<strong>Divide-and-Remember（D&R）</strong>递归记忆方法，在有限token预算下实现轻量、可扩展的长历史记忆，解决无记忆策略在部分可观察长时序任务中的决策歧义问题。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>从POMDP和信息论第一性原理推导出最优记忆的目标为最大化条件互信息I(a_t; m_t \|o_t)，揭示了现有启发式记忆（如基于像素变化的帧选择）仅是该目标的上界估计，存在冗余信息保留的问题，为记忆设计提供了统一理论框架。</li><li>提出Divide-and-Remember（D&R）递归记忆架构，将无限制长度的全历史token选择分解为多个固定大小（2K tokens）的Top-K选择子问题，所有子问题共享同一个轻量选择器，既支持无限长度历史的扩展，又解决了训练-部署的离线-在线不匹配问题，保持计算高效。</li><li>D&R在预训练VLA的原始token空间内进行记忆选择，无需引入新的隐式空间，完整保留历史的空间与对象细节，同时选择器仅通过策略的动作损失端到端训练，无需额外辅助损失或人工设计的 selection 规则。</li><li>在<strong>RoboMME</strong>长时序操作基准（16个任务，覆盖6类记忆需求）和真实机器人实验中，D&R在仅64 token的预算下均达到最优性能，平均成功率超越所有基线方法，且在各类任务上保持稳定增益。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>理论推导：基于POMDP的模仿学习框架，证明最优记忆需满足使动作与历史在给定当前观测下条件独立，其优化目标为最大化条件互信息I(a_t; m_t \|o_t)，该目标的变分下界为策略的动作对数似然，可通过端到端训练优化。</li><li>记忆形式化：将记忆定义为从历史token集合中选择最多K个token的子集，属于预算约束下的离散选择问题。</li><li>递归选择机制：将全历史的token选择递归分解为多个大小为2K的连续token块内的Top-K选择，左右子块的选择结果合并后再次进入选择器筛选，逐层向上直到根节点得到最终记忆，支持任意长度的历史输入，且训练与部署阶段对同一历史前缀构建的选择树完全一致，无离线-在线不匹配问题。</li><li>轻量选择器设计：选择器输入2K个按时间排序的历史token，经冻结的SigLIP编码器编码后，加入多模态旋转位置嵌入（M-RoPE）保留时空结构，通过N层Transformer自注意力计算每个token的得分，结合Gumbel噪声探索和硬-软选择的梯度估计实现端到端训练，仅需策略的流匹配动作损失作为监督信号。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：<strong>RoboMME</strong>长时序操作基准，包含16个覆盖不同记忆需求的任务，分为运动中心、时间敏感、短时序视频、长时序视频、动态场景变化、事件显著6类功能特性；配套真实机器人实验数据集，包含中途人工干预和感知噪声场景。</li><li>模型规模：基于<strong>π₀.₅</strong> VLA策略构建，冻结SigLIP视觉编码器，微调Gemma VLM、动作专家及D&R的轻量选择器，选择器参数量远小于基座模型。</li><li>训练资源：原文未明确指定具体GPU/TPU硬件配置，训练总步数为80k， batch size为64（TTT基线方法batch size为16），每个任务评估50个episode（共800个），最大任务步长为1300，结果 averaged over 最后3个checkpoint和3个随机种子（共9次运行）。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：RoboMME仿真基准（与环境种子 disjoint from 训练集，最大步长1300），以及包含人工干预、感知噪声的真实机器人操作场景。</li><li>评估指标：任务成功率（%），各类任务及整体的平均成功率。</li><li>关键实验结果：在64 token的固定预算下，D&R在RoboMME上的平均成功率达<strong>38.6%</strong>，超过最佳隐式记忆基线（HAMLET）的32.2%和无记忆策略（π₀.₅）的17.9%；在全部16个任务、6类功能特性上均取得最优性能，在需要计数、目标跟踪、事件回溯、序列复现等不同记忆需求的任务上均表现稳定；真实机器人实验中D&R也取得了最高的任务成功率。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.01083/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">WBAG: A Whole-Body and Attached-Geometry Safety Framework for Vision-Language-Action Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.00981/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">NarrativeFlow: Flow-Based Vision-Language-Action Model Using Robot Velocity Fields</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

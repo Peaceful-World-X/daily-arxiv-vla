@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NarrativeFlow: Flow-Based Vision-Language-Action Model Using Robot Velocity Fields - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="聚焦语言条件流式机器人操作任务，解决现有方法将机器人流粗略近似为稀疏关键点位移、无法适配语言条件、模型中间表示易受背景/光照等无关视觉细节干扰的核心问题 提出NarrativeFlow方法，在流匹配框架下将机器人流建模为连续速度场，引入辅助监督信号引导模型捕捉任务相关场景变化，实现高质量语言条件机器人流生成 通过标准数据集测试和真实机器人实验验证方法有效性，提升跨机器人平台的泛化操作能力" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.00981">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.00981.webp" alt="NarrativeFlow: Flow-Based Vision-Language-Action Model Using Robot Velocity Fields" loading="lazy" />
+  <figcaption class="paper-figure-caption">聚焦语言条件流式机器人操作任务，解决现有方法将机器人流粗略近似为稀疏关键点位移、无法适配语言条件、模型中间表示易受背景/光照等无关视觉细节干扰…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">NarrativeFlow: Flow-Based Vision-Language-Action Model Using Robot Velocity Fields</h1>
+            <div class="detail-meta">2026-10-01 · <a href="http://arxiv.org/abs/2610.00981" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.00981" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.00981</span></div>
+            <p class="detail-summary">聚焦语言条件流式机器人操作任务，解决现有方法将机器人流粗略近似为稀疏关键点位移、无法适配语言条件、模型中间表示易受背景/光照等无关视觉细节干扰的核心问题 提出NarrativeFlow方法，在流匹配框架下将机器人流建模为连续速度场，引入辅助监督信号引导模型捕捉任务相关场景变化，实现高质量语言条件机器人流生成 通过标准数据集测试和真实机器人实验验证方法有效性，提升跨机器人平台的泛化操作能力</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者均来自日本庆应义塾大学（Keio University, Japan）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.00981/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">聚焦语言条件流式机器人操作任务，解决现有方法将机器人流粗略近似为稀疏关键点位移、无法适配语言条件、模型中间表示易受背景/光照等无关视觉细节干扰…</p>
+  <ul class="reading-intro-points"><li>聚焦语言条件流式机器人操作任务，解决现有方法将机器人流粗略近似为稀疏关键点位移、无法适配语言条件、模型中间表示易受背景/光照等无关视觉细节干扰…</li><li>提出NarrativeFlow方法，在流匹配框架下将机器人流建模为连续速度场，引入辅助监督信号引导模型捕捉任务相关场景变化，实现高质量语言条件…</li><li>通过标准数据集测试和真实机器人实验验证方法有效性，提升跨机器人平台的泛化操作能力</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者均来自<strong>日本庆应义塾大学（Keio University, Japan）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>聚焦语言条件流式机器人操作任务，解决现有方法将机器人流粗略近似为稀疏关键点位移、无法适配语言条件、模型中间表示易受背景/光照等无关视觉细节干扰的核心问题</li><li>提出<strong>NarrativeFlow</strong>方法，在流匹配框架下将机器人流建模为连续速度场，引入辅助监督信号引导模型捕捉任务相关场景变化，实现高质量语言条件机器人流生成</li><li>通过标准数据集测试和真实机器人实验验证方法有效性，提升跨机器人平台的泛化操作能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出NarrativeFlow，基于流匹配框架将机器人流建模为概率速度场，实现高质量语言条件机器人流生成，解决现有方法流表示粗糙、不支持语言条件的问题</li><li>设计<strong>Narrative Delta损失</strong>作为辅助训练目标，对齐模型中间表示与任务相关场景变化的叙事表示，同时引入专用子任务token缓解流生成主目标与辅助目标的学习信号干扰</li><li>在Fractal、Bridge V2标准语言条件操作数据集上验证，NarrativeFlow在平均位移误差、最终位移误差等指标上显著优于代表性基线方法</li><li>通过真实移动机器人实验证明，NarrativeFlow在移动抽屉关闭、移动分拣、移动杯子堆叠三类任务上的成功率高于基线方法，与真值流条件的性能差距更小</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体架构包含<strong>视觉-语言融合编码器</strong>和<strong>Flow-as-Flow模块</strong>两部分：输入为自然语言指令和初始图像，分别用Qwen3-Embedding-0.6B和DINOv3-ViT-B/16提取语言和视觉特征</li><li>创新点1：视觉-语言融合编码器引入两个专用子任务token，分别服务于流生成条件提供和Narrative Delta损失计算，避免单token导致的多目标学习信号纠缠，提升特征表示的专一性</li><li>创新点2：设计Narrative Delta辅助损失，离线用多模态大模型生成描述任务相关场景变化的多个文本描述，嵌入后得到叙事表示，通过余弦相似度对齐对应子任务token的输出，引导模型忽略任务无关视觉细节，聚焦关键场景变化</li><li>创新点3：Flow-as-Flow模块基于Diffusion Transformer（DiT）架构实现，将初始图像、语言条件、时间步作为条件输入，通过流匹配框架预测连续速度场，推理时通过积分速度场生成全时间步的机器人流</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：<strong>Fractal</strong>（Google Robot平台采集，共87212个样本，平均帧率3fps，平均时长14.15s）和<strong>Bridge V2</strong>（WidowX平台采集，共60064个样本，平均帧率5fps，平均时长7.51s）两个标准跨平台真实机器人操作数据集</li><li>模型规模：约<strong>487M可训练参数</strong></li><li>训练资源：使用<strong>GeForce RTX 5090 32GB GPU</strong>训练，总训练时间约6小时，单样本推理时间约62ms</li><li>辅助工具：使用CoTracker3提取机器人流ground truth，使用微调后的Robot-SAM提取末端执行器分割掩码，使用Qwen3.5-9B生成Narrative Delta损失所需的场景变化文本描述</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：标准数据集测试对比基线<strong>FLIP</strong>、<strong>Im2Flow2Act</strong>；真实机器人实验使用丰田Human Support Robot（HSR）11自由度移动机器人，评估移动抽屉关闭、移动分拣、移动杯子堆叠三类任务</li><li>主要评估指标：平均位移误差（ADE，越低越好，主指标）、最终位移误差（FDE，越低越好）、小于delta比例（LTDR，越高越好），真实实验额外采用任务成功率作为指标</li><li>关键实验结果：</li></ul>
+<p> - 标准数据集测试：NarrativeFlow在Fractal上ADE达21.68，优于最优基线15.46点；在Bridge V2上ADE达30.59，优于最优基线20.14点，所有指标提升均具有统计显著性（p<0.01）</p>
+<p> - 消融实验验证：移除子任务token或Narrative Delta损失均会导致性能下降，证明两个设计的有效性</p>
+<p> - 真实机器人实验：NarrativeFlow平均成功率达55%，高于Im2Flow2Act的42%和FLIP的28%，与真值流条件的oracle方法性能差距仅8个百分点，远小于基线的21个百分点</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.00982/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Divide-and-Remember: Recursive Action-Relevant Memory for Long-Horizon VLA Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.00913/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">eRLT: Efficient VLA Reinforcement Learning via Action-Relevant Token Routing</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DriftOPD: Sequence-Level Reverse-KL Distillation for One-Step VLA Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对 VLA 模型中 chunk-level 训练仅优化局部动作似然而忽略长期任务成功的问题，提出 DriftOPD 框架 将序列级反向 KL 散度分解为局部动作块匹配项与未来潜力项，实现无需教师模型、无需在线交互的序列级策略蒸馏 旨在将多步采样的 VLA 动作专家蒸馏为单步策略生成，同时缓解测试时分布偏移和高推理延迟问题" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.00317">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.00317.webp" alt="DriftOPD: Sequence-Level Reverse-KL Distillation for One-Step VLA Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对 VLA 模型中 chunk-level 训练仅优化局部动作似然而忽略长期任务成功的问题，提出 DriftOPD 框架</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">DriftOPD: Sequence-Level Reverse-KL Distillation for One-Step VLA Policies</h1>
+            <div class="detail-meta">2026-09-29 · <a href="http://arxiv.org/abs/2610.00317" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.00317" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.00317</span></div>
+            <p class="detail-summary">针对 VLA 模型中 chunk-level 训练仅优化局部动作似然而忽略长期任务成功的问题，提出 DriftOPD 框架 将序列级反向 KL 散度分解为局部动作块匹配项与未来潜力项，实现无需教师模型、无需在线交互的序列级策略蒸馏 旨在将多步采样的 VLA 动作专家蒸馏为单步策略生成，同时缓解测试时分布偏移和高推理延迟问题</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">KAIST (Korea Advanced Institute of Science and Tech…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.00317/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对 VLA 模型中 chunk-level 训练仅优化局部动作似然而忽略长期任务成功的问题，提出 DriftOPD 框架</p>
+  <ul class="reading-intro-points"><li>针对 VLA 模型中 chunk-level 训练仅优化局部动作似然而忽略长期任务成功的问题，提出 DriftOPD 框架</li><li>将序列级反向 KL 散度分解为局部动作块匹配项与未来潜力项，实现无需教师模型、无需在线交互的序列级策略蒸馏</li><li>旨在将多步采样的 VLA 动作专家蒸馏为单步策略生成，同时缓解测试时分布偏移和高推理延迟问题</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>KAIST</strong> (Korea Advanced Institute of Science and Technology), Republic of Korea</li><li><strong>Sungkyunkwan University</strong> (SKKU), Republic of Korea</li><li>作者包括 Youngjun Jun, Kyumin Choi, Youngmin Kim, Seonghyun Jin, Sunwoo Park, Jangho Park, Jong Chul Ye 等</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对 VLA 模型中 chunk-level 训练仅优化局部动作似然而忽略长期任务成功的问题，提出 <strong>DriftOPD</strong> 框架</li><li>将序列级反向 KL 散度分解为局部动作块匹配项与未来潜力项，实现无需教师模型、无需在线交互的序列级策略蒸馏</li><li>旨在将多步采样的 VLA 动作专家蒸馏为单步策略生成，同时缓解测试时分布偏移和高推理延迟问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>形式化序列级 on-policy 蒸馏 (OPD)，通过最小化动作序列分布间的反向 KL 散度，将其分解为局部反向 KL 项和未来潜力项</li><li>提出 <strong>DriftOPD</strong> 方法，利用单步漂移目标 (drifting objective) 实现局部反向 KL 优化，并采用离线演示训练的 Q 函数评判器 (critic) 近似未来项，实现免教师、免 rollouts 的单步蒸馏</li><li>在多种 VLA 架构（包括 π₀.5、GR00T N1.5/N1.6 等）的仿真与真实机器人实验中，DriftOPD 普遍优于现有单步蒸馏基线，任务成功率接近多步教师策略，且在数据稀缺场景下训练更稳定</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>序列级反向 KL 分解为 L_Local（当前动作块分布匹配）和 L_Future（对未来轨迹的长期影响）</li><li>局部项采用核密度估计 (KDE) 平滑的样本空间漂移场优化，仅需演示数据中的单个正样本动作块即可计算得分函数差异</li><li>未来项采用冻结的离线训练动作价值评判器 Q_φ 作为替代，通过最大化动作价值提供长期视野引导，无需闭环环境交互</li><li>整体目标函数结合漂移损失与评判器损失，通过单步生成器 G_θ(z, s_t) 实现端到端优化，支持 LoRA 微调</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真基准：<strong>RoboCasa365</strong>、<strong>RoboTwin 2.0</strong>、<strong>LIBERO</strong>、<strong>LIBERO-Plus</strong></li><li>真实世界机器人操作数据集（包含成对场景回放与安全排除机制）</li><li>评估模型涵盖多种 VLA 架构、微调策略和动作专家参数化（如 π₀ 系列、GR00T 系列、ABot、RLDX 等），采用 <strong>LoRA</strong> 进行参数高效微调</li><li>训练仅依赖离线演示数据，无需在线机器人交互；使用 GPU 进行分布式训练（具体硬件配置详见附录）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境涵盖多类仿真基准与真实机器人平台，对比基线包括 One-step Teacher、sCD、MFD、Drift 等单步蒸馏方法</li><li>主要评估指标为任务成功率、训练稳定性（尤其在数据稀缺条件下）、推理延迟及动作多样性</li><li>关键结果：DriftOPD 在任务成功率上普遍优于现有单步蒸馏基线，达到与多步教师策略相当的性能；训练过程更稳定；单步生成显著降低推理延迟，且动作多样性损失可忽略</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.00438/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2609.40325/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

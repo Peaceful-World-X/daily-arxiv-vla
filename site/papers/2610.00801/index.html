@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ECoMEM: Explicit Concept Memory for Memory-Dependent Robot Control - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="当前视觉-语言-动作（VLA）策略在依赖记忆的长周期机器人任务中表现不佳，当动作所需的关键历史信息不再出现在当前观测中时，策略无法做出正确决策 现有隐式记忆方法仅通过动作监督学习历史表示，但动作监督仅告诉策略“如何行动”，未明确“需要记住什么”，导致记忆构建不可靠、难以解释 本文提出 ECoMEM（Explicit Concept Memory） 框架，将证据驱动的记忆构建与动作策略学习分离，用显式概念记忆表示任务…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.00801">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.00801.webp" alt="ECoMEM: Explicit Concept Memory for Memory-Dependent Robot Control" loading="lazy" />
+  <figcaption class="paper-figure-caption">当前视觉-语言-动作（VLA）策略在依赖记忆的长周期机器人任务中表现不佳，当动作所需的关键历史信息不再出现在当前观测中时，策略无法做出正确决策</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ECoMEM: Explicit Concept Memory for Memory-Dependent Robot Control</h1>
+            <div class="detail-meta">2026-09-30 · <a href="http://arxiv.org/abs/2610.00801" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.00801" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.00801</span></div>
+            <p class="detail-summary">当前视觉-语言-动作（VLA）策略在依赖记忆的长周期机器人任务中表现不佳，当动作所需的关键历史信息不再出现在当前观测中时，策略无法做出正确决策 现有隐式记忆方法仅通过动作监督学习历史表示，但动作监督仅告诉策略“如何行动”，未明确“需要记住什么”，导致记忆构建不可靠、难以解释 本文提出 ECoMEM（Explicit Concept Memory） 框架，将证据驱动的记忆构建与动作策略学习分离，用显式概念记忆表示任务…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者均隶属于 Stanford University，其中Yiqing Xu与Jiajun Wu为…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.00801/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">当前视觉-语言-动作（VLA）策略在依赖记忆的长周期机器人任务中表现不佳，当动作所需的关键历史信息不再出现在当前观测中时，策略无法做出正确决策</p>
+  <ul class="reading-intro-points"><li>当前视觉-语言-动作（VLA）策略在依赖记忆的长周期机器人任务中表现不佳，当动作所需的关键历史信息不再出现在当前观测中时，策略无法做出正确决策</li><li>现有隐式记忆方法仅通过动作监督学习历史表示，但动作监督仅告诉策略“如何行动”，未明确“需要记住什么”，导致记忆构建不可靠、难以解释</li><li>本文提出 ECoMEM（Explicit Concept Memory） 框架，将证据驱动的记忆构建与动作策略学习分离，用显式概念记忆表示任务…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者均隶属于 <strong>Stanford University</strong>，其中Yiqing Xu与Jiajun Wu为共同指导作者（Equal advising）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>当前视觉-语言-动作（VLA）策略在依赖记忆的长周期机器人任务中表现不佳，当动作所需的关键历史信息不再出现在当前观测中时，策略无法做出正确决策</li><li>现有隐式记忆方法仅通过动作监督学习历史表示，但动作监督仅告诉策略“如何行动”，未明确“需要记住什么”，导致记忆构建不可靠、难以解释</li><li>本文提出 <strong>ECoMEM（Explicit Concept Memory）</strong> 框架，将证据驱动的记忆构建与动作策略学习分离，用显式概念记忆表示任务相关的历史事实，在16个RoboMME任务中15个取得最优，并在真实机器人任务上实现86.1%的成功率，远高于无记忆基线的8.6%</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出显式概念记忆框架，核心创新是将“维护基于证据的历史记录”与“学习如何基于记录行动”分离，解决隐式记忆无法明确记忆内容、易受动作监督shortcut影响的问题</li><li>构建可复用的共享概念库，涵盖<strong>实体与空间绑定、状态与关系、事件与进度、时序与过程</strong>四类概念家族，支持跨任务复用和组合扩展</li><li>设计Writer-Reader双模块架构：固定Writer基于多模态证据选择、识别并更新概念记录，仅训练Reader将结构化记录转化为VLA可用的记忆token，避免记忆构建受动作监督干扰</li><li>验证概念库的可迁移性：新任务CupSwitch可直接复用现有概念库，ScoopPour仅需新增1个可组合的SCOOP概念即可覆盖任务需求</li><li>在仿真和真实机器人场景上均取得SOTA效果，证明显式概念记忆是机器人控制的可复用、可扩展接口</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体采用Writer-Reader与预训练VLA <strong>π₀.₅</strong> 结合的架构：固定Writer负责记忆构建，可学习的Reader负责将结构化记忆转化为策略可用的token，二者与VLA联合训练</li><li>共享概念库是核心基础：每个概念定义清晰的可组合规则，包含识别器、参数提取方式和基于逻辑的更新规则，新概念可复用现有感知模型和底层概念，无需从零构建</li><li>Writer的记忆构建分三步：①任务条件选择根据自然语言指令仅激活任务所需的概念及其依赖，避免无关记录干扰策略；②多模态概念识别融合<strong>OWLv2</strong>目标检测、<strong>SAM2</strong>跟踪、机器人末端状态等多源证据识别概念实例；③证据合并与记忆更新通过4条显式规则将 noisy 的识别输出转化为稳定记忆：状态需累计证据才能确认、事件仅记录首次确认的实例、计数为独立事件的数量、进度需满足前置依赖才更新</li><li>Reader将结构化记忆记录转化为token：每个记录的K个离散字段（类型、谓词、实体、真值、置信度、年龄等）各自有独立嵌入表，求和后输入小型Transformer，输出与VLA输入宽度匹配的记忆token，与图像、语言token共同输入VLA</li><li>训练时冻结视觉编码器和Writer，仅训练Reader和VLA的语言骨干、动作预测头，采用π₀.5的flow-matching目标；记忆仅使用当前决策时刻及之前的历史观测，实体标识符随机打乱避免策略依赖特定编号</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>RoboMME</strong>基准的16个依赖记忆的任务，覆盖计数、持久性、参考、模仿四类记忆需求</li><li>真实机器人数据集：自主收集的<strong>CupSwitch</strong>（杯碟往返计数）和<strong>ScoopPour</strong>（舀豆倒豆计数）两个新任务，使用7自由度YAM机械臂，通过GELLO设备收集遥操作演示</li><li>模型基础：基于预训练VLA模型 <strong>π₀.₅</strong> 初始化，Reader为小型Transformer加字段嵌入层，概念识别调用<strong>OWLv2</strong>、<strong>SAM2</strong>等预训练感知模型，消融实验中使用<strong>Qwen3-VL-8B-Instruct</strong>作为VLM基线</li><li>训练资源：采用GPU进行训练和推理，具体硬件型号未在截取内容中明确说明</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境为RoboMME基准，真实机器人环境为7-DoF YAM机械臂操作台</li><li>评估基准：RoboMME官方基线包括无记忆π₀.₅、π₀.₅+历史动作、FrameSamp+Modul、SAM2Act+、MemER，真实机器人基线为无记忆的微调π₀.₅</li><li>主要评估指标：任务成功率（%），RoboMME采用任务等权平均成功率，真实机器人任务要求完成指定次数的完整循环才算成功</li><li>关键实验结果：①RoboMME上ECoMEM平均成功率82.42%，比最强基线FrameSamp+Modul高37.91个百分点，15/16任务取得最优，距离人类90.5%的平均水平仅差8.08个百分点；②消融实验证明四类概念家族互补，去掉任意一类对应任务成功率暴跌；任务条件选择可将记忆初始化延迟降低12-18倍，同时提升成功率；语言grounding是记录绑定到正确实体的关键，去掉后成功率从86%降至24%；③概念提取任务中，微调VLM在时序类任务上成功率仅5.9-11.8%，而ECoMEM可达88.2-100%，证明结构化记忆构建的可靠性；④真实机器人上ECoMEM成功率为86.1%（68/79次试验），无记忆π₀.₅仅8.6%（5/58次试验），CupSwitch完全复用现有概念库，ScoopPour仅需新增1个SCOOP概念即可完成任务</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.00899/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">TOAST: Stochastic Robot Action Tokenization for Autoregressive Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.00604/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">MIKASA-Robo-VLA: Benchmarking Memory in VLA Models for Long-Horizon Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

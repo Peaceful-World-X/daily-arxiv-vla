@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Token-World: World Modeling in Vision-Language Model Token Space for Robot Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有视觉-语言-动作（VLA）系统的世界模型通常采用“预测未来RGB观测→重新编码为VLM视觉token→输入策略”的间接接口，存在效率低、重建无关视觉细节的问题，论文旨在探索直接在VLM视觉token空间建模世界动态的可行性，解决高维VLM token难以高效动态建模的挑战。 提出Token-World方法，通过紧凑语义表征压缩高维VLM token，在压缩后的空间学习动作条件动态，仅在需要时映射回原始token…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.00575">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.00575.webp" alt="Token-World: World Modeling in Vision-Language Model Token Space for Robot Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有视觉-语言-动作（VLA）系统的世界模型通常采用“预测未来RGB观测→重新编码为VLM视觉token→输入策略”的间接接口，存在效率低、重…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Token-World: World Modeling in Vision-Language Model Token Space for Robot Manipulation</h1>
+            <div class="detail-meta">2026-09-30 · <a href="http://arxiv.org/abs/2610.00575" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.00575" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.00575</span></div>
+            <p class="detail-summary">现有视觉-语言-动作（VLA）系统的世界模型通常采用“预测未来RGB观测→重新编码为VLM视觉token→输入策略”的间接接口，存在效率低、重建无关视觉细节的问题，论文旨在探索直接在VLM视觉token空间建模世界动态的可行性，解决高维VLM token难以高效动态建模的挑战。 提出Token-World方法，通过紧凑语义表征压缩高维VLM token，在压缩后的空间学习动作条件动态，仅在需要时映射回原始token…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">10 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">南方科技大学</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.00575/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有视觉-语言-动作（VLA）系统的世界模型通常采用“预测未来RGB观测→重新编码为VLM视觉token→输入策略”的间接接口，存在效率低、重…</p>
+  <ul class="reading-intro-points"><li>现有视觉-语言-动作（VLA）系统的世界模型通常采用“预测未来RGB观测→重新编码为VLM视觉token→输入策略”的间接接口，存在效率低、重…</li><li>提出Token-World方法，通过紧凑语义表征压缩高维VLM token，在压缩后的空间学习动作条件动态，仅在需要时映射回原始token空间…</li><li>研究目标是在仿真和真实机器人操作任务上验证该范式的有效性，证明其能提升世界模型的预测保真度、长程稳定性、闭环策略评估可靠性，同时降低仿真延迟。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>南方科技大学</strong></li><li><strong>MUKA Robotics</strong></li><li><strong>香港科技大学</strong></li><li><strong>北京大学计算机学院多媒体信息处理全国重点实验室</strong></li><li><strong>宾夕法尼亚大学</strong></li><li><strong>中国科学院自动化研究所</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有视觉-语言-动作（VLA）系统的世界模型通常采用“预测未来RGB观测→重新编码为VLM视觉token→输入策略”的间接接口，存在效率低、重建无关视觉细节的问题，论文旨在探索直接在VLM视觉token空间建模世界动态的可行性，解决高维VLM token难以高效动态建模的挑战。</li><li>提出<strong>Token-World</strong>方法，通过紧凑语义表征压缩高维VLM token，在压缩后的空间学习动作条件动态，仅在需要时映射回原始token空间供下游策略使用，避免中间RGB生成的开销与信息损失。</li><li>研究目标是在仿真和真实机器人操作任务上验证该范式的有效性，证明其能提升世界模型的预测保真度、长程稳定性、闭环策略评估可靠性，同时降低仿真延迟。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出直接基于VLM视觉token的世界模型模拟范式，替代传统RGB生成再重编码的间接接口，使模拟器直接作用于下游VLA策略消费的表示，消除冗余的RGB生成与重编码开销。</li><li>设计<strong>Token-World</strong>方法：采用单独训练的语义VAE（S-VAE）将高维VLM视觉token压缩为紧凑动态状态（仅压缩通道维度，保留空间布局），使用带shortcut forcing的flow-matching DiT学习动作条件动态，在紧凑空间完成自回归rollout，全程无需中间RGB生成，仅在需要策略输入时将预测状态映射回原始VLM token空间。</li><li>在仿真和真实机器人操作基准上的实验表明，Token-World的开环特征保真度、策略动作一致性更高，长程rollout退化更慢；闭环评估中模拟成功率与真实策略的相关系数显著优于基线，同时仿真延迟更低；消融实验进一步证明了紧凑表征设计与维度对动态预测的关键影响。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体架构分离策略消费的表示与世界模型建模的状态空间：首先通过冻结的S-VAE编码器将原始VLM视觉token压缩为低维紧凑token，动态模型在紧凑token空间学习动作条件的状态转移，预测完成后通过冻结的S-VAE解码器将紧凑token映射回原始VLM视觉token供下游策略使用。</li><li>紧凑状态构建：使用语义VAE（S-VAE）仅对VLM视觉token的通道维度进行压缩（例如将108个、2560通道的原始token压缩为16通道），不改变token的空间数量和布局，编码器和解码器在世界模型训练时冻结，训练时采用MSE损失、余弦相似度损失和KL散度损失联合优化。</li><li>动作条件动态模型：采用时空Transformer，通过分解的空间注意力和因果时间注意力建模时空动态，避免全时空稠密注意力的计算开销；额外引入固定大小的GRU循环状态保存超出注意力窗口的长期交互上下文，在rollout时跨窗口传递。</li><li>训练与推理优化：采用x0参数化的flow matching损失结合shortcut forcing训练动态模型，支持高效少步生成；推理时完全在紧凑状态空间进行自回归rollout，仅在需要策略输入时解码为原始VLM token，全程无RGB生成环节，仅用于可视化时使用单独的冻结卷积解码器将预测的VLM token渲染为RGB图像。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：</li></ul>
+<p> - 仿真数据集：<strong>RoboTwin</strong>数据集，包含50个机器人操作任务，共5000条轨迹（每个任务100条，含50条成功和50条失败轨迹），按9:1划分训练集和验证集。</p>
+<p> - 真实世界数据集：自采集的<strong>Franka操作数据集</strong>，包含6个桌面操作任务，共600条成功轨迹，按9:1划分训练集和验证集。</p>
+<ul><li>模型规模：基础视觉语言模型为<strong>Qwen3-VL</strong>，其原始视觉token为108个空间token、2560通道；紧凑状态默认维度d=16（消融实验中测试了8~128维的配置）；动态模型为flow-matching DiT（扩散Transformer），搭配GRU循环状态模块。</li><li>训练资源：论文未明确说明训练所用GPU/TPU硬件；推理评估采用<strong>PPU-ZW810E</strong>加速器。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：</li></ul>
+<p> - 开环评估：在RoboTwin（50任务仿真）和Franka真实操作（6任务）数据集上，以动作回放方式对比<strong>IRASim</strong>（ICCV 2025）、<strong>Ctrl-World</strong>（ICLR 2026）、<strong>WorldGym</strong>（ICLR 2026）三个近期机器人世界模型基线；对于RGB生成类基线，需先将生成的RGB帧通过冻结VLM重编码为视觉token后再参与评估。</p>
+<p> - 闭环评估：使用三个共享Qwen3-VL骨干的<strong>StarVLA</strong>变体（StarVLA-OFT、StarVLA-PIv3、StarVLA-GR00T）作为测试策略，在RoboTwin任务上评估世界模型作为策略模拟器的可靠性，模拟成功率与真实环境参考成功率的Pearson相关系数r作为核心指标，成功判定通过解码RGB rollout人工评估。</p>
+<ul><li>主要评估指标：</li></ul>
+<p> - 开环指标：VLM特征保真度（余弦相似度↑、归一化均方误差NMSE↓）、策略动作一致性（将预测/真实表征输入同一冻结策略，对比输出动作的余弦相似度↑、NMSE↓）。</p>
+<p> - 闭环指标：模拟成功率与真实环境参考成功率的Pearson相关系数r，单步仿真延迟（秒）。</p>
+<ul><li>关键实验结果：</li></ul>
+<p> - 开环整体保真度：RoboTwin数据集上，Token-World的特征余弦相似度达0.7714、NMSE为0.4892，动作余弦相似度达0.9439、NMSE为0.1145，均优于三个基线；真实Franka数据集上同样保持最优性能。</p>
+<p> - 长程rollout稳定性：在0/5/10/15个chunk（每个chunk 16步）的动作回放中，Token-World的特征和动作相似度退化速度显著慢于Ctrl-World，长程预测稳定性更强。</p>
+<p> - 闭环评估性能：模拟成功率与真实策略成功率的Pearson相关系数r=0.794，远高于Ctrl-World的0.583，回归线更接近理想的y=x，策略评估可靠性更高。</p>
+<p> - 仿真效率：单步仿真延迟仅为0.359秒，相比IRASim、Ctrl-World、WorldGym分别获得2.0×、5.3×、6.1×的加速。</p>
+<p> - 消融实验结论：紧凑表征维度d=16时动态预测性能最优；紧凑S-VAE表征的动态建模难度远低于原始VLM特征和通用SDXL-VAE表征，验证了紧凑语义表征设计对世界建模的关键作用。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.00601/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">When Reasoning Helps Action: Monitoring and Steering Chain-of-Thought in Vision-Language-Action Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.00524/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Same Scene, Different Task: Skill Alignment for Compositional Generalization in VLAs</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

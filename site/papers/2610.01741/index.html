@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ATI-VLA: Action-Centric Predictive Vision-Language-Action Models via Actionable Alignment Then Adaptive Injection - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文针对预测型视觉-语言-动作（VLA）模型普遍表现不及直接动作预测模型的问题，指出核心原因是观测-动作模态错位和联合优化冲突，导致未来预测信息无法有效支撑动作生成，甚至干扰训练稳定性 提出ATI-VLA动作中心预测VLA框架，通过「可执行对齐（Actionable Alignment）然后自适应注入（Adaptive Injection）」的两步设计，弥合模态差距、避免优化冲突，充分释放预测VLA范式的性能潜力…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.01741">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.01741.webp" alt="ATI-VLA: Action-Centric Predictive Vision-Language-Action Models via Actionable Alignment Then Adaptive Injection" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文针对预测型视觉-语言-动作（VLA）模型普遍表现不及直接动作预测模型的问题，指出核心原因是观测-动作模态错位和联合优化冲突，导致未来预测信…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ATI-VLA: Action-Centric Predictive Vision-Language-Action Models via Actionable Alignment Then Adaptive Injection</h1>
+            <div class="detail-meta">2026-10-01 · <a href="http://arxiv.org/abs/2610.01741" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.01741" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.01741</span></div>
+            <p class="detail-summary">论文针对预测型视觉-语言-动作（VLA）模型普遍表现不及直接动作预测模型的问题，指出核心原因是观测-动作模态错位和联合优化冲突，导致未来预测信息无法有效支撑动作生成，甚至干扰训练稳定性 提出ATI-VLA动作中心预测VLA框架，通过「可执行对齐（Actionable Alignment）然后自适应注入（Adaptive Injection）」的两步设计，弥合模态差距、避免优化冲突，充分释放预测VLA范式的性能潜力…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">哈尔滨工业大学（深圳）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.01741/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文针对预测型视觉-语言-动作（VLA）模型普遍表现不及直接动作预测模型的问题，指出核心原因是观测-动作模态错位和联合优化冲突，导致未来预测信…</p>
+  <ul class="reading-intro-points"><li>论文针对预测型视觉-语言-动作（VLA）模型普遍表现不及直接动作预测模型的问题，指出核心原因是观测-动作模态错位和联合优化冲突，导致未来预测信…</li><li>提出ATI-VLA动作中心预测VLA框架，通过「可执行对齐（Actionable Alignment）然后自适应注入（Adaptive Inj…</li><li>研究目标是在仿真和真实机器人操作任务上，同时实现更高的任务成功率与更快的训练收敛速度</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>哈尔滨工业大学（深圳）</li><li>东莞大湾大学人工智能研究所</li><li>东莞智能信息技术重点实验室</li><li>深圳环形区域研究所</li><li>澳门理工大学</li><li>深圳技术大学</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文针对预测型视觉-语言-动作（VLA）模型普遍表现不及直接动作预测模型的问题，指出核心原因是<strong>观测-动作模态错位</strong>和<strong>联合优化冲突</strong>，导致未来预测信息无法有效支撑动作生成，甚至干扰训练稳定性</li><li>提出<strong>ATI-VLA</strong>动作中心预测VLA框架，通过「可执行对齐（Actionable Alignment）然后自适应注入（Adaptive Injection）」的两步设计，弥合模态差距、避免优化冲突，充分释放预测VLA范式的性能潜力</li><li>研究目标是在仿真和真实机器人操作任务上，同时实现更高的任务成功率与更快的训练收敛速度</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>ATI-VLA</strong>动作中心预测VLA框架，采用Align-Then-Inject设计，有效解决现有预测范式缺乏动作中心学习导向的问题</li><li>设计<strong>基于共享码本的可执行表征对齐</strong>方法，将预测观测和动作表征映射到统一离散隐空间，直接 grounding 预测表征到动作空间，从根源上弥合模态差距</li><li>提出<strong>以动作为中心的自适应注入</strong>策略，通过轻量级侧路径将预测信息按间隔注入LLM动作解码层，仅在单一动作目标下优化，避免预测任务与动作任务的优化冲突</li><li>大量实验验证框架有效性，在仿真和真实任务上均达到state-of-the-art性能，且收敛速度显著优于现有预测VLA方法</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体采用两阶段训练范式：第一阶段训练<strong>可执行表征对齐模块</strong>，通过模态特定编码器将观测和动作编码为连续表征，经共享码本向量量化为统一离散隐变量，再通过包含自注意力、交叉注意力的统一解码器联合预测未来观测和动作，以观察损失和动作损失联合优化对齐模块，实现观测-动作模态的显式对齐</li><li>第二阶段冻结对齐模块，训练<strong>以动作为中心的自适应注入模块</strong>：将预测观测潜变量通过轻量级FFN逐层适配后，按固定间隔注入LLM的动作token解码层，通过可学习注入权重调制动作表征，全程仅以动作损失优化，保证预测信息仅作为动作生成的引导，不干扰核心动作目标</li><li>关键创新包括：共享码本实现显式跨模态对齐、间隔注入避免密集注入对解码过程的过度约束、侧路径设计完全隔离预测任务的优化干扰</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO</strong>通用机器人操作基准、<strong>RoboTwin 2.0</strong>仿真机器人操作基准</li><li>真实世界任务：多种真实场景机器人操作任务（截断内容未明确具体任务类型）</li><li>训练硬件：8×NVIDIA H100（80GB）GPU</li><li>推理硬件：真实场景单张RTX 5090（32GB）GPU</li><li>模型骨干：大语言模型（LLM），具体参数量详见论文附录A（截断内容未包含）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估基准：覆盖通用VLA、预测VLA两类共10+ baseline方法，包括OpenVLA-OFT、π₀、DreamVLA、CoT-VLA等代表性最新模型</li><li>评估指标：任务成功率（Success Rate，越高越好）、模型性能排名（Rank，越低越好）</li><li>关键实验结果：在LIBERO基准上平均成功率达<strong>97.9%</strong>，排名第一，优于最优通用VLA OpenVLA-OFT（97.1%）和所有现有预测VLA方法；在RoboTwin 2.0基准上也达到最优性能；相比现有预测VLA方法训练收敛速度更快，有效解决了模态错位和优化冲突导致的性能下降问题</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.01794/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Continuous Conditioning of VLAs with Augmenting EMG and Visual Task Descriptors</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.01351/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Is Success All You Need? Investigating the Impact of Input Perturbations on VLA Behaviour in Tabletop Manipulation Tasks</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
