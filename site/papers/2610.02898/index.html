@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MixVLA: Adaptive Mixing of Non-Invariant Information for Generalizable Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 MixVLA，一个模型无关的训练框架，旨在提升视觉-语言-动作（VLA）模型在未见过的分布外（OOD）场景下的零样本泛化能力。 核心思想是不丢弃非不变信息（如光照、背景、视角等），而是通过显式正则化其可变性，使其与任务相关的稳定特征互补，从而提升策略的鲁棒性。 无需额外的OOD数据收集或架构修改，通过一种即插即用的训练策略来解决VLA模型在环境偏移下性能下降的问题。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.02898">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.02898.webp" alt="MixVLA: Adaptive Mixing of Non-Invariant Information for Generalizable Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 MixVLA，一个模型无关的训练框架，旨在提升视觉-语言-动作（VLA）模型在未见过的分布外（OOD）场景下的零样本泛化能力。</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">MixVLA: Adaptive Mixing of Non-Invariant Information for Generalizable Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-10-02 · <a href="http://arxiv.org/abs/2610.02898" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.02898" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.02898</span></div>
+            <p class="detail-summary">提出 MixVLA，一个模型无关的训练框架，旨在提升视觉-语言-动作（VLA）模型在未见过的分布外（OOD）场景下的零样本泛化能力。 核心思想是不丢弃非不变信息（如光照、背景、视角等），而是通过显式正则化其可变性，使其与任务相关的稳定特征互补，从而提升策略的鲁棒性。 无需额外的OOD数据收集或架构修改，通过一种即插即用的训练策略来解决VLA模型在环境偏移下性能下降的问题。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">复旦大学</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.02898/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 MixVLA，一个模型无关的训练框架，旨在提升视觉-语言-动作（VLA）模型在未见过的分布外（OOD）场景下的零样本泛化能力。</p>
+  <ul class="reading-intro-points"><li>提出 MixVLA，一个模型无关的训练框架，旨在提升视觉-语言-动作（VLA）模型在未见过的分布外（OOD）场景下的零样本泛化能力。</li><li>核心思想是不丢弃非不变信息（如光照、背景、视角等），而是通过显式正则化其可变性，使其与任务相关的稳定特征互补，从而提升策略的鲁棒性。</li><li>无需额外的OOD数据收集或架构修改，通过一种即插即用的训练策略来解决VLA模型在环境偏移下性能下降的问题。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>复旦大学</strong></li><li><strong>上海人工智能实验室</strong></li><li><strong>哈尔滨工业大学（深圳）</strong></li><li><strong>西北工业大学</strong></li><li><strong>中国电信人工智能研究院 (TeleAI)</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>MixVLA</strong>，一个模型无关的训练框架，旨在提升视觉-语言-动作（VLA）模型在未见过的分布外（OOD）场景下的零样本泛化能力。</li><li>核心思想是不丢弃非不变信息（如光照、背景、视角等），而是通过显式正则化其可变性，使其与任务相关的稳定特征互补，从而提升策略的鲁棒性。</li><li>无需额外的OOD数据收集或架构修改，通过一种即插即用的训练策略来解决VLA模型在环境偏移下性能下降的问题。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>模型无关的泛化框架</strong>：提出的 <strong>MixVLA</strong> 无需改变模型架构或收集额外数据，即可提升多种VLA模型在未知分布偏移下的鲁棒性。</li><li><strong>非不变信息自适应混合（AMI）</strong>：创新性地提出 <strong>AMI</strong> 模块，通过对非不变特征进行随机混合和正则化，并将其与不变特征融合，有效利用互补的预测性线索。</li><li><strong>特征分解机制</strong>：结合信息瓶颈和权重算术，显式地将模型表征分解为任务核心的不变特征和环境依赖的非不变特征。</li><li><strong>显著的性能提升</strong>：在 <strong>LIBERO-Plus</strong>、<strong>RoboTwin 2.0</strong> 等挑战性基准及真实世界操作任务中，MixVLA 一致地提升了零样本成功率，同时保持了优秀的域内性能。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>特征分解</strong>：首先，使用信息瓶颈（IB）目标训练一个 <strong>不变网络（Invariant Net）</strong>，以提取对任务关键且跨环境稳定的特征；然后，通过原始策略权重与不变网络权重的算术相减，推导出一个互补的 <strong>非不变网络（Non-Invariant Net）</strong>。</li><li><strong>自适应混合（AMI）</strong>：对非不变网络提取的嵌入进行正则化。包含两种混合策略：<strong>软混合</strong>（通过自适应实例归一化交换特征统计量）和 <strong>硬混合</strong>（直接进行嵌入插值），以平滑环境条件带来的特征变化。</li><li><strong>表征融合与训练</strong>：将原始的不变嵌入与混合后的非不变嵌入拼接起来，输入到策略头进行动作预测，并使用基础的VLA损失函数进行端到端训练。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>: <strong>LIBERO</strong> (域内训练), <strong>LIBERO-Plus</strong> (OOD评估), <strong>RoboTwin 2.0</strong> (清洁到随机化评估), 以及<strong>真实世界机器人面包放置任务数据</strong>。</li><li><strong>模型架构</strong>: 基于 <strong>OpenVLA-OFT</strong> (并行动作解码) 和 <strong>π₀.₅</strong> (流匹配动作生成) 两种代表性VLA架构。</li><li><strong>训练资源</strong>: 仿真实验中，Normal Net和Invariant Net各训练100K步；第二阶段AMI训练在LIBERO上为1K步，在RoboTwin上为10K步。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估基准</strong>: 在 <strong>LIBERO</strong> (域内)、<strong>LIBERO-Plus</strong> (7种OOD扰动) 和 <strong>RoboTwin 2.0</strong> (清洁到随机化) 上进行评估。</li><li><strong>主要评估指标</strong>: 任务成功率。</li><li><strong>关键结果</strong>:</li></ul>
+<p> - 在 <strong>LIBERO-Plus</strong> 上，MixVLA 取得 76.2% 的总成功率，超越基线 <strong>OpenVLA-OFT</strong> 6.6%。</p>
+<p> - 在 <strong>RoboTwin 2.0</strong> 的清洁到随机化（C2R）评估中，MixVLA 将基座模型 <strong>π₀.₅</strong> 的成功率从 46.0% 提升至 <strong>62.4%</strong> (+16.4%)。</p>
+<p> - 在真实机器人光照扰动实验中，MixVLA 的成功率为 <strong>60%</strong>，远高于基线的 20%。</p>
+<p> - 通过仅使用单次训练运行中间检查点的 <strong>Self-MixVLA</strong> 变体，验证了降低训练成本的潜力。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.03476/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.02840/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">PointWAM: 3D World Action Modeling for Dexterous Robotic Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>World-Calibrated Proposal-to-Action Flow for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对传统基于流匹配的视觉-语言-动作（VLA）模型采用任务无关的各向同性高斯源作为动作块生成起点，既忽略了近期执行动作的局部运动连续性与场景感知的运动先验，也未利用预测的未来场景信息校准生成过程的问题，提出ProAct世界校准的提案到动作流框架。 现有引入世界预测的VLA方法仅将预测信息作为传输动态的条件，未决定动作生成的起始位置、允许偏离的范围与修正方向，ProAct通过“提案-校准-细化”流程将生成源分布本身变…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.02323">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.02323.webp" alt="World-Calibrated Proposal-to-Action Flow for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对传统基于流匹配的视觉-语言-动作（VLA）模型采用任务无关的各向同性高斯源作为动作块生成起点，既忽略了近期执行动作的局部运动连续性与场景感…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">World-Calibrated Proposal-to-Action Flow for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-10-01 · <a href="http://arxiv.org/abs/2610.02323" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.02323" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.02323</span></div>
+            <p class="detail-summary">针对传统基于流匹配的视觉-语言-动作（VLA）模型采用任务无关的各向同性高斯源作为动作块生成起点，既忽略了近期执行动作的局部运动连续性与场景感知的运动先验，也未利用预测的未来场景信息校准生成过程的问题，提出ProAct世界校准的提案到动作流框架。 现有引入世界预测的VLA方法仅将预测信息作为传输动态的条件，未决定动作生成的起始位置、允许偏离的范围与修正方向，ProAct通过“提案-校准-细化”流程将生成源分布本身变…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">哈尔滨工业大学（深圳）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.02323/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对传统基于流匹配的视觉-语言-动作（VLA）模型采用任务无关的各向同性高斯源作为动作块生成起点，既忽略了近期执行动作的局部运动连续性与场景感…</p>
+  <ul class="reading-intro-points"><li>针对传统基于流匹配的视觉-语言-动作（VLA）模型采用任务无关的各向同性高斯源作为动作块生成起点，既忽略了近期执行动作的局部运动连续性与场景感…</li><li>现有引入世界预测的VLA方法仅将预测信息作为传输动态的条件，未决定动作生成的起始位置、允许偏离的范围与修正方向，ProAct通过“提案-校准-…</li><li>论文核心目标是解决流式VLA未融合近期运动先验与未来场景预测、生成效率低的问题，在仿真与真实机器人任务上验证框架的泛化性与实用性。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>哈尔滨工业大学（深圳）</strong></li><li><strong>中兴通讯移动网络与移动多媒体技术国家重点实验室（中国）</strong></li><li><strong>中山大学</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对传统基于流匹配的视觉-语言-动作（VLA）模型采用任务无关的各向同性高斯源作为动作块生成起点，既忽略了近期执行动作的局部运动连续性与场景感知的运动先验，也未利用预测的未来场景信息校准生成过程的问题，提出<strong>ProAct</strong>世界校准的提案到动作流框架。</li><li>现有引入世界预测的VLA方法仅将预测信息作为传输动态的条件，未决定动作生成的起始位置、允许偏离的范围与修正方向，ProAct通过“提案-校准-细化”流程将生成源分布本身变为可预测的上下文感知分布，同时提升动作生成的准确性与推理效率。</li><li>论文核心目标是解决流式VLA未融合近期运动先验与未来场景预测、生成效率低的问题，在仿真与真实机器人任务上验证框架的泛化性与实用性。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出从“提案-校准-细化”视角的生成式动作预测框架，将局部运动连续性作为软先验，通过任务一致的前瞻推理校准，搭建了局部运动与未来感知动作生成的接口。</li><li>设计非对称的提案感知世界专家（World Expert），利用运动假设辅助未来预测，同时独立于提案正确性锚定任务一致的期望未来，联合预测每时间步的修正范围与低秩几何。</li><li>用世界校准的、以提案为中心的各向异性源替换流式VLA的固定各向同性高斯源，同时保留原有传输参数化，无需修改基础流模型的传输逻辑即可实现性能提升。</li><li>在多个仿真基准与真实机器人操作任务上验证有效性，在提升任务成功率的同时，显著降低推理开销。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>ProAct</strong>整体遵循“提案-校准-细化”流程，包含三个核心模块：提案专家（Proposal Expert）、世界专家（World Expert）、动作专家（Action Expert）。</li><li>提案专家首先通过动量外推得到近期运动的场景无关假设，再用6层浅层Transformer grounding到预训练VLM的上下文特征，通过单步端点流匹配生成场景感知的运动提案，作为后续推理的软运动先验。</li><li>世界专家以冻结的<strong>V-JEPA 2</strong>编码器的潜空间为监督目标，预测任务一致的未来潜表示，同时建模提案与未来的兼容性，输出每动作时间步的修正范围（extent）与低秩几何（geometry），用于构建校准后的生成源分布。</li><li>动作专家保留基础VLA的原始流参数化，仅将生成源从各向同性高斯替换为提案为中心的校准各向异性源，通过流匹配传输得到可执行的动作块。</li><li>创新点在于将动作生成的起点从固定通用分布变为可校准的上下文感知分布，同时利用了近期运动连续性与未来场景预测的双重信息，无需修改基础流模型的传输逻辑即可实现性能与效率的双重提升。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO</strong>系列基准（包含Spatial、Object、Goal、Long四个任务套件）、<strong>LIBERO-Plus</strong>（包含7种扰动维度的泛化测试集）、<strong>RoboTwin 2.0</strong>仿真基准。</li><li>真实世界部署平台：<strong>GALAXEA R1 Lite</strong>、<strong>AgileX Cobot Magic</strong>双臂机器人平台，配套6类日常操作任务。</li><li>模型规模：VLM骨干为18层，提案专家为6层Transformer，世界专家与动作专家复用基础VLA的骨干结构；采用冻结的<strong>V-JEPA 2</strong>编码器作为未来预测的监督目标。</li><li>训练资源：论文未明确标注具体训练硬件配置。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境覆盖LIBERO常规任务、LIBERO-Plus扰动泛化任务、RoboTwin 2.0零样本域随机化任务；真实环境在两个双臂机器人平台执行6类实际操作任务。</li><li>评估指标：核心评估指标为任务成功率，同时评估推理效率指标，包括去噪步数、推理延迟、吞吐量。</li><li>关键实验结果：</li></ul>
+<p> - 在LIBERO基准上，<strong>ProAct</strong>平均任务成功率达98.4%，比 backbone 模型<strong>π₀.₅</strong>高1.5个百分点，在长时序Long任务上优势扩大至3.6个百分点。</p>
+<p> - 在LIBERO-Plus的7种扰动泛化测试中，<strong>ProAct</strong>平均成功率达86.8%，比<strong>π₀.₅</strong>高13.2个百分点，在相机扰动、机器人扰动、语言扰动等维度优势显著。</p>
+<p> - 在RoboTwin 2.0零样本域随机化测试中，<strong>ProAct</strong>平均成功率达60.3%，比<strong>π₀.₅</strong>高31.7个百分点，在复杂操作任务上优势突出。</p>
+<p> - 推理效率方面，相比<strong>π₀.₅</strong>，<strong>ProAct</strong>去噪步数减少50%，推理延迟最高降低25.8%，吞吐量最高提升34.8%。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.02360/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">SocialVLA: A Social Perception Gateway for Human-Reaction-Based Failure Detection and Recovery in VLA Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.02161/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SocialVLA: A Social Perception Gateway for Human-Reaction-Based Failure Detection and Recovery in VLA Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对 vision-language-action（VLA）操作策略在执行抓取放置等任务时易出现自身无法识别的执行失败问题，提出SocialVLA：一个本地部署、策略无关的社会感知网关，无需访问VLA内部表示，即可将人类观察者的自发音视频反应、显式停止指令转换为VLA运行时的干预信号，实现失败后果的事前阻止。 系统采用异步首事件融合机制，允许最早达到足够置信度的单模态信号直接请求VLA暂停，无需等待多模态完全一致…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.02360">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.02360.webp" alt="SocialVLA: A Social Perception Gateway for Human-Reaction-Based Failure Detection and Recovery in VLA Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对 vision-language-action（VLA）操作策略在执行抓取放置等任务时易出现自身无法识别的执行失败问题，提出SocialV…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">SocialVLA: A Social Perception Gateway for Human-Reaction-Based Failure Detection and Recovery in VLA Manipulation</h1>
+            <div class="detail-meta">2026-10-01 · <a href="http://arxiv.org/abs/2610.02360" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.02360" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.02360</span></div>
+            <p class="detail-summary">针对 vision-language-action（VLA）操作策略在执行抓取放置等任务时易出现自身无法识别的执行失败问题，提出SocialVLA：一个本地部署、策略无关的社会感知网关，无需访问VLA内部表示，即可将人类观察者的自发音视频反应、显式停止指令转换为VLA运行时的干预信号，实现失败后果的事前阻止。 系统采用异步首事件融合机制，允许最早达到足够置信度的单模态信号直接请求VLA暂停，无需等待多模态完全一致…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构包括：Skolkovo Institute of Science and Techno…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.02360/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对 vision-language-action（VLA）操作策略在执行抓取放置等任务时易出现自身无法识别的执行失败问题，提出SocialV…</p>
+  <ul class="reading-intro-points"><li>针对 vision-language-action（VLA）操作策略在执行抓取放置等任务时易出现自身无法识别的执行失败问题，提出SocialV…</li><li>系统采用异步首事件融合机制，允许最早达到足够置信度的单模态信号直接请求VLA暂停，无需等待多模态完全一致，在及时检测和降低无关行为误触发间取得…</li><li>干预后可通过独立语音通道记录参与者的纠正指令，支持VLA动作的继续、重启或指令修改，同时生成的带时间戳干预记录可为后续失败感知、偏好驱动的策略…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构包括：<strong>Skolkovo Institute of Science and Technology（斯科尔科沃科学与技术学院）</strong> Intelligent Space Robotics Lab（莫斯科，俄罗斯）、<strong>MWS R&D Center</strong>（莫斯科，俄罗斯），作者为Sofya Konstantinova、Miguel Altamirano Cabrera、Artem Lykov、Dzmitry Tsetserukou。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对 vision-language-action（VLA）操作策略在执行抓取放置等任务时易出现自身无法识别的执行失败问题，提出<strong>SocialVLA</strong>：一个本地部署、策略无关的社会感知网关，无需访问VLA内部表示，即可将人类观察者的自发音视频反应、显式停止指令转换为VLA运行时的干预信号，实现失败后果的事前阻止。</li><li>系统采用异步首事件融合机制，允许最早达到足够置信度的单模态信号直接请求VLA暂停，无需等待多模态完全一致，在及时检测和降低无关行为误触发间取得平衡。</li><li>干预后可通过独立语音通道记录参与者的纠正指令，支持VLA动作的继续、重启或指令修改，同时生成的带时间戳干预记录可为后续失败感知、偏好驱动的策略学习提供时间监督数据。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>SocialVLA</strong>，首个本地部署、策略无关的社会感知网关，可将人类观察者的自发音视频反应和显式停止指令实时转换为VLA操作的干预信号，实现无需策略内部访问的运行时故障检测。</li><li>设计因果多模态干预架构，结合快速/扩展上下文副语言音频检测、视觉反应识别、显式停止短语识别、独立机器人相关性估计模块，采用异步首事件融合规则，最早满足置信度阈值的单模态信号即可触发VLA暂停，避免多模态一致性的等待延迟。</li><li>在物理<strong>Unitree G1</strong>人形机器人上完成全流程验证：包含15名参与者的离线多模态评估，以及1名未见参与者的前瞻性冻结系统实时部署，同时公开带时间戳的反应-纠正干预记录，为后续人机协同策略优化提供数据基础。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用模块化多通道独立感知架构：音频通道基于<strong>Aniemore（wav2vec 2.0基座）</strong>俄语情感模型，以16kHz单声道音频、320ms因果窗口为输入，分别训练0.4s历史的快速检测头和2s历史的扩展上下文检测头，均采用160棵树的ExtraTrees分类器；直接词汇通道采用<strong>Vosk</strong>语音识别模型，识别俄语显式停止指令作为高置信度触发信号；视频通道采用<strong>YuNet</strong>人脸检测器对齐人脸后，由<strong>MobileFaceNet</strong>提取表情特征，结合几何、位置、姿态特征和时序差分共50维特征，输入ExtraTrees分类器输出视觉反应概率。</li><li>核心创新1：独立估计机器人相关性，通过仅使用视觉特征的逻辑回归头输出反应与当前机器人操作的相关性概率，作为融合的上下文权重而非硬门控，避免跨模态标签泄漏，同时降低无关人类行为导致的误触发。</li><li>核心创新2：异步软多模态融合机制，各模态信号异步到达时，取各模态最高置信度作为原始证据，乘以相关性因子（显式停止指令时因子下限0.85，其他反应为0.7+0.3*相关性概率）得到融合置信度，首个超过阈值（0.772）的授权事件即可触发VLA暂停，后续同干预事件的信号仅附加记录不重复触发。</li><li>配套停止-纠正接口：VLA暂停后，独立语音通道记录参与者的非受限纠正指令，参与者可自主选择继续执行、调整场景后重启或提供修改后的指令，同时每个干预事件会生成包含反应时间、停止时间、纠正内容、对应VLA动作的结构化记录，为后续策略数据策展提供时间监督。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：自主采集的同步音视频-机器人日志标注数据集，包含15名参与者的62.3分钟非干预行为和238个人类干预 worthy 的反应片段；前瞻性部署额外采集1名未见参与者的交互数据。</li><li>模型规模：基于预训练轻量基座模型（Aniemore wav2vec 2.0、YuNet、MobileFaceNet）搭配ExtraTrees分类头，总参数量小于100M，支持本地实时推理。</li><li>训练资源：论文未明确指定GPU/TPU等训练硬件，系统为本地轻量部署设计，离线推理阶段320ms音频窗口的平均编码延迟为47.6ms，部署时端到端检测到融合的延迟中位数为47.9ms，满足实时交互要求。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：物理<strong>Unitree G1</strong>人形机器人，采用<strong>GR00T-WholeBodyControl</strong>控制框架和<strong>GR00T</strong>抓取放置VLA策略，评估设置包括15名参与者的全模态离线回放（冻结模型，不重训不调整阈值），以及1名未见参与者的前瞻性实时部署。</li><li>主要评估指标：事件级召回率、精确率、非干预假阳性率、每小时错误停止次数、500ms内及时召回率，以及端到端延迟（反应到停止请求、检测器到融合、融合到VLA门、VLA门到物理停止、反应到物理停止的全链路延迟）。</li><li>关键实验结果：</li></ul>
+<p> - 离线全模态cascade评估：事件召回率54.6%，精确率69.5%，500ms及时召回率45.4%，每小时错误停止54.9次；消融实验显示首事件音视频融合比单独音频检测召回率提升16个百分点，加入机器人相关性估计后错误停止次数从100次降至57次，精确率从60.5%提升至69.8%。</p>
+<p> - 前瞻性部署评估：事件召回率59.5%，精确率91.7%，非干预假阳性率9.5%，每小时错误停止20.9次，反应到物理停止的中位延迟为1.021s，其中检测到融合的传输延迟仅47.9ms，VLA门到物理停止延迟336ms，大部分延迟来自证据积累和机器人物理减速过程。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.02626/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Imagine the Future, Internalize the Gist: Efficient VLA Reasoning via Internalized Spatiotemporal Imagination</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.02323/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">World-Calibrated Proposal-to-Action Flow for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

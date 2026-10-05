@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detect and Suppress: A Mechanistic Defense against Adversarial Patches in VLA Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文针对视觉-语言-动作（VLA）模型在面对对抗性补丁攻击时鲁棒性不足的问题，提出了一种基于内部表征干预的防御方法 现有防御方法通常需要微调模型或修改输入，而本文探索了在不微调VLA策略的前提下，通过推理时直接抑制攻击相关内部特征来提升鲁棒性的方法 通过稀疏自编码器（SAE）识别与对抗性补丁存在性高度相关的特征，并在检测到攻击时对其进行条件性抑制" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.03498">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.03498.webp" alt="Detect and Suppress: A Mechanistic Defense against Adversarial Patches in VLA Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文针对视觉-语言-动作（VLA）模型在面对对抗性补丁攻击时鲁棒性不足的问题，提出了一种基于内部表征干预的防御方法</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Detect and Suppress: A Mechanistic Defense against Adversarial Patches in VLA Models</h1>
+            <div class="detail-meta">2026-10-02 · <a href="http://arxiv.org/abs/2610.03498" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.03498" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.03498</span></div>
+            <p class="detail-summary">论文针对视觉-语言-动作（VLA）模型在面对对抗性补丁攻击时鲁棒性不足的问题，提出了一种基于内部表征干预的防御方法 现有防御方法通常需要微调模型或修改输入，而本文探索了在不微调VLA策略的前提下，通过推理时直接抑制攻击相关内部特征来提升鲁棒性的方法 通过稀疏自编码器（SAE）识别与对抗性补丁存在性高度相关的特征，并在检测到攻击时对其进行条件性抑制</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Keio University（庆应义塾大学）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.03498/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文针对视觉-语言-动作（VLA）模型在面对对抗性补丁攻击时鲁棒性不足的问题，提出了一种基于内部表征干预的防御方法</p>
+  <ul class="reading-intro-points"><li>论文针对视觉-语言-动作（VLA）模型在面对对抗性补丁攻击时鲁棒性不足的问题，提出了一种基于内部表征干预的防御方法</li><li>现有防御方法通常需要微调模型或修改输入，而本文探索了在不微调VLA策略的前提下，通过推理时直接抑制攻击相关内部特征来提升鲁棒性的方法</li><li>通过稀疏自编码器（SAE）识别与对抗性补丁存在性高度相关的特征，并在检测到攻击时对其进行条件性抑制</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Keio University</strong>（庆应义塾大学）</li><li><strong>Waseda University</strong>（早稻田大学）</li><li><strong>The University of Tokyo</strong>（东京大学）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文针对视觉-语言-动作（VLA）模型在面对对抗性补丁攻击时鲁棒性不足的问题，提出了一种基于内部表征干预的防御方法</li><li>现有防御方法通常需要微调模型或修改输入，而本文探索了在不微调VLA策略的前提下，通过推理时直接抑制攻击相关内部特征来提升鲁棒性的方法</li><li>通过稀疏自编码器（SAE）识别与对抗性补丁存在性高度相关的特征，并在检测到攻击时对其进行条件性抑制</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次将机械可解释性技术（SAE）应用于VLA模型的对抗性防御，识别出与对抗性补丁存在强相关的内部特征</li><li>提出条件性特征干预防御框架：仅在检测到攻击时抑制选定的SAE特征，避免了连续干预对正常行为的破坏</li><li>在LIBERO-10基准上对两种VLA模型（π₀.₅和SmolVLA）进行验证，证明条件性干预可提升间歇性攻击下的任务成功率</li><li>通过实验揭示了干预强度、检测时机和特征选择对防御效果与良性性能之间权衡的影响</li><li>无需对VLA模型进行任何微调，仅通过推理时的表征级干预实现鲁棒性提升</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>使用<strong>TopK稀疏自编码器（SAE）</strong>对VLA内部表征进行分解，并从残差流的token均值池化表示中提取SAE特征激活</li><li>通过Pearson相关系数筛选与对抗性补丁存在性在多个rollout中稳定相关的（层，特征）对作为干预目标</li><li>训练<strong>线性探针</strong>（逻辑回归或线性分类器）在较浅层进行补丁检测，控制假阳性率低于2%</li><li>推理时根据探针的二值检测结果（门控），对选定层的所有前缀token表示进行<strong>条件性特征抑制</strong>，公式为：</li></ul>
+<p> <code>h̃ = h - g_t · λ · z · d</code></p>
+<p> 其中g_t为检测门控，λ为干预强度，z为特征激活，d为解码器方向</p></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>LIBERO-10</strong>基准：包含10个任务，每个评价设置使用500个rollout（每任务50个初始状态）</li><li><strong>VLA模型</strong>：π₀.₅（仅使用智能体相机）和SmolVLA（使用智能体+腕部相机）</li><li><strong>攻击方法</strong>：Untargeted Action Discrepancy Attack（UADA），针对自由度1生成通用对抗性补丁</li><li><strong>训练资源</strong>：π₀.₅的LoRA微调在4个NVIDIA RTX 6000 Ada GPU（48GB）上进行30,000步</li><li>SAE训练使用1×扩展比；π₀.₅使用K=12的TopK稀疏度，SmolVLA使用K=6；每个SAE训练6,677优化步</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>探针检测性能</strong>（π₀.₅）：在n=3攻击设置下召回率81.76%，精确率92.71%，假阳性率0.39%；n=10设置下召回率84.91%，精确率96.45%，假阳性率0.71%，均低于2%目标</li><li><strong>条件性干预效果</strong>（表2）：</li></ul>
+<p> - π₀.₅在n=10攻击下SR从26.0%提升至32.4%；SmolVLA在n=3下从18.6%提升至19.6%</p>
+<p> - 连续干预（w/o Det.）严重降低性能，如π₀.₅在n=3下SR骤降至9.4%</p>
+<p> - 条件性干预SR与oracle检测（w/ Oracle Det.）相当</p>
+<ul><li><strong>良性条件下性能</strong>（表3）：π₀.₅的SR保持在54.6%（vs. 基线54.4%），SmolVLA从41.4%降至36.6%；连续干预则分别降至35.2%和19.0%</li><li><strong>干预强度影响</strong>（图3）：π₀.₅在n=3攻击下λ≈0.3时SR最优，n=10下λ=0.2–0.25最优，更强的λ会导致攻击和良性条件下SR均下降</li><li><strong>其他攻击类型</strong>（附录）：在Gripper补丁攻击下，方法同样有效（如n=3下从30.4%提升至46.4%）</li><li><strong>特征选择影响</strong>（图5）：选择与补丁相关性最高的特征可获得最优SR，随机特征提升较小或降低性能</li><li><strong>持续性攻击</strong>（表6）：在补丁持续可见的情况下，方法效果有限，所有干预均导致SR下降</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2610.03476/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
