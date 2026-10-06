@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Do VLAs Understand and Adapt to the Objects They Handle, or Simply Replay Learned Behaviors? - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="探究 VLA（视觉语言动作模型）在泛化时是基于对物体物理属性（如质量、脆弱性）的理解而适应动作，还是仅重放训练中学到的运动模式（即表面鲁棒性）。 从两个维度回答：一是通过线性探针和表示相似性分析（RSA）检查七种 VLA 对物理属性的内部编码（awareness）；二是在 LIBERO 中通过控制实验考察模型面对质量变化时能否据此调整行为（behavioral adaptation）。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.06078">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.06078.webp" alt="Do VLAs Understand and Adapt to the Objects They Handle, or Simply Replay Learned Behaviors?" loading="lazy" />
+  <figcaption class="paper-figure-caption">探究 VLA（视觉语言动作模型）在泛化时是基于对物体物理属性（如质量、脆弱性）的理解而适应动作，还是仅重放训练中学到的运动模式（即表面鲁棒性）。</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Do VLAs Understand and Adapt to the Objects They Handle, or Simply Replay Learned Behaviors?</h1>
+            <div class="detail-meta">2026-10-05 · <a href="http://arxiv.org/abs/2610.06078" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.06078" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.06078</span></div>
+            <p class="detail-summary">探究 VLA（视觉语言动作模型）在泛化时是基于对物体物理属性（如质量、脆弱性）的理解而适应动作，还是仅重放训练中学到的运动模式（即表面鲁棒性）。 从两个维度回答：一是通过线性探针和表示相似性分析（RSA）检查七种 VLA 对物理属性的内部编码（awareness）；二是在 LIBERO 中通过控制实验考察模型面对质量变化时能否据此调整行为（behavioral adaptation）。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者 Xavier (Xinnuo) Xu，论文未明确列出所属机构（邮箱 xuxinnuo@yahoo…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.06078/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">探究 VLA（视觉语言动作模型）在泛化时是基于对物体物理属性（如质量、脆弱性）的理解而适应动作，还是仅重放训练中学到的运动模式（即表面鲁棒性）。</p>
+  <ul class="reading-intro-points"><li>探究 VLA（视觉语言动作模型）在泛化时是基于对物体物理属性（如质量、脆弱性）的理解而适应动作，还是仅重放训练中学到的运动模式（即表面鲁棒性）。</li><li>从两个维度回答：一是通过线性探针和表示相似性分析（RSA）检查七种 VLA 对物理属性的内部编码（awareness）；二是在 LIBERO…</li><li>为 OXE、DROID 和 LIBERO 三个数据集中的可操作物体标注了 12 种常识属性（包括 5 种物理属性），并验证了标注的有效性。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者 Xavier (Xinnuo) Xu，论文未明确列出所属机构（邮箱 xuxinnuo@yahoo.com），可能来自 <strong>Yahoo Research</strong> 或独立研究者。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>探究 VLA（视觉语言动作模型）在泛化时是基于对物体物理属性（如质量、脆弱性）的理解而适应动作，还是仅重放训练中学到的运动模式（即表面鲁棒性）。</li><li>从两个维度回答：一是通过线性探针和表示相似性分析（RSA）检查七种 VLA 对物理属性的内部编码（awareness）；二是在 LIBERO 中通过控制实验考察模型面对质量变化时能否据此调整行为（behavioral adaptation）。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>为 <strong>OXE、DROID 和 LIBERO</strong> 三个数据集中的可操作物体标注了 12 种常识属性（包括 5 种物理属性），并验证了标注的有效性。</li><li>对 7 种主流 VLA（覆盖自回归、流匹配、JEPA 等架构）进行了系统性的探测和 RSA 分析，揭示了物理属性的解码程度和表示几何组织。</li><li>发现物理属性的编码在所有模态流中均弱于语义类别、材料等非物理属性，且机器人预训练和下游微调并未增强物理属性在表示中的突出程度。</li><li>通过 LIBERO 中控制质量变化的案例研究，证明多数 VLA 不根据质量调整动作，成功率下降主要由词表或像素变化驱动，而非对质量本身的理解。</li><li>将分析结果与基座 VLM 进行对比，量化了机器人训练对物理属性表征的影响。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>属性标注</strong>：使用 GPT-4.1 对物体进行成对比较（序数属性）或直接分类（类别属性），并拟合 Bradley–Terry 模型得到排序，经人工标注验证。</li><li><strong>探测（probe）</strong>：对每个模态流（对象文本、相机视角、状态、动作）和每层激活训练线性分类器（类别属性）或排序线性模型（序数属性），以评估属性的线性可读性。</li><li><strong>表示相似性分析（RSA）</strong>：计算物体激活间的余弦距离矩阵与属性距离矩阵的 Spearman 秩相关，衡量属性对表示几何的组织程度。</li><li><strong>行为实验</strong>：在 LIBERO 模拟器中选取可操作容器，保持几何不变，增加质量（填充内容），通过语言指令（“full of …”）或视觉（可见内容）提示变化，记录任务成功率和提升阶段的命令动作，并比较跨设置的动作距离。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：<strong>OXE</strong>（200个物体，200个片段）、<strong>DROID</strong>（88个物体，410个片段）、<strong>LIBERO</strong>（13个物体，104个片段），以及 OXE/DROID 用于探测，LIBERO 用于行为研究。</li><li>模型：π0、π0.5、π0‑FAST、SmolVLA、VLA‑JEPA、GR00T‑N1.7‑3B、OpenVLA‑7B；基座 VLM 为 PaliGemma‑3B、SmolVLM2‑500M、Qwen3‑VL‑2B、Cosmos‑Reason2、Prismatic 等。</li><li>训练资源：仅用预训练模型进行推理，探针在少量样本上训练（常规 CPU/GPU 即可完成），未说明大规模训练资源。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>物理属性解码性</strong>：所有属性均高于机会水平，但物理属性（质量、脆弱性等）在对象文本流和视觉流中的解码准确度均低于类别、材料、声音、价格等非物理属性。</li><li><strong>表示几何</strong>：每个模态流的表示几何主要被非物理属性（如位置、材料、价格）组织，物理属性 RSA 值最多 0.21；训练前后排序基本不变。</li><li><strong>预训练影响</strong>：机器人预训练使语言流中物理属性的解码性大幅下降（脆弱性 −0.10, 质量 −0.08），视觉流略有上升，但表示几何未增强。</li><li><strong>下游微调（LIBERO）</strong>：在语言流中物理属性 RSA 损失小于非物理属性，但在视觉流中反而下降；整体上物理属性仍未被强化为显著维度。</li><li><strong>行为实验</strong>：增加质量后，所有模型的成功率下降；动作分析显示多数模型的提升期命令动作距离与原始对象的内部分布相近（R ≈ 1），无质量适应性调整。SmolVLA 等模型的动作变化来源于词表重述，而非质量信号；π0‑FAST 和 VLA‑JEPA 在视觉提示下反而更快提升，与人减速模式相反。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.06184/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Arm-wise Compositional Generalization in Dual-Arm Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.05994/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">How (and How Not) to Use Data Augmentation in VLA Post-Training</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

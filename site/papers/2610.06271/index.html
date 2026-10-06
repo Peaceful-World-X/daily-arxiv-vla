@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VLA-ZO: Fast Zeroth-Order Adaptation for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 VLA-ZO 框架，通过计算复用和预取技术，加速视觉-语言-动作（VLA）模型的零阶优化（ZO）在线适配过程，解决了标准ZO适配因多次前向评估而导致时间过长的问题。 针对机器人部署后因相机视角、光照等环境变化导致的策略性能下降问题，实现了一种在推理级内存预算下，快速有效的模型适配方法。 核心目标是在不改变优化目标和参数空间的前提下，显著减少VLA模型零阶适配的端到端时间，使得更大的查询预算变得实际可用，从而提…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.06271">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.06271.webp" alt="VLA-ZO: Fast Zeroth-Order Adaptation for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 VLA-ZO 框架，通过计算复用和预取技术，加速视觉-语言-动作（VLA）模型的零阶优化（ZO）在线适配过程，解决了标准ZO适配因多次前…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">VLA-ZO: Fast Zeroth-Order Adaptation for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-10-05 · <a href="http://arxiv.org/abs/2610.06271" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.06271" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.06271</span></div>
+            <p class="detail-summary">提出 VLA-ZO 框架，通过计算复用和预取技术，加速视觉-语言-动作（VLA）模型的零阶优化（ZO）在线适配过程，解决了标准ZO适配因多次前向评估而导致时间过长的问题。 针对机器人部署后因相机视角、光照等环境变化导致的策略性能下降问题，实现了一种在推理级内存预算下，快速有效的模型适配方法。 核心目标是在不改变优化目标和参数空间的前提下，显著减少VLA模型零阶适配的端到端时间，使得更大的查询预算变得实际可用，从而提…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">UNIST（Ulsan National Institute of Science and Techn…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.06271/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 VLA-ZO 框架，通过计算复用和预取技术，加速视觉-语言-动作（VLA）模型的零阶优化（ZO）在线适配过程，解决了标准ZO适配因多次前…</p>
+  <ul class="reading-intro-points"><li>提出 VLA-ZO 框架，通过计算复用和预取技术，加速视觉-语言-动作（VLA）模型的零阶优化（ZO）在线适配过程，解决了标准ZO适配因多次前…</li><li>针对机器人部署后因相机视角、光照等环境变化导致的策略性能下降问题，实现了一种在推理级内存预算下，快速有效的模型适配方法。</li><li>核心目标是在不改变优化目标和参数空间的前提下，显著减少VLA模型零阶适配的端到端时间，使得更大的查询预算变得实际可用，从而提升适配质量。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>UNIST</strong>（Ulsan National Institute of Science and Technology）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>VLA-ZO</strong> 框架，通过计算复用和预取技术，加速视觉-语言-动作（VLA）模型的零阶优化（ZO）在线适配过程，解决了标准ZO适配因多次前向评估而导致时间过长的问题。</li><li>针对机器人部署后因相机视角、光照等环境变化导致的策略性能下降问题，实现了一种在推理级内存预算下，快速有效的模型适配方法。</li><li>核心目标是在不改变优化目标和参数空间的前提下，显著减少VLA模型零阶适配的端到端时间，使得更大的查询预算变得实际可用，从而提升适配质量。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出将ZO适配<strong>限制在动作执行端（action expert）</strong>，保持昂贵的视觉-语言前缀（vision-language prefix）冻结，从而揭示了前缀计算存在大量冗余。</li><li>设计了三种层次化的计算重用机制：<strong>步内状态复用</strong>、<strong>跨步状态复用</strong>和<strong>调度感知的状态预取</strong>，逐步消除冗余的前缀计算并隐藏数据加载延迟。</li><li>在不改变模型参数梯度估计的数学等价性的前提下，将端到端适配时间相比基线ZO方法提升了<strong>25.59倍到32.54倍</strong>，同时显著提升了任务成功率。</li><li>证明了更快的ZO优化使得更大的查询预算（q）变得可行，为在资源受限的部署平台上进行有效的VLA模型适配提供了一条可行路径。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>动作端适配</strong>：仅对VLA模型中的动作专家模块（如<code>π_0.5</code> 的动作专家或 <code>OpenVLA-OFT</code> 的动作头）添加LoRA适配器进行ZO优化，而冻结视觉-语言前缀，大大减少了可训练参数量。</li><li><strong>步内前缀复用</strong>：在一个ZO更新步内，对同一个样本的多个扰动查询（±对）之间，复用一次计算好的前缀状态，避免重复的视觉-语言编码。</li><li><strong>跨步前缀复用</strong>：在整个适配过程中，将首次计算的样本前缀状态缓存到磁盘，并在后续所有更新步中通过查表直接加载，将前缀执行次数从数千次降至恰好等于样本数。</li><li><strong>调度感知预取</strong>：利用已知的批采样调度规则，提前重建下一个训练步所需的小批次，并在当前步进行动作专家评估时，在后台异步加载和传输下一批缓存的状态，从而将I/O延迟隐藏在计算过程中。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>评测基准</strong>: <strong>LIBERO</strong> 仿真机器人基准，包含Spatial、Object、Goal和LIBERO-10共40个任务。</li><li><strong>模型规模</strong>: 主要使用 <strong><code>π_0.5</code></strong> 模型（适配器参数量为 <strong>1.25M</strong>），并在 <strong>OpenVLA-OFT</strong>（7B VLA）模型上验证泛化性。</li><li><strong>训练资源</strong>: 所有计时实验均在单张 <strong>NVIDIA A100 80GB GPU</strong> 上完成，但方法旨在适用于内存为推理级别（例如 <strong>64 GiB</strong>）的部署平台。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估设置</strong>: 遵循DART的单样本域适配协议，在三种不同大小的相机视角变化（Small, Medium, Large）和两种复合视觉变化（视角+噪声，视角+光照）下进行测试。</li><li><strong>主要指标</strong>: 任务成功率（%）、端到端适配时间（秒）、加速比（×）。</li><li><strong>关键结果</strong>:</li></ul>
+<p> - 在相机视角变化下，未适配策略平均成功率为<strong>48.27%</strong>。VLA-ZO在q=16时提升至<strong>58.17%</strong>，在q=64时提升至<strong>63.58%</strong>。</p>
+<p> - 速度方面，VLA-ZO在q=16时相比基线ZO加速<strong>25.59倍</strong>，在q=64时加速<strong>32.54倍</strong>。</p>
+<p> - 在复合视觉变化下，VLA-ZO同样能有效恢复策略性能，例如在 <code>View+Noise</code> 和 <code>View+Light</code> 条件下，成功率和适配时间均表现优异，适配时间仅为<strong>1500秒</strong>和<strong>4726秒</strong>。</p>
+<p> - 泛化性实验表明，VLA-ZO的有效性也适用于<strong>OpenVLA-OFT</strong>模型，在提升成功率的同时显著缩短了适配时间。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.06318/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Wiring Matters: Injection Topology and Initialization of Affordance Heads in Vision-Language-Action Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.06235/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Encoded but Not in Control: Revealing the Grounding Gap in Vision-Language Robot Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

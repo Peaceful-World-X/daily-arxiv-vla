@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How (and How Not) to Use Data Augmentation in VLA Post-Training - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文系统研究了在视觉-语言-行动（VLA）模型强化学习后训练中，如何使用图像数据增强来提升模型的分布外（OOD）泛化能力。 旨在解决 VLA 模型在面临背景、光照、相机视角等视觉变化时性能急剧下降的问题。 探索了在 VLA 后训练中应用图像增强的三个核心问题：在哪个模块（actor 或 critic）增强、使用哪种类型的增强、以及增强的强度多大合适。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.05994">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.05994.webp" alt="How (and How Not) to Use Data Augmentation in VLA Post-Training" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文系统研究了在视觉-语言-行动（VLA）模型强化学习后训练中，如何使用图像数据增强来提升模型的分布外（OOD）泛化能力。</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">How (and How Not) to Use Data Augmentation in VLA Post-Training</h1>
+            <div class="detail-meta">2026-10-05 · <a href="http://arxiv.org/abs/2610.05994" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.05994" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.05994</span></div>
+            <p class="detail-summary">论文系统研究了在视觉-语言-行动（VLA）模型强化学习后训练中，如何使用图像数据增强来提升模型的分布外（OOD）泛化能力。 旨在解决 VLA 模型在面临背景、光照、相机视角等视觉变化时性能急剧下降的问题。 探索了在 VLA 后训练中应用图像增强的三个核心问题：在哪个模块（actor 或 critic）增强、使用哪种类型的增强、以及增强的强度多大合适。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">TU Eindhoven</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.05994/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文系统研究了在视觉-语言-行动（VLA）模型强化学习后训练中，如何使用图像数据增强来提升模型的分布外（OOD）泛化能力。</p>
+  <ul class="reading-intro-points"><li>论文系统研究了在视觉-语言-行动（VLA）模型强化学习后训练中，如何使用图像数据增强来提升模型的分布外（OOD）泛化能力。</li><li>旨在解决 VLA 模型在面临背景、光照、相机视角等视觉变化时性能急剧下降的问题。</li><li>探索了在 VLA 后训练中应用图像增强的三个核心问题：在哪个模块（actor 或 critic）增强、使用哪种类型的增强、以及增强的强度多大合…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>TU Eindhoven</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文系统研究了在视觉-语言-行动（VLA）模型强化学习后训练中，如何使用图像数据增强来提升模型的分布外（OOD）泛化能力。</li><li>旨在解决 VLA 模型在面临背景、光照、相机视角等视觉变化时性能急剧下降的问题。</li><li>探索了在 VLA 后训练中应用图像增强的三个核心问题：在哪个模块（actor 或 critic）增强、使用哪种类型的增强、以及增强的强度多大合适。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>发现并验证了 critic-only 增强策略</strong>：首次系统性地证明，在 VLA 的强化学习后训练中，仅对 critic 模块的输入进行图像增强最为有效，而增强 actor 模块的输入会导致训练完全崩溃。这一发现颠覆了在传统小型卷积网络上的既有认知。</li><li><strong>提供了增强类型选择的模型依赖性洞见</strong>：证明了不同类型的增强（如随机叠加和随机平移）对不同 VLA 模型（如 π0.5 和 GR00T N1.5）的 OOD 泛化改善效果不同，提升效果与模型自身的最弱视觉鲁棒性轴相关。</li><li><strong>明确了增强强度的最佳区间</strong>：通过实验表明，中等强度的增强（叠加系数 α 约为 0.5）效果最好，但即使很高强度（α=0.9）的增强，只要仅应用于 critic，仍能带来性能提升。</li><li><strong>总结出一套实用的后训练增强规则</strong>：为从业者提供了三条具体建议：1) 仅增强 critic；2) 针对模型的最弱视觉分布外场景选择增强类型；3) 保持适中的增强强度。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>模型与后训练</strong>：在 <strong>π0.5</strong> 和 <strong>GR00T N1.5</strong> 两个 VLA 模型上，使用 <strong>PPO (Proximal Policy Optimization)</strong> 算法在 <strong>LIBERO-Spatial</strong> 上进行后训练。为了解决流匹配动作头无法提供动作对数概率的问题，采用了 <strong>Flow-SDE</strong> 技术。</li><li><strong>增强技术</strong>：应用了两种仅作用于训练阶段前向传播的图像增强技术：</li></ul>
+<p> - <strong>随机叠加</strong>：受 mixup 启发，将环境观测与从 <strong>ImageNet</strong> 图片库中随机抽取的图片进行凸性混合。</p>
+<p> - <strong>随机平移</strong>：受 DrQ 启发，对图像进行小幅度（4.5%）的随机裁剪和平移。</p>
+<ul><li><strong>评估基准</strong>：使用 <strong>LIBERO-Plus</strong> 基准测试的五个视觉扰动轴（纹理、光照、布局、相机、噪声）来评估模型的<strong>分布外 (OOD)</strong> 成功率，同时报告在 <strong>LIBERO-Spatial</strong> 上的<strong>分布内 (IND)</strong> 成功率。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>训练数据集</strong>: LIBERO-Spatial (10个桌面操作任务)</li><li><strong>评估数据集</strong>: LIBERO-Plus (1662个视觉分布外任务)</li><li><strong>增强图像库</strong>: ImageNet Winter21 发布版 (19,167个类别)</li><li><strong>模型与参数量</strong>: π0.5 和 GR00T N1.5 (具体参数量未在摘要中详述，但均为数十亿参数级的 VLA 模型)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>: 在 LIBERO-Spatial 上训练，在包含 5 个视觉扰动轴的 LIBERO-Plus 上进行评估。</li><li><strong>主要评估指标</strong>: 分布内 (IND) 成功率和分布外 (OOD) 成功率（%）。</li><li><strong>关键实验结果</strong>:</li></ul>
+<p> - <strong>critic-only 增强</strong>使 π0.5 的平均 OOD 成功率从 <strong>73.9%</strong> 提升到 <strong>81.7%</strong> (+7.8 百分点)，GR00T N1.5 在使用最佳增强类型时提升了 <strong>+10.0</strong> 百分点。</p>
+<p> - 任何将增强应用于 actor 的配置（actor-only 或 actor+critic）都会导致训练崩溃，成功率降至接近 <strong>0%</strong>。</p>
+<p> - 对 π0.5 而言，随机叠加增强效果最佳；对 GR00T N1.5 而言，随机平移增强效果最佳。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.06078/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Do VLAs Understand and Adapt to the Objects They Handle, or Simply Replay Learned Behaviors?</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.05878/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">OGAM: Connecting Systematic Testing to Runtime Assurance through Object-Grounded Attention Monitoring for VLA Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

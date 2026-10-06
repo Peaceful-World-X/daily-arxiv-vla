@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>When to Switch: Reliable Action-Chunk Extension for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 RACE (Reliable Action-Chunk Extension) 框架，旨在解决视觉-语言-动作（VLA）模型因推理延迟导致的“走走停停”执行问题。 核心发现：扩展动作块（Action Chunk）时，预测错误主要集中在操作子技能（如接近、抓取、抬起）之间的转换点，且错误幅度随块长度增加而急剧上升。 通过预测转换时机并以其为条件生成动作，RACE能够可靠地执行更长的动作块，减少策略调用次数和机器人…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.05719">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.05719.webp" alt="When to Switch: Reliable Action-Chunk Extension for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 RACE (Reliable Action-Chunk Extension) 框架，旨在解决视觉-语言-动作（VLA）模型因推理延迟导致…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">When to Switch: Reliable Action-Chunk Extension for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-10-05 · <a href="http://arxiv.org/abs/2610.05719" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.05719" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.05719</span></div>
+            <p class="detail-summary">提出 RACE (Reliable Action-Chunk Extension) 框架，旨在解决视觉-语言-动作（VLA）模型因推理延迟导致的“走走停停”执行问题。 核心发现：扩展动作块（Action Chunk）时，预测错误主要集中在操作子技能（如接近、抓取、抬起）之间的转换点，且错误幅度随块长度增加而急剧上升。 通过预测转换时机并以其为条件生成动作，RACE能够可靠地执行更长的动作块，减少策略调用次数和机器人…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">KAIST (韩国科学技术院)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.05719/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 RACE (Reliable Action-Chunk Extension) 框架，旨在解决视觉-语言-动作（VLA）模型因推理延迟导致…</p>
+  <ul class="reading-intro-points"><li>提出 RACE (Reliable Action-Chunk Extension) 框架，旨在解决视觉-语言-动作（VLA）模型因推理延迟导致…</li><li>核心发现：扩展动作块（Action Chunk）时，预测错误主要集中在操作子技能（如接近、抓取、抬起）之间的转换点，且错误幅度随块长度增加而急…</li><li>通过预测转换时机并以其为条件生成动作，RACE能够可靠地执行更长的动作块，减少策略调用次数和机器人空闲时间。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>KAIST (韩国科学技术院)</strong></li><li><strong>GIST (光州科学技术院)</strong></li><li><strong>NVIDIA</strong></li><li><strong>POSTECH (浦项工科大学)</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>RACE (Reliable Action-Chunk Extension)</strong> 框架，旨在解决视觉-语言-动作（VLA）模型因推理延迟导致的“走走停停”执行问题。</li><li>核心发现：扩展动作块（Action Chunk）时，预测错误主要集中在<strong>操作子技能（如接近、抓取、抬起）之间的转换点</strong>，且错误幅度随块长度增加而急剧上升。</li><li>通过预测转换时机并以其为条件生成动作，RACE能够可靠地执行更长的动作块，减少策略调用次数和机器人空闲时间。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>识别关键问题</strong>：指出动作块扩展不可靠的根源在于子技能转换处的错误集中，并强调了块内“转换时机”的重要性。</li><li><strong>提出RACE框架</strong>：包含两个阶段——通过辅助一步去噪预测<strong>转换时机先验</strong>，以及将此先验注入每个去噪步骤以进行<strong>转换条件动作生成</strong>。</li><li><strong>设计技术实现</strong>：利用可学习的每步门控机制和令牌级自适应调制，将转换时机信息有效整合进预训练的动作专家网络。</li><li><strong>验证有效性</strong>：在仿真和真实机器人上证明，RACE使用2倍长动作块时成功率超越现有最优模型，使用4倍长动作块时仍具竞争力，并在真实机器人上将空闲时间减少约5倍。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>基础架构</strong>：基于流匹配VLA模型（如 π0.5），它由冻结的视觉-语言模型（VLM）和可训练的动作专家组成。</li><li><strong>转换时机预测</strong>：从VLM缓存特征和动作专家的<strong>辅助一步去噪传递</strong>中获取特征，使用交叉注意力和自注意力网络头预测一个软性的子技能转换时间点序列。</li><li><strong>转换条件动作生成</strong>：将预测的转换时机先验通过<strong>令牌级调制</strong>注入到动作专家的自适应RMSNorm层中，并使用10个<strong>可学习的每步门控</strong>参数来控制先验在不同去噪步骤中的影响强度。</li><li><strong>训练策略</strong>：使用自动从演示中提取的软转换标签进行监督，采用流匹配损失与转换时机预测损失（二元交叉熵）联合训练，并在训练中利用教师强制和抖动技术。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真数据集</strong>：<strong>VLABench</strong>, <strong>RoboCasa-H50</strong>, <strong>LIBERO</strong> 三个机器人操作基准。</li><li><strong>基线模型</strong>：主要基于 <strong>π0.5</strong> 模型，其动作专家隐藏层维度为1024，VLM特征维度为256。</li><li><strong>推理设置</strong>：使用10步去噪（K=10），动作块执行长度从5扩展到10、15、20。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>主要指标</strong>：任务成功率（SR）、进度得分（PS）、以及相对于基线的推理速度提升倍数（Speedup）。</li><li><strong>VLABench结果</strong>：在H=10（2倍块长）时，RACE 平均成功率达到 <strong>49.3%</strong>，超越了微调基线（47.9%）和近期最优VLA模型ACoT-VLA（48.9%）。在H=20（4倍块长）时，成功率为47.8%，保持竞争力。</li><li><strong>RoboCasa-H50结果</strong>：展现了比微调基线更慢的性能衰减，在长块设置下优势更明显。</li><li><strong>真实机器人实验</strong>：使用4倍块长，RACE将因“走走停停”造成的空闲时间减少了约 <strong>5倍</strong>，同时取得了比同块长微调基线 <strong>更高</strong> 的成功率。</li><li><strong>分析实验</strong>：消融实验验证了转换时机预测模块、每步门控、软标签等各组件的有效性。分析表明RACE能显著降低子技能转换点附近的动作预测误差。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.05745/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Beyond In-Distribution Preservation: Recovering Generalization in Quantized VLAs via Vulnerability-Oriented Tuning</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.05492/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">When Does Retrieval Help? A Study of In-Context Adaptation in Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

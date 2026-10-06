@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Safe Action Is Not Enough: Feasible-Future Decoding for Vision-Language-Action Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文针对视觉-语言-动作（VLA）策略提出了一个关键问题：一个动作在局部可能既安全又受策略偏好，但可能导致任务无法安全完成，即存在可行性与可能性之间的差距。 核心研究目标是设计一种在部署时无需重新训练即可运行的解码器，通过评估动作在未来能否导向安全的成功完成，来改进VLA策略的动作选择。 论文提出了VICS（Viability-Corrected Sampling）方法，尤其是其通用版本VICS-G，在不牺牲任务完…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.05166">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.05166.webp" alt="A Safe Action Is Not Enough: Feasible-Future Decoding for Vision-Language-Action Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文针对视觉-语言-动作（VLA）策略提出了一个关键问题：一个动作在局部可能既安全又受策略偏好，但可能导致任务无法安全完成，即存在可行性与可能…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">A Safe Action Is Not Enough: Feasible-Future Decoding for Vision-Language-Action Policies</h1>
+            <div class="detail-meta">2026-10-04 · <a href="http://arxiv.org/abs/2610.05166" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.05166" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.05166</span></div>
+            <p class="detail-summary">论文针对视觉-语言-动作（VLA）策略提出了一个关键问题：一个动作在局部可能既安全又受策略偏好，但可能导致任务无法安全完成，即存在可行性与可能性之间的差距。 核心研究目标是设计一种在部署时无需重新训练即可运行的解码器，通过评估动作在未来能否导向安全的成功完成，来改进VLA策略的动作选择。 论文提出了VICS（Viability-Corrected Sampling）方法，尤其是其通用版本VICS-G，在不牺牲任务完…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Huawei Heisenberg Research Center（主要作者单位）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.05166/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文针对视觉-语言-动作（VLA）策略提出了一个关键问题：一个动作在局部可能既安全又受策略偏好，但可能导致任务无法安全完成，即存在可行性与可能…</p>
+  <ul class="reading-intro-points"><li>论文针对视觉-语言-动作（VLA）策略提出了一个关键问题：一个动作在局部可能既安全又受策略偏好，但可能导致任务无法安全完成，即存在可行性与可能…</li><li>核心研究目标是设计一种在部署时无需重新训练即可运行的解码器，通过评估动作在未来能否导向安全的成功完成，来改进VLA策略的动作选择。</li><li>论文提出了VICS（Viability-Corrected Sampling）方法，尤其是其通用版本VICS-G，在不牺牲任务完成率的前提下…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Huawei Heisenberg Research Center</strong>（主要作者单位）</li><li><strong>Huawei Noah’s Ark Lab</strong></li><li><strong>TU Berlin</strong></li><li><strong>UCL Center for AI</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文针对<strong>视觉-语言-动作（VLA）策略</strong>提出了一个关键问题：一个动作在局部可能既安全又受策略偏好，但可能导致任务无法安全完成，即存在<strong>可行性与可能性之间的差距</strong>。</li><li>核心研究目标是设计一种在部署时无需重新训练即可运行的解码器，通过评估动作在未来能否导向安全的成功完成，来改进VLA策略的动作选择。</li><li>论文提出了<strong>VICS</strong>（Viability-Corrected Sampling）方法，尤其是其通用版本<strong>VICS-G</strong>，在不牺牲任务完成率的前提下，显著降低了安全成本。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>推导了<strong>一个精确的下一步边际目标</strong>，该目标源于将历史条件化的“策略-环境”轨迹分布限制在安全完成任务内，揭示了“可行未来质量”这一关键量，它分解为代表可能性的<strong>支持</strong>和<strong>幅度</strong>。</li><li>开发了一套<strong>选择性有限候选近似理论</strong>，将恢复最优可行动作的损失分解为干预、覆盖、支持和排序等可识别错误源，并给出了恢复界限。</li><li>提出了一种<strong>实用的、训练免费的解码器 VICS-G</strong>，它通过一个警报门控和候选重排序机制选择性地介入动作选择，在六个 Safety-CHORES 设置上一致降低了安全成本。</li><li>通过执行反馈消融实验和<strong>VICS-R</strong>（基于模拟器的前瞻重排序扩展），验证了利用运行时和前瞻信息进一步提升安全性能的潜力。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>核心理论</strong>：从KL正则化控制角度出发，将“策略-环境”的联合轨迹分布约束在安全完成任务内，推导出精确的动作评分公式，该公式包含策略先验、局部奖励/成本以及<strong>可行未来质量</strong>三部分。</li><li><strong>可行未来分解</strong>：将可行未来质量分解为<strong>支持</strong>和<strong>幅度</strong>。支持表示存在大于零的安全完成概率，幅度则衡量该概率的大小，从而精准识别“安全死胡同”（局部安全但无未来可行路径的动作）。</li><li><strong>选择性解码框架</strong>：VICS-G只在特定警报条件触发时介入，对采样到的候选动作集进行重排序。动作选择基于一个实用评分，该评分结合了策略对数概率、局部鲁棒性预测和一个基于历史和监测信息的<strong>有界可行性修正项</strong>。</li><li><strong>变体方法 VICS-S</strong>：引入任务相关的符号规则来明确过滤候选动作，反映支持与幅度的区分，再由通用评分进行排序。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的评估基准：<strong>Safety-CHORES</strong></li><li>基础策略：论文在六个 Safety-CHORES 设置上测试，使用了现有的 VLA 策略。</li><li>论文未明确详述基础 VLA 模型的参数量及训练所用的具体 GPU/TPU 资源，因为其方法 VICS 是部署时应用的，无需改变或重新训练底层策略。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境和基准</strong>：在<strong>Safety-CHORES</strong>基准的六个不同设置上进行评估，与策略采样、局部鲁棒性解码器（RCD）等基线方法进行比较。</li><li><strong>主要评估指标</strong>：</li></ul>
+<p> - <strong>平均累积安全成本</strong></p>
+<p> - <strong>任务成功率</strong></p>
+<p> - <strong>平均回合长度</strong></p>
+<ul><li><strong>关键实验结果</strong>：</li></ul>
+<p> - <strong>VICS-G</strong>在所有六个设置上均降低了平均安全成本，降幅从<strong>1.9%到57.5%</strong>不等，同时保持了与策略采样接近的成功率（相差在<strong>2.5个百分点</strong>以内）和几乎不变的回合长度（相差在<strong>0.82步</strong>以内）。</p>
+<p> - 任务相关的<strong>符号规则</strong>（VICS-S）在标准方法基础上带来了<strong>互补的增益</strong>。</p>
+<p> - 在安全对齐的Fetch任务中，引入<strong>执行反馈</strong>和基于模拟的<strong>前瞻（rollout）</strong> 功能（VICS-R）进一步提升了安全成功率和降低了成本，证明了利用额外运行时和前瞻信息的价值。</p>
+<p> - 实验表明，单纯降低安全成本可能伴随早期终止，而VICS则能有效区分操作点，在<strong>降低安全成本的同时保持任务进展</strong>。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.05230/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Vela: Scaling Vision-Language-Action Models with Adaptive Action Curve Parametrization</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.05026/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">GeoBridge-VLA: Geometry-Aware Residual Adaptation for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PerturBot: Breaking Shortcut Priors in Vision-Language-Action Models with Perturbative Training - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="识别并建模视觉-语言-行动（VLA）模型中的模态捷径问题：模型利用成功演示中的规律性线索（如手腕视图显著性、名词-动词共现、抓取-抬起序列）替代任务所需的真实证据，导致分布外鲁棒性差。 提出 Perturbot 训练框架，通过三种数据干预打破捷径先验，使模型依赖任务证据而非捷径，且不增加推理开销。 引入离线诊断指标 GroundFscore，用于评估模型对模态捷径的依赖程度，弥补单一成功率无法区分证据使用与捷径依赖…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.04616">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><article class="note-cover note-cover-title-only" style="--cover-from: #ef6c3f; --cover-to: #f6b13d; --cover-spot: #ffd59c; --cover-ink: #fff8ef; --cover-muted: rgba(255, 248, 239, 0.82); --cover-chip: rgba(255, 248, 239, 0.16); --cover-stroke: rgba(255, 248, 239, 0.26)">
+  <div class="note-cover-mesh"></div>
+  <div class="note-cover-title-shell">
+    <h1 class="note-cover-title">PerturBot: Breaking Shortcut Priors in Vision-Language-Action Models with Perturbative Training</h1>
+  </div>
+</article></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">PerturBot: Breaking Shortcut Priors in Vision-Language-Action Models with Perturbative Training</h1>
+            <div class="detail-meta">2026-10-03 · <a href="http://arxiv.org/abs/2610.04616" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.04616" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.04616</span></div>
+            <p class="detail-summary">识别并建模视觉-语言-行动（VLA）模型中的模态捷径问题：模型利用成功演示中的规律性线索（如手腕视图显著性、名词-动词共现、抓取-抬起序列）替代任务所需的真实证据，导致分布外鲁棒性差。 提出 Perturbot 训练框架，通过三种数据干预打破捷径先验，使模型依赖任务证据而非捷径，且不增加推理开销。 引入离线诊断指标 GroundFscore，用于评估模型对模态捷径的依赖程度，弥补单一成功率无法区分证据使用与捷径依赖…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">浙江大学</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.04616/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">识别并建模视觉-语言-行动（VLA）模型中的模态捷径问题：模型利用成功演示中的规律性线索（如手腕视图显著性、名词-动词共现、抓取-抬起序列）替…</p>
+  <ul class="reading-intro-points"><li>识别并建模视觉-语言-行动（VLA）模型中的模态捷径问题：模型利用成功演示中的规律性线索（如手腕视图显著性、名词-动词共现、抓取-抬起序列）替…</li><li>提出 Perturbot 训练框架，通过三种数据干预打破捷径先验，使模型依赖任务证据而非捷径，且不增加推理开销。</li><li>引入离线诊断指标 GroundFscore，用于评估模型对模态捷径的依赖程度，弥补单一成功率无法区分证据使用与捷径依赖的不足。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>浙江大学</strong></li><li><strong>上海创新研究院</strong></li><li><strong>香港大学</strong></li><li><strong>香港科技大学（广州）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>识别并建模视觉-语言-行动（VLA）模型中的<strong>模态捷径</strong>问题：模型利用成功演示中的规律性线索（如手腕视图显著性、名词-动词共现、抓取-抬起序列）替代任务所需的真实证据，导致分布外鲁棒性差。</li><li>提出 <strong>Perturbot</strong> 训练框架，通过三种数据干预打破捷径先验，使模型依赖任务证据而非捷径，且不增加推理开销。</li><li>引入离线诊断指标 <strong>GroundFscore</strong>，用于评估模型对模态捷径的依赖程度，弥补单一成功率无法区分证据使用与捷径依赖的不足。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次系统识别VLA学习中的<strong>三大模态捷径</strong>：显著性捕获、名词锁定和运动惯性，并解释为何扩大同质化演示数据无法从根本上消除这些捷径。</li><li>提出 <strong>Perturbot</strong> 方法，包含三种独立可消融的数据策略：任务保持的手腕视角扰动（V）、决策相关的指令细化（C）、基于随机与失败轨迹的片段扩展与再标注（R），在不改变推理过程的前提下改变训练数据分布。</li><li>引入 <strong>GroundFscore</strong> 离线评分指标，通过成对的零编辑和因果编辑量化模型对每个模态捷径的依赖，能够揭示策略是否“健康”地缩放（即基于证据而非捷径提升成功率）。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>模态捷径建模</strong>：将VLA决策分解为视觉、语言、运动三种捷径，用信息论工具描述为何在成功演示中捷径与证据高度冗余或退化，导致行为克隆无法区分。</li><li><strong>Perturbot 三组件</strong>：</li></ul>
+<p> - <strong>V（手腕视角扰动）</strong>：在抓取路径外插入可变遮挡物，不改变目标和动作标签，增加视觉冗余性。</p>
+<p> - <strong>C（指令细化）</strong>：利用视觉语言模型将简短指令扩展为包含物体属性、空间关系、操作细节的长描述，提高证据的可利用性。</p>
+<p> - <strong>R（轨迹扩展）</strong>：将记录的随机运动和失败执行片段按实际行为重新标注为简短与详细指令，扩大语言-状态-动作的覆盖范围。</p>
+<ul><li><strong>GroundFscore 评分</strong>：对每个捷径家族，计算无效编辑下的动作变化（伪响应）和因果编辑下的动作响应比率（因果敏感度），取两者的调和平均，避免“忽略输入”就能得高分。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>真实机器人通用拾取放置</strong>：包含100个不同物品、6物体+3容器场景，1,000条成功演示；评估使用50个固定规则布局。</li><li><strong>RoboTwin 2.0</strong>：50个双手协作任务，覆盖清洁与随机化场景；用于测试跨技能泛化，包含域随机化变体。</li><li><strong>模型骨干</strong>：所有实验基于 <strong>π₀.5</strong> 微调，固定训练步数、批大小和初始化。</li><li><strong>训练资源</strong>：未明确列出GPU/TPU，但使用π₀.5架构，可能依赖于类似规模的训练资源。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>通用拾取放置</strong>：Perturbot（V+C+R）成功率从基线42%提升至<strong>84%</strong>，GroundFscore在三个家族中均最优（视觉0.62、语言0.57、动作0.53），显著性捕获失败率从68%降至20%，运动惯性失败率从82%降至24%。</li><li><strong>各组件独立效果</strong>：V对视觉GroundFscore提升最大（+0.23），C对语言提升最大（+0.23），R对动作提升最大（+0.25）；去除任一组件成功率下降16–20点。</li><li><strong>数据缩放对比</strong>：仅增加同质化演示（双倍数据）成功率仅从42%升至48%，GroundFscore几乎不变，而Perturbot在相同数据预算下大幅提升成功率和证据使用度。</li><li><strong>RoboTwin 2.0</strong>：在Clean2Random设定下，Perturbot随机场景成功率达<strong>58.2%</strong>，比π₀.5基线（46.0%）高12.2点，且在所有设定中均优于仅靠数量或正则化的对照方法。</li><li><strong>离线诊断有效性</strong>：GroundFscore与在线失败的预测高度相关，证明其可作为无需实际部署的瓶颈识别工具。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.04659/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">PermVLA: Factorization Order as a Regularizer for VLA Learning</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.04607/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">ForeAct3D: Policy-Grounded Future World Modeling for VLA Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

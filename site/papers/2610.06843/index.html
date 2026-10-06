@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recursive Video In-Context Learning for Agentic Robot - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对 LLM 智能体文本记忆无法记录任务执行细节 的问题，提出利用演示视频提供视觉上下文学习 解决 演示视频直接插入上下文导致的三大问题：视频过长拖慢推理、少量关键帧丢失接触细节、智能体在不同执行阶段需要不同片段的信息 核心目标：让智能体在需要时只查看与当前子目标相关的演示片段，而非读取完整视频" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.06843">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.06843.webp" alt="Recursive Video In-Context Learning for Agentic Robot" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对 LLM 智能体文本记忆无法记录任务执行细节 的问题，提出利用演示视频提供视觉上下文学习</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Recursive Video In-Context Learning for Agentic Robot</h1>
+            <div class="detail-meta">2026-10-05 · <a href="http://arxiv.org/abs/2610.06843" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.06843" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.06843</span></div>
+            <p class="detail-summary">针对 LLM 智能体文本记忆无法记录任务执行细节 的问题，提出利用演示视频提供视觉上下文学习 解决 演示视频直接插入上下文导致的三大问题：视频过长拖慢推理、少量关键帧丢失接触细节、智能体在不同执行阶段需要不同片段的信息 核心目标：让智能体在需要时只查看与当前子目标相关的演示片段，而非读取完整视频</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">University of Central Florida (Wenrui Bao, Xinxin L…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.06843/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对 LLM 智能体文本记忆无法记录任务执行细节 的问题，提出利用演示视频提供视觉上下文学习</p>
+  <ul class="reading-intro-points"><li>针对 LLM 智能体文本记忆无法记录任务执行细节 的问题，提出利用演示视频提供视觉上下文学习</li><li>解决 演示视频直接插入上下文导致的三大问题：视频过长拖慢推理、少量关键帧丢失接触细节、智能体在不同执行阶段需要不同片段的信息</li><li>核心目标：让智能体在需要时只查看与当前子目标相关的演示片段，而非读取完整视频</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>University of Central Florida</strong> (Wenrui Bao, Xinxin Liu, Yuzhang Shang)</li><li><strong>University of Southern California</strong> (Bingxin Xu)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对 <strong>LLM 智能体文本记忆无法记录任务执行细节</strong> 的问题，提出利用演示视频提供视觉上下文学习</li><li>解决 <strong>演示视频直接插入上下文导致的三大问题</strong>：视频过长拖慢推理、少量关键帧丢失接触细节、智能体在不同执行阶段需要不同片段的信息</li><li>核心目标：让智能体在需要时<strong>只查看与当前子目标相关的演示片段</strong>，而非读取完整视频</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次将 <strong>视频上下文学习</strong> 引入工具驱动的机器人智能体，将演示作为可查询的环境而非一次性前缀</li><li>提出 <strong>递归视频上下文学习 (RV-ICL)</strong> 方法，将演示视频构建为基于子事件分割的四层层次结构，并支持智能体递归访问</li><li>在 <strong>LIBERO-PRO</strong> 上将 HarnessVLA 成功率从 92.6% 提升至 <strong>96.5%</strong>，在 <strong>LIBERO-Plus</strong> 上从 86.7% 提升至 <strong>95.8%</strong></li><li>通过消融实验证明 <strong>递归按需访问</strong> 优于在上下文中放置关键帧或完整视频</li><li>方法无需训练、无需更改 VLA 策略，且可跨规划器迁移</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>将单个演示视频根据 <strong>子事件（抓取、释放、关节动作）</strong> 离线分割为四层层次结构：</li></ul>
+<p> - <strong>L₀: 任务关键帧</strong>（事件驱动采样，含第三视角和腕部视角）</p>
+<p> - <strong>L₁: 阶段</strong>（相邻子事件之间的文本描述，记录持续时间、末端执行器运动、达成结果）</p>
+<p> - <strong>L₂: 时刻</strong>（每个子事件周围的文本索引）</p>
+<p> - <strong>L₃: 片段</strong>（阶段或时刻的短视频片段，任意摄像头可选）</p>
+<ul><li>智能体通过三个只读工具（<code>view_task_video</code>、<code>view_task_map</code>、<code>view_demo_clip</code>）递归访问层次：</li></ul>
+<p> - <strong>规划前</strong>：读取 L₀–L₂ 获取任务全局结构和子目标</p>
+<p> - <strong>执行中</strong>：每当需要更多细节时（如抓取前、步骤失败后），智能体调用 <code>view_demo_clip</code> 加载当前子目标对应的 L₃ 片段，仅将该片段添加上下文</p>
+<ul><li>通过 <strong>观察预算</strong> 限制同一阶段或时刻的重复查看，防止无限递归</li><li>创新点：将演示转化为<strong>可导航的索引</strong>，让智能体根据自身进度<strong>动态决定何时查看哪一部分</strong>，符合具身智能体信息需求随时间变化的特点</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：<strong>LIBERO</strong>（包含 Spatial、Object、Goal、LIBERO-10 四个子集），在 <strong>LIBERO-PRO</strong> (分布偏移: 指令重定向与位置交换) 和 <strong>LIBERO-Plus</strong> (7种扰动) 上评估</li><li><strong>VLA 模型</strong>：<strong>π₀.₅</strong> 经 RLinf 微调，作为接触步骤的冻结策略</li><li><strong>LLM 规划器</strong>：<strong>GPT-6 Astra</strong> (低推理强度)，运行于 Codex CLI；也在 Claude Code + Opus-4.7 上验证了可迁移性</li><li><strong>感知</strong>：SAM 3 分割 + 反投影获取 3D 点</li><li><strong>训练资源</strong>：无需训练，推理成本依赖 LLM API 调用</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>主要评估基准</strong>：</li></ul>
+<p> - LIBERO-PRO：8个分布偏移单元格 (每格 50 次试验，共 400 次)</p>
+<p> - LIBERO-Plus：7类扰动下 120 个分层抽样变体</p>
+<ul><li><strong>评估指标</strong>：任务成功率（模拟器内置目标检查）</li><li><strong>关键结果</strong>：</li></ul>
+<p> - <strong>LIBERO-PRO 总体</strong>：RV-ICL 提升 3.9 个百分点 (92.6% → 96.5%)，在长序任务 <strong>LIBERO-10</strong> 上增益最大 (L10-T: +5.0%, L10-S: +12.0%)</p>
+<p> - <strong>LIBERO-Plus 总体</strong>：提升 9.1 个百分点 (86.7% → 95.8%)，在<strong>光照变化</strong>下增益最显著 (+17.6%)</p>
+<p> - <strong>消融实验</strong>：仅关键帧或完整视频效果有限，<strong>递归访问层次</strong>在 LIBERO-10 上实现最高成功率 (L10-T: 90.0%, L10-S: 84.0%)，且代理在 97% 的回合中执行了重新进入，平均每回合加载 4.8 个片段</p>
+<p> - <strong>代理行为分析</strong>：代理主要在<strong>抓取或释放前</strong>以及<strong>步骤失败后</strong>重新进入层次，片段查看集中在接触动作（40% 抓取时刻, 30% 释放时刻）</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2610.06598/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">SimForcing: Distilling Simulation Motion Priors into Real-Domain Robot World Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

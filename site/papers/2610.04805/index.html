@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ExStereo: Lifting 2D Vision-Language-Action Models to 3D with Explicit Stereo Representations - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 ExStereo，一种立体视觉模块，为预训练的 2D 视觉-语言-动作（VLA）模型赋予 3D 空间感知能力 解决现有 VLA 模型依赖单目 RGB 输入、缺乏精确深度和几何信息的问题 通过显式的立体表示，将 2D VLA 提升到 3D，显著改善机器人在高精度操作任务上的表现" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.04805">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><article class="note-cover note-cover-title-only" style="--cover-from: #ef6c3f; --cover-to: #f6b13d; --cover-spot: #ffd59c; --cover-ink: #fff8ef; --cover-muted: rgba(255, 248, 239, 0.82); --cover-chip: rgba(255, 248, 239, 0.16); --cover-stroke: rgba(255, 248, 239, 0.26)">
+  <div class="note-cover-mesh"></div>
+  <div class="note-cover-title-shell">
+    <h1 class="note-cover-title">ExStereo: Lifting 2D Vision-Language-Action Models to 3D with Explicit Stereo Representations</h1>
+  </div>
+</article></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ExStereo: Lifting 2D Vision-Language-Action Models to 3D with Explicit Stereo Representations</h1>
+            <div class="detail-meta">2026-10-03 · <a href="http://arxiv.org/abs/2610.04805" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.04805" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.04805</span></div>
+            <p class="detail-summary">提出 ExStereo，一种立体视觉模块，为预训练的 2D 视觉-语言-动作（VLA）模型赋予 3D 空间感知能力 解决现有 VLA 模型依赖单目 RGB 输入、缺乏精确深度和几何信息的问题 通过显式的立体表示，将 2D VLA 提升到 3D，显著改善机器人在高精度操作任务上的表现</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">University of Southern California (Viterbi School o…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.04805/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 ExStereo，一种立体视觉模块，为预训练的 2D 视觉-语言-动作（VLA）模型赋予 3D 空间感知能力</p>
+  <ul class="reading-intro-points"><li>提出 ExStereo，一种立体视觉模块，为预训练的 2D 视觉-语言-动作（VLA）模型赋予 3D 空间感知能力</li><li>解决现有 VLA 模型依赖单目 RGB 输入、缺乏精确深度和几何信息的问题</li><li>通过显式的立体表示，将 2D VLA 提升到 3D，显著改善机器人在高精度操作任务上的表现</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>University of Southern California</strong> (Viterbi School of Engineering)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 ExStereo，一种立体视觉模块，为预训练的 2D 视觉-语言-动作（VLA）模型赋予 3D 空间感知能力</li><li>解决现有 VLA 模型依赖单目 RGB 输入、缺乏精确深度和几何信息的问题</li><li>通过显式的立体表示，将 2D VLA 提升到 3D，显著改善机器人在高精度操作任务上的表现</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出 ExStereo 模块，可无缝集成到任何预训练 2D VLA 中，实现快速的 3D 适应，无需重新预训练基础策略</li><li>证明显式的立体表示（基于多视图渲染和点云重建）比隐式立体表示（如直接使用 cost-volume 特征）在下游操作任务中更有效</li><li>设计 action-stereo cross-attention 机制，使动作 token 能选择性关注立体 token，避免修改 VLM 的原有权重</li><li>引入 mid-training 阶段，利用大规模立体数据和掩码自编码器（MAE）目标学习鲁棒的 3D 表示，并在 post-training 时冻结立体模块以防止过拟合</li><li>在仿真（RoboTwin 10 项任务）和真实世界（bimanual PiPER 平台 3 项任务）中，VLA 搭载 ExStereo 后性能大幅超越基线</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>使用预训练的 <strong>Fast-FoundationStereo</strong> 模型从立体图像对计算视差图，并转换为度量深度图和 3D 点云</li><li>将点云对齐到世界坐标系（检测桌面平面并旋转对齐），从四个正交视角（Top, Front, Left, Right）渲染为多视图观察（128×512×5）</li><li>用 Vision Transformer (ViT) 编码多视图观察得到立体 token</li><li>提出 <strong>action-stereo cross-attention</strong>：将 VLA 产生的动作 token 作为 query，立体 token 作为 key 和 value，通过单层多头交叉注意力注入 3D 几何信息</li><li>训练分两阶段：<strong>mid-training</strong> 使用大规模立体数据和 MAE 目标同时学习动作生成和掩码重建；<strong>post-training</strong> 冻结立体模块，仅用少量任务演示进行 LoRA 微调</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>RoboTwin</strong> 基准，mid-training 使用 7 个任务共 500 episode/task（带域随机化），post-training 和评估使用 10 个不同任务各 100 episode</li><li>真实世界数据集：从互联网收集的 <strong>11 个贡献者、20 个数据集、共 3469 个片段</strong> 的 AgileX PiPER 数据，通过 <strong>StereoEngine</strong> 从单目生成立体对；post-training 使用自采集的 teleoperation 数据（每个任务 20–200 个演示）</li><li>模型：<strong>π₀.₅</strong> 和 <strong>SmolVLA</strong> 两个开源 VLA</li><li>硬件：AgileX PiPER 双臂机器人，<strong>ZED Mini 2</strong> 立体相机，训练使用未明确说明的 GPU 资源</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>仿真环境：<strong>RoboTwin</strong> 10 项双手操作任务，每任务 25 个未见 episode，带域随机化，取 3 个随机种子平均值</li><li>主要指标：<strong>成功率（%）</strong></li><li>关键结果：</li></ul>
+<p> - <strong>π₀.₅-ExStereo</strong> 平均成功率 76.4%（基线 π₀.₅ 为 51.2%，提升 25.2%）</p>
+<p> - <strong>SmolVLA-ExStereo</strong> 平均成功率 42.0%（基线 SmolVLA 为 18.7%，提升 23.3%）</p>
+<p> - 真实世界：<strong>π₀.₅-ExStereo</strong> 在 3 项任务总成功 50/60（83.3%），基线仅 16/60（26.7%）；StereoVLA（隐式立体）仅 11/60（18.3%）</p>
+<p> - 消融实验显示 action-stereo cross-attention 优于 VLM 缩合隐式立体特征，mid-training with MAE 进一步提升性能</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.04933/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">DiVeR: Decision-Critical Verifier Learning for VLA Test-Time Scaling</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.04681/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">RoboIRS: Inference-Time Internal Representation Steering for Generalist Robot Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
