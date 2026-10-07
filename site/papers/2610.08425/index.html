@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 MIM-VLA，一种基于抓手电机反馈的架构，从抓手电流、位置、速度等遥测数据中学习物理交互表示 解决当前视觉-语言-动作（VLA）模型主要依赖视觉和机器人状态，缺乏对接触后物理响应的显式建模问题 通过时序编码将电机遥测转换为交互令牌，在维持原有位置控制接口的前提下，赋予机器人接触状态感知和基于物理证据的候选比较能力" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.08425">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.08425.webp" alt="MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 MIM-VLA，一种基于抓手电机反馈的架构，从抓手电流、位置、速度等遥测数据中学习物理交互表示</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback</h1>
+            <div class="detail-meta">2026-10-06 · <a href="http://arxiv.org/abs/2610.08425" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.08425" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.08425</span></div>
+            <p class="detail-summary">提出 MIM-VLA，一种基于抓手电机反馈的架构，从抓手电流、位置、速度等遥测数据中学习物理交互表示 解决当前视觉-语言-动作（VLA）模型主要依赖视觉和机器人状态，缺乏对接触后物理响应的显式建模问题 通过时序编码将电机遥测转换为交互令牌，在维持原有位置控制接口的前提下，赋予机器人接触状态感知和基于物理证据的候选比较能力</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">作者均来自 Gachon University，School of Computing, iRASC…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.08425/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 MIM-VLA，一种基于抓手电机反馈的架构，从抓手电流、位置、速度等遥测数据中学习物理交互表示</p>
+  <ul class="reading-intro-points"><li>提出 MIM-VLA，一种基于抓手电机反馈的架构，从抓手电流、位置、速度等遥测数据中学习物理交互表示</li><li>解决当前视觉-语言-动作（VLA）模型主要依赖视觉和机器人状态，缺乏对接触后物理响应的显式建模问题</li><li>通过时序编码将电机遥测转换为交互令牌，在维持原有位置控制接口的前提下，赋予机器人接触状态感知和基于物理证据的候选比较能力</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>作者均来自 <strong>Gachon University</strong>，<strong>School of Computing</strong>, <strong>iRASC Lab.</strong>，韩国城南市</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>MIM-VLA</strong>，一种基于抓手电机反馈的架构，从抓手电流、位置、速度等遥测数据中学习物理交互表示</li><li>解决当前视觉-语言-动作（VLA）模型主要依赖视觉和机器人状态，缺乏对接触后物理响应的显式建模问题</li><li>通过时序编码将电机遥测转换为交互令牌，在维持原有位置控制接口的前提下，赋予机器人接触状态感知和基于物理证据的候选比较能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>设计并预训练了 <strong>Motor Interaction Module (MIM)</strong>：仅利用时序抓手遥测（电流、位置、速度等）与人工标注的接触/相位监督，获得128维交互令牌，无需校准力传感器</li><li>提出 <strong>抓手特定集成</strong>：将交互令牌通过轻量投影仅注入到 SmolVLA 的抓手动作通路，冻结预训练的视觉-语言骨干与手臂通路，保留原始位置控制接口</li><li>构建 <strong>Material Explain Module (MEM)</strong>：共享交互令牌不仅用于闭环抓手控制，还支持基于物理证据的候选对象比较、选择与自然语言解释</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>Motor Interaction Module (MIM)</strong>：使用 GRU 编码推定的因果遥测窗口（位置、速度、电流、有效性掩码等），输出交互令牌 \(\boldsymbol{\tau}\)；预训练时用接触二分类和五类交互相分类（idle、closing、squeeze、hold、opening）作为辅助损失，人为排除视觉信号以防止外观捷径</li><li><strong>SmolVLA 集成</strong>：保留 SmolVLA 的流匹配动作生成框架，增设抓手专用专家；交互令牌经可学习投影与令牌类型嵌入后注入该专家，手臂路径与输出接口不变；微调时更新抓手专家、投影、MIM 编码器等，主干冻结</li><li><strong>Interaction Memory 与 MEM</strong>：为每个候选对象独立存储交互历史，通过双向时序编码器和多种池化得到 \(K=4\) 个摘要令牌；选择器 VLM 接收两个候选的摘要及任务指令，预测更具阻力的候选，并输出相对位移和电流响应及解释文本</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>预训练数据</strong>：360 个交互片段，涵盖 18 种对象（每对象 20 片段），由示教收集并人工标注接触与相位标签</li><li><strong>策略数据</strong>：197 个策略片段，加上 43 个无接触基线和 3 个高力诊断样本，共 243 个片段，65,512 个因果样本（30 Hz，2 秒历史窗口）</li><li><strong>模型基础</strong>：<strong>SmolVLA</strong> 紧凑流匹配架构；MIM 为轻量 GRU；MEM 使用预训练 VLM（具体参数规模未详述）</li><li><strong>训练资源</strong>：一张 <strong>NVIDIA RTX 5090</strong>，批量大小 64</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>硬件平台</strong>：6-DoF OMY F3M 随动臂，Dynamixel 两指抓手，Intel RealSense D405 腕部相机，ROS 2 / Zenoh 通信</li><li><strong>实验任务</strong>：</li></ul>
+<p> - 实验1：跨外观硬度比较（7 对已见 + 3 对未见的视觉差异物体对）</p>
+<p> - 实验2：外观匹配物理消歧（3 对实物与软复制品）</p>
+<p> - 实验3：易碎物体轻柔抓取（8 个已见 + 3 个未见的可变形/易碎物体）</p>
+<ul><li><strong>主要指标</strong>：</li></ul>
+<p> - 候选选择准确率（选择更具阻力对象）</p>
+<p> - 变形程度（SAM 2 掩码面积减少百分比）</p>
+<p> - 无损抓取成功率</p>
+<ul><li><strong>关键结果</strong>：</li></ul>
+<p> - 13 对物体整体选择准确率：<strong>MIM-VLA 75.0%</strong> vs. 原始 SmolVLA 48.8% vs. 原始电流基线 29.2%</p>
+<p> - 实验3 已见可变形物体平均掩码面积减少：MIM-VLA <strong>14.2%</strong>（SmolVLA-flow 31.4%，TA-VLA-inspired 24.0%）</p>
+<p> - 实验3 已见易碎物体无损抓取成功率：MIM-VLA <strong>50.0%</strong>（SmolVLA-flow 15.0%），未见生鸡蛋 6/20 次成功</p>
+<p> - 消融实验表明每候选 4 个摘要令牌 (\(K=4\)) 在决策、解释一致性和交换一致性上表现最佳</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.08444/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ActTune: Action-Aware Precision and GPU Operating-Point Adaptation for Energy-Efficient Vision-Language-Action Inference</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.08220/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">VOMMI: Collecting and Leveraging Portable Demonstrations for Mobile Manipulation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

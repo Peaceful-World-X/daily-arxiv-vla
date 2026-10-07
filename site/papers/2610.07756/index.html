@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StairVLA: Stage-Aware Hierarchical Action Generation for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出了 StairVLA，一种阶段感知的分层动作生成框架，用于视觉-语言-动作（VLA）模型 观察到在扩散/流匹配动作生成过程中，不同去噪阶段自然呈现不同功能：早期阶段同时依赖语言指令和视觉观察建立粗粒度动作轨迹，后期阶段更注重当前视觉观察进行动作对齐 基于这一洞察，将VLA动作生成分解为低频的高层意图轨迹生成和高频的低层观察条件细化，以降低推理成本并保持任务性能" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.07756">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.07756.webp" alt="StairVLA: Stage-Aware Hierarchical Action Generation for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出了 StairVLA，一种阶段感知的分层动作生成框架，用于视觉-语言-动作（VLA）模型</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">StairVLA: Stage-Aware Hierarchical Action Generation for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-10-06 · <a href="http://arxiv.org/abs/2610.07756" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.07756" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.07756</span></div>
+            <p class="detail-summary">论文提出了 StairVLA，一种阶段感知的分层动作生成框架，用于视觉-语言-动作（VLA）模型 观察到在扩散/流匹配动作生成过程中，不同去噪阶段自然呈现不同功能：早期阶段同时依赖语言指令和视觉观察建立粗粒度动作轨迹，后期阶段更注重当前视觉观察进行动作对齐 基于这一洞察，将VLA动作生成分解为低频的高层意图轨迹生成和高频的低层观察条件细化，以降低推理成本并保持任务性能</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Michigan State University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.07756/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出了 StairVLA，一种阶段感知的分层动作生成框架，用于视觉-语言-动作（VLA）模型</p>
+  <ul class="reading-intro-points"><li>论文提出了 StairVLA，一种阶段感知的分层动作生成框架，用于视觉-语言-动作（VLA）模型</li><li>观察到在扩散/流匹配动作生成过程中，不同去噪阶段自然呈现不同功能：早期阶段同时依赖语言指令和视觉观察建立粗粒度动作轨迹，后期阶段更注重当前视觉…</li><li>基于这一洞察，将VLA动作生成分解为低频的高层意图轨迹生成和高频的低层观察条件细化，以降低推理成本并保持任务性能</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Michigan State University</strong></li><li><strong>Ant Group</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出了 <strong>StairVLA</strong>，一种阶段感知的分层动作生成框架，用于视觉-语言-动作（VLA）模型</li><li>观察到在扩散/流匹配动作生成过程中，不同去噪阶段自然呈现不同功能：早期阶段同时依赖语言指令和视觉观察建立粗粒度动作轨迹，后期阶段更注重当前视觉观察进行动作对齐</li><li>基于这一洞察，将VLA动作生成分解为低频的高层意图轨迹生成和高频的低层观察条件细化，以降低推理成本并保持任务性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>揭示了生成式VLA动作形成中的<strong>阶段依赖性</strong>，表明任务相关动作结构逐步出现，多模态条件作用在去噪过程中不断演变</li><li>引入 <strong>StairVLA 框架</strong>，使用部分去噪动作作为粗粒度长时程动作生成与局部细化之间的自然接口，替代传统外部设计的分层接口</li><li>通过在两种VLA骨干网络、仿真基准和真实机器人任务上的验证，证明<strong>显著降低推理成本</strong>的同时保持了<strong>强劲的任务性能</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>高层意图轨迹生成</strong>：使用标准VLA架构进行早期去噪（提前终止，如γ=0.97），输出长时程部分去噪动作轨迹，并缓存供后续多步重用</li><li><strong>低层观察条件细化</strong>：引入轻量级细化器，使用当前视觉观察（SigLIP-B/16编码）、压缩的高层VLM令牌（自适应平均池化）和部分去噪动作片段作为条件，通过类GR00T的DiT结构完成后续细化</li><li><strong>训练时重构去噪路径</strong>：因高层输出可能与理想路径有偏差，细化器训练时基于高层输出和真值重构新的流向路径，确保训练与推理条件一致</li><li><strong>多频率推理与重用</strong>：高层VLA低频调用，生成的轨迹跨多个（M个）低层细化周期重用，摊销高层计算成本，同时保留高频闭环校正能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>LIBERO</strong>（Spatial、Object、Goal、Long四个套件）</li><li><strong>LIBERO-Plus</strong>（包含7类扰动的鲁棒性基准）</li><li>真实世界数据集：<strong>Fruit25</strong>（25个水果操作任务）、<strong>PushBlock</strong>（物体推送任务）</li><li>高层VLA骨干模型：<strong>Qwen3-VL-4B-Instruct</strong> 或 <strong>Qwen3-VL-2B-Instruct</strong>，采用GR00T风格或π风格动作头</li><li>低层细化器参数：约<strong>30M</strong>，使用独立的 <strong>SigLIP-B/16</strong> 视觉编码器</li><li>训练资源：8块 <strong>NVIDIA RTX A6000 GPU</strong>，bf16混合精度</li><li>推理硬件：单块 <strong>NVIDIA A100 GPU</strong>（仿真）、<strong>NVIDIA RTX A4000</strong>（真实机器人）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>LIBERO基准</strong>：在GR00T骨干上平均成功率从96.5%提升到<strong>97.8%</strong>，推理延迟从115.0 ms降低到<strong>44.2 ms</strong>；在π骨干上成功率从97.8%提升到<strong>98.3%</strong>，延迟从183.3 ms降低到44.5 ms</li><li><strong>LIBERO-Plus基准</strong>：在零样本迁移和微调设置下均取得竞争性表现，微调后平均成功率达到<strong>83.7%</strong></li><li><strong>跨骨干泛化</strong>：StairVLA在GR00T和π两种VLA骨干上均带来一致的性能与效率增益</li><li><strong>消融实验</strong>：去除细化器导致性能大幅下降（平均-4.1%），添加观-条件细化器可恢复并提升性能，时间动作上下文进一步贡献增益</li><li><strong>真实机器人实验</strong>：在Fruit25和PushBlock任务上，同时实现了性能提升（高于基线0.8-7.5个百分点）和推理延迟降低（约3倍），并保持了运动平滑性</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.07946/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Adapting Vision-Language-Action Models to Unknown Visual Disruptions During Execution</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.07696/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">ESP: Energy-Score Policy for One-Step Multimodal Action Generation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

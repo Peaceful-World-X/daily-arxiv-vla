@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SWAP: Stepwise Action Policy Routing for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有机器人操作系统通常仅使用单一Vision-Language-Action（VLA）策略完成全周期任务，但单个策略在不同任务状态、环境分布下鲁棒性不足，无法适配动态执行场景 本文提出SWAP（Stepwise Action Policy Routing）框架，将策略路由问题建模为离线强化学习任务，学习路由评判器在每一步决策时选择最适配当前观测的候选策略，无需修改候选策略本身即可动态组合多策略行为 研究目标是通过分…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.06926">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.06926.webp" alt="SWAP: Stepwise Action Policy Routing for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有机器人操作系统通常仅使用单一Vision-Language-Action（VLA）策略完成全周期任务，但单个策略在不同任务状态、环境分布下…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">SWAP: Stepwise Action Policy Routing for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-10-03 · <a href="http://arxiv.org/abs/2610.06926" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.06926" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.06926</span></div>
+            <p class="detail-summary">现有机器人操作系统通常仅使用单一Vision-Language-Action（VLA）策略完成全周期任务，但单个策略在不同任务状态、环境分布下鲁棒性不足，无法适配动态执行场景 本文提出SWAP（Stepwise Action Policy Routing）框架，将策略路由问题建模为离线强化学习任务，学习路由评判器在每一步决策时选择最适配当前观测的候选策略，无需修改候选策略本身即可动态组合多策略行为 研究目标是通过分…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">南加州大学（University of Southern California）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.06926/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有机器人操作系统通常仅使用单一Vision-Language-Action（VLA）策略完成全周期任务，但单个策略在不同任务状态、环境分布下…</p>
+  <ul class="reading-intro-points"><li>现有机器人操作系统通常仅使用单一Vision-Language-Action（VLA）策略完成全周期任务，但单个策略在不同任务状态、环境分布下…</li><li>本文提出SWAP（Stepwise Action Policy Routing）框架，将策略路由问题建模为离线强化学习任务，学习路由评判器在每…</li><li>研究目标是通过分步策略路由机制，提升真实世界和仿真场景下的机器人操作成功率与执行效率，解决单一策略在长周期任务中容易陷入局部失败的问题</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>南加州大学（University of Southern California）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有机器人操作系统通常仅使用单一Vision-Language-Action（VLA）策略完成全周期任务，但单个策略在不同任务状态、环境分布下鲁棒性不足，无法适配动态执行场景</li><li>本文提出<strong>SWAP（Stepwise Action Policy Routing）</strong>框架，将策略路由问题建模为离线强化学习任务，学习路由评判器在每一步决策时选择最适配当前观测的候选策略，无需修改候选策略本身即可动态组合多策略行为</li><li>研究目标是通过分步策略路由机制，提升真实世界和仿真场景下的机器人操作成功率与执行效率，解决单一策略在长周期任务中容易陷入局部失败的问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次在机器人操作领域提出<strong>策略路由（Policy Routing）</strong>问题范式，打破“单策略控制全轨迹”的固有假设，支持在单条任务执行过程中动态切换多个候选VLA策略</li><li>设计SWAP离线强化学习框架，学习路由评判器评估当前观测下各候选策略的长期任务收益，仅需少量离线交互数据即可完成训练，部署时可无额外开销动态适配执行状态</li><li>提出分块级路由机制，将路由决策与VLA的块级动作预测节奏对齐，避免中断策略的块内执行逻辑，同时降低路由计算的冗余开销</li><li>在真实世界DROID操作任务和LIBERO系列仿真任务上验证框架有效性，真实场景下任务成功率提升33.4个百分点，成功轨迹的动作步数减少28.3%，且在分布偏移场景下仍能保持高性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>问题形式化：将策略路由建模为马尔可夫决策过程（MDP），路由策略的动作空间为候选策略的索引集合，优化目标是最大化长期任务折扣回报</li><li>离线数据集构建：从各候选策略的执行轨迹中按动作块分块提取路由转移元组$(o_t, z_t, r_t, o_{t+c}, d_t)$，其中$o_t$为当前观测，$z_t$为选中的策略索引，$r_t$为稀疏任务完成奖励，$o_{t+c}$为执行c个动作后的观测，$d_t$为轨迹终止标志</li><li>路由评判器训练：采用<strong>Implicit Q-Learning（IQL）</strong>算法训练双Q网络和状态价值函数，使用冻结的<strong>Qwen2.5-VL-3B</strong>视觉语言模型编码视觉观测和语言指令，拼接候选策略的可学习嵌入后预测各策略的动作价值，通过取双Q网络最小值降低过估计偏差</li><li>测试时路由：在每个动作块执行完毕后，选择双Q网络输出价值最高的候选策略执行下一个块的动作，动态完成策略切换，无需额外人工规则干预</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的数据集：真实世界<strong>DROID</strong>机器人操作数据集，仿真场景<strong>LIBERO</strong>及<strong>LIBERO-Plus</strong>空间子集数据集</li><li>模型规模：路由评判器的视觉编码器使用冻结的<strong>Qwen2.5-VL-3B</strong>（30亿参数），路由网络为轻量级MLP结构，总参数量远小于候选VLA策略</li><li>训练资源：真实世界实验训练4k-8k轮次，仿真实验训练200轮次；训练使用NVIDIA DGX Spark硬件支撑</li><li>候选策略配置：真实场景使用Physical Intelligence的$\pi_0$、$\pi_{0.5}$、$\pi_0$-FAST三个VLA策略；仿真场景使用$\pi_0$、OpenVLA-Spatial、OpenVLA-OFT等5个异构VLA策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：真实世界Franka DROID操作平台（3个操作任务： marker→碗、立方体→杯子、布上立方体→碗），仿真LIBERO-LIBERO-Plus Spatial子集任务；对比基准包括单个候选策略独立执行、随机路由策略</li><li>主要评估指标：任务成功率（Success Rate）、成功轨迹的平均动作步数</li><li>关键实验结果：</li></ul>
+<p> - 真实世界场景下，SWAP将任务成功率从最优单个策略的63.3%提升至96.7%，绝对提升33.4个百分点；成功轨迹平均步数从269步降至193步，减少28.3%</p>
+<p> - 分布偏移场景下（添加未见过的干扰物体），SWAP在两个任务上的成功率分别为90%和80%，远高于最优单个策略的40%和30%</p>
+<p> - LIBERO-Plus仿真场景下，SWAP成功率达62.65%，远高于随机路由的2.7%；即使候选策略集中包含性能较弱的策略，SWAP仍能匹配最优单一策略的表现</p>
+<p> - 路由行为分析显示，SWAP会动态调整策略选择：自由空间运动阶段偏好速度更快的$\pi_0$-FAST，精细操作和恢复阶段偏好更精准的$\pi_{0.5}$，平均每条轨迹切换策略8.7次，每次切换对应的Q值平均提升0.117，证明其学到了结构化的策略路由逻辑而非随机切换</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.06999/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ProactiveVLA: Augmenting Embodied Memory through Proactive Environment Exploration</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.06921/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Does a Learned Corrector Beat a Simple Retreat? Evidence from a Frozen VLA</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

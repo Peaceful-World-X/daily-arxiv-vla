@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adapting Vision-Language-Action Models to Unknown Visual Disruptions During Execution - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 Self-supervised Adaptation from Leftover Trajectories (SALT)，用于视觉-语言-动作（VLA）模型在执行期间遇到未知视觉干扰时的在线自适应 利用动作分块执行中未执行的部分（剩余轨迹）作为自监督信号，无需干扰类型、时间标注或专家动作 解决VLA在部署中遭遇照明变化、传感器噪声等视觉偏移导致性能骤降的问题" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.07946">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.07946.webp" alt="Adapting Vision-Language-Action Models to Unknown Visual Disruptions During Execution" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 Self-supervised Adaptation from Leftover Trajectories (SALT)，用于视觉-语言…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Adapting Vision-Language-Action Models to Unknown Visual Disruptions During Execution</h1>
+            <div class="detail-meta">2026-10-06 · <a href="http://arxiv.org/abs/2610.07946" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.07946" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.07946</span></div>
+            <p class="detail-summary">提出 Self-supervised Adaptation from Leftover Trajectories (SALT)，用于视觉-语言-动作（VLA）模型在执行期间遇到未知视觉干扰时的在线自适应 利用动作分块执行中未执行的部分（剩余轨迹）作为自监督信号，无需干扰类型、时间标注或专家动作 解决VLA在部署中遭遇照明变化、传感器噪声等视觉偏移导致性能骤降的问题</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">UNIST (Ulsan National Institute of Science and Tech…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.07946/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 Self-supervised Adaptation from Leftover Trajectories (SALT)，用于视觉-语言…</p>
+  <ul class="reading-intro-points"><li>提出 Self-supervised Adaptation from Leftover Trajectories (SALT)，用于视觉-语言…</li><li>利用动作分块执行中未执行的部分（剩余轨迹）作为自监督信号，无需干扰类型、时间标注或专家动作</li><li>解决VLA在部署中遭遇照明变化、传感器噪声等视觉偏移导致性能骤降的问题</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>UNIST (Ulsan National Institute of Science and Technology)</strong>，韩国蔚山</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>Self-supervised Adaptation from Leftover Trajectories (SALT)</strong>，用于视觉-语言-动作（VLA）模型在执行期间遇到未知视觉干扰时的在线自适应</li><li>利用动作分块执行中未执行的部分（剩余轨迹）作为自监督信号，无需干扰类型、时间标注或专家动作</li><li>解决VLA在部署中遭遇照明变化、传感器噪声等视觉偏移导致性能骤降的问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出利用“剩余轨迹”进行测试时自适应的新机制，从策略自身预测中获取对齐的监督信号</li><li>揭示剩余监督的两个时间角色：<strong>Transition Anchoring</strong>（跨越视觉偏移时锚定到名义计划）和 <strong>Sequential Correction Propagation</strong>（将校正沿执行轨迹向前传播）</li><li>无需目标域演示、腐蚀类型标注或额外专家数据，仅依赖当前回合已产生的信息</li><li>在两种VLA骨干（<strong>SmolVLA</strong> 和 <strong>GR00T N1.7</strong>）及真实机器人上验证有效性，显著提升视觉干扰下的任务成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>在动作分块执行中，每个块预测 H 步动作但只执行前 E 步，剩余 L=H−E 步为“剩余轨迹”。下一块的前 L 步与该剩余轨迹在时间上对齐</li><li><strong>适应门</strong>：基于连续重规划间视觉 token 的变化，校准于名义轨迹以决定何时激活更新</li><li><strong>更新流程</strong>：活性重规划时，以剩余轨迹为目标，用流匹配损失仅更新少量自适应参数（如动作专家投影），然后重新生成当前块再执行</li><li><strong>双角色</strong>：首次遇到视觉偏移时，剩余轨迹来自名义观察，更新将策略拉向偏移前的计划（锚定）；后续重规划继续用自身上一轮的剩余作为新目标，并将已适应参数向前传递（传播校正）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真数据集</strong>：LIBERO-10 的 10 个操作任务，每种条件 20 轮</li><li><strong>视觉腐蚀</strong>：LIBERO-Plus 中的 5 种传感器噪声（运动模糊、高斯模糊、缩放模糊、玻璃模糊、雾），均为最高严重度 5</li><li><strong>模型</strong>：SmolVLA（轻量级 VLA）和 GR00T N1.7（大型流匹配 VLA）；真实机器人使用 SmolVLA 微调后部署在 SO-101 臂上</li><li><strong>训练资源</strong>：未明确说明 GPU 配置，但 SALT 仅更新极少量参数，运行开销小（见附录测量）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真主要指标</strong>：五种腐蚀下的平均成功率。SmolVLA：从 43.9% 升至 <strong>53.2%</strong>；GR00T N1.7：从 58.7% 升至 <strong>66.0%</strong>，清洁性能均保持在原有水平或略有提升</li><li><strong>真实机器人</strong>：三个长程桌面任务（Two Cats in Cups, Drawer, Stack）在数字腐蚀（高斯模糊、雾）和物理干扰（熄灯、覆盖相机）下，任务进度分数平均从 0.49 提升至 <strong>0.61</strong></li><li><strong>消融与分析</strong>：验证了剩余轨迹的时间对齐必要性（偏移后性能降至冻结水平）、目标必须与当前轨迹绑定；分离锚定与传播各自作用，显示两者协同方可取得完整增益；分析一步更新后预测与清洁计划距离显著缩小</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.08133/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">VLA-ACL: Action-Consistent Visual Token Pruning for Efficient Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.07756/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">StairVLA: Stage-Aware Hierarchical Action Generation for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

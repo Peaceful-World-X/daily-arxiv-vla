@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ActTune: Action-Aware Precision and GPU Operating-Point Adaptation for Energy-Efficient Vision-Language-Action Inference - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文提出 ActTune，一个面向视觉-语言-动作模型的动作感知精度与 GPU 操作点自适应框架，旨在降低 GPU 推理能耗并维持任务成功率。 针对机器人任务中推理能量消耗的重复性成本，解决量化误差对动作准确性的影响以及不同精度下 GPU 能效点变化的问题。 核心思路是将分层精度分配与工作负载相关的 GPU 频率/功率上限选择协同优化，在保证成功率且推理延迟增加不超过 10% 的条件下最大化每成功任务能量节省。" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.08444">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.08444.webp" alt="ActTune: Action-Aware Precision and GPU Operating-Point Adaptation for Energy-Efficient Vision-Language-Action Inference" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文提出 ActTune，一个面向视觉-语言-动作模型的动作感知精度与 GPU 操作点自适应框架，旨在降低 GPU 推理能耗并维持任务成功率。</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ActTune: Action-Aware Precision and GPU Operating-Point Adaptation for Energy-Efficient Vision-Language-Action Inference</h1>
+            <div class="detail-meta">2026-10-06 · <a href="http://arxiv.org/abs/2610.08444" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.08444" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.08444</span></div>
+            <p class="detail-summary">论文提出 ActTune，一个面向视觉-语言-动作模型的动作感知精度与 GPU 操作点自适应框架，旨在降低 GPU 推理能耗并维持任务成功率。 针对机器人任务中推理能量消耗的重复性成本，解决量化误差对动作准确性的影响以及不同精度下 GPU 能效点变化的问题。 核心思路是将分层精度分配与工作负载相关的 GPU 频率/功率上限选择协同优化，在保证成功率且推理延迟增加不超过 10% 的条件下最大化每成功任务能量节省。</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">National University of Singapore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.08444/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文提出 ActTune，一个面向视觉-语言-动作模型的动作感知精度与 GPU 操作点自适应框架，旨在降低 GPU 推理能耗并维持任务成功率。</p>
+  <ul class="reading-intro-points"><li>论文提出 ActTune，一个面向视觉-语言-动作模型的动作感知精度与 GPU 操作点自适应框架，旨在降低 GPU 推理能耗并维持任务成功率。</li><li>针对机器人任务中推理能量消耗的重复性成本，解决量化误差对动作准确性的影响以及不同精度下 GPU 能效点变化的问题。</li><li>核心思路是将分层精度分配与工作负载相关的 GPU 频率/功率上限选择协同优化，在保证成功率且推理延迟增加不超过 10% 的条件下最大化每成功任…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>National University of Singapore</strong></li><li><strong>Huazhong University of Science and Technology</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文提出 <strong>ActTune</strong>，一个面向视觉-语言-动作模型的动作感知精度与 GPU 操作点自适应框架，旨在降低 GPU 推理能耗并维持任务成功率。</li><li>针对机器人任务中推理能量消耗的重复性成本，解决量化误差对动作准确性的影响以及不同精度下 GPU 能效点变化的问题。</li><li>核心思路是将分层精度分配与工作负载相关的 GPU 频率/功率上限选择协同优化，在保证成功率且推理延迟增加不超过 10% 的条件下最大化每成功任务能量节省。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>实证表征</strong>：首次系统刻画了量化敏感性随动作类别、Transformer 层数以及权重 vs. 激活精度的变化规律，并证明不同数值精度会改变 GPU 的有利操作点。</li><li><strong>动作感知的自适应框架</strong>：提出 ActTune，通过轻量级决策树和共享量化权重库实现动作条件下的分层精度在线选择，每次策略调用仅需一次推理，并结合异步 GPU 操作点调整。</li><li><strong>端到端系统实现与评估</strong>：在 <strong>LIBERO</strong> 基准上对 <strong>OpenVLA-OFT</strong> 和 <strong>π0.5</strong> 模型进行完整闭环评测，相比 SOTA 量化方法提升任务成功率最高达 2.3%，推理延迟最多加速 2.02×，能量每成功任务降低最高 76.8%。</li><li><strong>整体能耗优化</strong>：量化、内核/运行时优化以及 GPU 操作点自适应三者联合贡献，使能量节省超过单独量化或静态硬件设置。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>动作感知精度选择</strong>：离线校准构建决策树，根据当前本体感知和前序预测动作块选择分层权重/激活精度配置，树的划分和叶节点配置直接从 BF16 参考策略的动作误差学习，不依赖预定义动作阶段。</li><li><strong>共享量化权重库</strong>：在平均精度与存储预算下，通过灵敏度引导的逐层校准生成多个权重/激活精度选项，叶节点可共享配置，切换时无需重建权重，支撑单次推理调用。</li><li><strong>GPU 操作点自适应</strong>：针对每种精度配置离线扫描频率和功率上限，选择满足延迟预算（≤10% 相对参考点）的最低能耗组合，在线利用预测工作负载异步调整 GPU 频率和功率上限。</li><li><strong>高效整数内核执行</strong>：采用 INT4×INT4 和 INT8×INT8 Tensor Core 内核，包含融合量化与 GEMM 的 epilogue 优化，减少 kernel 启动次数和中间显存流量。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：<strong>LIBERO</strong>（含 Spatial、Object、Goal、Long 四个套件，共 40 个任务，每个任务 50 个初始状态）</li><li>模型：<strong>OpenVLA-OFT</strong>（约 4.5 GB 精度配置）和 <strong>π0.5</strong>（约 3.4 GB 精度配置）</li><li>训练与评估规模：每模型每精度设置使用 2000 个评测回合；校准使用 512 条离线轨迹</li><li>硬件：<strong>NVIDIA RTX A6000</strong> GPU（Ampere 架构），CUDA 同步计时，NVML 功率采样</li><li>精度设置：W4A16、W4A8、W4A4 等混合精度方案，所有权重和激活量化均在 RTX A6000 上实测</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>对比基线包括 <strong>QVLA</strong>、<strong>ActQuant</strong>、<strong>SmoothQuant</strong>、<strong>GPTQ</strong>、<strong>AWQ</strong> 以及 BF16 原始实现。</li><li><strong>任务成功率</strong>：OFT W4A8 达 <strong>97.0%</strong>，π0.5 W4A4 达 <strong>98.4%</strong>，超过最佳对比基线最多 5.1 个百分点。</li><li><strong>推理加速</strong>：OFT W4A8/ W4A4 分别达 <strong>1.50×</strong> 和 <strong>1.53×</strong>；π0.5 分别达 <strong>2.02×</strong> 和 <strong>1.81×</strong> 推理速度提升。</li><li><strong>能量节省</strong>（固定 GPU 参考点）：OFT W4A8/W4A4 分别降低 <strong>59.5%</strong>/<strong>59.9%</strong>，π0.5 分别降低 <strong>70.9%</strong>/<strong>46.1%</strong>。</li><li><strong>结合 GPU 操作点自适应</strong>：能量每成功任务进一步降至最多 <strong>76.8%</strong> 节省，推理延迟增加均在 7.79–8.63%，符合 10% 预算。</li><li><strong>消融实验</strong>：验证决策树叶数（3 叶最佳）、GPU 操作点选择策略（区域+配置联合控制优于固定或仅配置控制）以及能量节省来源（量化、内核优化、DVFS 三者贡献分解）。</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.08526/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">WareFly-VLA: A Vision-Language-Action Framework for UAV Navigation and Human Tracking in Smart Warehouses</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.08425/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
