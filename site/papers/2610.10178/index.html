@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="研究视觉-语言-动作（VLA）模型是否真正理解语言指令，以及其动作生成在模型内部是如何依赖语言信息的，而非仅凭视觉线索和表面关联 通过系统性地扰动任务指令，使用激活修补和归因修补等机械可解释性技术，探究两个前沿VLA模型（π0.5 和 GR00T N1.7）的动作专家模块对语言的敏感度和因果利用情况 旨在揭示模型内部语言接地的位置、程度以及因果归因与表征几何之间的分离现象" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.10178">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.10178.webp" alt="Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding" loading="lazy" />
+  <figcaption class="paper-figure-caption">研究视觉-语言-动作（VLA）模型是否真正理解语言指令，以及其动作生成在模型内部是如何依赖语言信息的，而非仅凭视觉线索和表面关联</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding</h1>
+            <div class="detail-meta">2026-10-07 · <a href="http://arxiv.org/abs/2610.10178" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.10178" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.10178</span></div>
+            <p class="detail-summary">研究视觉-语言-动作（VLA）模型是否真正理解语言指令，以及其动作生成在模型内部是如何依赖语言信息的，而非仅凭视觉线索和表面关联 通过系统性地扰动任务指令，使用激活修补和归因修补等机械可解释性技术，探究两个前沿VLA模型（π0.5 和 GR00T N1.7）的动作专家模块对语言的敏感度和因果利用情况 旨在揭示模型内部语言接地的位置、程度以及因果归因与表征几何之间的分离现象</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">5 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">曼彻斯特大学 计算机科学系</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.10178/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">研究视觉-语言-动作（VLA）模型是否真正理解语言指令，以及其动作生成在模型内部是如何依赖语言信息的，而非仅凭视觉线索和表面关联</p>
+  <ul class="reading-intro-points"><li>研究视觉-语言-动作（VLA）模型是否真正理解语言指令，以及其动作生成在模型内部是如何依赖语言信息的，而非仅凭视觉线索和表面关联</li><li>通过系统性地扰动任务指令，使用激活修补和归因修补等机械可解释性技术，探究两个前沿VLA模型（π0.5 和 GR00T N1.7）的动作专家模块…</li><li>旨在揭示模型内部语言接地的位置、程度以及因果归因与表征几何之间的分离现象</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>曼彻斯特大学</strong> 计算机科学系</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>研究<strong>视觉-语言-动作（VLA）模型</strong>是否真正理解语言指令，以及其动作生成在模型内部是如何依赖语言信息的，而非仅凭视觉线索和表面关联</li><li>通过系统性地扰动任务指令，使用<strong>激活修补</strong>和<strong>归因修补</strong>等机械可解释性技术，探究两个前沿VLA模型（<strong>π0.5</strong> 和 <strong>GR00T N1.7</strong>）的动作专家模块对语言的敏感度和因果利用情况</li><li>旨在揭示模型内部语言接地的位置、程度以及因果归因与表征几何之间的分离现象</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出一个<strong>结合因果分析与表征分析的框架</strong>，用于分析基于扩散/流匹配的VLA动作专家，将归因修补、激活修补和中心核对齐（CKA）集成到单一评估流程中</li><li>发现语言扰动的敏感度具有<strong>模型特异性</strong>：GR00T N1.7的敏感度集中在与其交叉注意力层对应的周期性早期层，而π0.5则分布在早期和选定的后期层；同时，π0.5对动词扰动更敏感，GR00T N1.7对名词扰动更敏感</li><li>在 <strong>GR00T N1.7</strong> 中首次观察到针对<strong>方向性语言的因果归因与表征几何解离</strong>现象：方向性扰动引发了极大的归因效应，但模型的内部表征结构（通过CKA测量）保持相对不变</li><li>证明了<strong>归因修补的可靠性是模型相关的</strong>：在GR00T N1.7上，归因修补能很好地逼近激活修补结果，但在π0.5上，两者的相关性不显著，尤其在早期层</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>基于 <strong>LIBERO</strong> 基准数据集，对任务指令实施五种类型的系统性语言扰动：<strong>同义词替换</strong>、<strong>语义缩放（上义词替换）</strong>、<strong>方向性破坏（方向词反转）</strong>、<strong>随机对象替换</strong> 和 <strong>空字符串</strong></li><li>使用<strong>归因修补</strong>技术，通过一阶泰勒展开近似每个Transformer层残差流中语言信息变化对最终流匹配损失的影响，从而快速定位关键层</li><li>使用<strong>激活修补</strong>对归因修补发现的关键层进行精确验证，直接替换对应层的激活值来衡量真实的因果效应</li><li>使用<strong>中心核对齐（CKA）</strong> 衡量扰动前后模型残差流表征的相似性，从表征几何的角度评估信息变化</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>LIBERO-10</strong> 基准数据集中的离线演示子集，包含10个任务、378个片段和约101,000个步骤</li><li><strong>π0.5</strong>：基于 SigLIP (400M) 和 Gemma (2.6B) 的主干网络，拥有一个包含 300M 参数的Transformer动作专家模块</li><li><strong>GR00T N1.7</strong>：使用 Cosmos-Reason2-2B VLM 作为主干网络，其动作生成模块是一个包含 32 层交替交叉注意力和自注意力的Transformer扩散模型</li><li>所有实验在单个 <strong>NVIDIA A100 GPU</strong> 上运行，使用模型的默认混合精度</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>以流匹配的 <strong>L2 损失</strong> 作为评估指标，衡量扰动后动作预测与原始演示动作的差异</li><li><strong>归因修补结果显示</strong>，方向性扰动在两个模型的早期层中都引发了最强的归因效应；整体上 GR00T N1.7 比 π0.5 对语言扰动更敏感</li><li><strong>表征分析（CKA）显示</strong>，π0.5 的内部表征在各种扰动下相对稳健，而 GR00T N1.7 的嵌入空间对语言变化更敏感；但GR00T N1.7的方向性扰动是一个例外，其极大的因果效应并未反映在表征变化上</li><li><strong>激活与归因修补对比</strong>：对于 GR00T N1.7，两者高度相关（Pearson r=0.946）；对于 π0.5，两者无显著相关性，尤其是在早期层和方向性扰动上，归因修补严重低估了真实的因果效应，表明其可靠性依赖于模型架构</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.10384/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.09943/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Many Ways to Succeed: Diversity-Driven RL Fine-Tuning for VLA Generalization</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

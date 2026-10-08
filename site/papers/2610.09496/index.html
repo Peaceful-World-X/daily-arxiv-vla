@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sparse Feature Policy Unlearning Mitigates State Hallucination in Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本研究针对视觉-语言-动作（VLA）模型部署中的核心可靠性问题——状态幻觉（模型基于未实际达成的机器人-物体状态持续生成动作的重复失败模式）展开研究 通过 mechanistic 分析发现，状态幻觉发生时模型对任务相关视觉区域（如机械爪、目标物体）的注意力减弱，且存在可区分的稀疏特征激活模式 提出SOUL（Sparse feature pOlicy UnLearning）方法，通过选择性遗忘幻觉关联的稀疏特征、保留…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.09496">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.09496.webp" alt="Sparse Feature Policy Unlearning Mitigates State Hallucination in Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">本研究针对视觉-语言-动作（VLA）模型部署中的核心可靠性问题——状态幻觉（模型基于未实际达成的机器人-物体状态持续生成动作的重复失败模式）展…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Sparse Feature Policy Unlearning Mitigates State Hallucination in Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-10-07 · <a href="http://arxiv.org/abs/2610.09496" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.09496" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.09496</span></div>
+            <p class="detail-summary">本研究针对视觉-语言-动作（VLA）模型部署中的核心可靠性问题——状态幻觉（模型基于未实际达成的机器人-物体状态持续生成动作的重复失败模式）展开研究 通过 mechanistic 分析发现，状态幻觉发生时模型对任务相关视觉区域（如机械爪、目标物体）的注意力减弱，且存在可区分的稀疏特征激活模式 提出SOUL（Sparse feature pOlicy UnLearning）方法，通过选择性遗忘幻觉关联的稀疏特征、保留…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">韩国中央大学（Chung-Ang University）计算机科学与工程学院：Jiho Lee, He…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.09496/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本研究针对视觉-语言-动作（VLA）模型部署中的核心可靠性问题——状态幻觉（模型基于未实际达成的机器人-物体状态持续生成动作的重复失败模式）展…</p>
+  <ul class="reading-intro-points"><li>本研究针对视觉-语言-动作（VLA）模型部署中的核心可靠性问题——状态幻觉（模型基于未实际达成的机器人-物体状态持续生成动作的重复失败模式）展…</li><li>通过 mechanistic 分析发现，状态幻觉发生时模型对任务相关视觉区域（如机械爪、目标物体）的注意力减弱，且存在可区分的稀疏特征激活模式</li><li>提出SOUL（Sparse feature pOlicy UnLearning）方法，通过选择性遗忘幻觉关联的稀疏特征、保留成功关联的稀疏特征…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>韩国中央大学（Chung-Ang University）计算机科学与工程学院</strong>：Jiho Lee, Heayoun Choi, Eunwoo Kim</li><li><strong>美国佐治亚理工学院（Georgia Institute of Technology）交互计算学院</strong>：Jeongeun Park</li><li><strong>韩国NAVER AI Lab</strong>：Taekyung Kim</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本研究针对视觉-语言-动作（VLA）模型部署中的核心可靠性问题——<strong>状态幻觉</strong>（模型基于未实际达成的机器人-物体状态持续生成动作的重复失败模式）展开研究</li><li>通过 mechanistic 分析发现，状态幻觉发生时模型对任务相关视觉区域（如机械爪、目标物体）的注意力减弱，且存在可区分的稀疏特征激活模式</li><li>提出<strong>SOUL（Sparse feature pOlicy UnLearning）</strong>方法，通过选择性遗忘幻觉关联的稀疏特征、保留成功关联的稀疏特征，在不损失原有操作能力的前提下缓解状态幻觉，提升VLA部署可靠性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次系统定义了VLA中的<strong>状态幻觉</strong>问题，将其细分为抓取、运输、放置三类幻觉事件，并制定了对应的标注方案</li><li>通过注意力分析和稀疏自编码器解释，揭示了状态幻觉对应的视觉注意力偏移规律，以及幻觉/成功行为对应的差异化稀疏特征激活模式</li><li>提出基于特征关联分数的特征筛选机制，设计遗忘-保留双目标的策略遗忘框架，实现针对状态幻觉的精准、可解释的行为修正</li><li>在<strong>OpenVLA</strong>、<strong>π₀.₅</strong>两种主流VLA架构，<strong>LIBERO-Plus</strong>、<strong>RoboCasa</strong>仿真环境及真实<strong>Franka Research 3</strong>机械臂上验证了方法的有效性，平均幻觉率降低21.7个百分点，干净任务成功率提升22.1个百分点</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用<strong>Top-k稀疏自编码器（SAE）</strong>分解VLA backbone中视觉token的残差流激活，将稠密表征转换为可解释的稀疏特征表示</li><li>定义<strong>特征关联分数</strong>，量化不同稀疏特征与幻觉失败、非幻觉失败、干净成功三类执行结果的关联程度，筛选出“遗忘特征”（强关联幻觉、弱关联成功）和“保留特征”（强关联成功）</li><li>设计双目标损失函数：对幻觉样本优化<strong>遗忘损失</strong>，惩罚遗忘特征的激活；对成功样本优化<strong>保留损失</strong>，增强保留特征的激活；仅微调策略的LoRA适配器（冻结原模型权重和SAE编码器），实现选择性策略知识遗忘，避免对有用能力的干扰</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO-Plus</strong>（包含多 severity 视觉扰动的机器人操作任务）、<strong>RoboCasa</strong>（包含多样化厨房场景和日常操作任务）</li><li>真实实验平台：7自由度<strong>Franka Research 3</strong>机械臂</li><li>基座模型：自回归架构<strong>OpenVLA</strong>、流匹配架构<strong>π₀.₅</strong></li><li>稀疏自编码器配置：潜在维度4096，Top-k活跃特征数k=100，辅助活跃特征数k_aux=512</li><li>训练配置：仅优化LoRA适配器，冻结原模型所有权重，每rollout最多采样20个时间步用于训练，降低长轨迹偏差</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估设置：在LIBERO-Plus、RoboCasa仿真环境及真实Franka机械臂平台测试，对比基线为原始预训练策略、梯度上升（Gradient Ascent）无特征选择的遗忘基线</li><li>核心评估指标：整体任务成功率、无幻觉的干净成功率、幻觉率、幻觉失败率，抓取/运输/放置阶段特定幻觉率，行为保留率（原成功行为保持的比例）、行为修正率（原失败/幻觉行为被修正的比例）</li><li>关键结果：平均幻觉率从55.0%降至33.5%（降低21.7%p），干净成功率从27.5%提升至52.2%（提升22.1%p）；平均保留89%的原成功行为，修正78%的幻觉事件；梯度上升基线虽能降低幻觉但会严重损害任务成功率，而SOUL在幻觉缓解和能力保留上达到最优平衡；在两种VLA架构和真实场景下均验证了方法的泛化有效性</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.09696/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">RoboPace: Contact-Aware Time-Optimal Retiming for Action-Chunk Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.09462/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">TMT: Runtime Backdoor Detection for Vision-Language-Action Policies on Unseen Tasks</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

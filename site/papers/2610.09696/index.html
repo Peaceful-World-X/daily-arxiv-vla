@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RoboPace: Contact-Aware Time-Optimal Retiming for Action-Chunk Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出 RoboPace，一种在推理时对动作块（Action Chunk）策略进行重定时的方法，旨在解决演示速度与机器人实际执行能力之间的“实施例差距（embodiment gap）”。 核心问题是：机器人执行模仿学习策略时，在接触阶段需要低速保证可靠性，而在自由空间可以高速运行，但统一的全局速度缩放无法平衡这一矛盾。 论文目标是在不改变策略模型和几何路径的前提下，仅通过调整执行时序，实现在预测接触区域减速、自由区域…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.09696">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.09696.webp" alt="RoboPace: Contact-Aware Time-Optimal Retiming for Action-Chunk Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出 RoboPace，一种在推理时对动作块（Action Chunk）策略进行重定时的方法，旨在解决演示速度与机器人实际执行能力之间的“实施…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RoboPace: Contact-Aware Time-Optimal Retiming for Action-Chunk Policies</h1>
+            <div class="detail-meta">2026-10-07 · <a href="http://arxiv.org/abs/2610.09696" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.09696" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.09696</span></div>
+            <p class="detail-summary">提出 RoboPace，一种在推理时对动作块（Action Chunk）策略进行重定时的方法，旨在解决演示速度与机器人实际执行能力之间的“实施例差距（embodiment gap）”。 核心问题是：机器人执行模仿学习策略时，在接触阶段需要低速保证可靠性，而在自由空间可以高速运行，但统一的全局速度缩放无法平衡这一矛盾。 论文目标是在不改变策略模型和几何路径的前提下，仅通过调整执行时序，实现在预测接触区域减速、自由区域…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构未在提供的 HTML 片段中明确列出，但根据实验部分使用 OpenArm v1.0 和…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.09696/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出 RoboPace，一种在推理时对动作块（Action Chunk）策略进行重定时的方法，旨在解决演示速度与机器人实际执行能力之间的“实施…</p>
+  <ul class="reading-intro-points"><li>提出 RoboPace，一种在推理时对动作块（Action Chunk）策略进行重定时的方法，旨在解决演示速度与机器人实际执行能力之间的“实施…</li><li>核心问题是：机器人执行模仿学习策略时，在接触阶段需要低速保证可靠性，而在自由空间可以高速运行，但统一的全局速度缩放无法平衡这一矛盾。</li><li>论文目标是在不改变策略模型和几何路径的前提下，仅通过调整执行时序，实现在预测接触区域减速、自由区域加速，同时满足机器人的运动学和动力学约束。</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构未在提供的 HTML 片段中明确列出，但根据实验部分使用 <strong>OpenArm v1.0</strong> 和 <strong>YUBI hands</strong> 等硬件推断，很可能与 <strong>Enactic</strong> 及相关的机器人研究团队有关。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出 <strong>RoboPace</strong>，一种在推理时对动作块（Action Chunk）策略进行重定时的方法，旨在解决演示速度与机器人实际执行能力之间的“实施例差距（embodiment gap）”。</li><li>核心问题是：机器人执行模仿学习策略时，在接触阶段需要低速保证可靠性，而在自由空间可以高速运行，但统一的全局速度缩放无法平衡这一矛盾。</li><li>论文目标是在不改变策略模型和几何路径的前提下，仅通过调整执行时序，实现在预测接触区域减速、自由区域加速，同时满足机器人的运动学和动力学约束。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了一种<strong>接触感知的时间最优路径参数化（Contact-Aware TOPP）</strong>方法，将预测的接触信息转化为沿路径变化的速度约束，并与机器人的关节限制联合优化。</li><li>设计了<strong>双通道接触预测门控机制</strong>，结合基于模型的几何邻近性检测和基于学习的腕部相机接触预测，互补地识别接触关键区域。</li><li>开发了一套完整的<strong>在线执行与块间过渡方案</strong>，包括速度投影、路径混合和丢弃处理，确保连续动作块的无停顿衔接和实时性能。</li><li>在实际双臂机器人上验证了方法，<strong>RoboPace</strong> 在保持高速运动的同时，成功率从基线的最佳 <strong>44%</strong> 提升至 <strong>64%</strong>，并在五个任务中的四个上将执行时间缩短约一半。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>整体流程</strong>：将策略预测的动作块（End-Effector Pose Deltas）通过逆运动学转换为关节空间路径，标记接触关键路点，然后使用 <strong>TOPP-RA</strong> 求解器进行接触感知的时间最优重定时，最后将重定时后的轨迹输出给底层控制器。</li><li><strong>接触感知重定时</strong>：通过一个随路径变化的速度上限（Contact Speed Limit）来约束手爪速度。该上限在接触区域通过余弦渐变函数激活，将 Cartesian 速度限制转换为关节速度限制，并与机器人固有的关节速度、加速度限制一起纳入 <strong>TOPP</strong> 优化问题。</li><li><strong>接触预测</strong>：<strong>几何线索</strong>基于前向运动学和已知模型（桌子、另一只手）的距离阈值；<strong>学习线索</strong>使用 <strong>EfficientNet-B0 + GRU</strong> 从腕部相机和夹爪角度预测到接触的剩余步数（steps-to-contact）。最终路点只要满足任一条件即被标记为接触关键。</li><li><strong>在线块过渡</strong>：通过将新的重定时块的初始速度与当前块的命令速度进行投影并裁剪，实现无缝连接；新旧路径通过线性、余弦或双曲正切调度进行混合，以避免指令阶跃。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>策略模型</strong>: 基于 <strong>π0.5</strong> 的 VLA 策略，使用 <strong>8,434</strong> 小时 YUBI 记录进行预训练，并在特定任务数据集上微调（例如 <strong>Cup</strong>/ <strong>Socks</strong> 使用 8,736 条，<strong>Pyramid</strong> 使用 5,288 条）。</li><li><strong>接触预测器</strong>: 使用 <strong>8,601</strong> 条从相同人类演示中采集的片段进行训练，模型参数量为 <strong>4.69M</strong>。</li><li><strong>硬件平台</strong>: 双臂 <strong>7-DoF OpenArm v1.0</strong> 机器人，配备 <strong>YUBI hands</strong>；策略推理和重定时运行在带 <strong>NVIDIA GeForce RTX 5070 Ti</strong> GPU 的工作站上。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境</strong>: 在真实的双臂机器人上，针对 <strong>Cup</strong>（将杯子放在盘子上）、<strong>Socks</strong>（将袜子放入容器）和 <strong>Pyramid</strong>（堆叠三个杯子，分三个阶段）三个任务共五个命令进行评估。</li><li><strong>对比基线</strong>: 包括演示速度（30 Hz）、均匀加速（50 Hz）、均匀减速（10 Hz）以及无接触感知的 <strong>RACE-style</strong> 重定时。</li><li><strong>主要指标</strong>: 成功率（Success Rate）和任务完成时间（Task Time）。</li><li><strong>关键结果</strong>:</li></ul>
+<p> - <strong>RoboPace</strong> 总体成功率为 <strong>64%</strong>（32/50），显著优于演示速度（18/50）和均匀减速（44%，22/50）。</p>
+<p> - 在四个任务上，<strong>RoboPace</strong> 的执行时间仅为均匀减速方案的 <strong>45%–59%</strong>，兼顾了可靠性与效率。</p>
+<p> - 无接触感知的 <strong>RACE-style</strong> 重定时几乎全部失败（1/50），证明了接触门控的必要性。</p>
+<p> - 接触预测器在接触发生时刻的平均绝对误差仅为 <strong>0.80</strong> 个源步长（约 0.027 秒），验证了其准确性。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.09710/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">SpikingVLA: Asynchronous Spiking Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.09496/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Sparse Feature Policy Unlearning Mitigates State Hallucination in Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

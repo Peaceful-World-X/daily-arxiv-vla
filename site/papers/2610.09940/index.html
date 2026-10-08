@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juno: Taming Predictive Latents for Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出一个统一框架 Juno，将联合嵌入预测架构（JEPA）的预测潜在表示有效整合到视觉-语言-动作（VLA）模型的整个生命周期中 解决三大核心问题：预训练阶段表示与具体机器人控制不匹配、策略学习阶段预测目标与动作生成相互干扰、部署阶段因分布偏移导致教师模型失准 通过单一的动作条件 JEPA 同时承担控制对齐的表示骨干、预测教师和可适应的动力学模型三重角色" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.09940">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.09940.webp" alt="Juno: Taming Predictive Latents for Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出一个统一框架 Juno，将联合嵌入预测架构（JEPA）的预测潜在表示有效整合到视觉-语言-动作（VLA）模型的整个生命周期中</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Juno: Taming Predictive Latents for Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-10-07 · <a href="http://arxiv.org/abs/2610.09940" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.09940" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.09940</span></div>
+            <p class="detail-summary">提出一个统一框架 Juno，将联合嵌入预测架构（JEPA）的预测潜在表示有效整合到视觉-语言-动作（VLA）模型的整个生命周期中 解决三大核心问题：预训练阶段表示与具体机器人控制不匹配、策略学习阶段预测目标与动作生成相互干扰、部署阶段因分布偏移导致教师模型失准 通过单一的动作条件 JEPA 同时承担控制对齐的表示骨干、预测教师和可适应的动力学模型三重角色</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">University of Science and Technology of China</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.09940/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出一个统一框架 Juno，将联合嵌入预测架构（JEPA）的预测潜在表示有效整合到视觉-语言-动作（VLA）模型的整个生命周期中</p>
+  <ul class="reading-intro-points"><li>提出一个统一框架 Juno，将联合嵌入预测架构（JEPA）的预测潜在表示有效整合到视觉-语言-动作（VLA）模型的整个生命周期中</li><li>解决三大核心问题：预训练阶段表示与具体机器人控制不匹配、策略学习阶段预测目标与动作生成相互干扰、部署阶段因分布偏移导致教师模型失准</li><li>通过单一的动作条件 JEPA 同时承担控制对齐的表示骨干、预测教师和可适应的动力学模型三重角色</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>University of Science and Technology of China</strong></li><li><strong>Eastern Institute of Technology, Ningbo</strong></li><li><strong>Hangzhou Dianzi University</strong></li><li><strong>ShanghaiTech University</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出一个统一框架 <strong>Juno</strong>，将联合嵌入预测架构（JEPA）的预测潜在表示有效整合到视觉-语言-动作（VLA）模型的整个生命周期中</li><li>解决三大核心问题：预训练阶段表示与具体机器人控制不匹配、策略学习阶段预测目标与动作生成相互干扰、部署阶段因分布偏移导致教师模型失准</li><li>通过单一的动作条件 JEPA 同时承担控制对齐的表示骨干、预测教师和可适应的动力学模型三重角色</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li><strong>Control-Aligned Pretraining</strong>：提出动态 CLS 损失，将运动加权的 patch 变化迁移到全局 CLS token，使预测教师与本体和控制分布对齐，其重要性可超越预训练规模</li><li><strong>Decoupled Predictive Reasoning</strong>：通过 patch 级特征融合和解耦推理分支，将 JEPA 特征集成到 VLA 中，从未来潜在状态蒸馏以支持动作生成，无需重构 VLA 骨干</li><li><strong>Dynamics-First Test-Time Adaptation</strong>：提出失败感知的自适应过程，利用所有部署交互（包括失败轨迹）适应世界模型，随后仅用验证成功的数据保守地重对齐策略，无需专家校正或任务奖励</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用轻量级动作条件 JEPA（<strong>LeWM</strong>）作为表示骨干，在策略学习所用的本体匹配轨迹上从头训练，使表示与控制分布对齐</li><li>引入<strong>动态 CLS 损失</strong>：冻结第一阶段训练的编码器作为 patch 监督器，用运动加权聚合的 patch 变化回归训练编码器的 CLS 变化，增强 CLS 对局部交互的响应</li><li>在 VLA 中冻结 JEPA 编码器的 patch 特征，通过交叉注意力与门控残差连接融合到视觉 token 中；使用<strong>混合 Transformer（MoT）</strong> 解码器块构建解耦推理分支，以独立参数处理未来状态预测，其隐状态条件化流匹配动作解码器</li><li>测试时自适应分两阶段：首先基于所有观察到的转移（成功与失败）<strong>全参数更新世界模型</strong>；然后冻结适应后的教师，仅用验证成功的执行数据通过 <strong>LoRA 适配器和可训练动作头</strong> 重对齐策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真基准</strong>：SimplerEnv（使用 <strong>BridgeData V2</strong> 和 <strong>Fractal</strong> 数据集）、RoboCasa-GR1（使用其 <strong>GR1 Tabletop Tasks</strong> 数据）</li><li><strong>真实机器人</strong>：<strong>AgileX Cobot Magic</strong> 平台右臂（6-DoF PiPER），收集 60 个演示用于策略适配</li><li>JEPA 教师采用 <strong>ViT-Tiny</strong> 配置，约 <strong>15M</strong> 参数；VLA 骨干为 <strong>Qwen3GR00T</strong></li><li>训练资源未在摘要中明确给出（可能需查看原文附录）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>仿真评估</strong>：在 SimplerEnv 上，Juno 平均成功率从基线的 60.9% 提升至 <strong>68.5%</strong>（+7.6），超过 VLA-JEPA（57.3%）等强方法；经测试时自适应后进一步提升至 <strong>72.7%</strong>。在 RoboCasa-GR1 多任务环境中，平均成功率从 47.8% 提升至 <strong>59.6%</strong>（+11.8），在 24 项任务中 21 项优于基线</li><li><strong>真实机器人评估</strong>：在物体投放任务中，Juno 达到 <strong>100%</strong> 的内域成功率（基线 40%），面对背景、高度、物体三项累积偏移仍保持 <strong>70%–75%</strong> 成功率，而基线降至 <strong>0%</strong></li><li><strong>测试时自适应</strong>：在真实机器人强偏移条件下（高斯噪声、动态光照），Juno-TTT 将成功率分别从 40% 回升至 <strong>65%</strong>、从 55% 回升至 <strong>70%</strong></li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.09943/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Many Ways to Succeed: Diversity-Driven RL Fine-Tuning for VLA Generalization</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.09718/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">YUBI-STAG: Contact and Semantic-Rich Alignment for VLAs via Automated Video-Language Grounding</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

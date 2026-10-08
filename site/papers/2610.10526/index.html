@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="本文研究视觉-语言-动作模型（VLA）对指令措辞的高度敏感性，指出即使单字修改也能导致任务成功率大幅波动（如模型对“开火炉”成功率为 100%，对“开热板”仅 2%） 发现现有训练增强方法（如重述增强）仍不能消除这种敏感性，且部署端方法（如测试时验证）效果有限 提出一种无需修改策略权重、每次推理仅重写一次指令的方法，通过 LLM 提炼的显式规则将新指令转化为模型偏好的措辞，从而零样本提升未见任务的性能" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.10526">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.10526.webp" alt="Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">本文研究视觉-语言-动作模型（VLA）对指令措辞的高度敏感性，指出即使单字修改也能导致任务成功率大幅波动（如模型对“开火炉”成功率为 100%…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models</h1>
+            <div class="detail-meta">2026-10-07 · <a href="http://arxiv.org/abs/2610.10526" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.10526" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.10526</span></div>
+            <p class="detail-summary">本文研究视觉-语言-动作模型（VLA）对指令措辞的高度敏感性，指出即使单字修改也能导致任务成功率大幅波动（如模型对“开火炉”成功率为 100%，对“开热板”仅 2%） 发现现有训练增强方法（如重述增强）仍不能消除这种敏感性，且部署端方法（如测试时验证）效果有限 提出一种无需修改策略权重、每次推理仅重写一次指令的方法，通过 LLM 提炼的显式规则将新指令转化为模型偏好的措辞，从而零样本提升未见任务的性能</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Mikey Watts：独立研究员（美国洛杉矶）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.10526/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">本文研究视觉-语言-动作模型（VLA）对指令措辞的高度敏感性，指出即使单字修改也能导致任务成功率大幅波动（如模型对“开火炉”成功率为 100%…</p>
+  <ul class="reading-intro-points"><li>本文研究视觉-语言-动作模型（VLA）对指令措辞的高度敏感性，指出即使单字修改也能导致任务成功率大幅波动（如模型对“开火炉”成功率为 100%…</li><li>发现现有训练增强方法（如重述增强）仍不能消除这种敏感性，且部署端方法（如测试时验证）效果有限</li><li>提出一种无需修改策略权重、每次推理仅重写一次指令的方法，通过 LLM 提炼的显式规则将新指令转化为模型偏好的措辞，从而零样本提升未见任务的性能</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Mikey Watts</strong>：独立研究员（美国洛杉矶）</li><li><strong>Yuchen Cui</strong>：加州大学洛杉矶分校（<strong>University of California, Los Angeles, UCLA</strong>）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>本文研究视觉-语言-动作模型（<strong>VLA</strong>）对指令措辞的高度敏感性，指出即使单字修改也能导致任务成功率大幅波动（如模型对“开火炉”成功率为 100%，对“开热板”仅 2%）</li><li>发现现有训练增强方法（如重述增强）仍不能消除这种敏感性，且部署端方法（如测试时验证）效果有限</li><li>提出一种无需修改策略权重、每次推理仅重写一次指令的方法，通过 LLM 提炼的显式规则将新指令转化为模型偏好的措辞，从而零样本提升未见任务的性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>对 <strong>π₀</strong> 和 <strong>π₀.₅</strong> 两个 VLA 模型进行统计严格的语言敏感性表征，揭示单字修改可引发显著成功率摆动，且措辞差异几乎可以消除分布内与分布外任务间的性能差距</li><li>提出一种<strong>无权重修改、单次推理的重述规则方法</strong>，通过 LLM 将少量任务的 rollout 证据提炼为 10–20 条显式自然语言规则，部署时一次性重写指令以适配冻结的策略模型</li><li>在 <strong>12 个密封 SIMPLER 任务</strong>上，方法在敌对、VLM 生成、人类生成的三种措辞风格上带来 <strong>16%–27% 的相对成功率提升</strong>，且增益集中于分布外任务</li><li>在 <strong>π₀.₅ 和 LIBERO 基准</strong>上复现方法，微调内任务成功率从 <strong>93.6% 提升至 97.8%</strong>，验证了方法的可迁移性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>证据收集</strong>：对少量训练任务生成大量重述变体，通过 VLA 在仿真中的 rollout 为每个（任务, 措辞）对打分，形成证据数据集</li><li><strong>规则提炼</strong>：使用大语言模型（<strong>Claude</strong>）将收集到的评分数据转化为 10–20 条显式自然语言重述规则（如“永远用‘coke’而非‘cola’或‘soda’ ”），规则捕获跨任务的系统性模式</li><li><strong>规则应用</strong>：部署时，将新指令、场景图像和规则书输入重述器（VLM 或本地模型），由重述器一次性生成改写后的指令，再送入冻结的 VLA 执行；重述器每 episode 仅调用一次，不影响每步推理开销</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>SIMPLER</strong>：基于 Bridge 数据集的模拟器，包含 20 个可模拟任务（8 个词汇内、12 个词汇外），用于 π₀ 模型的证据收集与密封评估</li><li><strong>LIBERO</strong>：130 个桌面操控任务的基准，分为 libero_spatial/object/goal/90 四个子集，用于 π₀.₅ 模型的特性分析与方法复现</li><li><strong>模型规模</strong>：π₀ 和 π₀.₅ 均为预训练 VLA（π₀ 经 Bridge 微调，π₀.₅ 经 LIBERO 各子集微调），论文中未给出具体参数量级</li><li><strong>训练资源</strong>：模拟环境运行评估任务（Bridge 任务每措辞最多 72 次 rollout，LIBERO 每措辞 50 次 rollout）；LLM（Claude、Gemini）和开源模型（<strong>Qwen3.5-9B</strong>）用于规则提炼与重述</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估基准</strong>：12 个密封 SIMPLER Bridge 任务（5 个分布内、7 个分布外），分敌对、VLM 生成、人工生成、标准措辞四组输入</li><li><strong>主要指标</strong>：基于基础指令配对的成功率提升，使用置换检验评估显著性；以相对提升百分比报告</li><li><strong>关键结果</strong>：出微调规则书（out-of-finetune）在敌对组带来 <strong>+26.0%</strong>（Claude 应用器）、人工自然组 <strong>+21.7%</strong>、VLM 生成自然组 <strong>+20.5%</strong> 的相对提升，增益集中于分布外任务</li><li><strong>对比测试时验证</strong>：所比方法 CoVer 在所有措辞组上均弱于不重述基线</li><li><strong>π₀.₅ 复现</strong>：在密封 LIBERO 任务上，规则书使微调内成功率从 93.6% 升至 97.8%；微调外保持稳定</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2610.10437/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Q-Learning with Scalar Adjoint Matching</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

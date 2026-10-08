@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TempoBridge: Language-Guided Tempo Control for Vision-Language-Action Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有Vision-Language-Action (VLA) 模型能理解任务目标（what）但难以控制执行方式（how，如速度快慢）的问题，提出轻量级框架 TempoBridge 通过利用预训练 VLA 模型内部的语义节奏（tempo）表征，实现语言条件化的执行速度控制，无需收集节奏条件化机器人演示或对基础策略进行微调 在 LIBERO 基准的 40 个操作任务上验证方法，并在真实机器人上验证物理节奏控制效果" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.09451">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.09451.webp" alt="TempoBridge: Language-Guided Tempo Control for Vision-Language-Action Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有Vision-Language-Action (VLA) 模型能理解任务目标（what）但难以控制执行方式（how，如速度快慢）的问题…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">TempoBridge: Language-Guided Tempo Control for Vision-Language-Action Policies</h1>
+            <div class="detail-meta">2026-10-07 · <a href="http://arxiv.org/abs/2610.09451" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.09451" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.09451</span></div>
+            <p class="detail-summary">针对现有Vision-Language-Action (VLA) 模型能理解任务目标（what）但难以控制执行方式（how，如速度快慢）的问题，提出轻量级框架 TempoBridge 通过利用预训练 VLA 模型内部的语义节奏（tempo）表征，实现语言条件化的执行速度控制，无需收集节奏条件化机器人演示或对基础策略进行微调 在 LIBERO 基准的 40 个操作任务上验证方法，并在真实机器人上验证物理节奏控制效果</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Korea Advanced Institute of Science and Technology…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.09451/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有Vision-Language-Action (VLA) 模型能理解任务目标（what）但难以控制执行方式（how，如速度快慢）的问题…</p>
+  <ul class="reading-intro-points"><li>针对现有Vision-Language-Action (VLA) 模型能理解任务目标（what）但难以控制执行方式（how，如速度快慢）的问题…</li><li>通过利用预训练 VLA 模型内部的语义节奏（tempo）表征，实现语言条件化的执行速度控制，无需收集节奏条件化机器人演示或对基础策略进行微调</li><li>在 LIBERO 基准的 40 个操作任务上验证方法，并在真实机器人上验证物理节奏控制效果</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Korea Advanced Institute of Science and Technology (KAIST)</strong>, Daejeon, South Korea</li><li>作者：Yeonseo Lee, Hyosup Shin, Guebin Hwang, Sungho Jo</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有<strong>Vision-Language-Action (VLA)</strong> 模型能理解任务目标（what）但难以控制执行方式（how，如速度快慢）的问题，提出轻量级框架 <strong>TempoBridge</strong></li><li>通过利用预训练 VLA 模型内部的语义节奏（tempo）表征，实现语言条件化的执行速度控制，无需收集节奏条件化机器人演示或对基础策略进行微调</li><li>在 <strong>LIBERO</strong> 基准的 40 个操作任务上验证方法，并在真实机器人上验证物理节奏控制效果</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>形式化了冻结 VLA 的语言条件化节奏控制问题，验证了预训练 VLM 内部表征中的语义节奏线索可作为执行时运动调制接口，无需额外演示或策略微调</li><li>提出 <strong>TempoBridge</strong> 轻量级框架，结合基于原型的节奏读取器（prototype-based tempo readout）、因果阶段路由器（causal phase router）和执行时动作调制，全程保持基础策略冻结</li><li>在 40 个 LIBERO 任务上评估物理节奏合规性、无节奏提示时的任务保持能力，以及对未见节奏表达式的泛化能力，并在真实机器人上完成实物验证</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>基础策略</strong>：使用冻结的 <strong>π₀.₅</strong> 策略（基于 <strong>PaliGemma</strong> VLM 骨干网络 + 动作专家），仅复用其视觉和语言表征，不修改任何参数</li><li><strong>基于原型的节奏读取器</strong>：对指令进行一次语言-only 前向传播，提取第 12 层 Transformer 残差流输出，通过快速/慢速原型（prototype）的余弦相似度对 token 进行分类，解码出节奏序列（Normal、Fast、Slow 或两者的组合）</li><li><strong>因果阶段路由器</strong>：复用策略前向传播中的视觉特征（图像 token 均值池化后经 PCA 降维）与机器人状态历史，输入 GRU 估计阶段转换风险函数，以区间监督（interval-supervised）方式训练，实现在线阶段对齐且仅允许单向转换</li><li><strong>节奏条件化动作调制</strong>：根据当前活跃阶段对应的节奏标签，对笛卡尔平移分量施加固定增益调制（Fast: 1.3, Normal: 1.0, Slow: 0.7），旋转和夹爪命令保持不变</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>数据集</strong>：<strong>LIBERO</strong> 基准（包含 Spatial、Object、Goal、Long 四个套件，共 40 个评估任务）</li><li><strong>基础模型</strong>：<strong>π₀.₅</strong>（Physical Intelligence 发布的 VLA 模型，采用 PaliGemma VLM 骨干）</li><li><strong>训练资源</strong>：路由器在 LIBERO-90 的 40 个演示（20 个任务）上训练，使用带有阶段转换区间标注的现有演示；节奏原型仅使用 30 条 LIBERO-90 任务指令构建，无需梯度训练</li><li><strong>真实机器人</strong>：<strong>xArm6</strong> 机械臂，配备外部及腕部 mounted 的 <strong>Azure Kinect</strong> 相机</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估指标</strong>：Task Success Rate（任务成功率）、Tempo Success Rate（节奏成功率）、Cue Recognition Accuracy（提示识别准确率）、Balanced Phase Agreement（阶段对齐一致率）、Median Speed Ratio（中位速度比）</li><li><strong>标准节奏指令</strong>：Tempo Success Rate 从基线 52.6% 提升至 <strong>89.7%</strong>，Task Success Rate 保持相当（92.9% vs 93.6%），Task & Tempo Success Rate 从 48.8% 提升至 <strong>82.0%</strong></li><li><strong>无节奏提示</strong>：Task Success Rate 为 94.3%，接近基线的 95.0%，证明不干扰原策略行为</li><li><strong>未见节奏表达式</strong>（如 rapidly, swiftly, carefully, at a slower pace）：Tempo Success Rate 从 53.5% 提升至 <strong>80.1%</strong>，Task Success Rate 维持 92.3%；其中 rapidly/swiftly 识别准确率达 98.3%，at a slower pace 为 95.0%，carefully 为 57.9%</li><li><strong>组件分析</strong>：节奏读取器准确率 97.5%（标准）/ 78.4%（未见），阶段路由器一致率 89.7% / 90.4%，中位 Fast/Slow 速度比达 <strong>1.58×</strong> 和 <strong>1.52×</strong></li><li><strong>真实机器人实验</strong>：在 3 个操作任务中，TempoBridge 在 67 次尝试中成功 60 次（89.6%）， measurable TCP 速度差异验证了语言条件化的物理节奏控制</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.09462/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">TMT: Runtime Backdoor Detection for Vision-Language-Action Policies on Unseen Tasks</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.09228/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Co-Evolving Robot Orchestrators and Policies through Deployment</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

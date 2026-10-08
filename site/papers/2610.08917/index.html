@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CARE: Certifying Acceleration for Vision-Language-Action Inference - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有视觉-语言-动作（VLA）模型加速方法（如动作分块、视觉标记剪枝）通常以延迟和平均任务成功率为评估指标，但这类指标无法发现加速引入的隐性任务退化：加速可能破坏参考策略原本能解决的任务，且该类“加速诱导失败”仅能在相同初始条件的成对完整闭环rollout中观测到，无法通过边际成功率或单步决策指标恢复 论文提出CARE（Certifying Acceleration for Vision-Language-Acti…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.08917">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.08917.webp" alt="CARE: Certifying Acceleration for Vision-Language-Action Inference" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有视觉-语言-动作（VLA）模型加速方法（如动作分块、视觉标记剪枝）通常以延迟和平均任务成功率为评估指标，但这类指标无法发现加速引入的隐性任…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">CARE: Certifying Acceleration for Vision-Language-Action Inference</h1>
+            <div class="detail-meta">2026-10-06 · <a href="http://arxiv.org/abs/2610.08917" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.08917" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.08917</span></div>
+            <p class="detail-summary">现有视觉-语言-动作（VLA）模型加速方法（如动作分块、视觉标记剪枝）通常以延迟和平均任务成功率为评估指标，但这类指标无法发现加速引入的隐性任务退化：加速可能破坏参考策略原本能解决的任务，且该类“加速诱导失败”仅能在相同初始条件的成对完整闭环rollout中观测到，无法通过边际成功率或单步决策指标恢复 论文提出CARE（Certifying Acceleration for Vision-Language-Acti…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">10 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">University of Maryland, College Park</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.08917/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有视觉-语言-动作（VLA）模型加速方法（如动作分块、视觉标记剪枝）通常以延迟和平均任务成功率为评估指标，但这类指标无法发现加速引入的隐性任…</p>
+  <ul class="reading-intro-points"><li>现有视觉-语言-动作（VLA）模型加速方法（如动作分块、视觉标记剪枝）通常以延迟和平均任务成功率为评估指标，但这类指标无法发现加速引入的隐性任…</li><li>论文提出CARE（Certifying Acceleration for Vision-Language-Action Inference）…</li><li>CARE为训练无关的通用框架，不依赖特定模型架构或加速机制，可适配各类VLA及语言模型智能体的加速方案，解决加速部署中“速度”与“安全”的权衡…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>University of Maryland, College Park</strong></li><li><strong>University of Oxford</strong></li><li><strong>Google</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有视觉-语言-动作（VLA）模型加速方法（如动作分块、视觉标记剪枝）通常以延迟和平均任务成功率为评估指标，但这类指标无法发现加速引入的隐性任务退化：加速可能破坏参考策略原本能解决的任务，且该类“加速诱导失败”仅能在相同初始条件的成对完整闭环rollout中观测到，无法通过边际成功率或单步决策指标恢复</li><li>论文提出<strong>CARE（Certifying Acceleration for Vision-Language-Action Inference）</strong> 方法，通过校准集上的成对rollout提供有限样本统计保证，确保加速诱导的失败风险低于用户指定预算，自动选择最快的合格加速策略，无合格候选则安全回退到原始参考策略</li><li>CARE为训练无关的通用框架，不依赖特定模型架构或加速机制，可适配各类VLA及语言模型智能体的加速方案，解决加速部署中“速度”与“安全”的权衡问题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>CARE</strong> certify-then-select框架，可返回最快的、其加速诱导失败风险被有限样本证明低于用户预算的候选策略，同时提供跨候选家族的族错误率控制保证，以及参考策略解决任务保留率的置信下界</li><li>设计两项面向成对episode评估的认证效率优化机制：任务平衡的顺序认证，通过分批任务平衡的轮次和anytime有效的e值检验，适配不同任务风险的场景并支持自适应早停；失败触发参考评估，仅在加速策略失败时运行高成本的参考策略，且参考结果跨候选复用，不改变最终决策结果</li><li>在OpenVLA-OFT、π₀.₅、Crafter环境的多模型、多任务实验中，CARE在常见选择器违反风险预算的场景下仍能保证部署安全，同时将认证成本降低近80%</li><li>方法为模型和加速机制无关的通用方案，可无缝适配动作分块、视觉标记剪枝、特征缓存、流匹配步数减少等各类VLA及语言模型智能体加速策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>CARE为训练无关的离线认证方法，流程分为三步：首先在独立profiling集上测量所有候选加速策略的延迟并升序排列；然后在校准集上执行成对闭环rollout，通过统计检验为每个候选策略判断是否满足风险预算；最后选择最快的通过认证的候选部署，无合格候选则保留原始参考策略，部署阶段无额外计算开销</li><li>核心技术基于Learn-then-Test多重假设检验框架，采用<strong>Hoeffding–Bentkus p值</strong>对每个候选检验“其加速诱导失败风险≥预算”的原假设，通过分配个体错误预算控制候选家族的族-wise错误率（FWER），保证整体错误率不超过用户设定的显著性水平δ，无需任何分布假设</li><li>关键创新1：任务平衡顺序认证，将校准单元按任务分组为固定大小的轮次（每轮包含所有任务的相同数量场景），仅在轮边界使用e值（anytime有效检验量）累积证据，保证不同风险任务下的检验量满足supermartingale性质，支持自适应早停：证据充分则立即认证候选，证据不足则提前放弃该候选，避免无效评估</li><li>关键创新2：失败触发参考评估，利用加速诱导失败（AIF）损失的结构特性：当加速策略在场景中成功时，AIF损失恒为0，因此仅在加速策略失败时运行高成本的参考策略，且参考结果缓存到共享缓存供后续候选复用，保证与exhaustive成对评估的决策完全一致，同时大幅减少参考策略的执行次数</li><li>最快优先搜索策略从延迟最低的候选开始测试，第一个通过认证的候选即被选中，无需评估更慢的候选，进一步降低认证成本</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：<strong>LIBERO</strong>机器人操作基准（包含Goal、Spatial、Object、Long 4个任务suite，每suite 10个操作任务）、<strong>Crafter</strong>开放世界智能体基准（包含collect_wood、collect_drink 2个语言模型驱动任务）</li><li>涉及模型：<strong>OpenVLA-OFT</strong>（通用视觉-语言-动作策略）、流匹配策略<strong>π₀.₅</strong>、语言模型智能体<strong>Qwen3.5-9B</strong>、<strong>Llama-3.1-8B</strong></li><li>校准资源：论文未明确披露具体GPU/TPU等硬件配置；校准阶段通过闭环对偶rollout收集评估数据，最大规模实验涉及24000次候选策略rollout与1000次参考策略rollout（跨4个LIBERO suite），顺序CARE可将总rollout次数降低至592次</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：在<strong>LIBERO</strong>机器人操作基准和<strong>Crafter</strong>智能体基准上开展实验，对比基线包括仅延迟选择、平均成功率选择、验证集调优、无配对检验、Pareto Testing、固定顺序Learn-then-Test、安全策略改进等常见部署选择器</li><li>主要评估指标：加速比（相对参考策略的推理速度提升倍数）、95%置信下界任务保留率（参考策略能解决的任务中，加速后仍能保留的比例）、超预算率（选择策略的加速诱导失败风险超过用户设定预算的试验比例）、认证成本（所需rollout次数、参考策略执行次数、总认证耗时）</li><li>关键实验结果：</li></ul>
+<p> - 在4个LIBERO suite上，CARE认证了9.0×~10.8×的加速比，同时保证至少85.8%~95.7%的参考解决任务被保留，所有suite均可找到合格的加速策略</p>
+<p> - 在tighter风险预算（α=2.0%/2.5%）下，常见选择器的超预算率达13.0%~75.0%，而CARE在所有10000次重采样试验中均无超预算情况，通过安全回退到参考策略保证部署安全</p>
+<p> - 顺序CARE相比固定样本CARE将认证rollout从2250次降至592次（减少73.7%），参考策略执行次数从1000次降至47次，总认证时间从38.6小时降至7.0小时</p>
+<p> - 在24个候选配置的更大候选家族中，CARE是唯一能在所有suite认证加速策略的方法，总rollout次数为5263次，比全样本Hoeffding–Bentkus方法减少78.9%，比其余顺序基线最多减少2043次rollout</p>
+<p> - 跨架构验证中，CARE可为π₀.₅选择更少的流匹配步数（2步或4步），实现1.26×~1.45×加速；同时可为Crafter环境中的Qwen3.5-9B和Llama-3.1-8B智能体提供安全的计算缩减认证</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.09016/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">PAIR: Bridging Perception and Action in Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.08726/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">EgoLAP: Learning from Egocentric Human Data through Language-Action Reasoning</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

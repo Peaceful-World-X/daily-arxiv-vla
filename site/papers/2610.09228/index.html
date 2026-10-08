@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Co-Evolving Robot Orchestrators and Policies through Deployment - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有Vision-Language-Action（VLA）策略部署时泛化能力不足，现有Agentic编排器仅能绕开策略失败无法修复策略本身，且单独微调策略会导致编排器记忆与新策略失配 论文提出Robo-COP系统，核心解决部署过程中编排器与VLA策略的协同进化问题，无需单独探索阶段，完全从任务执行尝试中学习 研究目标是构建自提升闭环，使机器人通过部署执行不断改进，每次执行优化都能为下一轮学习提供更优质数据，逐步提升…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.09228">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.09228.webp" alt="Co-Evolving Robot Orchestrators and Policies through Deployment" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有Vision-Language-Action（VLA）策略部署时泛化能力不足，现有Agentic编排器仅能绕开策略失败无法修复策略本身，且…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Co-Evolving Robot Orchestrators and Policies through Deployment</h1>
+            <div class="detail-meta">2026-10-06 · <a href="http://arxiv.org/abs/2610.09228" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.09228" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.09228</span></div>
+            <p class="detail-summary">现有Vision-Language-Action（VLA）策略部署时泛化能力不足，现有Agentic编排器仅能绕开策略失败无法修复策略本身，且单独微调策略会导致编排器记忆与新策略失配 论文提出Robo-COP系统，核心解决部署过程中编排器与VLA策略的协同进化问题，无需单独探索阶段，完全从任务执行尝试中学习 研究目标是构建自提升闭环，使机器人通过部署执行不断改进，每次执行优化都能为下一轮学习提供更优质数据，逐步提升…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">Stanford University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.09228/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有Vision-Language-Action（VLA）策略部署时泛化能力不足，现有Agentic编排器仅能绕开策略失败无法修复策略本身，且…</p>
+  <ul class="reading-intro-points"><li>现有Vision-Language-Action（VLA）策略部署时泛化能力不足，现有Agentic编排器仅能绕开策略失败无法修复策略本身，且…</li><li>论文提出Robo-COP系统，核心解决部署过程中编排器与VLA策略的协同进化问题，无需单独探索阶段，完全从任务执行尝试中学习</li><li>研究目标是构建自提升闭环，使机器人通过部署执行不断改进，每次执行优化都能为下一轮学习提供更优质数据，逐步提升系统整体性能</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>Stanford University</strong></li><li><strong>NVIDIA Research</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有Vision-Language-Action（VLA）策略部署时泛化能力不足，现有Agentic编排器仅能绕开策略失败无法修复策略本身，且单独微调策略会导致编排器记忆与新策略失配</li><li>论文提出<strong>Robo-COP</strong>系统，核心解决部署过程中编排器与VLA策略的协同进化问题，无需单独探索阶段，完全从任务执行尝试中学习</li><li>研究目标是构建自提升闭环，使机器人通过部署执行不断改进，每次执行优化都能为下一轮学习提供更优质数据，逐步提升系统整体性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次提出部署期间编排器与VLA策略共同进化的框架，将部署学习视为Agentic系统与策略的协同优化问题</li><li>设计无需人工标注的智能体数据整理流程，从部署执行中提取技能级演示，保留失败episode中的正确技能，最大化利用有限部署数据</li><li>提出策略验证与记忆修订机制，在部署期间评估候选策略的性能，避免不良更新，同时同步更新编排器的记忆以适配新策略</li><li>在10个仿真RoboLab任务和3个真实DROID任务上验证有效性，仿真平均held-out成功率提升9.0个百分点，真实场景从38.3%提升至50.0%</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>系统基于CaP-X执行工具扩展，新增<code>execute_vla</code>工具调用VLA策略，编排器为VLM编写的程序，可混合调用脚本运动基元、感知函数与VLA策略</li><li>通过动作统一机制，将VLA调用与脚本基元的交替动作记录为连续的VLA训练格式动作流，使脚本产生的正确动作也可作为策略训练演示</li><li>经验整理环节采用文本和视频双judge对执行流进行技能级分割与标注，仅保留通过双judge验证的技能，即使来自失败的episode也可被保留</li><li>由语言模型控制器根据已整理的演示、近期性能、任务记忆等信息决定是否启动训练，训练采用LoRA对预训练策略进行微调</li><li>候选策略验证阶段在W个试验窗口内检查其目标技能完成率与已采纳技能的回归情况，仅通过验证的候选才会被部署，部署后同步修订编排器的记忆，移除过时的策略限制性建议</li><li>关键创新是实现编排器与策略的闭环协同进化，避免了单独更新策略导致的编排器失配问题，同时最大化利用了部署中产生的所有有效数据</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真测试数据集：<strong>RoboLab</strong>，包含10个随机化物体配置的操纵任务，覆盖检索、分组、放置、恢复等场景，分为VLA单独可解决、脚本基元单独可解决、两者结合可解决三类任务</li><li>预训练策略：<strong>π₀.₅</strong>，基于<strong>DROID</strong>大规模真实机器人操纵数据集训练，采用flow-matching目标</li><li>真实测试环境：基于<strong>DROID</strong>的物理机器人实验平台，包含3个多物体放置任务</li><li>模型配置：编排器采用<strong>Gemini 3.8 Flash</strong>，策略微调采用LoRA低秩适配技术</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境为RoboLab 10个任务，真实环境为DROID物理平台的3个任务，每个任务共享50个留出的未见初始状态用于测试</li><li>评估指标：部署成功率（100次部署试验的成功率）、留出测试成功率（冻结系统和记忆后在未见初始状态上的成功率）</li><li>基线方法：单独运行π₀.₅、冻结策略的相同编排器、固定周期微调（每30次训练且无验证）、ASPIRE程序搜索方法</li><li>关键实验结果：仿真场景下Robo-COP平均留出成功率达73.8%，比冻结策略基线（64.8%）提升9.0个百分点，固定周期微调仅达到65.8%；6个需要策略更新的任务平均提升11.3个百分点</li><li>验证机制有效避免了策略回归：4个首个候选被回滚的任务中，固定周期微调在3个任务上性能低于冻结基线，Robo-COP通过验证避免了这些真实回归</li><li>真实场景下平均留出成功率从38.3%提升至50.0%，其中60秒任务采用更新后成功率从35%升至70%，40秒任务回滚不良更新后无性能损失，90秒任务控制器选择不训练是正确决策，强制训练仅能获得20%的留出成功率</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.09451/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">TempoBridge: Language-Guided Tempo Control for Vision-Language-Action Policies</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.09170/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Beyond Reconstruction: What Matters in Action Tokenization for Robot Policies?</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

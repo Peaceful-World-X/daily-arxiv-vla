@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TMT: Runtime Backdoor Detection for Vision-Language-Action Policies on Unseen Tasks - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="论文针对视觉-语言-动作（VLA）策略的后门攻击问题，提出运行时后门检测方法TMT，核心解决两个核心难题：一是后门激活产生的动作本身可能个体合理，难以和良性执行区分；二是在未见任务（unseen tasks）场景下，合法任务的行为变化容易被误判为后门激活 研究目标是仅用良性rollout训练检测器，无需知道触发模式、无干净参考策略，实现跨任务的高检测率、低误拒的后门检测，同时探索无额外参考策略的后门净化方案 在三种…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.09462">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.09462.webp" alt="TMT: Runtime Backdoor Detection for Vision-Language-Action Policies on Unseen Tasks" loading="lazy" />
+  <figcaption class="paper-figure-caption">论文针对视觉-语言-动作（VLA）策略的后门攻击问题，提出运行时后门检测方法TMT，核心解决两个核心难题：一是后门激活产生的动作本身可能个体合…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">TMT: Runtime Backdoor Detection for Vision-Language-Action Policies on Unseen Tasks</h1>
+            <div class="detail-meta">2026-10-07 · <a href="http://arxiv.org/abs/2610.09462" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.09462" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.09462</span></div>
+            <p class="detail-summary">论文针对视觉-语言-动作（VLA）策略的后门攻击问题，提出运行时后门检测方法TMT，核心解决两个核心难题：一是后门激活产生的动作本身可能个体合理，难以和良性执行区分；二是在未见任务（unseen tasks）场景下，合法任务的行为变化容易被误判为后门激活 研究目标是仅用良性rollout训练检测器，无需知道触发模式、无干净参考策略，实现跨任务的高检测率、低误拒的后门检测，同时探索无额外参考策略的后门净化方案 在三种…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">奥克兰大学（The University of Auckland）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.09462/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">论文针对视觉-语言-动作（VLA）策略的后门攻击问题，提出运行时后门检测方法TMT，核心解决两个核心难题：一是后门激活产生的动作本身可能个体合…</p>
+  <ul class="reading-intro-points"><li>论文针对视觉-语言-动作（VLA）策略的后门攻击问题，提出运行时后门检测方法TMT，核心解决两个核心难题：一是后门激活产生的动作本身可能个体合…</li><li>研究目标是仅用良性rollout训练检测器，无需知道触发模式、无干净参考策略，实现跨任务的高检测率、低误拒的后门检测，同时探索无额外参考策略的…</li><li>在三种主流VLA后门攻击（BadVLA、GoBA、DropVLA）下验证方法的有效性，覆盖非定向任务失败攻击、高层目标重定向攻击、低层动作篡改…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>奥克兰大学</strong>（The University of Auckland）</li><li><strong>复旦大学</strong>（Fudan University）</li><li><strong>东京科学大学</strong>（Institute of Science Tokyo）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>论文针对<strong>视觉-语言-动作（VLA）策略</strong>的后门攻击问题，提出运行时后门检测方法TMT，核心解决两个核心难题：一是后门激活产生的动作本身可能个体合理，难以和良性执行区分；二是在未见任务（unseen tasks）场景下，合法任务的行为变化容易被误判为后门激活</li><li>研究目标是仅用良性rollout训练检测器，无需知道触发模式、无干净参考策略，实现跨任务的高检测率、低误拒的后门检测，同时探索无额外参考策略的后门净化方案</li><li>在三种主流VLA后门攻击（BadVLA、GoBA、DropVLA）下验证方法的有效性，覆盖非定向任务失败攻击、高层目标重定向攻击、低层动作篡改攻击三类典型后门威胁</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>TMT检测器</strong>，结合输入token结构建模与层间隐状态动态建模的推理时VLA后门检测方法，仅需良性rollout训练即可工作，无需触发模式、训练数据或干净参考策略</li><li>提出基于<strong>自蒸馏的后门净化方案</strong>，以冻结的原始后门策略为教师，在配对的正向/触发观察下训练学生模仿教师的良性动作，无需额外干净参考策略即可抑制后门行为同时保留良性任务性能</li><li>将传统后门检测、异常检测方法适配到VLA后门检测场景，建立了统一的未见任务下的评估基准，验证TMT的优越性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>TMT包含两个互补分支：<strong>token manifold分支</strong>通过流匹配目标训练速度预测网络，学习良性输入token的流形分布，检测偏离该分布的可疑查询；<strong>latent transition分支</strong>学习VLA骨干网络相邻层之间的隐状态转移规律，检测转移过程的预测误差偏差</li><li>检测器阈值基于保留的良性rollout校准：token manifold分支阈值为良性rollout最大得分的0.99分位数加中位绝对偏差（MAD），latent transition分支基于得分的经验尾概率负对数校准；在线检测阶段任一分支得分超过阈值即触发告警，其中latent transition分支的监控层通过首次确认的后门事件的转移偏差自动选择，适配未见任务</li><li>后门净化方法采用教师驱动配对rollout：教师为冻结的原始后门策略，执行其在良性观察下的动作同时推进正向和触发环境，收集共享动作历史的配对观察，训练学生从两类观察下均复现教师的良性动作，无需额外干净参考策略</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真实验使用<strong>LIBERO-10</strong>长程操作任务基准，真实世界实验在<strong>Trossen Robotics WidowX AI机械臂</strong>上开展4个拾放任务</li><li>待检测的VLA模型包括<strong>OpenVLA-OFT</strong>、<strong>VLA-Adapter</strong>、<strong>π₀.₅</strong>；检测器结构中，token manifold分支的速度预测网络采用4层残差MLP，latent transition分支的预测网络采用2层Transformer编码器（每层8个注意力头）</li><li>论文未明确披露具体训练硬件资源（GPU/TPU等），也未给出检测器的具体参数量</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真场景为LIBERO-10的7个未见任务（检测器在3个任务上用良性rollout训练），真实世界场景为2个未见拾放任务</li><li>核心评估指标：AUC（阈值无关的检测性能）、<strong>触发检测率（TDR）</strong>、<strong>误拒率（FRR）</strong>、检测延迟（从触发开始到首次告警的平均查询步数）</li><li>关键实验结果：仿真 unseen tasks 下，TMT在BadVLA攻击上达到100% TDR、0.57% FRR；在GoBA攻击上达到98.3% AUC、83.43% TDR、8.57% FRR；在DropVLA攻击上达到100% AUC、73.6% TDR、0% FRR，均优于10个基线方法；真实世界GoBA攻击下达到100% TDR、0% FRR；分支消融实验显示，已见任务上token manifold分支检测覆盖更广，未见任务上latent transition分支检测覆盖更广，双分支结合实现最优性能</li><li>后门净化实验显示，原始任务在触发输入下的成功率提升至92.2%-95.5%，良性输入成功率下降不超过2.2%，在保留良性性能的同时有效抑制后门行为</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.09496/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Sparse Feature Policy Unlearning Mitigates State Hallucination in Vision-Language-Action Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.09451/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">TempoBridge: Language-Guided Tempo Control for Vision-Language-Action Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
