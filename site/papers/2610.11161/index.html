@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VGGTWorld-VLA: Intent-Conditioned 3D World Evolution for Autonomous Driving - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有VGGT-World的未来3D世界预测仅依赖历史观测、未显式结合驾驶意图和动作，无法区分不同驾驶行为（如左转、直行、让行）引发的物理未来差异的问题，提出VGGTWorld-VLA框架 该方法通过动作-语义条件机制与几何-语言-动作桥，将驾驶语义和自车动作表示注入VGGT-World的未来token流，实现可控的3D世界演化 研究目标是让未来3D预测显式反映驾驶决策的物理后果，为自动驾驶的“想象-评估-执行”…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.11161">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><article class="note-cover note-cover-title-only" style="--cover-from: #316b57; --cover-to: #8bb174; --cover-spot: #d9e7c7; --cover-ink: #fbfff6; --cover-muted: rgba(251, 255, 246, 0.82); --cover-chip: rgba(251, 255, 246, 0.16); --cover-stroke: rgba(251, 255, 246, 0.24)">
+  <div class="note-cover-mesh"></div>
+  <div class="note-cover-title-shell">
+    <h1 class="note-cover-title">VGGTWorld-VLA: Intent-Conditioned 3D World Evolution for Autonomous Driving</h1>
+  </div>
+</article></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">VGGTWorld-VLA: Intent-Conditioned 3D World Evolution for Autonomous Driving</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.11161" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.11161" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.11161</span></div>
+            <p class="detail-summary">针对现有VGGT-World的未来3D世界预测仅依赖历史观测、未显式结合驾驶意图和动作，无法区分不同驾驶行为（如左转、直行、让行）引发的物理未来差异的问题，提出VGGTWorld-VLA框架 该方法通过动作-语义条件机制与几何-语言-动作桥，将驾驶语义和自车动作表示注入VGGT-World的未来token流，实现可控的3D世界演化 研究目标是让未来3D预测显式反映驾驶决策的物理后果，为自动驾驶的“想象-评估-执行”…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">6 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构为清华大学和南洋理工大学</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.11161/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有VGGT-World的未来3D世界预测仅依赖历史观测、未显式结合驾驶意图和动作，无法区分不同驾驶行为（如左转、直行、让行）引发的物理未…</p>
+  <ul class="reading-intro-points"><li>针对现有VGGT-World的未来3D世界预测仅依赖历史观测、未显式结合驾驶意图和动作，无法区分不同驾驶行为（如左转、直行、让行）引发的物理未…</li><li>该方法通过动作-语义条件机制与几何-语言-动作桥，将驾驶语义和自车动作表示注入VGGT-World的未来token流，实现可控的3D世界演化</li><li>研究目标是让未来3D预测显式反映驾驶决策的物理后果，为自动驾驶的“想象-评估-执行”框架提供支撑，验证语义和动作条件在可控几何世界预测中的潜力</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构为<strong>清华大学</strong>和<strong>南洋理工大学</strong></li><li>Diange Yang与Ziying Song为通讯作者，联系邮箱为Zhaoyang Liu的liuzhaoy24@mails.tsinghua.edu.cn</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有<strong>VGGT-World</strong>的未来3D世界预测仅依赖历史观测、未显式结合驾驶意图和动作，无法区分不同驾驶行为（如左转、直行、让行）引发的物理未来差异的问题，提出<strong>VGGTWorld-VLA</strong>框架</li><li>该方法通过动作-语义条件机制与几何-语言-动作桥，将驾驶语义和自车动作表示注入VGGT-World的未来token流，实现可控的3D世界演化</li><li>研究目标是让未来3D预测显式反映驾驶决策的物理后果，为自动驾驶的“想象-评估-执行”框架提供支撑，验证语义和动作条件在可控几何世界预测中的潜力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>扩展<strong>VGGT-World</strong>，引入语义和动作条件，实现可控的未来3D世界演化</li><li>提出几何-语言-动作桥，适配驾驶语义、多表征自车动作和几何特征，用于联合条件化未来几何预测</li><li>在<strong>NAVSIM</strong>数据集上的实验表明，方法相比<strong>VGGT-World</strong>将深度RMSE降低13.7%，δ₁阈值准确率提升4.11个百分点，消融实验验证了语义和动作条件的有效性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体为基于<strong>VGGT-World</strong>的几何原生世界动作建模框架，核心包含几何-语言-动作桥和动作-语义3D世界演化两个模块</li><li>几何-语言-动作桥分别处理三类输入：历史几何由VGGT编码器编码两个历史帧得到；动作编码结合离散的 maneuver one-hot 描述符和连续轨迹特征（航点位置、位移、归一化时间索引）得到联合动作表示；语义特征由驾驶适配的<strong>Qwen2.5-VL</strong>提取多相机观测和文本提示的第22层隐藏态，经层归一化、投影和16个可学习查询的交叉注意力得到固定长度语义token</li><li>动作-语义3D世界演化模块在VGGT-World的流transformer每个双流块后，依次加入动作和语义的残差交叉注意力（每层独立参数），通过条件流匹配学习从噪声到未来几何token的连续速度场</li><li>预测的未来token经VGGT第二阶段聚合器和深度头解码为未来深度，采用流匹配损失和基于VGGT教师伪标签的深度Smooth L1损失联合训练</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用数据集：<strong>NAVSIM</strong>（基于nuPlan的OpenScene重分发版本），提供2Hz采样的驾驶图像、自车状态和轨迹标注，实验采用其中的3,000剪辑运动子集（左转、直行、右转各1,000个）</li><li>模型规模：VGGT表示宽度为1024，流transformer内部宽度为512、8个注意力头，包含8个双流块和8个单流块；动作编码共9个token（8个航点token+1个摘要token），语义编码共16个token</li><li>训练资源：原文未明确说明具体使用的GPU/TPU等硬件资源</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：在<strong>NAVSIM</strong> 3,000剪辑运动子集上评估，时间步长为1，采用10步流采样，所有方法使用相同的剪辑和评估协议</li><li>评估指标：深度维度（AbsRel、RMSE、δ₁阈值准确率）、隐空间维度（Token MSE、余弦相似度）、3D点维度（Point EPE、相对Point EPE），所有预测与VGGT从真实未来帧生成的伪ground truth对比</li><li>关键实验结果：相比基线<strong>VGGT-World</strong>，方法在Token MSE、RMSE上取得最低值，余弦相似度和δ₁取得最高值，深度RMSE降低13.7%，δ₁提升4.11个百分点，AbsRel与基线相当仅小幅上升</li><li>相比NAVSIM适配基线<strong>VGGT-World-N</strong>，方法RMSE降低15.7%，δ₁提升11.10个百分点</li><li>消融实验验证了联合动作编码（one-hot+轨迹位置+速度）的最优性，动作输入干预实验证明模型有效利用了场景对齐的动作信息，加入VLM语义token相比纯动作条件可在所有指标上获得进一步提升</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.11248/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">SimVLA: Zero-Shot Sim-to-Real VLA Learning for Mobile Manipulation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.10912/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">When Listening Becomes Easier: Scrubbing Visual Cues for Shortcut-Free VLAs</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

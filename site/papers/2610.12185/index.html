@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RESETTLE: Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有机器人操作恢复方法普遍存在三类缺陷： corrective policy训练需要额外专家数据和策略微调、VLM监督的恢复需要重复视觉语言推理导致高延迟、推理时动作校正依赖在线梯度计算开销大，难以适配冻结的基础策略，无法高效纠正执行偏差恢复任务进度 本文提出RESETTLE（Robotic Recovery through Disagreement-Triggered Retrieval and Efficien…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.12185">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.12185.webp" alt="RESETTLE: Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有机器人操作恢复方法普遍存在三类缺陷： corrective policy训练需要额外专家数据和策略微调、VLM监督的恢复需要重复视觉语言推…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">RESETTLE: Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.12185" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.12185" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.12185</span></div>
+            <p class="detail-summary">现有机器人操作恢复方法普遍存在三类缺陷： corrective policy训练需要额外专家数据和策略微调、VLM监督的恢复需要重复视觉语言推理导致高延迟、推理时动作校正依赖在线梯度计算开销大，难以适配冻结的基础策略，无法高效纠正执行偏差恢复任务进度 本文提出RESETTLE（Robotic Recovery through Disagreement-Triggered Retrieval and Efficien…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">9 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">The Hong Kong University of Science and Technology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.12185/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有机器人操作恢复方法普遍存在三类缺陷： corrective policy训练需要额外专家数据和策略微调、VLM监督的恢复需要重复视觉语言推…</p>
+  <ul class="reading-intro-points"><li>现有机器人操作恢复方法普遍存在三类缺陷： corrective policy训练需要额外专家数据和策略微调、VLM监督的恢复需要重复视觉语言推…</li><li>本文提出RESETTLE（Robotic Recovery through Disagreement-Triggered Retrieval…</li><li>核心研究目标是无需修改基础策略权重、无需额外视觉语言推理或在线轨迹优化，实现低延迟、高泛用性的执行恢复，同时兼容分层规划的智能体系统</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>The Hong Kong University of Science and Technology</li><li>The Chinese University of Hong Kong</li><li>SmartMore</li><li>Harbin Institute of Technology, Shenzhen</li><li>Shenzhen Loop Area Institute</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有机器人操作恢复方法普遍存在三类缺陷： corrective policy训练需要额外专家数据和策略微调、VLM监督的恢复需要重复视觉语言推理导致高延迟、推理时动作校正依赖在线梯度计算开销大，难以适配冻结的基础策略，无法高效纠正执行偏差恢复任务进度</li><li>本文提出<strong>RESETTLE</strong>（Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control），一个模型无关的机器人恢复框架，挂载在冻结VLA/WAM策略的动作执行接口，提供高效的动作级恢复能力</li><li>核心研究目标是无需修改基础策略权重、无需额外视觉语言推理或在线轨迹优化，实现低延迟、高泛用性的执行恢复，同时兼容分层规划的智能体系统</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出首个面向冻结VLA/WAM策略的高效动作级恢复框架RESETTLE，通过持续性动作分歧监测、同任务演示检索和直接校正控制实现恢复，无需基础策略微调、额外VLM推理或在线轨迹优化</li><li>设计轻量的分歧触发干预机制：通过两次独立采样的动作块的一致性分歧检测执行不稳定状态，仅用离线训练数据的P95分位数校准阈值，无需评估数据，仅需少量训练轨迹子集即可完成校准</li><li>提出基于V-JEPA的演示检索与参考引导恢复方案：用适配的V-JEPA 2编码器检索同任务成功演示参考，结合状态伺服前项与带保护机制的视觉残差直接生成校正动作，每次干预仅执行一个原生控制动作后返回基础策略</li><li>在6个基础策略的3类仿真基准（LIBERO-Plus、Meta-World、RoboCasa）和4个真实机器人任务上验证有效性，最高实现8.70%的绝对成功率提升</li><li>验证与高层规划的兼容性：集成到Harness VLA的LIBERO-Pro Swap任务中，将成功率从42%提升至50%，证明可与分层智能体系统协同工作</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>RESETTLE是模型无关的恢复框架，挂载在冻结机器人策略的动作执行接口，不修改基础策略的任何权重和生成逻辑，仅通过三个模块实现恢复</li><li>核心技术模块包括：1）分歧触发干预模块：每次决策时用相同观测和任务条件独立采样两个动作块，计算时间加权动作分歧，连续两次超过离线校准的P95阈值则触发恢复，避免单次采样波动误触发；2）V-JEPA基于检索模块：触发恢复时，用适配的V-JEPA 2编码器将当前观测映射到表征空间，检索同任务成功训练演示中余弦距离最近的表征，获取对应的视觉观测和机器人状态作为参考；3）参考引导恢复模块：以当前状态到参考状态的状态位移作为伺服前项，结合当前和参考的视觉观测、机器人状态等，通过带保护机制的视觉残差调整前项生成校正动作，每次干预仅执行一个原生控制动作后返回基础策略控制</li><li>关键创新点：无需在线轨迹优化、额外视觉语言推理或基础策略微调；分歧监测的校准仅需离线训练数据，支持从小轨迹子集完成校准；残差保护机制限制残差相对前项的大小，确保校正动作的安全性和合理性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO-Plus</strong>（7类扰动维度，共10030个评估案例）、<strong>Meta-World MT50</strong>（50个任务，分为简单/中等/困难/极难4个难度组）、<strong>RoboCasa Tabletop GR1</strong>（24个操作任务）、<strong>LIBERO-Pro Swap</strong>（10个任务，用于分层规划评估）；预训练使用<strong>DROID</strong>机器人操作数据集</li><li>模型规模：恢复模块采用约10亿参数的ViT-g/16编码器，初始化自在DROID上做动作条件预训练的<strong>V-JEPA 2-AC</strong>检查点，配套辅助动力学预测器和残差头，基础策略权重全程冻结</li><li>训练与推理资源：策略和恢复推理均运行在<strong>NVIDIA RTX 4090D GPU</strong>上</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：仿真覆盖上述4类基准，真实场景使用Franka Research 3机器人执行4个单臂操作任务（Press-button、Cube-up、Carrot-in-pot、Use Spoon），对比6种基础策略及其RESETTLE增强版本</li><li>主要评估指标：任务成功率（%）、长程任务阶段完成率、监控-恢复计算延迟</li><li>关键实验结果：</li></ul>
+<p> 1. 仿真任务中，<strong>FastWAM</strong>在LIBERO-Plus上成功率从49.3%提升至58.0%（绝对提升8.7%），<strong>SmolVLA</strong>在Meta-World上从59.20%提升至65.48%（绝对提升6.28%），<strong>QwenGR00T</strong>在RoboCasa上从53.67%提升至60.50%（绝对提升6.83%），所有基础策略均实现成功率提升</p>
+<p> 2. 真实任务中，<strong>QwenPI</strong>平均任务指标从66.67%提升至78.75%（绝对提升12.08%），<strong>VLAct</strong>从86.25%提升至92.92%（绝对提升6.67%），在短程和长程任务上均有效</p>
+<p> 3. 效率方面，RESETTLE的监控-恢复计算延迟比<strong>VoLoAgent</strong>的监控-规划延迟低74.04%-93.57%，大幅降低恢复开销</p>
+<p> 4. 分层兼容性方面，集成到Harness VLA后，LIBERO-Pro Swap任务成功率从42%提升至50%，验证了与高层智能体规划的协同能力</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.12231/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Residual Modeling Closes the Regression and Generative Policy Gap in Robot Learning</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.12107/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">ContourVLA: A Closed-Loop Perception-Action Contour Policy for Generalized Referring Expression Segmentation</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

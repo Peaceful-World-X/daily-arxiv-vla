@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PathTime-VLA: Path-Time Decoupling for Factorized Post-Training of Vision-Language-Action Policies - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="当前视觉-语言-动作（VLA）策略通常以固定时间间隔预测动作，将机器人运动的路径几何与执行速度耦合，遥操作演示数据的时间信息受接口延迟和操作者习惯影响，并非最优自主执行节奏，且调整执行速度会同时改变几何路径的监督目标，难以单独优化执行效率 论文提出PathTime-VLA方法，将经典运动规划的路径-时间参数化引入VLA的动作表示，将路径几何与执行时间解耦，为两者提供独立的后训练优化接口 研究目标是实现VLA策略在目…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.11771">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.11771.webp" alt="PathTime-VLA: Path-Time Decoupling for Factorized Post-Training of Vision-Language-Action Policies" loading="lazy" />
+  <figcaption class="paper-figure-caption">当前视觉-语言-动作（VLA）策略通常以固定时间间隔预测动作，将机器人运动的路径几何与执行速度耦合，遥操作演示数据的时间信息受接口延迟和操作者…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">PathTime-VLA: Path-Time Decoupling for Factorized Post-Training of Vision-Language-Action Policies</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.11771" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.11771" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.11771</span></div>
+            <p class="detail-summary">当前视觉-语言-动作（VLA）策略通常以固定时间间隔预测动作，将机器人运动的路径几何与执行速度耦合，遥操作演示数据的时间信息受接口延迟和操作者习惯影响，并非最优自主执行节奏，且调整执行速度会同时改变几何路径的监督目标，难以单独优化执行效率 论文提出PathTime-VLA方法，将经典运动规划的路径-时间参数化引入VLA的动作表示，将路径几何与执行时间解耦，为两者提供独立的后训练优化接口 研究目标是实现VLA策略在目…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">论文作者所属机构为浙江大学</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.11771/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">当前视觉-语言-动作（VLA）策略通常以固定时间间隔预测动作，将机器人运动的路径几何与执行速度耦合，遥操作演示数据的时间信息受接口延迟和操作者…</p>
+  <ul class="reading-intro-points"><li>当前视觉-语言-动作（VLA）策略通常以固定时间间隔预测动作，将机器人运动的路径几何与执行速度耦合，遥操作演示数据的时间信息受接口延迟和操作者…</li><li>论文提出PathTime-VLA方法，将经典运动规划的路径-时间参数化引入VLA的动作表示，将路径几何与执行时间解耦，为两者提供独立的后训练优…</li><li>研究目标是实现VLA策略在目标域的高可靠适应和高效率执行，在真实机器人操作任务上验证解耦表示与分阶段后训练pipeline的有效性</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>论文作者所属机构为<strong>浙江大学</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>当前视觉-语言-动作（VLA）策略通常以固定时间间隔预测动作，将机器人运动的路径几何与执行速度耦合，遥操作演示数据的时间信息受接口延迟和操作者习惯影响，并非最优自主执行节奏，且调整执行速度会同时改变几何路径的监督目标，难以单独优化执行效率</li><li>论文提出<strong>PathTime-VLA</strong>方法，将经典运动规划的路径-时间参数化引入VLA的动作表示，将路径几何与执行时间解耦，为两者提供独立的后训练优化接口</li><li>研究目标是实现VLA策略在目标域的高可靠适应和高效率执行，在真实机器人操作任务上验证解耦表示与分阶段后训练pipeline的有效性</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>路径-时间解耦的动作表示</strong>，将进度索引的交互路径与间隔时间剖面分离，为几何路径和执行时序提供独立的后训练优化接口</li><li>设计<strong>Speed-DQN</strong>算法，通过低维离散动作空间的在线强化学习优化块级执行倍率，在固定路径生成器的基础上探索最优执行速度</li><li>设计<strong>Path-AWR</strong>算法，利用执行rollouts的任务结果，通过优势加权学习微调扩散路径生成头，将执行层面的反馈回传给路径生成模块</li><li>在3种真实机器人操作任务上开展共<strong>600次</strong>真实机器人评估试验，验证了完整方法在成功率和执行效率上的优势</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>路径-时间动作表示</strong>：将传统VLA的时间索引动作块替换为路径-时间参数化形式，动作满足$a(t)=X(s(t))$，其中$X(s)$为进度索引的交互路径，$t(s)$为单调时间律；改变时间间隔集合$\Delta T_k$仅调整执行节奏，不改变几何路径目标$X_k$，同一路径可通过不同的时间剖面实现不同的执行速度</li><li><strong>动作专家架构</strong>：基于预训练VLA骨干<strong>E2VLA</strong>搭建，包含三个功能头：PathHead用扩散模型生成路径，VelocityHead预测基础运动速率，TimeHead通过交叉注意力分配路径各间隔的遍历时间，通过stop梯度机制保证路径生成不受时序优化目标的干扰</li><li><strong>分阶段后训练流程</strong>：第一阶段为监督适配，利用遥操作演示和DAgger的人类纠正数据训练三个功能头，通过时间增强生成同一路径在不同速率下的监督目标；第二阶段为Speed-DQN训练，冻结VLA主干和动作专家，仅通过低维离散倍率动作空间做在线强化学习，学习自适应执行速度；第三阶段为Path-AWR微调，仅开放PathHead，利用执行rollouts的结果计算路径优势，通过优势加权的扩散损失优化路径生成，将执行结果的信息传递到路径生成模块</li><li>核心创新点是将经典运动规划的路径-时间解耦思想引入VLA动作空间，分离几何路径和执行时序的优化信号，避免两者的优化相互干扰</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>实验使用<strong>Franka Panda</strong>机械臂平台，搭配手腕视角和第三人称<strong>Intel D435</strong>相机，通过共享柔顺控制器以10Hz输出笛卡尔位姿和夹爪命令</li><li>每个任务收集30条遥操作演示，通过DAgger扩展至60条轨迹，共覆盖3种操作任务，累计收集在线执行rollouts、人类纠正等交互数据</li><li>训练硬件为<strong>RTX A6000 GPU</strong>，单任务训练步数预算为40000步</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估环境与基准</strong>：在<strong>peg插入</strong>、<strong>微波开门</strong>、<strong>胶带放置与抽屉关闭</strong>3种真实机器人任务上评估，每个任务设置20次随机初始条件的试验，单次episode限时60秒，所有方法共享相同的机器人约束、相机标定、工作空间和reset流程；对比基准包括耦合动作表示的BC、BC+DAgger策略，以及不同固定执行倍率（1x、2x、3x）的PathTime-VLA</li><li><strong>主要评估指标</strong>：任务成功率（成功次数/总试验次数）、成功trial的平均完成时间、考虑失败超时的吞吐量代理指标</li><li><strong>关键实验结果</strong>：</li></ul>
+<p> - 动作表示ablation：在监督训练阶段（无RL），BC下PathTime-VLA达到<strong>43/60</strong>成功率，优于耦合表示的40/60；BC+DAgger下达到<strong>57/60</strong>成功率，显著优于耦合表示的51/60，且所有任务的完成时间均更短</p>
+<p> - 固定倍率实验：不同任务的最优执行倍率存在差异，无统一全局最优倍率，例如微波开门在2x倍率下成功率更高，而胶带抽屉任务在3x倍率下成功率骤降，验证了自适应速度选择的必要性</p>
+<p> - 完整pipeline效果：经Speed-DQN和Path-AWR优化后的完整方法达到<strong>58/60</strong>的总成功率，略高于BC+DAgger固定1x的57/60，成功trial的平均完成时间减少<strong>39%-52%</strong>，吞吐量在所有对比方法中最高</p>
+<p> - 消融实验：DAgger的最大提升集中在插入任务的接触精度瓶颈步骤；Speed-DQN可显著缩短完成时间但可能带来轻微成功率下降，Path-AWR可修复该问题，同时进一步提升路径质量</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.11952/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Tell Robot What Not to Do: A Negation Understanding Perspective</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.11508/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">WARP-VLA: Wrist-Camera Adaptation for View-Robust Policy Execution in Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

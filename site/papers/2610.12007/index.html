@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>REACT: Rolling Denoising and Dual Decoupling for Reactive Robot Control with VLA Models - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有基于流匹配的Vision-Language-Action（VLA）模型采用分块动作生成策略，存在固有闭环控制权衡：长动作块能保证执行平滑但响应延迟高，频繁重规划响应快但易产生轨迹不连续，仅降低推理延迟无法同时满足高输入观测吞吐和高动作输出吞吐。 本文提出REACT框架，通过滚动去噪机制在保留长时序动作上下文的同时，让未来动作块在连续新观测下逐步细化，提升观测新鲜度；同时提出双解耦推理调度，在不修改模型权重的前提…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.12007">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.12007.webp" alt="REACT: Rolling Denoising and Dual Decoupling for Reactive Robot Control with VLA Models" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有基于流匹配的Vision-Language-Action（VLA）模型采用分块动作生成策略，存在固有闭环控制权衡：长动作块能保证执行平滑但…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">REACT: Rolling Denoising and Dual Decoupling for Reactive Robot Control with VLA Models</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.12007" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.12007" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.12007</span></div>
+            <p class="detail-summary">现有基于流匹配的Vision-Language-Action（VLA）模型采用分块动作生成策略，存在固有闭环控制权衡：长动作块能保证执行平滑但响应延迟高，频繁重规划响应快但易产生轨迹不连续，仅降低推理延迟无法同时满足高输入观测吞吐和高动作输出吞吐。 本文提出REACT框架，通过滚动去噪机制在保留长时序动作上下文的同时，让未来动作块在连续新观测下逐步细化，提升观测新鲜度；同时提出双解耦推理调度，在不修改模型权重的前提…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">上海交通大学</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.12007/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有基于流匹配的Vision-Language-Action（VLA）模型采用分块动作生成策略，存在固有闭环控制权衡：长动作块能保证执行平滑但…</p>
+  <ul class="reading-intro-points"><li>现有基于流匹配的Vision-Language-Action（VLA）模型采用分块动作生成策略，存在固有闭环控制权衡：长动作块能保证执行平滑但…</li><li>本文提出REACT框架，通过滚动去噪机制在保留长时序动作上下文的同时，让未来动作块在连续新观测下逐步细化，提升观测新鲜度；同时提出双解耦推理调…</li><li>研究目标是在仿真和真实双臂机器人任务上，验证REACT在任务成功率、响应速度、轨迹平滑度上优于现有异步推理、实时控制等基线方案，解决分块VLA…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>上海交通大学</strong></li><li><strong>PrimeBot</strong></li><li><strong>浙江大学</strong></li><li><strong>上海科技大学</strong></li><li><strong>新加坡国立大学</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有基于流匹配的Vision-Language-Action（VLA）模型采用分块动作生成策略，存在固有闭环控制权衡：长动作块能保证执行平滑但响应延迟高，频繁重规划响应快但易产生轨迹不连续，仅降低推理延迟无法同时满足高输入观测吞吐和高动作输出吞吐。</li><li>本文提出<strong>REACT</strong>框架，通过滚动去噪机制在保留长时序动作上下文的同时，让未来动作块在连续新观测下逐步细化，提升观测新鲜度；同时提出双解耦推理调度，在不修改模型权重的前提下分离感知编码与去噪执行流程，实现高吞吐实时控制。</li><li>研究目标是在仿真和真实双臂机器人任务上，验证REACT在任务成功率、响应速度、轨迹平滑度上优于现有异步推理、实时控制等基线方案，解决分块VLA的闭环动态控制性能瓶颈。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>识别了分块流式VLA推理中的<strong>相干性-新鲜度权衡</strong>，提出输入/输出吞吐作为闭环响应性的系统级度量，突破仅以推理延迟评估动态控制性能的局限。</li><li>提出<strong>REACT滚动去噪机制</strong>：维护持久分块动作缓冲区，为每个动作位置分配阶梯式流时间，每次控制步用最新观测对全缓冲区做单步欧拉去噪，执行最前端干净块、剩余块前移、尾部添加新噪声，使每个执行块经过多轮连续观测细化，既保留长时序动作连贯性，又提升观测新鲜度。</li><li>提出<strong>双解耦（Dual Decoupling）推理调度</strong>和<strong>匹配阶梯训练</strong>：双解耦分离感知/VLM编码与DiT去噪/动作执行流程，异步处理观测输入，在不改变模型权重的前提下提升输入输出吞吐；匹配阶梯训练用与推理一致的阶梯式流时间监督模型，对齐训练与部署的去噪调度，同时提升训练效率和推理动态性能。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>核心方法包含三个模块：① 滚动去噪：将总时序为H的动作序列划分为K个长度为S的块，为每个动作位置分配阶梯式流时间τⱼ=(⌊j/S⌋+1)/K，每次控制步仅对滚动缓冲区做一次去噪更新，执行最前端已充分去噪的块，剩余块前移并在尾部添加新噪声，使每个块在移向执行位的过程中经过K次观测细化；② 双解耦：部署时设置M个VLM工作线程异步编码选中的观测帧，DiT去噪模块消费最新完成的视觉-语言嵌入，解耦串行同步瓶颈，实现高频率观测更新和连续动作流式输出；③ 阶梯训练：训练时采用与推理一致的阶梯式流时间对每个动作块的位置进行监督，单次前向传播同时优化K个确定性去噪阶段的损失，保证训练-推理一致性。</li><li>创新点：突破了传统分块VLA“长块平滑但响应慢、短块响应快但不连贯”的二元权衡，在不修改VLA backbone权重的前提下，同时提升了闭环控制的响应性、动作连贯性和训练效率。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>RoboTwin 2.0</strong>基准，包含7类操作任务，每个任务提供50条专家演示，每个任务-条件对评估100次闭环rollout，分为Clean和Randomized两种环境条件。</li><li>真实世界平台：<strong>ARX Robotics X5</strong>双臂机器人、<strong>Franka Research 3</strong>双臂机器人，覆盖6类平台专属/共享操作任务，每个任务进行30次随机物体放置下的试验。</li><li>模型规格：基于<strong>π₀.₅</strong>流式VLA backbone，默认块大小S=10，块数K=5，总动作时序H=50。</li><li>训练资源：论文未在提供原文中明确披露具体GPU/TPU等训练硬件配置。</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：覆盖RoboTwin 2.0仿真、双臂真实世界操作任务，以及2类专项动态控制任务（ARX X5的倒米任务、Franka R3的反应游戏任务）。</li><li>主要评估指标：任务成功率（Success Rate，%）、轨迹平滑度（成功episode的平均关节轨迹jerk值，值越低越平滑）；专项任务额外采用倒米成功率、视觉-运动反应延迟（ms）作为指标。</li><li>关键实验结果：</li></ul>
+<p> - 通用任务成功率：<strong>REACT（无双解耦）</strong>在仿真Clean/Randomized场景平均成功率为49.71%/20.86%，真实世界平均成功率65.7%，均显著高于异步+训练时RTC基线（Async+RTC）的33.29%/10.57%（仿真）和17.7%（真实世界）；完整<strong>REACT</strong>在真实世界平均成功率达64.8%，仍大幅领先基线。</p>
+<p> - 轨迹平滑度：完整REACT的仿真平均jerk为1219.0，远低于Async+RTC的2022.2；真实世界场景中，ARX X5的jerk从基线的284.1降至90.1，Franka平台从31.6降至28.6，接近专家演示的平滑度水平。</p>
+<p> - 动态专项任务：倒米任务成功率REACT达63%，为所有基线最高；反应游戏任务中REACT平均延迟734ms，仅比人类遥操作的705ms高29ms，低于Async+RTC的747ms，验证了其快速响应能力。</p>
+<p> - 训练效率：REACT仅需3k优化步即可达到52.7%的平均任务成功率，而π₀.₅基线仅能达到25.0%，15k步即可达到基线30k步的性能，训练效率提升显著。</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.12026/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Humanoid World Action Model With Joint State--Action Generation</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.11971/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

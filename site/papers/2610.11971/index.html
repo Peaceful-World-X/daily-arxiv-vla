@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对预训练视觉-语言-动作（VLA）策略在机器人关节故障时失效的问题，提出CAPABLE框架，无需重训冻结的预训练VLA，即可让机器人在关节故障状态下继续完成操作任务 现有故障恢复方法普遍需要任务特定重训、故障标签、特权本体信息或显式故障诊断，无法直接适配通用预训练VLA；CAPABLE通过在线推断每个关节的剩余能力，为VLA输出添加有界残差修正，无需任何故障相关标识符 核心研究目标是实现故障能力表征的跨关节、跨故…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.11971">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.11971.webp" alt="CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对预训练视觉-语言-动作（VLA）策略在机器人关节故障时失效的问题，提出CAPABLE框架，无需重训冻结的预训练VLA，即可让机器人在关节故…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.11971" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.11971" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.11971</span></div>
+            <p class="detail-summary">针对预训练视觉-语言-动作（VLA）策略在机器人关节故障时失效的问题，提出CAPABLE框架，无需重训冻结的预训练VLA，即可让机器人在关节故障状态下继续完成操作任务 现有故障恢复方法普遍需要任务特定重训、故障标签、特权本体信息或显式故障诊断，无法直接适配通用预训练VLA；CAPABLE通过在线推断每个关节的剩余能力，为VLA输出添加有界残差修正，无需任何故障相关标识符 核心研究目标是实现故障能力表征的跨关节、跨故…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">不来梅大学（University of Bremen），德国不来梅</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.11971/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对预训练视觉-语言-动作（VLA）策略在机器人关节故障时失效的问题，提出CAPABLE框架，无需重训冻结的预训练VLA，即可让机器人在关节故…</p>
+  <ul class="reading-intro-points"><li>针对预训练视觉-语言-动作（VLA）策略在机器人关节故障时失效的问题，提出CAPABLE框架，无需重训冻结的预训练VLA，即可让机器人在关节故…</li><li>现有故障恢复方法普遍需要任务特定重训、故障标签、特权本体信息或显式故障诊断，无法直接适配通用预训练VLA；CAPABLE通过在线推断每个关节的…</li><li>核心研究目标是实现故障能力表征的跨关节、跨故障类型迁移，让仅在部分关节故障上训练的模型，可以零样本泛化到训练时从未出现故障的其他关节及未见故障…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>不来梅大学（University of Bremen）</strong>，德国不来梅</li><li><strong>北德克萨斯大学（University of North Texas）</strong>，美国德克萨斯州丹顿市</li><li><strong>丰田北美公司信息技术实验室（Toyota Motor North America, InfoTech Labs）</strong>，美国加利福尼亚州山景城</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对预训练视觉-语言-动作（VLA）策略在机器人关节故障时失效的问题，提出<strong>CAPABLE</strong>框架，无需重训冻结的预训练VLA，即可让机器人在关节故障状态下继续完成操作任务</li><li>现有故障恢复方法普遍需要任务特定重训、故障标签、特权本体信息或显式故障诊断，无法直接适配通用预训练VLA；CAPABLE通过在线推断每个关节的剩余能力，为VLA输出添加有界残差修正，无需任何故障相关标识符</li><li>核心研究目标是实现故障能力表征的跨关节、跨故障类型迁移，让仅在部分关节故障上训练的模型，可以零样本泛化到训练时从未出现故障的其他关节及未见故障类型</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出面向冻结VLA的<strong>能力化故障表征方法</strong>：将关节故障表征为每个执行器的剩余运动能力（实际能执行多少 commanded 运动、对末端执行器的影响），仅从关节的命令-响应历史与实时运动学推断能力，无需故障标签，通过有界残差强化学习修正冻结VLA的输出</li><li>提出面向保留执行器迁移的<strong>按执行器分解架构</strong>：跨7个关节共享时序编码器，结合实时雅可比矩阵 grounding、跨关节注意力机制，并通过自监督物理预测训练；移除任一组件都会显著降低保留关节的任务成功率</li><li>提出解耦分解与容量的系统性评估方案：在28个LIBERO任务、6个保留关节、5种未见故障族、实体Franka Panda机器人上开展评估，与参数量匹配的未分解基线对比，明确标注了能力迁移的有效边界与失效场景</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用<strong>残差强化学习框架</strong>，冻结预训练的7B参数<strong>OpenVLA-OFT</strong>基础VLA，仅对机械臂6维连续动作添加有界修正，夹爪动作保持不变</li><li>能力推断模块分为四部分：1. 为每个关节构造包含位置、速度、位移、雅可比列、VLA输出动作、实际执行动作、末端执行器变化、动作块相位的28维token，维护最近16步的历史；2. 跨关节共享权重的时序编码器（含线性投影、LayerNorm、SiLU、128维GRU）编码各关节历史，得到32维嵌入；3. 结合当前关节的运动学查询（位置、速度、雅可比列、VLA机械臂动作），通过4头2层Transformer跨关节注意力融合7个关节的信息，得到64维的能力表征</li><li>引入<strong>自监督物理预测目标</strong>：共享本地解码器预测每个关节的实际位移，全局解码器预测末端执行器实际位移，额外加入雅可比一致性损失，保证预测的运动符合物理规律，无需特权信息即可训练</li><li>采用<strong>FiLM条件化的双Critic SAC策略</strong>，将能力表征通过FiLM层注入残差策略；通过梯度路由阻止Actor的梯度更新能力编码器，保证编码器主要由物理预测目标优化，无需故障标签或故障关节标识符即可端到端训练</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>仿真数据集：<strong>LIBERO基准</strong>（包含LIBERO-10、LIBERO-Spatial、LIBERO-Object、LIBERO-Goal四个子集，筛选后保留28个任务，共46个可用任务-故障单元），仿真环境基于robosuite与MuJoCo搭建</li><li>模型规模：基础VLA为<strong>OpenVLA-7B</strong>（70亿参数），残差策略的参数量与全局历史基线匹配（误差在1%以内）</li><li>硬件资源：原文未明确说明具体GPU/TPU训练配置；硬件验证使用<strong>Franka Panda</strong>实体机械臂，通过软件模拟关节锁、阻尼、摩擦等故障</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真场景基于LIBERO+robosuite+MuJoCo，硬件验证在实体Franka Panda上开展</li><li>评估基准：Base VLA（无修正）、POMDP-RL、Classical RR（经典冗余解析）、DEFT、Global-history SAC（参数量匹配的未分解基线）</li><li>评估指标：任务成功率（分为健康、已见故障、未见故障三类），采用task-balanced成功率（先对每个任务内的已见故障成功率平均，再跨任务平均，避免多故障任务权重过高）</li><li>关键实验结果：</li></ul>
+<p> - 主实验结果：在28个任务上，CAPABLE将未见故障关节j2的成功率从24.8%提升至59.3%，比参数量匹配的Global-history SAC高17.4个百分点，比经典RR方法高26.4个百分点；同时保持健康场景成功率90.8%，与无修正Base VLA的91.4%几乎无差异</p>
+<p> - 跨故障族迁移：仅在持久性关节锁上训练的CAPABLE，在未见故障j2的5种新故障族（粘性阻尼、库伦摩擦、部分执行器效能、关节范围限制、迟发关节锁）上整体优于Global-history SAC；即使相比使用故障和任务状态特权信息的DEFT基线，CAPABLE也仅落后3.5个百分点</p>
+<p> - 跨关节泛化：6个关节的留一执行器实验中，迁移效果不特定于单个关节，在所有保留关节上均有效；硬件验证在实体Franka Panda上成功实现了关节锁故障下的任务恢复</p>
+<p> - 消融实验验证了共享编码器、雅可比 grounding、跨关节注意力、自监督物理预测四个组件的必要性，移除任一组件都会导致保留关节成功率显著下降</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.12007/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">REACT: Rolling Denoising and Dual Decoupling for Reactive Robot Control with VLA Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.11952/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Tell Robot What Not to Do: A Negation Understanding Perspective</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

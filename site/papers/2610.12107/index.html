@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ContourVLA: A Closed-Loop Perception-Action Contour Policy for Generalized Referring Expression Segmentation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="研究聚焦广义指代表达分割（GRES）任务，解决现有级联视觉语言模型（VLM）架构依赖静态特征接口、单次掩码预测无法实现自适应感知与几何校正的核心问题 提出ContourVLA，将GRES重构为闭环感知-动作过程，以可编辑轮廓作为显式几何策略状态，通过迭代几何动作更新实现从粗定位到精确边界的逐步细化 配套提出演化感知语义调度（EASS）与尘埃箱增强熵信用运输GRPO（DECT-GRPO），分别解决状态自适应多模态感知…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.12107">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.12107.webp" alt="ContourVLA: A Closed-Loop Perception-Action Contour Policy for Generalized Referring Expression Segmentation" loading="lazy" />
+  <figcaption class="paper-figure-caption">研究聚焦广义指代表达分割（GRES）任务，解决现有级联视觉语言模型（VLM）架构依赖静态特征接口、单次掩码预测无法实现自适应感知与几何校正的核…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">ContourVLA: A Closed-Loop Perception-Action Contour Policy for Generalized Referring Expression Segmentation</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.12107" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.12107" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.12107</span></div>
+            <p class="detail-summary">研究聚焦广义指代表达分割（GRES）任务，解决现有级联视觉语言模型（VLM）架构依赖静态特征接口、单次掩码预测无法实现自适应感知与几何校正的核心问题 提出ContourVLA，将GRES重构为闭环感知-动作过程，以可编辑轮廓作为显式几何策略状态，通过迭代几何动作更新实现从粗定位到精确边界的逐步细化 配套提出演化感知语义调度（EASS）与尘埃箱增强熵信用运输GRPO（DECT-GRPO），分别解决状态自适应多模态感知…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">中山大学：Ruicheng Zhang、Kaiwen Shen、Shen Zhao</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.12107/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">研究聚焦广义指代表达分割（GRES）任务，解决现有级联视觉语言模型（VLM）架构依赖静态特征接口、单次掩码预测无法实现自适应感知与几何校正的核…</p>
+  <ul class="reading-intro-points"><li>研究聚焦广义指代表达分割（GRES）任务，解决现有级联视觉语言模型（VLM）架构依赖静态特征接口、单次掩码预测无法实现自适应感知与几何校正的核…</li><li>提出ContourVLA，将GRES重构为闭环感知-动作过程，以可编辑轮廓作为显式几何策略状态，通过迭代几何动作更新实现从粗定位到精确边界的逐…</li><li>配套提出演化感知语义调度（EASS）与尘埃箱增强熵信用运输GRPO（DECT-GRPO），分别解决状态自适应多模态感知与多实例信用分配的优化难题</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>中山大学</strong>：Ruicheng Zhang、Kaiwen Shen、Shen Zhao</li><li><strong>清华大学</strong>：Ruicheng Zhang、Jiaqi Hou、Shuhan Yang、Jun Zhou</li><li><strong>香港中文大学（深圳）</strong>：Junchao Huang、Li Jiang</li><li><strong>北京大学</strong>：Kewei Zhang</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>研究聚焦广义指代表达分割（GRES）任务，解决现有级联视觉语言模型（VLM）架构依赖静态特征接口、单次掩码预测无法实现自适应感知与几何校正的核心问题</li><li>提出<strong>ContourVLA</strong>，将GRES重构为闭环感知-动作过程，以可编辑轮廓作为显式几何策略状态，通过迭代几何动作更新实现从粗定位到精确边界的逐步细化</li><li>配套提出演化感知语义调度（EASS）与尘埃箱增强熵信用运输GRPO（DECT-GRPO），分别解决状态自适应多模态感知与多实例信用分配的优化难题</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首个将GRES建模为主动感知-动作轮廓策略的工作，ContourVLA以几何轮廓状态桥接多模态感知与几何动作，形成闭环迭代细化框架</li><li>提出演化感知语义调度（EASS），通过空间视觉采样自适应获取双向边界线索，通过多模态语义路由根据轮廓演化状态选择最相关的多级多模态特征，替代静态特征读取机制</li><li>提出DECT-GRPO后训练方法，利用尘埃箱增强熵最优运输建立软预测-目标对应，实现实例级信用分配，联合优化离散接地分支与连续轮廓动作分支，有效处理误检与漏检场景</li><li>在GRES与常规RES任务上均达到最优性能，且单个联合训练checkpoint无需任务特定微调即可适配所有基准</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>整体框架：ContourVLA由<strong>视觉语言交互模块（VLIM）</strong>和<strong>几何动作解码器（GAD）</strong>组成，VLIM负责生成结构化接地序列初始化轮廓，并缓存视觉特征网格与多级多模态表示；GAD接收状态相关的多模态观测，预测连续点wise几何动作块，执行后更新轮廓状态并触发下一轮感知-动作循环</li><li>演化感知语义调度（EASS）：分为两个核心组件，①空间视觉采样：沿轮廓顶点法线双向采样盒内/外视觉特征，自适应调整感受野匹配目标尺度；②多模态语义路由：将实例几何、演化进度、轮廓运动、解码深度编码为查询，与VLIM各层的语义键计算兼容度，采用硬路由+直通估计器实现离散层的可微分选择，将路由后的多模态特征输入对应GAD块</li><li>训练策略：采用两阶段训练范式，第一阶段监督微调（SFT）通过教师强制接地监督与轮廓轨迹监督建立几何先验；第二阶段DECT-GRPO后训练，利用尘埃箱增强熵运输计算软对应关系，得到实例级信用调制共享滚动优势，联合优化自回归离散接地策略与基于tanh高斯分布的连续轮廓动作策略，同时保留KL散度正则防止策略偏离参考模型</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>预训练与训练数据集：接地预训练采用<strong>LocateAnything-Data</strong>，联合训练与评估采用<strong>gRefCOCO</strong>、<strong>RefCOCO</strong>、<strong>RefCOCO+</strong>、<strong>RefCOCOg</strong>四个主流指代表达分割基准</li><li>模型规模：视觉backbone采用<strong>MoonViT</strong>，语言backbone采用<strong>Qwen2.5-3B-Instruct</strong></li><li>训练资源：提供的内容中未明确说明GPU、TPU等具体训练硬件配置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：GRES任务评估gRefCOCO的val、testA、testB三个划分，传统指代表达分割（RES）任务评估RefCOCO、RefCOCO+、RefCOCOg共8个数据划分</li><li>核心评估指标：GRES任务采用<strong>gIoU</strong>（表达式平均交并比，覆盖无目标场景）、<strong>cIoU</strong>（累积交并比）；RES任务采用<strong>mIoU</strong>（平均交并比）、<strong>cIoU</strong>，额外评估无目标准确率、实例F1、边界精度等细粒度指标</li><li>关键实验结果：① gRefCOCO上gIoU达到83.5（val）、80.3（testA）、74.4（testB），分别超出当前最强基线8.7、2.8、2.7个点，cIoU在val和testA splits达到最高，testB的cIoU仅比HiMTok低0.1个点；② 传统RES任务所有8个划分的mIoU均为最高，RefCOCO splits较基线提升1.3-1.8个点，RefCOCO+ splits提升2.8-3.2个点，RefCOCOg val/test分别提升0.7/0.3个点；③ 所有基准仅使用单个联合训练checkpoint，无需任务特定微调即可达到最优性能，验证了策略的通用性</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.12185/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">RESETTLE: Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.12090/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">Recompose and Refine Latent Reasoning Flows for Vision-Language-Action Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

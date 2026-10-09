@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VersaCamVLA: Camera-Configurable VLA Policies for Robotic Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="该论文提出了 VersaCamVLA，一个相机可配置的视觉-语言-动作 (VLA) 框架，用于解决现有 VLA 模型在部署时对相机数量和姿态变化的脆弱性问题 通过解耦相机集表示与动作学习，VersaCamVLA 能接受任意数量的 RGB 视图和变化的相机姿态，并将其映射为固定大小的场景令牌，使策略在配置多样化的相机下稳定运行 该方法无需显式 3D 重建或新视图渲染，只需 RGB 图像和相机标定参数即可实现灵活的相机…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.12451">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.12451.webp" alt="VersaCamVLA: Camera-Configurable VLA Policies for Robotic Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">该论文提出了 VersaCamVLA，一个相机可配置的视觉-语言-动作 (VLA) 框架，用于解决现有 VLA 模型在部署时对相机数量和姿态变…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">VersaCamVLA: Camera-Configurable VLA Policies for Robotic Manipulation</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.12451" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.12451" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.12451</span></div>
+            <p class="detail-summary">该论文提出了 VersaCamVLA，一个相机可配置的视觉-语言-动作 (VLA) 框架，用于解决现有 VLA 模型在部署时对相机数量和姿态变化的脆弱性问题 通过解耦相机集表示与动作学习，VersaCamVLA 能接受任意数量的 RGB 视图和变化的相机姿态，并将其映射为固定大小的场景令牌，使策略在配置多样化的相机下稳定运行 该方法无需显式 3D 重建或新视图渲染，只需 RGB 图像和相机标定参数即可实现灵活的相机…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">The Chinese University of Hong Kong, Shenzhen (香港中文…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.12451/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">该论文提出了 VersaCamVLA，一个相机可配置的视觉-语言-动作 (VLA) 框架，用于解决现有 VLA 模型在部署时对相机数量和姿态变…</p>
+  <ul class="reading-intro-points"><li>该论文提出了 VersaCamVLA，一个相机可配置的视觉-语言-动作 (VLA) 框架，用于解决现有 VLA 模型在部署时对相机数量和姿态变…</li><li>通过解耦相机集表示与动作学习，VersaCamVLA 能接受任意数量的 RGB 视图和变化的相机姿态，并将其映射为固定大小的场景令牌，使策略在…</li><li>该方法无需显式 3D 重建或新视图渲染，只需 RGB 图像和相机标定参数即可实现灵活的相机设置</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>The Chinese University of Hong Kong, Shenzhen</strong> (香港中文大学深圳)</li><li><strong>Shenzhen Loop Area Institute</strong> (深圳环区研究院)</li><li><strong>Harbin Institute of Technology, Shenzhen</strong> (哈尔滨工业大学深圳)</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>该论文提出了 VersaCamVLA，一个相机可配置的视觉-语言-动作 (VLA) 框架，用于解决现有 VLA 模型在部署时对相机数量和姿态变化的脆弱性问题</li><li>通过解耦相机集表示与动作学习，VersaCamVLA 能接受任意数量的 RGB 视图和变化的相机姿态，并将其映射为固定大小的场景令牌，使策略在配置多样化的相机下稳定运行</li><li>该方法无需显式 3D 重建或新视图渲染，只需 RGB 图像和相机标定参数即可实现灵活的相机设置</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出了相机可配置 VLA 政策学习范式，使策略能在不同数量和姿态的相机设置下工作，同时保持固定的视觉接口用于动作预测</li><li>设计了 VersaCamVLA 双阶段框架：第一阶段通过学习统一的场景令牌接口来解耦相机表示；第二阶段将这些场景令牌作为补充视觉条件注入预训练的 VLA 模型</li><li>引入了腕部增强姿态采样 (Wrist-Augmented Pose Sampling, WAPS) 技术，利用腕部相机的自然运动来提供免费的姿态多样性，增强场景令牌的泛化性</li><li>在仿真和真实机器人操作基准测试中验证了 VersaCamVLA 的有效性，在相机数量和姿态变化下持续优于先前方法</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li><strong>双阶段训练框架</strong>：第一阶段训练场景编码器和解码器，使用多信号目标视图预测（RGB、语义和边缘）来学习统一的固定大小场景令牌；第二阶段丢弃解码器，冻结编码器，并通过轻量空间编码器将场景令牌压缩为紧凑的补充条件，注入预训练基准 VLA 进行动作学习</li><li><strong>WAPS 技术</strong>：通过随机采样静态和腕部相机视图作为源视图，并始终以所有可用视图作为目标视图，在训练中引入跨视图预测和自重建信号，增强模型对摄像机姿态和数量变化的鲁棒性</li><li><strong>场景令牌接口</strong>：利用可学习的视觉令牌通过 Transformer 编码器聚合变长度的源视图令牌，生成固定数量且与相机姿态无关的场景表征，为下游策略提供稳定输入</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li><strong>RoboTwin 2.0</strong>：包含双臂精细操作任务，在清洁和域随机化设定下评估；每个任务约 200 条演示数据</li><li><strong>LIBERO</strong>：单臂操作基准，包括 LIBERO-Spatial、LIBERO-Goal、LIBERO-Object、LIBERO-Long 四个套件</li><li><strong>真实机器人平台</strong>：自建平台，包含 PickCube、StackCube、Insert Test Tube 三个任务，每任务约 100 条演示数据</li><li><strong>模型</strong>：基准 VLA 为 <strong>π0.5</strong>；场景编码器为 Transformer 结构，场景令牌数 L=128，嵌入维度 d=1024</li><li><strong>训练资源</strong>：使用 8 块 A100 GPU 进行 RoboTwin 和真实机器人实验，4 块 A100 GPU 进行 LIBERO 实验；双阶段训练时间约为数天</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li><strong>评估设定</strong>：在 RoboTwin 2.0 和 LIBERO 上进行标准任务测试；额外设计相机姿态扰动和相机数量变化实验来评估鲁棒性</li><li><strong>主要指标</strong>：任务成功率 (Success Rate %)，分为清洁设定和域随机化 (DR) 设定下的结果</li><li><strong>关键结果</strong>：</li></ul>
+<p> - 在 RoboTwin 2.0 上，VersaCamVLA 在清洁设定下平均成功率达 52.56%，显著优于 π0.5（35.88%），域随机化下为 23.00% 对比 21.63%</p>
+<p> - 在 LIBERO 上，VersaCamVLA 在干净设定下平均成功率为 95.9%，在四个套件中均达到或接近最佳性能，特别在 LIBERO-Long 中表现突出</p>
+<p> - 摄像机姿态鲁棒性实验表明，从见过姿态到未见姿态，VersaCamVLA 的成功率仅从 53.44% 小幅下降至 52.63%，而 π0.5 从 48.88% 急剧降至 32.88%，证明场景令牌接口有效提升了姿态泛化性</p>
+<p> - 摄像机数量灵活性实验显示，VersaCamVLA 可在 3、4、5、6 个输入视图下保持约 52-56% 的成功率，而 π0.5 无法处理训练时未见过的视图数量</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-next" href="../../papers/2610.12435/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">VioLA: Learning Generalist Humanoid Control Policies from Human Data</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

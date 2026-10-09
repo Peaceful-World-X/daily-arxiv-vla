@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="现有机器人策略（VLA、Agent Harness）将状态隐式存储于模型权重或文本上下文中，存在黑箱不可控、可扩展性差、难以支持递归自我改进（RSI）的问题 本文提出Embodied Turing Machine概念，将机器人-环境系统类比为图灵机，状态为“磁带”，策略为“规则”，进而提出Code-Only-as-Policy（COAP）新范式，以纯代码作为唯一策略，通过代码自主测量并跟踪机器人、环境及任务状态，所…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.12369">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.12369.webp" alt="Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement" loading="lazy" />
+  <figcaption class="paper-figure-caption">现有机器人策略（VLA、Agent Harness）将状态隐式存储于模型权重或文本上下文中，存在黑箱不可控、可扩展性差、难以支持递归自我改进（…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.12369" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.12369" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.12369</span></div>
+            <p class="detail-summary">现有机器人策略（VLA、Agent Harness）将状态隐式存储于模型权重或文本上下文中，存在黑箱不可控、可扩展性差、难以支持递归自我改进（RSI）的问题 本文提出Embodied Turing Machine概念，将机器人-环境系统类比为图灵机，状态为“磁带”，策略为“规则”，进而提出Code-Only-as-Policy（COAP）新范式，以纯代码作为唯一策略，通过代码自主测量并跟踪机器人、环境及任务状态，所…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">南洋理工大学（Nanyang Technological University）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.12369/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">现有机器人策略（VLA、Agent Harness）将状态隐式存储于模型权重或文本上下文中，存在黑箱不可控、可扩展性差、难以支持递归自我改进（…</p>
+  <ul class="reading-intro-points"><li>现有机器人策略（VLA、Agent Harness）将状态隐式存储于模型权重或文本上下文中，存在黑箱不可控、可扩展性差、难以支持递归自我改进（…</li><li>本文提出Embodied Turing Machine概念，将机器人-环境系统类比为图灵机，状态为“磁带”，策略为“规则”，进而提出Code-…</li><li>研究目标为探索纯代码策略的性能上界，同时为VLA、Agent Harness等模型提供高效稳定的轨迹数据生成引擎</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>南洋理工大学（Nanyang Technological University）</li><li>Ropedia</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>现有机器人策略（VLA、Agent Harness）将状态隐式存储于模型权重或文本上下文中，存在黑箱不可控、可扩展性差、难以支持递归自我改进（RSI）的问题</li><li>本文提出<strong>Embodied Turing Machine</strong>概念，将机器人-环境系统类比为图灵机，状态为“磁带”，策略为“规则”，进而提出<strong>Code-Only-as-Policy（COAP）</strong>新范式，以纯代码作为唯一策略，通过代码自主测量并跟踪机器人、环境及任务状态，所有决策由代码逻辑直接推导完成，运行时无需VLM/VLA参与</li><li>研究目标为探索纯代码策略的性能上界，同时为VLA、Agent Harness等模型提供高效稳定的轨迹数据生成引擎</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出COAP范式，实现跨episode通用的纯代码机器人策略，不同任务共享同一代码库，彻底摆脱运行时对模型的依赖</li><li>系统分析COAP相较于VLA和Agent Harness的三大核心优势：<strong>显式状态（Explicit State）</strong>、<strong>可执行性（Execution）</strong>、<strong>可扩展性（Extensibility）</strong>，论证纯代码作为具身任务新范式的可行性</li><li>证明COAP是递归自我改进（RSI）的理想载体，编码代理可通过闭环迭代优化代码库，且所有修改可控、可回归测试，避免破坏已有任务性能</li><li>验证COAP可作为高效数据引擎，稳定生成大量成功轨迹，为VLA和Agent Harnesses的训练提供高质量数据</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>COAP以分层共享代码库的形式实现，状态分为三类：环境状态（物体位姿、尺寸、类别、空间关系等，由感知代码从图像测量）、机器人状态（关节角度、末端位姿、可达位姿等，来自本体感知直接读取）、任务状态（当前执行阶段、机械臂分配、重试次数、任务特有记忆如杯下颜色等）</li><li>感知层基于NumPy和OpenCV实现纯代码测量逻辑：通过掩码去除机器人本体像素，提取候选物体区域，结合射线与桌面平面相交、已知3D物体形状匹配计算物体位姿，所有测量结果可检查、可调试</li><li>代码分层设计，依赖关系向下指向：任务代码调用物体专用模块，再调用抓取、放置、推动等操作模块，最终调用底层感知和运动模块，<strong>83%的代码行可在不同任务间共享</strong></li><li>新任务扩展库有三种方式：组合现有模块、继承现有任务并覆盖单条决策、添加默认关闭的参数，且通过兼容性规则保证扩展不会破坏已有任务的行为</li><li>离线优化阶段由Claude Opus 5.5编码代理闭环迭代：代理在独立git worktree中检查失败运行的状态记录定位故障点，提出代码diff，并行评估所有分支，仅当分支在验证集上性能显著提升且不回归其他任务时才合并为正式版本，且开发过程不接触 benchmark 测试集，实现性能累积提升</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>评估使用<strong>RoboDojo</strong>基准的42个双手操作任务，涵盖记忆（6个）、精度（8个）、开放指令（8个）、泛化（12个）、长程操作（8个）五类具身场景</li><li>编码代理采用<strong>Claude Opus 5.5 Max</strong>，COAP为纯代码策略，无传统意义上的模型参数量，开发阶段使用CPU完成代码检查与模拟评估，无大规模GPU/TPU训练需求</li><li>测试阶段仅需CPU运行代码，无需任何模型推理，执行速度快、资源成本低</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境为RoboDojo模拟器，对比基线涵盖三类：Agent Harness类（PhysicalRSI、GPT-6 Astra）、世界动作模型（WAM）类（Awomo-0.5、VPP2-Preview、Liber-0系列、InternW0-Δ等）、VLA模型类（Simate-beta、Rex-M1、DM0.5等）</li><li>主要评估指标为任务成功率（SR，%）和RoboDojo基准的progress score</li><li>关键实验结果：COAP在42个任务上达到<strong>70.24%</strong>的整体成功率，比次优基线（Simate-beta的27.96%SR）高38.9个百分点，性能远超现有基于模型的方法，且运行时完全无需模型，具备可控、可回溯、可累积扩展的特性</li></ul></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.12386/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ARC: A Reasoning Recipe for Robot Foundation Models</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.12285/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">PLaW-VLA: Predictive Latent World Modeling for Vision-Language-Action Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

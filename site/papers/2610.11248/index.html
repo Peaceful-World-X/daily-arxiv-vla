@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SimVLA: Zero-Shot Sim-to-Real VLA Learning for Mobile Manipulation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="提出SimVLA，首个完全基于合成模拟数据训练、无需真实遥操作的零样本模拟到真实（sim-to-real）视觉-语言-动作（VLA）学习框架，专门针对长时序移动操作任务设计 解决的核心问题：现有VLA训练依赖成本极高的真实世界数据，移动操作任务需要耦合导航与操作、面对部分可观测场景，数据收集难度更大；现有零样本sim-to-real移动操作方法任务覆盖窄、真实世界泛化性差 核心思路是突破传统仅用仿真生成动作数据的局…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.11248">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.11248.webp" alt="SimVLA: Zero-Shot Sim-to-Real VLA Learning for Mobile Manipulation" loading="lazy" />
+  <figcaption class="paper-figure-caption">提出SimVLA，首个完全基于合成模拟数据训练、无需真实遥操作的零样本模拟到真实（sim-to-real）视觉-语言-动作（VLA）学习框架…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">SimVLA: Zero-Shot Sim-to-Real VLA Learning for Mobile Manipulation</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.11248" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.11248" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.11248</span></div>
+            <p class="detail-summary">提出SimVLA，首个完全基于合成模拟数据训练、无需真实遥操作的零样本模拟到真实（sim-to-real）视觉-语言-动作（VLA）学习框架，专门针对长时序移动操作任务设计 解决的核心问题：现有VLA训练依赖成本极高的真实世界数据，移动操作任务需要耦合导航与操作、面对部分可观测场景，数据收集难度更大；现有零样本sim-to-real移动操作方法任务覆盖窄、真实世界泛化性差 核心思路是突破传统仅用仿真生成动作数据的局…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">10 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">延世大学（Yonsei University）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.11248/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">提出SimVLA，首个完全基于合成模拟数据训练、无需真实遥操作的零样本模拟到真实（sim-to-real）视觉-语言-动作（VLA）学习框架…</p>
+  <ul class="reading-intro-points"><li>提出SimVLA，首个完全基于合成模拟数据训练、无需真实遥操作的零样本模拟到真实（sim-to-real）视觉-语言-动作（VLA）学习框架…</li><li>解决的核心问题：现有VLA训练依赖成本极高的真实世界数据，移动操作任务需要耦合导航与操作、面对部分可观测场景，数据收集难度更大；现有零样本si…</li><li>核心思路是突破传统仅用仿真生成动作数据的局限，同时利用仿真提供动作轨迹、视觉语言监督、部署导向rollout数据三类互补监督，提升策略的跨环境…</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>延世大学（Yonsei University）</strong></li><li><strong>首尔国立大学（Seoul National University）</strong></li><li>资助方：韩国国家研究基金会（National Research Foundation of Korea）</li><li>机器人支持：LG电子（LG Electronics）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>SimVLA</strong>，首个完全基于合成模拟数据训练、无需真实遥操作的零样本模拟到真实（sim-to-real）视觉-语言-动作（VLA）学习框架，专门针对长时序移动操作任务设计</li><li>解决的核心问题：现有VLA训练依赖成本极高的真实世界数据，移动操作任务需要耦合导航与操作、面对部分可观测场景，数据收集难度更大；现有零样本sim-to-real移动操作方法任务覆盖窄、真实世界泛化性差</li><li>核心思路是突破传统仅用仿真生成动作数据的局限，同时利用仿真提供动作轨迹、视觉语言监督、部署导向rollout数据三类互补监督，提升策略的跨环境泛化能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出SimVLA端到端sim-to-real VLA训练框架，首次实现完全无需真实世界遥操作数据的零样本移动操作策略训练</li><li>构建三类互补仿真数据源：<strong>SimAction</strong>（20万条轨迹、覆盖35个任务的大规模动作数据集，通过原子技能组合+运动规划生成）、<strong>SimVQA</strong>（100万条仿真真值生成的视觉语言监督样本，提供空间/几何/子任务级理解能力）、<strong>SimDeploy</strong>（2.2万条策略rollout生成的部署导向轨迹，覆盖策略诱导的状态分布）</li><li>设计知识隔离的两阶段训练流程：预训练阶段联合优化动作预测与SimVQA视觉语言任务，冻结VLM主干防止灾难性遗忘；后训练阶段混合SimAction与SimDeploy数据，开放主干梯度提升部署泛化性</li><li>在5个长时序移动操作任务、3种真实世界环境（模拟厨房、食品储藏室、真实家庭）的验证显示，SimVLA平均任务进度达54.4%，超过使用50条真实领域演示微调的基线；在分布外场景下泛化性远优于真实数据微调的基线</li><li>通过消融实验验证了多源仿真监督、预训练阶段、SimDeploy数据的必要性，揭示移动操作在分布外场景失效的核心原因是真实遥操作数据的轨迹覆盖不足</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>场景生成：采用<strong>Scene Synthesizer</strong>程序化生成5种常见厨房布局（岛型、L型、半岛型、单墙型、U型），随机化家具高度、布局、柜门配置、材质，引入Objaverse的多样化3D物体，基于GPU加速的Isaac Lab平台仿真</li><li>数据生成流程：</li></ul>
+<p> - <strong>SimAction</strong>：通过原子技能API（抓取、放置、倒水、开闭、导航、搜索等）组合生成任务级子目标，利用cuRobo并行运动规划生成无碰撞轨迹，采用BODex自动生成抓取姿态，支持3种移动操作机器人本体（Anubis、RB-Y1、ROBOTIS AI Worker），全程无需人工遥操作</p>
+<p> - <strong>SimVQA</strong>：基于仿真器特权状态自动生成涵盖物体位置、空间关系、几何属性、机器人状态、子任务进度的视觉问答样本，为VLM主干提供中间监督</p>
+<p> - <strong>SimDeploy</strong>：将预训练策略在RoboCasa、MolmoSpaces、SceneSmith等多样化仿真环境中零样本rollout，收集包含视角偏差、基座位姿偏差、抓取失败等真实部署状态分布的轨迹</p>
+<ul><li>训练流程：基于预训练VLM（<strong>PaliGemma</strong>）与流匹配动作专家（参考<strong>π0.5</strong>架构）构建模型。预训练阶段联合优化连续动作流匹配损失、token化动作自回归预测损失、SimVQA答案自回归预测损失，通过停止梯度防止随机初始化的动作头破坏VLM预训练权重；后训练阶段仅优化流匹配损失，混合SimAction与SimDeploy数据，允许梯度更新VLM主干</li><li>关键技术：采用混合系统识别同时匹配关节空间与末端执行器空间动力学，结合子目标域随机化，缩小仿真与现实差距</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：</li></ul>
+<p> - <strong>SimAction</strong>：约20万条轨迹，合计2778小时机器人数据，覆盖35个长时序移动操作任务，100个程序化生成的房屋场景</p>
+<p> - <strong>SimVQA</strong>：约100万条视觉问答样本</p>
+<p> - <strong>SimDeploy</strong>：2.2万条轨迹，合计460小时数据，来自RoboCasa、MolmoSpaces、SceneSmith的仿真rollout</p>
+<p> - 评估场景：模拟厨房、食品储藏室、真实家庭环境</p>
+<ul><li>模型规模：基于3B参数的<strong>PaliGemma</strong>预训练VLM，搭配流匹配动作专家，参考<strong>π0.5</strong>架构设计</li><li>训练资源：基于GPU加速的Isaac Lab仿真平台，采用cuRobo并行运动规划生成轨迹</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境与基准：</li></ul>
+<p> - 仿真基准：对比现有零样本sim-to-real移动操作基线<strong>MolmoB0T</strong>，在未见过的SimVLA厨房、MolmoSpaces环境评估</p>
+<p> - 真实世界基准：对比<strong>π0.5</strong>模型分别用50条、200条同领域真实演示微调的版本，评估环境包括模拟厨房（同分布ID、物体重分布OOD-pos、视觉随机OOD-vis）、食品储藏室、真实家庭</p>
+<ul><li>评估指标：任务进度（预定义子目标完成百分比）、任务成功率、SimVQA的3D位置误差、跨视角IoU</li><li>关键实验结果：</li></ul>
+<p> - 仿真场景下，SimVLA在SimVLA厨房的拾取任务成功率达91.2%，放置任务达79.5%，部分可观测场景下成功率达81.0%，远超MolmoB0T的9.7%、0.5%、0.0%</p>
+<p> - 真实世界平均任务进度达54.4%，超过使用50条真实演示微调的π0.5基线；在食品储藏室、真实家庭等跨环境场景下，真实数据微调的基线性能大幅下降（如200条演示微调的模型在真实家庭任务进度仅29%），而SimVLA保持稳定</p>
+<p> - 消融实验显示：移除SimVQA或tokenized SimAction均会导致性能下降，SimVQA使模型3D位置误差降至0.06m，跨视角IoU达0.61，提供关键的空间推理能力；SimDeploy对需要场景级泛化的任务（如把碗放进水槽/抽屉）提升显著，对物体级泛化的任务（倒水）提升有限</p>
+<p> - 移除预训练阶段会导致性能大幅下降，验证了预训练对泛化性的关键作用</p>
+<p> - 分析表明，移动操作在分布外场景失效的核心原因是真实遥操作数据的轨迹覆盖不足，SimVLA通过仿真生成的多样化轨迹有效缓解了该问题</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.11416/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">Rewiring Semantics, Dynamics, and Control: A Simple yet Effective Action-Centric Tri-Stream Transformer</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.11161/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">VGGTWorld-VLA: Intent-Conditioned 3D World Evolution for Autonomous Driving</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

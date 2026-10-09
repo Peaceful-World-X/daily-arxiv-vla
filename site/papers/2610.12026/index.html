@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Humanoid World Action Model With Joint State--Action Generation - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对人形机器人分层控制中高层动作参考与低层实际执行动作的动作-执行gap问题，现有VLA和WAM方法未显式建模执行后本体感知状态，难以关联动作与其物理结果和视觉变化 提出HWAM（Humanoid World Action Model），将高层动作与其时序对齐的执行后本体感知状态作为联合预测目标，通过多路径训练连接动作参考、执行状态与视觉过渡 在LimX OLI人形机器人的三个真实操作任务上验证有效性，取得当前最高…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.12026">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.12026.webp" alt="Humanoid World Action Model With Joint State--Action Generation" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对人形机器人分层控制中高层动作参考与低层实际执行动作的动作-执行gap问题，现有VLA和WAM方法未显式建模执行后本体感知状态，难以关联动作…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Humanoid World Action Model With Joint State--Action Generation</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.12026" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.12026" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.12026</span></div>
+            <p class="detail-summary">针对人形机器人分层控制中高层动作参考与低层实际执行动作的动作-执行gap问题，现有VLA和WAM方法未显式建模执行后本体感知状态，难以关联动作与其物理结果和视觉变化 提出HWAM（Humanoid World Action Model），将高层动作与其时序对齐的执行后本体感知状态作为联合预测目标，通过多路径训练连接动作参考、执行状态与视觉过渡 在LimX OLI人形机器人的三个真实操作任务上验证有效性，取得当前最高…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">8 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">主要作者所属机构为LimX Dynamics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.12026/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对人形机器人分层控制中高层动作参考与低层实际执行动作的动作-执行gap问题，现有VLA和WAM方法未显式建模执行后本体感知状态，难以关联动作…</p>
+  <ul class="reading-intro-points"><li>针对人形机器人分层控制中高层动作参考与低层实际执行动作的动作-执行gap问题，现有VLA和WAM方法未显式建模执行后本体感知状态，难以关联动作…</li><li>提出HWAM（Humanoid World Action Model），将高层动作与其时序对齐的执行后本体感知状态作为联合预测目标，通过多路径…</li><li>在LimX OLI人形机器人的三个真实操作任务上验证有效性，取得当前最高的任务成功率</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li>主要作者所属机构为<strong>LimX Dynamics</strong></li><li>作者Zhen Fu同时隶属于<strong>南方科技大学（Southern University of Science and Technology）</strong></li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对人形机器人分层控制中高层动作参考与低层实际执行动作的<strong>动作-执行gap</strong>问题，现有VLA和WAM方法未显式建模执行后本体感知状态，难以关联动作与其物理结果和视觉变化</li><li>提出<strong>HWAM（Humanoid World Action Model）</strong>，将高层动作与其时序对齐的执行后本体感知状态作为联合预测目标，通过多路径训练连接动作参考、执行状态与视觉过渡</li><li>在LimX OLI人形机器人的三个真实操作任务上验证有效性，取得当前最高的任务成功率</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>提出<strong>动作-执行后状态联合生成目标</strong>：将高层运动参考与其执行后记录的时序对齐本体感知状态拼接为联合预测目标，简单扩展传统WAM动作流，状态与动作通道共享表征、联合去噪</li><li>设计<strong>双向状态-动作-视觉 grounding 三路径训练框架</strong>：Policy路径仅基于当前观测生成联合轨迹匹配部署条件；前向动力学建模（FDM）基于动作和执行后状态预测未来视觉；逆向动力学建模（IDM）从视觉过渡重建联合轨迹，显式关联执行状态监督与视觉过渡</li><li>通过真实机器人实验验证方法有效性，在OLI任务套件三个任务上均取得最优成功率，其中Candy Picking任务成功率达70.6%</li><li>量化分析了分层控制下的动作-执行gap，证明移动人形机器人的动作-状态误差显著高于 stationary 双臂操作平台，为方法设计提供数据支撑</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>采用分层控制接口：高层HWAM策略输出运动参考动作（而非直接关节扭矩），低层全身跟踪控制器利用实时本体感知反馈适配参考动作，考虑动力学、平衡与接触约束</li><li>核心创新为联合状态-动作生成与双向 grounding：将高层动作$a_t$与其执行后本体状态$s_{t+1}$拼接为联合轨迹目标$\mathbf{Y}_t = [s_{t+h+1}; a_{t+h}]$，状态与动作通道共享轨迹表征、联合去噪，去噪过程中动作可访问部分去噪的状态信息</li><li>架构包含两个交互的专家模块：<strong>视频专家</strong>建模视觉过渡，<strong>状态-动作专家</strong>生成联合轨迹，两者通过路径依赖的掩码交叉注意力交换信息，共享参数</li><li>训练采用<strong>条件流匹配（Conditional Flow Matching）</strong>作为生成目标，对future video和联合轨迹两个生成模态分别设置独立噪声水平，以元素均方误差（MSE）作为损失函数，三个训练路径（FDM、IDM、Policy）均匀采样</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>使用的核心数据集为<strong>OLI人形机器人任务套件</strong>，包含3个任务：Candy Picking（1783个训练episodes，422个 held-out 验证集）、Object Collection（4220个训练episodes）、Plush-Toy Picking（404个训练episodes）；附录额外报告了<strong>ALOHA双臂平台</strong>的衣物折叠任务实验结果</li><li>模型基于<strong>FluxVLA Engine</strong>代码库构建，使用冻结的<strong>Wan2.2视频VAE</strong>、<strong>WanVideoDiT视频专家</strong>、<strong>ActionDiT状态-动作专家</strong>，语言编码采用<strong>UMT5-XXL</strong></li><li>训练资源：OLI实验使用16张<strong>A800 GPU</strong>，全局batch size为128，训练6个epoch，优化器为AdamW，学习率为$10^{-4}$，三个训练路径采样概率均等（各1/3）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：真实机器人实验在<strong>LimX OLI全尺寸人形机器人</strong>（31自由度，含两个7自由度手臂与BrainCo灵巧手）上开展，离线诊断在Candy Picking的 held-out 验证集上进行</li><li>主要评估指标：真实任务采用<strong>成功率（100c/n，c为成功 trial 数，n为总 trial 数）</strong>；开环预测采用关节角度平均绝对误差（MAE，单位：度）；未来视频预测采用PSNR与SSIM</li><li>关键实验结果：</li></ul>
+<p> - 真实机器人任务上，HWAM在三个OLI任务均取得最高成功率：Candy Picking达70.6%（对比次优的$\pi_{0.5}$的62.5%），Object Collection达46.7%，Plush-Toy Picking达73.3%（对比$\pi_{0.5}$的60.7%）</p>
+<p> - 开环预测中，HWAM的动作MAE最低，为3.816度，低于纯动作模型的4.024度；在真实轨迹条件下，HWAM的未来视频PSNR达23.336，显著高于纯动作模型的20.559，验证了执行后状态条件建模的价值</p>
+<p> - 控制消融实验显示，联合状态-动作目标与FDM/IDM/Policy训练方案存在协同效应：在VGM/Policy方案下添加状态-动作预测会降低成功率（60.0%→45.5%），而在FDM/IDM/Policy方案下会提升成功率（55.0%→73.3%），验证了方法设计的合理性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.12089/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">ManiUnit: A Manipulation Skill Dataset and Benchmark for Long-Horizon Tasks</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.12007/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">REACT: Rolling Denoising and Dual Decoupling for Reactive Robot Control with VLA Models</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tell Robot What Not to Do: A Negation Understanding Perspective - VLA / Vision-Language-Action 每日论文卡</title>
+    <meta name="description" content="针对现有视觉语言动作模型（VLA）仅擅长遵循肯定指令、无法正确处理“不要做什么”类否定约束的问题（例如收到“给我工具，除了刀”的指令时仍会递出刀具，存在安全风险），研究如何让预训练VLA在无需额外否定具身数据的情况下，实现否定指令的准确理解与执行 提出即插即用的轻量化框架NegaAlign，通过仅更新少量插入的模块参数，将预训练VLA适配为能遵循否定约束的模型，同时保留原有肯定指令执行能力 构建专用仿真基准Nega…" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23d75c2f'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' dominant-baseline='middle' font-size='30' font-family='Arial, sans-serif' fill='white'%3EV%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/style.css" />
+  </head>
+  <body class="detail-page" data-paper-id="2610.11952">
+    <div class="page-noise"></div>
+    <div class="page-blur page-blur-a"></div>
+    <div class="page-blur page-blur-b"></div>
+
+    <header class="header detail-page-header">
+      <div class="container">
+        <div class="detail-page-topbar">
+          <a class="back-link" href="../../index.html">返回列表</a>
+          <span class="detail-site-name">VLA / Vision-Language-Action 每日论文卡</span>
+        </div>
+
+        <div class="detail-hero-grid">
+          <div class="detail-hero-cover"><figure class="paper-figure-card paper-figure-card-detail">
+  <img class="paper-figure-image" src="../../assets/paper-images/2610.11952.webp" alt="Tell Robot What Not to Do: A Negation Understanding Perspective" loading="lazy" />
+  <figcaption class="paper-figure-caption">针对现有视觉语言动作模型（VLA）仅擅长遵循肯定指令、无法正确处理“不要做什么”类否定约束的问题（例如收到“给我工具，除了刀”的指令时仍会递出…</figcaption>
+</figure></div>
+          <div class="detail-hero-copy">
+            <p class="eyebrow">论文详情</p>
+            <h1 class="detail-page-title">Tell Robot What Not to Do: A Negation Understanding Perspective</h1>
+            <div class="detail-meta">2026-10-08 · <a href="http://arxiv.org/abs/2610.11952" target="_blank" rel="noopener noreferrer">原文</a> · <a href="https://hjfy.top/arxiv/2610.11952" target="_blank" rel="noopener noreferrer">翻译</a> · <span class="meta-pill">2610.11952</span></div>
+            <p class="detail-summary">针对现有视觉语言动作模型（VLA）仅擅长遵循肯定指令、无法正确处理“不要做什么”类否定约束的问题（例如收到“给我工具，除了刀”的指令时仍会递出刀具，存在安全风险），研究如何让预训练VLA在无需额外否定具身数据的情况下，实现否定指令的准确理解与执行 提出即插即用的轻量化框架NegaAlign，通过仅更新少量插入的模块参数，将预训练VLA适配为能遵循否定约束的模型，同时保留原有肯定指令执行能力 构建专用仿真基准Nega…</p>
+            <div class="detail-micro-meta">
+              <span class="meta-pill">7 分钟读完</span>
+              <span class="meta-pill">6 张阅读卡</span>
+              <span class="meta-pill">华南理工大学（South China University of Technology）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container detail-layout">
+      <div class="detail-shell">
+        <article id="detail-body" class="reading-flow"><section class="reading-card reading-card-intro">
+  <div class="reading-card-topline">
+    <span class="reading-badge">一眼看懂</span>
+    <a class="cover-preview-link" href="../../covers/2610.11952/">封面预览</a>
+  </div>
+  <p class="reading-intro-hook">针对现有视觉语言动作模型（VLA）仅擅长遵循肯定指令、无法正确处理“不要做什么”类否定约束的问题（例如收到“给我工具，除了刀”的指令时仍会递出…</p>
+  <ul class="reading-intro-points"><li>针对现有视觉语言动作模型（VLA）仅擅长遵循肯定指令、无法正确处理“不要做什么”类否定约束的问题（例如收到“给我工具，除了刀”的指令时仍会递出…</li><li>提出即插即用的轻量化框架NegaAlign，通过仅更新少量插入的模块参数，将预训练VLA适配为能遵循否定约束的模型，同时保留原有肯定指令执行能力</li><li>构建专用仿真基准NegaBench，系统评估机器人操作任务中的否定指令遵循能力</li></ul>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 01</span>
+    <span class="reading-step-note">研究单位</span>
+  </div>
+  <h2>研究单位</h2>
+  <div class="reading-card-content"><ul><li><strong>华南理工大学（South China University of Technology）</strong></li><li><strong>哈尔滨工业大学（Harbin Institute of Technology）</strong></li><li>论文标注同等贡献及通讯作者信息</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 02</span>
+    <span class="reading-step-note">论文概述</span>
+  </div>
+  <h2>论文概述</h2>
+  <div class="reading-card-content"><ul><li>针对现有<strong>视觉语言动作模型（VLA）</strong>仅擅长遵循肯定指令、无法正确处理“不要做什么”类否定约束的问题（例如收到“给我工具，除了刀”的指令时仍会递出刀具，存在安全风险），研究如何让预训练VLA在无需额外否定具身数据的情况下，实现否定指令的准确理解与执行</li><li>提出即插即用的轻量化框架<strong>NegaAlign</strong>，通过仅更新少量插入的模块参数，将预训练VLA适配为能遵循否定约束的模型，同时保留原有肯定指令执行能力</li><li>构建专用仿真基准<strong>NegaBench</strong>，系统评估机器人操作任务中的否定指令遵循能力</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 03</span>
+    <span class="reading-step-note">核心贡献</span>
+  </div>
+  <h2>核心贡献</h2>
+  <div class="reading-card-content"><ul><li>首次系统探究VLA中否定指令的理解与执行机制，揭示了语言语义如何在模型内部表征中编码，并逐步传播影响最终动作生成的规律</li><li>提出<strong>NegaAlign</strong>框架，包含<strong>否定转换层（NTL）</strong>与<strong>教师引导视觉对齐（TGVA）</strong>两个核心组件，仅需图像-语言监督即可高效实现否定指令适配，可训练参数仅11.6M</li><li>构建<strong>NegaBench</strong>基准，涵盖5类否定场景共10个仿真操作任务，为否定指令遵循能力的评估提供标准化测试平台</li><li>在<strong>GR00T</strong>、<strong>π₀</strong>、<strong>π₀.5</strong>三个主流VLA模型上的仿真与真实机器人实验证明，NegaAlign可将否定指令成功率提升最高85.85个百分点，同时几乎不损失肯定指令性能</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 04</span>
+    <span class="reading-step-note">方法描述</span>
+  </div>
+  <h2>方法描述</h2>
+  <div class="reading-card-content"><ul><li>监督构建：从现有肯定指令演示数据中，通过人工设计的否定指令构建教师-学生指令对，生成包含可满足指令集、排除指令的否定监督关系，无需额外收集否定具身数据</li><li><strong>否定转换层（NTL）</strong>：插入到VLM骨干的中间层，将指令表征分离为内容表征与极性表征，通过轻量变换层修正否定指令的内容表征，再通过门控机制仅在输入为否定指令时应用修正，避免影响肯定指令的执行</li><li><strong>教师引导视觉对齐（TGVA）</strong>：在NTL之后，计算学生分支与冻结教师分支的指令相关视觉token的余弦距离，通过加权对齐将语言层面的否定语义修正传播到动作生成依赖的视觉表征中</li><li>训练流程：采用两阶段训练，第一阶段在肯定演示数据上微调VLA获得基础能力，第二阶段冻结VLA全部预训练参数，仅训练插入的NTL模块，使用构建的视觉-语言监督完成否定适配</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 05</span>
+    <span class="reading-step-note">数据集与资源</span>
+  </div>
+  <h2>数据集与资源</h2>
+  <div class="reading-card-content"><ul><li>数据集：基于<strong>RoboTwin 2.0</strong>仿真环境构建的<strong>NegaBench</strong>基准，包含10个操作场景，覆盖对象排除、属性排除、相对比较、目标位置排除、多约束组合5类否定场景；真实世界实验采用<strong>xArm</strong>机器人，部署于5个家庭安全关键场景</li><li>模型规模：在<strong>GR00T</strong>（总参数3.2B）、<strong>π₀</strong>（总参数3.6B）、<strong>π₀.5</strong>（总参数3.7B）三个VLA模型上验证，NegaAlign仅需插入11.6M可训练参数，总参数量与原模型一致</li><li>训练资源：原文未明确标注具体GPU/TPU硬件配置，单模型微调时长在2.7~4.6小时之间，推理延迟与原VLA基本一致（约480~494ms）</li></ul></div>
+</section>
+<section class="reading-card reading-card-section">
+  <div class="reading-card-topline">
+    <span class="reading-step">Card 06</span>
+    <span class="reading-step-note">评估与结果</span>
+  </div>
+  <h2>评估与结果</h2>
+  <div class="reading-card-content"><ul><li>评估环境：仿真环境为RoboTwin 2.0，真实世界为xArm系列机械臂</li><li>评估指标：肯定指令成功率（Pos. SR）、否定指令成功率（Neg. SR）、可训练参数规模、微调时长、推理延迟</li><li>关键实验结果：</li></ul>
+<p> - 仿真基准NegaBench上，仅用肯定数据训练的基线模型否定成功率极低（最高仅15.40%），NegaAlign将GR00T、π₀、π₀.5的否定成功率分别提升至57.75%、63.30%、88.45%，平均提升47.9~85.85个百分点，同时肯定成功率保持在68.41%~92.51%区间，与原模型基本持平</p>
+<p> - 消融实验证明NTL插入VLM中间层效果最优，浅层或深层插入都会导致否定性能下降；TGVA是传播否定语义的关键，移除后否定成功率从88.45%暴跌至21.35%，证明视觉中介机制的必要性</p>
+<p> - 真实世界实验中，原π₀.5的否定成功率仅12.4%，经NegaAlign适配后提升至88.8%，肯定成功率仅从91.6%微降至90.8%，验证了方法的实际落地有效性</p></div>
+</section></article>
+        <aside id="detail-toc" class="detail-toc hidden" aria-label="内容目录">
+          <p class="detail-toc-title">阅读目录</p>
+          <nav id="detail-toc-nav" class="detail-toc-nav"></nav>
+        </aside>
+      </div>
+      <nav class="paper-nav"><a class="paper-nav-link paper-nav-prev" href="../../papers/2610.11971/"><span class="paper-nav-label">← 上一篇</span><span class="paper-nav-title">CAPABLE: Capability-Aware Policy Adaptation via Behavioral Latent Encoding</span></a>
+      <a class="paper-nav-link paper-nav-next" href="../../papers/2610.11771/"><span class="paper-nav-label">下一篇 →</span><span class="paper-nav-title">PathTime-VLA: Path-Time Decoupling for Factorized Post-Training of Vision-Language-Action Policies</span></a></nav>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>内容来自 <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer">arXiv.org</a>，阅读卡片由静态站点生成器构建。</p>
+      </div>
+    </footer>
+
+    <script src="../../assets/paper.js"></script>
+  </body>
+</html>
