@@ -1,5 +1,51 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-13 | ChunkAct: Action Chunking for Agentic Robotics | http://arxiv.org/abs/2610.18874 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study | http://arxiv.org/abs/2610.18869 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | EmbodiedEvo: Self-improving Coding Agents for Physical Intelligence | http://arxiv.org/abs/2610.18867 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | Interaction Latents as Actions for Contact-Rich Manipulation | http://arxiv.org/abs/2610.18855 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | LIBERO-RIG: A Hardware-Setup Robustness Benchmark for Vision-Language-Action Models | http://arxiv.org/abs/2610.18843 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | SEAR: Self-Evolving Agentic Robotics | http://arxiv.org/abs/2610.18792 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | EqC: Equilibrium Energy Control for Introspective Lifelong Robot Learning | http://arxiv.org/abs/2610.18790 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | GreenWAM: A World Foundation Model for Robotics | http://arxiv.org/abs/2610.18774 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | ForkCast: Predictive Recovery for Vision-Language-Action Policies via Counterfactual Futures | http://arxiv.org/abs/2610.18650 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | ACCRUE: Continual Off-Policy Reinforcement Learning for Robot Foundation Models | http://arxiv.org/abs/2610.18596 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | WAVE-0: Bridging VLA Policies and WAMs with Lightweight Latent Future Prediction | http://arxiv.org/abs/2610.18568 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | Benchmarking Interaction-Oriented Aerial Mobility across Heterogeneous Environments | http://arxiv.org/abs/2610.18381 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | DR-VLA: Learning Human-Like Quadruped Navigation from Egocentric Web Videos via Domain-Invariant Scene Representations | http://arxiv.org/abs/2610.18373 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | TRACE: Efficient Transfer Learning for Neural Whole-Body Control Across Humanoid Embodiments | http://arxiv.org/abs/2610.17999 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | Breaking the Average: Overcoming Convergent Defaults in Robotic Manipulation via Diagnostic Chain-of-Thought and Structured Guidance | http://arxiv.org/abs/2610.17983 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | WoVR+: World Model as Reliable Simulator for Versatile VLA Policy Optimization with RL | http://arxiv.org/abs/2610.17922 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | The Human--VLA Communication Gap: What Humans Leave Implicit and What Policies Cannot Recover | http://arxiv.org/abs/2610.17746 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | TacitVLA: Reasoning Vision-Language-Action Models Without Reasoning Latency | http://arxiv.org/abs/2610.17540 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation | http://arxiv.org/abs/2610.17521 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | AUGUstus: Autonomous Driving VLA Model with Unified Generation and Understanding | http://arxiv.org/abs/2610.16985 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | UniLAP: A Unified Latent Action Policy for Cross-Embodiment Manipulation | http://arxiv.org/abs/2610.16969 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | LIBERO-Industry: Benchmarking Robotic Manipulation under Industrial Process Constraints | http://arxiv.org/abs/2610.16782 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | Language2Drive: Do Vision-Language-Action Models Really Follow the Instructions in Autonomous Driving? | http://arxiv.org/abs/2610.16634 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | VLA-GAUGE: Systematically Evaluating Generalization and Robustness in Vision-Language-Action Models | http://arxiv.org/abs/2610.16567 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | Trust-Calibrated VLA Policy Post-Training with Evolving Imagination | http://arxiv.org/abs/2610.16517 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | Listen Before Act: Audio-Conditioned Robot Manipulation with ListenVLA | http://arxiv.org/abs/2610.16313 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks | http://arxiv.org/abs/2610.16238 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | FlowVLA: Enabling World Dynamics Understanding through Pluggable 3D Flow Learning | http://arxiv.org/abs/2610.16160 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-11 | ADAPT: Audio-Depth Action Planning with Transition-Aware Rewards for Lights-Out Industrial Navigation | http://arxiv.org/abs/2610.15956 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-11 | $Δ$ Flow Matching for Robot Foundation Models | http://arxiv.org/abs/2610.15794 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-11 | SurgiCLAW: An Interpretable Atomic-Skill Agent for Precision Robotic Micromanipulation | http://arxiv.org/abs/2610.15766 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-11 | Recovering Low-Bit Failures in Vision-Language-Action Policies via Quantization-Conditioned Reinforcement Learning | http://arxiv.org/abs/2610.15675 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-11 | A Persian Vision-Language-Action Dataset and Benchmark for Ambiguity- and Infeasibility-Aware Instruction-to-Plan Grounding | http://arxiv.org/abs/2610.15666 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-11 | Exploring the Limits of Combinatorial Generalization in Embodied Manipulation | http://arxiv.org/abs/2610.15425 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-11 | CoLA: Multi-VLA Coordination via Learned Adapters | http://arxiv.org/abs/2610.15337 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-10 | Barrier-Constrained Guidance For Real-time Asynchronous VLA Execution | http://arxiv.org/abs/2610.14997 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-10 | CFG-Policy: Unified Diffusion Policy Learning Framework via Classifier-free Guidance | http://arxiv.org/abs/2610.14936 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-10 | Verify, Act, Distill: Turning Test-Time Compute into Test-Time Adaptation for Vision-Language-Action Models | http://arxiv.org/abs/2610.14885 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-10 | DEFT-VLA: Stage-Localized Force Specialization for Contact-Rich Robotic Manipulation | http://arxiv.org/abs/2610.14854 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-10 | YOUDrive: Driving Style as a Composable Direction for End-to-End Autonomous Driving | http://arxiv.org/abs/2610.14802 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-10 | PRISM: Precision Forcing for Generalist Vision-Language-Action Policies | http://arxiv.org/abs/2610.14704 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-10 | Successful but Unsafe: An Analytical Benchmark for Revealing Collisions in Vision-and-Language Navigation | http://arxiv.org/abs/2610.14682 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-10 | Flow-Support-Weighted Proposals for Test-Time Verified VLA Policies | http://arxiv.org/abs/2610.14588 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-10 | Red-Teaming of Vision-Language-Action Models via Quality Diversity Environment Generation | http://arxiv.org/abs/2610.14415 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-09 | Memory Without Curation: Learning Multi-Stream Latent Memory for Robot Policies | http://arxiv.org/abs/2610.14406 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-09 | Axiom-0: Hierarchical Self-Refinement for Vision-Language-Action Policies | http://arxiv.org/abs/2610.14155 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-09 | Splat2Act: From Captured Scenes to Personalized VLA Manipulation | http://arxiv.org/abs/2610.13945 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-09 | Noise Space Learning for VLA Adaptation | http://arxiv.org/abs/2610.13943 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-09 | LAPT-Scale: Scaling Embodied Policies with Latent Action Pre-Training on Human Videos | http://arxiv.org/abs/2610.13732 | <details><summary>展开</summary>待生成</details> |
