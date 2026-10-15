@@ -1,5 +1,30 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-14 | SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving | http://arxiv.org/abs/2610.20609 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Graph-Reweighted Behavior Cloning with Human Interventions for Precise Robotic Manipulation | http://arxiv.org/abs/2610.20504 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents | http://arxiv.org/abs/2610.20474 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Towards Agentic Robots: Model, Data, Environment, and Harness | http://arxiv.org/abs/2610.20442 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | When Do Discrete Actions Make Good Continuous Controllers? | http://arxiv.org/abs/2610.20429 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Human Demonstrations as Post-Training Data for Any Robot Body: Retargeting the Object, Not the Hand | http://arxiv.org/abs/2610.20351 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | ObjDream: Guiding Vision-Language-Action Models with Object-Level Understanding and Future State Prediction | http://arxiv.org/abs/2610.20223 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | FoveaVLA: Foveation Actions Replace the Wrist Camera in VLAs | http://arxiv.org/abs/2610.20064 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | MorphAct: Robot Policies Morphing with the Worlds They Act In | http://arxiv.org/abs/2610.20019 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | What Matters for World Modeling in Vision-Language-Action Models? | http://arxiv.org/abs/2610.19825 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Coordi-pi: Coordination-Aware Dual-Hand Action Representation for Bimanual Dexterous Manipulation | http://arxiv.org/abs/2610.19753 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | One-shot Human Video-Guided Adaptation for Vision-Language-Action Models | http://arxiv.org/abs/2610.19746 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | ACRO: Actor-Critic Rollout Orchestration | http://arxiv.org/abs/2610.19677 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Accelerating VLA Inference with Perturbation Informed Execution | http://arxiv.org/abs/2610.19656 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | SPECTRA-VLA: Base-Fine Hyperspectral Token Transfer at Frozen Vision-Language-Action Interfaces | http://arxiv.org/abs/2610.19651 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | ForceBench: Benchmarking Force Integration for Robotic Manipulation | http://arxiv.org/abs/2610.19604 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System | http://arxiv.org/abs/2610.19600 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Back on Track: Deployment-time Policy Improvement via World Model Planning | http://arxiv.org/abs/2610.19579 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | VLRLA: Deployment-Time Adaptation of Vision-Language-Action Models through In-Context Reinforcement Learning | http://arxiv.org/abs/2610.19517 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Robota-Embed: Unified VLA Embeddings for Robot In-Context Learning and Evolution | http://arxiv.org/abs/2610.19495 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Active Generative Simulation: Meta-Learning What to Simulate for Sim-and-Real Policy Co-Training | http://arxiv.org/abs/2610.19479 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Paraphrase Consensus Is Not Self-Consistency: Instruction Reliance and Robustness in VLA Policies | http://arxiv.org/abs/2610.19438 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | PACER: Process-Aware VLA Policy Learning from Human Corrections for Robotic Disassembly | http://arxiv.org/abs/2610.19248 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | End-to-End Vision-Language-Action Policies for Autonomous Lunar Rover Docking | http://arxiv.org/abs/2610.19224 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | Post-Training, Finetuning, and Steering:A Field Guide for Curating Training Data | http://arxiv.org/abs/2610.19143 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-13 | ChunkAct: Action Chunking for Agentic Robotics | http://arxiv.org/abs/2610.18874 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-13 | What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study | http://arxiv.org/abs/2610.18869 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-13 | EmbodiedEvo: Self-improving Coding Agents for Physical Intelligence | http://arxiv.org/abs/2610.18867 | <details><summary>展开</summary>待生成</details> |
