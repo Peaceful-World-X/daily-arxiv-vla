@@ -1,5 +1,25 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-15 | LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation | http://arxiv.org/abs/2610.22372 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | REKI: Registering Knowledge in VLAs | http://arxiv.org/abs/2610.22178 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | FastVLA: Task-Conditioned and Temporally Adaptive Visual Token Compression for Efficient Vision-Language-Action Models | http://arxiv.org/abs/2610.22146 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | Memory as Weights: Internalizing Long-Term History for Streaming Videos | http://arxiv.org/abs/2610.22070 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | VeriVLA: Adaptive Test-Time Verification for Flow-Based VLAs with Latent World Models | http://arxiv.org/abs/2610.21985 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | TS-WAM: Temporal Latent Actions and World-Action Coupling for Vision-Language Robot Control | http://arxiv.org/abs/2610.21922 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | What Should Robot Policies Learn to Predict? Rethinking Supervision Targets in Vision-Language-Action Learning | http://arxiv.org/abs/2610.21915 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | Multi-Teacher On-Policy Distillation for Flow-Based Vision-Language-Action Models | http://arxiv.org/abs/2610.21522 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance | http://arxiv.org/abs/2610.21453 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | Policy-Aligned Predictive Verification for Adaptive VLA Action-Chunk Execution | http://arxiv.org/abs/2610.21434 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | Fast-VLA: You Only Think Once for Robot Manipulation | http://arxiv.org/abs/2610.21389 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | LTM: Latent Transition Based In-Context Memory for Vision-Language-Action Models | http://arxiv.org/abs/2610.21362 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | VLA-$Δ$: Learning Physical State Transition for Vision-Language-Action Models | http://arxiv.org/abs/2610.21306 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | Do VLAs Really Follow Instructions? Diagnosing How-Level Instruction Following in Vision-Language-Action Models | http://arxiv.org/abs/2610.21251 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | An Agentic Framework for Proactive Robots with Procedural Assistance Memory | http://arxiv.org/abs/2610.21211 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | When to Ask for Help: A Decision-Theoretic Account and Measurement Standard for Slow-Module Scheduling in Dual-System Vision-Language-Action Models | http://arxiv.org/abs/2610.21160 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | KODA: Kinematics--Observation Data Alignment for Humanoid Learning from Human Egocentric Demonstration | http://arxiv.org/abs/2610.21152 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | A Phenomenology of Neural Geometry in Vision-Language-Action Models | http://arxiv.org/abs/2610.20840 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Multi-Dimensional Featurizers Yield Fine-Grained Steering and Data Shaping in Robot Foundation Models | http://arxiv.org/abs/2610.20767 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-14 | Causal Analysis of Robot Foundation Models Enables Efficiency Gains | http://arxiv.org/abs/2610.20750 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-14 | SafeDriveVLA: Navigation-Conditioned World Model Dreaming for Conflict-Aware End-to-End Autonomous Driving | http://arxiv.org/abs/2610.20609 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-14 | Graph-Reweighted Behavior Cloning with Human Interventions for Precise Robotic Manipulation | http://arxiv.org/abs/2610.20504 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-14 | AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents | http://arxiv.org/abs/2610.20474 | <details><summary>展开</summary>待生成</details> |
