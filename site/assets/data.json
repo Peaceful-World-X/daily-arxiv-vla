@@ -1,5 +1,317 @@
 [
   {
+    "date": "2026-10-16",
+    "title": "Enhancing Visual Task-Redirection Attacks on Vision-Language-Action Models via Closed-Loop Optimization",
+    "link": "http://arxiv.org/abs/2610.23566",
+    "arxiv_id": "2610.23566",
+    "detail_path": "papers/2610.23566/",
+    "cover_path": "covers/2610.23566/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.23566.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "title": "Look Before You Act: Bridging Active Perception and Vision-Language-Action Models via Observation-Aligned Data Adaptation",
+    "link": "http://arxiv.org/abs/2610.23378",
+    "arxiv_id": "2610.23378",
+    "detail_path": "papers/2610.23378/",
+    "cover_path": "covers/2610.23378/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.23378.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "title": "Beyond Success Rate: Interventional Evaluation of Memory in Vision-Language-Action Systems",
+    "link": "http://arxiv.org/abs/2610.23372",
+    "arxiv_id": "2610.23372",
+    "detail_path": "papers/2610.23372/",
+    "cover_path": "covers/2610.23372/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.23372.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "title": "From Sliding Windows to Self-evolving Lifelong Memory: A Dual-perspective Survey of Memory Paradigms for Long-Horizon Robotics VLA Models",
+    "link": "http://arxiv.org/abs/2610.23319",
+    "arxiv_id": "2610.23319",
+    "detail_path": "papers/2610.23319/",
+    "cover_path": "covers/2610.23319/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "title": "CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots",
+    "link": "http://arxiv.org/abs/2610.23288",
+    "arxiv_id": "2610.23288",
+    "detail_path": "papers/2610.23288/",
+    "cover_path": "covers/2610.23288/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.23288.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "title": "NestedVLA: Learning to Consolidate and Generate Skills for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2610.23271",
+    "arxiv_id": "2610.23271",
+    "detail_path": "papers/2610.23271/",
+    "cover_path": "covers/2610.23271/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.23271.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "title": "GRASP: Global-Local Representation Alignment and Spatial-Physical Grounding for Bimanual Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2610.23123",
+    "arxiv_id": "2610.23123",
+    "detail_path": "papers/2610.23123/",
+    "cover_path": "covers/2610.23123/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.23123.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "title": "Unifying Embodied Foundation Models via a Model-to-Policy Formulation",
+    "link": "http://arxiv.org/abs/2610.23053",
+    "arxiv_id": "2610.23053",
+    "detail_path": "papers/2610.23053/",
+    "cover_path": "covers/2610.23053/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.23053.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "title": "VLA-Fabric: Learning Interaction for Composable Multi-Arm VLA Agents",
+    "link": "http://arxiv.org/abs/2610.23018",
+    "arxiv_id": "2610.23018",
+    "detail_path": "papers/2610.23018/",
+    "cover_path": "covers/2610.23018/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.23018.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-16",
+    "title": "MambaAct: Efficient Mamba Action Experts for Flow-Matching Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2610.22951",
+    "arxiv_id": "2610.22951",
+    "detail_path": "papers/2610.22951/",
+    "cover_path": "covers/2610.22951/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.22951.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-15",
+    "title": "Embodiment-Classifier Guidance: Transferring Frozen VLAs Across Robot Dynamics without Demonstrations",
+    "link": "http://arxiv.org/abs/2610.22576",
+    "arxiv_id": "2610.22576",
+    "detail_path": "papers/2610.22576/",
+    "cover_path": "covers/2610.22576/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.22576.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-15",
+    "title": "When Plans Change, Remember: Replanning-Guided Visual Memory for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2610.22556",
+    "arxiv_id": "2610.22556",
+    "detail_path": "papers/2610.22556/",
+    "cover_path": "covers/2610.22556/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.22556.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-10-15",
     "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
     "link": "http://arxiv.org/abs/2610.22372",

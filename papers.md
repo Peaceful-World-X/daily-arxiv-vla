@@ -1,5 +1,17 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-16 | Enhancing Visual Task-Redirection Attacks on Vision-Language-Action Models via Closed-Loop Optimization | http://arxiv.org/abs/2610.23566 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-16 | Look Before You Act: Bridging Active Perception and Vision-Language-Action Models via Observation-Aligned Data Adaptation | http://arxiv.org/abs/2610.23378 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-16 | Beyond Success Rate: Interventional Evaluation of Memory in Vision-Language-Action Systems | http://arxiv.org/abs/2610.23372 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-16 | From Sliding Windows to Self-evolving Lifelong Memory: A Dual-perspective Survey of Memory Paradigms for Long-Horizon Robotics VLA Models | http://arxiv.org/abs/2610.23319 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-16 | CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots | http://arxiv.org/abs/2610.23288 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-16 | NestedVLA: Learning to Consolidate and Generate Skills for Vision-Language-Action Models | http://arxiv.org/abs/2610.23271 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-16 | GRASP: Global-Local Representation Alignment and Spatial-Physical Grounding for Bimanual Robotic Manipulation | http://arxiv.org/abs/2610.23123 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-16 | Unifying Embodied Foundation Models via a Model-to-Policy Formulation | http://arxiv.org/abs/2610.23053 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-16 | VLA-Fabric: Learning Interaction for Composable Multi-Arm VLA Agents | http://arxiv.org/abs/2610.23018 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-16 | MambaAct: Efficient Mamba Action Experts for Flow-Matching Vision-Language-Action Models | http://arxiv.org/abs/2610.22951 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | Embodiment-Classifier Guidance: Transferring Frozen VLAs Across Robot Dynamics without Demonstrations | http://arxiv.org/abs/2610.22576 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | When Plans Change, Remember: Replanning-Guided Visual Memory for Vision-Language-Action Models | http://arxiv.org/abs/2610.22556 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-15 | LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation | http://arxiv.org/abs/2610.22372 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-15 | REKI: Registering Knowledge in VLAs | http://arxiv.org/abs/2610.22178 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-15 | FastVLA: Task-Conditioned and Temporally Adaptive Visual Token Compression for Efficient Vision-Language-Action Models | http://arxiv.org/abs/2610.22146 | <details><summary>展开</summary>待生成</details> |
