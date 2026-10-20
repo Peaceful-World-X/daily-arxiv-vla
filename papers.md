@@ -1,5 +1,30 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-19 | HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation | http://arxiv.org/abs/2610.26765 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | Robot Learning with Vision-Language-Action Models for Agricultural Manipulation | http://arxiv.org/abs/2610.26717 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | HoloCosm: Beyond Single-Metric Benchmark Compression Across Multiple Metrics | http://arxiv.org/abs/2610.26714 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | HAF-VLA: Hierarchical Action Flow Framework for Humanoid Vision-Language-Action Control | http://arxiv.org/abs/2610.26584 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | SPAR: Structural Pruning and Action Recovery for Vision-Language-Action Models | http://arxiv.org/abs/2610.26487 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | ALIGN: Aligning Condition Estimation and Expression in Advantage-Conditioned Behavior Cloning | http://arxiv.org/abs/2610.26455 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | Robotic Photography System based on Vision-Language-Action Model | http://arxiv.org/abs/2610.26287 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | FR-VLA: Implicit Force Reasoning VLA for Contact-Rich Manipulation | http://arxiv.org/abs/2610.25981 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | PaceVLA: Adaptive Temporal Action Quantization in Vision-Language-Action Models | http://arxiv.org/abs/2610.25961 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | CondenseVLA: Learnable History Condensation for Efficient Multi-Frame VLA | http://arxiv.org/abs/2610.25927 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | Vision-Language-Delta-Action: Learning Compact Deltas as Actionable Transition Interfaces for Robotic Manipulation | http://arxiv.org/abs/2610.25874 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | Think Densely, Act Sparsely: Latent Expert Cognitive Chains for Vision-Language-Action Autonomous Driving | http://arxiv.org/abs/2610.25734 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | Vector-Quantized World Model: Latent Feedback Motion Planning for Robot Manipulation | http://arxiv.org/abs/2610.25600 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-18 | AQUAACT: A Joystick-Level Underwater Teleoperation Dataset and Closed-Loop Benchmark | http://arxiv.org/abs/2610.25534 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-18 | BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks | http://arxiv.org/abs/2610.25459 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-18 | AeroDASH: Asynchronous Vision-Language-Action Control for Continuous UAV Flight | http://arxiv.org/abs/2610.25407 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-18 | VLA-Rolling: Fewer Denoising Steps, Better Control via Adaptive Action Reuse | http://arxiv.org/abs/2610.25043 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-17 | SARAM: Sparse Adapter Allocation with Reuse and Merging for Lifelong Robot Learning | http://arxiv.org/abs/2610.24804 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-17 | EndoVLA-OOV: Language-Conditioned Out-of-View Target Acquisition in Robotic Endoscopy | http://arxiv.org/abs/2610.24747 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-17 | Relational Spatial Alignment for Vision-Language-Action Models | http://arxiv.org/abs/2610.24705 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-17 | Scene-Adaptive VLA: Efficient Autonomous Driving via Dynamic Layer Routing | http://arxiv.org/abs/2610.24590 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-17 | LIBERO-Pro2.0: A Benchmark for Evaluating the Robustness of Embodied Foundation Models | http://arxiv.org/abs/2610.24587 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-17 | Retrieval-triggered Action Projection Adjustment for Frozen VLA Policies: An Empirical Study and Failure Analysis | http://arxiv.org/abs/2610.24573 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-17 | GazeAct: A Human-Gaze-Annotated Manipulation Dataset for Attention-Regularized Policies | http://arxiv.org/abs/2610.24507 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-17 | FlashRT-PAI: Fast Kernels Are Not Fast Pipelines for Physical AI Inference | http://arxiv.org/abs/2610.24349 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-16 | Enhancing Visual Task-Redirection Attacks on Vision-Language-Action Models via Closed-Loop Optimization | http://arxiv.org/abs/2610.23566 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-16 | Look Before You Act: Bridging Active Perception and Vision-Language-Action Models via Observation-Aligned Data Adaptation | http://arxiv.org/abs/2610.23378 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-16 | Beyond Success Rate: Interventional Evaluation of Memory in Vision-Language-Action Systems | http://arxiv.org/abs/2610.23372 | <details><summary>展开</summary>待生成</details> |
