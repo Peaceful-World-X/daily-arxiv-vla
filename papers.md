@@ -1,5 +1,30 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-21 | Agentic World Action Models | http://arxiv.org/abs/2610.30136 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | AtomicRL: Atomic Reinforcement Learning for Long-Horizon Robotic Manipulation | http://arxiv.org/abs/2610.30097 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | SP-HLM: Sparse-Pose-Driven Motion Generation and Whole-Body Control for Humanoid Loco-Manipulation | http://arxiv.org/abs/2610.30044 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | GeoMem-VLA: Internalizing 3D Scene Understanding into Temporal Memory for Vision-Language-Action Models | http://arxiv.org/abs/2610.29866 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | Post-hoc Epistemic Uncertainty for Vision-Language-Action Policies | http://arxiv.org/abs/2610.29730 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | FlowVLA: Learning Flow-Aware Physical Completion for Quantitative Robotic Pouring | http://arxiv.org/abs/2610.29692 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | From Association to Decision Value: Testing Paired Instruction Dependence for VLA Corpus Selection | http://arxiv.org/abs/2610.29646 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation | http://arxiv.org/abs/2610.29560 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | Plan First, Act Later: Streaming Reasoning for Executable Memory in Robot Control | http://arxiv.org/abs/2610.29329 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | NavBind: Diagnosing Instruction-Action Binding at Route Forks in Navigation VLAs | http://arxiv.org/abs/2610.29203 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | SimPT: An Automated Simulation Framework for Intervention-Based VLA Post-Training | http://arxiv.org/abs/2610.29161 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | Real2Sem2Real: 3D Semantic Augmentations for Robot Learning from a Single Human RGB Demonstration | http://arxiv.org/abs/2610.28880 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | UniWALM: Unified World Action Language Model for Embodied Robot Control | http://arxiv.org/abs/2610.28626 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics | http://arxiv.org/abs/2610.28589 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | Perceives but Doesn't Brake: A Perception-Action Binding Gap in Reasoning Driving VLAs | http://arxiv.org/abs/2610.28184 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | Reasoning as a Distribution: Generative Plan Latents for Vision-Language-Action Models | http://arxiv.org/abs/2610.28166 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | From Predictive Geometry to Action: Learning Complementary Predictive Representations for Embodied Manipulation | http://arxiv.org/abs/2610.28164 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | FIT-MAC: A Closed-Loop Multi-Agent Framework for Robust Vision-Language-Action Models | http://arxiv.org/abs/2610.28109 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | PACT-VLA: Speculative Action-Chunk Verification with Pre-Commit Observations | http://arxiv.org/abs/2610.28019 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | EventSync: Event-Driven Memory Updates for History-Dependent Manipulation | http://arxiv.org/abs/2610.27917 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | RoboCasa-Shift: Stage-Aware Robustness Evaluation of Vision-Language-Action Policies in Long-Horizon Household Manipulation | http://arxiv.org/abs/2610.27861 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | VLA-Retain: Benchmarking Cross-Dimension Effects of Vision Tuning in VLAs | http://arxiv.org/abs/2610.27698 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | PLaCA: Learning Patch-Level Future Latent Change for Action Generation | http://arxiv.org/abs/2610.27657 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | KPHarness: Co-Evolving Knowledge and Probing for Long-Horizon Gaming Harnesses | http://arxiv.org/abs/2610.27417 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-19 | What Would Removing This Corruption Change? Failure Attribution for Vision-Language-Action Models | http://arxiv.org/abs/2610.27277 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-19 | HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation | http://arxiv.org/abs/2610.26765 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-19 | Robot Learning with Vision-Language-Action Models for Agricultural Manipulation | http://arxiv.org/abs/2610.26717 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-19 | HoloCosm: Beyond Single-Metric Benchmark Compression Across Multiple Metrics | http://arxiv.org/abs/2610.26714 | <details><summary>展开</summary>待生成</details> |
