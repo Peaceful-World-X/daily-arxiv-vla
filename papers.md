@@ -1,5 +1,18 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-22 | Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success | http://arxiv.org/abs/2610.31670 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | Progress Probes $P^2$: Lightweight Runtime Monitoring for Vision-Language-Action Models | http://arxiv.org/abs/2610.31613 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | Echo: Coupled Action and Task Status Signal Denoising for Vision Language Action Models | http://arxiv.org/abs/2610.31569 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | FastHarness: Experience-Driven Review Scheduling for Vision-Language-Action Policies | http://arxiv.org/abs/2610.31427 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | FocusVLA: Future-Intent Guided Dynamic View Routing for Vision-Language-Action Models | http://arxiv.org/abs/2610.31423 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation | http://arxiv.org/abs/2610.31166 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games | http://arxiv.org/abs/2610.31162 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | Measuring the Reasoning-Action Coupling in Driving Vision-Language-Action Models through Counterfactuals | http://arxiv.org/abs/2610.30953 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | DRILL: Training World Models to Improve Policies, Not Predict Pixels | http://arxiv.org/abs/2610.30814 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | When One Step Is Enough: An Empirical Study of Euler Integration in Flow-Matching Policies | http://arxiv.org/abs/2610.30735 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | SmolVLA-MoE: Sparse Mixture-of-Experts for Efficient Multi-Task Robotic Manipulation | http://arxiv.org/abs/2610.30732 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | Co^2Gen: Collaboratively Generating Task Plans for Decentralized Multi-Robot and Human Collaboration | http://arxiv.org/abs/2610.30671 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | Tactile-Based Robotic Manipulation: From Mechanics-Driven to Data-Driven Perspectives | http://arxiv.org/abs/2610.30438 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-21 | Agentic World Action Models | http://arxiv.org/abs/2610.30136 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-21 | AtomicRL: Atomic Reinforcement Learning for Long-Horizon Robotic Manipulation | http://arxiv.org/abs/2610.30097 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-21 | SP-HLM: Sparse-Pose-Driven Motion Generation and Whole-Body Control for Humanoid Loco-Manipulation | http://arxiv.org/abs/2610.30044 | <details><summary>展开</summary>待生成</details> |

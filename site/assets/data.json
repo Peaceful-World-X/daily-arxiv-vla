@@ -1,5 +1,343 @@
 [
   {
+    "date": "2026-10-22",
+    "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+    "link": "http://arxiv.org/abs/2610.31670",
+    "arxiv_id": "2610.31670",
+    "detail_path": "papers/2610.31670/",
+    "cover_path": "covers/2610.31670/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.31670.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "Progress Probes $P^2$: Lightweight Runtime Monitoring for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2610.31613",
+    "arxiv_id": "2610.31613",
+    "detail_path": "papers/2610.31613/",
+    "cover_path": "covers/2610.31613/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.31613.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "Echo: Coupled Action and Task Status Signal Denoising for Vision Language Action Models",
+    "link": "http://arxiv.org/abs/2610.31569",
+    "arxiv_id": "2610.31569",
+    "detail_path": "papers/2610.31569/",
+    "cover_path": "covers/2610.31569/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.31569.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "FastHarness: Experience-Driven Review Scheduling for Vision-Language-Action Policies",
+    "link": "http://arxiv.org/abs/2610.31427",
+    "arxiv_id": "2610.31427",
+    "detail_path": "papers/2610.31427/",
+    "cover_path": "covers/2610.31427/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.31427.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "FocusVLA: Future-Intent Guided Dynamic View Routing for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2610.31423",
+    "arxiv_id": "2610.31423",
+    "detail_path": "papers/2610.31423/",
+    "cover_path": "covers/2610.31423/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.31423.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation",
+    "link": "http://arxiv.org/abs/2610.31166",
+    "arxiv_id": "2610.31166",
+    "detail_path": "papers/2610.31166/",
+    "cover_path": "covers/2610.31166/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.31166.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games",
+    "link": "http://arxiv.org/abs/2610.31162",
+    "arxiv_id": "2610.31162",
+    "detail_path": "papers/2610.31162/",
+    "cover_path": "covers/2610.31162/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.31162.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "Measuring the Reasoning-Action Coupling in Driving Vision-Language-Action Models through Counterfactuals",
+    "link": "http://arxiv.org/abs/2610.30953",
+    "arxiv_id": "2610.30953",
+    "detail_path": "papers/2610.30953/",
+    "cover_path": "covers/2610.30953/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.30953.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "DRILL: Training World Models to Improve Policies, Not Predict Pixels",
+    "link": "http://arxiv.org/abs/2610.30814",
+    "arxiv_id": "2610.30814",
+    "detail_path": "papers/2610.30814/",
+    "cover_path": "covers/2610.30814/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.30814.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "When One Step Is Enough: An Empirical Study of Euler Integration in Flow-Matching Policies",
+    "link": "http://arxiv.org/abs/2610.30735",
+    "arxiv_id": "2610.30735",
+    "detail_path": "papers/2610.30735/",
+    "cover_path": "covers/2610.30735/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.30735.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "SmolVLA-MoE: Sparse Mixture-of-Experts for Efficient Multi-Task Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2610.30732",
+    "arxiv_id": "2610.30732",
+    "detail_path": "papers/2610.30732/",
+    "cover_path": "covers/2610.30732/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.30732.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-22",
+    "title": "Co^2Gen: Collaboratively Generating Task Plans for Decentralized Multi-Robot and Human Collaboration",
+    "link": "http://arxiv.org/abs/2610.30671",
+    "arxiv_id": "2610.30671",
+    "detail_path": "papers/2610.30671/",
+    "cover_path": "covers/2610.30671/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.30671.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-21",
+    "title": "Tactile-Based Robotic Manipulation: From Mechanics-Driven to Data-Driven Perspectives",
+    "link": "http://arxiv.org/abs/2610.30438",
+    "arxiv_id": "2610.30438",
+    "detail_path": "papers/2610.30438/",
+    "cover_path": "covers/2610.30438/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-10-21",
     "title": "Agentic World Action Models",
     "link": "http://arxiv.org/abs/2610.30136",
@@ -526,7 +864,7 @@
     "arxiv_id": "2610.27861",
     "detail_path": "papers/2610.27861/",
     "cover_path": "covers/2610.27861/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.27861.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -552,7 +890,7 @@
     "arxiv_id": "2610.27698",
     "detail_path": "papers/2610.27698/",
     "cover_path": "covers/2610.27698/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.27698.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -578,7 +916,7 @@
     "arxiv_id": "2610.27657",
     "detail_path": "papers/2610.27657/",
     "cover_path": "covers/2610.27657/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.27657.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -604,7 +942,7 @@
     "arxiv_id": "2610.27417",
     "detail_path": "papers/2610.27417/",
     "cover_path": "covers/2610.27417/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.27417.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -630,7 +968,7 @@
     "arxiv_id": "2610.27277",
     "detail_path": "papers/2610.27277/",
     "cover_path": "covers/2610.27277/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.27277.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -1176,7 +1514,7 @@
     "arxiv_id": "2610.24590",
     "detail_path": "papers/2610.24590/",
     "cover_path": "covers/2610.24590/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.24590.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -1202,7 +1540,7 @@
     "arxiv_id": "2610.24587",
     "detail_path": "papers/2610.24587/",
     "cover_path": "covers/2610.24587/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.24587.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
