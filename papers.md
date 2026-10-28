@@ -1,5 +1,53 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-27 | ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning | http://arxiv.org/abs/2610.37666 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | World Dreamer v5-lite: A Multi-Robot World Action Model with One Dreamer | http://arxiv.org/abs/2610.37518 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations | http://arxiv.org/abs/2610.37381 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | VLA-Stem: A Lightweight Safety Mechanism for Vision-Language-Action Models via Reinforcement Learning | http://arxiv.org/abs/2610.37378 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | Tokens of Motion: Primitive Motion Learning for Human-Humanoid Skill Transfer | http://arxiv.org/abs/2610.37330 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | Vision-Language-Action or World-Action? Just Action Models | http://arxiv.org/abs/2610.37219 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | Retrieve to Act: Motion Primitive Graph Retrieval for Robust VLA Execution | http://arxiv.org/abs/2610.37215 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | GAWM: A Compact Latent World-Action Model for Multi-Task Robot Manipulation | http://arxiv.org/abs/2610.37091 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | Evaluation-Guided Demonstration Refinement for Vision-Language-Action Policies: The Winning Entry in the MetaFine Open Competition | http://arxiv.org/abs/2610.36765 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | Making Self-Driving Laboratories Auditable:A Unified Framework for Hybrid Actions,Measurements, and Safe Execution | http://arxiv.org/abs/2610.36761 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | GRAFT: Geometry-Aware Residual Adaptation for Foundation Trackers | http://arxiv.org/abs/2610.36507 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | SO-101 Bench: Accessible Spatial Manipulation | http://arxiv.org/abs/2610.36420 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-26 | ASPEN: Adaptive Semantic Reasoning via Command Persistence Prediction for Efficient Navigation VLAs | http://arxiv.org/abs/2610.36285 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-26 | Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy | http://arxiv.org/abs/2610.35832 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-26 | Pretraining Knows What, Simulation Teaches How: Compositional Generalization in a Sim-Trained Robot Agent | http://arxiv.org/abs/2610.35817 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-26 | Robot-Aligned 3D Gaussian Splatting for Precise Reaching with Wrist-Camera VLA Policies | http://arxiv.org/abs/2610.35626 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-26 | Labference: Benchmarking the Reasoning-Action Connection in Robotic Laboratories | http://arxiv.org/abs/2610.35252 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-26 | JevVLA: Jev-Inspired Energy-Based Adaptation for Vision-Language-Action Policies | http://arxiv.org/abs/2610.35010 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-26 | Beyond Behaviour: A Stimulus-Response Safety Evaluation of Vision-Language-Action Models | http://arxiv.org/abs/2610.34837 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-26 | VLA-HWBench: Where the Time Goes When VLA Models Run on Edge Hardware | http://arxiv.org/abs/2610.34717 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-26 | Benchmarking Obstacle-Conditioned Safety in Household Robot Navigation | http://arxiv.org/abs/2610.34674 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-26 | RobotAgentBench: Towards Open-world Robot Autonomy | http://arxiv.org/abs/2610.34649 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-25 | TRIAGE: Efficient Vision-Language-Action Inference Needs Both Reuse and Pruning | http://arxiv.org/abs/2610.34519 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-25 | RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions | http://arxiv.org/abs/2610.34356 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-25 | Variational Cognitive Memory Abstraction for Long-Horizon Vision-Language-Action Models | http://arxiv.org/abs/2610.34251 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-25 | HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience | http://arxiv.org/abs/2610.34186 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-25 | RoboDuo: Attempt, Check and Atomic Recovery through Code for Vision-Language-Action Models | http://arxiv.org/abs/2610.34108 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-25 | Behavior Spatial Benchmark: Evaluating Spatial Understanding for Robotics | http://arxiv.org/abs/2610.34051 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-24 | Late Breaking Results: Audio-Language-Action Models with Direct Speech Conditioning for Robotic Manipulation | http://arxiv.org/abs/2610.33866 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-24 | One Scan is Enough: Demonstration-Free Adaptation for Language-Guided Navigation | http://arxiv.org/abs/2610.33794 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-24 | EXE: Egocentric Cross-Embodiment Pretraining via Factorized Latent Actions for VLA Models | http://arxiv.org/abs/2610.33685 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-24 | Power-of-Two Leaky Integrate-and-Fire Neurons for Event-Driven Vision-Language-Action Inference | http://arxiv.org/abs/2610.33658 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-24 | TAD: Distilling Vision-Language-Action Policies from Teacher Trajectories Alone | http://arxiv.org/abs/2610.33650 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-24 | Learning Dexterous Manipulation: Hands, Simulators, Training, and Evaluation | http://arxiv.org/abs/2610.33486 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms | http://arxiv.org/abs/2610.32971 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | If at First You Don't Succeed, Backtrack: Lightweight Recovery for Frozen VLAs | http://arxiv.org/abs/2610.32941 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | When Human Corrections Travel: Safety in Federated VLA Adaptation | http://arxiv.org/abs/2610.32888 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | Retiming Robot Demonstrations with a Learned Speed Prior | http://arxiv.org/abs/2610.32676 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | When to Stop Penalizing Actions? Martingale GRPO for VLA Reinforcement Learning | http://arxiv.org/abs/2610.32431 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | MAST-VLA: Skill-Conditioned Adaptation with Trajectory-Affordance Priors for Multi-Skill Robot Manipulation | http://arxiv.org/abs/2610.32312 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | From Tabletop to Walking Bot: Deploying a VLA Model on a Legged Manipulator Robot | http://arxiv.org/abs/2610.32271 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | Do VLAs Know They Will Fail? Interpretable Success and Failure Patterns in Physical AI Systems | http://arxiv.org/abs/2610.32208 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | Coupling Execution Horizon and Sampling Depth in Flow-Matching VLA Policies | http://arxiv.org/abs/2610.32102 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | TTT in VLA Models: Exploring Training with Human Demonstrations | http://arxiv.org/abs/2610.32094 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-23 | DiscoDemo: Discovering Efficient and Diverse Robot Demonstrations for Imitation Learning | http://arxiv.org/abs/2610.32093 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | Full-Weight VLA Fine-Tuning Without an fp32 Master Copy Silently Erases Most Updates | http://arxiv.org/abs/2610.31859 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-22 | EgoForesight: Effectively Scaling Policy Learning with Noisy Egocentric Actions | http://arxiv.org/abs/2610.31845 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-21 | AGQ: Action-Guided Ultra-Low-Bit Quantization for Vision-Language-Action Models | http://arxiv.org/abs/2610.33074 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-22 | Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success | http://arxiv.org/abs/2610.31670 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-22 | Progress Probes $P^2$: Lightweight Runtime Monitoring for Vision-Language-Action Models | http://arxiv.org/abs/2610.31613 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-22 | Echo: Coupled Action and Task Status Signal Denoising for Vision Language Action Models | http://arxiv.org/abs/2610.31569 | <details><summary>展开</summary>待生成</details> |
