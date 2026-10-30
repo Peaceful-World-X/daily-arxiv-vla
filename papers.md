@@ -1,5 +1,23 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-29 | Gym-Anything for Robotics: Scaling physical simulations with digital agents | http://arxiv.org/abs/2610.40565 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | BURGER: Benchmarking and Understanding Robotic Generalization via Embodied Drawing | http://arxiv.org/abs/2610.40532 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | Improving Fine-Grained Manipulation through Demonstration Expansion and Execution Design | http://arxiv.org/abs/2610.40430 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model | http://arxiv.org/abs/2610.40373 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation | http://arxiv.org/abs/2610.40349 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | RoboSeed: Multidimensional Evaluation of Vision-Language-Action and World-Action Models: Capability, Resource Affordability, and Research Evidence | http://arxiv.org/abs/2610.40026 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | LOGIV: Graph-Verified Execution with Causal Local Repair for Long-Horizon Robot Tasks | http://arxiv.org/abs/2610.40016 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | How Much Should a VLA Trust Its Reasoning? Step-Level Guidance as a Measured Action-Value Function | http://arxiv.org/abs/2610.40002 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | From Reasoning to Action: Consequence-Grounded Alignment for Vision-Language-Action Models | http://arxiv.org/abs/2610.39543 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | PRIME W0: Physical Priors from World Models for Embodied Manipulation | http://arxiv.org/abs/2610.39528 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | Smooth Action Chunking Via Movement-Primitive Representations for Imitation Learning | http://arxiv.org/abs/2610.39451 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | UMI-Live for In-The-Wild Bimanual Robotics Data Collection | http://arxiv.org/abs/2610.39385 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation | http://arxiv.org/abs/2610.39287 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-28 | Quantize by Doing: Task-Guided Mixed-Precision Quantization of Vision-Language-Action Models | http://arxiv.org/abs/2610.38661 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-28 | SaiVLA-JEPA: Evaluating Future Latent Prediction in JEPA-Conditioned VLA Control | http://arxiv.org/abs/2610.38508 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-28 | Embodied at Sea: Imitation Learning for Multi-Task Underwater Manipulation | http://arxiv.org/abs/2610.38199 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | Self-Labeled Preference Transfer for Steerable Robot Manipulation | http://arxiv.org/abs/2610.38000 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-27 | What Actually Matters? A Paired Evaluation of Inference Settings for $π_{0.5}$ on BEHAVIOR-1K | http://arxiv.org/abs/2610.37917 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-27 | ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning | http://arxiv.org/abs/2610.37666 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-27 | World Dreamer v5-lite: A Multi-Robot World Action Model with One Dreamer | http://arxiv.org/abs/2610.37518 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-27 | PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations | http://arxiv.org/abs/2610.37381 | <details><summary>展开</summary>待生成</details> |

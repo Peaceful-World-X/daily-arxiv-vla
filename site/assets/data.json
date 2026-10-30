@@ -1,5 +1,473 @@
 [
   {
+    "date": "2026-10-29",
+    "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+    "link": "http://arxiv.org/abs/2610.40565",
+    "arxiv_id": "2610.40565",
+    "detail_path": "papers/2610.40565/",
+    "cover_path": "covers/2610.40565/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.40565.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "BURGER: Benchmarking and Understanding Robotic Generalization via Embodied Drawing",
+    "link": "http://arxiv.org/abs/2610.40532",
+    "arxiv_id": "2610.40532",
+    "detail_path": "papers/2610.40532/",
+    "cover_path": "covers/2610.40532/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.40532.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "Improving Fine-Grained Manipulation through Demonstration Expansion and Execution Design",
+    "link": "http://arxiv.org/abs/2610.40430",
+    "arxiv_id": "2610.40430",
+    "detail_path": "papers/2610.40430/",
+    "cover_path": "covers/2610.40430/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.40430.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2610.40373",
+    "arxiv_id": "2610.40373",
+    "detail_path": "papers/2610.40373/",
+    "cover_path": "covers/2610.40373/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.40373.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
+    "link": "http://arxiv.org/abs/2610.40349",
+    "arxiv_id": "2610.40349",
+    "detail_path": "papers/2610.40349/",
+    "cover_path": "covers/2610.40349/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.40349.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "RoboSeed: Multidimensional Evaluation of Vision-Language-Action and World-Action Models: Capability, Resource Affordability, and Research Evidence",
+    "link": "http://arxiv.org/abs/2610.40026",
+    "arxiv_id": "2610.40026",
+    "detail_path": "papers/2610.40026/",
+    "cover_path": "covers/2610.40026/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.40026.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "LOGIV: Graph-Verified Execution with Causal Local Repair for Long-Horizon Robot Tasks",
+    "link": "http://arxiv.org/abs/2610.40016",
+    "arxiv_id": "2610.40016",
+    "detail_path": "papers/2610.40016/",
+    "cover_path": "covers/2610.40016/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.40016.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "How Much Should a VLA Trust Its Reasoning? Step-Level Guidance as a Measured Action-Value Function",
+    "link": "http://arxiv.org/abs/2610.40002",
+    "arxiv_id": "2610.40002",
+    "detail_path": "papers/2610.40002/",
+    "cover_path": "covers/2610.40002/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.40002.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "From Reasoning to Action: Consequence-Grounded Alignment for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2610.39543",
+    "arxiv_id": "2610.39543",
+    "detail_path": "papers/2610.39543/",
+    "cover_path": "covers/2610.39543/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.39543.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "PRIME W0: Physical Priors from World Models for Embodied Manipulation",
+    "link": "http://arxiv.org/abs/2610.39528",
+    "arxiv_id": "2610.39528",
+    "detail_path": "papers/2610.39528/",
+    "cover_path": "covers/2610.39528/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.39528.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "Smooth Action Chunking Via Movement-Primitive Representations for Imitation Learning",
+    "link": "http://arxiv.org/abs/2610.39451",
+    "arxiv_id": "2610.39451",
+    "detail_path": "papers/2610.39451/",
+    "cover_path": "covers/2610.39451/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.39451.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "UMI-Live for In-The-Wild Bimanual Robotics Data Collection",
+    "link": "http://arxiv.org/abs/2610.39385",
+    "arxiv_id": "2610.39385",
+    "detail_path": "papers/2610.39385/",
+    "cover_path": "covers/2610.39385/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.39385.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-29",
+    "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
+    "link": "http://arxiv.org/abs/2610.39287",
+    "arxiv_id": "2610.39287",
+    "detail_path": "papers/2610.39287/",
+    "cover_path": "covers/2610.39287/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.39287.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Quantize by Doing: Task-Guided Mixed-Precision Quantization of Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2610.38661",
+    "arxiv_id": "2610.38661",
+    "detail_path": "papers/2610.38661/",
+    "cover_path": "covers/2610.38661/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.38661.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-28",
+    "title": "SaiVLA-JEPA: Evaluating Future Latent Prediction in JEPA-Conditioned VLA Control",
+    "link": "http://arxiv.org/abs/2610.38508",
+    "arxiv_id": "2610.38508",
+    "detail_path": "papers/2610.38508/",
+    "cover_path": "covers/2610.38508/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Embodied at Sea: Imitation Learning for Multi-Task Underwater Manipulation",
+    "link": "http://arxiv.org/abs/2610.38199",
+    "arxiv_id": "2610.38199",
+    "detail_path": "papers/2610.38199/",
+    "cover_path": "covers/2610.38199/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.38199.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-10-27",
+    "title": "Self-Labeled Preference Transfer for Steerable Robot Manipulation",
+    "link": "http://arxiv.org/abs/2610.38000",
+    "arxiv_id": "2610.38000",
+    "detail_path": "papers/2610.38000/",
+    "cover_path": "covers/2610.38000/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.38000.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-10-27",
+    "title": "What Actually Matters? A Paired Evaluation of Inference Settings for $π_{0.5}$ on BEHAVIOR-1K",
+    "link": "http://arxiv.org/abs/2610.37917",
+    "arxiv_id": "2610.37917",
+    "detail_path": "papers/2610.37917/",
+    "cover_path": "covers/2610.37917/",
+    "paper_image_path": "assets/paper-images/thumbs/2610.37917.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-10-27",
     "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
     "link": "http://arxiv.org/abs/2610.37666",
@@ -1072,7 +1540,7 @@
     "arxiv_id": "2610.32208",
     "detail_path": "papers/2610.32208/",
     "cover_path": "covers/2610.32208/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.32208.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
