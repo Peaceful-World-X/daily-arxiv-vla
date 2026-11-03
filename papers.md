@@ -1,5 +1,41 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-02 | Rollout then Recycle: 3,718 Labelled Real-Robot Episodes from Benchmarking 7 Policies on 12 Tasks | http://arxiv.org/abs/2611.03168 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-02 | FineCraft: Enhancing VLA Models for Fine-Grained Manipulation | http://arxiv.org/abs/2611.03163 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-02 | VLALagBench: Understanding When and Why VLA Inference Latency Matters | http://arxiv.org/abs/2611.03103 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-02 | Beyond Policy Patches: Distilling RL Specialists into Vision-Language-Action Policies | http://arxiv.org/abs/2611.02777 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-02 | HeLM: Hierarchical Explicit Language Memory for Non-Markovian Manipulation | http://arxiv.org/abs/2611.02660 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-02 | RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild | http://arxiv.org/abs/2611.02497 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-01 | SVD-Prune: Spectral Vision Token Pruning under Extreme Compression | http://arxiv.org/abs/2611.02284 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-01 | When Delay Meets Drift: Physical Safety of Robot Foundation Models Is a Cross-Layer Problem | http://arxiv.org/abs/2611.02101 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-01 | Scene-Adaptive Readout and Decoding in Diffusion Driving VLAs | http://arxiv.org/abs/2611.02076 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-01 | ODE Policy: Robot Learning via Action Dynamics, Not Actions | http://arxiv.org/abs/2611.01729 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-01 | Route-Guided CBF-QP Repair for Safe Vision-Language-Action Models | http://arxiv.org/abs/2611.01713 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-01 | GatedVLA with Camera-Based Emergency Braking: AlpaSim E2E Closed Loop Challenge Technical Report | http://arxiv.org/abs/2611.01663 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-01 | SCOUT: Planning under Occlusion via Object-Centric World Model Rollouts | http://arxiv.org/abs/2611.01600 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-01 | Democratizing Robot-Use Agents: A Unified Harness with Open Models | http://arxiv.org/abs/2611.01560 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-01 | Serving Agentic Robot Fleets: Workload Characterization, KV-Cache Thrashing, and Admission Control | http://arxiv.org/abs/2611.01404 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-01 | Same Path, Less Time: Training-Free Fast Execution of Vision-Language-Action Models under Inference Latency | http://arxiv.org/abs/2611.01390 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-31 | Vision-Language Models Are Joint Denoisers in Robotic Action Generation | http://arxiv.org/abs/2611.01215 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-31 | ClothDojo: Learned Data Generation and Benchmarking for Bimanual Garment Flattening and Folding | http://arxiv.org/abs/2611.01190 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-31 | Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation | http://arxiv.org/abs/2611.01112 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-31 | Leap-VLA: High-Rate Robot Control from a Low-Rate VLM Backbone | http://arxiv.org/abs/2611.01011 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-31 | Verifying Test-State Identity in Paired Evaluation of Vision-Language-Action Models | http://arxiv.org/abs/2611.00896 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-31 | Random Is Almost Enough? Stable and Low-Cost Benchmark Compression via BestRand | http://arxiv.org/abs/2611.00883 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-31 | STEER: Route-Aware Adaptive Reasoning for Autonomous Driving | http://arxiv.org/abs/2611.00718 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-31 | PREM: Prediction-Regulated Memory for Robot Manipulation | http://arxiv.org/abs/2611.00634 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-31 | Learning from an Imitable Teacher: Competition Solution for the MetaFine Challenge | http://arxiv.org/abs/2611.00615 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-31 | Behavioral Steering of Vision-Language-Action Models in the Low-Parameter Regime | http://arxiv.org/abs/2611.00522 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-30 | CalVLA: Shaping Native Confidence in Vision-Language-Action Policies with Outcome Supervision | http://arxiv.org/abs/2611.00394 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-30 | REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control | http://arxiv.org/abs/2610.42053 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-30 | Nexus-VLA: Bridging Human and Robot Experiences via a Shared Hierarchical Semantic Latent Space | http://arxiv.org/abs/2610.42021 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-30 | When the Simulator Fails, Not the Policy: Auditing Contact Artifacts in Simulated Robot Benchmarks | http://arxiv.org/abs/2610.41857 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-30 | VLA Policies Do Not Know When Not to Act: Unintended Task Execution and Start Suppression | http://arxiv.org/abs/2610.41609 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-30 | SACQ: Structure-Aware Codebook Quantization for Ultra-Low-Bit Vision-Language-Action Models | http://arxiv.org/abs/2610.41408 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-30 | TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking | http://arxiv.org/abs/2610.41275 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | STAR: Steering Action Representations during Inference | http://arxiv.org/abs/2610.41009 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation | http://arxiv.org/abs/2610.40828 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-29 | CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents | http://arxiv.org/abs/2610.40799 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-29 | Gym-Anything for Robotics: Scaling physical simulations with digital agents | http://arxiv.org/abs/2610.40565 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-29 | BURGER: Benchmarking and Understanding Robotic Generalization via Embodied Drawing | http://arxiv.org/abs/2610.40532 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-29 | Improving Fine-Grained Manipulation through Demonstration Expansion and Execution Design | http://arxiv.org/abs/2610.40430 | <details><summary>展开</summary>待生成</details> |
