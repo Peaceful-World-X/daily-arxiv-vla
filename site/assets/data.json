@@ -1,5 +1,473 @@
 [
   {
+    "date": "2026-11-03",
+    "title": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2611.05372",
+    "arxiv_id": "2611.05372",
+    "detail_path": "papers/2611.05372/",
+    "cover_path": "covers/2611.05372/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.05372.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs",
+    "link": "http://arxiv.org/abs/2611.05249",
+    "arxiv_id": "2611.05249",
+    "detail_path": "papers/2611.05249/",
+    "cover_path": "covers/2611.05249/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.05249.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Asynchronous Robot Policies",
+    "link": "http://arxiv.org/abs/2611.05155",
+    "arxiv_id": "2611.05155",
+    "detail_path": "papers/2611.05155/",
+    "cover_path": "covers/2611.05155/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.05155.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "LoopQ: Fair, Closed-Loop Evaluation of Quantized Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2611.05093",
+    "arxiv_id": "2611.05093",
+    "detail_path": "papers/2611.05093/",
+    "cover_path": "covers/2611.05093/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.05093.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "CRONOS: Benchmarking Non-Episodic Reinforcement Learning for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2611.05080",
+    "arxiv_id": "2611.05080",
+    "detail_path": "papers/2611.05080/",
+    "cover_path": "covers/2611.05080/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.05080.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture",
+    "link": "http://arxiv.org/abs/2611.04972",
+    "arxiv_id": "2611.04972",
+    "detail_path": "papers/2611.04972/",
+    "cover_path": "covers/2611.04972/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.04972.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Trusting Imagined Futures: Auditing Imagined Rewards for VLA Post-Training",
+    "link": "http://arxiv.org/abs/2611.04873",
+    "arxiv_id": "2611.04873",
+    "detail_path": "papers/2611.04873/",
+    "cover_path": "covers/2611.04873/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.04873.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Future Representation Distillation for Imagination-Free World Action Models",
+    "link": "http://arxiv.org/abs/2611.04527",
+    "arxiv_id": "2611.04527",
+    "detail_path": "papers/2611.04527/",
+    "cover_path": "covers/2611.04527/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Action Intent as a Bridge: Transferring Manipulation Knowledge from Human-Centric Videos to Robots",
+    "link": "http://arxiv.org/abs/2611.04522",
+    "arxiv_id": "2611.04522",
+    "detail_path": "papers/2611.04522/",
+    "cover_path": "covers/2611.04522/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.04522.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs",
+    "link": "http://arxiv.org/abs/2611.04391",
+    "arxiv_id": "2611.04391",
+    "detail_path": "papers/2611.04391/",
+    "cover_path": "covers/2611.04391/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.04391.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "RAFT: Reasoning-Aligned Fine-Tuning Improves Robustness of VLA Post-Training",
+    "link": "http://arxiv.org/abs/2611.04368",
+    "arxiv_id": "2611.04368",
+    "detail_path": "papers/2611.04368/",
+    "cover_path": "covers/2611.04368/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.04368.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "AceAction-5M: Hierarchical Goals for Generalist Action Learning Across 3D Game Worlds",
+    "link": "http://arxiv.org/abs/2611.04241",
+    "arxiv_id": "2611.04241",
+    "detail_path": "papers/2611.04241/",
+    "cover_path": "covers/2611.04241/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.04241.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "DiMuRe: Diagnosis-Guided Multilevel Recovery for Robotic Task Execution",
+    "link": "http://arxiv.org/abs/2611.04226",
+    "arxiv_id": "2611.04226",
+    "detail_path": "papers/2611.04226/",
+    "cover_path": "covers/2611.04226/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.04226.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Say the Same, Act Differently: Diagnosing and Steering Text-Action Divergence in Reasoning VLAs",
+    "link": "http://arxiv.org/abs/2611.04166",
+    "arxiv_id": "2611.04166",
+    "detail_path": "papers/2611.04166/",
+    "cover_path": "covers/2611.04166/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.04166.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "Online Hamilton-Jacobi Reachability Onboard the Robot Control Loop: A Real-Time GPU Solver for Safety-Critical Autonomy",
+    "link": "http://arxiv.org/abs/2611.04096",
+    "arxiv_id": "2611.04096",
+    "detail_path": "papers/2611.04096/",
+    "cover_path": "covers/2611.04096/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.04096.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-02",
+    "title": "Controlling Action-Head Co-Adaptation to VLM Representation Anisotropy",
+    "link": "http://arxiv.org/abs/2611.04006",
+    "arxiv_id": "2611.04006",
+    "detail_path": "papers/2611.04006/",
+    "cover_path": "covers/2611.04006/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.04006.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-02",
+    "title": "RoboScope Kit: Unified Interfaces for Fast and Scalable Embodied-AI Evaluation",
+    "link": "http://arxiv.org/abs/2611.03850",
+    "arxiv_id": "2611.03850",
+    "detail_path": "papers/2611.03850/",
+    "cover_path": "covers/2611.03850/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.03850.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-02",
+    "title": "AIRoA-0: Long-Horizon, Precise, Cross-Embodiment Manipulation from Handheld Data",
+    "link": "http://arxiv.org/abs/2611.03815",
+    "arxiv_id": "2611.03815",
+    "detail_path": "papers/2611.03815/",
+    "cover_path": "covers/2611.03815/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.03815.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
     "date": "2026-11-02",
     "title": "Rollout then Recycle: 3,718 Labelled Real-Robot Episodes from Benchmarking 7 Policies on 12 Tasks",
     "link": "http://arxiv.org/abs/2611.03168",
@@ -526,7 +994,7 @@
     "arxiv_id": "2611.00896",
     "detail_path": "papers/2611.00896/",
     "cover_path": "covers/2611.00896/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2611.00896.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -552,7 +1020,7 @@
     "arxiv_id": "2611.00883",
     "detail_path": "papers/2611.00883/",
     "cover_path": "covers/2611.00883/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2611.00883.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",

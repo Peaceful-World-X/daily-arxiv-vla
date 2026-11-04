@@ -1,5 +1,23 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-03 | PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning | http://arxiv.org/abs/2611.05372 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs | http://arxiv.org/abs/2611.05249 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | Asynchronous Robot Policies | http://arxiv.org/abs/2611.05155 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | LoopQ: Fair, Closed-Loop Evaluation of Quantized Vision-Language-Action Models | http://arxiv.org/abs/2611.05093 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | CRONOS: Benchmarking Non-Episodic Reinforcement Learning for Robotic Manipulation | http://arxiv.org/abs/2611.05080 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture | http://arxiv.org/abs/2611.04972 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | Trusting Imagined Futures: Auditing Imagined Rewards for VLA Post-Training | http://arxiv.org/abs/2611.04873 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | Future Representation Distillation for Imagination-Free World Action Models | http://arxiv.org/abs/2611.04527 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | Action Intent as a Bridge: Transferring Manipulation Knowledge from Human-Centric Videos to Robots | http://arxiv.org/abs/2611.04522 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs | http://arxiv.org/abs/2611.04391 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | RAFT: Reasoning-Aligned Fine-Tuning Improves Robustness of VLA Post-Training | http://arxiv.org/abs/2611.04368 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | AceAction-5M: Hierarchical Goals for Generalist Action Learning Across 3D Game Worlds | http://arxiv.org/abs/2611.04241 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | DiMuRe: Diagnosis-Guided Multilevel Recovery for Robotic Task Execution | http://arxiv.org/abs/2611.04226 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | Say the Same, Act Differently: Diagnosing and Steering Text-Action Divergence in Reasoning VLAs | http://arxiv.org/abs/2611.04166 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | Online Hamilton-Jacobi Reachability Onboard the Robot Control Loop: A Real-Time GPU Solver for Safety-Critical Autonomy | http://arxiv.org/abs/2611.04096 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-02 | Controlling Action-Head Co-Adaptation to VLM Representation Anisotropy | http://arxiv.org/abs/2611.04006 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-02 | RoboScope Kit: Unified Interfaces for Fast and Scalable Embodied-AI Evaluation | http://arxiv.org/abs/2611.03850 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-02 | AIRoA-0: Long-Horizon, Precise, Cross-Embodiment Manipulation from Handheld Data | http://arxiv.org/abs/2611.03815 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-02 | Rollout then Recycle: 3,718 Labelled Real-Robot Episodes from Benchmarking 7 Policies on 12 Tasks | http://arxiv.org/abs/2611.03168 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-02 | FineCraft: Enhancing VLA Models for Fine-Grained Manipulation | http://arxiv.org/abs/2611.03163 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-02 | VLALagBench: Understanding When and Why VLA Inference Latency Matters | http://arxiv.org/abs/2611.03103 | <details><summary>展开</summary>待生成</details> |
