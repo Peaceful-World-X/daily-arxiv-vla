@@ -1,5 +1,13 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-04 | From Pixels to Actions - Towards Native Vision-Language-Action Policies | http://arxiv.org/abs/2611.06918 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-04 | Where Is VLA Inference Time Spent? Bottlenecks and Optimization Interactions Across GPUs | http://arxiv.org/abs/2611.06710 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-04 | Robocasa-Mem: Benchmarking Environment and Process Memory in Long-Horizon Mobile Manipulation | http://arxiv.org/abs/2611.06475 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-04 | $A^3$-VLA: Automatic Perception-Guided Attention Alignment for Robot Manipulation | http://arxiv.org/abs/2611.06447 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-04 | Can Astra Solve RoboMME without Breaking the Bank? | http://arxiv.org/abs/2611.06184 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-04 | MotoVerse: A Benchmark for Predictive Perception of Motorized Two-Wheelers in Dense Unstructured Traffic | http://arxiv.org/abs/2611.06007 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | Correct Robots Before They Make Mistakes: Proactive Human-in-the-Loop Intervention via Preference Learning | http://arxiv.org/abs/2611.05667 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-03 | MESA: An Evaluation Framework for Compositional, Semantic, and Spatial Generalization in Robotics | http://arxiv.org/abs/2611.05567 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-03 | PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning | http://arxiv.org/abs/2611.05372 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-03 | Should the Action Expert Train the VLM? Action-Token Supervision and Gradient Routing in Mixture-of-Transformer VLAs | http://arxiv.org/abs/2611.05249 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-03 | Asynchronous Robot Policies | http://arxiv.org/abs/2611.05155 | <details><summary>展开</summary>待生成</details> |
