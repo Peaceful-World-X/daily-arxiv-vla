@@ -1,5 +1,213 @@
 [
   {
+    "date": "2026-11-05",
+    "title": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
+    "link": "http://arxiv.org/abs/2611.08462",
+    "arxiv_id": "2611.08462",
+    "detail_path": "papers/2611.08462/",
+    "cover_path": "covers/2611.08462/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.08462.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Failure Prediction and Classification in Vision-Language-Action Models Via Calibrated Latent Probing",
+    "link": "http://arxiv.org/abs/2611.08425",
+    "arxiv_id": "2611.08425",
+    "detail_path": "papers/2611.08425/",
+    "cover_path": "covers/2611.08425/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.08425.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-05",
+    "title": "T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models",
+    "link": "http://arxiv.org/abs/2611.08413",
+    "arxiv_id": "2611.08413",
+    "detail_path": "papers/2611.08413/",
+    "cover_path": "covers/2611.08413/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.08413.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-05",
+    "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
+    "link": "http://arxiv.org/abs/2611.08373",
+    "arxiv_id": "2611.08373",
+    "detail_path": "papers/2611.08373/",
+    "cover_path": "covers/2611.08373/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.08373.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-05",
+    "title": "La-JEPA: Compact Robot Policies with Latent World Modeling",
+    "link": "http://arxiv.org/abs/2611.08156",
+    "arxiv_id": "2611.08156",
+    "detail_path": "papers/2611.08156/",
+    "cover_path": "covers/2611.08156/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.08156.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-05",
+    "title": "AffectiveVLA: Safe and Intent-Aware VLA Control for Human-Humanoid Social Interaction",
+    "link": "http://arxiv.org/abs/2611.07712",
+    "arxiv_id": "2611.07712",
+    "detail_path": "papers/2611.07712/",
+    "cover_path": "covers/2611.07712/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.07712.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Concertina: Embodying Manipulation and Cognition in One Diffusion Vision-Language Model",
+    "link": "http://arxiv.org/abs/2611.07513",
+    "arxiv_id": "2611.07513",
+    "detail_path": "papers/2611.07513/",
+    "cover_path": "covers/2611.07513/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.07513.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-05",
+    "title": "Kinematic Hypothesis Context: Embodiment-Conditioned Learned Video Coding for Bandwidth-Limited Robot Policy Uplinks",
+    "link": "http://arxiv.org/abs/2611.07411",
+    "arxiv_id": "2611.07411",
+    "detail_path": "papers/2611.07411/",
+    "cover_path": "covers/2611.07411/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.07411.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-11-04",
     "title": "From Pixels to Actions - Towards Native Vision-Language-Action Policies",
     "link": "http://arxiv.org/abs/2611.06918",
@@ -1540,7 +1748,7 @@
     "arxiv_id": "2610.41009",
     "detail_path": "papers/2610.41009/",
     "cover_path": "covers/2610.41009/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.41009.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -1566,7 +1774,7 @@
     "arxiv_id": "2610.40828",
     "detail_path": "papers/2610.40828/",
     "cover_path": "covers/2610.40828/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.40828.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -1592,7 +1800,7 @@
     "arxiv_id": "2610.40799",
     "detail_path": "papers/2610.40799/",
     "cover_path": "covers/2610.40799/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.40799.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -1982,7 +2190,7 @@
     "arxiv_id": "2610.38508",
     "detail_path": "papers/2610.38508/",
     "cover_path": "covers/2610.38508/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.38508.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -3126,7 +3334,7 @@
     "arxiv_id": "2610.32271",
     "detail_path": "papers/2610.32271/",
     "cover_path": "covers/2610.32271/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.32271.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -6636,7 +6844,7 @@
     "arxiv_id": "2610.18774",
     "detail_path": "papers/2610.18774/",
     "cover_path": "covers/2610.18774/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.18774.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -6714,7 +6922,7 @@
     "arxiv_id": "2610.18568",
     "detail_path": "papers/2610.18568/",
     "cover_path": "covers/2610.18568/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2610.18568.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",

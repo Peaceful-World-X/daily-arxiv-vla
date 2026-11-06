@@ -1,5 +1,13 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-05 | OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions | http://arxiv.org/abs/2611.08462 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-05 | Failure Prediction and Classification in Vision-Language-Action Models Via Calibrated Latent Probing | http://arxiv.org/abs/2611.08425 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-05 | T3R: Training-Free Two-Stage Token Refinement Towards Efficient and Robust VLA Models | http://arxiv.org/abs/2611.08413 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-05 | SLA: Scaling Spatial-Language-Action Model via Continual Pre-training | http://arxiv.org/abs/2611.08373 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-05 | La-JEPA: Compact Robot Policies with Latent World Modeling | http://arxiv.org/abs/2611.08156 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-05 | AffectiveVLA: Safe and Intent-Aware VLA Control for Human-Humanoid Social Interaction | http://arxiv.org/abs/2611.07712 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-05 | Concertina: Embodying Manipulation and Cognition in One Diffusion Vision-Language Model | http://arxiv.org/abs/2611.07513 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-05 | Kinematic Hypothesis Context: Embodiment-Conditioned Learned Video Coding for Bandwidth-Limited Robot Policy Uplinks | http://arxiv.org/abs/2611.07411 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-04 | From Pixels to Actions - Towards Native Vision-Language-Action Policies | http://arxiv.org/abs/2611.06918 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-04 | Where Is VLA Inference Time Spent? Bottlenecks and Optimization Interactions Across GPUs | http://arxiv.org/abs/2611.06710 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-04 | Robocasa-Mem: Benchmarking Environment and Process Memory in Long-Horizon Mobile Manipulation | http://arxiv.org/abs/2611.06475 | <details><summary>展开</summary>待生成</details> |
