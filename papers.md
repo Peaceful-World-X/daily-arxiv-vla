@@ -1,5 +1,12 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-10 | Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies | http://arxiv.org/abs/2611.14488 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-10 | One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge | http://arxiv.org/abs/2611.14432 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-10 | DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning | http://arxiv.org/abs/2611.14092 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-09 | How Much of Your VLA Is kNN | http://arxiv.org/abs/2611.13160 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-09 | Robo-MLT: Dual-System Robotic Manipulation for Long-Horizon Medical Laboratory Tasks | http://arxiv.org/abs/2611.13039 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-09 | RoboACE: Adversarial Co-Evolution for Robot Self-Improvement | http://arxiv.org/abs/2611.13034 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-09 | APS-VLA: Action-Guided and Future-Aware Token Pruning for Efficient Vision-Language-Action Models | http://arxiv.org/abs/2611.13030 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-09 | Learning Heterogeneous Tactile Representation for General Dexterous Manipulation | http://arxiv.org/abs/2611.12806 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-09 | VLA Adaptation with Real and Simulated Data: A Case Study on Robotic Chess | http://arxiv.org/abs/2611.12676 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-09 | AutoVLA-D: Learn a Trajectory-Geometric Condition from Reasoning for Autonomous Driving VLA | http://arxiv.org/abs/2611.12382 | <details><summary>展开</summary>待生成</details> |
