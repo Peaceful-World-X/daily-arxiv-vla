@@ -1,5 +1,22 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-13 | Training Reasoning Models in Simulation to Natively Use Real Robots | http://arxiv.org/abs/2611.18562 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-13 | Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent | http://arxiv.org/abs/2611.18397 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-13 | Vision-Language-Action Models: A Life-Cycle Survey of Design, Training and Deployment | http://arxiv.org/abs/2611.18372 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-13 | ESI: An Embodied Self-Improvement Flywheel for LLM-VLA Agents | http://arxiv.org/abs/2611.18176 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-12 | Agentic-Teacher: An Agentic Data Engine for Failure-Driven VLA Post-Training | http://arxiv.org/abs/2611.17394 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-12 | STVLA: Spatial-aware and Temporal-memory forVision-Language-Action Models | http://arxiv.org/abs/2611.16589 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-12 | I See What You Want: Decoding Hierarchical Operator Intent from Visual Teleoperation History | http://arxiv.org/abs/2611.16419 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-12 | What Can a VLA Learn from the Agent That Calls It? Task-Level Experience Distillation for Embodied Navigation | http://arxiv.org/abs/2611.16246 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-11 | MOSAIC: Modular Obstacle and Spatial-Aware Framework for Manipulation In Cluttered Scenes | http://arxiv.org/abs/2611.15937 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-11 | Recover, Don't Just Continue: Learning from Feedback for Physical Failure Understanding and Correction | http://arxiv.org/abs/2611.15651 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-11 | What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation | http://arxiv.org/abs/2611.15491 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-11 | ActionCodec2: A Streaming Action Tokenizer | http://arxiv.org/abs/2611.15490 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-11 | Low-Cost Mobile Bimanual Manipulation for Long-Horizon Toilet Cleaning | http://arxiv.org/abs/2611.15381 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-11 | CARE-Drive: Coupled Alternating Refinement for Ego-trajectories | http://arxiv.org/abs/2611.15360 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-11 | PolyMorphWBC: Whole-Body Control from End-Effector Trajectories for Quadrupedal Mobile Manipulation across Arm Morphologies with Extended Reach | http://arxiv.org/abs/2611.15117 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-11 | Scaling VLA Serving Under Robotic Execution Constraints | http://arxiv.org/abs/2611.14969 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-10 | Learning Low-Latency Action Verification for Frozen Vision-Language-Action Models | http://arxiv.org/abs/2611.14834 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-10 | Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies | http://arxiv.org/abs/2611.14488 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-10 | One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge | http://arxiv.org/abs/2611.14432 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-10 | DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning | http://arxiv.org/abs/2611.14092 | <details><summary>展开</summary>待生成</details> |
