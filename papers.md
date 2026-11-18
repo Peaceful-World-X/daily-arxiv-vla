@@ -1,5 +1,15 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-17 | PAIR: Bringing Household Robots into the Smart Home | http://arxiv.org/abs/2611.23070 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving | http://arxiv.org/abs/2611.22880 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | Outcome-Balanced PPO and Policy-Induced Flow Rectification for Flow-Based VLA Policies | http://arxiv.org/abs/2611.22878 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | RefCloth: Transferable Adversarial Tablecloths for Vision-Language-Action Models | http://arxiv.org/abs/2611.22736 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | VSpark: Speculative Decoding for Autoregressive Vision-Language-Action Models | http://arxiv.org/abs/2611.22666 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | InteractVLA: Turning VLAs into Interactive Tools for Agentic Robotic Manipulation | http://arxiv.org/abs/2611.22584 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | VoxelSBFL: Voxel-Level Spectrum-Based Failure Prediction for Vision-Language-Action Models | http://arxiv.org/abs/2611.22453 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | CoBoVLA: Decoupling Language from Action with Discrete Codes for Robust and Interpretable Robot Manipulation | http://arxiv.org/abs/2611.22395 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | SR-VLA: Stall-Reduced VLA Execution via Predicted-Input Lookahead and Selective KV Cache Repair | http://arxiv.org/abs/2611.22356 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | Similar Is Not Useful: Selecting In-Context Demonstrations by Closed-Loop Utility | http://arxiv.org/abs/2611.22295 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-16 | ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters | http://arxiv.org/abs/2611.21607 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-16 | MetricHand: Geometry-Aware Flow Matching for 4D Hand Reconstruction in Metric World Space | http://arxiv.org/abs/2611.21060 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-16 | WiTac: Wrist-Informed Tactile Representations for Contact-Rich Manipulation | http://arxiv.org/abs/2611.21057 | <details><summary>展开</summary>待生成</details> |

@@ -1,5 +1,265 @@
 [
   {
+    "date": "2026-11-17",
+    "title": "PAIR: Bringing Household Robots into the Smart Home",
+    "link": "http://arxiv.org/abs/2611.23070",
+    "arxiv_id": "2611.23070",
+    "detail_path": "papers/2611.23070/",
+    "cover_path": "covers/2611.23070/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.23070.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2611.22880",
+    "arxiv_id": "2611.22880",
+    "detail_path": "papers/2611.22880/",
+    "cover_path": "covers/2611.22880/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.22880.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Outcome-Balanced PPO and Policy-Induced Flow Rectification for Flow-Based VLA Policies",
+    "link": "http://arxiv.org/abs/2611.22878",
+    "arxiv_id": "2611.22878",
+    "detail_path": "papers/2611.22878/",
+    "cover_path": "covers/2611.22878/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.22878.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-17",
+    "title": "RefCloth: Transferable Adversarial Tablecloths for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2611.22736",
+    "arxiv_id": "2611.22736",
+    "detail_path": "papers/2611.22736/",
+    "cover_path": "covers/2611.22736/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.22736.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-17",
+    "title": "VSpark: Speculative Decoding for Autoregressive Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2611.22666",
+    "arxiv_id": "2611.22666",
+    "detail_path": "papers/2611.22666/",
+    "cover_path": "covers/2611.22666/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.22666.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-17",
+    "title": "InteractVLA: Turning VLAs into Interactive Tools for Agentic Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2611.22584",
+    "arxiv_id": "2611.22584",
+    "detail_path": "papers/2611.22584/",
+    "cover_path": "covers/2611.22584/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.22584.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-17",
+    "title": "VoxelSBFL: Voxel-Level Spectrum-Based Failure Prediction for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2611.22453",
+    "arxiv_id": "2611.22453",
+    "detail_path": "papers/2611.22453/",
+    "cover_path": "covers/2611.22453/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.22453.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-17",
+    "title": "CoBoVLA: Decoupling Language from Action with Discrete Codes for Robust and Interpretable Robot Manipulation",
+    "link": "http://arxiv.org/abs/2611.22395",
+    "arxiv_id": "2611.22395",
+    "detail_path": "papers/2611.22395/",
+    "cover_path": "covers/2611.22395/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.22395.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-17",
+    "title": "SR-VLA: Stall-Reduced VLA Execution via Predicted-Input Lookahead and Selective KV Cache Repair",
+    "link": "http://arxiv.org/abs/2611.22356",
+    "arxiv_id": "2611.22356",
+    "detail_path": "papers/2611.22356/",
+    "cover_path": "covers/2611.22356/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.22356.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Similar Is Not Useful: Selecting In-Context Demonstrations by Closed-Loop Utility",
+    "link": "http://arxiv.org/abs/2611.22295",
+    "arxiv_id": "2611.22295",
+    "detail_path": "papers/2611.22295/",
+    "cover_path": "covers/2611.22295/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.22295.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-11-16",
     "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
     "link": "http://arxiv.org/abs/2611.21607",
@@ -526,7 +786,7 @@
     "arxiv_id": "2611.19131",
     "detail_path": "papers/2611.19131/",
     "cover_path": "covers/2611.19131/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2611.19131.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -552,7 +812,7 @@
     "arxiv_id": "2611.19081",
     "detail_path": "papers/2611.19081/",
     "cover_path": "covers/2611.19081/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2611.19081.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
@@ -578,7 +838,7 @@
     "arxiv_id": "2611.18891",
     "detail_path": "papers/2611.18891/",
     "cover_path": "covers/2611.18891/",
-    "paper_image_path": "",
+    "paper_image_path": "assets/paper-images/thumbs/2611.18891.webp",
     "preview_text": "待生成",
     "research_unit": "",
     "hook_text": "待生成",
