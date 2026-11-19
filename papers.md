@@ -1,5 +1,26 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-18 | $Z$-sight: Unifying Vision-Language-Action and Latent World Modeling | http://arxiv.org/abs/2611.24940 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | NereidVLA: Learning to Understand and Navigate the Underwater World | http://arxiv.org/abs/2611.24864 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | RoboMorpher: Scaling Robot Morphology Representations for Cross-Embodiment Action Prediction | http://arxiv.org/abs/2611.24816 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data | http://arxiv.org/abs/2611.24585 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | RECLAIM: Robot-Vision-Informed Adversarial Patch Defense via Embodied Attention Feedback | http://arxiv.org/abs/2611.24494 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | Homeward: No Place Like the Training View | http://arxiv.org/abs/2611.24455 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | Towards Pose-Robust Few-Shot Vision-Language-Action Models | http://arxiv.org/abs/2611.24360 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | Allocentric Memory, Egocentric Acting: A Dual-Frame VLA for Urban Aerial Navigation | http://arxiv.org/abs/2611.24247 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | Adaptive Action Horizon Selection via Flow-Field Uncertainty | http://arxiv.org/abs/2611.24178 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | Ego2X: Contact-aware Transfer from Egocentric Human Data to Any Robot | http://arxiv.org/abs/2611.24138 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | AeroRSI: Recursive Self-Improvement for Aerial Vision-Language Navigation | http://arxiv.org/abs/2611.24077 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | Meaning Reaches Object Choice but Not Completion: Where Is a VLA Vulnerable to Landmark Synonyms? | http://arxiv.org/abs/2611.24076 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | CoRA-VTLA: Contact-Guided Attention and Queryable Response Memory for Tactile Post-Training | http://arxiv.org/abs/2611.23963 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | 3DTouch: A Tactile-aware VLA Model with 3D Geometric Relations for Dexterous Manipulation | http://arxiv.org/abs/2611.23961 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | GTI: Grounding Task Intent Throughout Long-Horizon VLA Manipulation | http://arxiv.org/abs/2611.23926 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | RePlan-VLA: Progress-Aware Replanning for Long-Horizon Vision-Language-Action Models | http://arxiv.org/abs/2611.23843 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | ExecGap: Exploiting Command-Execution Gap for Patch Attacks on Vision-Language-Action Models | http://arxiv.org/abs/2611.23714 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need | http://arxiv.org/abs/2611.23676 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | RageVLA: Augmentation-Trained Perception and Action for State-of-the-Art Robustness on LIBERO | http://arxiv.org/abs/2611.23517 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | BiCAT: Bimanual Coordination Action Tokenization | http://arxiv.org/abs/2611.23499 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-17 | GRID-UAV: Geometry and Ray-depth Integrated Decision-making for Unmanned Aerial Vehicles | http://arxiv.org/abs/2611.23491 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-17 | PAIR: Bringing Household Robots into the Smart Home | http://arxiv.org/abs/2611.23070 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-17 | Learning Agent-Centric Vision-Language-Action World Models for Autonomous Driving | http://arxiv.org/abs/2611.22880 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-17 | Outcome-Balanced PPO and Policy-Induced Flow Rectification for Flow-Based VLA Policies | http://arxiv.org/abs/2611.22878 | <details><summary>展开</summary>待生成</details> |
