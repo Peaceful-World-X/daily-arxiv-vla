@@ -1,5 +1,577 @@
 [
   {
+    "date": "2026-11-19",
+    "title": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
+    "link": "http://arxiv.org/abs/2611.26596",
+    "arxiv_id": "2611.26596",
+    "detail_path": "papers/2611.26596/",
+    "cover_path": "covers/2611.26596/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.26596.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity",
+    "link": "http://arxiv.org/abs/2611.26565",
+    "arxiv_id": "2611.26565",
+    "detail_path": "papers/2611.26565/",
+    "cover_path": "covers/2611.26565/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.26565.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2611.26444",
+    "arxiv_id": "2611.26444",
+    "detail_path": "papers/2611.26444/",
+    "cover_path": "covers/2611.26444/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.26444.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Risk-Controlled Test-Time Adaptation for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2611.26438",
+    "arxiv_id": "2611.26438",
+    "detail_path": "papers/2611.26438/",
+    "cover_path": "covers/2611.26438/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.26438.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Awaken-HI: Scaling Humanoid Intelligence with Whole-Body Human Experience",
+    "link": "http://arxiv.org/abs/2611.26420",
+    "arxiv_id": "2611.26420",
+    "detail_path": "papers/2611.26420/",
+    "cover_path": "covers/2611.26420/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.26420.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "TacInno: Teaching Vision-Language-Action Models the Contact Dynamics Beyond Vision and Action",
+    "link": "http://arxiv.org/abs/2611.26405",
+    "arxiv_id": "2611.26405",
+    "detail_path": "papers/2611.26405/",
+    "cover_path": "covers/2611.26405/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.26405.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Beyond the Sink Interpretation: Radial Attention in Flow-Based VLA Policies",
+    "link": "http://arxiv.org/abs/2611.26385",
+    "arxiv_id": "2611.26385",
+    "detail_path": "papers/2611.26385/",
+    "cover_path": "covers/2611.26385/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.26385.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "FastRoverVLA: Fast Vision-Language-Action Execution for Off-Road Autonomous Driving",
+    "link": "http://arxiv.org/abs/2611.26242",
+    "arxiv_id": "2611.26242",
+    "detail_path": "papers/2611.26242/",
+    "cover_path": "covers/2611.26242/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.26242.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Teaching Vision-Language-Action Models to Stop Safely",
+    "link": "http://arxiv.org/abs/2611.26239",
+    "arxiv_id": "2611.26239",
+    "detail_path": "papers/2611.26239/",
+    "cover_path": "covers/2611.26239/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.26239.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "One View, One Action: Spatially Generalizable VLAs through Observation-Aligned Experts and Cross Graph Consistency",
+    "link": "http://arxiv.org/abs/2611.26161",
+    "arxiv_id": "2611.26161",
+    "detail_path": "papers/2611.26161/",
+    "cover_path": "covers/2611.26161/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.26161.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "DMT-Attack: Diffusion-Prior Texture Search for Closed-Loop Vision-Language-Action Policies",
+    "link": "http://arxiv.org/abs/2611.25695",
+    "arxiv_id": "2611.25695",
+    "detail_path": "papers/2611.25695/",
+    "cover_path": "covers/2611.25695/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.25695.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "CauSyncVLA: Causal Latent World Modeling for Asynchronous Robot Control",
+    "link": "http://arxiv.org/abs/2611.25667",
+    "arxiv_id": "2611.25667",
+    "detail_path": "papers/2611.25667/",
+    "cover_path": "covers/2611.25667/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.25667.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#6f4cc9",
+      "to": "#c57be8",
+      "spot": "#efd9ff",
+      "ink": "#fdf7ff",
+      "muted": "rgba(253, 247, 255, 0.82)",
+      "chip": "rgba(253, 247, 255, 0.16)",
+      "stroke": "rgba(253, 247, 255, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "A$^2$-VLA: Adapting Vision-Language-Action Policies to New Tools through Agentic Affordance Discovery",
+    "link": "http://arxiv.org/abs/2611.25656",
+    "arxiv_id": "2611.25656",
+    "detail_path": "papers/2611.25656/",
+    "cover_path": "covers/2611.25656/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.25656.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "GraF-VTA: Neuro-Symbolic Trajectory Generation from Vision and Temporal Logic via Graph-Based Fusion",
+    "link": "http://arxiv.org/abs/2611.25589",
+    "arxiv_id": "2611.25589",
+    "detail_path": "papers/2611.25589/",
+    "cover_path": "covers/2611.25589/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.25589.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "CoachSI: Self-Improvement of Robot Policies with a Language Coach",
+    "link": "http://arxiv.org/abs/2611.25529",
+    "arxiv_id": "2611.25529",
+    "detail_path": "papers/2611.25529/",
+    "cover_path": "covers/2611.25529/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.25529.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "TuringPAI: A Foundation for On-Device Physical AI",
+    "link": "http://arxiv.org/abs/2611.25474",
+    "arxiv_id": "2611.25474",
+    "detail_path": "papers/2611.25474/",
+    "cover_path": "covers/2611.25474/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.25474.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#ef6c3f",
+      "to": "#f6b13d",
+      "spot": "#ffd59c",
+      "ink": "#fff8ef",
+      "muted": "rgba(255, 248, 239, 0.82)",
+      "chip": "rgba(255, 248, 239, 0.16)",
+      "stroke": "rgba(255, 248, 239, 0.26)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "ActMem: From Latent Memory Reasoning to Grounded Robotic Action",
+    "link": "http://arxiv.org/abs/2611.25461",
+    "arxiv_id": "2611.25461",
+    "detail_path": "papers/2611.25461/",
+    "cover_path": "covers/2611.25461/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.25461.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#177e89",
+      "to": "#5ec2a8",
+      "spot": "#c5f0de",
+      "ink": "#f5fffb",
+      "muted": "rgba(245, 255, 251, 0.82)",
+      "chip": "rgba(245, 255, 251, 0.16)",
+      "stroke": "rgba(245, 255, 251, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "LoongForge-Embodied: A Unified Framework for Training Heterogeneous Embodied Models",
+    "link": "http://arxiv.org/abs/2611.25460",
+    "arxiv_id": "2611.25460",
+    "detail_path": "papers/2611.25460/",
+    "cover_path": "covers/2611.25460/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.25460.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Dune: A Zeroth-Order Optimizer with Time-Conditioned Historical Error Regression for VLA Test-Time Adaptation",
+    "link": "http://arxiv.org/abs/2611.25400",
+    "arxiv_id": "2611.25400",
+    "detail_path": "papers/2611.25400/",
+    "cover_path": "covers/2611.25400/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.25400.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#d84f61",
+      "to": "#f29c6b",
+      "spot": "#ffd6c4",
+      "ink": "#fff7f4",
+      "muted": "rgba(255, 247, 244, 0.82)",
+      "chip": "rgba(255, 247, 244, 0.16)",
+      "stroke": "rgba(255, 247, 244, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "title": "RefreshGrad: An Online Adaptive Data-sampling Method for Diffusion-based Visuomotor Learning",
+    "link": "http://arxiv.org/abs/2611.25398",
+    "arxiv_id": "2611.25398",
+    "detail_path": "papers/2611.25398/",
+    "cover_path": "covers/2611.25398/",
+    "paper_image_path": "assets/paper-images/thumbs/2611.25398.webp",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-18",
+    "title": "WEVO: World Model-Enabled VLA Optimization for Whole-Body Loco-Manipulation",
+    "link": "http://arxiv.org/abs/2611.25251",
+    "arxiv_id": "2611.25251",
+    "detail_path": "papers/2611.25251/",
+    "cover_path": "covers/2611.25251/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#316b57",
+      "to": "#8bb174",
+      "spot": "#d9e7c7",
+      "ink": "#fbfff6",
+      "muted": "rgba(251, 255, 246, 0.82)",
+      "chip": "rgba(251, 255, 246, 0.16)",
+      "stroke": "rgba(251, 255, 246, 0.24)"
+    }
+  },
+  {
+    "date": "2026-11-18",
+    "title": "MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation",
+    "link": "http://arxiv.org/abs/2611.25105",
+    "arxiv_id": "2611.25105",
+    "detail_path": "papers/2611.25105/",
+    "cover_path": "covers/2611.25105/",
+    "paper_image_path": "",
+    "preview_text": "待生成",
+    "research_unit": "",
+    "hook_text": "待生成",
+    "key_points": [
+      "待生成"
+    ],
+    "reading_minutes": 1,
+    "section_count": 1,
+    "cover_theme": {
+      "from": "#3f6ee8",
+      "to": "#6fa7ff",
+      "spot": "#d5e6ff",
+      "ink": "#f7fbff",
+      "muted": "rgba(247, 251, 255, 0.82)",
+      "chip": "rgba(247, 251, 255, 0.16)",
+      "stroke": "rgba(247, 251, 255, 0.24)"
+    }
+  },
+  {
     "date": "2026-11-18",
     "title": "$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling",
     "link": "http://arxiv.org/abs/2611.24940",

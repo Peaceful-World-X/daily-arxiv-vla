@@ -1,5 +1,27 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-19 | PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation | http://arxiv.org/abs/2611.26596 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity | http://arxiv.org/abs/2611.26565 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation | http://arxiv.org/abs/2611.26444 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | Risk-Controlled Test-Time Adaptation for Vision-Language-Action Models | http://arxiv.org/abs/2611.26438 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | Awaken-HI: Scaling Humanoid Intelligence with Whole-Body Human Experience | http://arxiv.org/abs/2611.26420 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | TacInno: Teaching Vision-Language-Action Models the Contact Dynamics Beyond Vision and Action | http://arxiv.org/abs/2611.26405 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | Beyond the Sink Interpretation: Radial Attention in Flow-Based VLA Policies | http://arxiv.org/abs/2611.26385 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | FastRoverVLA: Fast Vision-Language-Action Execution for Off-Road Autonomous Driving | http://arxiv.org/abs/2611.26242 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | Teaching Vision-Language-Action Models to Stop Safely | http://arxiv.org/abs/2611.26239 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | One View, One Action: Spatially Generalizable VLAs through Observation-Aligned Experts and Cross Graph Consistency | http://arxiv.org/abs/2611.26161 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | DMT-Attack: Diffusion-Prior Texture Search for Closed-Loop Vision-Language-Action Policies | http://arxiv.org/abs/2611.25695 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | CauSyncVLA: Causal Latent World Modeling for Asynchronous Robot Control | http://arxiv.org/abs/2611.25667 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | A$^2$-VLA: Adapting Vision-Language-Action Policies to New Tools through Agentic Affordance Discovery | http://arxiv.org/abs/2611.25656 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | GraF-VTA: Neuro-Symbolic Trajectory Generation from Vision and Temporal Logic via Graph-Based Fusion | http://arxiv.org/abs/2611.25589 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | CoachSI: Self-Improvement of Robot Policies with a Language Coach | http://arxiv.org/abs/2611.25529 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | TuringPAI: A Foundation for On-Device Physical AI | http://arxiv.org/abs/2611.25474 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | ActMem: From Latent Memory Reasoning to Grounded Robotic Action | http://arxiv.org/abs/2611.25461 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | LoongForge-Embodied: A Unified Framework for Training Heterogeneous Embodied Models | http://arxiv.org/abs/2611.25460 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | Dune: A Zeroth-Order Optimizer with Time-Conditioned Historical Error Regression for VLA Test-Time Adaptation | http://arxiv.org/abs/2611.25400 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | RefreshGrad: An Online Adaptive Data-sampling Method for Diffusion-based Visuomotor Learning | http://arxiv.org/abs/2611.25398 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | WEVO: World Model-Enabled VLA Optimization for Whole-Body Loco-Manipulation | http://arxiv.org/abs/2611.25251 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-18 | MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation | http://arxiv.org/abs/2611.25105 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-18 | $Z$-sight: Unifying Vision-Language-Action and Latent World Modeling | http://arxiv.org/abs/2611.24940 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-18 | NereidVLA: Learning to Understand and Navigate the Underwater World | http://arxiv.org/abs/2611.24864 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-18 | RoboMorpher: Scaling Robot Morphology Representations for Cross-Embodiment Action Prediction | http://arxiv.org/abs/2611.24816 | <details><summary>展开</summary>待生成</details> |
