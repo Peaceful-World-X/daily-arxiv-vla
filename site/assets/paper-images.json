@@ -68280,5 +68280,44 @@
     "inside_figure": true,
     "width": 800,
     "height": 173
+  },
+  "2611.25251": {
+    "title": "WEVO: World Model-Enabled VLA Optimization for Whole-Body Loco-Manipulation",
+    "abs_url": "https://arxiv.org/abs/2611.25251",
+    "html_url": "https://arxiv.org/html/2611.25251v1",
+    "path": "assets/paper-images/2611.25251.webp",
+    "image_url": "https://arxiv.org/html/2611.25251v1",
+    "source": "playwright:figure",
+    "score": 60,
+    "content_type": "image/png",
+    "inside_figure": true,
+    "width": 800,
+    "height": 517
+  },
+  "2611.25105": {
+    "title": "MAWAM: A Multi-Agent World-Action Model for Coordinated Manipulation",
+    "abs_url": "https://arxiv.org/abs/2611.25105",
+    "html_url": "https://arxiv.org/html/2611.25105v1",
+    "path": "assets/paper-images/2611.25105.webp",
+    "image_url": "https://arxiv.org/html/2611.25105v1",
+    "source": "playwright:figure",
+    "score": 60,
+    "content_type": "image/png",
+    "inside_figure": true,
+    "width": 800,
+    "height": 192
+  },
+  "2611.23491": {
+    "title": "GRID-UAV: Geometry and Ray-depth Integrated Decision-making for Unmanned Aerial Vehicles",
+    "abs_url": "https://arxiv.org/abs/2611.23491",
+    "html_url": "https://arxiv.org/html/2611.23491v1",
+    "path": "assets/paper-images/2611.23491.webp",
+    "image_url": "https://arxiv.org/html/2611.23491v1",
+    "source": "playwright:figure",
+    "score": 60,
+    "content_type": "image/png",
+    "inside_figure": true,
+    "width": 800,
+    "height": 123
   }
 }
