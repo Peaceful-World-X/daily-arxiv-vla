@@ -1,5 +1,16 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-20 | Efficient VLA Reinforcement Learning via Subchunk Rollouts in Latent World Models | http://arxiv.org/abs/2611.27645 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | Beyond a Single Human Demonstration: Learning from Scored Trajectory Alternatives for End-to-End Driving | http://arxiv.org/abs/2611.27515 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | GenPA: Image Generators as Efficient Robot Policies | http://arxiv.org/abs/2611.27446 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | SCAP: Stochastic Context for Action Expert Pretraining | http://arxiv.org/abs/2611.27187 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | Tripwire: Robot Agents that Program Their Own Interrupts under Human Disturbance | http://arxiv.org/abs/2611.27182 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | Learning from Incomplete Actions: Interval Motion Supervision for Vision-Language-Action Policies | http://arxiv.org/abs/2611.27171 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | BeyondEgo: Learning to Act Beyond Egocentric Perception via Humanoid Ego-Exo Foresight | http://arxiv.org/abs/2611.27047 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | RoboColiseum: Co-evolution of Simulation, Evaluation, and Models | http://arxiv.org/abs/2611.27042 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | FoRe: A Force-Guided Framework for Autonomous Grasp Recovery in Vision-Language-Action Models | http://arxiv.org/abs/2611.27011 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | RoboDyna: A Benchmark for Evaluating Robotic Manipulation under Physically Grounded Dynamics | http://arxiv.org/abs/2611.26969 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-19 | FORTH: Grounding Tactile VLA Execution via Forward-Only Proxy-Control Pairing | http://arxiv.org/abs/2611.26744 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-19 | PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation | http://arxiv.org/abs/2611.26596 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-19 | PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity | http://arxiv.org/abs/2611.26565 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-19 | Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation | http://arxiv.org/abs/2611.26444 | <details><summary>展开</summary>待生成</details> |
