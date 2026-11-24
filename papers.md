@@ -1,5 +1,53 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-23 | Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action | http://arxiv.org/abs/2611.31240 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | WeaveVLA: 3D Relational Grounding for Vision-Language-Action Models | http://arxiv.org/abs/2611.31126 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | NoveltyGate: Novelty, Not Error, Decides Which VLA Prefix Tokens to Compute Exactly | http://arxiv.org/abs/2611.31099 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | Boltz-Flow: Generating High-Quality Robot Action from Boltzmann Machine | http://arxiv.org/abs/2611.31038 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | WorldLeague: Benchmarking Physical Agency | http://arxiv.org/abs/2611.30989 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | World Models as Native Latent Action Models | http://arxiv.org/abs/2611.30898 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | SWEEP-Bench: Do Embodied Policies Act on the Speed They See? | http://arxiv.org/abs/2611.30637 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | GeoMerge-OPD: Balanced Skill Integration in Vision-Language-Action Models | http://arxiv.org/abs/2611.30632 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | Body and Soul: Decoupling Robotic Brain and Policy with RoboHarness-Zero | http://arxiv.org/abs/2611.30550 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | DelayOPSD: On-Policy Self-Distillation from a Synchronous Teacher for Real-time Asynchronous Policies | http://arxiv.org/abs/2611.30534 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | JEPA-ICL: Progress-Aligned Latent Plans for In-Context Robotic Manipulation | http://arxiv.org/abs/2611.30516 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | EgoStudy: How Does Scaling Egocentric Data Affect VLA and WAM Pretraining? | http://arxiv.org/abs/2611.30490 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | OVOGO: Offline Value-Guided On-Policy Generative Optimization for Flow-Based Vision-Language-Action Models | http://arxiv.org/abs/2611.30477 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | AgentMoT: An Agentic Mixture-of-Transformers for End-to-End Autonomous Driving | http://arxiv.org/abs/2611.30389 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | SOAR: temporal Structure-guided One-step Action generation for Robotic manipulation | http://arxiv.org/abs/2611.30363 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | ConsisX: Cross-View Consistency Thinking in 3D for Vision-Language-Action Models | http://arxiv.org/abs/2611.30308 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | Beyond Which: Where, How, and When in Vision-Language-Action Models | http://arxiv.org/abs/2611.30291 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See | http://arxiv.org/abs/2611.30209 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | Quantizing in the Loop: Drift-Aware Ultra-Low-Bit Vision-Language-Action Models | http://arxiv.org/abs/2611.30178 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | RMR-VLA: Recurrent Memory Reasoning for Vision-Language-Action Models | http://arxiv.org/abs/2611.30145 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | RoboThink: Let the Agent Think, Let the Policy Act | http://arxiv.org/abs/2611.30111 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | MotionServe: Efficient Multi-Robot Serving by Exploiting Robot Execution Slack | http://arxiv.org/abs/2611.30083 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | ProMix: Efficient Data Mixture Optimization for Robotic Imitation via Proxy-Reference DRO | http://arxiv.org/abs/2611.29873 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | Hierarchical Reasoning Action Head for Tiny Vision-Language-Action Models | http://arxiv.org/abs/2611.29813 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | JKO-GRPO: Augmenting GRPO with Wasserstein Proximal Steps for Flow-Matching VLAs | http://arxiv.org/abs/2611.29646 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | Detecting Is Not Choosing: What a World Model Needs to Keep a VLA Policy Safe | http://arxiv.org/abs/2611.29553 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | MAWAM: Joint Imagination for Collaborative Robot Manipulation with a Multi-Agent World Action Model | http://arxiv.org/abs/2611.29501 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | Representation Alignment Is Only as Good as the Teacher's Behavioral Structure | http://arxiv.org/abs/2611.29483 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | Self-Refining VLA Sampling | http://arxiv.org/abs/2611.29383 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | Contact Harness: Enabling VLM Agents to Perform Contact-Rich Manipulation | http://arxiv.org/abs/2611.29377 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | More Than Picturing the Future: Motion-Oriented Latent Reasoning for Generalizable Robot Manipulation | http://arxiv.org/abs/2611.29339 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | A Glimpse of Training VLMs as Foundation Models for Robotic Manipulation | http://arxiv.org/abs/2611.29338 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | A2I-VLA: A Two-Stage Vision-Language-Action model with Semantic-Physical Alignment and Integration | http://arxiv.org/abs/2611.29279 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | $ζ_0$: A Framework for World Action Models with Joint Scene and Body Foresight in Humanoid Control | http://arxiv.org/abs/2611.29277 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-22 | InfoField3D: Differentiable Information Field for Embodied Task-Oriented View Planning | http://arxiv.org/abs/2611.29230 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-21 | JEPA-Tuner: From Predictive Fine-Tuning to Asynchronous Execution of Vision-Language-Action Models | http://arxiv.org/abs/2611.29096 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-21 | NAT: Scaling Causal Neural Action Tokenizers Across Embodiments | http://arxiv.org/abs/2611.28873 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-21 | LIBERO-MOR: A Multimodal Robustness Benchmark Across the Vision-Language-Action Pipeline | http://arxiv.org/abs/2611.28867 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-21 | Spatially Grounded Latent Lookahead for Vision-Language-Action Models | http://arxiv.org/abs/2611.28839 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-21 | DeRail: Escaping Trajectory Priors via Counterfactual Action Steering for Mid-Execution Instruction Switching | http://arxiv.org/abs/2611.28803 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-21 | VTLA-RL: Learning Visuotactile Policies for Load-Adaptive Grasping | http://arxiv.org/abs/2611.28752 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-21 | AsyncMixVLA: Runtime Asynchronous Robot Policy Switching for Adaptation to Dynamic Environments | http://arxiv.org/abs/2611.28585 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-21 | PhysPPF: Learning Robotic Manipulation with Past, Present, and Future Physical Representations | http://arxiv.org/abs/2611.28551 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-21 | AlpaSafe: Risk-Aware Trajectory Selection for Vision-Language-Action Models in Autonomous Driving | http://arxiv.org/abs/2611.28509 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | Defending Vision-Language-Action Models against Transferable Attacks via Visual-Proprioceptive Consistency | http://arxiv.org/abs/2611.28346 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | Probing Invisible Actuation Shifts for Test-time Calibration of Visuomotor Policies | http://arxiv.org/abs/2611.28308 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | Intervention-Robust VLA: Diverse Demonstrations for Robot Deployment with Safety Filters | http://arxiv.org/abs/2611.28289 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-20 | FlowPAC: Flow-Guided Visual Pruning and Action Caching for Efficient VLA Inference | http://arxiv.org/abs/2611.28256 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-20 | Efficient VLA Reinforcement Learning via Subchunk Rollouts in Latent World Models | http://arxiv.org/abs/2611.27645 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-20 | Beyond a Single Human Demonstration: Learning from Scored Trajectory Alternatives for End-to-End Driving | http://arxiv.org/abs/2611.27515 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-20 | GenPA: Image Generators as Efficient Robot Policies | http://arxiv.org/abs/2611.27446 | <details><summary>展开</summary>待生成</details> |
