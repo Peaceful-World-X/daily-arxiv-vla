@@ -1,5 +1,32 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-24 | Physicl Scenes: An Artist-created 3D Dataset for Learning Perception and Action | http://arxiv.org/abs/2611.33137 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies | http://arxiv.org/abs/2611.33010 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | What Does a Skill Vocabulary Cost? A Closed-Loop Decomposition over Demonstrated Motions | http://arxiv.org/abs/2611.32858 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Knocked Off Course: Tracing Uncommanded Motion from Perception to Action in Embodied VLAs | http://arxiv.org/abs/2611.32705 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | DiffGR00T: Execution-Aware Differentiable Training for Humanoid Whole-Body Vision-Language-Action Models | http://arxiv.org/abs/2611.32665 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | DexWAC: A Unified World-Actor-Critic Model for Dexterous Robot Manipulation | http://arxiv.org/abs/2611.32654 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | ReFocus: Progress-Guided Adaptive Practice for Long-Horizon Robotic Manipulation Reinforcement Learning | http://arxiv.org/abs/2611.32639 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | MXI-MemICL: Towards In-Context Robot Manipulation through Self-Retrieved Interaction Memory | http://arxiv.org/abs/2611.32564 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | GeoVLDrive: Geometry-Grounded Vision-Language Reasoning for Autonomous Driving | http://arxiv.org/abs/2611.32510 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Any2Act: Scaling In-Context Robot Learning from Heterogeneous Demonstrations | http://arxiv.org/abs/2611.32353 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Sparse Poison, Strong Hijack: Efficient Trajectory-Level Backdoors in Vision-Language-Action Models with Only 1\% Poisoning | http://arxiv.org/abs/2611.32304 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | EgoLoAF: Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances | http://arxiv.org/abs/2611.32260 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | VLAs Execute, Code Recovers: 3D Skill Envelopes Bridge the Compositional Gap in Agentic Manipulation | http://arxiv.org/abs/2611.32245 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Roboclock: A Unified Benchmark for Time-Aware Robotic Intelligence | http://arxiv.org/abs/2611.32233 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | NativeDrive: Native Multimodal Foundations for Autonomous Driving | http://arxiv.org/abs/2611.32216 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Seeing Is Not Reaching: Instruction Shortcuts Override Visual Grounding in Vision-Language-Action Models | http://arxiv.org/abs/2611.32206 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | KeyMemVLA: Subtask-Guided Key Memory for Long-Horizon Robotic Manipulation | http://arxiv.org/abs/2611.32081 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | RoboHarness-RL: Agentic Reinforcement Learning for VLM-Based Robot Manipulation | http://arxiv.org/abs/2611.32016 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Perception Is Enough, at the Right Scale: Scale-Adaptive Token Pruning for Vision-Language-Action Models | http://arxiv.org/abs/2611.31954 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Beyond Expert Replay: Cross-Instruction Anchoring for Continual Vision-Language-Action Learning | http://arxiv.org/abs/2611.31903 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | LeanWAM: Learning Latent World Action Models from Frozen Video Models | http://arxiv.org/abs/2611.31740 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Sparks of Weight-Space Programming for Robot Foundation Models | http://arxiv.org/abs/2611.31715 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | FabricBench: A Standardized Policy Benchmark for Bimanual Fabric Manipulation with a Contact-Driven Deformable Simulator | http://arxiv.org/abs/2611.31577 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | Hi3R-VLA: Grounding Semantics and Actions in 3D | http://arxiv.org/abs/2611.31535 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | Near-Zero Forgetting Is Not Enough: Out-of-Distribution Robustness in Continual Learning of Pretrained VLAs | http://arxiv.org/abs/2611.31511 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | Embodied Neuro-symbolic AI: Making Robot Behavior Auditable, Safe, and Scalable | http://arxiv.org/abs/2611.31488 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-23 | Ground, Guide, Act: Improving VLA Spatial Generalization with Multimodal Foundation Models | http://arxiv.org/abs/2611.31452 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-23 | Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action | http://arxiv.org/abs/2611.31240 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-23 | WeaveVLA: 3D Relational Grounding for Vision-Language-Action Models | http://arxiv.org/abs/2611.31126 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-23 | NoveltyGate: Novelty, Not Error, Decides Which VLA Prefix Tokens to Compute Exactly | http://arxiv.org/abs/2611.31099 | <details><summary>展开</summary>待生成</details> |
