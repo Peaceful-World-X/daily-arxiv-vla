@@ -1,5 +1,35 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-11-25 | Cairn: Object-Centric 3D Trajectory Priors for Steering Frozen VLAs | http://arxiv.org/abs/2611.34914 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | RePace: Reasoning about Demonstration Speedup for Faster Vision-Language-Action Policies | http://arxiv.org/abs/2611.34864 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Toward Agentic Robotics: A Large-Scale Study of Harness Design for Robot-Use Agents | http://arxiv.org/abs/2611.34778 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | ELMO: Emergent Representations In Imitation Learning Via Dynamic Hierarchical Action Chunking | http://arxiv.org/abs/2611.34741 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | A Failure-Driven Data Flywheel for Post-Training Vision-Language-Action Models | http://arxiv.org/abs/2611.34698 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | RoboEvo$^2$: Recursive Robot Self-Improvement via Harness-Policy Co-Evolution | http://arxiv.org/abs/2611.34675 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Commit2Drive: Perception-Grounded Language Decisions as Commitments for Trajectory Planning in Vision-Language-Action Driving Models | http://arxiv.org/abs/2611.34614 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | M$^{2}$AdaptVLA: Multimodal Memory-Augmented Vision-Language-Action Model with Predictive Test-Time Adaptation | http://arxiv.org/abs/2611.34560 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Dynamic Task Update Benchmark (DTU-Bench): Evaluating Runtime Task Adaptation in Robotic Manipulation | http://arxiv.org/abs/2611.34538 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | HoloBrain-0.5 Technical Report | http://arxiv.org/abs/2611.34449 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Can Visual World Models See Force? | http://arxiv.org/abs/2611.34422 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | One Patch, Many Policies: Object-Associated Physical Patch Attacks on Robotic Manipulation | http://arxiv.org/abs/2611.34360 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Beyond Natural-Language Instructions: Temporal Logic as a Task Language for VLA Models with Visual-Logical Fusion | http://arxiv.org/abs/2611.34352 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | DataForgeVLA: Fully Synthetic Manipulation Demonstrations for Vision-Language-Action Training | http://arxiv.org/abs/2611.34287 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Escapingthe instruction blackhole of vision-language-action policies via optimal-transport wormholes | http://arxiv.org/abs/2611.34280 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | CamAct: Learning Robotic Manipulation from In-the-Wild Videos via Camera Motion | http://arxiv.org/abs/2611.34257 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Hetero-Associative Visuomotor Memory: Soft Recall as a Base for Learned Residuals in Few-Demonstration Imitation | http://arxiv.org/abs/2611.34014 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Aegis-VLA: Reliability-Gated Action Refinement via a Trajectory World Model for Dynamic Object Manipulation | http://arxiv.org/abs/2611.33993 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Towards 360$^\circ$ Embodied UAV Tracking Without Turning | http://arxiv.org/abs/2611.33934 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Integration of Vision-Language-Action Control for Autonomous Forklift Unloading with Limited Real-World Data | http://arxiv.org/abs/2611.33880 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Off the Driven Path: Transferable Road Understanding in Driving VLAs | http://arxiv.org/abs/2611.33878 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | $\widetilde{\varepsilon}$: Does Initial Noise Induce Directional Bias in Vision-Language-Action Models? | http://arxiv.org/abs/2611.33816 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | FlipVLA: Backdoor Attacks on Vision-Language-Action(VLA) Models Only Through Bit Flips | http://arxiv.org/abs/2611.33810 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | Keep or Roll Back? Out-of-Loop Judges for Self-Improving VLA and End-to-End Embodied Policies | http://arxiv.org/abs/2611.33794 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | FailPoint-X: A Policy-Matched, Failure-Anchored Benchmark for Offline VLA Post-Training from Human Takeovers | http://arxiv.org/abs/2611.33769 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | RegHarness: Regulating What Code-as-Policy Agents Keep from Steps to Skills | http://arxiv.org/abs/2611.33739 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-25 | FreshVLA: Frequency-Regularized Time Scale Hierarchical Latent Actions for Vision-Language-Action Models | http://arxiv.org/abs/2611.33635 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Best-of-$N$ Test-Time Steering Can Lead to Reward Hacking in Vision-Language-Action Models | http://arxiv.org/abs/2611.33398 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints | http://arxiv.org/abs/2611.33390 | <details><summary>展开</summary>待生成</details> |
+| 2026-11-24 | Why Does Sensor Depth Fail Learned Manipulation Policies? Finding the Failure Mode with ACT | http://arxiv.org/abs/2611.33352 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-24 | Physicl Scenes: An Artist-created 3D Dataset for Learning Perception and Action | http://arxiv.org/abs/2611.33137 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-24 | Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies | http://arxiv.org/abs/2611.33010 | <details><summary>展开</summary>待生成</details> |
 | 2026-11-24 | What Does a Skill Vocabulary Cost? A Closed-Loop Decomposition over Demonstrated Motions | http://arxiv.org/abs/2611.32858 | <details><summary>展开</summary>待生成</details> |
